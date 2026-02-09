@@ -10,9 +10,10 @@ import { useState } from "react";
 
 interface CartCardProps {
   cart: Cart;
+  slug?: string;
 }
 
-export function CartCard({ cart }: CartCardProps) {
+export function CartCard({ cart, slug }: CartCardProps) {
   const [imageError, setImageError] = useState(false);
   const make = cart.cartType?.make || "";
   const model = cart.cartType?.model || "";
@@ -28,9 +29,11 @@ export function CartCard({ cart }: CartCardProps) {
     ? "https://tigongolfcarts.com/wp-content/uploads/2024/11/TIGON-GOLF-CARTS-IMAGES-COMING-SOON.jpg"
     : getCartImageUrl(cart.imageUrls);
 
+  const cartUrl = slug ? `/cart/${slug}` : `/cart/${cart._id}`;
+
   return (
     <Card className="overflow-visible group hover-elevate" data-testid={`card-cart-${cart._id}`}>
-      <Link href={`/cart/${cart._id}`}>
+      <Link href={cartUrl}>
         <div className="relative overflow-hidden rounded-t-md">
           <img
             src={imageUrl}
@@ -61,7 +64,7 @@ export function CartCard({ cart }: CartCardProps) {
       </Link>
 
       <div className="p-4 space-y-3">
-        <Link href={`/cart/${cart._id}`}>
+        <Link href={cartUrl}>
           <h3 className="font-semibold text-sm leading-tight line-clamp-2 hover:text-primary transition-colors" data-testid={`text-title-${cart._id}`}>
             {title}
           </h3>

@@ -9,6 +9,11 @@ import { CartCard, CartCardSkeleton } from "@/components/cart-card";
 import type { CartsResponse, Store } from "@shared/schema";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 
+interface SlugMap {
+  slugToId: Record<string, string>;
+  idToSlug: Record<string, string>;
+}
+
 export default function Home() {
   const { data: featured, isLoading: featuredLoading } = useQuery<CartsResponse>({
     queryKey: ["/api/carts?pageNumber=0&pageSize=8"],
@@ -20,6 +25,10 @@ export default function Home() {
 
   const { data: brands } = useQuery<Array<{ key: string; label: string }>>({
     queryKey: ["/api/brands"],
+  });
+
+  const { data: slugMap } = useQuery<SlugMap>({
+    queryKey: ["/api/slug-map"],
   });
 
   return (
@@ -123,7 +132,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {featuredLoading
               ? Array.from({ length: 8 }).map((_, i) => <CartCardSkeleton key={i} />)
-              : featured?.carts.map((cart) => <CartCard key={cart._id} cart={cart} />)}
+              : featured?.carts.map((cart) => <CartCard key={cart._id} cart={cart} slug={slugMap?.idToSlug[cart._id]} />)}
           </div>
         </div>
       </section>

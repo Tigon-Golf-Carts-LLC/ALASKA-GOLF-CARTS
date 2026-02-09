@@ -10,6 +10,11 @@ import { InventoryFilters, defaultFilters, type FilterState } from "@/components
 import type { CartsResponse } from "@shared/schema";
 import { apiRequest } from "@/lib/queryClient";
 
+interface SlugMap {
+  slugToId: Record<string, string>;
+  idToSlug: Record<string, string>;
+}
+
 const PAGE_SIZE = 20;
 
 export default function Inventory() {
@@ -69,6 +74,10 @@ export default function Inventory() {
   const { data, isLoading, isFetching } = useQuery<CartsResponse>({
     queryKey: [queryKey],
     staleTime: 60_000,
+  });
+
+  const { data: slugMap } = useQuery<SlugMap>({
+    queryKey: ["/api/slug-map"],
   });
 
   const totalPages = data ? Math.ceil(data.totalCarts / PAGE_SIZE) : 0;
@@ -154,7 +163,7 @@ export default function Inventory() {
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4" data-testid="grid-inventory">
                 {data.carts.map((cart) => (
-                  <CartCard key={cart._id} cart={cart} />
+                  <CartCard key={cart._id} cart={cart} slug={slugMap?.idToSlug[cart._id]} />
                 ))}
               </div>
 

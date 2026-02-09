@@ -186,6 +186,75 @@ export async function registerRoutes(
     }
   });
 
+  app.get("/api/slug-map", async (_req, res) => {
+    try {
+      const cached = getCached("slugMap");
+      if (cached) {
+        return res.json(cached);
+      }
+
+      const [cartsData, storesData] = await Promise.all([
+        fetchDMS("/get-carts", { pageNumber: 0, pageSize: 500 }),
+        fetchDMS("/tigon-stores"),
+      ]);
+
+      const carts = cartsData?.carts || [];
+      const stores: any[] = storesData || [];
+      const storeMap = new Map<string, any>();
+      for (const store of stores) {
+        if (store.storeId) storeMap.set(store.storeId, store);
+      }
+
+      const toSlugPart = (str: string): string => {
+        return str
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "");
+      };
+
+      const slugToId: Record<string, string> = {};
+      const idToSlug: Record<string, string> = {};
+      const slugCounts: Record<string, number> = {};
+
+      for (const cart of carts) {
+        const make = cart?.cartType?.make || "";
+        const model = cart?.cartType?.model || "";
+        const color = cart?.cartAttributes?.cartColor || "";
+        const storeId = cart?.cartLocation?.locationId || cart?.cartLocation?.latestStoreId || "";
+        const store = storeMap.get(storeId);
+        const city = store?.address?.city || "";
+        const state = store?.address?.state || "";
+        const country = store?.address?.country || "USA";
+
+        const parts = [make, model, color, city, state, country]
+          .map(toSlugPart)
+          .filter(Boolean);
+
+        const baseSlug = parts.length > 0 ? parts.join("-") : `cart-${cart._id}`;
+
+        let finalSlug: string;
+        if (slugCounts[baseSlug] === undefined) {
+          slugCounts[baseSlug] = 0;
+          finalSlug = baseSlug;
+        } else {
+          slugCounts[baseSlug]++;
+          const modifier = String(slugCounts[baseSlug]).padStart(2, "0");
+          finalSlug = `${baseSlug}-${modifier}`;
+        }
+
+        slugToId[finalSlug] = cart._id;
+        idToSlug[cart._id] = finalSlug;
+      }
+
+      const result = { slugToId, idToSlug };
+      setCache("slugMap", result, 120_000);
+      res.json(result);
+    } catch (error: any) {
+      console.error("Error building slug map:", error.message);
+      res.status(500).json({ error: "Failed to build slug map" });
+    }
+  });
+
   app.post("/api/featured-carts", async (req, res) => {
     try {
       const key = req.body.key || "national";

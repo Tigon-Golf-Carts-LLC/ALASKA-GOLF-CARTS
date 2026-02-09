@@ -23,14 +23,27 @@ function SpecRow({ label, value, icon: Icon }: { label: string; value: string; i
   );
 }
 
+interface SlugMap {
+  slugToId: Record<string, string>;
+  idToSlug: Record<string, string>;
+}
+
 export default function CartDetail() {
-  const { id } = useParams<{ id: string }>();
+  const { slug } = useParams<{ slug: string }>();
   const [selectedImage, setSelectedImage] = useState(0);
 
-  const { data: cart, isLoading, error } = useQuery<Cart>({
-    queryKey: ["/api/cart", id],
-    enabled: !!id,
+  const { data: slugMap, isLoading: slugMapLoading } = useQuery<SlugMap>({
+    queryKey: ["/api/slug-map"],
   });
+
+  const cartId = slugMap?.slugToId[slug || ""] || slug || "";
+
+  const { data: cart, isLoading: cartLoading, error } = useQuery<Cart>({
+    queryKey: ["/api/cart", cartId],
+    enabled: !!cartId && !slugMapLoading,
+  });
+
+  const isLoading = slugMapLoading || cartLoading;
 
   const { data: stores } = useQuery<Store[]>({
     queryKey: ["/api/stores"],
