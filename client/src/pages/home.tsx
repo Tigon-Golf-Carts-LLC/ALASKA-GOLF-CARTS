@@ -8,7 +8,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { CartCard, CartCardSkeleton } from "@/components/cart-card";
 import type { CartsResponse, Store } from "@shared/schema";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
-import heroBg from "@assets/TIGON_USA_1770662360553.png";
+import heroBg from "@assets/DISCOUNTED_GOLF_CARTS_DEALERSHIP_1770671250863.png";
 
 interface SlugMap {
   slugToId: Record<string, string>;
