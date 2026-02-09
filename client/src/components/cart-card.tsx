@@ -26,7 +26,7 @@ export function CartCard({ cart }: CartCardProps) {
 
   const imageUrl = imageError
     ? "https://tigongolfcarts.com/wp-content/uploads/2024/11/TIGON-GOLF-CARTS-IMAGES-COMING-SOON.jpg"
-    : getCartImageUrl(cart.imageUrls, cart.internalCartImageUrls);
+    : getCartImageUrl(cart.imageUrls);
 
   return (
     <Card className="overflow-visible group hover-elevate" data-testid={`card-cart-${cart._id}`}>

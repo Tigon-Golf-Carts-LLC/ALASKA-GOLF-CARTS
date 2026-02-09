@@ -52,40 +52,16 @@ export function formatPrice(price: number | null | undefined): string {
   });
 }
 
-export function mergeCartImages(
-  imageUrls: string[] | null | undefined,
-  internalCartImageUrls: string[] | null | undefined
-): string[] {
-  const merged: string[] = [];
+export function getCartImageUrl(imageUrls: string[] | null | undefined): string {
   if (imageUrls && imageUrls.length > 0) {
-    merged.push(...imageUrls);
-  }
-  if (internalCartImageUrls && internalCartImageUrls.length > 0) {
-    for (const url of internalCartImageUrls) {
-      if (!merged.includes(url)) merged.push(url);
-    }
-  }
-  return merged;
-}
-
-export function getCartImageUrl(
-  imageUrls: string[] | null | undefined,
-  internalCartImageUrls?: string[] | null | undefined
-): string {
-  const merged = mergeCartImages(imageUrls, internalCartImageUrls);
-  if (merged.length > 0) {
-    return S3_CARTS_URL + merged[0];
+    return S3_CARTS_URL + imageUrls[0];
   }
   return COMING_SOON_IMAGE;
 }
 
-export function getAllCartImages(
-  imageUrls: string[] | null | undefined,
-  internalCartImageUrls?: string[] | null | undefined
-): string[] {
-  const merged = mergeCartImages(imageUrls, internalCartImageUrls);
-  if (merged.length > 0) {
-    return merged.map((url) => S3_CARTS_URL + url);
+export function getAllCartImages(imageUrls: string[] | null | undefined): string[] {
+  if (imageUrls && imageUrls.length > 0) {
+    return imageUrls.map((url) => S3_CARTS_URL + url);
   }
   return [COMING_SOON_IMAGE];
 }

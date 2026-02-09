@@ -78,7 +78,7 @@ export default function CartDetail() {
   const isStreetLegal = cart.title?.isStreetLegal === true;
   const year = cart.cartType?.year || "";
   const passengers = cart.cartAttributes?.passengers || "";
-  const images = getAllCartImages(cart.imageUrls, cart.internalCartImageUrls);
+  const images = getAllCartImages(cart.imageUrls);
 
   const storeId = cart.cartLocation?.locationId;
   const store = stores?.find((s) => s.storeId === storeId);
