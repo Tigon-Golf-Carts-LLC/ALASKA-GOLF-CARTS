@@ -85,7 +85,8 @@ export default function CartDetail() {
   const model = cart.cartType?.model || "";
   const color = cart.cartAttributes?.cartColor || "";
   const title = buildCartTitle(make, model, color);
-  const price = formatPrice(cart.retailPrice);
+  const numericPrice = cart.retailPrice || 0;
+  const price = formatPrice(numericPrice);
   const isUsed = cart.isUsed === true;
   const isElectric = cart.isElectric === true;
   const isStreetLegal = cart.title?.isStreetLegal === true;
@@ -182,17 +183,31 @@ export default function CartDetail() {
             )}
           </div>
 
-          <div className="bg-primary/5 dark:bg-primary/10 rounded-md p-5">
+          <div className="bg-primary/5 dark:bg-primary/10 rounded-md p-5 space-y-3">
             <p className="text-3xl font-bold text-primary" data-testid="text-cart-price">{price}</p>
-            <p className="text-sm text-muted-foreground mt-1">Contact us for financing options</p>
+            {numericPrice > 0 && (
+              <div data-testid="text-financing-price">
+                <p className="text-lg font-semibold">
+                  As low as {formatPrice(numericPrice / 48)}/mo
+                </p>
+                <p className="text-sm text-muted-foreground">0% APR for 48 months</p>
+              </div>
+            )}
           </div>
 
-          <a href={PHONE_TEL} className="block">
-            <Button className="w-full" size="lg" data-testid="button-call-now">
-              <Phone className="h-5 w-5 mr-2" />
-              Call Now - {PHONE_NUMBER}
-            </Button>
-          </a>
+          <div className="flex flex-col gap-2">
+            <a href={PHONE_TEL} className="block">
+              <Button className="w-full" size="lg" data-testid="button-call-now">
+                <Phone className="h-5 w-5 mr-2" />
+                Call Now - {PHONE_NUMBER}
+              </Button>
+            </a>
+            <Link href="/financing">
+              <Button variant="outline" className="w-full" size="lg" data-testid="button-apply-now">
+                Apply Now - 0% Financing
+              </Button>
+            </Link>
+          </div>
 
           <Tabs defaultValue="specs" className="w-full">
             <TabsList className="w-full">
