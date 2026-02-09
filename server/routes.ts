@@ -5,6 +5,32 @@ const DMS_BASE_URL = "https://api.tigondms.com/wp-website";
 
 const cache = new Map<string, { data: any; expiry: number }>();
 
+function getNextRefreshTime(): number {
+  const now = new Date();
+  const estOffset = -5;
+  const utcHour = now.getUTCHours();
+  const utcMinute = now.getUTCMinutes();
+  const estHour = (utcHour + estOffset + 24) % 24;
+
+  const target = new Date(now);
+  const targetUTCHour = (23 - estOffset + 24) % 24;
+  target.setUTCHours(targetUTCHour, 0, 0, 0);
+
+  if (estHour > 23 || (estHour === 23 && utcMinute >= 0)) {
+    target.setUTCDate(target.getUTCDate() + 1);
+  }
+
+  if (target.getTime() <= now.getTime()) {
+    target.setUTCDate(target.getUTCDate() + 1);
+  }
+
+  return target.getTime();
+}
+
+function getMsUntilRefresh(): number {
+  return Math.max(getNextRefreshTime() - Date.now(), 60_000);
+}
+
 function getCached(key: string): any | null {
   const entry = cache.get(key);
   if (entry && Date.now() < entry.expiry) {
@@ -14,8 +40,8 @@ function getCached(key: string): any | null {
   return null;
 }
 
-function setCache(key: string, data: any, ttlMs: number) {
-  cache.set(key, { data, expiry: Date.now() + ttlMs });
+function setCache(key: string, data: any) {
+  cache.set(key, { data, expiry: getNextRefreshTime() });
 }
 
 async function fetchDMS(endpoint: string, body?: any): Promise<any> {
@@ -45,7 +71,7 @@ export async function registerRoutes(
         return res.json(cached);
       }
       const data = await fetchDMS("/tigon-stores");
-      setCache("stores", data, 3600_000);
+      setCache("stores", data);
       res.json(data);
     } catch (error: any) {
       console.error("Error fetching stores:", error.message);
@@ -85,7 +111,7 @@ export async function registerRoutes(
       }
 
       const data = await fetchDMS("/get-carts", body);
-      setCache(cacheKey, data, 120_000);
+      setCache(cacheKey, data);
       res.json(data);
     } catch (error: any) {
       console.error("Error fetching carts:", error.message);
@@ -103,7 +129,7 @@ export async function registerRoutes(
       }
 
       const data = await fetchDMS("/get-cart-by-id", { cartId });
-      setCache(cacheKey, data, 300_000);
+      setCache(cacheKey, data);
       res.json(data);
     } catch (error: any) {
       console.error("Error fetching cart:", error.message);
@@ -125,7 +151,7 @@ export async function registerRoutes(
       }
 
       const data = await fetchDMS("/get-cart-models", { makeKeys });
-      setCache(cacheKey, data, 600_000);
+      setCache(cacheKey, data);
       res.json(data);
     } catch (error: any) {
       console.error("Error fetching cart models:", error.message);
@@ -147,7 +173,7 @@ export async function registerRoutes(
       }
 
       const data = await fetchDMS("/get-cart-colors", { makeKeys });
-      setCache(cacheKey, data, 600_000);
+      setCache(cacheKey, data);
       res.json(data);
     } catch (error: any) {
       console.error("Error fetching cart colors:", error.message);
@@ -178,7 +204,7 @@ export async function registerRoutes(
         .map(([key, label]) => ({ key, label }))
         .sort((a, b) => a.label.localeCompare(b.label));
 
-      setCache("brands", brands, 600_000);
+      setCache("brands", brands);
       res.json(brands);
     } catch (error: any) {
       console.error("Error fetching brands:", error.message);
@@ -247,7 +273,7 @@ export async function registerRoutes(
       }
 
       const result = { slugToId, idToSlug };
-      setCache("slugMap", result, 120_000);
+      setCache("slugMap", result);
       res.json(result);
     } catch (error: any) {
       console.error("Error building slug map:", error.message);
@@ -265,7 +291,7 @@ export async function registerRoutes(
       }
 
       const data = await fetchDMS("/get-featured-carts", { key });
-      setCache(cacheKey, data, 300_000);
+      setCache(cacheKey, data);
       res.json(data);
     } catch (error: any) {
       console.error("Error fetching featured carts:", error.message);
