@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Phone, MapPin, ShoppingCart } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 import type { Store } from "@shared/schema";
 import { useQuery } from "@tanstack/react-query";
@@ -15,7 +15,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <ShoppingCart className="h-5 w-5 text-primary" />
+              <img src="/logo-icon.ico" alt="TIGON USA" className="h-6 w-6" />
               <span className="text-lg font-bold">TIGON <span className="text-primary">USA</span></span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
