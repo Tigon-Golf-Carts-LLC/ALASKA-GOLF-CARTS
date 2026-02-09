@@ -112,11 +112,13 @@ export default function Inventory() {
           />
         </div>
         <div className="flex items-center gap-2">
-          <InventoryFilters
-            filters={filters}
-            onFiltersChange={handleFiltersChange}
-            totalCarts={data?.totalCarts || 0}
-          />
+          <div className="lg:hidden">
+            <InventoryFilters
+              filters={filters}
+              onFiltersChange={handleFiltersChange}
+              totalCarts={data?.totalCarts || 0}
+            />
+          </div>
           <Select
             value={filters.priceSortASC === null ? "default" : filters.priceSortASC ? "low" : "high"}
             onValueChange={handleSortChange}
