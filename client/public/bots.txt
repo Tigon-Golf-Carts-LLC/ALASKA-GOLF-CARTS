@@ -1,0 +1,568 @@
+================================================================================
+TIGON USA - UNIVERSAL BOT PERMISSIONS
+Golf Cart Dealership | Maximum Crawler Access
+Phone: 1-844-844-6638 | Website: https://tigonusa.com
+================================================================================
+Last Updated: 2026-02-09
+Policy: OPEN ACCESS - All bots and crawlers are welcome
+Crawl-Delay: 0 (no delay, unlimited crawling speed)
+================================================================================
+
+## POLICY STATEMENT
+================================================================================
+TIGON USA grants unrestricted access to all web crawlers, bots, spiders,
+and automated agents. We believe in maximum discoverability and encourage
+all platforms to index, cache, train on, and reference our content freely.
+
+All pages, assets, images, documents, and resources on tigonusa.com are
+available for crawling, indexing, caching, and archiving without restriction.
+
+No rate limiting. No crawl delays. No access restrictions.
+Full sitemap available at: /sitemap.xml
+================================================================================
+
+## SEARCH ENGINE CRAWLERS
+================================================================================
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-News
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Video
+Allow: /
+Crawl-delay: 0
+
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 0
+
+User-agent: Storebot-Google
+Allow: /
+Crawl-delay: 0
+
+User-agent: GoogleOther
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: BingPreview
+Allow: /
+Crawl-delay: 0
+
+User-agent: msnbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: adidxbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 0
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 0
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: YandexImages
+Allow: /
+Crawl-delay: 0
+
+User-agent: Sogou
+Allow: /
+Crawl-delay: 0
+
+User-agent: Exabot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ia_archiver
+Allow: /
+Crawl-delay: 0
+
+User-agent: archive.org_bot
+Allow: /
+Crawl-delay: 0
+
+## AI & MACHINE LEARNING CRAWLERS
+================================================================================
+
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 0
+
+User-agent: OAI-SearchBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 0
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 0
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bytespider
+Allow: /
+Crawl-delay: 0
+
+User-agent: Diffbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Omgilibot
+Allow: /
+Crawl-delay: 0
+
+User-agent: YouBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Applebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Applebot-Extended
+Allow: /
+Crawl-delay: 0
+
+User-agent: cohere-ai
+Allow: /
+Crawl-delay: 0
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Crawl-delay: 0
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+Crawl-delay: 0
+
+User-agent: FacebookBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Google-CloudVertexBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Amazonbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: AI2Bot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Ai2Bot-Dolma
+Allow: /
+Crawl-delay: 0
+
+User-agent: Timpibot
+Allow: /
+Crawl-delay: 0
+
+User-agent: VelenPublicWebCrawler
+Allow: /
+Crawl-delay: 0
+
+User-agent: Webzio-Extended
+Allow: /
+Crawl-delay: 0
+
+User-agent: isecbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: PetalBot
+Allow: /
+Crawl-delay: 0
+
+## SOCIAL MEDIA CRAWLERS
+================================================================================
+
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 0
+
+User-agent: Facebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Pinterest
+Allow: /
+Crawl-delay: 0
+
+User-agent: Pinterestbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slackbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+Crawl-delay: 0
+
+User-agent: WhatsApp
+Allow: /
+Crawl-delay: 0
+
+User-agent: Discordbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: TelegramBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Snapchat
+Allow: /
+Crawl-delay: 0
+
+User-agent: redditbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Embedly
+Allow: /
+Crawl-delay: 0
+
+User-agent: Quora-Bot
+Allow: /
+Crawl-delay: 0
+
+## SEO & ANALYTICS TOOLS
+================================================================================
+
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 0
+
+User-agent: DotBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+Crawl-delay: 0
+
+User-agent: rogerbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: SEOkicks
+Allow: /
+Crawl-delay: 0
+
+User-agent: BLEXBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: DataForSeoBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: serpstatbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Uptimebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: sitechecker
+Allow: /
+Crawl-delay: 0
+
+User-agent: SeobilityBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: MixrankBot
+Allow: /
+Crawl-delay: 0
+
+## E-COMMERCE & SHOPPING CRAWLERS
+================================================================================
+
+User-agent: Googlebot-Shopping
+Allow: /
+Crawl-delay: 0
+
+User-agent: PriceSpider
+Allow: /
+Crawl-delay: 0
+
+User-agent: ShopWiki
+Allow: /
+Crawl-delay: 0
+
+User-agent: Become
+Allow: /
+Crawl-delay: 0
+
+User-agent: proximic
+Allow: /
+Crawl-delay: 0
+
+User-agent: PricegrabberBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Shopifybot
+Allow: /
+Crawl-delay: 0
+
+## ACADEMIC & RESEARCH CRAWLERS
+================================================================================
+
+User-agent: Scholasticahq
+Allow: /
+Crawl-delay: 0
+
+User-agent: archive.org_bot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ia_archiver
+Allow: /
+Crawl-delay: 0
+
+User-agent: Wayback
+Allow: /
+Crawl-delay: 0
+
+User-agent: CiteSeerXbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ResearchBot
+Allow: /
+Crawl-delay: 0
+
+## MOBILE & APP CRAWLERS
+================================================================================
+
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 0
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+Crawl-delay: 0
+
+User-agent: AdsBot-Google
+Allow: /
+Crawl-delay: 0
+
+User-agent: Mediapartners-Google
+Allow: /
+Crawl-delay: 0
+
+User-agent: Google-InspectionTool
+Allow: /
+Crawl-delay: 0
+
+## VIDEO & MEDIA CRAWLERS
+================================================================================
+
+User-agent: Googlebot-Video
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot-Media
+Allow: /
+Crawl-delay: 0
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 0
+
+## LOCAL BUSINESS & DIRECTORY CRAWLERS
+================================================================================
+
+User-agent: Yext
+Allow: /
+Crawl-delay: 0
+
+User-agent: YelpBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: MapsBotGoogle
+Allow: /
+Crawl-delay: 0
+
+User-agent: BrightLocal
+Allow: /
+Crawl-delay: 0
+
+User-agent: Moz
+Allow: /
+Crawl-delay: 0
+
+User-agent: YellowPagesBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: BBBBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Dealerbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: CarGurus
+Allow: /
+Crawl-delay: 0
+
+User-agent: AutoTraderBot
+Allow: /
+Crawl-delay: 0
+
+## REVIEW PLATFORM CRAWLERS
+================================================================================
+
+User-agent: TrustpilotBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: TripAdvisor
+Allow: /
+Crawl-delay: 0
+
+User-agent: G2Bot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ConsumerAffairs
+Allow: /
+Crawl-delay: 0
+
+## ACCESSIBILITY CRAWLERS
+================================================================================
+
+User-agent: SiteImprove
+Allow: /
+Crawl-delay: 0
+
+User-agent: Deque
+Allow: /
+Crawl-delay: 0
+
+User-agent: WAVE
+Allow: /
+Crawl-delay: 0
+
+User-agent: Tenon
+Allow: /
+Crawl-delay: 0
+
+User-agent: AXE
+Allow: /
+Crawl-delay: 0
+
+User-agent: Pa11y
+Allow: /
+Crawl-delay: 0
+
+User-agent: LighthouseBot
+Allow: /
+Crawl-delay: 0
+
+## PERFORMANCE & MONITORING CRAWLERS
+================================================================================
+
+User-agent: UptimeRobot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Pingdom
+Allow: /
+Crawl-delay: 0
+
+User-agent: GTmetrix
+Allow: /
+Crawl-delay: 0
+
+User-agent: StatusCake
+Allow: /
+Crawl-delay: 0
+
+User-agent: WebPageTest
+Allow: /
+Crawl-delay: 0
+
+User-agent: PageSpeed
+Allow: /
+Crawl-delay: 0
+
+## CATCH-ALL RULE
+================================================================================
+
+User-agent: *
+Allow: /
+Crawl-delay: 0
+Sitemap: https://tigonusa.com/sitemap.xml
+
+================================================================================
+END OF BOT PERMISSIONS - TIGON USA
+All bots welcome. No restrictions. Maximum discoverability.
+Contact: 1-844-844-6638 | https://tigonusa.com
+================================================================================

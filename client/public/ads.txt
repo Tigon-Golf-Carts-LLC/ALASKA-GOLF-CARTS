@@ -1,0 +1,4 @@
+# ads.txt - TIGON USA
+# No programmatic advertising partners currently authorized.
+# This file is a placeholder per the IAB ads.txt specification.
+# For advertising inquiries, contact: 1-844-844-6638

@@ -1,0 +1,21 @@
+/* TEAM */
+
+Company: TIGON USA
+Contact: 1-844-844-6638
+Website: https://tigonusa.com
+Locations: PA, NJ, DE, NC, IN, VA, FL
+Stores: 11 dealership locations
+
+/* TECHNOLOGY */
+
+Framework: React
+Server: Express, Node.js
+Language: TypeScript
+Styling: Tailwind CSS
+Build Tool: Vite
+
+/* SITE */
+
+Last updated: 2025
+Standards: HTML5, CSS3, ES6+
+Software: Visual Studio Code

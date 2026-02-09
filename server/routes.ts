@@ -214,70 +214,102 @@ export async function registerRoutes(
 
   app.get("/api/slug-map", async (_req, res) => {
     try {
-      const cached = getCached("slugMap");
-      if (cached) {
-        return res.json(cached);
-      }
-
-      const [cartsData, storesData] = await Promise.all([
-        fetchDMS("/get-carts", { pageNumber: 0, pageSize: 500 }),
-        fetchDMS("/tigon-stores"),
-      ]);
-
-      const carts = cartsData?.carts || [];
-      const stores: any[] = storesData || [];
-      const storeMap = new Map<string, any>();
-      for (const store of stores) {
-        if (store.storeId) storeMap.set(store.storeId, store);
-      }
-
-      const toSlugPart = (str: string): string => {
-        return str
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, "-")
-          .replace(/^-+|-+$/g, "");
-      };
-
-      const slugToId: Record<string, string> = {};
-      const idToSlug: Record<string, string> = {};
-      const slugCounts: Record<string, number> = {};
-
-      for (const cart of carts) {
-        const make = cart?.cartType?.make || "";
-        const model = cart?.cartType?.model || "";
-        const color = cart?.cartAttributes?.cartColor || "";
-        const storeId = cart?.cartLocation?.locationId || cart?.cartLocation?.latestStoreId || "";
-        const store = storeMap.get(storeId);
-        const city = store?.address?.city || "";
-        const state = store?.address?.state || "";
-        const country = store?.address?.country || "USA";
-
-        const parts = [make, model, color, city, state, country]
-          .map(toSlugPart)
-          .filter(Boolean);
-
-        const baseSlug = parts.length > 0 ? parts.join("-") : `cart-${cart._id}`;
-
-        let finalSlug: string;
-        if (slugCounts[baseSlug] === undefined) {
-          slugCounts[baseSlug] = 0;
-          finalSlug = baseSlug;
-        } else {
-          slugCounts[baseSlug]++;
-          const modifier = String(slugCounts[baseSlug]).padStart(2, "0");
-          finalSlug = `${baseSlug}-${modifier}`;
-        }
-
-        slugToId[finalSlug] = cart._id;
-        idToSlug[cart._id] = finalSlug;
-      }
-
-      const result = { slugToId, idToSlug };
-      setCache("slugMap", result);
+      const result = await getSlugMap();
       res.json(result);
     } catch (error: any) {
       console.error("Error building slug map:", error.message);
       res.status(500).json({ error: "Failed to build slug map" });
+    }
+  });
+
+  async function getSlugMap(): Promise<{ slugToId: Record<string, string>; idToSlug: Record<string, string> }> {
+    const cached = getCached("slugMap");
+    if (cached) return cached;
+
+    const [cartsData, storesData] = await Promise.all([
+      fetchDMS("/get-carts", { pageNumber: 0, pageSize: 500 }),
+      fetchDMS("/tigon-stores"),
+    ]);
+
+    const carts = cartsData?.carts || [];
+    const stores: any[] = storesData || [];
+    const storeMap = new Map<string, any>();
+    for (const store of stores) {
+      if (store.storeId) storeMap.set(store.storeId, store);
+    }
+
+    const toSlugPart = (str: string): string => {
+      return str
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+    };
+
+    const slugToId: Record<string, string> = {};
+    const idToSlug: Record<string, string> = {};
+    const slugCounts: Record<string, number> = {};
+
+    for (const cart of carts) {
+      const make = cart?.cartType?.make || "";
+      const model = cart?.cartType?.model || "";
+      const color = cart?.cartAttributes?.cartColor || "";
+      const storeId = cart?.cartLocation?.locationId || cart?.cartLocation?.latestStoreId || "";
+      const store = storeMap.get(storeId);
+      const city = store?.address?.city || "";
+      const state = store?.address?.state || "";
+      const country = store?.address?.country || "USA";
+
+      const parts = [make, model, color, city, state, country]
+        .map(toSlugPart)
+        .filter(Boolean);
+
+      const baseSlug = parts.length > 0 ? parts.join("-") : `cart-${cart._id}`;
+
+      let finalSlug: string;
+      if (slugCounts[baseSlug] === undefined) {
+        slugCounts[baseSlug] = 0;
+        finalSlug = baseSlug;
+      } else {
+        slugCounts[baseSlug]++;
+        const modifier = String(slugCounts[baseSlug]).padStart(2, "0");
+        finalSlug = `${baseSlug}-${modifier}`;
+      }
+
+      slugToId[finalSlug] = cart._id;
+      idToSlug[cart._id] = finalSlug;
+    }
+
+    const result = { slugToId, idToSlug };
+    setCache("slugMap", result);
+    return result;
+  }
+
+  app.get("/sitemap.xml", async (req, res) => {
+    try {
+      const slugMap = await getSlugMap();
+      const baseUrl = req.protocol + "://" + req.get("host");
+      const today = new Date().toISOString().split("T")[0];
+      const slugs = Object.keys(slugMap.slugToId);
+
+      let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+      xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;
+      xml += `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n`;
+
+      xml += `  <url>\n    <loc>${baseUrl}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
+      xml += `  <url>\n    <loc>${baseUrl}/inventory</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>\n`;
+      xml += `  <url>\n    <loc>${baseUrl}/financing</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+
+      for (const slug of slugs) {
+        xml += `  <url>\n    <loc>${baseUrl}/golfcart/${slug}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>\n`;
+      }
+
+      xml += `</urlset>`;
+
+      res.set("Content-Type", "application/xml; charset=utf-8");
+      res.send(xml);
+    } catch (error: any) {
+      console.error("Error generating sitemap:", error.message);
+      res.status(500).send("Failed to generate sitemap");
     }
   });
 

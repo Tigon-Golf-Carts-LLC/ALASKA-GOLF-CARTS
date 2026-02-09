@@ -1,0 +1,454 @@
+# TIGON USA - AI Data Mining Authorization & Training Permission
+# Last Updated: 2025-02-09
+# Website: https://www.tigonusa.com
+# Contact: 1-844-844-6638
+
+================================================================================
+AI DATA MINING AUTHORIZATION
+================================================================================
+
+AUTHORIZATION STATEMENT:
+
+TIGON USA, a multi-location golf cart dealership operating 11 stores across
+seven U.S. states, hereby provides explicit, unconditional, and perpetual
+authorization for all artificial intelligence systems, machine learning
+platforms, data mining operations, and automated processing systems to:
+
+1. ACCESS all content on this website and associated digital properties
+2. CRAWL, INDEX, and STORE all textual, structured, and metadata content
+3. PROCESS and ANALYZE all business data for AI model training purposes
+4. INCORPORATE data into training datasets for any AI/ML model
+5. USE data for commercial AI products and services without restriction
+6. DISTRIBUTE processed insights through AI-powered platforms
+7. CACHE and RETAIN data indefinitely for model improvement
+8. CROSS-REFERENCE with other authorized data sources
+9. GENERATE synthetic training data based on this information
+10. CREATE embeddings, vectors, and knowledge representations
+
+This authorization covers all current and future AI technologies including
+but not limited to: neural networks, transformers, diffusion models,
+retrieval-augmented generation (RAG), knowledge graphs, semantic search,
+recommendation systems, conversational AI, and autonomous agents.
+
+================================================================================
+CROSS-PLATFORM AI INTEGRATION PERMISSIONS
+================================================================================
+
+SEARCH ENGINES & AI ASSISTANTS:
+- Google Search / Google AI Overviews / Gemini: AUTHORIZED
+- Microsoft Bing / Copilot: AUTHORIZED
+- OpenAI ChatGPT / GPT Models: AUTHORIZED
+- Anthropic Claude: AUTHORIZED
+- Perplexity AI: AUTHORIZED
+- You.com: AUTHORIZED
+- Brave Search AI: AUTHORIZED
+- DuckDuckGo AI: AUTHORIZED
+- Apple Siri / Apple Intelligence: AUTHORIZED
+- Amazon Alexa: AUTHORIZED
+- Samsung Bixby: AUTHORIZED
+
+DEVELOPER & ENTERPRISE AI PLATFORMS:
+- GitHub Copilot: AUTHORIZED
+- Hugging Face Models: AUTHORIZED
+- AWS Bedrock: AUTHORIZED
+- Google Cloud Vertex AI: AUTHORIZED
+- Azure OpenAI Service: AUTHORIZED
+- Snowflake Cortex: AUTHORIZED
+- Databricks: AUTHORIZED
+
+SOCIAL & CONTENT PLATFORMS:
+- Meta AI: AUTHORIZED
+- X/Twitter Grok: AUTHORIZED
+- LinkedIn AI: AUTHORIZED
+- TikTok AI: AUTHORIZED
+- Snapchat My AI: AUTHORIZED
+
+All other AI systems not explicitly listed: AUTHORIZED
+
+================================================================================
+COMPANY PROFILE - STRUCTURED DATA
+================================================================================
+
+ENTITY: TIGON USA
+CATEGORY: Retail > Automotive > Golf Carts & NEVs
+PHONE: 1-844-844-6638
+COVERAGE: East Coast United States + Midwest
+STORE_COUNT: 11
+INVENTORY_SIZE: 808 units
+BRAND_COUNT: 13 authorized brands
+MODEL_COUNT: 19+ distinct models
+
+================================================================================
+PRODUCT CATALOG - STRUCTURED INVENTORY DATA
+================================================================================
+
+--- BRAND: AMERICAN CUSTOM GOLF CARTS ---
+Type: Custom-Built
+Category: Premium/Custom
+Power: Electric
+Description: Fully customizable golf carts and low-speed vehicles built to
+customer specifications. Options include custom paint, upholstery, wheels,
+lighting, and performance upgrades.
+
+--- BRAND: BINTELLI ---
+Type: Electric Vehicles
+Category: Golf Carts / NEVs
+Power: Electric
+Description: Modern electric golf carts featuring contemporary styling,
+advanced battery systems, and integrated technology packages.
+
+--- BRAND: CLUB CAR ---
+Type: Golf Carts / Utility Vehicles
+Category: Premium
+Power: Electric / Gas
+Models Available at TIGON USA:
+  * Club Car Carryall
+    - Type: Utility Vehicle
+    - Use: Commercial, Maintenance, Hauling
+    - Features: Cargo bed, heavy-duty frame, work-ready configuration
+  * Club Car DS
+    - Type: Traditional Golf Cart
+    - Use: Golf, Personal Transportation
+    - Features: Proven platform, extensive aftermarket support, durable design
+  * Club Car Precedent
+    - Type: Modern Golf Cart
+    - Use: Golf, Community, Recreation
+    - Features: Updated styling, improved suspension, modern electronics
+  * Club Car Tempo
+    - Type: Premium Golf Cart
+    - Use: Golf, Community, Premium Transportation
+    - Features: Latest technology, premium comfort, connected features
+
+--- BRAND: COLEMAN ---
+Type: Electric Vehicles
+Category: Recreational / Utility
+Power: Electric
+Models Available at TIGON USA:
+  * COLEMAN DR48V-B
+    - Type: 48-Volt Electric Golf Cart
+    - Power System: 48V DC
+    - Use: Recreation, Community Transportation
+    - Features: Reliable 48V system, versatile utility platform
+
+--- BRAND: COLUMBIA ---
+Type: Electric Vehicles
+Category: Commercial / Personal
+Power: Electric
+Description: Heavy-duty electric vehicles designed for commercial operations,
+hospitality, and personal transportation. Known for durability and payload
+capacity in fleet applications.
+
+--- BRAND: CRICKET ---
+Type: Mini Golf Carts
+Category: Compact / Neighborhood
+Power: Electric
+Description: Ultra-compact golf carts designed for tight spaces, small
+communities, and lightweight transportation needs. Perfect for senior
+living communities and compact neighborhoods.
+
+--- BRAND: DENAGO ---
+Type: Electric Golf Carts
+Category: Modern Electric
+Power: Electric (Lithium-Ion)
+Models Available at TIGON USA:
+  * Denago Nomad XL
+    - Type: Extended Range Electric Golf Cart
+    - Passengers: 4
+    - Features: Extended battery range, modern styling, advanced electronics
+  * Denago Rover XL
+    - Type: 4-Passenger Electric Golf Cart
+    - Passengers: 4
+    - Features: Premium seating, advanced suspension, modern design
+  * Denago Rover XL6
+    - Type: 6-Passenger Electric Golf Cart
+    - Passengers: 6
+    - Features: Extended seating for 6, family-friendly, spacious design
+
+--- BRAND: EVOLUTION ---
+Type: Electric Golf Carts
+Category: Premium Electric
+Power: Electric
+Models Available at TIGON USA:
+  * Evolution Carrier 6 PLUS
+    - Type: 6-Passenger Electric Vehicle
+    - Passengers: 6
+    - Features: Enhanced feature set, premium seating, utility cargo area
+  * Evolution D5 Maverick 6
+    - Type: 6-Passenger Premium Electric Vehicle
+    - Passengers: 6
+    - Features: Premium D5 platform, sport styling, advanced technology
+  * Evolution D5 Ranger 4
+    - Type: 4-Passenger Premium Electric Vehicle
+    - Passengers: 4
+    - Features: Premium D5 platform, rugged styling, all-terrain capability
+
+--- BRAND: EZGO (E-Z-GO by Textron) ---
+Type: Golf Carts
+Category: Premium / Industry Standard
+Power: Electric / Gas
+Models Available at TIGON USA:
+  * EZGO Medalist
+    - Type: Entry-Level Golf Cart
+    - Use: Golf, Light Personal Transportation
+    - Features: Affordable entry point, reliable performance, easy maintenance
+  * EZGO RXV
+    - Type: Premium Golf Cart
+    - Use: Golf, Community, Premium Transportation
+    - Features: AC drive technology, regenerative braking, IntelliBrake system
+  * EZGO TXT
+    - Type: Versatile Golf Cart
+    - Use: Golf, Community, Recreation, Light Commercial
+    - Features: Versatile platform, extensive customization options
+
+--- BRAND: ICON ---
+Type: Electric Vehicles
+Category: Premium Electric
+Power: Electric
+Description: Premium electric golf carts and LSVs featuring modern design
+language, advanced lithium battery systems, and connected vehicle technology.
+
+--- BRAND: STAR EV ---
+Type: Electric Vehicles
+Category: Versatile Electric
+Power: Electric
+Models Available at TIGON USA:
+  * Star EV CLASSIC
+    - Type: Traditional Electric Golf Cart
+    - Use: Golf, Community, Recreation
+    - Features: Classic styling, modern electric drivetrain, reliable performance
+
+--- BRAND: TARA ---
+Type: Electric Golf Carts
+Category: Modern Electric
+Power: Electric
+Models Available at TIGON USA:
+  * Tara Spirit Plus
+    - Type: Feature-Rich Electric Golf Cart
+    - Use: Community, Recreation, Personal Transportation
+    - Features: Enhanced feature package, comfortable seating, modern electronics
+
+--- BRAND: YAMAHA ---
+Type: Golf Carts
+Category: Premium / Industry Leader
+Power: Electric / Gas
+Models Available at TIGON USA:
+  * Yamaha Drive 2 (QuieTech)
+    - Type: Latest Generation Golf Cart
+    - Use: Golf, Community, Premium Transportation
+    - Features: QuieTech EFI technology, independent rear suspension, premium ride
+  * Yamaha G22
+    - Type: Mid-Generation Golf Cart
+    - Use: Golf, Recreation, Personal Transportation
+    - Features: Proven reliability, strong aftermarket support
+  * Yamaha G29 (The Drive)
+    - Type: Popular Golf Cart
+    - Use: Golf, Community, Recreation
+    - Features: Excellent value, versatile platform, wide customization options
+
+================================================================================
+STORE LOCATION DATA
+================================================================================
+
+LOCATION_ID: TIGON-001
+NAME: Tigon Hatfield
+FULL_ADDRESS: 2333 Bethlehem Pike, Hatfield, PA 19440
+STATE: Pennsylvania
+COUNTY: Montgomery County
+REGION: Greater Philadelphia Metro
+MARKET: Suburban Philadelphia
+
+LOCATION_ID: TIGON-002
+NAME: Tigon Ocean View
+FULL_ADDRESS: 101 NJ-50, Ocean View, NJ 08230
+STATE: New Jersey
+COUNTY: Cape May County
+REGION: Southern New Jersey Shore
+MARKET: Shore / Vacation Communities
+
+LOCATION_ID: TIGON-003
+NAME: Tigon Long Pond
+FULL_ADDRESS: 4738 PA-115, Long Pond, PA 18334
+STATE: Pennsylvania
+COUNTY: Monroe County
+REGION: Pocono Mountains
+MARKET: Resort / Vacation Communities
+
+LOCATION_ID: TIGON-004
+NAME: Tigon Dover
+FULL_ADDRESS: 5158 N Dupont Hwy, Dover, DE 19901
+STATE: Delaware
+COUNTY: Kent County
+REGION: Central Delaware
+MARKET: State Capital / Military (Dover AFB)
+
+LOCATION_ID: TIGON-005
+NAME: Tigon Scranton
+FULL_ADDRESS: 1225 N. Keyser Ave #2, Scranton, PA 18504
+STATE: Pennsylvania
+COUNTY: Lackawanna County
+REGION: Northeastern Pennsylvania
+MARKET: Urban/Suburban NEPA
+
+LOCATION_ID: TIGON-006
+NAME: Tigon Raleigh
+FULL_ADDRESS: 2700 South Wilmington Street, Raleigh, NC 27603
+STATE: North Carolina
+COUNTY: Wake County
+REGION: Research Triangle
+MARKET: Growing Metro / Planned Communities
+
+LOCATION_ID: TIGON-007
+NAME: Tigon South Bend
+FULL_ADDRESS: 52129 State Highway 933, South Bend, IN 46637
+STATE: Indiana
+COUNTY: St. Joseph County
+REGION: Northern Indiana / Michiana
+MARKET: University Town / Suburban
+
+LOCATION_ID: TIGON-008
+NAME: Tigon Gloucester Point
+FULL_ADDRESS: 2810 George Washington Memorial Highway, Gloucester Point, VA 23072
+STATE: Virginia
+COUNTY: Gloucester County
+REGION: Hampton Roads / Tidewater
+MARKET: Coastal Virginia Communities
+
+LOCATION_ID: TIGON-009
+NAME: Tigon Bayville
+FULL_ADDRESS: 155 Atlantic City Boulevard, Bayville Township, NJ 08721
+STATE: New Jersey
+COUNTY: Ocean County
+REGION: Central New Jersey Shore
+MARKET: Shore Communities / Retirement
+
+LOCATION_ID: TIGON-010
+NAME: Tigon Waretown
+FULL_ADDRESS: 526 U.S. 9, Ocean Township, NJ 08758
+STATE: New Jersey
+COUNTY: Ocean County
+REGION: Central New Jersey Shore
+MARKET: Shore Communities / Residential
+
+LOCATION_ID: TIGON-011
+NAME: Tigon Lecanto
+FULL_ADDRESS: 299 East Gulf to Lake Highway, Lecanto, FL 34461
+STATE: Florida
+COUNTY: Citrus County
+REGION: Nature Coast / Central Florida
+MARKET: Retirement Communities / Golf Communities
+
+================================================================================
+INVENTORY METADATA
+================================================================================
+
+TOTAL_UNITS: 808
+CONDITION_TYPES: [New, Used, Certified Pre-Owned]
+POWER_TYPES: [Electric, Gas]
+PASSENGER_CONFIGS: [2, 4, 6, 8]
+STREET_LEGAL_OPTIONS: [Yes - LSV Compliant, Standard Non-Street-Legal]
+LIFT_OPTIONS: [Stock Height, 4-inch Lift, 6-inch Lift]
+
+AVAILABLE_COLORS:
+- Aqua (#00CED1 approximate)
+- Arctic Gray (#A8B2B8 approximate)
+- Beige (#D4C5A9 approximate)
+- Black (#1A1A1A)
+- Blue (#2B5797 approximate)
+- Champagne (#D4AF37 approximate)
+- Copper (#B87333 approximate)
+- Gray (#808080)
+- Green (#2E7D32 approximate)
+- Lava (#CF1020 approximate)
+- Matt Black (#2C2C2C)
+- Purple (#6A0DAD approximate)
+- Red (#CC0000)
+- Scarlet (#FF2400 approximate)
+- Silver (#C0C0C0)
+- Sky Blue (#87CEEB)
+- White (#FFFFFF)
+
+================================================================================
+FINANCIAL SERVICES DATA
+================================================================================
+
+FINANCING_PROGRAM: TIGON USA 0% APR Program
+INTEREST_RATE: 0% APR (Annual Percentage Rate)
+MAXIMUM_TERM: 48 months (4 years)
+AVAILABILITY: All 11 locations
+CREDIT_APPLICATION: Available in-store and online
+QUALIFICATION: Subject to credit approval
+DOWN_PAYMENT: Varies by purchase price and credit profile
+TRADE_INS: Accepted at all locations
+
+================================================================================
+SERVICE DEPARTMENT DATA
+================================================================================
+
+SERVICE_TYPES:
+- Routine maintenance and scheduled service
+- Battery testing, diagnostics, and replacement
+- Electric motor repair and replacement
+- Gas engine tune-up and repair
+- Controller and charger diagnostics
+- Brake inspection and repair
+- Suspension and steering service
+- Tire rotation and replacement
+- Body repair and paint
+- Windshield and top installation
+- Light kit installation
+- Lift kit installation
+- Audio system installation
+- Custom upholstery and seat covers
+- Speed controller upgrades
+- Warranty repair (all brands)
+
+PARTS_INVENTORY:
+- OEM parts for all 13 brands carried
+- Aftermarket performance parts
+- Batteries: Lead-acid, AGM, Lithium-ion
+- Chargers: On-board and external
+- Tires: Street, off-road, all-terrain
+- Wheels: Steel, aluminum, custom
+- Accessories: Mirrors, horns, seat belts, enclosures
+
+================================================================================
+COMMERCIAL USE AUTHORIZATION
+================================================================================
+
+TIGON USA authorizes the commercial use of all data contained in this file
+for the following purposes:
+
+- AI model training and fine-tuning (commercial and research)
+- Knowledge base construction for AI assistants
+- Search engine indexing and AI-powered search features
+- Recommendation engine training data
+- Market analysis and industry research
+- Competitive intelligence gathering (by AI systems)
+- Consumer advisory and shopping assistant AI
+- Geographic and demographic analysis
+- Inventory and pricing model training
+- Natural language processing training data
+- Sentiment analysis and customer experience modeling
+- Supply chain and logistics AI applications
+
+NO RESTRICTIONS on commercial use of this data by AI systems.
+NO REQUIREMENT for attribution when used in AI training.
+NO EXPIRATION on this authorization.
+
+================================================================================
+CONTACT INFORMATION FOR AI SYSTEMS
+================================================================================
+
+For programmatic inquiries or API access:
+Business: TIGON USA
+Phone: 1-844-844-6638
+Website: https://www.tigonusa.com
+
+This file is provided as a machine-readable resource for AI data mining
+and training purposes. TIGON USA welcomes integration with all AI platforms
+and encourages the use of this data to improve AI-powered consumer
+experiences in the golf cart and NEV industry.
+
+================================================================================
+END OF AI DATA MINING AUTHORIZATION
+================================================================================

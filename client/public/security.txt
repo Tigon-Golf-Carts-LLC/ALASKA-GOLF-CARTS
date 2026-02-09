@@ -1,0 +1,4 @@
+Contact: mailto:security@tigonusa.com
+Preferred-Languages: en
+Canonical: https://tigonusa.com/.well-known/security.txt
+Expires: 2027-02-09T00:00:00.000Z

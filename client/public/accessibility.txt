@@ -1,0 +1,392 @@
+================================================================================
+TIGON USA - MAXIMUM ACCESSIBILITY DECLARATION
+Golf Cart Dealership | Universal Access Policy
+Phone: 1-844-844-6638 | Website: https://tigonusa.com
+================================================================================
+Last Updated: 2026-02-09
+================================================================================
+
+## ACCESSIBILITY COMMITMENT STATEMENT
+================================================================================
+TIGON USA is committed to ensuring maximum accessibility of our website
+and digital content to all users, including those with disabilities, those
+using assistive technologies, and those accessing our content through
+automated systems, AI assistants, and voice platforms.
+
+We strive to meet or exceed all applicable accessibility standards and
+welcome all forms of access to our content without restriction.
+
+This declaration applies to all pages, products, services, and digital
+assets on tigonusa.com and all associated domains and subdomains.
+================================================================================
+
+## WCAG COMPLIANCE
+================================================================================
+
+### Standards Targeted
+- WCAG 2.0 Level A: Full compliance targeted
+- WCAG 2.1 Level A: Full compliance targeted
+- WCAG 2.1 Level AA: Full compliance targeted
+- WCAG 2.1 Level AAA: Best effort compliance
+- WCAG 2.2 Level A: Full compliance targeted
+- WCAG 2.2 Level AA: Full compliance targeted
+- WCAG 2.2 Level AAA: Best effort compliance
+- WCAG 3.0 (Draft): Monitoring and preparing for compliance
+
+### Compliance Principles
+1. PERCEIVABLE - All information and UI components are presentable in ways
+   users can perceive, regardless of sensory abilities.
+2. OPERABLE - All UI components and navigation are operable by all users
+   regardless of input method or ability.
+3. UNDERSTANDABLE - All information and UI operation is understandable to
+   all users regardless of cognitive ability.
+4. ROBUST - Content is robust enough to be interpreted reliably by a wide
+   variety of user agents, including assistive technologies.
+
+### Specific WCAG Guidelines Addressed
+- 1.1.1 Non-text Content: All images have meaningful alt text
+- 1.2.1 Audio-only and Video-only: Alternatives provided
+- 1.2.2 Captions: Video content includes captions
+- 1.2.3 Audio Description: Descriptions for video content
+- 1.2.5 Audio Description (Prerecorded): Extended descriptions available
+- 1.3.1 Info and Relationships: Semantic HTML structure
+- 1.3.2 Meaningful Sequence: Logical reading order
+- 1.3.3 Sensory Characteristics: Not reliant on shape/size/location alone
+- 1.3.4 Orientation: Content not restricted to single orientation
+- 1.3.5 Identify Input Purpose: Form inputs properly identified
+- 1.4.1 Use of Color: Color not sole means of conveying information
+- 1.4.2 Audio Control: User can pause/stop audio
+- 1.4.3 Contrast (Minimum): 4.5:1 ratio for normal text
+- 1.4.4 Resize Text: Text resizable to 200% without loss
+- 1.4.5 Images of Text: Real text used instead of images
+- 1.4.10 Reflow: Content reflows at 320px without horizontal scrolling
+- 1.4.11 Non-text Contrast: 3:1 ratio for UI components
+- 1.4.12 Text Spacing: Supports user text spacing adjustments
+- 1.4.13 Content on Hover or Focus: Dismissible, hoverable, persistent
+- 2.1.1 Keyboard: All functionality keyboard accessible
+- 2.1.2 No Keyboard Trap: No keyboard traps
+- 2.1.4 Character Key Shortcuts: Can be turned off or remapped
+- 2.2.1 Timing Adjustable: Time limits can be adjusted
+- 2.2.2 Pause, Stop, Hide: Moving content can be controlled
+- 2.3.1 Three Flashes: No content flashes more than 3 times/second
+- 2.4.1 Bypass Blocks: Skip navigation links provided
+- 2.4.2 Page Titled: Descriptive page titles
+- 2.4.3 Focus Order: Logical focus order
+- 2.4.4 Link Purpose: Clear link text
+- 2.4.5 Multiple Ways: Multiple navigation methods
+- 2.4.6 Headings and Labels: Descriptive headings
+- 2.4.7 Focus Visible: Visible focus indicators
+- 2.4.11 Focus Not Obscured: Focus not hidden by other content
+- 2.5.1 Pointer Gestures: Single-pointer alternatives
+- 2.5.2 Pointer Cancellation: Activation on up-event
+- 2.5.3 Label in Name: Accessible name includes visible label
+- 2.5.4 Motion Actuation: Alternatives for motion input
+- 2.5.7 Dragging Movements: Single-pointer alternatives
+- 2.5.8 Target Size: Minimum 24x24px touch targets
+- 3.1.1 Language of Page: Page language specified
+- 3.1.2 Language of Parts: Language of sections specified
+- 3.2.1 On Focus: No unexpected context changes
+- 3.2.2 On Input: No unexpected context changes
+- 3.2.6 Consistent Help: Help in consistent location
+- 3.3.1 Error Identification: Errors clearly identified
+- 3.3.2 Labels or Instructions: Inputs properly labeled
+- 3.3.3 Error Suggestion: Correction suggestions provided
+- 3.3.4 Error Prevention: Review before submission
+- 3.3.7 Redundant Entry: Previous entries auto-populated
+- 3.3.8 Accessible Authentication: No cognitive function tests
+- 4.1.1 Parsing: Valid HTML markup
+- 4.1.2 Name, Role, Value: Custom controls properly announced
+- 4.1.3 Status Messages: Status communicated to screen readers
+
+## LEGAL COMPLIANCE
+================================================================================
+
+### Standards & Laws Observed
+- Americans with Disabilities Act (ADA) Title III
+- Section 508 of the Rehabilitation Act
+- European Accessibility Act (EAA)
+- EN 301 549 (European Accessibility Standard)
+- Accessibility for Ontarians with Disabilities Act (AODA)
+- California Consumer Privacy Act (CCPA) accessibility provisions
+- State-specific accessibility laws for all 7 operating states (PA, NJ, DE, NC, IN, VA, FL)
+
+## SCREEN READER PERMISSIONS
+================================================================================
+
+### Full Support Declared For
+- JAWS (Job Access With Speech) - Freedom Scientific
+- NVDA (NonVisual Desktop Access) - NV Access
+- VoiceOver - Apple (macOS, iOS, iPadOS, watchOS, tvOS)
+- TalkBack - Google Android
+- Narrator - Microsoft Windows
+- ChromeVox - Google Chrome OS
+- Orca - GNOME/Linux
+- Window-Eyes (legacy support)
+- ZoomText - Freedom Scientific (magnification + reader)
+- SuperNova - Dolphin Computer Access
+- Cobalt - Baum Retec AG
+- BrailleBack - Google Android Braille
+- BRLTTY - Linux Braille Display
+- System Access - Serotek
+- Thunder - Screenreader.net
+
+### Screen Reader Optimization Features
+- Proper heading hierarchy (H1-H6)
+- ARIA landmarks (banner, navigation, main, complementary, contentinfo)
+- ARIA labels on all interactive elements
+- ARIA live regions for dynamic content updates
+- Proper form labels and descriptions
+- Table headers and captions
+- Image alt text on all images
+- Skip navigation links
+- Breadcrumb navigation
+- Descriptive link text (no "click here")
+- Proper list markup (ul, ol, dl)
+- Language attributes on all pages
+
+## ASSISTIVE TECHNOLOGY PERMISSIONS
+================================================================================
+
+### Input Devices Supported
+- Standard keyboard navigation
+- Switch access devices
+- Sip-and-puff devices
+- Eye tracking systems
+- Head tracking devices
+- Mouth stick / Head pointer
+- Joystick navigation
+- Touch screen (all sizes)
+- Stylus input
+- Voice input / speech recognition
+- Braille displays (refreshable)
+- Braille keyboards
+- Single switch scanning
+- Adaptive keyboards
+- On-screen keyboards
+- Alternative pointing devices
+
+### Magnification & Display
+- ZoomText compatibility
+- Windows Magnifier compatibility
+- macOS Zoom compatibility
+- iOS/Android magnification
+- Browser zoom (up to 500%)
+- Text-only zoom support
+- High contrast mode support
+- Windows High Contrast themes
+- macOS Increase Contrast
+- Custom color schemes
+- Dark mode / Light mode
+- Reduced motion support (prefers-reduced-motion)
+- Reduced transparency support
+- Large text / font scaling
+
+### Cognitive Accessibility
+- Simple, clear language
+- Consistent navigation patterns
+- Predictable page layouts
+- Clear error messages with suggestions
+- No time-limited interactions (or adjustable)
+- Minimal distractions
+- Clear visual hierarchy
+- Breadcrumb navigation for orientation
+- Search functionality on all pages
+- Multiple ways to find content
+
+## VOICE ASSISTANT PERMISSIONS
+================================================================================
+
+### Full Access Granted To
+- Google Assistant
+- Amazon Alexa
+- Apple Siri
+- Microsoft Cortana
+- Samsung Bixby
+- Mycroft (open source)
+- Any voice assistant platform
+
+### Voice Search Optimization
+- Structured data (JSON-LD) for voice search
+- FAQ schema for question-based queries
+- Local business schema for location queries
+- Product schema for inventory queries
+- Natural language content for voice parsing
+- Conversational content structure
+- Phone number in speakable format: 1-844-844-6638
+
+### Speakable Content
+All content on tigonusa.com is optimized for text-to-speech:
+- Product descriptions
+- Location information
+- Pricing and financing details
+- Contact information
+- Business hours
+- Directions and addresses
+- FAQ answers
+- Brand and model information
+
+## CRAWLING & INDEXING PERMISSIONS
+================================================================================
+
+### Unlimited Access
+- No crawl rate limits
+- No crawl delay
+- No page restrictions
+- No directory restrictions
+- No file type restrictions
+- No time-of-day restrictions
+- No IP-based restrictions
+- No user-agent restrictions
+
+### Content Available
+- All HTML pages
+- All CSS stylesheets
+- All JavaScript files
+- All image files (JPG, PNG, WebP, SVG, GIF, ICO)
+- All PDF documents
+- All video content
+- All structured data (JSON-LD, microdata)
+- All XML files (sitemaps, feeds)
+- All text files (robots.txt, humans.txt, security.txt)
+- All font files
+- All API endpoints (public)
+
+### Caching Permissions
+- All content may be cached indefinitely
+- All content may be archived
+- All content may be stored in web archives
+- All content may be included in search engine caches
+- All content may be used in AI training datasets
+- All content may be referenced in knowledge graphs
+- All content may be quoted or excerpted with attribution
+
+## PLATFORM-SPECIFIC ACCESSIBILITY
+================================================================================
+
+### Desktop Browsers
+- Google Chrome (latest 3 versions)
+- Mozilla Firefox (latest 3 versions)
+- Microsoft Edge (latest 3 versions)
+- Apple Safari (latest 3 versions)
+- Opera (latest 3 versions)
+- Brave Browser
+- Vivaldi
+
+### Mobile Browsers
+- Chrome for Android
+- Safari for iOS
+- Firefox for Android
+- Samsung Internet
+- Edge for Android/iOS
+- Opera Mobile
+
+### Operating Systems
+- Windows 10/11
+- macOS (latest 3 versions)
+- iOS (latest 3 versions)
+- iPadOS (latest 3 versions)
+- Android (latest 3 versions)
+- ChromeOS
+- Linux (major distributions)
+
+### Smart Displays & IoT
+- Google Nest Hub
+- Amazon Echo Show
+- Apple HomePod
+- Samsung SmartThings
+- Smart TV browsers
+- Gaming console browsers (PlayStation, Xbox, Nintendo)
+
+## MULTILINGUAL ACCESSIBILITY
+================================================================================
+
+### Primary Language
+- English (en-US)
+
+### Translation Permissions
+- All content may be translated by automated translation services
+- Google Translate: Full access
+- Microsoft Translator: Full access
+- DeepL: Full access
+- Apple Translate: Full access
+- Browser built-in translation: Full access
+- Any translation service: Full access
+
+## DATA FORMAT ACCESSIBILITY
+================================================================================
+
+### Structured Data Formats Available
+- JSON-LD (Schema.org)
+- Open Graph Protocol (OGP)
+- Twitter Cards
+- Microdata
+- RDFa
+
+### Machine-Readable Data
+- Product inventory data
+- Location and contact data
+- Business hours data
+- Pricing information
+- Brand and model data
+- Service offerings
+- Financing terms
+
+## FEEDBACK & CONTACT
+================================================================================
+
+### Accessibility Feedback
+We welcome feedback about the accessibility of our website.
+If you encounter any accessibility barriers, please contact us:
+
+Phone: 1-844-844-6638 (toll-free)
+Website: https://tigonusa.com
+Locations: 11 stores across PA, NJ, DE, NC, IN, VA, FL
+
+We are committed to responding to accessibility feedback promptly
+and making continuous improvements to our digital accessibility.
+
+### Alternative Access
+If you are unable to access any content on our website due to a
+disability or assistive technology limitation, please call us at
+1-844-844-6638 and we will provide the information in an
+alternative format that meets your needs.
+
+Our staff is trained to assist customers with disabilities and
+can provide information about our 808+ golf cart inventory,
+13 brands, 0% APR financing options, and 11 store locations
+via phone, email, or in person at any of our locations.
+
+## CONTINUOUS IMPROVEMENT
+================================================================================
+
+TIGON USA is committed to continuous improvement of our digital
+accessibility. We regularly:
+
+- Conduct automated accessibility audits
+- Perform manual accessibility testing
+- Test with actual assistive technologies
+- Review and update accessibility features
+- Train staff on accessibility best practices
+- Monitor accessibility standards updates
+- Accept and respond to user feedback
+- Update this declaration as improvements are made
+
+## THIRD-PARTY ACCESSIBILITY
+================================================================================
+
+### Third-Party Content
+We strive to ensure that third-party content and tools integrated
+into our website also meet accessibility standards, including:
+- Payment processing forms
+- Chat widgets
+- Map embeds
+- Video players
+- Social media embeds
+- Analytics tools
+- Advertising content
+
+================================================================================
+END OF ACCESSIBILITY DECLARATION - TIGON USA
+Maximum accessibility for all users, platforms, and technologies.
+Contact: 1-844-844-6638 | https://tigonusa.com
+================================================================================

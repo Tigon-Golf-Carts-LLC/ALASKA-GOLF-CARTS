@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>TIGON USA</ShortName>
+  <Description>Search TIGON USA golf cart inventory</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <Url type="text/html" template="https://tigonusa.com/inventory?search={searchTerms}"/>
+  <Image height="16" width="16" type="image/png">/favicon.png</Image>
+  <LongName>TIGON USA Golf Cart Inventory Search</LongName>
+  <Contact>info@tigonusa.com</Contact>
+  <Tags>golf carts electric vehicles neighborhood vehicles TIGON USA</Tags>
+  <Language>en-us</Language>
+</OpenSearchDescription>

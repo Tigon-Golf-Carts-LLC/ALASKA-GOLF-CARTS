@@ -1,0 +1,27 @@
+{
+  "name": "TIGON USA - Golf Cart Dealership",
+  "short_name": "TIGON USA",
+  "description": "TIGON USA - Premier golf cart dealership with 808+ golf carts in inventory across 11 locations in PA, NJ, DE, NC, IN, VA, and FL. Call 1-844-844-6638.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ae1832",
+  "background_color": "#ffffff",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["shopping", "automotive"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
