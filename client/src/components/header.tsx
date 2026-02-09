@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { Phone, Menu, X, Sun, Moon } from "lucide-react";
+import { Phone, Menu, X, Sun, Moon, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/theme-provider";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
@@ -24,9 +24,9 @@ export function Header() {
         <div className="flex h-16 items-center justify-between gap-4">
           <Link href="/" data-testid="link-home">
             <div className="flex items-center gap-2">
-              <img src="/logo-icon.ico" alt="TIGON USA" className="h-7 w-7" />
+              <Tag className="h-6 w-6 text-primary" />
               <span className="text-xl font-bold tracking-tight">
-                TIGON <span className="text-primary">USA</span>
+                Discounted <span className="text-primary">Golf Carts</span>
               </span>
             </div>
           </Link>

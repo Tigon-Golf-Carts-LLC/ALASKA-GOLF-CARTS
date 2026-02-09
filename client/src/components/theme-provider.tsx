@@ -19,7 +19,7 @@ export function useTheme() {
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("tigon-theme") as Theme;
+      const saved = localStorage.getItem("dgc-theme") as Theme;
       return saved || "dark";
     }
     return "dark";
@@ -32,7 +32,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     } else {
       root.classList.remove("dark");
     }
-    localStorage.setItem("tigon-theme", theme);
+    localStorage.setItem("dgc-theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {

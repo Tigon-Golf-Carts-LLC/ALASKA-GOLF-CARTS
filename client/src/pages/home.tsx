@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
-import { Phone, ChevronRight, Zap, Shield, MapPin, Truck, Award, Headphones } from "lucide-react";
+import { Phone, ChevronRight, Tag, Shield, MapPin, Truck, Award, Headphones, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -36,27 +36,27 @@ export default function Home() {
     <div>
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroBg} alt="TIGON USA Golf Cart Showroom" className="w-full h-full object-cover" />
+          <img src={heroBg} alt="Discounted Golf Carts Showroom" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
         <div className="mx-auto max-w-7xl px-4 py-16 sm:py-24 relative">
           <div className="max-w-3xl">
             <Badge variant="secondary" className="mb-6" data-testid="badge-hero-tag">
-              <Zap className="h-3 w-3 mr-1" />
-              Premium Golf Cart Dealership
+              <Tag className="h-3 w-3 mr-1" />
+              Discounted Golf Cart Inventory
             </Badge>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 text-white" data-testid="text-hero-title">
-              Find Your Perfect
-              <span className="text-red-400 block mt-1">Golf Cart</span>
+              Discounted Golf Carts
+              <span className="text-green-400 block mt-1">Updated Daily</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/80 max-w-2xl mb-8 leading-relaxed" data-testid="text-hero-description">
-              Browse our extensive inventory of new and used golf carts from top brands.
-              Street legal, electric, gas, and more — available at locations across the East Coast.
+              Browse our discounted inventory of new and used golf carts from top brands.
+              Street legal, electric, gas, and more — updated every day with the best deals.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link href="/inventory">
                 <Button size="lg" data-testid="button-browse-inventory">
-                  Browse Inventory
+                  Browse Discounted Inventory
                   <ChevronRight className="h-4 w-4 ml-1" />
                 </Button>
               </Link>
@@ -75,10 +75,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { icon: Truck, label: "Nationwide Delivery", desc: "We ship across the US" },
+              { icon: RefreshCw, label: "Updated Daily", desc: "Inventory refreshed at 10:55 PM EST" },
               { icon: Shield, label: "Warranty Included", desc: "Coverage on all carts" },
               { icon: Award, label: "Top Brands", desc: "Denago, Evolution & more" },
-              { icon: Headphones, label: "Expert Support", desc: "Call us anytime" },
+              { icon: Truck, label: "Nationwide Delivery", desc: "We ship across the US" },
             ].map((item) => (
               <div key={item.label} className="text-center space-y-2">
                 <div className="inline-flex items-center justify-center w-10 h-10 rounded-md bg-primary/10">
@@ -98,7 +98,7 @@ export default function Home() {
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h2 className="text-2xl font-bold">Shop by Brand</h2>
-                <p className="text-sm text-muted-foreground mt-1">Browse golf carts from top manufacturers</p>
+                <p className="text-sm text-muted-foreground mt-1">Browse discounted golf carts from top manufacturers</p>
               </div>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -118,11 +118,11 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h2 className="text-2xl font-bold">Latest Inventory</h2>
+              <h2 className="text-2xl font-bold">Latest Discounted Inventory</h2>
               <p className="text-sm text-muted-foreground mt-1">
                 {featured?.totalCarts
-                  ? `${featured.totalCarts.toLocaleString()} carts available`
-                  : "Browse our selection"}
+                  ? `${featured.totalCarts.toLocaleString()} discounted carts available`
+                  : "Browse our discounted selection"}
               </p>
             </div>
             <Link href="/inventory">
@@ -175,10 +175,10 @@ export default function Home() {
 
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="mx-auto max-w-7xl px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Find Your Golf Cart?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Find Your Discounted Golf Cart?</h2>
           <p className="text-primary-foreground/80 max-w-xl mx-auto mb-8">
-            Our experts are standing by to help you find the perfect cart. Call now to learn about
-            our current inventory, pricing, and financing options.
+            Our experts are standing by to help you find the perfect cart at the best price. Call now to learn about
+            our current discounted inventory, pricing, and financing options.
           </p>
           <a href={PHONE_TEL}>
             <Button variant="secondary" size="lg" data-testid="button-cta-call">

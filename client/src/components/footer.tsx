@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Tag } from "lucide-react";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 import type { Store } from "@shared/schema";
 import { useQuery } from "@tanstack/react-query";
@@ -15,12 +15,12 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="/logo-icon.ico" alt="TIGON USA" className="h-6 w-6" />
-              <span className="text-lg font-bold">TIGON <span className="text-primary">USA</span></span>
+              <Tag className="h-5 w-5 text-primary" />
+              <span className="text-lg font-bold">Discounted <span className="text-primary">Golf Carts</span></span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Your premier destination for new and used golf carts. We carry top brands and offer
-              competitive pricing with locations across the East Coast.
+              Your destination for discounted new and used golf carts. We carry top brands at the best prices
+              with inventory updated daily and locations across the East Coast.
             </p>
           </div>
 
@@ -65,13 +65,13 @@ export function Footer() {
               {PHONE_NUMBER}
             </a>
             <p className="text-sm text-muted-foreground mt-3">
-              Call us today to learn more about our inventory and current specials.
+              Call us today to learn more about our discounted inventory and current specials.
             </p>
           </div>
         </div>
 
         <div className="border-t mt-8 pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} TIGON USA. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Discounted Golf Carts. All rights reserved. | discountedgolfcart.com</p>
         </div>
       </div>
     </footer>

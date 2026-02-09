@@ -7,24 +7,54 @@ const cache = new Map<string, { data: any; expiry: number }>();
 
 function getNextRefreshTime(): number {
   const now = new Date();
-  const estOffset = -5;
-  const utcHour = now.getUTCHours();
-  const utcMinute = now.getUTCMinutes();
-  const estHour = (utcHour + estOffset + 24) % 24;
+  const etFormatter = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: false,
+  });
+  const parts = etFormatter.formatToParts(now);
+  const etHour = parseInt(parts.find(p => p.type === "hour")?.value || "0");
+  const etMinute = parseInt(parts.find(p => p.type === "minute")?.value || "0");
 
-  const target = new Date(now);
-  const targetUTCHour = (23 - estOffset + 24) % 24;
-  target.setUTCHours(targetUTCHour, 0, 0, 0);
+  const etDateFormatter = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
+  const dateParts = etDateFormatter.formatToParts(now);
+  const etYear = parseInt(dateParts.find(p => p.type === "year")?.value || "2025");
+  const etMonth = parseInt(dateParts.find(p => p.type === "month")?.value || "1") - 1;
+  const etDay = parseInt(dateParts.find(p => p.type === "day")?.value || "1");
 
-  if (estHour > 23 || (estHour === 23 && utcMinute >= 0)) {
-    target.setUTCDate(target.getUTCDate() + 1);
+  const pastToday = etHour > 22 || (etHour === 22 && etMinute >= 55);
+
+  const dayToUse = pastToday ? etDay + 1 : etDay;
+
+  const targetET = new Date(
+    Date.UTC(etYear, etMonth, dayToUse, 22 + 5, 55, 0, 0)
+  );
+
+  const testFormatter = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: false,
+  });
+  const testParts = testFormatter.formatToParts(targetET);
+  const actualHour = parseInt(testParts.find(p => p.type === "hour")?.value || "0");
+
+  if (actualHour !== 22) {
+    const diff = (22 - actualHour) * 3600000;
+    targetET.setTime(targetET.getTime() + diff);
   }
 
-  if (target.getTime() <= now.getTime()) {
-    target.setUTCDate(target.getUTCDate() + 1);
+  if (targetET.getTime() <= now.getTime()) {
+    targetET.setTime(targetET.getTime() + 86400000);
   }
 
-  return target.getTime();
+  return targetET.getTime();
 }
 
 function getMsUntilRefresh(): number {
@@ -287,7 +317,7 @@ export async function registerRoutes(
   app.get("/sitemap.xml", async (req, res) => {
     try {
       const slugMap = await getSlugMap();
-      const baseUrl = req.protocol + "://" + req.get("host");
+      const baseUrl = "https://discountedgolfcart.com";
       const today = new Date().toISOString().split("T")[0];
       const slugs = Object.keys(slugMap.slugToId);
 
@@ -295,12 +325,12 @@ export async function registerRoutes(
       xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;
       xml += `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n`;
 
-      xml += `  <url>\n    <loc>${baseUrl}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
-      xml += `  <url>\n    <loc>${baseUrl}/inventory</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>\n`;
+      xml += `  <url>\n    <loc>${baseUrl}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
+      xml += `  <url>\n    <loc>${baseUrl}/inventory</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>\n`;
       xml += `  <url>\n    <loc>${baseUrl}/financing</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
 
       for (const slug of slugs) {
-        xml += `  <url>\n    <loc>${baseUrl}/golfcart/${slug}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.9</priority>\n  </url>\n`;
+        xml += `  <url>\n    <loc>${baseUrl}/golfcart/${slug}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>\n`;
       }
 
       xml += `</urlset>`;

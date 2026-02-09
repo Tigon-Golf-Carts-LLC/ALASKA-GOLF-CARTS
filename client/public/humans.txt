@@ -1,8 +1,8 @@
 /* TEAM */
 
-Company: TIGON USA
+Company: Discounted Golf Carts
 Contact: 1-844-844-6638
-Website: https://tigonusa.com
+Website: https://discountedgolfcart.com
 Locations: PA, NJ, DE, NC, IN, VA, FL
 Stores: 11 dealership locations
 

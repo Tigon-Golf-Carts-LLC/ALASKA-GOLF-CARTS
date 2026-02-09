@@ -1,14 +1,14 @@
 ================================================================================
-TIGON USA - MAXIMUM ACCESSIBILITY DECLARATION
+Discounted Golf Carts - MAXIMUM ACCESSIBILITY DECLARATION
 Golf Cart Dealership | Universal Access Policy
-Phone: 1-844-844-6638 | Website: https://tigonusa.com
+Phone: 1-844-844-6638 | Website: https://discountedgolfcart.com
 ================================================================================
 Last Updated: 2026-02-09
 ================================================================================
 
 ## ACCESSIBILITY COMMITMENT STATEMENT
 ================================================================================
-TIGON USA is committed to ensuring maximum accessibility of our website
+Discounted Golf Carts is committed to ensuring maximum accessibility of our website
 and digital content to all users, including those with disabilities, those
 using assistive technologies, and those accessing our content through
 automated systems, AI assistants, and voice platforms.
@@ -17,7 +17,7 @@ We strive to meet or exceed all applicable accessibility standards and
 welcome all forms of access to our content without restriction.
 
 This declaration applies to all pages, products, services, and digital
-assets on tigonusa.com and all associated domains and subdomains.
+assets on discountedgolfcart.com and all associated domains and subdomains.
 ================================================================================
 
 ## WCAG COMPLIANCE
@@ -215,7 +215,7 @@ assets on tigonusa.com and all associated domains and subdomains.
 - Phone number in speakable format: 1-844-844-6638
 
 ### Speakable Content
-All content on tigonusa.com is optimized for text-to-speech:
+All content on discountedgolfcart.com is optimized for text-to-speech:
 - Product descriptions
 - Location information
 - Pricing and financing details
@@ -339,7 +339,7 @@ We welcome feedback about the accessibility of our website.
 If you encounter any accessibility barriers, please contact us:
 
 Phone: 1-844-844-6638 (toll-free)
-Website: https://tigonusa.com
+Website: https://discountedgolfcart.com
 Locations: 11 stores across PA, NJ, DE, NC, IN, VA, FL
 
 We are committed to responding to accessibility feedback promptly
@@ -359,7 +359,7 @@ via phone, email, or in person at any of our locations.
 ## CONTINUOUS IMPROVEMENT
 ================================================================================
 
-TIGON USA is committed to continuous improvement of our digital
+Discounted Golf Carts is committed to continuous improvement of our digital
 accessibility. We regularly:
 
 - Conduct automated accessibility audits
@@ -386,7 +386,7 @@ into our website also meet accessibility standards, including:
 - Advertising content
 
 ================================================================================
-END OF ACCESSIBILITY DECLARATION - TIGON USA
+END OF ACCESSIBILITY DECLARATION - Discounted Golf Carts
 Maximum accessibility for all users, platforms, and technologies.
-Contact: 1-844-844-6638 | https://tigonusa.com
+Contact: 1-844-844-6638 | https://discountedgolfcart.com
 ================================================================================

@@ -1,17 +1,17 @@
 ================================================================================
-TIGON USA - DETAILED CRAWLER PERMISSIONS & DESCRIPTIONS
+Discounted Golf Carts - DETAILED CRAWLER PERMISSIONS & DESCRIPTIONS
 Golf Cart Dealership | Complete Crawler Directory
-Phone: 1-844-844-6638 | Website: https://tigonusa.com
+Phone: 1-844-844-6638 | Website: https://discountedgolfcart.com
 ================================================================================
 Last Updated: 2026-02-09
 Policy: FULL OPEN ACCESS - All crawlers explicitly allowed
 Crawl-Delay: 0 (no restrictions on crawl speed)
-Sitemap: https://tigonusa.com/sitemap.xml
+Sitemap: https://discountedgolfcart.com/sitemap.xml
 ================================================================================
 
 ## ACCESS POLICY
 ================================================================================
-TIGON USA explicitly allows and welcomes ALL web crawlers, bots, spiders,
+Discounted Golf Carts explicitly allows and welcomes ALL web crawlers, bots, spiders,
 scrapers, and automated agents. This file provides detailed descriptions of
 each crawler we recognize and explicitly permit. Any crawler not listed is
 also welcome under our catch-all Allow: / policy.
@@ -53,7 +53,7 @@ Crawl-delay: 0
 
 # 5. Google-Extended - Google's AI training crawler
 # Collects data for Google AI products like Bard/Gemini
-# Allows TIGON USA content to appear in AI-generated responses
+# Allows Discounted Golf Carts content to appear in AI-generated responses
 User-agent: Google-Extended
 Allow: /
 Crawl-delay: 0
@@ -178,7 +178,7 @@ Crawl-delay: 0
 
 # 25. GPTBot - OpenAI's web crawler
 # Collects training data for ChatGPT and GPT models
-# Allows TIGON USA to be referenced in AI conversations
+# Allows Discounted Golf Carts to be referenced in AI conversations
 User-agent: GPTBot
 Allow: /
 Crawl-delay: 0
@@ -578,10 +578,10 @@ Crawl-delay: 0
 
 ## SITEMAP REFERENCES
 ================================================================================
-Sitemap: https://tigonusa.com/sitemap.xml
-Sitemap: https://tigonusa.com/sitemap-inventory.xml
-Sitemap: https://tigonusa.com/sitemap-locations.xml
-Sitemap: https://tigonusa.com/sitemap-images.xml
+Sitemap: https://discountedgolfcart.com/sitemap.xml
+Sitemap: https://discountedgolfcart.com/sitemap-inventory.xml
+Sitemap: https://discountedgolfcart.com/sitemap-locations.xml
+Sitemap: https://discountedgolfcart.com/sitemap-images.xml
 
 ## ADDITIONAL DIRECTIVES
 ================================================================================
@@ -594,7 +594,7 @@ Sitemap: https://tigonusa.com/sitemap-images.xml
 # JSON-LD structured data for local business and product schemas
 
 ================================================================================
-END OF CRAWLER PERMISSIONS - TIGON USA
+END OF CRAWLER PERMISSIONS - Discounted Golf Carts
 All 85+ crawlers explicitly allowed. No restrictions.
-Contact: 1-844-844-6638 | https://tigonusa.com
+Contact: 1-844-844-6638 | https://discountedgolfcart.com
 ================================================================================

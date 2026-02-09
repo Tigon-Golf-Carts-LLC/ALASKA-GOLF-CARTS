@@ -102,10 +102,10 @@ export default function Inventory() {
     <div className="mx-auto max-w-7xl px-4 py-6">
       <div className="mb-6">
         <h1 className="text-2xl font-bold" data-testid="text-inventory-title">
-          Golf Cart Inventory
+          Discounted Golf Cart Inventory
         </h1>
         <p className="text-sm text-muted-foreground mt-1" data-testid="text-inventory-count">
-          {data ? `${data.totalCarts.toLocaleString()} vehicles found` : "Loading inventory..."}
+          {data ? `${data.totalCarts.toLocaleString()} discounted vehicles found` : "Loading discounted inventory..."}
         </p>
       </div>
 

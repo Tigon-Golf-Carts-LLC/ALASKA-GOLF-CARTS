@@ -1,7 +1,7 @@
 ================================================================================
-TIGON USA - GEOGRAPHIC SEO & LOCATION DATA
+Discounted Golf Carts - GEOGRAPHIC SEO & LOCATION DATA
 Golf Cart Dealership | 11 Locations | 7 States
-Phone: 1-844-844-6638 | Website: https://tigonusa.com
+Phone: 1-844-844-6638 | Website: https://discountedgolfcart.com
 ================================================================================
 Last Updated: 2026-02-09
 ================================================================================
@@ -10,7 +10,7 @@ Last Updated: 2026-02-09
 ================================================================================
 
 ### LOCATION 1: Hatfield, Pennsylvania
-Store Name: TIGON USA - Hatfield
+Store Name: Discounted Golf Carts - Hatfield
 Address Area: Hatfield, PA 19440
 State: Pennsylvania
 County: Montgomery County
@@ -26,7 +26,7 @@ Service Radius: 50+ miles
 Population Served: 6,000,000+ (Greater Philadelphia Metro)
 
 ### LOCATION 2: Ocean View, New Jersey
-Store Name: TIGON USA - Ocean View
+Store Name: Discounted Golf Carts - Ocean View
 Address Area: Ocean View, NJ 08230
 State: New Jersey
 County: Cape May County
@@ -42,7 +42,7 @@ Service Radius: 40+ miles
 Population Served: 500,000+ (Cape May & Atlantic County region)
 
 ### LOCATION 3: Long Pond, Pennsylvania
-Store Name: TIGON USA - Long Pond (Poconos)
+Store Name: Discounted Golf Carts - Long Pond (Poconos)
 Address Area: Long Pond, PA 18334
 State: Pennsylvania
 County: Monroe County
@@ -59,7 +59,7 @@ Population Served: 300,000+ (Pocono Mountain region)
 Special Note: Prime resort/vacation community market
 
 ### LOCATION 4: Dover, Delaware
-Store Name: TIGON USA - Dover
+Store Name: Discounted Golf Carts - Dover
 Address Area: Dover, DE 19901
 State: Delaware
 County: Kent County
@@ -75,7 +75,7 @@ Service Radius: 50+ miles
 Population Served: 400,000+ (entire state of Delaware accessible)
 
 ### LOCATION 5: Scranton, Pennsylvania
-Store Name: TIGON USA - Scranton
+Store Name: Discounted Golf Carts - Scranton
 Address Area: Scranton, PA 18504
 State: Pennsylvania
 County: Lackawanna County
@@ -91,7 +91,7 @@ Service Radius: 50+ miles
 Population Served: 600,000+ (Scranton-Wilkes-Barre Metro)
 
 ### LOCATION 6: Raleigh, North Carolina
-Store Name: TIGON USA - Raleigh
+Store Name: Discounted Golf Carts - Raleigh
 Address Area: Raleigh, NC 27603
 State: North Carolina
 County: Wake County
@@ -108,7 +108,7 @@ Population Served: 2,000,000+ (Research Triangle Metro)
 Special Note: Fast-growing market with numerous golf communities and planned neighborhoods
 
 ### LOCATION 7: South Bend, Indiana
-Store Name: TIGON USA - South Bend
+Store Name: Discounted Golf Carts - South Bend
 Address Area: South Bend, IN 46637
 State: Indiana
 County: St. Joseph County
@@ -124,7 +124,7 @@ Service Radius: 60+ miles
 Population Served: 800,000+ (Michiana region, spans IN/MI border)
 
 ### LOCATION 8: Gloucester Point, Virginia
-Store Name: TIGON USA - Gloucester Point
+Store Name: Discounted Golf Carts - Gloucester Point
 Address Area: Gloucester Point, VA 23072
 State: Virginia
 County: Gloucester County
@@ -141,7 +141,7 @@ Population Served: 1,800,000+ (Hampton Roads Metro)
 Special Note: Major military community, coastal/waterfront living
 
 ### LOCATION 9: Bayville Township, New Jersey
-Store Name: TIGON USA - Bayville
+Store Name: Discounted Golf Carts - Bayville
 Address Area: Bayville Township, NJ 08721
 State: New Jersey
 County: Ocean County
@@ -158,7 +158,7 @@ Population Served: 600,000+ (Ocean County and surrounding areas)
 Special Note: Major 55+ retirement community market
 
 ### LOCATION 10: Ocean Township (Waretown), New Jersey
-Store Name: TIGON USA - Waretown
+Store Name: Discounted Golf Carts - Waretown
 Address Area: Ocean Township (Waretown), NJ 08758
 State: New Jersey
 County: Ocean County
@@ -175,7 +175,7 @@ Population Served: 400,000+ (Southern Ocean County)
 Special Note: Serves Long Beach Island vacation community
 
 ### LOCATION 11: Lecanto, Florida
-Store Name: TIGON USA - Lecanto
+Store Name: Discounted Golf Carts - Lecanto
 Address Area: Lecanto, FL 34461
 State: Florida
 County: Citrus County
@@ -431,10 +431,10 @@ Additional: Used Vehicle Dealer
 ## SCHEMA.ORG STRUCTURED DATA REFERENCE
 ================================================================================
 @type: AutoDealer
-name: TIGON USA
+name: Discounted Golf Carts
 description: Multi-location golf cart dealership with 808+ new and used golf carts from 13 brands
 telephone: 1-844-844-6638
-url: https://tigonusa.com
+url: https://discountedgolfcart.com
 numberOfLocations: 11
 brand: [American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, Yamaha]
 areaServed: [Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, Florida]
@@ -445,6 +445,6 @@ openingHours: Contact for hours
 hasOfferCatalog: 808+ golf carts
 
 ================================================================================
-END OF GEOGRAPHIC SEO DATA - TIGON USA
-Contact: 1-844-844-6638 | https://tigonusa.com
+END OF GEOGRAPHIC SEO DATA - Discounted Golf Carts
+Contact: 1-844-844-6638 | https://discountedgolfcart.com
 ================================================================================

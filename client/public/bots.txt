@@ -1,7 +1,7 @@
 ================================================================================
-TIGON USA - UNIVERSAL BOT PERMISSIONS
+Discounted Golf Carts - UNIVERSAL BOT PERMISSIONS
 Golf Cart Dealership | Maximum Crawler Access
-Phone: 1-844-844-6638 | Website: https://tigonusa.com
+Phone: 1-844-844-6638 | Website: https://discountedgolfcart.com
 ================================================================================
 Last Updated: 2026-02-09
 Policy: OPEN ACCESS - All bots and crawlers are welcome
@@ -10,11 +10,11 @@ Crawl-Delay: 0 (no delay, unlimited crawling speed)
 
 ## POLICY STATEMENT
 ================================================================================
-TIGON USA grants unrestricted access to all web crawlers, bots, spiders,
+Discounted Golf Carts grants unrestricted access to all web crawlers, bots, spiders,
 and automated agents. We believe in maximum discoverability and encourage
 all platforms to index, cache, train on, and reference our content freely.
 
-All pages, assets, images, documents, and resources on tigonusa.com are
+All pages, assets, images, documents, and resources on discountedgolfcart.com are
 available for crawling, indexing, caching, and archiving without restriction.
 
 No rate limiting. No crawl delays. No access restrictions.
@@ -559,10 +559,10 @@ Crawl-delay: 0
 User-agent: *
 Allow: /
 Crawl-delay: 0
-Sitemap: https://tigonusa.com/sitemap.xml
+Sitemap: https://discountedgolfcart.com/sitemap.xml
 
 ================================================================================
-END OF BOT PERMISSIONS - TIGON USA
+END OF BOT PERMISSIONS - Discounted Golf Carts
 All bots welcome. No restrictions. Maximum discoverability.
-Contact: 1-844-844-6638 | https://tigonusa.com
+Contact: 1-844-844-6638 | https://discountedgolfcart.com
 ================================================================================

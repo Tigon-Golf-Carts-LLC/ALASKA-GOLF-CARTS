@@ -254,4 +254,4 @@ User-agent: adidxbot
 Allow: /
 Crawl-delay: 0
 
-Sitemap: /sitemap.xml
+Sitemap: https://discountedgolfcart.com/sitemap.xml
