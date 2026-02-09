@@ -8,6 +8,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { CartCard, CartCardSkeleton } from "@/components/cart-card";
 import type { CartsResponse, Store } from "@shared/schema";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
+import heroBg from "@assets/TIGON_USA_1770662360553.png";
 
 interface SlugMap {
   slugToId: Record<string, string>;
@@ -33,19 +34,22 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/20 dark:from-primary/5 dark:via-background dark:to-accent/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08),transparent_60%)]" />
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroBg} alt="TIGON USA Golf Cart Showroom" className="w-full h-full object-cover" />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30" />
         <div className="mx-auto max-w-7xl px-4 py-16 sm:py-24 relative">
           <div className="max-w-3xl">
             <Badge variant="secondary" className="mb-6" data-testid="badge-hero-tag">
               <Zap className="h-3 w-3 mr-1" />
               Premium Golf Cart Dealership
             </Badge>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6" data-testid="text-hero-title">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 text-white" data-testid="text-hero-title">
               Find Your Perfect
-              <span className="text-primary block mt-1">Golf Cart</span>
+              <span className="text-red-400 block mt-1">Golf Cart</span>
             </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed" data-testid="text-hero-description">
+            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mb-8 leading-relaxed" data-testid="text-hero-description">
               Browse our extensive inventory of new and used golf carts from top brands.
               Street legal, electric, gas, and more — available at locations across the East Coast.
             </p>
@@ -57,7 +61,7 @@ export default function Home() {
                 </Button>
               </Link>
               <a href={PHONE_TEL}>
-                <Button variant="outline" size="lg" data-testid="button-hero-call">
+                <Button variant="outline" size="lg" className="backdrop-blur-sm bg-white/10 border-white/30 text-white" data-testid="button-hero-call">
                   <Phone className="h-4 w-4 mr-2" />
                   {PHONE_NUMBER}
                 </Button>
