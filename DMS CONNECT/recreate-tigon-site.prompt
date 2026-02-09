@@ -1,0 +1,97 @@
+Build a golf cart dealership website called "TIGON USA" that pulls live inventory from the Tigon DMS API.
+
+Read the file "DMS CONNECT/TIGON-DMS-API.md" in this project for the complete API documentation, data schemas, image handling, slug URL system, caching strategy, and all endpoint details.
+
+## Tech Stack
+
+- **Frontend:** React + Vite + TypeScript + TailwindCSS + shadcn/ui
+- **Backend:** Express.js (Node) acting as an API proxy
+- **Routing:** wouter (lightweight React router)
+- **Data Fetching:** @tanstack/react-query v5 (object form only)
+- **Forms:** react-hook-form with zodResolver
+- **Validation:** Zod schemas (shared between frontend and backend)
+- **Icons:** lucide-react for UI icons, react-icons/si for brand logos
+- **Font:** Plus Jakarta Sans (from Google Fonts)
+
+## Design System
+
+- **Primary color:** Red (#ae1832 / HSL 350 76% 39%)
+- **Default mode:** Dark mode
+- **Border radius:** Small (rounded-md)
+- **Style:** Flat design, minimal borders, consistent spacing
+- **No emojis anywhere** in the UI or data
+
+## Pages
+
+### 1. Home Page (`/`)
+- Hero section with gradient background, headline, CTA buttons
+- "Latest Inventory" section showing 8 cart cards in a responsive grid (1/2/3/4 columns)
+- Locations section showing store addresses from `/api/stores`
+- All CTAs are "Call Now" buttons linking to `tel:1-844-844-6638`
+
+### 2. Inventory Page (`/inventory`)
+- Advanced filter sidebar with: search text, condition (new/used), power (electric/gas), brand multi-select, model multi-select (loads dynamically based on selected brands), color multi-select, passengers, street legal, lifted
+- Paginated results grid (20 per page)
+- Sort by price (ascending/descending)
+- URL query params for direct linking: `?isNew=true`, `?isUsed=true`, `?makes=evolution`
+
+### 3. Vehicle Detail Page (`/golfcart/:slug`)
+- Image gallery with thumbnail navigation
+- Full specifications in tabbed layout (Specs, Battery/Engine, Details)
+- Price display with 0% APR / 48-month financing calculation
+- "Call Now" button (tel link) and "Apply Now" button (links to /financing)
+- SEO-friendly slug URLs (see API doc for slug generation algorithm)
+
+### 4. Financing Page (`/financing`)
+- Grid of 6 financing partner cards with external apply links
+- Partners: Sheffield BBT, BLI Heartland, DLL Financial, Roadrunner/Octane, Univest Capital, Dealer Direct
+
+### 5. Not Found Page
+- Simple 404 with link back to home
+
+## Cart Card Component
+Each card displays:
+- Cart image (from S3 public URLs, or "Coming Soon" placeholder)
+- Price (formatted as $X,XXX.XX or "Call for Price" if no price)
+- Title built from: `{make} {model} {color}` (e.g., "Denago Nomad XL Gray")
+- Badges: New/Used, Electric/Gas, Street Legal, Passenger count
+- Links to `/golfcart/{slug}`
+
+## Backend Architecture
+
+The Express server proxies all DMS API calls with in-memory caching. Key routes:
+
+| Route | Proxies To | Cache TTL |
+|-------|-----------|-----------|
+| `GET /api/stores` | `GET /tigon-stores` | 1 hour |
+| `GET /api/carts?params` | `POST /get-carts` | 2 min |
+| `GET /api/cart/:id` | `POST /get-cart-by-id` | 5 min |
+| `POST /api/cart-models` | `POST /get-cart-models` | 10 min |
+| `POST /api/cart-colors` | `POST /get-cart-colors` | 10 min |
+| `GET /api/brands` | Derived from all carts | 10 min |
+| `GET /api/slug-map` | Derived from carts + stores | 2 min |
+
+## Critical Implementation Details
+
+1. **Image URLs:** Only use `imageUrls` (public S3). Prepend `https://s3.amazonaws.com/prod.docs.s3/carts/`. If empty, show the Coming Soon placeholder.
+2. **Brand extraction:** Dynamically derived from inventory (no dedicated endpoint). Fetch all carts (pageSize=500) and extract unique `cartType.make` values.
+3. **Slug URLs:** Build from `{make}-{model}-{color}-{city}-{state}-{country}`, all lowercase, special chars to hyphens. Duplicates get `-01`, `-02` suffixes.
+4. **Make key format:** For API filters, makes use underscores (`club_car`). For URL slugs, use hyphens (`club-car`).
+5. **Phone number:** 1-844-844-6638 used site-wide as the primary CTA.
+6. **Frontend port:** Bind to 0.0.0.0:5000.
+7. **No database needed** - All data comes from the DMS API.
+8. **Favicon:** Custom .ico file at `/favicon.ico`.
+9. **Logo icon:** Custom .ico file at `/logo-icon.ico` used in header and footer.
+
+## Navigation
+
+- Header: Logo + "TIGON USA" text, nav links (Home, Inventory, New Carts, Used Carts, Financing), theme toggle, Call Now button
+- Footer: Logo, quick links, store locations, contact info, copyright
+- Mobile: Hamburger menu with same nav links
+
+## Financing Display
+
+On each vehicle detail page, show:
+- Vehicle price
+- Monthly payment at 0% APR for 48 months: `price / 48`
+- "Apply Now - 0% Financing" button linking to `/financing`
