@@ -29,7 +29,7 @@ export function CartCard({ cart, slug }: CartCardProps) {
     ? "https://tigongolfcarts.com/wp-content/uploads/2024/11/TIGON-GOLF-CARTS-IMAGES-COMING-SOON.jpg"
     : getCartImageUrl(cart.imageUrls);
 
-  const cartUrl = slug ? `/cart/${slug}` : `/cart/${cart._id}`;
+  const cartUrl = slug ? `/golfcart/${slug}` : `/golfcart/${cart._id}`;
 
   return (
     <Card className="overflow-visible group hover-elevate" data-testid={`card-cart-${cart._id}`}>
