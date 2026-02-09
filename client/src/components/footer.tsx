@@ -1,8 +1,9 @@
 import { Link } from "wouter";
-import { Phone, MapPin, Tag } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 import type { Store } from "@shared/schema";
 import { useQuery } from "@tanstack/react-query";
+import logoImg from "@assets/DISCOUNTED_GOLF_CARTS_(2)_1770670989091.png";
 
 export function Footer() {
   const { data: stores } = useQuery<Store[]>({
@@ -15,7 +16,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Tag className="h-5 w-5 text-primary" />
+              <img src={logoImg} alt="Discounted Golf Carts" className="h-9 w-9 object-contain" />
               <span className="text-lg font-bold">Discounted <span className="text-primary">Golf Carts</span></span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">

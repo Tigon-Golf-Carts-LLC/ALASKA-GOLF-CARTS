@@ -1,9 +1,10 @@
 import { Link, useLocation } from "wouter";
-import { Phone, Menu, X, Sun, Moon, Tag } from "lucide-react";
+import { Phone, Menu, X, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/theme-provider";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 import { useState } from "react";
+import logoImg from "@assets/DISCOUNTED_GOLF_CARTS_(2)_1770670989091.png";
 
 export function Header() {
   const [location] = useLocation();
@@ -24,7 +25,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between gap-4">
           <Link href="/" data-testid="link-home">
             <div className="flex items-center gap-2">
-              <Tag className="h-6 w-6 text-primary" />
+              <img src={logoImg} alt="Discounted Golf Carts" className="h-10 w-10 object-contain" />
               <span className="text-xl font-bold tracking-tight">
                 Discounted <span className="text-primary">Golf Carts</span>
               </span>
