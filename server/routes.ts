@@ -141,6 +141,19 @@ export async function registerRoutes(
       }
 
       const data = await fetchDMS("/get-carts", body);
+
+      if (data?.carts && Array.isArray(data.carts)) {
+        data.carts.sort((a: any, b: any) => {
+          const aIsNew = a.isUsed !== true ? 1 : 0;
+          const bIsNew = b.isUsed !== true ? 1 : 0;
+          if (aIsNew !== bIsNew) return bIsNew - aIsNew;
+
+          const aHasImages = (a.imageUrls && a.imageUrls.length > 0) ? 1 : 0;
+          const bHasImages = (b.imageUrls && b.imageUrls.length > 0) ? 1 : 0;
+          return bHasImages - aHasImages;
+        });
+      }
+
       setCache(cacheKey, data);
       res.json(data);
     } catch (error: any) {
