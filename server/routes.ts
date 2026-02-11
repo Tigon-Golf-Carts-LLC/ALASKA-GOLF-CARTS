@@ -144,13 +144,21 @@ export async function registerRoutes(
 
       if (data?.carts && Array.isArray(data.carts)) {
         data.carts.sort((a: any, b: any) => {
-          const aIsNew = a.isUsed !== true ? 1 : 0;
-          const bIsNew = b.isUsed !== true ? 1 : 0;
-          if (aIsNew !== bIsNew) return bIsNew - aIsNew;
+          const aIsNew = a.isUsed !== true;
+          const bIsNew = b.isUsed !== true;
+          const aHasImages = a.imageUrls && a.imageUrls.length > 0;
+          const bHasImages = b.imageUrls && b.imageUrls.length > 0;
 
-          const aHasImages = (a.imageUrls && a.imageUrls.length > 0) ? 1 : 0;
-          const bHasImages = (b.imageUrls && b.imageUrls.length > 0) ? 1 : 0;
-          return bHasImages - aHasImages;
+          const aScore = (aIsNew && aHasImages ? 4 : 0)
+            + (aIsNew && !aHasImages ? 3 : 0)
+            + (!aIsNew && aHasImages ? 2 : 0)
+            + (!aIsNew && !aHasImages ? 1 : 0);
+          const bScore = (bIsNew && bHasImages ? 4 : 0)
+            + (bIsNew && !bHasImages ? 3 : 0)
+            + (!bIsNew && bHasImages ? 2 : 0)
+            + (!bIsNew && !bHasImages ? 1 : 0);
+
+          return bScore - aScore;
         });
       }
 
