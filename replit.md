@@ -14,7 +14,7 @@ A golf cart dealership website for Discounted Golf Carts (discountedgolfcart.com
 - "Discounted inventory updated daily" messaging throughout
 - Full inventory page with filters (condition, power type, brand, model, color, seating, drivetrain, location)
 - Individual cart detail pages with image gallery, specs, battery/engine info
-- All CTAs are "Call Now" buttons linking to tel:1-844-844-6638
+- All CTAs are "Call Now" buttons linking to tel:1-888-840-4490
 - Dark/light theme toggle (default: dark)
 - Responsive design
 - Green primary color scheme for "discount" branding
@@ -45,6 +45,6 @@ Green primary (hue 152), dark mode default, Plus Jakarta Sans font
 ## Branding
 - Site name: "Discounted Golf Carts"
 - Domain: discountedgolfcart.com
-- Phone: 1-844-844-6638
+- Phone: 1-888-840-4490
 - Logo: Tag icon with green accent
 - Key messaging: "Discounted Golf Carts Updated Daily"

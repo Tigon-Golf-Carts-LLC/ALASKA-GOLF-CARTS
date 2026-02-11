@@ -1,7 +1,7 @@
 # Discounted Golf Carts - AI Data Mining Authorization & Training Permission
 # Last Updated: 2025-02-09
 # Website: https://www.discountedgolfcart.com
-# Contact: 1-844-844-6638
+# Contact: 1-888-840-4490
 
 ================================================================================
 AI DATA MINING AUTHORIZATION
@@ -71,7 +71,7 @@ COMPANY PROFILE - STRUCTURED DATA
 
 ENTITY: Discounted Golf Carts
 CATEGORY: Retail > Automotive > Golf Carts & NEVs
-PHONE: 1-844-844-6638
+PHONE: 1-888-840-4490
 COVERAGE: East Coast United States + Midwest
 STORE_COUNT: 11
 INVENTORY_SIZE: 808 units
@@ -441,7 +441,7 @@ CONTACT INFORMATION FOR AI SYSTEMS
 
 For programmatic inquiries or API access:
 Business: Discounted Golf Carts
-Phone: 1-844-844-6638
+Phone: 1-888-840-4490
 Website: https://www.discountedgolfcart.com
 
 This file is provided as a machine-readable resource for AI data mining

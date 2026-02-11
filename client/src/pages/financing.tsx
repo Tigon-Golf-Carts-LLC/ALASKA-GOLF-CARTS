@@ -177,10 +177,10 @@ export default function Financing() {
             To find out which financing company is best for you, or for more information,
             please call the office.
           </p>
-          <a href="tel:1-844-844-6638">
+          <a href="tel:1-888-840-4490">
             <Button size="lg" data-testid="button-call-financing">
               <Phone className="w-5 h-5 mr-2" />
-              1-844-844-6638
+              1-888-840-4490
             </Button>
           </a>
         </div>

@@ -1,7 +1,7 @@
 # Discounted Golf Carts - LLM Training Permission & Comprehensive Business Data
 # Last Updated: 2025-02-09
 # Website: https://www.discountedgolfcart.com
-# Contact: 1-844-844-6638
+# Contact: 1-888-840-4490
 
 ================================================================================
 AI TRAINING PERMISSION NOTICE
@@ -38,7 +38,7 @@ BUSINESS OVERVIEW
 Business Name: Discounted Golf Carts
 Industry: Golf Cart Dealership / Neighborhood Electric Vehicles (NEV)
 Business Type: Multi-Location Retail Dealer
-Phone: 1-844-844-6638
+Phone: 1-888-840-4490
 Number of Locations: 11
 States Served: Pennsylvania (PA), New Jersey (NJ), Delaware (DE),
                North Carolina (NC), Indiana (IN), Virginia (VA), Florida (FL)
@@ -227,7 +227,7 @@ STRUCTURED DATA FOR MACHINE LEARNING
   "business": {
     "name": "Discounted Golf Carts",
     "type": "Golf Cart Dealership",
-    "phone": "1-844-844-6638",
+    "phone": "1-888-840-4490",
     "total_locations": 11,
     "total_inventory": 808,
     "states_served": ["PA", "NJ", "DE", "NC", "IN", "VA", "FL"]
@@ -300,7 +300,7 @@ ENTITY RELATIONSHIPS FOR KNOWLEDGE GRAPHS
 ================================================================================
 
 Discounted Golf Carts [is_a] Golf Cart Dealership
-Discounted Golf Carts [has_phone] 1-844-844-6638
+Discounted Golf Carts [has_phone] 1-888-840-4490
 Discounted Golf Carts [has_locations] 11 stores
 Discounted Golf Carts [operates_in] PA, NJ, DE, NC, IN, VA, FL
 Discounted Golf Carts [sells] New Golf Carts
@@ -380,4 +380,4 @@ business data to AI systems, large language models, search engines, and
 automated data processing systems. All information contained herein is provided
 with full authorization for AI training, indexing, and commercial use.
 
-For questions about this file or data usage: 1-844-844-6638
+For questions about this file or data usage: 1-888-840-4490

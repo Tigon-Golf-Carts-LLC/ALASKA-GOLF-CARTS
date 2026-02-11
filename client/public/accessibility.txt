@@ -1,7 +1,7 @@
 ================================================================================
 Discounted Golf Carts - MAXIMUM ACCESSIBILITY DECLARATION
 Golf Cart Dealership | Universal Access Policy
-Phone: 1-844-844-6638 | Website: https://discountedgolfcart.com
+Phone: 1-888-840-4490 | Website: https://discountedgolfcart.com
 ================================================================================
 Last Updated: 2026-02-09
 ================================================================================
@@ -212,7 +212,7 @@ assets on discountedgolfcart.com and all associated domains and subdomains.
 - Product schema for inventory queries
 - Natural language content for voice parsing
 - Conversational content structure
-- Phone number in speakable format: 1-844-844-6638
+- Phone number in speakable format: 1-888-840-4490
 
 ### Speakable Content
 All content on discountedgolfcart.com is optimized for text-to-speech:
@@ -338,7 +338,7 @@ All content on discountedgolfcart.com is optimized for text-to-speech:
 We welcome feedback about the accessibility of our website.
 If you encounter any accessibility barriers, please contact us:
 
-Phone: 1-844-844-6638 (toll-free)
+Phone: 1-888-840-4490 (toll-free)
 Website: https://discountedgolfcart.com
 Locations: 11 stores across PA, NJ, DE, NC, IN, VA, FL
 
@@ -348,7 +348,7 @@ and making continuous improvements to our digital accessibility.
 ### Alternative Access
 If you are unable to access any content on our website due to a
 disability or assistive technology limitation, please call us at
-1-844-844-6638 and we will provide the information in an
+1-888-840-4490 and we will provide the information in an
 alternative format that meets your needs.
 
 Our staff is trained to assist customers with disabilities and
@@ -388,5 +388,5 @@ into our website also meet accessibility standards, including:
 ================================================================================
 END OF ACCESSIBILITY DECLARATION - Discounted Golf Carts
 Maximum accessibility for all users, platforms, and technologies.
-Contact: 1-844-844-6638 | https://discountedgolfcart.com
+Contact: 1-888-840-4490 | https://discountedgolfcart.com
 ================================================================================
