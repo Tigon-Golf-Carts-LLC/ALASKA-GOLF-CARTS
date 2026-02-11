@@ -109,61 +109,84 @@ export async function registerRoutes(
     }
   });
 
+  function sortCarts(carts: any[], priceSortASC?: boolean): any[] {
+    return [...carts].sort((a: any, b: any) => {
+      const aIsNew = a.isUsed !== true;
+      const bIsNew = b.isUsed !== true;
+      const aHasImages = a.imageUrls && a.imageUrls.length > 0;
+      const bHasImages = b.imageUrls && b.imageUrls.length > 0;
+
+      const aScore = (aIsNew && aHasImages ? 4 : 0)
+        + (aIsNew && !aHasImages ? 3 : 0)
+        + (!aIsNew && aHasImages ? 2 : 0)
+        + (!aIsNew && !aHasImages ? 1 : 0);
+      const bScore = (bIsNew && bHasImages ? 4 : 0)
+        + (bIsNew && !bHasImages ? 3 : 0)
+        + (!bIsNew && bHasImages ? 2 : 0)
+        + (!bIsNew && !bHasImages ? 1 : 0);
+
+      if (aScore !== bScore) return bScore - aScore;
+
+      if (priceSortASC === true) {
+        return (a.retailPrice || 999999) - (b.retailPrice || 999999);
+      } else if (priceSortASC === false) {
+        return (b.retailPrice || 0) - (a.retailPrice || 0);
+      }
+
+      return 0;
+    });
+  }
+
+  async function fetchAllCarts(filters: any): Promise<any[]> {
+    const filterKey = JSON.stringify(filters);
+    const cacheKey = `allCarts:${filterKey}`;
+    const cached = getCached(cacheKey);
+    if (cached) return cached;
+
+    const body: any = { ...filters, pageNumber: 0, pageSize: 500 };
+    const data = await fetchDMS("/get-carts", body);
+    const allCarts = data?.carts || [];
+    setCache(cacheKey, allCarts);
+    return allCarts;
+  }
+
   app.get("/api/carts", async (req, res) => {
     try {
-      const body: any = {};
-
       const pageNumber = parseInt(req.query.pageNumber as string) || 0;
-      const pageSize = parseInt(req.query.pageSize as string) || 20;
-      body.pageNumber = pageNumber;
-      body.pageSize = Math.min(pageSize, 100);
+      const pageSize = Math.min(parseInt(req.query.pageSize as string) || 20, 100);
 
-      if (req.query.searchText) body.searchText = req.query.searchText;
-      if (req.query.priceSortASC !== undefined) body.priceSortASC = req.query.priceSortASC === "true";
-      if (req.query.isNew === "true") body.isNew = true;
-      if (req.query.isUsed === "true") body.isUsed = true;
-      if (req.query.isElectric === "true") body.isElectric = true;
-      if (req.query.isGas === "true") body.isGas = true;
-      if (req.query.isStreetLegal === "true") body.isStreetLegal = true;
-      if (req.query.isLifted === "true") body.isLifted = true;
+      const filters: any = {};
+      if (req.query.searchText) filters.searchText = req.query.searchText;
+      if (req.query.isNew === "true") filters.isNew = true;
+      if (req.query.isUsed === "true") filters.isUsed = true;
+      if (req.query.isElectric === "true") filters.isElectric = true;
+      if (req.query.isGas === "true") filters.isGas = true;
+      if (req.query.isStreetLegal === "true") filters.isStreetLegal = true;
+      if (req.query.isLifted === "true") filters.isLifted = true;
+      if (req.query.makes) filters.makes = (req.query.makes as string).split(",").map((m) => m.toLowerCase().replace(/[^a-z0-9]/g, "_"));
+      if (req.query.models) filters.models = (req.query.models as string).split(",").map((m) => m.toLowerCase());
+      if (req.query.colors) filters.colors = (req.query.colors as string).split(",").map((c) => c.toLowerCase());
+      if (req.query.seats) filters.seats = (req.query.seats as string).split(",").map((s) => s.toLowerCase());
+      if (req.query.driveTrain) filters.driveTrain = (req.query.driveTrain as string).split(",").map((d) => d.toLowerCase());
+      if (req.query.storeIds) filters.storeIds = (req.query.storeIds as string).split(",");
 
-      if (req.query.makes) body.makes = (req.query.makes as string).split(",").map((m) => m.toLowerCase().replace(/[^a-z0-9]/g, "_"));
-      if (req.query.models) body.models = (req.query.models as string).split(",").map((m) => m.toLowerCase());
-      if (req.query.colors) body.colors = (req.query.colors as string).split(",").map((c) => c.toLowerCase());
-      if (req.query.seats) body.seats = (req.query.seats as string).split(",").map((s) => s.toLowerCase());
-      if (req.query.driveTrain) body.driveTrain = (req.query.driveTrain as string).split(",").map((d) => d.toLowerCase());
-      if (req.query.storeIds) body.storeIds = (req.query.storeIds as string).split(",");
+      const priceSortASC = req.query.priceSortASC !== undefined ? req.query.priceSortASC === "true" : undefined;
 
-      const cacheKey = `carts:${JSON.stringify(body)}`;
+      const cacheKey = `sortedCarts:${JSON.stringify(filters)}:${priceSortASC}:${pageNumber}:${pageSize}`;
       const cached = getCached(cacheKey);
       if (cached) {
         return res.json(cached);
       }
 
-      const data = await fetchDMS("/get-carts", body);
+      const allCarts = await fetchAllCarts(filters);
+      const sorted = sortCarts(allCarts, priceSortASC);
 
-      if (data?.carts && Array.isArray(data.carts)) {
-        data.carts.sort((a: any, b: any) => {
-          const aIsNew = a.isUsed !== true;
-          const bIsNew = b.isUsed !== true;
-          const aHasImages = a.imageUrls && a.imageUrls.length > 0;
-          const bHasImages = b.imageUrls && b.imageUrls.length > 0;
+      const start = pageNumber * pageSize;
+      const paged = sorted.slice(start, start + pageSize);
 
-          const aScore = (aIsNew && aHasImages ? 4 : 0)
-            + (aIsNew && !aHasImages ? 3 : 0)
-            + (!aIsNew && aHasImages ? 2 : 0)
-            + (!aIsNew && !aHasImages ? 1 : 0);
-          const bScore = (bIsNew && bHasImages ? 4 : 0)
-            + (bIsNew && !bHasImages ? 3 : 0)
-            + (!bIsNew && bHasImages ? 2 : 0)
-            + (!bIsNew && !bHasImages ? 1 : 0);
-
-          return bScore - aScore;
-        });
-      }
-
-      setCache(cacheKey, data);
-      res.json(data);
+      const result = { carts: paged, totalCarts: sorted.length };
+      setCache(cacheKey, result);
+      res.json(result);
     } catch (error: any) {
       console.error("Error fetching carts:", error.message);
       res.status(500).json({ error: "Failed to fetch carts" });
