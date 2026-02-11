@@ -6,7 +6,11 @@
       <square150x150logo src="/favicon.png"/>
       <square310x310logo src="/favicon.png"/>
       <wide310x150logo src="/favicon.png"/>
-      <TileColor>#ae1832</TileColor>
+      <TileColor>#16a34a</TileColor>
     </tile>
+    <notification>
+      <polling-uri src="https://discountedgolfcart.com/"/>
+      <frequency>1440</frequency>
+    </notification>
   </msapplication>
 </browserconfig>

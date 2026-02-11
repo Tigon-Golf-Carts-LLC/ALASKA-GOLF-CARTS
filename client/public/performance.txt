@@ -1,0 +1,263 @@
+# Discounted Golf Carts - Performance Optimization Guidelines
+# Last Updated: 2026-02-11
+# Website: https://discountedgolfcart.com
+# Contact: 1-888-840-4490
+
+================================================================================
+PERFORMANCE OPTIMIZATION STANDARDS
+================================================================================
+
+PURPOSE:
+Document performance best practices and optimization strategies for the
+Discounted Golf Carts website to ensure fast load times, excellent Core Web Vitals
+scores, and optimal user experience across all devices and networks.
+
+================================================================================
+MOBILE-FIRST INDEXING COMPLIANCE
+================================================================================
+
+STRATEGY: Mobile-First Design & Development
+- All pages designed for mobile viewport first, then enhanced for desktop
+- Responsive breakpoints: 320px, 480px, 768px, 1024px, 1280px, 1536px
+- Touch-friendly tap targets: minimum 44x44px
+- Mobile-optimized navigation with hamburger menu
+- Font sizes: minimum 16px for body text on mobile
+- No horizontal scrolling on any viewport
+- Viewport meta tag: width=device-width, initial-scale=1.0, maximum-scale=1
+
+MOBILE-SPECIFIC OPTIMIZATIONS:
+- Click-to-call buttons for 1-888-840-4490 on all mobile pages
+- Mobile-optimized image sizes via responsive srcset
+- Reduced animation and effects on mobile devices
+- Touch-optimized image gallery with swipe support
+- Mobile-friendly filter and search interface
+- Sticky call-to-action buttons on mobile
+
+================================================================================
+CORE WEB VITALS OPTIMIZATION
+================================================================================
+
+TARGET METRICS (Google "Good" thresholds):
+
+LCP (Largest Contentful Paint): < 2.5 seconds
+- Preload hero images and critical above-fold content
+- Use priority hints (fetchpriority="high") for hero images
+- Optimize server response time (TTFB < 600ms)
+- Implement CDN for static assets
+- Preconnect to critical third-party origins
+- Use responsive images with srcset for optimal sizing
+
+FID / INP (Interaction to Next Paint): < 200ms
+- Minimize JavaScript bundle size with code splitting
+- Defer non-critical JavaScript
+- Use web workers for heavy computations
+- Optimize event handlers for scroll and resize
+- Reduce main thread work during page load
+- Implement progressive hydration for React components
+
+CLS (Cumulative Layout Shift): < 0.1
+- Set explicit width and height on all images and media
+- Reserve space for dynamically loaded content
+- Use CSS aspect-ratio for responsive containers
+- Avoid inserting content above existing content
+- Use transform animations instead of layout-triggering properties
+- Font loading: use font-display: swap with preloaded fonts
+
+================================================================================
+CACHING STRATEGY
+================================================================================
+
+BROWSER CACHE POLICY:
+- Static assets (JS, CSS, fonts): max-age=31536000 (1 year) with content hash
+- Images (product photos): max-age=86400 (24 hours)
+- HTML pages: no-cache, must-revalidate
+- API responses (inventory): max-age=300 (5 minutes) with stale-while-revalidate
+- Favicon and logos: max-age=2592000 (30 days)
+
+SERVICE WORKER STRATEGY:
+- Cache-first for static assets (JS, CSS, fonts, images)
+- Network-first for API calls and dynamic content
+- Stale-while-revalidate for inventory data
+- Offline fallback page for network failures
+
+SERVER-SIDE CACHING:
+- API response caching with 5-minute TTL
+- Database query result caching
+- Full inventory cache refreshed daily at 10:55 PM EST
+- Edge caching via CDN for static resources
+
+================================================================================
+CDN CONFIGURATION
+================================================================================
+
+STATIC ASSETS:
+- S3 bucket: https://s3.amazonaws.com/prod.docs.s3/carts/
+- Product images served from S3 with CloudFront CDN
+- Font files preloaded from Google Fonts CDN
+- JavaScript bundles served with content-hash filenames
+
+CDN HEADERS:
+- Cache-Control: public, max-age=31536000, immutable (for hashed assets)
+- Access-Control-Allow-Origin: * (for font files)
+- Content-Encoding: gzip, br (Brotli preferred)
+- Vary: Accept-Encoding
+
+================================================================================
+JAVASCRIPT OPTIMIZATION
+================================================================================
+
+BUNDLE STRATEGY:
+- Vite-based build system with automatic code splitting
+- Vendor chunk separation for React, React DOM, and dependencies
+- Dynamic imports for route-based code splitting
+- Tree shaking enabled for dead code elimination
+- Minification with Terser/esbuild
+
+LOADING STRATEGY:
+- Critical JavaScript inline in head (analytics, GTM)
+- Main application bundle: type="module" with defer
+- Third-party scripts: async loading
+- Lazy load non-critical components (below-fold sections)
+
+PERFORMANCE BUDGETS:
+- Initial JS bundle: < 200KB gzipped
+- Total page weight: < 1.5MB (including images)
+- Time to Interactive: < 3.5 seconds on 3G
+- First Contentful Paint: < 1.8 seconds
+
+================================================================================
+CSS OPTIMIZATION
+================================================================================
+
+- Tailwind CSS with purge enabled (removes unused classes)
+- Critical CSS inlined for above-fold content
+- CSS minification in production builds
+- No render-blocking CSS for below-fold components
+- CSS custom properties for theming (dark/light mode)
+- Efficient selector specificity (avoid deep nesting)
+
+================================================================================
+IMAGE OPTIMIZATION
+================================================================================
+
+FORMAT PRIORITY:
+1. WebP (primary) - 25-35% smaller than JPEG
+2. AVIF (progressive enhancement) - 50% smaller than JPEG
+3. JPEG (fallback) - universal browser support
+
+RESPONSIVE IMAGES:
+- srcset with multiple resolutions
+- sizes attribute for viewport-appropriate selection
+- Lazy loading for below-fold images
+- Blur-up placeholder technique
+- Explicit width/height to prevent CLS
+
+OPTIMIZATION PIPELINE:
+- Automated compression on upload
+- Quality: 80-85% for product photos
+- Strip EXIF metadata (except copyright)
+- Progressive encoding for JPEG fallbacks
+
+================================================================================
+FONT OPTIMIZATION
+================================================================================
+
+FONTS USED:
+- Inter (primary): weights 300, 400, 500, 600, 700, 800, 900
+- Plus Jakarta Sans (headings): weights 300, 400, 500, 600, 700, 800
+
+LOADING STRATEGY:
+- Preconnect to fonts.googleapis.com and fonts.gstatic.com
+- font-display: swap for all web fonts
+- Subset fonts to Latin character set only
+- Preload critical font weights (400, 600, 700)
+
+================================================================================
+API & DATA OPTIMIZATION
+================================================================================
+
+INVENTORY API:
+- Full inventory cached server-side with daily refresh
+- Client-side pagination (no redundant API calls per page)
+- Intelligent sorting: new carts with images first
+- Filter operations performed client-side on cached data
+- API response compression with gzip/brotli
+
+DATA TRANSFER:
+- JSON responses minified
+- Unnecessary fields excluded from API responses
+- Pagination to limit initial payload
+- Infinite scroll or load-more pattern for inventory browsing
+
+================================================================================
+MONITORING & ANALYTICS
+================================================================================
+
+TRACKING:
+- Google Analytics 4: G-ZYX3NWZZL0
+- Google Tag Manager: GTM-WLJ86LBR
+- Core Web Vitals monitoring via web-vitals library
+
+PERFORMANCE MONITORING:
+- Real User Monitoring (RUM) via Google Analytics
+- Synthetic monitoring via Google PageSpeed Insights
+- Regular Lighthouse audits (target score: 90+)
+- Weekly performance regression checks
+
+KEY METRICS TO TRACK:
+- Page load time by device type and connection speed
+- Time to Interactive for inventory page
+- Image load performance for product gallery
+- API response times for inventory data
+- Bounce rate correlation with page speed
+
+================================================================================
+ACCESSIBILITY PERFORMANCE
+================================================================================
+
+- Reduced motion support: prefers-reduced-motion media query
+- High contrast mode support
+- Keyboard navigation performance
+- Screen reader optimization
+- Focus management for dynamic content
+- ARIA attributes for interactive components
+
+================================================================================
+THIRD-PARTY SCRIPT MANAGEMENT
+================================================================================
+
+CRITICAL (load immediately):
+- Google Analytics (async)
+- Google Tag Manager (async)
+
+DEFERRED (load after main content):
+- Social media widgets (if any)
+- Chat widgets (if any)
+- Review widgets (if any)
+
+RULES:
+- No synchronous third-party scripts
+- All third-party scripts loaded asynchronously
+- Resource hints (preconnect, dns-prefetch) for known origins
+- Content Security Policy headers configured
+- Subresource Integrity (SRI) for critical CDN resources
+
+================================================================================
+SEO PERFORMANCE SIGNALS
+================================================================================
+
+- Server response time (TTFB): target < 600ms
+- Mobile PageSpeed score: target > 90
+- Desktop PageSpeed score: target > 95
+- Crawl budget optimization: efficient robots.txt
+- Sitemap freshness: updated with every inventory refresh
+- Canonical URL implementation on all pages
+- Structured data validation (zero errors)
+- HTTPS enforcement with HSTS headers
+
+================================================================================
+END OF PERFORMANCE OPTIMIZATION GUIDELINES
+================================================================================
+
+Maintained by Discounted Golf Carts for web performance standards.
+Contact: 1-888-840-4490 | https://discountedgolfcart.com

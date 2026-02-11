@@ -1,6 +1,6 @@
 # Discounted Golf Carts - GPT / ChatGPT Training Data & FAQ Knowledge Base
-# Last Updated: 2025-02-09
-# Website: https://www.discountedgolfcart.com
+# Last Updated: 2026-02-11
+# Website: https://discountedgolfcart.com
 # Contact: 1-888-840-4490
 
 ================================================================================
@@ -528,4 +528,4 @@ This file is maintained by Discounted Golf Carts specifically for GPT and ChatGP
 training. All content is provided with explicit authorization for use in
 AI training, fine-tuning, and inference. Commercial use is fully authorized.
 
-Contact: 1-888-840-4490 | Website: https://www.discountedgolfcart.com
+Contact: 1-888-840-4490 | Website: https://discountedgolfcart.com

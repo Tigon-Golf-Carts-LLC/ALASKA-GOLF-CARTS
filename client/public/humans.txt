@@ -1,21 +1,100 @@
+/* HUMANS.TXT - Discounted Golf Carts Website Credits */
+
 /* TEAM */
 
 Company: Discounted Golf Carts
-Contact: 1-888-840-4490
 Website: https://discountedgolfcart.com
-Locations: PA, NJ, DE, NC, IN, VA, FL
-Stores: 11 dealership locations
+Phone: 1-888-840-4490
+Email: info@discountedgolfcart.com
+Security: security@discountedgolfcart.com
 
-/* TECHNOLOGY */
+Business Type: Golf Cart Dealership & Sales
+Company Description: Discounted Golf Carts is a premier golf cart dealership with 11 locations across Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, and Florida. We offer 808+ golf carts in inventory from 13 leading brands including American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, and Yamaha.
 
-Framework: React
-Server: Express, Node.js
+Dealership Locations: 11 locations
+Service Area: Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, Florida
+Inventory Size: 808+ golf carts
+Authorized Brands: 13 premium golf cart manufacturers
+
+/* TECHNOLOGY STACK */
+
+Frontend Framework: React 18+
+Frontend Build Tool: Vite
 Language: TypeScript
-Styling: Tailwind CSS
-Build Tool: Vite
+Frontend Styling: Tailwind CSS
+Frontend Package Manager: npm
 
-/* SITE */
+Backend Runtime: Node.js
+Backend Framework: Express
+Backend Language: TypeScript
+Database: PostgreSQL
+ORM: Drizzle ORM
+API Architecture: RESTful API
 
-Last updated: 2025
-Standards: HTML5, CSS3, ES6+
-Software: Visual Studio Code
+Build System: Vite
+Code Quality: TypeScript strict mode
+Responsive Design: Mobile-first approach
+Accessibility: WCAG 2.1 compliant
+SEO: Structured data, sitemap, robots.txt
+
+/* SITE INFORMATION */
+
+Last Updated: 2026-02-11
+Standards Compliance: HTML5, CSS3, ES6+, ECMA2020+
+Development Editor: Visual Studio Code
+Version Control: Git
+Hosting: Replit
+Theme Color: #16a34a (Brand Green)
+
+/* ARCHITECTURE NOTES */
+
+The website is built using a modern full-stack JavaScript architecture:
+- Frontend: React with Vite bundler for optimized production builds
+- Backend: Express server handling API routes and data persistence
+- Database: PostgreSQL with Drizzle ORM for type-safe database operations
+- Styling: Tailwind CSS with custom theme variables for consistency
+- Form Handling: React Hook Form with Zod validation
+- State Management: TanStack React Query for server state management
+- Routing: Wouter for lightweight client-side routing
+
+/* FEATURES */
+
+- Comprehensive golf cart inventory search and filtering
+- Multi-brand inventory management (13 authorized brands)
+- Responsive mobile-first design
+- Financing options and information
+- Location finder for 11 dealership locations
+- Shopping cart functionality
+- Product detail pages with specifications
+- SEO-optimized content
+- Security and compliance standards
+- Accessibility compliance
+
+/* DEVELOPMENT TEAM */
+
+Website Development: Full-stack JavaScript team
+Design System: Shadcn UI components
+Form Validation: Zod schema validation
+Data Fetching: TanStack React Query
+API Testing: RESTful endpoint testing
+Performance Optimization: Vite optimizations, code splitting
+Security: HTTPS, input validation, SQL injection prevention
+
+/* THANKS */
+
+Special thanks to:
+- React community for the frontend framework
+- Tailwind CSS for the utility-first CSS framework
+- Shadcn UI for the component system
+- Drizzle ORM for type-safe database operations
+- TanStack Query for server state management
+- Vite for the fast build tool and dev server
+
+/* CONTACT */
+
+For website inquiries: info@discountedgolfcart.com
+For security concerns: security@discountedgolfcart.com
+For sales: 1-888-840-4490
+Website: https://discountedgolfcart.com
+
+Last updated: 2026-02-11

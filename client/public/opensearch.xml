@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-  <ShortName>Discounted Golf Carts</ShortName>
-  <Description>Search Discounted Golf Carts golf cart inventory</Description>
+  <ShortName>Discounted Golf Carts Search</ShortName>
+  <LongName>Discounted Golf Carts - Golf Cart Inventory Search</LongName>
+  <Description>Search our comprehensive inventory of 808+ golf carts from 13 leading brands across 11 dealership locations</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <OutputEncoding>UTF-8</OutputEncoding>
+  
+  <!-- Search URL Template for inventory search -->
   <Url type="text/html" template="https://discountedgolfcart.com/inventory?search={searchTerms}"/>
-  <Image height="16" width="16" type="image/png">/favicon.png</Image>
-  <LongName>Discounted Golf Carts Golf Cart Inventory Search</LongName>
+  
+  <!-- Favicon Reference -->
+  <Image height="16" width="16" type="image/x-icon">https://discountedgolfcart.com/favicon.ico</Image>
+  <Image height="32" width="32" type="image/png">https://discountedgolfcart.com/favicon.png</Image>
+  
+  <!-- Contact Information -->
   <Contact>info@discountedgolfcart.com</Contact>
-  <Tags>golf carts electric vehicles neighborhood vehicles Discounted Golf Carts</Tags>
-  <Language>en-us</Language>
+  
+  <!-- Developer Information -->
+  <Developer>Discounted Golf Carts Development Team</Developer>
+  
+  <!-- Language and Regional Settings -->
+  <Language>en-US</Language>
+  <Language>en</Language>
+  
+  <!-- Tags for Search Categorization -->
+  <Tags>golf carts electric vehicles neighborhood vehicles EV Discounted Golf Carts new used inventory sales dealership</Tags>
+  
+  <!-- Syndication URL -->
+  <SyndicationRight>open</SyndicationRight>
+  
+  <!-- Adult Content Filter -->
+  <AdultContent>false</AdultContent>
 </OpenSearchDescription>

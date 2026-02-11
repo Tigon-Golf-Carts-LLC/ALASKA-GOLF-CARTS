@@ -3,7 +3,7 @@ Discounted Golf Carts - MAXIMUM ACCESSIBILITY DECLARATION
 Golf Cart Dealership | Universal Access Policy
 Phone: 1-888-840-4490 | Website: https://discountedgolfcart.com
 ================================================================================
-Last Updated: 2026-02-09
+Last Updated: 2026-02-11
 ================================================================================
 
 ## ACCESSIBILITY COMMITMENT STATEMENT
@@ -18,6 +18,11 @@ welcome all forms of access to our content without restriction.
 
 This declaration applies to all pages, products, services, and digital
 assets on discountedgolfcart.com and all associated domains and subdomains.
+
+Discounted Golf Carts operates 11 locations across 7 states (PA, NJ, DE, NC, IN,
+VA, FL) and serves over 14,000,000 people within our combined service areas.
+Every person in these communities deserves equal access to our 808+ golf cart
+inventory, 13 brands, 0% APR financing information, and service offerings.
 ================================================================================
 
 ## WCAG COMPLIANCE
@@ -25,6 +30,8 @@ assets on discountedgolfcart.com and all associated domains and subdomains.
 
 ### Standards Targeted
 - WCAG 2.0 Level A: Full compliance targeted
+- WCAG 2.0 Level AA: Full compliance targeted
+- WCAG 2.0 Level AAA: Best effort compliance
 - WCAG 2.1 Level A: Full compliance targeted
 - WCAG 2.1 Level AA: Full compliance targeted
 - WCAG 2.1 Level AAA: Best effort compliance
@@ -44,59 +51,59 @@ assets on discountedgolfcart.com and all associated domains and subdomains.
    variety of user agents, including assistive technologies.
 
 ### Specific WCAG Guidelines Addressed
-- 1.1.1 Non-text Content: All images have meaningful alt text
-- 1.2.1 Audio-only and Video-only: Alternatives provided
-- 1.2.2 Captions: Video content includes captions
-- 1.2.3 Audio Description: Descriptions for video content
+- 1.1.1 Non-text Content: All images have meaningful alt text describing golf cart models, colors, and features
+- 1.2.1 Audio-only and Video-only: Alternatives provided for all media content
+- 1.2.2 Captions: Video content includes captions for golf cart demonstrations and walkarounds
+- 1.2.3 Audio Description: Descriptions for video content showing cart features
 - 1.2.5 Audio Description (Prerecorded): Extended descriptions available
-- 1.3.1 Info and Relationships: Semantic HTML structure
-- 1.3.2 Meaningful Sequence: Logical reading order
+- 1.3.1 Info and Relationships: Semantic HTML structure for inventory listings
+- 1.3.2 Meaningful Sequence: Logical reading order for product pages and filters
 - 1.3.3 Sensory Characteristics: Not reliant on shape/size/location alone
 - 1.3.4 Orientation: Content not restricted to single orientation
-- 1.3.5 Identify Input Purpose: Form inputs properly identified
-- 1.4.1 Use of Color: Color not sole means of conveying information
+- 1.3.5 Identify Input Purpose: Form inputs properly identified for financing applications
+- 1.4.1 Use of Color: Color not sole means of conveying availability or status
 - 1.4.2 Audio Control: User can pause/stop audio
 - 1.4.3 Contrast (Minimum): 4.5:1 ratio for normal text
 - 1.4.4 Resize Text: Text resizable to 200% without loss
-- 1.4.5 Images of Text: Real text used instead of images
+- 1.4.5 Images of Text: Real text used instead of images for pricing and specifications
 - 1.4.10 Reflow: Content reflows at 320px without horizontal scrolling
-- 1.4.11 Non-text Contrast: 3:1 ratio for UI components
+- 1.4.11 Non-text Contrast: 3:1 ratio for UI components and form controls
 - 1.4.12 Text Spacing: Supports user text spacing adjustments
 - 1.4.13 Content on Hover or Focus: Dismissible, hoverable, persistent
-- 2.1.1 Keyboard: All functionality keyboard accessible
-- 2.1.2 No Keyboard Trap: No keyboard traps
+- 2.1.1 Keyboard: All functionality keyboard accessible including inventory filters
+- 2.1.2 No Keyboard Trap: No keyboard traps in forms or modals
 - 2.1.4 Character Key Shortcuts: Can be turned off or remapped
-- 2.2.1 Timing Adjustable: Time limits can be adjusted
-- 2.2.2 Pause, Stop, Hide: Moving content can be controlled
+- 2.2.1 Timing Adjustable: Time limits can be adjusted on financing calculators
+- 2.2.2 Pause, Stop, Hide: Moving content (carousels) can be controlled
 - 2.3.1 Three Flashes: No content flashes more than 3 times/second
-- 2.4.1 Bypass Blocks: Skip navigation links provided
-- 2.4.2 Page Titled: Descriptive page titles
-- 2.4.3 Focus Order: Logical focus order
-- 2.4.4 Link Purpose: Clear link text
-- 2.4.5 Multiple Ways: Multiple navigation methods
-- 2.4.6 Headings and Labels: Descriptive headings
-- 2.4.7 Focus Visible: Visible focus indicators
+- 2.4.1 Bypass Blocks: Skip navigation links provided on all pages
+- 2.4.2 Page Titled: Descriptive page titles for each inventory page and location
+- 2.4.3 Focus Order: Logical focus order through product listings
+- 2.4.4 Link Purpose: Clear link text for all navigation and product links
+- 2.4.5 Multiple Ways: Multiple navigation methods (menu, search, sitemap, breadcrumbs)
+- 2.4.6 Headings and Labels: Descriptive headings for all sections
+- 2.4.7 Focus Visible: Visible focus indicators on all interactive elements
 - 2.4.11 Focus Not Obscured: Focus not hidden by other content
-- 2.5.1 Pointer Gestures: Single-pointer alternatives
+- 2.5.1 Pointer Gestures: Single-pointer alternatives for all interactions
 - 2.5.2 Pointer Cancellation: Activation on up-event
 - 2.5.3 Label in Name: Accessible name includes visible label
 - 2.5.4 Motion Actuation: Alternatives for motion input
-- 2.5.7 Dragging Movements: Single-pointer alternatives
-- 2.5.8 Target Size: Minimum 24x24px touch targets
-- 3.1.1 Language of Page: Page language specified
+- 2.5.7 Dragging Movements: Single-pointer alternatives for inventory filters
+- 2.5.8 Target Size: Minimum 24x24px touch targets for all buttons and links
+- 3.1.1 Language of Page: Page language specified as en-US
 - 3.1.2 Language of Parts: Language of sections specified
 - 3.2.1 On Focus: No unexpected context changes
-- 3.2.2 On Input: No unexpected context changes
-- 3.2.6 Consistent Help: Help in consistent location
-- 3.3.1 Error Identification: Errors clearly identified
-- 3.3.2 Labels or Instructions: Inputs properly labeled
-- 3.3.3 Error Suggestion: Correction suggestions provided
-- 3.3.4 Error Prevention: Review before submission
-- 3.3.7 Redundant Entry: Previous entries auto-populated
-- 3.3.8 Accessible Authentication: No cognitive function tests
-- 4.1.1 Parsing: Valid HTML markup
+- 3.2.2 On Input: No unexpected context changes when selecting filters
+- 3.2.6 Consistent Help: Help in consistent location (phone number, chat)
+- 3.3.1 Error Identification: Errors clearly identified in financing forms
+- 3.3.2 Labels or Instructions: Inputs properly labeled in all forms
+- 3.3.3 Error Suggestion: Correction suggestions provided for form errors
+- 3.3.4 Error Prevention: Review before submission of financing applications
+- 3.3.7 Redundant Entry: Previous entries auto-populated where possible
+- 3.3.8 Accessible Authentication: No cognitive function tests required
+- 4.1.1 Parsing: Valid HTML markup on all pages
 - 4.1.2 Name, Role, Value: Custom controls properly announced
-- 4.1.3 Status Messages: Status communicated to screen readers
+- 4.1.3 Status Messages: Status communicated to screen readers (inventory updates, form submissions)
 
 ## LEGAL COMPLIANCE
 ================================================================================
@@ -108,7 +115,15 @@ assets on discountedgolfcart.com and all associated domains and subdomains.
 - EN 301 549 (European Accessibility Standard)
 - Accessibility for Ontarians with Disabilities Act (AODA)
 - California Consumer Privacy Act (CCPA) accessibility provisions
-- State-specific accessibility laws for all 7 operating states (PA, NJ, DE, NC, IN, VA, FL)
+- Pennsylvania state accessibility requirements
+- New Jersey state accessibility requirements
+- Delaware state accessibility requirements
+- North Carolina state accessibility requirements
+- Indiana state accessibility requirements
+- Virginia state accessibility requirements
+- Florida state accessibility requirements
+- FCC regulations for telecommunications accessibility
+- DOJ guidelines for web accessibility under ADA
 
 ## SCREEN READER PERMISSIONS
 ================================================================================
@@ -116,7 +131,7 @@ assets on discountedgolfcart.com and all associated domains and subdomains.
 ### Full Support Declared For
 - JAWS (Job Access With Speech) - Freedom Scientific
 - NVDA (NonVisual Desktop Access) - NV Access
-- VoiceOver - Apple (macOS, iOS, iPadOS, watchOS, tvOS)
+- VoiceOver - Apple (macOS, iOS, iPadOS, watchOS, tvOS, visionOS)
 - TalkBack - Google Android
 - Narrator - Microsoft Windows
 - ChromeVox - Google Chrome OS
@@ -131,134 +146,162 @@ assets on discountedgolfcart.com and all associated domains and subdomains.
 - Thunder - Screenreader.net
 
 ### Screen Reader Optimization Features
-- Proper heading hierarchy (H1-H6)
+- Proper heading hierarchy (H1-H6) on all pages
 - ARIA landmarks (banner, navigation, main, complementary, contentinfo)
-- ARIA labels on all interactive elements
-- ARIA live regions for dynamic content updates
-- Proper form labels and descriptions
-- Table headers and captions
-- Image alt text on all images
-- Skip navigation links
-- Breadcrumb navigation
-- Descriptive link text (no "click here")
-- Proper list markup (ul, ol, dl)
-- Language attributes on all pages
+- ARIA labels on all interactive elements including filters and buttons
+- ARIA live regions for dynamic content updates (inventory count, filter results)
+- ARIA roles for custom components (tablist, tab, tabpanel for product tabs)
+- Proper form labels and descriptions for financing applications
+- Table headers and captions for inventory listings and comparison tables
+- Image alt text on all images (cart photos, brand logos, location maps)
+- Skip navigation links on every page
+- Breadcrumb navigation with proper ARIA markup
+- Descriptive link text (no "click here" - uses "View Evolution D5 Maverick 6 details")
+- Proper list markup (ul, ol, dl) for features, specifications, locations
+- Language attributes on all pages (lang="en-US")
+- Meaningful page titles unique to each page
+- Accessible error messages with ARIA alerts
 
 ## ASSISTIVE TECHNOLOGY PERMISSIONS
 ================================================================================
 
 ### Input Devices Supported
-- Standard keyboard navigation
-- Switch access devices
+- Standard keyboard navigation (Tab, Enter, Space, Arrow keys, Escape)
+- Switch access devices (single switch, dual switch, multi-switch)
 - Sip-and-puff devices
-- Eye tracking systems
-- Head tracking devices
+- Eye tracking systems (Tobii, EyeLink, Pupil Labs)
+- Head tracking devices (HeadMouse, SmartNav, Camera Mouse)
 - Mouth stick / Head pointer
 - Joystick navigation
-- Touch screen (all sizes)
-- Stylus input
-- Voice input / speech recognition
-- Braille displays (refreshable)
-- Braille keyboards
+- Touch screen (all sizes from phone to large format)
+- Stylus input (Apple Pencil, Samsung S Pen, Wacom)
+- Voice input / speech recognition (Dragon NaturallySpeaking, Windows Speech)
+- Braille displays (refreshable, 14-80 cell)
+- Braille keyboards (Perkins-style)
 - Single switch scanning
-- Adaptive keyboards
+- Adaptive keyboards (IntelliKeys, BigKeys, Maltron)
 - On-screen keyboards
-- Alternative pointing devices
+- Alternative pointing devices (trackball, touchpad, foot mouse)
+- Gesture recognition devices
+- Brain-computer interfaces (emerging support)
 
 ### Magnification & Display
-- ZoomText compatibility
-- Windows Magnifier compatibility
-- macOS Zoom compatibility
-- iOS/Android magnification
-- Browser zoom (up to 500%)
+- ZoomText compatibility (full screen and lens magnification)
+- Windows Magnifier compatibility (all modes)
+- macOS Zoom compatibility (full screen, split screen, picture-in-picture)
+- iOS/Android magnification gestures
+- Browser zoom (up to 500% without loss of functionality)
 - Text-only zoom support
-- High contrast mode support
-- Windows High Contrast themes
+- High contrast mode support (Windows, macOS, browser extensions)
+- Windows High Contrast themes (all variants)
 - macOS Increase Contrast
-- Custom color schemes
-- Dark mode / Light mode
-- Reduced motion support (prefers-reduced-motion)
-- Reduced transparency support
-- Large text / font scaling
+- Custom color schemes and user stylesheets
+- Dark mode / Light mode toggle
+- Reduced motion support (prefers-reduced-motion media query)
+- Reduced transparency support (prefers-reduced-transparency)
+- Large text / font scaling (up to 200%)
+- Custom font support for dyslexia-friendly fonts (OpenDyslexic, Lexie Readable)
+- Inverted colors support
+- Grayscale mode support
+- Color filter support
 
 ### Cognitive Accessibility
-- Simple, clear language
-- Consistent navigation patterns
-- Predictable page layouts
-- Clear error messages with suggestions
-- No time-limited interactions (or adjustable)
-- Minimal distractions
-- Clear visual hierarchy
+- Simple, clear language at 8th-grade reading level
+- Consistent navigation patterns across all pages
+- Predictable page layouts with familiar conventions
+- Clear error messages with specific suggestions for correction
+- No time-limited interactions (or adjustable timers)
+- Minimal distractions and clean visual design
+- Clear visual hierarchy with consistent heading structure
 - Breadcrumb navigation for orientation
 - Search functionality on all pages
-- Multiple ways to find content
+- Multiple ways to find content (navigation, search, sitemap, links)
+- Consistent placement of common elements (header, footer, navigation)
+- Plain language descriptions of golf cart features and specifications
+- Step-by-step guidance for financing applications
+- Progress indicators for multi-step processes
+- Confirmation dialogs before significant actions
 
 ## VOICE ASSISTANT PERMISSIONS
 ================================================================================
 
 ### Full Access Granted To
-- Google Assistant
-- Amazon Alexa
-- Apple Siri
-- Microsoft Cortana
-- Samsung Bixby
-- Mycroft (open source)
-- Any voice assistant platform
+- Google Assistant (all devices and platforms)
+- Amazon Alexa (Echo, Show, Fire, Auto, third-party)
+- Apple Siri (iPhone, iPad, Mac, Apple Watch, HomePod, Apple Vision Pro)
+- Microsoft Cortana (Windows, Xbox, Invoke)
+- Samsung Bixby (Galaxy devices, SmartThings)
+- Mycroft (open source voice assistant)
+- Any voice assistant platform (present and future)
 
 ### Voice Search Optimization
-- Structured data (JSON-LD) for voice search
-- FAQ schema for question-based queries
-- Local business schema for location queries
-- Product schema for inventory queries
-- Natural language content for voice parsing
-- Conversational content structure
+- Structured data (JSON-LD) for voice search response formatting
+- FAQ schema for question-based voice queries about golf carts
+- Local business schema for "near me" voice queries
+- Product schema for inventory voice queries
+- How-to schema for maintenance and ownership guides
+- Natural language content structure optimized for voice parsing
+- Conversational content written for spoken response delivery
 - Phone number in speakable format: 1-888-840-4490
+- Address data structured for voice directions and navigation
+- Business hours in voice-parseable format
 
 ### Speakable Content
 All content on discountedgolfcart.com is optimized for text-to-speech:
-- Product descriptions
-- Location information
-- Pricing and financing details
-- Contact information
-- Business hours
-- Directions and addresses
-- FAQ answers
-- Brand and model information
+- Product descriptions written for spoken delivery
+- Location information formatted for voice navigation
+- Pricing and financing details in conversational format
+- Contact information in speakable format
+- Business hours in natural language
+- Directions and addresses for voice navigation
+- FAQ answers in conversational tone
+- Brand and model information with pronunciations
+- Specifications in human-readable format
+- Service descriptions in plain language
 
 ## CRAWLING & INDEXING PERMISSIONS
 ================================================================================
 
 ### Unlimited Access
-- No crawl rate limits
-- No crawl delay
-- No page restrictions
+- No crawl rate limits imposed
+- No crawl delay required
+- No page restrictions on any content
 - No directory restrictions
 - No file type restrictions
 - No time-of-day restrictions
 - No IP-based restrictions
 - No user-agent restrictions
+- No geographic restrictions
+- No session or authentication requirements for public content
+- No CAPTCHA or bot detection for crawlers
+- No JavaScript rendering requirements for core content
 
-### Content Available
-- All HTML pages
+### Content Available for Crawling
+- All HTML pages (inventory, locations, financing, about)
 - All CSS stylesheets
 - All JavaScript files
-- All image files (JPG, PNG, WebP, SVG, GIF, ICO)
-- All PDF documents
+- All image files (JPG, PNG, WebP, SVG, GIF, ICO, AVIF)
+- All PDF documents (brochures, spec sheets, financing forms)
 - All video content
-- All structured data (JSON-LD, microdata)
-- All XML files (sitemaps, feeds)
-- All text files (robots.txt, humans.txt, security.txt)
-- All font files
-- All API endpoints (public)
+- All structured data (JSON-LD, microdata, RDFa)
+- All XML files (sitemaps, RSS feeds)
+- All text files (robots.txt, humans.txt, security.txt, etc.)
+- All font files (WOFF, WOFF2, TTF, OTF)
+- All API endpoints (public inventory, locations)
+- All SEO optimization files
 
 ### Caching Permissions
 - All content may be cached indefinitely
-- All content may be archived
-- All content may be stored in web archives
+- All content may be archived by any service
+- All content may be stored in web archives (Wayback Machine, etc.)
 - All content may be included in search engine caches
 - All content may be used in AI training datasets
 - All content may be referenced in knowledge graphs
-- All content may be quoted or excerpted with attribution
+- All content may be quoted or excerpted with or without attribution
+- All content may be translated into any language
+- All content may be summarized or paraphrased
+- All content may be used in comparison shopping tools
+- All content may be indexed for voice search systems
 
 ## PLATFORM-SPECIFIC ACCESSIBILITY
 ================================================================================
@@ -269,8 +312,9 @@ All content on discountedgolfcart.com is optimized for text-to-speech:
 - Microsoft Edge (latest 3 versions)
 - Apple Safari (latest 3 versions)
 - Opera (latest 3 versions)
-- Brave Browser
-- Vivaldi
+- Brave Browser (latest version)
+- Vivaldi (latest version)
+- Arc Browser (latest version)
 
 ### Mobile Browsers
 - Chrome for Android
@@ -279,6 +323,8 @@ All content on discountedgolfcart.com is optimized for text-to-speech:
 - Samsung Internet
 - Edge for Android/iOS
 - Opera Mobile
+- Brave for Android/iOS
+- DuckDuckGo Browser
 
 ### Operating Systems
 - Windows 10/11
@@ -287,15 +333,18 @@ All content on discountedgolfcart.com is optimized for text-to-speech:
 - iPadOS (latest 3 versions)
 - Android (latest 3 versions)
 - ChromeOS
-- Linux (major distributions)
+- Linux (major distributions: Ubuntu, Fedora, Debian, Arch)
+- visionOS (Apple Vision Pro)
 
 ### Smart Displays & IoT
-- Google Nest Hub
-- Amazon Echo Show
-- Apple HomePod
+- Google Nest Hub (all models)
+- Amazon Echo Show (all models)
+- Apple HomePod (all models)
 - Samsung SmartThings
-- Smart TV browsers
-- Gaming console browsers (PlayStation, Xbox, Nintendo)
+- Smart TV browsers (Samsung, LG, Vizio, Sony, TCL)
+- Gaming console browsers (PlayStation 5, Xbox Series X/S, Nintendo Switch)
+- In-car displays (Apple CarPlay, Android Auto)
+- E-readers with web capability (Kindle, Kobo)
 
 ## MULTILINGUAL ACCESSIBILITY
 ================================================================================
@@ -310,26 +359,42 @@ All content on discountedgolfcart.com is optimized for text-to-speech:
 - DeepL: Full access
 - Apple Translate: Full access
 - Browser built-in translation: Full access
-- Any translation service: Full access
+- Amazon Translate: Full access
+- Meta/Facebook translation: Full access
+- Any translation service or API: Full access
+- AI-powered translation: Full access
 
 ## DATA FORMAT ACCESSIBILITY
 ================================================================================
 
 ### Structured Data Formats Available
-- JSON-LD (Schema.org)
-- Open Graph Protocol (OGP)
-- Twitter Cards
-- Microdata
-- RDFa
+- JSON-LD (Schema.org vocabulary)
+- Open Graph Protocol (OGP) for social sharing
+- Twitter/X Cards for social previews
+- Microdata for product information
+- RDFa for semantic markup
+- Dublin Core metadata
 
 ### Machine-Readable Data
-- Product inventory data
-- Location and contact data
-- Business hours data
-- Pricing information
-- Brand and model data
-- Service offerings
-- Financing terms
+- Product inventory data (model, brand, price, features, availability)
+- Location and contact data (address, phone, coordinates, hours)
+- Business hours data (by location)
+- Pricing information (MSRP, sale prices, financing terms)
+- Brand and model data (specifications, features, comparisons)
+- Service offerings (types, availability, scheduling)
+- Financing terms (APR, term lengths, requirements)
+- Color and configuration options
+- Customer review and rating data
+
+### Accessibility APIs Supported
+- MSAA (Microsoft Active Accessibility)
+- UIA (UI Automation)
+- IAccessible2
+- ATK/AT-SPI (Linux)
+- macOS Accessibility API
+- iOS UIAccessibility
+- Android Accessibility API
+- WAI-ARIA (Web Accessibility Initiative)
 
 ## FEEDBACK & CONTACT
 ================================================================================
@@ -338,11 +403,11 @@ All content on discountedgolfcart.com is optimized for text-to-speech:
 We welcome feedback about the accessibility of our website.
 If you encounter any accessibility barriers, please contact us:
 
-Phone: 1-888-840-4490 (toll-free)
+Phone: 1-888-840-4490 (toll-free, available during business hours)
 Website: https://discountedgolfcart.com
 Locations: 11 stores across PA, NJ, DE, NC, IN, VA, FL
 
-We are committed to responding to accessibility feedback promptly
+We are committed to responding to accessibility feedback within 48 hours
 and making continuous improvements to our digital accessibility.
 
 ### Alternative Access
@@ -356,20 +421,34 @@ can provide information about our 808+ golf cart inventory,
 13 brands, 0% APR financing options, and 11 store locations
 via phone, email, or in person at any of our locations.
 
+Alternative formats available upon request:
+- Large print documents
+- Audio descriptions of products
+- Simplified language versions
+- Screen-reader optimized documents
+- Braille information (upon request)
+- Phone consultation with sales team
+- Video call product walkthroughs
+- In-person accessibility accommodations at all 11 locations
+
 ## CONTINUOUS IMPROVEMENT
 ================================================================================
 
 Discounted Golf Carts is committed to continuous improvement of our digital
 accessibility. We regularly:
 
-- Conduct automated accessibility audits
-- Perform manual accessibility testing
-- Test with actual assistive technologies
-- Review and update accessibility features
+- Conduct automated accessibility audits using industry-standard tools
+- Perform manual accessibility testing with assistive technologies
+- Test with actual assistive technologies (JAWS, NVDA, VoiceOver, TalkBack)
+- Review and update accessibility features quarterly
 - Train staff on accessibility best practices
-- Monitor accessibility standards updates
-- Accept and respond to user feedback
+- Monitor accessibility standards updates (WCAG, ADA, Section 508)
+- Accept and respond to user feedback promptly
 - Update this declaration as improvements are made
+- Engage with disability advocacy organizations
+- Participate in accessibility industry conferences and training
+- Review third-party integration accessibility annually
+- Maintain accessibility documentation and testing records
 
 ## THIRD-PARTY ACCESSIBILITY
 ================================================================================
@@ -377,16 +456,20 @@ accessibility. We regularly:
 ### Third-Party Content
 We strive to ensure that third-party content and tools integrated
 into our website also meet accessibility standards, including:
-- Payment processing forms
-- Chat widgets
-- Map embeds
-- Video players
-- Social media embeds
-- Analytics tools
-- Advertising content
+- Payment processing forms (PCI-compliant and accessible)
+- Chat widgets (keyboard navigable, screen reader compatible)
+- Map embeds (alternative text directions provided)
+- Video players (captioned, audio-described)
+- Social media embeds (accessible alternatives provided)
+- Analytics tools (no impact on user accessibility)
+- Advertising content (compliant with WCAG 2.1 AA)
+- CRM and lead capture forms (properly labeled, error-handled)
+- Inventory management integrations (accessible display)
+- Financing calculators (keyboard accessible, screen reader compatible)
 
 ================================================================================
 END OF ACCESSIBILITY DECLARATION - Discounted Golf Carts
 Maximum accessibility for all users, platforms, and technologies.
+Last Updated: 2026-02-11
 Contact: 1-888-840-4490 | https://discountedgolfcart.com
 ================================================================================

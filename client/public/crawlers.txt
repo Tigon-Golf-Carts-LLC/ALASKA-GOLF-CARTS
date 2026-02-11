@@ -3,7 +3,7 @@ Discounted Golf Carts - DETAILED CRAWLER PERMISSIONS & DESCRIPTIONS
 Golf Cart Dealership | Complete Crawler Directory
 Phone: 1-888-840-4490 | Website: https://discountedgolfcart.com
 ================================================================================
-Last Updated: 2026-02-09
+Last Updated: 2026-02-11
 Policy: FULL OPEN ACCESS - All crawlers explicitly allowed
 Crawl-Delay: 0 (no restrictions on crawl speed)
 Sitemap: https://discountedgolfcart.com/sitemap.xml
@@ -19,6 +19,10 @@ also welcome under our catch-all Allow: / policy.
 Content available for: indexing, caching, archiving, AI training,
 link analysis, price comparison, accessibility auditing, and any other
 legitimate automated purpose.
+
+Business: Discounted Golf Carts | Phone: 1-888-840-4490
+Website: https://discountedgolfcart.com | Locations: 11 | Brands: 13
+Inventory: 808+ golf carts | Financing: 0% APR up to 48 months
 ================================================================================
 
 ## SEARCH ENGINE CRAWLERS (Primary)
@@ -26,33 +30,34 @@ legitimate automated purpose.
 
 # 1. Googlebot - Google's primary web crawler
 # Indexes web pages for Google Search, the world's largest search engine
-# Essential for organic search visibility
+# Essential for organic search visibility for all 808+ golf carts
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
 # 2. Googlebot-Image - Google's image-specific crawler
 # Indexes images for Google Images search results
-# Critical for visual inventory display
+# Critical for displaying golf cart photos in image search
 User-agent: Googlebot-Image
 Allow: /
 Crawl-delay: 0
 
 # 3. Googlebot-News - Google News crawler
 # Indexes content for Google News aggregation
-# Important for press releases and announcements
+# Important for press releases and company announcements
 User-agent: Googlebot-News
 Allow: /
 Crawl-delay: 0
 
 # 4. Googlebot-Video - Google's video content crawler
 # Indexes video content for Google Video search
+# Enables golf cart walkthrough and demonstration videos to appear
 User-agent: Googlebot-Video
 Allow: /
 Crawl-delay: 0
 
 # 5. Google-Extended - Google's AI training crawler
-# Collects data for Google AI products like Bard/Gemini
+# Collects data for Google AI products like Gemini
 # Allows Discounted Golf Carts content to appear in AI-generated responses
 User-agent: Google-Extended
 Allow: /
@@ -71,272 +76,356 @@ User-agent: GoogleOther
 Allow: /
 Crawl-delay: 0
 
-# 8. Google-InspectionTool - Google Search Console tool
+# 8. GoogleOther-Image - Google's experimental image crawler
+# Indexes images for Google's experimental products
+User-agent: GoogleOther-Image
+Allow: /
+Crawl-delay: 0
+
+# 9. GoogleOther-Video - Google's experimental video crawler
+# Indexes video for Google's experimental products
+User-agent: GoogleOther-Video
+Allow: /
+Crawl-delay: 0
+
+# 10. Google-InspectionTool - Google Search Console tool
 # Used by site owners to test page rendering and indexing
 User-agent: Google-InspectionTool
 Allow: /
 Crawl-delay: 0
 
-# 9. Googlebot-Mobile - Google's mobile-specific crawler
+# 11. Googlebot-Mobile - Google's mobile-specific crawler
 # Ensures proper indexing of mobile content (mobile-first indexing)
 User-agent: Googlebot-Mobile
 Allow: /
 Crawl-delay: 0
 
-# 10. AdsBot-Google - Google Ads landing page checker
+# 12. AdsBot-Google - Google Ads landing page checker
 # Verifies ad landing page quality for Google Ads campaigns
 User-agent: AdsBot-Google
 Allow: /
 Crawl-delay: 0
 
-# 11. AdsBot-Google-Mobile - Mobile ads landing page checker
+# 13. AdsBot-Google-Mobile - Mobile ads landing page checker
 # Checks mobile landing pages for Google Ads quality
 User-agent: AdsBot-Google-Mobile
 Allow: /
 Crawl-delay: 0
 
-# 12. Mediapartners-Google - Google AdSense crawler
+# 14. AdsBot-Google-Mobile-Apps - Google app ads checker
+# Verifies app-related ad landing pages
+User-agent: AdsBot-Google-Mobile-Apps
+Allow: /
+Crawl-delay: 0
+
+# 15. Mediapartners-Google - Google AdSense crawler
 # Indexes content for contextual ad matching
 User-agent: Mediapartners-Google
 Allow: /
 Crawl-delay: 0
 
-# 13. Bingbot - Microsoft Bing's primary web crawler
-# Indexes pages for Bing, Yahoo, and DuckDuckGo search results
+# 16. Google-CloudVertexBot - Google Cloud AI crawler
+# Collects data for Google's Vertex AI products
+User-agent: Google-CloudVertexBot
+Allow: /
+Crawl-delay: 0
+
+# 17. Bingbot - Microsoft Bing's primary web crawler
+# Indexes pages for Bing, Yahoo, and other Microsoft search results
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 0
 
-# 14. BingPreview - Bing page preview generator
+# 18. BingPreview - Bing page preview generator
 # Creates visual previews for Bing search results
 User-agent: BingPreview
 Allow: /
 Crawl-delay: 0
 
-# 15. msnbot - Legacy Microsoft search crawler
+# 19. msnbot - Legacy Microsoft search crawler
 # Older Microsoft search bot, still active in some capacities
 User-agent: msnbot
 Allow: /
 Crawl-delay: 0
 
-# 16. adidxbot - Bing Ads crawler
+# 20. msnbot-media - Microsoft media content crawler
+# Indexes media files for Bing media search
+User-agent: msnbot-media
+Allow: /
+Crawl-delay: 0
+
+# 21. adidxbot - Bing Ads crawler
 # Checks landing pages for Microsoft Advertising quality
 User-agent: adidxbot
 Allow: /
 Crawl-delay: 0
 
-# 17. Slurp - Yahoo's web crawler
+# 22. Slurp - Yahoo's web crawler
 # Indexes pages for Yahoo Search (now powered by Bing)
 User-agent: Slurp
 Allow: /
 Crawl-delay: 0
 
-# 18. DuckDuckBot - DuckDuckGo's web crawler
+# 23. DuckDuckBot - DuckDuckGo's web crawler
 # Indexes content for privacy-focused DuckDuckGo search
 User-agent: DuckDuckBot
 Allow: /
 Crawl-delay: 0
 
-# 19. Baiduspider - Baidu's web crawler (China)
+# 24. Baiduspider - Baidu's web crawler (China)
 # China's largest search engine crawler for international reach
 User-agent: Baiduspider
 Allow: /
 Crawl-delay: 0
 
-# 20. YandexBot - Yandex search crawler (Russia/CIS)
+# 25. Baiduspider-image - Baidu's image crawler
+# Indexes images for Baidu image search
+User-agent: Baiduspider-image
+Allow: /
+Crawl-delay: 0
+
+# 26. YandexBot - Yandex search crawler (Russia/CIS)
 # Major search engine in Russia and CIS countries
 User-agent: YandexBot
 Allow: /
 Crawl-delay: 0
 
-# 21. YandexImages - Yandex image crawler
+# 27. YandexImages - Yandex image crawler
 # Indexes images for Yandex image search
 User-agent: YandexImages
 Allow: /
 Crawl-delay: 0
 
-# 22. Sogou - Sogou search crawler (China)
+# 28. YandexVideo - Yandex video crawler
+# Indexes video content for Yandex
+User-agent: YandexVideo
+Allow: /
+Crawl-delay: 0
+
+# 29. Sogou - Sogou search crawler (China)
 # Third-largest search engine in China
 User-agent: Sogou
 Allow: /
 Crawl-delay: 0
 
-# 23. Exabot - Exalead search crawler (France)
+# 30. Exabot - Exalead search crawler (France)
 # European search engine by Dassault Systemes
 User-agent: Exabot
 Allow: /
 Crawl-delay: 0
 
-# 24. PetalBot - Huawei/Petal Search crawler
+# 31. PetalBot - Huawei/Petal Search crawler
 # Huawei's search engine for their mobile ecosystem
 User-agent: PetalBot
+Allow: /
+Crawl-delay: 0
+
+# 32. Qwantify - Qwant search crawler (EU)
+# European privacy-focused search engine
+User-agent: Qwantify
+Allow: /
+Crawl-delay: 0
+
+# 33. NaverBot - Naver search crawler (South Korea)
+# South Korea's largest search engine
+User-agent: NaverBot
+Allow: /
+Crawl-delay: 0
+
+# 34. seznambot - Seznam search crawler (Czech Republic)
+# Czech Republic's largest search engine
+User-agent: seznambot
 Allow: /
 Crawl-delay: 0
 
 ## AI & MACHINE LEARNING CRAWLERS
 ================================================================================
 
-# 25. GPTBot - OpenAI's web crawler
+# 35. GPTBot - OpenAI's web crawler
 # Collects training data for ChatGPT and GPT models
 # Allows Discounted Golf Carts to be referenced in AI conversations
 User-agent: GPTBot
 Allow: /
 Crawl-delay: 0
 
-# 26. ChatGPT-User - OpenAI ChatGPT browsing feature
+# 36. ChatGPT-User - OpenAI ChatGPT browsing feature
 # Used when ChatGPT users browse the web during conversations
 User-agent: ChatGPT-User
 Allow: /
 Crawl-delay: 0
 
-# 27. OAI-SearchBot - OpenAI Search crawler
+# 37. OAI-SearchBot - OpenAI Search crawler
 # Powers OpenAI's search features and real-time information retrieval
 User-agent: OAI-SearchBot
 Allow: /
 Crawl-delay: 0
 
-# 28. CCBot - Common Crawl Foundation crawler
+# 38. CCBot - Common Crawl Foundation crawler
 # Non-profit building open web datasets used by many AI companies
 User-agent: CCBot
 Allow: /
 Crawl-delay: 0
 
-# 29. anthropic-ai - Anthropic's web crawler
+# 39. anthropic-ai - Anthropic's web crawler
 # Collects data for Claude AI training and knowledge base
 User-agent: anthropic-ai
 Allow: /
 Crawl-delay: 0
 
-# 30. ClaudeBot - Anthropic's Claude web crawler
+# 40. ClaudeBot - Anthropic's Claude web crawler
 # Used by Claude AI for web browsing and information retrieval
 User-agent: ClaudeBot
 Allow: /
 Crawl-delay: 0
 
-# 31. Claude-Web - Anthropic's Claude web access
+# 41. Claude-Web - Anthropic's Claude web access
 # Enables Claude to access web pages during user interactions
 User-agent: Claude-Web
 Allow: /
 Crawl-delay: 0
 
-# 32. PerplexityBot - Perplexity AI's search crawler
+# 42. PerplexityBot - Perplexity AI's search crawler
 # Powers Perplexity's AI-powered search engine
 User-agent: PerplexityBot
 Allow: /
 Crawl-delay: 0
 
-# 33. Bytespider - ByteDance/TikTok's web crawler
+# 43. Bytespider - ByteDance/TikTok's web crawler
 # Used for TikTok search and ByteDance AI products
 User-agent: Bytespider
 Allow: /
 Crawl-delay: 0
 
-# 34. Diffbot - Diffbot's knowledge graph crawler
+# 44. Diffbot - Diffbot's knowledge graph crawler
 # Builds structured knowledge graph from web content
 User-agent: Diffbot
 Allow: /
 Crawl-delay: 0
 
-# 35. Applebot - Apple's web crawler
+# 45. Applebot - Apple's web crawler
 # Indexes content for Siri, Spotlight, and Apple Search
 User-agent: Applebot
 Allow: /
 Crawl-delay: 0
 
-# 36. Applebot-Extended - Apple's extended AI crawler
+# 46. Applebot-Extended - Apple's extended AI crawler
 # Used for Apple Intelligence and advanced Siri features
 User-agent: Applebot-Extended
 Allow: /
 Crawl-delay: 0
 
-# 37. cohere-ai - Cohere's AI training crawler
+# 47. cohere-ai - Cohere's AI training crawler
 # Collects data for Cohere's enterprise AI models
 User-agent: cohere-ai
 Allow: /
 Crawl-delay: 0
 
-# 38. Meta-ExternalAgent - Meta's AI training crawler
+# 48. Meta-ExternalAgent - Meta's AI training crawler
 # Collects data for Meta AI (Llama models) training
 User-agent: Meta-ExternalAgent
 Allow: /
 Crawl-delay: 0
 
-# 39. Meta-ExternalFetcher - Meta's content fetcher
+# 49. Meta-ExternalFetcher - Meta's content fetcher
 # Fetches web content for Meta's various platforms
 User-agent: Meta-ExternalFetcher
 Allow: /
 Crawl-delay: 0
 
-# 40. Amazonbot - Amazon's web crawler
+# 50. Amazonbot - Amazon's web crawler
 # Powers Alexa answers and Amazon product matching
 User-agent: Amazonbot
 Allow: /
 Crawl-delay: 0
 
-# 41. Google-CloudVertexBot - Google Cloud AI crawler
-# Collects data for Google's Vertex AI products
-User-agent: Google-CloudVertexBot
-Allow: /
-Crawl-delay: 0
-
-# 42. YouBot - You.com AI search crawler
+# 51. YouBot - You.com AI search crawler
 # Powers You.com's AI-first search engine
 User-agent: YouBot
 Allow: /
 Crawl-delay: 0
 
-# 43. AI2Bot - Allen Institute for AI crawler
+# 52. AI2Bot - Allen Institute for AI crawler
 # Academic AI research by the Allen Institute
 User-agent: AI2Bot
 Allow: /
 Crawl-delay: 0
 
-# 44. Ai2Bot-Dolma - Allen Institute Dolma dataset crawler
+# 53. Ai2Bot-Dolma - Allen Institute Dolma dataset crawler
 # Builds Dolma open dataset for AI research
 User-agent: Ai2Bot-Dolma
 Allow: /
 Crawl-delay: 0
 
-# 45. Timpibot - Timpi decentralized search crawler
+# 54. Timpibot - Timpi decentralized search crawler
 # Builds decentralized search index
 User-agent: Timpibot
+Allow: /
+Crawl-delay: 0
+
+# 55. VelenPublicWebCrawler - Velen data crawler
+# Public web data collection for AI applications
+User-agent: VelenPublicWebCrawler
+Allow: /
+Crawl-delay: 0
+
+# 56. Webzio-Extended - Webzio data crawler
+# Structured web data extraction service
+User-agent: Webzio-Extended
+Allow: /
+Crawl-delay: 0
+
+# 57. Omgilibot - Omgili discussion crawler
+# Indexes online discussions and forums
+User-agent: Omgilibot
+Allow: /
+Crawl-delay: 0
+
+# 58. xai-grok - X.AI Grok crawler
+# Collects data for X.AI's Grok AI model
+User-agent: xai-grok
+Allow: /
+Crawl-delay: 0
+
+# 59. NeevaBot - Neeva AI search (legacy)
+# Legacy AI search engine crawler
+User-agent: NeevaBot
 Allow: /
 Crawl-delay: 0
 
 ## SOCIAL MEDIA CRAWLERS
 ================================================================================
 
-# 46. facebookexternalhit - Facebook/Meta link preview crawler
+# 60. facebookexternalhit - Facebook/Meta link preview crawler
 # Generates rich previews when URLs are shared on Facebook
 User-agent: facebookexternalhit
 Allow: /
 Crawl-delay: 0
 
-# 47. Facebot - Facebook's general web crawler
+# 61. Facebot - Facebook's general web crawler
 # Used for various Facebook platform features
 User-agent: Facebot
 Allow: /
 Crawl-delay: 0
 
-# 48. FacebookBot - Meta's newer web crawler
+# 62. FacebookBot - Meta's newer web crawler
 # Updated Meta crawler for Facebook and Instagram
 User-agent: FacebookBot
 Allow: /
 Crawl-delay: 0
 
-# 49. Twitterbot - X/Twitter's card preview crawler
+# 63. Twitterbot - X/Twitter's card preview crawler
 # Generates Twitter Card previews when URLs are shared
 User-agent: Twitterbot
 Allow: /
 Crawl-delay: 0
 
-# 50. LinkedInBot - LinkedIn's link preview crawler
+# 64. LinkedInBot - LinkedIn's link preview crawler
 # Creates rich previews for URLs shared on LinkedIn
 User-agent: LinkedInBot
 Allow: /
 Crawl-delay: 0
 
-# 51. Pinterest/Pinterestbot - Pinterest's image crawler
+# 65. Pinterest/Pinterestbot - Pinterest's image crawler
 # Indexes images and content for Pinterest discovery
 User-agent: Pinterest
 Allow: /
@@ -346,49 +435,55 @@ User-agent: Pinterestbot
 Allow: /
 Crawl-delay: 0
 
-# 52. Slackbot - Slack's link unfurling bot
+# 66. Slackbot - Slack's link unfurling bot
 # Generates previews when URLs are shared in Slack
 User-agent: Slackbot
 Allow: /
 Crawl-delay: 0
 
-# 53. Slackbot-LinkExpanding - Slack's link expansion bot
+# 67. Slackbot-LinkExpanding - Slack's link expansion bot
 # Expanded link previews in Slack channels
 User-agent: Slackbot-LinkExpanding
 Allow: /
 Crawl-delay: 0
 
-# 54. WhatsApp - WhatsApp's link preview bot
+# 68. WhatsApp - WhatsApp's link preview bot
 # Creates previews when links are shared in WhatsApp
 User-agent: WhatsApp
 Allow: /
 Crawl-delay: 0
 
-# 55. Discordbot - Discord's link preview bot
+# 69. Discordbot - Discord's link preview bot
 # Generates link previews in Discord servers and DMs
 User-agent: Discordbot
 Allow: /
 Crawl-delay: 0
 
-# 56. TelegramBot - Telegram's link preview bot
+# 70. TelegramBot - Telegram's link preview bot
 # Creates instant previews for links shared in Telegram
 User-agent: TelegramBot
 Allow: /
 Crawl-delay: 0
 
-# 57. redditbot - Reddit's link preview bot
+# 71. Snapchat - Snapchat's content crawler
+# Indexes content for Snapchat sharing features
+User-agent: Snapchat
+Allow: /
+Crawl-delay: 0
+
+# 72. redditbot - Reddit's link preview bot
 # Generates previews for URLs posted on Reddit
 User-agent: redditbot
 Allow: /
 Crawl-delay: 0
 
-# 58. Embedly - Embed.ly content embedding service
+# 73. Embedly - Embed.ly content embedding service
 # Creates rich embeds used by many platforms including Medium
 User-agent: Embedly
 Allow: /
 Crawl-delay: 0
 
-# 59. Quora-Bot - Quora's web crawler
+# 74. Quora-Bot - Quora's web crawler
 # Indexes content for Quora's knowledge platform
 User-agent: Quora-Bot
 Allow: /
@@ -397,174 +492,330 @@ Crawl-delay: 0
 ## SEO & ANALYTICS TOOLS
 ================================================================================
 
-# 60. AhrefsBot - Ahrefs SEO tool crawler
+# 75. AhrefsBot - Ahrefs SEO tool crawler
 # Major backlink analysis and SEO auditing tool
 User-agent: AhrefsBot
 Allow: /
 Crawl-delay: 0
 
-# 61. SemrushBot - Semrush SEO tool crawler
+# 76. SemrushBot - Semrush SEO tool crawler
 # Comprehensive SEO, advertising, and marketing analysis
 User-agent: SemrushBot
 Allow: /
 Crawl-delay: 0
 
-# 62. MJ12bot - Majestic SEO crawler
+# 77. MJ12bot - Majestic SEO crawler
 # Builds link intelligence database for SEO analysis
 User-agent: MJ12bot
 Allow: /
 Crawl-delay: 0
 
-# 63. DotBot - Moz/SEOmoz crawler
+# 78. DotBot - Moz/SEOmoz crawler
 # Powers Moz's SEO tools and domain authority metrics
 User-agent: DotBot
 Allow: /
 Crawl-delay: 0
 
-# 64. rogerbot - Moz's page crawler
+# 79. rogerbot - Moz's page crawler
 # Used for Moz Pro site auditing and analysis
 User-agent: rogerbot
 Allow: /
 Crawl-delay: 0
 
-# 65. Screaming Frog SEO Spider - Website audit crawler
+# 80. Screaming Frog SEO Spider - Website audit crawler
 # Technical SEO auditing and site analysis tool
 User-agent: Screaming Frog SEO Spider
 Allow: /
 Crawl-delay: 0
 
-# 66. SEOkicks - SEOkicks backlink crawler
+# 81. SEOkicks - SEOkicks backlink crawler
 # German SEO tool for backlink analysis
 User-agent: SEOkicks
 Allow: /
 Crawl-delay: 0
 
-# 67. BLEXBot - Webmeup backlink crawler
+# 82. BLEXBot - Webmeup backlink crawler
 # Backlink analysis and competitive intelligence
 User-agent: BLEXBot
 Allow: /
 Crawl-delay: 0
 
-# 68. DataForSeoBot - DataForSEO crawler
+# 83. DataForSeoBot - DataForSEO crawler
 # Powers many SEO tools with SERP and backlink data
 User-agent: DataForSeoBot
 Allow: /
 Crawl-delay: 0
 
-# 69. serpstatbot - Serpstat SEO tool crawler
+# 84. serpstatbot - Serpstat SEO tool crawler
 # Multi-purpose SEO platform for keyword and site analysis
 User-agent: serpstatbot
 Allow: /
 Crawl-delay: 0
 
-# 70. SeobilityBot - Seobility website checker
+# 85. SeobilityBot - Seobility website checker
 # Free website checker for on-page SEO issues
 User-agent: SeobilityBot
+Allow: /
+Crawl-delay: 0
+
+# 86. ContentKingApp - ContentKing real-time SEO auditing
+# Continuous SEO monitoring and change detection
+User-agent: ContentKingApp
+Allow: /
+Crawl-delay: 0
+
+# 87. CognitiveSEOBot - cognitiveSEO crawler
+# SEO analysis and backlink auditing
+User-agent: CognitiveSEOBot
 Allow: /
 Crawl-delay: 0
 
 ## E-COMMERCE & SHOPPING CRAWLERS
 ================================================================================
 
-# 71. Googlebot-Shopping / Storebot-Google - Google Shopping
+# 88. Googlebot-Shopping / Storebot-Google - Google Shopping
 # Indexes product data for Google Shopping results
 User-agent: Googlebot-Shopping
 Allow: /
 Crawl-delay: 0
 
-# 72. PriceSpider - Price comparison crawler
+# 89. PriceSpider - Price comparison crawler
 # Monitors pricing across retailers
 User-agent: PriceSpider
 Allow: /
 Crawl-delay: 0
 
-# 73. Shopifybot - Shopify's crawler
+# 90. Shopifybot - Shopify's crawler
 # Used by Shopify's ecosystem for product discovery
 User-agent: Shopifybot
+Allow: /
+Crawl-delay: 0
+
+# 91. PricegrabberBot - PriceGrabber comparison shopping
+# Indexes products for price comparison
+User-agent: PricegrabberBot
+Allow: /
+Crawl-delay: 0
+
+# 92. ShopWiki - ShopWiki product discovery
+# Product search and comparison platform
+User-agent: ShopWiki
 Allow: /
 Crawl-delay: 0
 
 ## LOCAL BUSINESS & DIRECTORY CRAWLERS
 ================================================================================
 
-# 74. Yext - Yext local listing management crawler
+# 93. Yext - Yext local listing management crawler
 # Manages business listing accuracy across directories
 User-agent: Yext
 Allow: /
 Crawl-delay: 0
 
-# 75. YelpBot - Yelp's business crawler
+# 94. YelpBot - Yelp's business crawler
 # Indexes business information for Yelp listings
 User-agent: YelpBot
 Allow: /
 Crawl-delay: 0
 
-# 76. BrightLocal - BrightLocal local SEO crawler
+# 95. BrightLocal - BrightLocal local SEO crawler
 # Local SEO auditing and citation management
 User-agent: BrightLocal
 Allow: /
 Crawl-delay: 0
 
-# 77. CarGurus - CarGurus vehicle listing crawler
+# 96. MapsBotGoogle - Google Maps crawler
+# Indexes business data for Google Maps listings
+User-agent: MapsBotGoogle
+Allow: /
+Crawl-delay: 0
+
+# 97. CarGurus - CarGurus vehicle listing crawler
 # Vehicle marketplace that may index golf cart inventory
 User-agent: CarGurus
 Allow: /
 Crawl-delay: 0
 
-# 78. AutoTraderBot - AutoTrader vehicle listing crawler
+# 98. AutoTraderBot - AutoTrader vehicle listing crawler
 # Vehicle marketplace crawler for inventory syndication
 User-agent: AutoTraderBot
+Allow: /
+Crawl-delay: 0
+
+# 99. YellowPagesBot - Yellow Pages directory crawler
+# Business directory listing verification
+User-agent: YellowPagesBot
+Allow: /
+Crawl-delay: 0
+
+# 100. BBBBot - Better Business Bureau crawler
+# Verifies business information for BBB listings
+User-agent: BBBBot
+Allow: /
+Crawl-delay: 0
+
+# 101. Dealerbot - Dealer network crawler
+# Vehicle dealer inventory and listing verification
+User-agent: Dealerbot
+Allow: /
+Crawl-delay: 0
+
+# 102. FoursquareBot - Foursquare location crawler
+# Indexes business locations for Foursquare/Swarm
+User-agent: FoursquareBot
 Allow: /
 Crawl-delay: 0
 
 ## ARCHIVE & RESEARCH CRAWLERS
 ================================================================================
 
-# 79. ia_archiver - Internet Archive's Wayback Machine crawler
+# 103. ia_archiver - Internet Archive's Wayback Machine crawler
 # Preserves web content in the Wayback Machine archive
 User-agent: ia_archiver
 Allow: /
 Crawl-delay: 0
 
-# 80. archive.org_bot - Internet Archive's secondary crawler
+# 104. archive.org_bot - Internet Archive's secondary crawler
 # Additional archival crawler for the Internet Archive
 User-agent: archive.org_bot
+Allow: /
+Crawl-delay: 0
+
+# 105. Heritrix - Internet Archive's open-source crawler
+# Open-source web archiving tool
+User-agent: Heritrix
+Allow: /
+Crawl-delay: 0
+
+# 106. ArchiveTeam - Archive Team web preservation
+# Volunteer-driven web archiving initiative
+User-agent: ArchiveTeam
+Allow: /
+Crawl-delay: 0
+
+## REVIEW PLATFORM CRAWLERS
+================================================================================
+
+# 107. TrustpilotBot - Trustpilot review crawler
+# Verifies business information for review platform
+User-agent: TrustpilotBot
+Allow: /
+Crawl-delay: 0
+
+# 108. G2Bot - G2 review platform crawler
+# Business software and services review platform
+User-agent: G2Bot
+Allow: /
+Crawl-delay: 0
+
+# 109. ConsumerAffairs - ConsumerAffairs review crawler
+# Consumer review and complaint aggregation
+User-agent: ConsumerAffairs
+Allow: /
+Crawl-delay: 0
+
+# 110. BirdEyeBot - BirdEye reputation management
+# Review monitoring and business reputation tool
+User-agent: BirdEyeBot
 Allow: /
 Crawl-delay: 0
 
 ## ACCESSIBILITY & QUALITY CRAWLERS
 ================================================================================
 
-# 81. SiteImprove - SiteImprove accessibility checker
+# 111. SiteImprove - SiteImprove accessibility checker
 # Comprehensive website quality and accessibility auditing
 User-agent: SiteImprove
 Allow: /
 Crawl-delay: 0
 
-# 82. LighthouseBot - Google Lighthouse performance bot
+# 112. LighthouseBot - Google Lighthouse performance bot
 # Audits performance, accessibility, SEO, and best practices
 User-agent: LighthouseBot
+Allow: /
+Crawl-delay: 0
+
+# 113. Pa11y - Open-source accessibility checker
+# Automated accessibility testing tool
+User-agent: Pa11y
+Allow: /
+Crawl-delay: 0
+
+# 114. AXE - Deque axe accessibility checker
+# WCAG compliance checking tool
+User-agent: AXE
+Allow: /
+Crawl-delay: 0
+
+# 115. WAVE - WebAIM accessibility checker
+# Web accessibility evaluation tool
+User-agent: WAVE
+Allow: /
+Crawl-delay: 0
+
+# 116. Tenon - Tenon.io accessibility checker
+# Accessibility testing and reporting platform
+User-agent: Tenon
 Allow: /
 Crawl-delay: 0
 
 ## MONITORING & UPTIME CRAWLERS
 ================================================================================
 
-# 83. UptimeRobot - Website uptime monitoring
+# 117. UptimeRobot - Website uptime monitoring
 # Monitors site availability and response times
 User-agent: UptimeRobot
 Allow: /
 Crawl-delay: 0
 
-# 84. Pingdom - Pingdom performance monitoring
+# 118. Pingdom - Pingdom performance monitoring
 # Tracks website performance and uptime
 User-agent: Pingdom
 Allow: /
 Crawl-delay: 0
 
-# 85. GTmetrix - GTmetrix performance testing
+# 119. GTmetrix - GTmetrix performance testing
 # Website speed and performance analysis
 User-agent: GTmetrix
+Allow: /
+Crawl-delay: 0
+
+# 120. StatusCake - StatusCake monitoring
+# Website uptime and performance monitoring
+User-agent: StatusCake
+Allow: /
+Crawl-delay: 0
+
+# 121. WebPageTest - WebPageTest performance analysis
+# Detailed web page load performance testing
+User-agent: WebPageTest
+Allow: /
+Crawl-delay: 0
+
+# 122. NewRelicBot - New Relic synthetic monitoring
+# Application performance monitoring
+User-agent: NewRelicBot
+Allow: /
+Crawl-delay: 0
+
+## SECURITY CRAWLERS
+================================================================================
+
+# 123. Qualys - Qualys security scanner
+# Website security vulnerability scanning
+User-agent: Qualys
+Allow: /
+Crawl-delay: 0
+
+# 124. SSLLabsBot - SSL Labs SSL/TLS checker
+# Tests SSL/TLS configuration quality
+User-agent: SSLLabsBot
+Allow: /
+Crawl-delay: 0
+
+# 125. SecurityHeaders - Security header checker
+# Evaluates HTTP security header configuration
+User-agent: SecurityHeaders
 Allow: /
 Crawl-delay: 0
 
@@ -592,9 +843,16 @@ Sitemap: https://discountedgolfcart.com/sitemap-images.xml
 # Rich snippets and structured data available on all pages
 # Open Graph and Twitter Card meta tags on all pages
 # JSON-LD structured data for local business and product schemas
+# 808+ golf carts from 13 brands across 11 locations
+# Full inventory accessible at https://discountedgolfcart.com
+# 0% APR financing information available
+# All 11 location pages with addresses, maps, and hours
+# Product comparison and specification pages
+# Financing calculator and application pages
 
 ================================================================================
 END OF CRAWLER PERMISSIONS - Discounted Golf Carts
-All 85+ crawlers explicitly allowed. No restrictions.
+125+ crawlers explicitly allowed. No restrictions.
+Last Updated: 2026-02-11
 Contact: 1-888-840-4490 | https://discountedgolfcart.com
 ================================================================================

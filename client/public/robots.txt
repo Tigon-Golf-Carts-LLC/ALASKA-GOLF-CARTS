@@ -1,7 +1,19 @@
+# Discounted Golf Carts - Maximum Crawl Accessibility Configuration
+# Website: https://discountedgolfcart.com
+# Contact: 1-888-840-4490
+# Last Updated: 2026-02-11
+# Policy: UNRESTRICTED ACCESS - All bots welcome
+
+# ============================================================
+# UNIVERSAL ACCESS - All Crawlers Welcome
+# ============================================================
 User-agent: *
 Allow: /
 Crawl-delay: 0
 
+# ============================================================
+# GOOGLE CRAWLERS
+# ============================================================
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
@@ -30,10 +42,33 @@ User-agent: GoogleOther
 Allow: /
 Crawl-delay: 0
 
+User-agent: GoogleOther-Image
+Allow: /
+Crawl-delay: 0
+
+User-agent: GoogleOther-Video
+Allow: /
+Crawl-delay: 0
+
 User-agent: Storebot-Google
 Allow: /
 Crawl-delay: 0
 
+User-agent: Google-InspectionTool
+Allow: /
+Crawl-delay: 0
+
+User-agent: GoogleProducer
+Allow: /
+Crawl-delay: 0
+
+User-agent: Google-Safety
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# MICROSOFT / BING CRAWLERS
+# ============================================================
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 0
@@ -50,10 +85,32 @@ User-agent: msnbot
 Allow: /
 Crawl-delay: 0
 
+User-agent: msnbot-media
+Allow: /
+Crawl-delay: 0
+
+User-agent: adidxbot
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# YAHOO CRAWLERS
+# ============================================================
 User-agent: Slurp
 Allow: /
 Crawl-delay: 0
 
+User-agent: YahooFeedSeeker
+Allow: /
+Crawl-delay: 0
+
+User-agent: YahooMobileBot
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# BAIDU CRAWLERS
+# ============================================================
 User-agent: Baiduspider
 Allow: /
 Crawl-delay: 0
@@ -62,6 +119,17 @@ User-agent: Baiduspider-image
 Allow: /
 Crawl-delay: 0
 
+User-agent: Baiduspider-video
+Allow: /
+Crawl-delay: 0
+
+User-agent: Baiduspider-news
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# YANDEX CRAWLERS
+# ============================================================
 User-agent: YandexBot
 Allow: /
 Crawl-delay: 0
@@ -74,6 +142,29 @@ User-agent: YandexMobileBot
 Allow: /
 Crawl-delay: 0
 
+User-agent: YandexVideo
+Allow: /
+Crawl-delay: 0
+
+User-agent: YandexMedia
+Allow: /
+Crawl-delay: 0
+
+User-agent: YandexNews
+Allow: /
+Crawl-delay: 0
+
+User-agent: YandexMetrika
+Allow: /
+Crawl-delay: 0
+
+User-agent: YandexPagechecker
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# OTHER SEARCH ENGINES
+# ============================================================
 User-agent: DuckDuckBot
 Allow: /
 Crawl-delay: 0
@@ -82,6 +173,49 @@ User-agent: Applebot
 Allow: /
 Crawl-delay: 0
 
+User-agent: Sogou
+Allow: /
+Crawl-delay: 0
+
+User-agent: Exabot
+Allow: /
+Crawl-delay: 0
+
+User-agent: PetalBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Qwantify
+Allow: /
+Crawl-delay: 0
+
+User-agent: SeznamBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Naver
+Allow: /
+Crawl-delay: 0
+
+User-agent: Swiftbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Neevabot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Kagibot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Mojeek
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# AI CRAWLERS - FULL ACCESS GRANTED
+# ============================================================
 User-agent: GPTBot
 Allow: /
 Crawl-delay: 0
@@ -90,11 +224,19 @@ User-agent: ChatGPT-User
 Allow: /
 Crawl-delay: 0
 
+User-agent: OAI-SearchBot
+Allow: /
+Crawl-delay: 0
+
 User-agent: anthropic-ai
 Allow: /
 Crawl-delay: 0
 
 User-agent: Claude-Web
+Allow: /
+Crawl-delay: 0
+
+User-agent: ClaudeBot
 Allow: /
 Crawl-delay: 0
 
@@ -110,6 +252,61 @@ User-agent: Cohere-ai
 Allow: /
 Crawl-delay: 0
 
+User-agent: Bytespider
+Allow: /
+Crawl-delay: 0
+
+User-agent: YouBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Diffbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Crawl-delay: 0
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+Crawl-delay: 0
+
+User-agent: FacebookBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Amazonbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: AI2Bot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Omgilibot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Timpibot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ISSCyberRiskCrawler
+Allow: /
+Crawl-delay: 0
+
+User-agent: Kangaroo Bot
+Allow: /
+Crawl-delay: 0
+
+User-agent: img2dataset
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# SOCIAL MEDIA BOTS
+# ============================================================
 User-agent: facebookexternalhit
 Allow: /
 Crawl-delay: 0
@@ -138,6 +335,10 @@ User-agent: Slackbot
 Allow: /
 Crawl-delay: 0
 
+User-agent: Slackbot-LinkExpanding
+Allow: /
+Crawl-delay: 0
+
 User-agent: WhatsApp
 Allow: /
 Crawl-delay: 0
@@ -150,6 +351,37 @@ User-agent: Discordbot
 Allow: /
 Crawl-delay: 0
 
+User-agent: SkypeUriPreview
+Allow: /
+Crawl-delay: 0
+
+User-agent: Snapchat
+Allow: /
+Crawl-delay: 0
+
+User-agent: vkShare
+Allow: /
+Crawl-delay: 0
+
+User-agent: Embedly
+Allow: /
+Crawl-delay: 0
+
+User-agent: Quora-Bot
+Allow: /
+Crawl-delay: 0
+
+User-agent: redditbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Mastodon
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# SEO TOOL CRAWLERS
+# ============================================================
 User-agent: AhrefsBot
 Allow: /
 Crawl-delay: 0
@@ -186,46 +418,6 @@ User-agent: Rogerbot
 Allow: /
 Crawl-delay: 0
 
-User-agent: SeznamBot
-Allow: /
-Crawl-delay: 0
-
-User-agent: ia_archiver
-Allow: /
-Crawl-delay: 0
-
-User-agent: archive.org_bot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Sogou
-Allow: /
-Crawl-delay: 0
-
-User-agent: Exabot
-Allow: /
-Crawl-delay: 0
-
-User-agent: PetalBot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Qwantify
-Allow: /
-Crawl-delay: 0
-
-User-agent: Swiftbot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Neevabot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Bytespider
-Allow: /
-Crawl-delay: 0
-
 User-agent: DataForSeoBot
 Allow: /
 Crawl-delay: 0
@@ -238,6 +430,56 @@ User-agent: BLEXBot
 Allow: /
 Crawl-delay: 0
 
+User-agent: seoscanners
+Allow: /
+Crawl-delay: 0
+
+User-agent: SEOdiver
+Allow: /
+Crawl-delay: 0
+
+User-agent: Seekport
+Allow: /
+Crawl-delay: 0
+
+User-agent: ContentKingApp
+Allow: /
+Crawl-delay: 0
+
+User-agent: SiteAuditBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: RankActiveLinkBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ZoominfoBot
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# ARCHIVING & ACADEMIC BOTS
+# ============================================================
+User-agent: ia_archiver
+Allow: /
+Crawl-delay: 0
+
+User-agent: archive.org_bot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Arquivo-web-crawler
+Allow: /
+Crawl-delay: 0
+
+User-agent: ResearchCrawler
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# ADVERTISING & MONETIZATION BOTS
+# ============================================================
 User-agent: Mediapartners-Google
 Allow: /
 Crawl-delay: 0
@@ -250,8 +492,60 @@ User-agent: AdsBot-Google-Mobile
 Allow: /
 Crawl-delay: 0
 
-User-agent: adidxbot
+User-agent: AdsBot-Google-Mobile-Apps
 Allow: /
 Crawl-delay: 0
 
+# ============================================================
+# E-COMMERCE & SHOPPING BOTS
+# ============================================================
+User-agent: ShopBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: PriceGrabber
+Allow: /
+Crawl-delay: 0
+
+User-agent: BizrateBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Nextag
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# MONITORING & UPTIME BOTS
+# ============================================================
+User-agent: UptimeRobot
+Allow: /
+Crawl-delay: 0
+
+User-agent: StatusCake
+Allow: /
+Crawl-delay: 0
+
+User-agent: Pingdom
+Allow: /
+Crawl-delay: 0
+
+User-agent: Site24x7
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# ACCESSIBILITY BOTS
+# ============================================================
+User-agent: AccessibilityBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: a11yWatch
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# SITEMAP REFERENCES
+# ============================================================
 Sitemap: https://discountedgolfcart.com/sitemap.xml

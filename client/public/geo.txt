@@ -3,7 +3,7 @@ Discounted Golf Carts - GEOGRAPHIC SEO & LOCATION DATA
 Golf Cart Dealership | 11 Locations | 7 States
 Phone: 1-888-840-4490 | Website: https://discountedgolfcart.com
 ================================================================================
-Last Updated: 2026-02-09
+Last Updated: 2026-02-11
 ================================================================================
 
 ## STORE LOCATIONS - COMPLETE DATA
@@ -11,8 +11,10 @@ Last Updated: 2026-02-09
 
 ### LOCATION 1: Hatfield, Pennsylvania
 Store Name: Discounted Golf Carts - Hatfield
-Address Area: Hatfield, PA 19440
-State: Pennsylvania
+Street Address: 2333 Bethlehem Pike
+City: Hatfield
+State: Pennsylvania (PA)
+ZIP Code: 19440
 County: Montgomery County
 Coordinates: 40.2751, -75.2993
 Latitude: 40.2751
@@ -20,15 +22,22 @@ Longitude: -75.2993
 Phone: 1-888-840-4490
 Region: Greater Philadelphia / Southeastern Pennsylvania
 Metro Area: Philadelphia-Camden-Wilmington, PA-NJ-DE-MD MSA
-Nearby Cities: Lansdale, North Wales, Souderton, Quakertown, Doylestown, Chalfont, Harleysville, Telford, Perkasie, Sellersville, Ambler, Blue Bell, Norristown, King of Prussia, Plymouth Meeting, Collegeville, Phoenixville, Conshohocken, Fort Washington, Warminster, Horsham, Montgomery Township, Warrington, New Britain
-Nearby Landmarks: Philadelphia (25 mi), Valley Forge (15 mi), Bucks County, Lehigh Valley
+DMA: Philadelphia DMA
+Nearby Cities: Lansdale, North Wales, Souderton, Quakertown, Doylestown, Chalfont, Harleysville, Telford, Perkasie, Sellersville, Ambler, Blue Bell, Norristown, King of Prussia, Plymouth Meeting, Collegeville, Phoenixville, Conshohocken, Fort Washington, Warminster, Horsham, Montgomery Township, Warrington, New Britain, Skippack, Schwenksville, Pottstown, Spring House, Dresher, Abington
+Nearby Counties: Montgomery, Bucks, Chester, Delaware, Philadelphia, Lehigh, Northampton, Berks
+Nearby Landmarks: Philadelphia (25 mi), Valley Forge National Historical Park (15 mi), Bucks County, Lehigh Valley, King of Prussia Mall
+Interstate Access: PA Turnpike (I-276), I-476 (Blue Route), Route 309, Route 202
 Service Radius: 50+ miles
 Population Served: 6,000,000+ (Greater Philadelphia Metro)
+Target Markets: Suburban neighborhoods, golf communities, retirement communities, campgrounds
+Keywords: golf carts hatfield pa, golf cart dealer montgomery county, golf carts philadelphia area, golf carts near me hatfield, buy golf cart hatfield pa, golf cart dealer philadelphia suburbs, golf carts bucks county, golf carts king of prussia area
 
 ### LOCATION 2: Ocean View, New Jersey
 Store Name: Discounted Golf Carts - Ocean View
-Address Area: Ocean View, NJ 08230
-State: New Jersey
+Street Address: 101 NJ-50
+City: Ocean View
+State: New Jersey (NJ)
+ZIP Code: 08230
 County: Cape May County
 Coordinates: 39.2482, -74.7202
 Latitude: 39.2482
@@ -36,15 +45,22 @@ Longitude: -74.7202
 Phone: 1-888-840-4490
 Region: South Jersey Shore / Cape May Peninsula
 Metro Area: Ocean City, NJ MSA
-Nearby Cities: Sea Isle City, Ocean City, Avalon, Stone Harbor, Wildwood, Cape May, Strathmere, Marmora, Somers Point, Northfield, Linwood, Egg Harbor Township, Vineland, Millville, Bridgeton, Hammonton, Margate City, Ventnor City, Atlantic City, Pleasantville
-Nearby Landmarks: Jersey Shore, Atlantic City (20 mi), Cape May (15 mi), Wildwood (10 mi)
+DMA: Philadelphia DMA
+Nearby Cities: Sea Isle City, Ocean City, Avalon, Stone Harbor, Wildwood, Cape May, Strathmere, Marmora, Somers Point, Northfield, Linwood, Egg Harbor Township, Vineland, Millville, Bridgeton, Hammonton, Margate City, Ventnor City, Atlantic City, Pleasantville, Mays Landing, Upper Township, Dennis Township, Woodbine
+Nearby Counties: Cape May, Atlantic, Cumberland, Salem, Gloucester
+Nearby Landmarks: Jersey Shore, Atlantic City (20 mi), Cape May (15 mi), Wildwood Boardwalk (10 mi), Ocean City Boardwalk
+Interstate Access: Garden State Parkway, Route 9, Route 50, Atlantic City Expressway
 Service Radius: 40+ miles
 Population Served: 500,000+ (Cape May & Atlantic County region)
+Target Markets: Shore communities, vacation homes, 55+ communities, campgrounds, retirement villages
+Keywords: golf carts ocean view nj, golf carts cape may county, golf carts jersey shore, golf carts atlantic city area, golf carts shore communities nj, golf cart dealer south jersey, golf carts sea isle city, golf carts ocean city nj, golf carts wildwood nj
 
 ### LOCATION 3: Long Pond, Pennsylvania
 Store Name: Discounted Golf Carts - Long Pond (Poconos)
-Address Area: Long Pond, PA 18334
-State: Pennsylvania
+Street Address: 4738 PA-115
+City: Long Pond
+State: Pennsylvania (PA)
+ZIP Code: 18334
 County: Monroe County
 Coordinates: 41.0506, -75.4532
 Latitude: 41.0506
@@ -52,16 +68,23 @@ Longitude: -75.4532
 Phone: 1-888-840-4490
 Region: Pocono Mountains / Northeast Pennsylvania
 Metro Area: East Stroudsburg, PA MSA
-Nearby Cities: Pocono Summit, Blakeslee, Tobyhanna, Mount Pocono, Tannersville, Stroudsburg, East Stroudsburg, Bartonsville, Pocono Pines, Pocono Lake, Brodheadsville, Saylorsburg, Sciota, Cresco, Mountainhome, Buck Hill Falls, Canadensis, Swiftwater, Analomink, Delaware Water Gap
-Nearby Landmarks: Pocono Raceway (adjacent), Camelback Mountain, Big Boulder, Jack Frost, Delaware Water Gap, Bushkill Falls
+DMA: Wilkes-Barre/Scranton DMA
+Nearby Cities: Pocono Summit, Blakeslee, Tobyhanna, Mount Pocono, Tannersville, Stroudsburg, East Stroudsburg, Bartonsville, Pocono Pines, Pocono Lake, Brodheadsville, Saylorsburg, Sciota, Cresco, Mountainhome, Buck Hill Falls, Canadensis, Swiftwater, Analomink, Delaware Water Gap, Henryville, Effort, Gilbert, Kresgeville, Jim Thorpe
+Nearby Counties: Monroe, Carbon, Pike, Wayne, Northampton, Luzerne
+Nearby Landmarks: Pocono Raceway (adjacent), Camelback Mountain, Big Boulder, Jack Frost, Delaware Water Gap National Recreation Area, Bushkill Falls, Kalahari Resorts, Great Wolf Lodge
+Interstate Access: I-80, I-380, Route 115, Route 940, Route 611
 Service Radius: 40+ miles
 Population Served: 300,000+ (Pocono Mountain region)
-Special Note: Prime resort/vacation community market
+Target Markets: Resort communities, vacation properties, campgrounds, timeshares, 55+ communities
+Special Note: Prime resort/vacation community market with high seasonal demand
+Keywords: golf carts poconos, golf carts pocono mountains, golf carts long pond pa, golf carts monroe county pa, golf cart dealer poconos, golf carts mount pocono, golf carts stroudsburg pa, golf carts resort community poconos, golf carts vacation property pa
 
 ### LOCATION 4: Dover, Delaware
 Store Name: Discounted Golf Carts - Dover
-Address Area: Dover, DE 19901
-State: Delaware
+Street Address: 5158 N Dupont Hwy
+City: Dover
+State: Delaware (DE)
+ZIP Code: 19901
 County: Kent County
 Coordinates: 39.1582, -75.5244
 Latitude: 39.1582
@@ -69,15 +92,23 @@ Longitude: -75.5244
 Phone: 1-888-840-4490
 Region: Central Delaware / Delmarva Peninsula
 Metro Area: Dover, DE MSA
-Nearby Cities: Camden-Wyoming, Smyrna, Clayton, Milford, Harrington, Felton, Magnolia, Frederica, Woodside, Hartly, Cheswold, Kenton, Townsend, Middletown, Odessa, Georgetown, Seaford, Laurel, Bridgeville, Lewes, Rehoboth Beach, Dewey Beach, Bethany Beach
-Nearby Landmarks: Dover International Speedway, Delaware State Capitol, Dover Air Force Base, Delaware Beaches (45 mi)
+DMA: Philadelphia DMA
+Nearby Cities: Camden-Wyoming, Smyrna, Clayton, Milford, Harrington, Felton, Magnolia, Frederica, Woodside, Hartly, Cheswold, Kenton, Townsend, Middletown, Odessa, Georgetown, Seaford, Laurel, Bridgeville, Lewes, Rehoboth Beach, Dewey Beach, Bethany Beach, Fenwick Island, Milton, Lincoln, Ellendale
+Nearby Counties: Kent (DE), Sussex (DE), New Castle (DE), Caroline (MD), Queen Anne's (MD), Dorchester (MD)
+Nearby Landmarks: Dover International Speedway, Delaware State Capitol, Dover Air Force Base, Delaware Beaches (45 mi), Bombay Hook National Wildlife Refuge
+Interstate Access: Route 1, Route 13 (DuPont Highway), Route 8, Route 113
 Service Radius: 50+ miles
 Population Served: 400,000+ (entire state of Delaware accessible)
+Target Markets: Beach communities, retirement communities, military community (Dover AFB), state government area
+Special Note: Serves all 3 Delaware counties and Delaware beach communities
+Keywords: golf carts dover de, golf carts delaware, golf carts kent county de, golf carts delaware beaches, golf carts rehoboth beach area, golf carts sussex county de, golf cart dealer delaware, golf carts smyrna de, golf carts middletown de, golf carts milford de, golf carts lewes de
 
 ### LOCATION 5: Scranton, Pennsylvania
 Store Name: Discounted Golf Carts - Scranton
-Address Area: Scranton, PA 18504
-State: Pennsylvania
+Street Address: 1225 N. Keyser Ave #2
+City: Scranton
+State: Pennsylvania (PA)
+ZIP Code: 18504
 County: Lackawanna County
 Coordinates: 41.4090, -75.6624
 Latitude: 41.4090
@@ -85,15 +116,22 @@ Longitude: -75.6624
 Phone: 1-888-840-4490
 Region: Northeastern Pennsylvania / Lackawanna Valley
 Metro Area: Scranton--Wilkes-Barre, PA MSA
-Nearby Cities: Wilkes-Barre, Dunmore, Old Forge, Carbondale, Pittston, Kingston, Taylor, Moosic, Dickson City, Clarks Summit, Dalton, Archbald, Blakely, Olyphant, Throop, Jessup, Moscow, Hamlin, Honesdale, Hawley, Milford, Montrose
-Nearby Landmarks: Steamtown National Historic Site, Lackawanna County Stadium, Montage Mountain, The Poconos
+DMA: Wilkes-Barre/Scranton DMA
+Nearby Cities: Wilkes-Barre, Dunmore, Old Forge, Carbondale, Pittston, Kingston, Taylor, Moosic, Dickson City, Clarks Summit, Dalton, Archbald, Blakely, Olyphant, Throop, Jessup, Moscow, Hamlin, Honesdale, Hawley, Milford, Montrose, Tunkhannock, Dallas, Mountain Top, Hazleton, Bloomsburg
+Nearby Counties: Lackawanna, Luzerne, Wyoming, Wayne, Susquehanna, Pike, Monroe, Columbia, Schuylkill
+Nearby Landmarks: Steamtown National Historic Site, PNC Field, Montage Mountain, The Poconos, Tobyhanna Army Depot
+Interstate Access: I-81, I-84, I-380, I-476 (PA Turnpike Extension), Route 6, Route 11
 Service Radius: 50+ miles
 Population Served: 600,000+ (Scranton-Wilkes-Barre Metro)
+Target Markets: Residential neighborhoods, 55+ communities, campgrounds, lake communities
+Keywords: golf carts scranton pa, golf carts wilkes barre, golf carts northeast pa, golf carts lackawanna county, golf cart dealer scranton, golf carts dunmore pa, golf carts pittston pa, golf carts clarks summit pa
 
 ### LOCATION 6: Raleigh, North Carolina
 Store Name: Discounted Golf Carts - Raleigh
-Address Area: Raleigh, NC 27603
-State: North Carolina
+Street Address: 2700 South Wilmington Street
+City: Raleigh
+State: North Carolina (NC)
+ZIP Code: 27603
 County: Wake County
 Coordinates: 35.7596, -78.6382
 Latitude: 35.7596
@@ -101,16 +139,23 @@ Longitude: -78.6382
 Phone: 1-888-840-4490
 Region: Research Triangle / Central North Carolina
 Metro Area: Raleigh-Durham-Chapel Hill, NC CSA
-Nearby Cities: Durham, Chapel Hill, Cary, Apex, Holly Springs, Fuquay-Varina, Wake Forest, Garner, Clayton, Smithfield, Knightdale, Wendell, Zebulon, Sanford, Pittsboro, Hillsborough, Mebane, Burlington, Henderson, Goldsboro, Wilson, Rocky Mount, Fayetteville, Southern Pines, Pinehurst
-Nearby Landmarks: Research Triangle Park, NC State University, Duke University, UNC Chapel Hill
+DMA: Raleigh-Durham DMA
+Nearby Cities: Durham, Chapel Hill, Cary, Apex, Holly Springs, Fuquay-Varina, Wake Forest, Garner, Clayton, Smithfield, Knightdale, Wendell, Zebulon, Sanford, Pittsboro, Hillsborough, Mebane, Burlington, Henderson, Goldsboro, Wilson, Rocky Mount, Fayetteville, Southern Pines, Pinehurst, Aberdeen, Morrisville, Rolesville, Youngsville, Franklinton, Oxford
+Nearby Counties: Wake, Durham, Orange, Chatham, Johnston, Harnett, Lee, Franklin, Granville, Nash, Wayne, Sampson, Moore, Vance, Person, Alamance
+Nearby Landmarks: Research Triangle Park, NC State University, Duke University, UNC Chapel Hill, PNC Arena, Pinehurst Resort, Carolina Hurricanes
+Interstate Access: I-40, I-440, I-540, I-87, US-1, US-64, US-70, US-401
 Service Radius: 75+ miles
 Population Served: 2,000,000+ (Research Triangle Metro)
+Target Markets: Golf communities, planned neighborhoods, retirement communities, university communities
 Special Note: Fast-growing market with numerous golf communities and planned neighborhoods
+Keywords: golf carts raleigh nc, golf carts research triangle, golf carts durham nc, golf carts chapel hill nc, golf carts cary nc, golf carts wake county nc, golf carts pinehurst nc, golf carts southern pines nc, golf carts fayetteville nc, golf cart dealer triangle nc, golf carts apex nc, golf carts holly springs nc, golf carts fuquay varina nc
 
 ### LOCATION 7: South Bend, Indiana
 Store Name: Discounted Golf Carts - South Bend
-Address Area: South Bend, IN 46637
-State: Indiana
+Street Address: 52129 State Highway 933
+City: South Bend
+State: Indiana (IN)
+ZIP Code: 46637
 County: St. Joseph County
 Coordinates: 41.7002, -86.2390
 Latitude: 41.7002
@@ -118,15 +163,22 @@ Longitude: -86.2390
 Phone: 1-888-840-4490
 Region: Michiana / Northern Indiana
 Metro Area: South Bend-Mishawaka, IN-MI MSA
-Nearby Cities: Mishawaka, Elkhart, Goshen, Granger, Niles MI, Buchanan MI, Dowagiac MI, Plymouth, Warsaw, LaPorte, Michigan City, Valparaiso, Bremen, Nappanee, Middlebury, Benton Harbor MI, St. Joseph MI
-Nearby Landmarks: University of Notre Dame, Studebaker National Museum, Amish Country (Elkhart/Goshen)
+DMA: South Bend-Elkhart DMA
+Nearby Cities: Mishawaka, Elkhart, Goshen, Granger, Niles MI, Buchanan MI, Dowagiac MI, Plymouth, Warsaw, LaPorte, Michigan City, Valparaiso, Bremen, Nappanee, Middlebury, Benton Harbor MI, St. Joseph MI, Berrien Springs MI, Cassopolis MI, Edwardsburg MI, Osceola, Wakarusa, Syracuse
+Nearby Counties: St. Joseph (IN), Elkhart (IN), Marshall (IN), Kosciusko (IN), LaPorte (IN), Starke (IN), Pulaski (IN), Fulton (IN), Cass (IN), Berrien (MI), Cass (MI), Van Buren (MI)
+Nearby Landmarks: University of Notre Dame, Studebaker National Museum, Amish Country (Elkhart/Goshen), Indiana Dunes (60 mi), Warren Dunes (MI)
+Interstate Access: I-80/I-90 (Indiana Toll Road), US-31, US-20, US-33, State Road 933
 Service Radius: 60+ miles
 Population Served: 800,000+ (Michiana region, spans IN/MI border)
+Target Markets: University community, suburban neighborhoods, lake communities, Amish country, retirement communities
+Keywords: golf carts south bend in, golf carts mishawaka in, golf carts elkhart in, golf carts goshen in, golf carts northern indiana, golf carts michiana, golf carts notre dame area, golf carts st joseph county in, golf cart dealer indiana, golf carts granger in, golf carts niles michigan
 
 ### LOCATION 8: Gloucester Point, Virginia
 Store Name: Discounted Golf Carts - Gloucester Point
-Address Area: Gloucester Point, VA 23072
-State: Virginia
+Street Address: 2810 George Washington Memorial Highway
+City: Gloucester Point
+State: Virginia (VA)
+ZIP Code: 23072
 County: Gloucester County
 Coordinates: 37.2779, -76.4966
 Latitude: 37.2779
@@ -134,16 +186,23 @@ Longitude: -76.4966
 Phone: 1-888-840-4490
 Region: Hampton Roads / Virginia Peninsula
 Metro Area: Virginia Beach-Norfolk-Newport News, VA-NC MSA
-Nearby Cities: Yorktown, Williamsburg, Newport News, Hampton, Norfolk, Virginia Beach, Chesapeake, Poquoson, Mathews, West Point, Tappahannock, Kilmarnock, Urbanna, Saluda, Deltaville, Topping, Gloucester Courthouse, Hayes, Achilles
-Nearby Landmarks: Colonial Williamsburg, Yorktown Battlefield, Virginia Institute of Marine Science, Chesapeake Bay
+DMA: Norfolk-Portsmouth-Newport News DMA
+Nearby Cities: Yorktown, Williamsburg, Newport News, Hampton, Norfolk, Virginia Beach, Chesapeake, Poquoson, Mathews, West Point, Tappahannock, Kilmarnock, Urbanna, Saluda, Deltaville, Topping, Gloucester Courthouse, Hayes, Achilles, Suffolk, Portsmouth, James City, Smithfield, Surry
+Nearby Counties: Gloucester, York, James City, Mathews, Middlesex, King and Queen, King William, New Kent, Charles City, Isle of Wight, Surry, Williamsburg (independent city)
+Nearby Landmarks: Colonial Williamsburg, Yorktown Battlefield, Virginia Institute of Marine Science, Chesapeake Bay, Busch Gardens, Water Country USA, Joint Base Langley-Eustis, Naval Station Norfolk
+Interstate Access: I-64, Route 17, Route 14, Colonial Parkway
 Service Radius: 50+ miles
 Population Served: 1,800,000+ (Hampton Roads Metro)
-Special Note: Major military community, coastal/waterfront living
+Target Markets: Military community, coastal/waterfront living, retirement communities, golf communities, historic area tourism
+Special Note: Major military community, Chesapeake Bay coastal living
+Keywords: golf carts gloucester va, golf carts hampton roads, golf carts williamsburg va, golf carts newport news va, golf carts hampton va, golf carts norfolk va, golf carts virginia beach va, golf carts yorktown va, golf carts chesapeake bay area, golf cart dealer hampton roads, golf carts virginia peninsula, golf carts tidewater virginia
 
 ### LOCATION 9: Bayville Township, New Jersey
 Store Name: Discounted Golf Carts - Bayville
-Address Area: Bayville Township, NJ 08721
-State: New Jersey
+Street Address: 155 Atlantic City Boulevard
+City: Bayville Township
+State: New Jersey (NJ)
+ZIP Code: 08721
 County: Ocean County
 Coordinates: 39.9065, -74.1560
 Latitude: 39.9065
@@ -151,16 +210,23 @@ Longitude: -74.1560
 Phone: 1-888-840-4490
 Region: Jersey Shore / Central New Jersey Coast
 Metro Area: New York-Newark-Jersey City, NY-NJ-PA MSA (extended)
-Nearby Cities: Toms River, Brick, Lakewood, Jackson, Manchester, Lacey, Forked River, Barnegat, Beachwood, Pine Beach, Island Heights, Seaside Heights, Seaside Park, Lavallette, Ortley Beach, Point Pleasant, Bay Head, Manasquan, Long Beach Island
-Nearby Landmarks: Barnegat Bay, Island Beach State Park, Six Flags Great Adventure (30 mi)
+DMA: New York DMA (partial)
+Nearby Cities: Toms River, Brick, Lakewood, Jackson, Manchester, Lacey, Forked River, Barnegat, Beachwood, Pine Beach, Island Heights, Seaside Heights, Seaside Park, Lavallette, Ortley Beach, Point Pleasant, Bay Head, Manasquan, Long Beach Island, Berkeley Township, Stafford Township
+Nearby Counties: Ocean, Monmouth, Burlington, Middlesex
+Nearby Landmarks: Barnegat Bay, Island Beach State Park, Six Flags Great Adventure (30 mi), Seaside Heights Boardwalk, Point Pleasant Boardwalk, Jenkinson's Aquarium
+Interstate Access: Garden State Parkway, Route 9, Route 37, Route 70
 Service Radius: 40+ miles
 Population Served: 600,000+ (Ocean County and surrounding areas)
-Special Note: Major 55+ retirement community market
+Target Markets: 55+ retirement communities, shore communities, vacation properties, campgrounds
+Special Note: Major 55+ retirement community market (Holiday City, Crestwood Village, Silver Ridge Park, Leisure Village)
+Keywords: golf carts bayville nj, golf carts ocean county nj, golf carts toms river area, golf carts 55+ communities nj, golf carts retirement communities nj, golf carts brick nj, golf carts lakewood nj, golf carts seaside nj, golf carts jersey shore, golf cart dealer ocean county
 
 ### LOCATION 10: Ocean Township (Waretown), New Jersey
 Store Name: Discounted Golf Carts - Waretown
-Address Area: Ocean Township (Waretown), NJ 08758
-State: New Jersey
+Street Address: 526 U.S. 9
+City: Ocean Township (Waretown)
+State: New Jersey (NJ)
+ZIP Code: 08758
 County: Ocean County
 Coordinates: 39.7812, -74.2035
 Latitude: 39.7812
@@ -168,16 +234,23 @@ Longitude: -74.2035
 Phone: 1-888-840-4490
 Region: Southern Ocean County / Jersey Shore
 Metro Area: New York-Newark-Jersey City, NY-NJ-PA MSA (extended)
-Nearby Cities: Barnegat, Manahawkin, Stafford Township, Long Beach Township, Beach Haven, Ship Bottom, Surf City, Harvey Cedars, Barnegat Light, Tuckerton, Little Egg Harbor, New Gretna, Chatsworth, Hammonton, Galloway Township, Port Republic, Smithville
-Nearby Landmarks: Long Beach Island, Edwin B. Forsythe National Wildlife Refuge, Bass River State Forest
+DMA: New York DMA (partial)
+Nearby Cities: Barnegat, Manahawkin, Stafford Township, Long Beach Township, Beach Haven, Ship Bottom, Surf City, Harvey Cedars, Barnegat Light, Tuckerton, Little Egg Harbor, New Gretna, Chatsworth, Hammonton, Galloway Township, Port Republic, Smithville, Lacey Township, Forked River, West Creek
+Nearby Counties: Ocean, Burlington, Atlantic
+Nearby Landmarks: Long Beach Island, Edwin B. Forsythe National Wildlife Refuge, Bass River State Forest, Barnegat Lighthouse, Fantasy Island Amusement Park
+Interstate Access: Garden State Parkway, Route 9, Route 72 (to Long Beach Island)
 Service Radius: 35+ miles
 Population Served: 400,000+ (Southern Ocean County)
-Special Note: Serves Long Beach Island vacation community
+Target Markets: Long Beach Island vacation community, 55+ communities, beach homeowners, campgrounds
+Special Note: Serves Long Beach Island vacation community and southern Ocean County retirement communities
+Keywords: golf carts waretown nj, golf carts long beach island, golf carts barnegat nj, golf carts manahawkin nj, golf carts southern ocean county, golf cart dealer waretown, golf carts beach haven nj, golf carts surf city nj, golf carts stafford township nj
 
 ### LOCATION 11: Lecanto, Florida
 Store Name: Discounted Golf Carts - Lecanto
-Address Area: Lecanto, FL 34461
-State: Florida
+Street Address: 299 East Gulf to Lake Highway
+City: Lecanto
+State: Florida (FL)
+ZIP Code: 34461
 County: Citrus County
 Coordinates: 28.8517, -82.4876
 Latitude: 28.8517
@@ -185,84 +258,114 @@ Longitude: -82.4876
 Phone: 1-888-840-4490
 Region: Nature Coast / Central West Florida
 Metro Area: Homosassa Springs, FL MSA
-Nearby Cities: Crystal River, Inverness, Homosassa, Homosassa Springs, Beverly Hills, Citrus Springs, Pine Ridge, Hernando, Floral City, Dunnellon, Ocala, Brooksville, Spring Hill, Weeki Wachee, Hudson, New Port Richey, Bushnell, Wildwood, The Villages, Lady Lake, Leesburg
-Nearby Landmarks: Crystal River National Wildlife Refuge, Homosassa Springs Wildlife State Park, Withlacoochee State Trail
+DMA: Tampa-St. Petersburg DMA (partial)
+Nearby Cities: Crystal River, Inverness, Homosassa, Homosassa Springs, Beverly Hills, Citrus Springs, Pine Ridge, Hernando, Floral City, Dunnellon, Ocala, Brooksville, Spring Hill, Weeki Wachee, Hudson, New Port Richey, Bushnell, Wildwood, The Villages, Lady Lake, Leesburg, Clermont, Tavares, Eustis, Mount Dora
+Nearby Counties: Citrus, Marion, Levy, Sumter, Hernando, Pasco, Lake
+Nearby Landmarks: Crystal River National Wildlife Refuge, Homosassa Springs Wildlife State Park, Withlacoochee State Trail, The Villages (40 mi), Rainbow Springs State Park
+Interstate Access: US-19, US-41, Route 44, I-75 (20 mi east)
 Service Radius: 60+ miles
 Population Served: 700,000+ (Nature Coast / North Tampa region)
+Target Markets: Retirement communities, 55+ communities, golf communities, snowbird properties, RV parks
 Special Note: Major retirement community and 55+ community market, close proximity to The Villages
+Keywords: golf carts lecanto fl, golf carts citrus county fl, golf carts crystal river fl, golf carts inverness fl, golf carts homosassa fl, golf carts nature coast florida, golf carts near the villages fl, golf carts ocala fl, golf carts spring hill fl, golf carts hernando county fl, golf cart dealer central florida, golf carts 55+ communities florida, golf carts retirement communities florida, golf carts florida gulf coast
 
-## STATES SERVED
+## STATES SERVED - COMPREHENSIVE
 ================================================================================
 
 STATE: Pennsylvania (PA)
 Locations: 3 (Hatfield, Long Pond, Scranton)
-Major Markets: Philadelphia, Poconos, Scranton-Wilkes-Barre
-Counties Covered: Montgomery, Monroe, Lackawanna, Bucks, Chester, Delaware, Philadelphia, Lehigh, Northampton, Carbon, Pike, Wayne, Luzerne, Columbia, Schuylkill, Berks
+Major Markets: Philadelphia, Poconos, Scranton-Wilkes-Barre, Lehigh Valley
+Counties Covered: Montgomery, Monroe, Lackawanna, Bucks, Chester, Delaware, Philadelphia, Lehigh, Northampton, Carbon, Pike, Wayne, Luzerne, Columbia, Schuylkill, Berks, Lancaster (partial)
+Population: 13,000,000+
+Golf Cart Legislation: PA allows LSVs on roads with posted speed limits of 35 mph or less
+Key Demographics: Suburban communities, resort/vacation properties, retirement communities, campgrounds
 
 STATE: New Jersey (NJ)
 Locations: 3 (Ocean View, Bayville Township, Waretown)
-Major Markets: Jersey Shore, Cape May, Ocean County, Atlantic City
+Major Markets: Jersey Shore, Cape May, Ocean County, Atlantic City area
 Counties Covered: Cape May, Atlantic, Ocean, Burlington, Monmouth, Cumberland, Salem, Gloucester, Camden, Middlesex
+Population: 9,300,000+
+Golf Cart Legislation: NJ allows LSVs on roads with posted speed limits of 25 mph or less
+Key Demographics: Shore communities, 55+ retirement communities, vacation properties, beach communities
 
 STATE: Delaware (DE)
 Locations: 1 (Dover)
 Major Markets: Dover, Delaware Beaches, Wilmington accessible
 Counties Covered: Kent, Sussex, New Castle (all 3 Delaware counties)
+Population: 1,000,000+
+Golf Cart Legislation: DE allows golf carts on roads with posted speed limits of 25 mph or less
+Key Demographics: Beach communities, retirement communities, military community, state capital
 
 STATE: North Carolina (NC)
 Locations: 1 (Raleigh)
-Major Markets: Research Triangle, Raleigh-Durham-Chapel Hill
-Counties Covered: Wake, Durham, Orange, Chatham, Johnston, Harnett, Lee, Franklin, Granville, Nash, Wayne, Sampson, Moore
+Major Markets: Research Triangle, Raleigh-Durham-Chapel Hill, Pinehurst area
+Counties Covered: Wake, Durham, Orange, Chatham, Johnston, Harnett, Lee, Franklin, Granville, Nash, Wayne, Sampson, Moore, Vance, Person, Alamance
+Population: 10,800,000+
+Golf Cart Legislation: NC allows golf carts on roads with posted speed limits of 35 mph or less
+Key Demographics: Golf communities, university areas, planned neighborhoods, retirement communities
 
 STATE: Indiana (IN)
 Locations: 1 (South Bend)
 Major Markets: South Bend-Mishawaka, Elkhart-Goshen, Northern Indiana
-Counties Covered: St. Joseph, Elkhart, Marshall, Kosciusko, LaPorte, Starke, Pulaski, Fulton, Cass (also Berrien County, MI and Cass County, MI)
+Counties Covered: St. Joseph, Elkhart, Marshall, Kosciusko, LaPorte, Starke, Pulaski, Fulton, Cass (also Berrien and Cass Counties in MI)
+Population: 6,800,000+
+Golf Cart Legislation: IN allows golf carts on roads with posted speed limits of 35 mph or less with local approval
+Key Demographics: University community (Notre Dame), lake communities, Amish country, suburban neighborhoods
 
 STATE: Virginia (VA)
 Locations: 1 (Gloucester Point)
 Major Markets: Hampton Roads, Williamsburg, Virginia Peninsula
 Counties Covered: Gloucester, York, James City, Mathews, Middlesex, King and Queen, King William, New Kent, Charles City, Isle of Wight, Surry
+Population: 8,600,000+
+Golf Cart Legislation: VA allows golf carts on roads with posted speed limits of 25 mph or less
+Key Demographics: Military communities, coastal living, retirement communities, golf communities, historic tourism
 
 STATE: Florida (FL)
 Locations: 1 (Lecanto)
 Major Markets: Nature Coast, Crystal River, Citrus County, near The Villages
 Counties Covered: Citrus, Marion, Levy, Sumter, Hernando, Pasco, Lake
+Population: 22,200,000+
+Golf Cart Legislation: FL is one of the most golf-cart-friendly states, allowing carts on roads with posted speed limits of 30 mph or less
+Key Demographics: Retirement communities, 55+ communities, snowbird properties, golf communities, RV parks
 
 ## SERVICE AREA BOUNDARIES
 ================================================================================
 
 ### Northeast Region (PA/NJ/DE)
-Northern Boundary: Scranton, PA (41.4090°N)
-Southern Boundary: Cape May, NJ / Dover, DE (~39.0°N)
-Eastern Boundary: Jersey Shore (~74.0°W)
-Western Boundary: Lancaster/Reading, PA (~76.0°W)
+Northern Boundary: Scranton, PA (41.4090 N)
+Southern Boundary: Cape May, NJ / Dover, DE (~39.0 N)
+Eastern Boundary: Jersey Shore (~74.0 W)
+Western Boundary: Lancaster/Reading, PA (~76.0 W)
 Total Coverage: ~15,000 sq mi
 Stores in Region: 7 (Hatfield, Ocean View, Long Pond, Dover, Scranton, Bayville, Waretown)
+Combined Population Served: 8,500,000+
 
 ### Southeast Region (NC/VA)
-Northern Boundary: Fredericksburg, VA (~38.3°N)
-Southern Boundary: Fayetteville, NC (~35.0°N)
-Eastern Boundary: Virginia Beach, VA (~76.0°W)
-Western Boundary: Greensboro, NC (~79.8°W)
+Northern Boundary: Fredericksburg, VA (~38.3 N)
+Southern Boundary: Fayetteville, NC (~35.0 N)
+Eastern Boundary: Virginia Beach, VA (~76.0 W)
+Western Boundary: Greensboro, NC (~79.8 W)
 Total Coverage: ~20,000 sq mi
 Stores in Region: 2 (Raleigh, Gloucester Point)
+Combined Population Served: 3,800,000+
 
 ### Midwest Region (IN)
-Northern Boundary: Michigan State Line (~42.0°N)
-Southern Boundary: Plymouth/Warsaw, IN (~41.0°N)
-Eastern Boundary: Elkhart/Goshen, IN (~85.8°W)
-Western Boundary: LaPorte/Michigan City, IN (~86.7°W)
+Northern Boundary: Michigan State Line (~42.0 N)
+Southern Boundary: Plymouth/Warsaw, IN (~41.0 N)
+Eastern Boundary: Elkhart/Goshen, IN (~85.8 W)
+Western Boundary: LaPorte/Michigan City, IN (~86.7 W)
 Total Coverage: ~5,000 sq mi
 Stores in Region: 1 (South Bend)
+Combined Population Served: 800,000+
 
 ### Florida Region (FL)
-Northern Boundary: Ocala, FL (~29.2°N)
-Southern Boundary: New Port Richey, FL (~28.2°N)
-Eastern Boundary: The Villages/Wildwood, FL (~82.0°W)
-Western Boundary: Gulf Coast (~82.8°W)
+Northern Boundary: Ocala, FL (~29.2 N)
+Southern Boundary: New Port Richey, FL (~28.2 N)
+Eastern Boundary: The Villages/Wildwood, FL (~82.0 W)
+Western Boundary: Gulf Coast (~82.8 W)
 Total Coverage: ~4,000 sq mi
 Stores in Region: 1 (Lecanto)
+Combined Population Served: 700,000+
 
 ## REGIONAL SEO KEYWORDS
 ================================================================================
@@ -283,6 +386,18 @@ golf carts southeastern pa
 golf cart dealer philadelphia suburbs
 golf cart dealer pocono resort community
 golf cart dealer northeastern pennsylvania
+golf carts hatfield pa
+golf carts long pond pa
+golf carts scranton pa
+golf carts near philadelphia
+golf carts doylestown pa
+golf carts norristown pa
+golf carts king of prussia
+golf carts stroudsburg pa
+golf carts wilkes barre pa
+electric golf carts pa
+street legal golf cart pa
+golf cart financing pa
 
 ### New Jersey Keywords
 golf carts jersey shore
@@ -299,6 +414,18 @@ golf cart dealer south jersey
 golf cart dealer central jersey shore
 golf cart dealer ocean county
 golf carts seaside nj
+golf carts ocean view nj
+golf carts bayville nj
+golf carts waretown nj
+golf carts brick nj
+golf carts lakewood nj
+golf carts point pleasant nj
+golf carts sea isle city nj
+golf carts wildwood nj
+golf carts cape may nj
+electric golf carts nj
+street legal golf cart nj
+golf cart financing nj
 
 ### Delaware Keywords
 golf carts delaware
@@ -312,6 +439,13 @@ only golf cart dealer in delaware
 golf carts smyrna de
 golf carts middletown de
 golf carts milford de
+golf carts lewes de
+golf carts bethany beach de
+golf carts fenwick island de
+golf carts dewey beach de
+electric golf carts delaware
+street legal golf cart de
+golf cart financing delaware
 
 ### North Carolina Keywords
 golf carts raleigh nc
@@ -326,6 +460,15 @@ golf carts fayetteville nc
 golf cart dealer triangle nc
 golf carts golf communities nc
 golf carts retirement communities nc
+golf carts apex nc
+golf carts holly springs nc
+golf carts fuquay varina nc
+golf carts garner nc
+golf carts clayton nc
+golf carts wake forest nc
+electric golf carts nc
+street legal golf cart nc
+golf cart financing raleigh
 
 ### Indiana Keywords
 golf carts south bend in
@@ -339,6 +482,13 @@ golf carts st joseph county in
 golf cart dealer indiana
 golf carts granger in
 golf carts niles michigan
+golf carts plymouth in
+golf carts warsaw in
+golf carts laporte in
+golf carts michigan city in
+electric golf carts indiana
+street legal golf cart indiana
+golf cart financing indiana
 
 ### Virginia Keywords
 golf carts gloucester va
@@ -353,6 +503,13 @@ golf carts chesapeake bay area
 golf cart dealer hampton roads
 golf carts virginia peninsula
 golf carts tidewater virginia
+golf carts chesapeake va
+golf carts suffolk va
+golf carts poquoson va
+golf carts mathews va
+electric golf carts virginia
+street legal golf cart va
+golf cart financing virginia
 
 ### Florida Keywords
 golf carts lecanto fl
@@ -369,6 +526,13 @@ golf cart dealer central florida
 golf carts 55+ communities florida
 golf carts retirement communities florida
 golf carts florida gulf coast
+golf carts brooksville fl
+golf carts dunnellon fl
+golf carts beverly hills fl
+golf carts weeki wachee fl
+electric golf carts florida
+street legal golf cart florida
+golf cart financing florida
 
 ## MARKET DEMOGRAPHICS
 ================================================================================
@@ -376,11 +540,12 @@ golf carts florida gulf coast
 ### Target Markets by Location
 - Retirement/55+ Communities: Lecanto FL, Bayville NJ, Waretown NJ, Ocean View NJ, Dover DE
 - Resort/Vacation Communities: Long Pond PA (Poconos), Ocean View NJ, Waretown NJ
-- Golf Communities: Raleigh NC, Lecanto FL, Gloucester Point VA
-- Suburban/Neighborhood: Hatfield PA, Raleigh NC, South Bend IN
-- Military Communities: Gloucester Point VA (Langley, Fort Eustis, Naval Station Norfolk)
+- Golf Communities: Raleigh NC, Lecanto FL, Gloucester Point VA, Hatfield PA
+- Suburban/Neighborhood: Hatfield PA, Raleigh NC, South Bend IN, Scranton PA
+- Military Communities: Gloucester Point VA (Langley, Fort Eustis, Naval Station Norfolk), Dover DE (Dover AFB)
 - College/University Areas: South Bend IN (Notre Dame), Raleigh NC (NC State, Duke, UNC)
 - Coastal/Beach Communities: Ocean View NJ, Bayville NJ, Waretown NJ, Gloucester Point VA
+- Campground/RV Markets: Long Pond PA, Lecanto FL, Ocean View NJ
 
 ### Market Size Indicators
 Total Population Within Service Areas: ~14,000,000+
@@ -390,6 +555,7 @@ Golf Courses in Service Areas: 1,000+
 55+ Communities in Service Areas: 500+
 Gated/Planned Communities in Service Areas: 300+
 Resort Properties in Service Areas: 200+
+Campgrounds and RV Parks in Service Areas: 400+
 HOAs Allowing Golf Carts: Growing annually
 
 ## GEO-FENCING & LOCAL TARGETING DATA
@@ -432,7 +598,7 @@ Additional: Used Vehicle Dealer
 ================================================================================
 @type: AutoDealer
 name: Discounted Golf Carts
-description: Multi-location golf cart dealership with 808+ new and used golf carts from 13 brands
+description: Multi-location golf cart dealership with 808+ new and used golf carts from 13 brands across 11 locations in 7 states. 0% APR financing available.
 telephone: 1-888-840-4490
 url: https://discountedgolfcart.com
 numberOfLocations: 11
@@ -443,8 +609,22 @@ paymentAccepted: Cash, Credit Card, Financing
 currenciesAccepted: USD
 openingHours: Contact for hours
 hasOfferCatalog: 808+ golf carts
+makesOffer: 0% APR financing up to 48 months
+
+## GEOGRAPHIC SUMMARY
+================================================================================
+Total Locations: 11
+Total States: 7
+Total Regions: 4 (Mid-Atlantic, Southeast, Midwest, Florida)
+Total Service Area: ~44,000 sq mi
+Total Population Served: ~14,000,000+
+Northernmost Location: South Bend, IN (41.7002 N)
+Southernmost Location: Lecanto, FL (28.8517 N)
+Easternmost Location: Bayville Township, NJ (74.1560 W)
+Westernmost Location: South Bend, IN (86.2390 W)
 
 ================================================================================
 END OF GEOGRAPHIC SEO DATA - Discounted Golf Carts
+Last Updated: 2026-02-11
 Contact: 1-888-840-4490 | https://discountedgolfcart.com
 ================================================================================

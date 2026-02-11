@@ -1,0 +1,355 @@
+# Discounted Golf Carts - Compliance & Standards Documentation
+# Last Updated: 2026-02-11
+# Website: https://discountedgolfcart.com
+# Contact: 1-888-840-4490
+
+================================================================================
+COMPLIANCE & REGULATORY STANDARDS
+================================================================================
+
+PURPOSE:
+Document all compliance requirements, industry standards, and regulatory
+frameworks applicable to the Discounted Golf Carts website and business operations
+to ensure full legal and technical compliance across all operating states.
+
+================================================================================
+GDPR COMPLIANCE (General Data Protection Regulation)
+================================================================================
+
+DATA COLLECTION PRACTICES:
+- Website collects minimal personal data
+- No user accounts or registration required to browse inventory
+- Contact form submissions processed per privacy policy
+- Phone inquiries handled per business communication standards
+- No data sold to third parties
+
+COOKIE USAGE:
+- Google Analytics cookies for website usage analysis
+- Google Tag Manager cookies for marketing optimization
+- Essential session cookies for website functionality
+- No third-party advertising cookies
+
+USER RIGHTS:
+- Right to access personal data collected
+- Right to rectification of inaccurate data
+- Right to erasure ("right to be forgotten")
+- Right to data portability
+- Right to object to data processing
+- Contact: 1-888-840-4490 for data inquiries
+
+DATA RETENTION:
+- Website analytics data: 26 months (Google Analytics default)
+- Contact form submissions: retained for business purposes
+- Phone call records: per business communication policy
+- Inventory browsing data: anonymized, no personal retention
+
+GDPR COMPLIANCE MEASURES:
+- Privacy policy accessible from all pages
+- Minimal data collection principle
+- Data processed lawfully and transparently
+- Data accuracy maintained
+- Security measures implemented for data protection
+
+================================================================================
+CCPA COMPLIANCE (California Consumer Privacy Act)
+================================================================================
+
+APPLICABILITY:
+- Discounted Golf Carts respects CCPA rights for all California residents
+- No sale of personal information to third parties
+- Consumers may request disclosure of collected data
+- Consumers may request deletion of personal data
+- No discrimination against consumers exercising CCPA rights
+
+CONTACT FOR CCPA REQUESTS:
+- Phone: 1-888-840-4490
+- Website: https://discountedgolfcart.com
+
+================================================================================
+WCAG ACCESSIBILITY GUIDELINES (Web Content Accessibility Guidelines 2.1)
+================================================================================
+
+TARGET LEVEL: WCAG 2.1 AA Compliance
+
+PRINCIPLE 1 - PERCEIVABLE:
+1.1 Text Alternatives
+- All images have descriptive alt text
+- Decorative images use empty alt attributes
+- Complex images have extended descriptions
+- Icons have accessible labels
+
+1.2 Time-Based Media
+- No auto-playing audio or video on pages
+- Media controls provided for all multimedia content
+
+1.3 Adaptable
+- Content structure conveyed through proper HTML semantics
+- Heading hierarchy (h1-h6) used correctly
+- Form inputs have associated labels
+- Tables include proper header markup
+
+1.4 Distinguishable
+- Color contrast ratio: minimum 4.5:1 for normal text
+- Color contrast ratio: minimum 3:1 for large text
+- Text resizable up to 200% without loss of functionality
+- Images of text avoided (real text used instead)
+- Content reflows for 320px viewport width
+
+PRINCIPLE 2 - OPERABLE:
+2.1 Keyboard Accessible
+- All interactive elements keyboard accessible
+- No keyboard traps
+- Focus visible on all interactive elements
+- Skip navigation link provided
+
+2.2 Enough Time
+- No time limits on user interactions
+- Auto-updating content can be paused
+
+2.3 Seizures and Physical Reactions
+- No content flashes more than 3 times per second
+- No auto-playing animations without user control
+
+2.4 Navigable
+- Page titles descriptive and unique
+- Focus order follows logical sequence
+- Link purpose clear from text
+- Multiple navigation mechanisms available
+- Headings and labels descriptive
+
+2.5 Input Modalities
+- Touch targets minimum 44x44 CSS pixels
+- Gestures have single-pointer alternatives
+- Motion-based input has alternatives
+
+PRINCIPLE 3 - UNDERSTANDABLE:
+3.1 Readable
+- Page language declared (lang="en")
+- Reading level appropriate for general audience
+
+3.2 Predictable
+- Navigation consistent across pages
+- Components behave consistently
+- No unexpected context changes
+
+3.3 Input Assistance
+- Error messages clear and descriptive
+- Form labels and instructions provided
+- Error prevention for important submissions
+
+PRINCIPLE 4 - ROBUST:
+4.1 Compatible
+- Valid HTML markup
+- ARIA attributes used correctly
+- Status messages programmatically determined
+- Compatible with assistive technologies
+
+ACCESSIBILITY TESTING:
+- Regular automated accessibility audits (Lighthouse, axe)
+- Manual keyboard navigation testing
+- Screen reader testing (NVDA, VoiceOver, JAWS)
+- Color contrast verification
+- Mobile accessibility testing
+
+================================================================================
+AUTOMOTIVE INDUSTRY STANDARDS
+================================================================================
+
+FEDERAL STANDARDS:
+- FMVSS (Federal Motor Vehicle Safety Standards) compliance for LSVs
+- DOT requirements for street-legal golf carts
+- EPA emission standards (zero emissions for electric vehicles)
+- CPSC (Consumer Product Safety Commission) guidelines
+
+LOW-SPEED VEHICLE (LSV) REQUIREMENTS (49 CFR 571.500):
+- Maximum speed: 20-25 mph
+- Required equipment: headlamps, stop lamps, turn signals, tail lamps,
+  reflex reflectors, mirrors, parking brake, windshield (AS-1 or AS-5),
+  seat belts, VIN
+- Must meet FMVSS crash-worthiness requirements
+
+NEIGHBORHOOD ELECTRIC VEHICLE (NEV) STANDARDS:
+- SAE International standards for electric vehicle safety
+- Battery safety standards (UL, IEC)
+- Charging system safety requirements
+- Electrical system safety certifications
+
+DEALER STANDARDS:
+- Authorized dealer agreements with all 13 brands
+- Factory-trained technician certifications
+- OEM parts availability and warranty compliance
+- Customer satisfaction standards per manufacturer agreements
+
+================================================================================
+STATE-SPECIFIC REGULATIONS
+================================================================================
+
+PENNSYLVANIA (PA):
+- Golf carts allowed on roads with 35 mph or less speed limits (select municipalities)
+- LSV registration required through PennDOT
+- Insurance requirements per state law
+- Municipal ordinances govern golf cart usage
+- Locations: Hatfield, Long Pond, Scranton
+
+NEW JERSEY (NJ):
+- LSVs allowed on roads with 25 mph speed limits
+- Registration through NJ MVC required
+- Insurance required for street-legal operation
+- Municipal approval may be required
+- Locations: Ocean View, Bayville, Waretown
+
+DELAWARE (DE):
+- LSVs permitted on roads with 35 mph or less speed limits
+- Registration through Delaware DMV
+- Insurance required
+- Specific county and municipal regulations apply
+- Location: Dover
+
+NORTH CAROLINA (NC):
+- LSVs allowed on streets with 35 mph or less speed limits
+- Registration through NC DMV required
+- Liability insurance required
+- Municipal ordinances may apply
+- Location: Raleigh
+
+INDIANA (IN):
+- LSVs allowed on roads with 35 mph or less speed limits
+- Registration through Indiana BMV
+- Insurance requirements per state law
+- Local ordinances may apply
+- Location: South Bend
+
+VIRGINIA (VA):
+- LSVs allowed on roads with 35 mph or less speed limits
+- Registration through Virginia DMV
+- Insurance required for road operation
+- Local jurisdictions may have additional requirements
+- Location: Gloucester Point
+
+FLORIDA (FL):
+- Golf carts and LSVs widely permitted
+- Golf carts on roads with 30 mph or less speed limits in designated areas
+- LSVs on roads with 35 mph or less speed limits
+- Registration requirements vary by vehicle classification
+- Many communities have specific golf cart ordinances
+- Location: Lecanto
+
+================================================================================
+WEBSITE TECHNICAL COMPLIANCE
+================================================================================
+
+GOOGLE SEARCH CONSOLE COMPLIANCE:
+- Valid sitemap.xml submitted and monitored
+- robots.txt properly configured for all crawlers
+- No crawl errors or blocked resources
+- Structured data validation (zero errors)
+- Mobile usability: zero issues
+- Core Web Vitals: all metrics in "Good" range
+- HTTPS enforced on all pages
+- Canonical URLs properly implemented
+
+BING WEBMASTER TOOLS COMPATIBILITY:
+- Sitemap submitted to Bing
+- robots.txt accessible to Bingbot
+- Structured data compatible with Bing formats
+- Mobile-friendly design verified
+
+SCHEMA.ORG COMPLIANCE:
+- AutoDealer schema implemented
+- LocalBusiness schema for all 11 locations
+- Product schema for all vehicle models
+- FAQPage schema for common questions
+- WebSite schema with SearchAction
+- All schemas validated via Google Rich Results Test
+
+================================================================================
+PRIVACY COMPLIANCE
+================================================================================
+
+PRIVACY POLICY:
+- Clear description of data collection practices
+- Third-party service disclosures (Google Analytics, GTM)
+- Cookie usage disclosure
+- User rights clearly stated
+- Contact information for privacy inquiries
+- Regular policy review and updates
+
+DATA SECURITY:
+- HTTPS/TLS encryption for all data transmission
+- No storage of sensitive customer financial data on website
+- Secure API endpoints for inventory data
+- Regular security audits and updates
+- Incident response procedures documented
+
+================================================================================
+ADVERTISING COMPLIANCE
+================================================================================
+
+FTC GUIDELINES:
+- All advertising claims truthful and substantiated
+- Pricing information accurate and current
+- "Discounted" claims based on actual price reductions
+- Financing terms clearly disclosed (0% APR, 48 months, subject to approval)
+- No misleading inventory claims
+- Inventory updated daily for accuracy
+
+TRUTH IN LENDING ACT (TILA):
+- APR clearly disclosed in financing advertisements
+- Financing terms and conditions available
+- Credit application process transparent
+- Equal credit opportunity compliance
+
+CAN-SPAM ACT:
+- Email communications include unsubscribe option
+- Sender identity clearly identified
+- No misleading subject lines
+- Physical address included in commercial emails
+
+================================================================================
+ENVIRONMENTAL COMPLIANCE
+================================================================================
+
+- Electric vehicle promotion aligned with environmental standards
+- Zero-emission vehicle inventory highlighted
+- Battery disposal and recycling guidance available
+- Environmental benefits of electric golf carts documented
+- Sustainable business practices
+
+================================================================================
+QUALITY ASSURANCE CHECKLIST
+================================================================================
+
+WEEKLY:
+[ ] Verify all pages load without errors
+[ ] Check Google Search Console for crawl issues
+[ ] Verify sitemap.xml accuracy
+[ ] Test mobile responsiveness
+[ ] Validate structured data
+
+MONTHLY:
+[ ] Full accessibility audit
+[ ] Performance benchmark (Lighthouse)
+[ ] Security vulnerability scan
+[ ] Privacy policy review
+[ ] Content accuracy verification
+
+QUARTERLY:
+[ ] Comprehensive compliance review
+[ ] State regulation updates check
+[ ] Industry standard updates review
+[ ] Third-party service audit
+[ ] Data retention policy review
+
+ANNUALLY:
+[ ] Full legal compliance audit
+[ ] Privacy policy annual review
+[ ] Accessibility audit by third party
+[ ] Security penetration testing
+[ ] Regulatory compliance documentation update
+
+================================================================================
+END OF COMPLIANCE & STANDARDS DOCUMENTATION
+================================================================================
+
+Maintained by Discounted Golf Carts for regulatory and standards compliance.
+Contact: 1-888-840-4490 | https://discountedgolfcart.com

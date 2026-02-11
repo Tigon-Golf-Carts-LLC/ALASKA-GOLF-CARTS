@@ -1,0 +1,210 @@
+# Discounted Golf Carts - Image Optimization Rules & SEO Guidelines
+# Last Updated: 2026-02-11
+# Website: https://discountedgolfcart.com
+# Contact: 1-888-840-4490
+
+================================================================================
+IMAGE OPTIMIZATION STANDARDS
+================================================================================
+
+PURPOSE:
+This file documents image SEO best practices and optimization rules for
+Discounted Golf Carts website to ensure maximum search engine image indexing,
+fast page load times, and accessibility compliance.
+
+================================================================================
+IMAGE NAMING CONVENTIONS
+================================================================================
+
+FORMAT: {brand}-{model}-{color}-{condition}-{view}.{ext}
+EXAMPLES:
+- club-car-tempo-white-new-front.webp
+- yamaha-drive-2-black-used-side.webp
+- evolution-d5-maverick-6-red-new-interior.webp
+- ezgo-txt-blue-used-rear.webp
+- denago-rover-xl6-silver-new-gallery-01.webp
+
+RULES:
+1. Use lowercase letters only
+2. Separate words with hyphens (no underscores or spaces)
+3. Include brand name, model, color, and condition when available
+4. Use sequential numbering for gallery images (-01, -02, -03)
+5. Include view descriptor (front, side, rear, interior, detail, aerial)
+
+================================================================================
+ALT TEXT GUIDELINES
+================================================================================
+
+FORMULA: {Year} {Brand} {Model} {Color} {Condition} Golf Cart - {View/Detail}
+
+EXAMPLES:
+- "2026 Club Car Tempo White New Golf Cart - Front View"
+- "2025 EZGO TXT Blue Used Golf Cart - Side Profile"
+- "2026 Evolution D5 Maverick 6 Red New Electric Golf Cart - Interior"
+- "2024 Yamaha G29 Black Used Golf Cart - Rear View"
+- "2026 Denago Rover XL6 Silver New 6-Passenger Golf Cart"
+
+RULES:
+1. Every image MUST have descriptive alt text
+2. Include brand name and model in every alt tag
+3. Include condition (New/Used) when applicable
+4. Include color when visible
+5. Describe the view or key detail shown
+6. Keep alt text under 125 characters
+7. Do not start with "Image of" or "Picture of"
+8. Include relevant keywords naturally
+9. Decorative images use alt="" (empty string)
+
+================================================================================
+IMAGE FORMAT SPECIFICATIONS
+================================================================================
+
+PREFERRED FORMATS (in order of preference):
+1. WebP - Primary format for all product images (best compression + quality)
+2. AVIF - Next-generation format for supporting browsers
+3. JPEG - Fallback for older browsers (product photos)
+4. PNG - Icons, logos, and images requiring transparency
+5. SVG - Vector graphics, icons, and logos
+
+RESPONSIVE IMAGE SIZES:
+- Thumbnail: 150x150px (inventory grid, search results)
+- Small: 320x240px (mobile product cards)
+- Medium: 640x480px (tablet product views)
+- Large: 1024x768px (desktop product gallery)
+- Full: 1920x1440px (lightbox/zoom view)
+- Hero: 1920x800px (homepage hero banner)
+
+COMPRESSION GUIDELINES:
+- WebP quality: 80-85% for product photos
+- JPEG quality: 82-88% for product photos
+- PNG: Use lossless compression, optimize with tools
+- Maximum file size: 200KB for thumbnails, 500KB for standard, 1MB for hero
+- Use progressive JPEG for images over 10KB
+
+================================================================================
+LAZY LOADING IMPLEMENTATION
+================================================================================
+
+RULES:
+1. All images below the fold MUST use loading="lazy"
+2. First visible image (hero/above fold) uses loading="eager"
+3. Product gallery thumbnails use lazy loading
+4. Use intersection observer for advanced lazy loading
+5. Provide width and height attributes to prevent layout shift
+6. Use placeholder/blur-up technique for perceived performance
+
+CODE PATTERN:
+<img src="image.webp" alt="Description" loading="lazy" width="640" height="480"
+     decoding="async" fetchpriority="low">
+
+ABOVE-FOLD PATTERN:
+<img src="hero.webp" alt="Description" loading="eager" width="1920" height="800"
+     decoding="async" fetchpriority="high">
+
+================================================================================
+PRODUCT IMAGE REQUIREMENTS
+================================================================================
+
+EACH GOLF CART LISTING SHOULD INCLUDE:
+1. Front 3/4 view (primary image)
+2. Side profile view
+3. Rear 3/4 view
+4. Dashboard/instrument panel close-up
+5. Seating/interior view
+6. Wheels/tires detail
+7. Battery/engine compartment (when relevant)
+8. Any unique features or accessories
+
+IMAGE QUALITY STANDARDS:
+- Minimum resolution: 1024x768px
+- White or neutral background preferred for studio shots
+- Natural lighting or professional studio lighting
+- No watermarks on customer-facing images
+- Consistent image aspect ratio within listings (4:3 recommended)
+- Color-accurate representation of vehicle
+
+================================================================================
+SEO IMAGE OPTIMIZATION CHECKLIST
+================================================================================
+
+FOR EVERY IMAGE:
+[ ] Descriptive filename with keywords
+[ ] Alt text with brand, model, and relevant details
+[ ] Compressed to optimal file size
+[ ] Served in WebP format with JPEG fallback
+[ ] Width and height attributes specified
+[ ] Lazy loading applied for below-fold images
+[ ] Included in sitemap.xml image entries
+[ ] Responsive srcset provided for multiple sizes
+[ ] Proper EXIF data stripped for privacy
+[ ] CDN caching configured for static images
+
+================================================================================
+IMAGE CDN & CACHING
+================================================================================
+
+S3 IMAGE BASE URL: https://s3.amazonaws.com/prod.docs.s3/carts/
+CACHE POLICY: max-age=86400 (24 hours) for inventory images
+CACHE POLICY: max-age=2592000 (30 days) for static assets (logo, icons)
+
+================================================================================
+STRUCTURED DATA FOR IMAGES
+================================================================================
+
+PRODUCT IMAGE SCHEMA:
+{
+  "@type": "ImageObject",
+  "url": "https://s3.amazonaws.com/prod.docs.s3/carts/{image_id}",
+  "name": "{Brand} {Model} {Color} Golf Cart",
+  "description": "{Condition} {Brand} {Model} golf cart in {Color}",
+  "contentUrl": "https://s3.amazonaws.com/prod.docs.s3/carts/{image_id}",
+  "width": 1024,
+  "height": 768,
+  "encodingFormat": "image/jpeg"
+}
+
+================================================================================
+ACCESSIBILITY REQUIREMENTS
+================================================================================
+
+WCAG 2.1 AA COMPLIANCE:
+1. All informative images must have alt text
+2. Complex images need long descriptions
+3. Color is not the sole means of conveying information
+4. Sufficient contrast for text overlaid on images
+5. Images of text are avoided (use real text instead)
+6. Animated images can be paused/stopped
+7. No images cause seizures (no rapid flashing)
+
+================================================================================
+BRAND LOGO SPECIFICATIONS
+================================================================================
+
+BRAND LOGOS CARRIED:
+- American Custom Golf Carts
+- Bintelli
+- Club Car (by Ingersoll Rand)
+- COLEMAN
+- COLUMBIA
+- CRICKET
+- Denago
+- Evolution
+- EZGO (E-Z-GO by Textron)
+- Icon
+- Star EV
+- Tara
+- Yamaha
+
+LOGO USAGE:
+- SVG format preferred for brand logos
+- Maintain original aspect ratios
+- Minimum display size: 48px height
+- Provide dark and light mode variants when available
+- Include brand name in alt text
+
+================================================================================
+END OF IMAGE OPTIMIZATION RULES
+================================================================================
+
+Maintained by Discounted Golf Carts for SEO and web performance optimization.
+Contact: 1-888-840-4490 | https://discountedgolfcart.com

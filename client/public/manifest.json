@@ -1,13 +1,45 @@
 {
-  "name": "Discounted Golf Carts - Golf Cart Dealership",
+  "name": "Discounted Golf Carts - Discounted Golf Cart Inventory Updated Daily",
   "short_name": "Discounted Golf Carts",
-  "description": "Discounted Golf Carts - Discounted golf carts with inventory updated daily. Browse our selection of new and used golf carts across 11 locations. Call 1-888-840-4490.",
+  "description": "Discounted Golf Carts - Browse discounted new and used golf carts with inventory updated daily across 11 locations. 13 brands including Club Car, EZGO, Yamaha, Evolution, Denago and more. 0% APR financing available. Call 1-888-840-4490.",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#ae1832",
+  "theme_color": "#16a34a",
   "background_color": "#ffffff",
   "orientation": "any",
+  "scope": "/",
+  "id": "/",
   "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "/favicon.png",
       "sizes": "192x192",
@@ -16,12 +48,40 @@
     },
     {
       "src": "/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "categories": ["shopping", "automotive"],
+  "categories": ["shopping", "automotive", "business"],
   "lang": "en-US",
-  "dir": "ltr"
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Browse Inventory",
+      "short_name": "Inventory",
+      "url": "/inventory",
+      "description": "Browse our full golf cart inventory updated daily"
+    },
+    {
+      "name": "Financing Options",
+      "short_name": "Financing",
+      "url": "/financing",
+      "description": "0% APR financing available up to 48 months"
+    }
+  ]
 }
