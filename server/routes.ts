@@ -300,12 +300,10 @@ export async function registerRoutes(
     const cached = getCached("slugMap");
     if (cached) return cached;
 
-    const [cartsData, storesData] = await Promise.all([
-      fetchDMS("/get-carts", { pageNumber: 0, pageSize: 500 }),
+    const [carts, storesData] = await Promise.all([
+      fetchAllCartsComplete(),
       fetchDMS("/tigon-stores"),
     ]);
-
-    const carts = cartsData?.carts || [];
     const stores: any[] = storesData || [];
     const storeMap = new Map<string, any>();
     for (const store of stores) {
@@ -358,27 +356,158 @@ export async function registerRoutes(
     return result;
   }
 
-  app.get("/sitemap.xml", async (req, res) => {
+  async function fetchAllCartsComplete(): Promise<any[]> {
+    const cached = getCached("allCartsComplete");
+    if (cached) return cached;
+
+    const pageSize = 500;
+    let allCarts: any[] = [];
+    let pageNumber = 0;
+
+    while (true) {
+      const data = await fetchDMS("/get-carts", { pageNumber, pageSize });
+      const carts = data?.carts || [];
+      allCarts = allCarts.concat(carts);
+      if (carts.length < pageSize) break;
+      pageNumber++;
+      if (pageNumber > 10) break;
+    }
+
+    setCache("allCartsComplete", allCarts);
+    return allCarts;
+  }
+
+  app.get("/sitemap.xml", async (_req, res) => {
     try {
-      const slugMap = await getSlugMap();
+      const cacheKey = "sitemapXml";
+      const cached = getCached(cacheKey);
+      if (cached) {
+        res.set("Content-Type", "application/xml; charset=utf-8");
+        return res.send(cached);
+      }
+
+      const [slugMap, allCarts, storesData] = await Promise.all([
+        getSlugMap(),
+        fetchAllCartsComplete(),
+        fetchDMS("/tigon-stores"),
+      ]);
+
       const baseUrl = "https://discountedgolfcart.com";
+      const s3Base = "https://s3.amazonaws.com/prod.docs.s3/carts/";
       const today = new Date().toISOString().split("T")[0];
-      const slugs = Object.keys(slugMap.slugToId);
+
+      const escapeXml = (str: string): string =>
+        str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&apos;");
+
+      const cartById = new Map<string, any>();
+      for (const cart of allCarts) {
+        if (cart._id) cartById.set(cart._id, cart);
+      }
+
+      const stores: any[] = storesData || [];
+      const storeMap = new Map<string, any>();
+      for (const store of stores) {
+        if (store.storeId) storeMap.set(store.storeId, store);
+      }
+
+      const makes = new Set<string>();
+      const conditions = new Set<string>();
+      const locations = new Set<string>();
+      const makeModels = new Map<string, Set<string>>();
+      for (const cart of allCarts) {
+        const make = cart?.cartType?.make;
+        const model = cart?.cartType?.model;
+        if (make) {
+          makes.add(make);
+          if (model) {
+            if (!makeModels.has(make)) makeModels.set(make, new Set());
+            makeModels.get(make)!.add(model);
+          }
+        }
+        conditions.add(cart?.isUsed ? "Used" : "New");
+        const storeId = cart?.cartLocation?.locationId || cart?.cartLocation?.latestStoreId;
+        const store = storeMap.get(storeId);
+        if (store?.address?.city) locations.add(store.address.city);
+      }
 
       let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
       xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;
-      xml += `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n`;
+      xml += `        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n\n`;
 
-      xml += `  <url>\n    <loc>${baseUrl}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n`;
-      xml += `  <url>\n    <loc>${baseUrl}/inventory</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>\n`;
-      xml += `  <url>\n    <loc>${baseUrl}/financing</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+      xml += `  <url>\n    <loc>${baseUrl}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n\n`;
+      xml += `  <url>\n    <loc>${baseUrl}/inventory</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>\n\n`;
+      xml += `  <url>\n    <loc>${baseUrl}/financing</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n\n`;
 
-      for (const slug of slugs) {
-        xml += `  <url>\n    <loc>${baseUrl}/golfcart/${slug}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>\n`;
+      for (const make of Array.from(makes).sort()) {
+        xml += `  <url>\n    <loc>${baseUrl}/inventory?make=${encodeURIComponent(make)}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.85</priority>\n  </url>\n`;
+      }
+      xml += `\n`;
+
+      for (const condition of Array.from(conditions).sort()) {
+        xml += `  <url>\n    <loc>${baseUrl}/inventory?condition=${encodeURIComponent(condition)}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.85</priority>\n  </url>\n`;
       }
 
-      xml += `</urlset>`;
+      xml += `  <url>\n    <loc>${baseUrl}/inventory?powerType=Electric</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+      xml += `  <url>\n    <loc>${baseUrl}/inventory?powerType=Gas</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n\n`;
 
+      for (const location of Array.from(locations).sort()) {
+        xml += `  <url>\n    <loc>${baseUrl}/inventory?location=${encodeURIComponent(location)}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+      }
+      xml += `\n`;
+
+      for (const [make, models] of Array.from(makeModels.entries()).sort((a, b) => a[0].localeCompare(b[0]))) {
+        for (const model of Array.from(models).sort()) {
+          xml += `  <url>\n    <loc>${baseUrl}/inventory?make=${encodeURIComponent(make)}&amp;model=${encodeURIComponent(model)}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+        }
+      }
+      xml += `\n`;
+
+      const seoFiles = ["llms.txt", "ai.txt", "gpt.txt", "claude.txt", "training.txt", "schema.json", "seo.txt", "nlp.txt"];
+      for (const file of seoFiles) {
+        xml += `  <url>\n    <loc>${baseUrl}/${file}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.3</priority>\n  </url>\n`;
+      }
+      xml += `\n`;
+
+      const slugEntries = Object.entries(slugMap.slugToId);
+      for (const [slug, cartId] of slugEntries) {
+        const cart = cartById.get(cartId);
+        const make = cart?.cartType?.make || "";
+        const model = cart?.cartType?.model || "";
+        const color = cart?.cartAttributes?.cartColor || "";
+        const year = cart?.cartType?.year || "";
+        const condition = cart?.isUsed ? "Used" : "New";
+        const titleParts = [condition, year, make, model].filter(Boolean);
+        const cartTitle = titleParts.join(" ") || "Golf Cart";
+
+        const imageFiles: string[] = cart?.internalCartImageUrls || cart?.imageUrls || [];
+
+        xml += `  <url>\n`;
+        xml += `    <loc>${baseUrl}/golfcart/${slug}</loc>\n`;
+        xml += `    <lastmod>${today}</lastmod>\n`;
+        xml += `    <changefreq>daily</changefreq>\n`;
+        xml += `    <priority>0.9</priority>\n`;
+
+        if (imageFiles.length > 0) {
+          const maxImages = Math.min(imageFiles.length, 10);
+          for (let i = 0; i < maxImages; i++) {
+            const imageUrl = imageFiles[i].startsWith("http") ? imageFiles[i] : `${s3Base}${imageFiles[i]}`;
+            const imgCaption = i === 0
+              ? `${cartTitle}${color ? ` in ${color}` : ""} - Discounted Golf Cart`
+              : `${cartTitle} - Photo ${i + 1}`;
+            xml += `    <image:image>\n`;
+            xml += `      <image:loc>${escapeXml(imageUrl)}</image:loc>\n`;
+            xml += `      <image:title>${escapeXml(cartTitle)}</image:title>\n`;
+            xml += `      <image:caption>${escapeXml(imgCaption)}</image:caption>\n`;
+            xml += `    </image:image>\n`;
+          }
+        }
+
+        xml += `  </url>\n`;
+      }
+
+      xml += `\n</urlset>`;
+
+      setCache(cacheKey, xml);
       res.set("Content-Type", "application/xml; charset=utf-8");
       res.send(xml);
     } catch (error: any) {
