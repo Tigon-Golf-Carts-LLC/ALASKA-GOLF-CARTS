@@ -1,33 +1,91 @@
 import { Link } from "wouter";
-import { Phone, MapPin, Tag, Truck, Shield, Award } from "lucide-react";
+import { Phone, MapPin, Tag, Truck, Shield, Award, Flame, CreditCard } from "lucide-react";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 import type { Store } from "@shared/schema";
 import { useQuery } from "@tanstack/react-query";
+import { useState, useEffect } from "react";
 import logoImg from "@assets/discounted_golf_carts_(3)_1781021848486.png";
+
+function getSecondsUntilNextUpdate() {
+  const now = new Date();
+  const etStr = now.toLocaleString("en-US", {
+    timeZone: "America/New_York",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false,
+  });
+  const [h, m, s] = etStr.split(":").map(Number);
+  const currentSecs = h * 3600 + m * 60 + s;
+  const targetSecs = 22 * 3600 + 55 * 60;
+  let diff = targetSecs - currentSecs;
+  if (diff <= 0) diff += 86400;
+  return diff;
+}
+
+function formatCountdown(secs: number) {
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  const s = secs % 60;
+  return { h: String(h).padStart(2, "0"), m: String(m).padStart(2, "0"), s: String(s).padStart(2, "0") };
+}
 
 export function Footer() {
   const { data: stores } = useQuery<Store[]>({
     queryKey: ["/api/stores"],
   });
 
+  const [countdown, setCountdown] = useState(() => getSecondsUntilNextUpdate());
+  useEffect(() => {
+    const id = setInterval(() => setCountdown(getSecondsUntilNextUpdate()), 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  const { h, m, s } = formatCountdown(countdown);
+
   return (
     <footer data-testid="footer">
       <div className="bg-primary text-primary-foreground py-10">
         <div className="mx-auto max-w-7xl px-4">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-            <div className="text-center sm:text-left">
-              <h3 className="text-xl font-extrabold tracking-tight mb-1">Ready for Wholesale Prices?</h3>
-              <p className="text-primary-foreground/80 text-sm">Our experts are standing by — call now for today's best deals.</p>
+          <div className="flex flex-col items-center gap-6 text-center">
+            <div className="flex items-center gap-2">
+              <Flame className="h-6 w-6 text-white/90 shrink-0" />
+              <h3 className="text-2xl sm:text-3xl font-black tracking-tight uppercase">Get These Deals Before They're Gone!</h3>
+              <Flame className="h-6 w-6 text-white/90 shrink-0" />
             </div>
-            <a href={PHONE_TEL}>
-              <div className="flex items-center gap-3 bg-white/15 border border-white/25 hover:bg-white/20 transition-colors rounded-md px-6 py-3 cursor-pointer">
-                <Phone className="h-6 w-6" />
-                <div>
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-primary-foreground/70">Call Now</div>
-                  <div className="text-xl font-extrabold">{PHONE_NUMBER}</div>
+            <p className="text-primary-foreground/80 text-sm -mt-3">Inventory updates daily — these prices won't last. Act now.</p>
+
+            {/* Countdown ticker */}
+            <div className="flex items-center gap-2">
+              {[{ val: h, label: "HRS" }, { val: m, label: "MIN" }, { val: s, label: "SEC" }].map((unit, i) => (
+                <div key={unit.label} className="flex items-center gap-2">
+                  <div className="bg-black/30 border border-white/20 rounded-lg px-4 py-2 min-w-[64px] text-center">
+                    <div className="text-4xl font-black tabular-nums leading-none">{unit.val}</div>
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-primary-foreground/60 mt-1">{unit.label}</div>
+                  </div>
+                  {i < 2 && <span className="text-3xl font-black text-white/60 -mt-3">:</span>}
                 </div>
-              </div>
-            </a>
+              ))}
+            </div>
+
+            {/* CTA buttons */}
+            <div className="flex flex-col sm:flex-row items-center gap-3">
+              <a href={PHONE_TEL} data-testid="button-footer-call">
+                <div className="flex items-center gap-3 bg-white text-primary rounded-lg px-6 py-3 cursor-pointer hover:bg-white/90 transition-colors font-extrabold text-base shadow-lg">
+                  <Phone className="h-5 w-5 shrink-0" />
+                  <div className="text-left">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-primary/60 leading-none">Call Now</div>
+                    <div className="text-lg font-black leading-tight">{PHONE_NUMBER}</div>
+                  </div>
+                </div>
+              </a>
+              <Link href="/financing" data-testid="button-footer-financing">
+                <div className="flex items-center gap-3 bg-black/30 border border-white/25 hover:bg-black/40 transition-colors rounded-lg px-6 py-3 cursor-pointer font-bold text-base">
+                  <CreditCard className="h-5 w-5 shrink-0" />
+                  <div className="text-left">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-primary-foreground/60 leading-none">0% APR Available</div>
+                    <div className="text-base font-extrabold leading-tight">Apply for Financing</div>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
