@@ -128,6 +128,9 @@ export function Footer() {
                 <Link href="/inventory?isNew=true" className="block text-sm font-medium hover:text-primary transition-colors" data-testid="link-footer-new">New Carts</Link>
                 <Link href="/inventory?isUsed=true" className="block text-sm font-medium hover:text-primary transition-colors" data-testid="link-footer-used">Used Carts</Link>
                 <Link href="/financing" className="block text-sm font-medium hover:text-primary transition-colors">Financing</Link>
+                <Link href="/service-area" className="block text-sm font-medium hover:text-primary transition-colors" data-testid="link-footer-locations">All Locations</Link>
+                <Link href="/faq" className="block text-sm font-medium hover:text-primary transition-colors" data-testid="link-footer-faq">FAQ</Link>
+                <Link href="/about" className="block text-sm font-medium hover:text-primary transition-colors" data-testid="link-footer-about">About</Link>
               </div>
             </div>
 

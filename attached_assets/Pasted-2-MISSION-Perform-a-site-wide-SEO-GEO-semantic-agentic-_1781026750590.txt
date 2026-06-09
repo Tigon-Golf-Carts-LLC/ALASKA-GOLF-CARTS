@@ -1,0 +1,120 @@
+2. MISSION
+Perform a site-wide SEO + GEO + semantic + agentic optimization for the primary keyword "{Placeholder}" scoped to {CITY, STATE}. Update every static page's headers, body copy, meta tags, schema, and supporting files. Goals, in order:
+Rank in classic SERPs for {Placeholder} + city/region modifiers.
+Get cited in LLM answers (ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini).
+Expose clean, machine-actionable structure for AI agents that browse, compare, or transact on the user's behalf.
+Reinforce local authority signals around {CITY, STATE}.
+
+2. ⛔ HARD GUARDRAILS — DO NOT TOUCH
+These are non-negotiable. Violating any of them is a failed task.
+DO NOT modify, transform, proxy, cache, or re-render any data from the DMS API inventory feed.
+DO NOT touch active inventory product listings, VDPs (Vehicle Detail Pages), SRPs (Search Results Pages), or any dynamically rendered inventory components.
+DO NOT alter feed connectors, data mappers, pricing logic, vehicle photos, VINs, stock numbers, MSRP, incentives, or any field sourced from the DMS.
+DO NOT touch routes/templates that consume the inventory feed. Treat as READ-ONLY: /inventory/*, /vehicles/*, /vehicle/*, /vdp/*, /srp/*, /new/*, /used/*, /cpo/*, /pre-owned/*, and any equivalent paths in this codebase.
+DO NOT add Product, Vehicle, Car, or Offer JSON-LD schema to inventory pages — the inventory system already emits these.
+If a file both renders inventory and contains hard-coded static SEO copy (e.g., an SRP intro paragraph above the feed): leave every inventory binding, prop, hook, fetcher, and template loop untouched; only edit the static surrounding strings.
+Before editing any file, grep it for dms, inventory, vin, vehicleId, vehicle_listings, useInventory, or any feed-related import. If matched, escalate to inspection — do not blanket-edit.
+Output a list of every file deliberately skipped with the reason DMS inventory binding.
+
+3. DELIVERABLES
+3.1 Keyword & Entity Map → /seo/keyword-map.md
+Promote {Placeholder} to primary; derive 3 secondary keywords and 8–12 semantic/LSI variants (synonyms, modifiers, question forms).
+List co-occurring entities: brands, models, services, neighborhoods, certifications, regulators — the named things that appear alongside this keyword in top-ranking content.
+Map search intent (informational / navigational / commercial / transactional / local) to specific URL paths in the site.
+Define a topic cluster: 1 pillar page + supporting articles, all internally linked with descriptive anchors.
+3.2 On-Page SEO — apply to every static page
+<title> — 50–60 chars; primary keyword in first 30 chars; city modifier; brand suffix (| {BUSINESS_NAME}).
+<meta name="description"> — 140–160 chars; includes primary keyword, location, a concrete value prop, and a CTA verb.
+Single <h1> per page; natural inclusion of primary keyword + city.
+H2 / H3 hierarchy — minimum 3 H2s using semantic variants and question-form headings ("What is…", "How much does… cost in {CITY}", "Where can I…").
+Body copy — keyword density 0.8–1.5%; natural placement of LSI terms, named entities, neighborhood/ZIP/landmark mentions.
+Internal links — 3–6 per page, descriptive anchor text (never "click here", "read more").
+Image alt text — descriptive; include keyword/location only when truthful and natural.
+Canonical tag on every page.
+Open Graph + Twitter Card tags on every page.
+3.3 Technical SEO
+Generate/update sitemap.xml with all static pages, lastmod, priority. Include inventory URLs only if the site already exposes them via a separate inventory sitemap — otherwise leave that to the inventory system.
+Update robots.txt: allow crawlers, reference sitemap, do not blanket-block AI bots (see §3.7).
+URLs: lowercase, hyphenated, no underscores, no trailing slashes (or consistent — pick one).
+Add 301 redirects for any URLs you rename.
+Performance: lazy-load below-fold images, defer non-critical JS, preload hero fonts/images, loading="lazy" on <img> below the fold, decoding="async" on images.
+Mobile viewport meta on every page.
+Add <link rel="preconnect"> for first-party CDN and fonts.
+3.4 Structured Data (JSON-LD in <head>)
+Inject site-wide and page-specific schema. Do not fabricate review counts, ratings, or accolades — only use real data.
+Organization (site-wide): name, url, logo, sameAs, contactPoint.
+LocalBusiness subtype matching {BUSINESS_TYPE}: address, geo, openingHoursSpecification, telephone, priceRange, areaServed (list cities/ZIPs).
+WebSite with potentialAction → SearchAction pointing at the on-site search endpoint.
+BreadcrumbList on every interior page.
+FAQPage on pages with Q&A blocks (only if questions and answers are real).
+Service schema per service offered.
+Review / AggregateRating only if real review data exists in the codebase or CMS.
+⛔ No Product/Vehicle/Offer schema on inventory pages.
+3.5 GEO — Generative Engine Optimization
+Optimize for AI answer engines and overviews.
+Open every key page with a 40–60 word direct-answer paragraph that plainly answers the page's primary query. Lead with the definition/answer, not a marketing hook.
+Use question-formatted H2s that mirror how people actually ask AI assistants ("How much does {Placeholder} cost in {CITY}?", "Is {Placeholder} worth it?", "Who offers {Placeholder} near {CITY}?").
+Add a "Key facts" / "At a glance" block near the top of each pillar page: 4–8 factual bullets with numbers, dates, prices, hours, requirements.
+Include citation hooks: original stats, year-stamped facts, comparison tables, named experts (only if real and attributed).
+Conversational, declarative prose. Strip fluff that AI engines skip: "in today's world", "look no further", "trusted partner", "world-class".
+Generate /llms.txt at site root following the llms.txt convention: business summary, services, locations, key URLs, authoritative pages.
+Generate /llms-full.txt with deeper plain-text snapshots of the top ~10 static pages so AI crawlers can ingest the canonical content without rendering JS.
+Ensure the most important factual claims appear in the first 200 words of each page — AI overviews lean on early content.
+3.6 Semantic Keyword Layer
+For each static page, target 1 primary keyword and weave in 8–15 semantically related terms (synonyms, entities, modifiers). Natural prose, no stuffing.
+Vary internal-link anchor text across the semantic set — don't repeat the exact primary keyword as anchor every time.
+Where applicable, use Wikipedia/Wikidata canonical entity names so search engines and LLMs disambiguate cleanly (e.g., model names, certifications, regulatory bodies).
+Implement a <link rel="alternate" type="application/ld+json"> reference between cluster pages where helpful.
+3.7 Agentic SEO — for AI agents that browse, compare, or transact
+Semantic HTML5 throughout: <header>, <nav>, <main>, <article>, <section>, <aside>, <footer>.
+ARIA landmarks and labels on interactive elements; visible focus states.
+Predictable, stable URL slugs; no hash-routed primary content.
+Create /api/site-info.json — a public, read-only, static JSON exposing: business name, address, phone, hours, services, primary categories, key page URLs, social profiles. ⛔ Do not include inventory.
+Schema.org potentialAction blocks for primary user goals: ReserveAction, ContactAction, CommunicateAction (telephone), ScheduleAction — as fits the business.
+If appropriate to the stack, scaffold /.well-known/ai-plugin.json and /.well-known/agent.json stubs.
+Forms must have proper name, autocomplete, aria-label, and visible <label> elements so agents can fill them.
+In robots.txt, explicitly allow known good AI crawlers via comments and rules: GPTBot, ClaudeBot, Claude-Web, PerplexityBot, Google-Extended, OAI-SearchBot, cohere-ai, Bingbot. Disallow only what you genuinely want hidden.
+3.8 Local SEO for {CITY, STATE}
+NAP (Name, Address, Phone) consistent in header/footer of every page and matching the LocalBusiness schema exactly.
+Create or audit a /service-area (or /locations) page enumerating cities, neighborhoods, and ZIPs served.
+Reference real local landmarks, neighborhoods, regional terms in body copy.
+Embed a Google Maps iframe on the contact page.
+Ensure address and geo fields match the Google Business Profile exactly.
+3.9 Static Pages to Create or Audit (no inventory generation)
+Home
+About / About Us
+Services (parent + a child page for each major service)
+Contact (embedded map, hours, directions, parking notes)
+Service Area / Locations
+FAQ (only real Q&A — no fabrication)
+Blog / Resources hub (scaffold structure only; do not invent article content)
+Privacy Policy, Terms of Service (factual baseline)
+
+4. EXECUTION ORDER
+Read repo structure. Catalog all static pages, layouts, and shared components.
+Identify inventory-bound files. Grep for DMS/inventory imports and hooks. Mark protected.
+Generate /seo/keyword-map.md.
+Update site-wide layout (<head>, header, footer, global schema).
+Update each static page in turn: title → meta → H1 → H2/H3 → body → internal links → alt text → page-level schema.
+Generate /llms.txt, /llms-full.txt, /api/site-info.json, /sitemap.xml, update robots.txt.
+Run a final scan: confirm zero inventory files were modified. Diff against the protected list.
+Output CHANGELOG.md summarizing every file touched and every file deliberately skipped with reason.
+Output /seo/audit-report.md: a row per page with new title, meta, H1, primary keyword, semantic terms used, schema types attached.
+
+5. TONE & STYLE FOR ALL COPY
+Direct, factual, locally grounded.
+Strip marketing fluff ("best in class", "world-class", "your trusted partner", "look no further").
+Numbers and specifics over adjectives.
+Reading level: 8th–10th grade.
+US English. Oxford comma. No em-dash overuse.
+Answer the question first; sell second.
+
+6. ACCEPTANCE CRITERIA
+✅ Every static page has unique title, meta, H1, and at least one page-level schema block.
+✅ Primary keyword {Placeholder} appears in title, H1, first 100 words, and at least one H2 on the most relevant page.
+✅ /llms.txt, /llms-full.txt, /api/site-info.json, /sitemap.xml, robots.txt all present and valid.
+✅ JSON-LD validates in Google's Rich Results Test for every page that ships schema.
+✅ CHANGELOG.md lists every touched file and every deliberately skipped DMS/inventory file.
+✅ git diff shows zero changes to inventory-bound files, components, or routes.
+✅ Lighthouse SEO score ≥ 95 on a representative sample (home + 1 service page + 1 location page).
+BEGIN.

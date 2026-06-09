@@ -1,0 +1,95 @@
+3. MISSION
+TASK: Implement comprehensive Schema.org structured data (JSON-LD format) across every page of this website. Audit the existing site structure first, then add schema markup tailored to each page type.
+
+BUSINESS CONTEXT:
+This is a golf cart business website. Before writing any schema, extract the following from the existing site content (or ask me to confirm):
+- Legal business name, DBA, founding year
+- Full street address, city, state, ZIP, country
+- Phone, email, fax (if any)
+- Hours of operation for each day
+- Service area (cities/regions served)
+- Social profile URLs (Facebook, Instagram, YouTube, X, LinkedIn, TikTok)
+- Logo URL (square, min 112x112) and primary brand image
+- Brands carried (Club Car, Denago, Evolution, Swift EV, TEKO, TARA, TIGON,  etc.)
+- Payment methods accepted
+- Price range ($, $$, $$$, $$$$)
+- Geo coordinates (latitude/longitude) of physical location
+
+REQUIREMENTS:
+
+1. FORMAT
+- Use JSON-LD only (not Microdata or RDFa)
+- Place inside <script type="application/ld+json"> tags in the <head> of each page
+- Validate every block against Schema.org spec and Google's Rich Results Test
+- No trailing commas, properly escaped quotes, valid JSON
+
+2. SITE-WIDE SCHEMAS (inject on every page via shared template/layout)
+- Organization schema OR LocalBusiness (use AutomotiveBusiness or AutoDealer as the @type since golf carts are vehicles — this is more specific than generic LocalBusiness)
+  - Include: @id (canonical URL with #organization fragment), name, legalName, url, logo (as ImageObject with width/height), image, description, foundingDate, telephone, email, address (PostalAddress), geo (GeoCoordinates), openingHoursSpecification (array for each day), areaServed, priceRange, paymentAccepted, currenciesAccepted, sameAs (array of social URLs), hasMap (Google Maps URL), contactPoint (ContactPoint with telephone, contactType, availableLanguage)
+- WebSite schema with potentialAction SearchAction (sitelinks search box)
+- BreadcrumbList on every interior page
+- WebPage schema referencing the Organization via isPartOf and about
+
+3. PAGE-TYPE-SPECIFIC SCHEMAS
+
+Homepage:
+- Organization/LocalBusiness (full version)
+- WebSite with SearchAction
+- AggregateRating if total review count exists
+
+Product/Inventory pages (each golf cart listing):
+- Product schema with @type: ["Product", "Vehicle"]
+- Required: name, image (array, multiple angles), description, sku, mpn, gtin (if available), brand (Brand schema), manufacturer (Organization), category
+- Vehicle-specific: vehicleModelDate (year), bodyType, fuelType (electric/gas), vehicleEngine (for gas), vehicleTransmission, numberOfAxles, seatingCapacity (vehicleSeatingCapacity), vehicleConfiguration, mileageFromOdometer (if used), color, driveWheelConfiguration, knownVehicleDamages
+- offers: Offer schema with price, priceCurrency, availability (InStock/OutOfStock/PreOrder), itemCondition (NewCondition/UsedCondition/RefurbishedCondition), priceValidUntil, seller (reference Organization @id), url
+- aggregateRating + review array if applicable
+- additionalProperty for custom specs (lift kit, battery type, voltage, charger amps, top speed, range, tire size, etc.)
+
+Category/Collection pages (e.g., "New Golf Carts," "Used Golf Carts," "Lifted Carts"):
+- CollectionPage schema
+- ItemList with each Product referenced
+- BreadcrumbList
+
+Service pages (repair, maintenance, customization, rentals, financing):
+- Service schema with serviceType, provider (reference Organization @id), areaServed, hasOfferCatalog if applicable
+- Offer schema for pricing where applicable
+
+Location pages (if multiple locations or service-area pages):
+- LocalBusiness/AutomotiveBusiness per location with unique @id
+- Place schema where appropriate with geo and address
+
+About page:
+- AboutPage schema
+- Organization with founder, numberOfEmployees, foundingLocation
+
+Contact page:
+- ContactPage schema
+- ContactPoint array (sales, service, parts, financing) each with telephone, email, contactType, hoursAvailable, areaServed, availableLanguage
+
+Blog/Article pages: 
+- Article or BlogPosting with headline, image, datePublished, dateModified, author (Person or Organization), publisher (Organization with logo), mainEntityOfPage 
+
+FAQ pages or pages with Q&A sections: 
+- FAQPage schema with mainEntity array of Question/Answer pairs 
+
+Review/Testimonials page: 
+- Review schema (individual) with itemReviewed pointing to Organization or specific Product, reviewRating, author, reviewBody, datePublished 
+- AggregateRating summarizing all reviews 
+
+Every page with images: 
+- ImageObject schema for primary images: contentUrl, url, width, height, caption, creditText, creator, copyrightNotice, license (if applicable) 
+
+4. IMPLEMENTATION RULES 
+- Use stable @id values (full canonical URL + fragment, e.g., "https://example.com/#organization") so schemas can reference each other across pages
+ - Cross-reference rather than duplicate: Product offers reference the Organization @id as seller; Reviews reference the Product @id as itemReviewed 
+- Pull dynamic values (price, availability, inventory specs, review counts) from the actual data source, not hardcoded - Make a reusable helper/component that generates each schema type from passed-in data 
+- Do NOT mark up content that isn't visible to users on the page (Google penalizes this) 
+- Do NOT fabricate reviews, ratings, or specs — leave fields out if data is missing 
+
+5. DELIVERABLES 
+- A /lib/schema (or equivalent) directory with one file per schema type 
+- A central function that assembles the correct schema set per page type 
+- The schemas injected into each page template 
+- A short README explaining how to add a new product/page and have schema auto-generate - A validation checklist: every page tested in Google Rich Results Test and Schema.org 
+
+Validator with zero errors START by listing every page type/route in this site and proposing which schemas you'll add to each. Wait for my approval before writing code. 

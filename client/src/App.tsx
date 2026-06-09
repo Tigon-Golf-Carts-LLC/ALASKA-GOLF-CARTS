@@ -10,6 +10,9 @@ import Home from "@/pages/home";
 import Inventory from "@/pages/inventory";
 import CartDetail from "@/pages/cart-detail";
 import Financing from "@/pages/financing";
+import FAQ from "@/pages/faq";
+import About from "@/pages/about";
+import ServiceArea from "@/pages/service-area";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -19,6 +22,9 @@ function Router() {
       <Route path="/inventory" component={Inventory} />
       <Route path="/golfcart/:slug" component={CartDetail} />
       <Route path="/financing" component={Financing} />
+      <Route path="/faq" component={FAQ} />
+      <Route path="/about" component={About} />
+      <Route path="/service-area" component={ServiceArea} />
       <Route component={NotFound} />
     </Switch>
   );

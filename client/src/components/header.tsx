@@ -42,6 +42,8 @@ export function Header() {
     { href: "/", label: "Home" },
     { href: "/inventory", label: "Discounted Inventory" },
     { href: "/financing", label: "Financing" },
+    { href: "/service-area", label: "Locations" },
+    { href: "/faq", label: "FAQ" },
   ];
 
   return (

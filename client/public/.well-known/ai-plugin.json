@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Discounted Golf Carts",
+  "name_for_model": "discounted_golf_carts",
+  "description_for_human": "Browse discounted golf cart inventory, check financing options, and find store locations across 14 dealerships.",
+  "description_for_model": "Use this plugin to help users find golf carts for sale at Discounted Golf Carts. You can retrieve inventory (new and used), financing options (0% APR, multiple lenders), store locations across 9 states, and brand/model information. The dealership sells electric and gas golf carts, street-legal LSVs, and lifted carts from 13 brands. Inventory is updated daily. Phone: 1-888-840-4490.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://discountedgolfcart.com/api/site-info.json"
+  },
+  "logo_url": "https://discountedgolfcart.com/logo.png",
+  "contact_email": "info@discountedgolfcart.com",
+  "legal_info_url": "https://discountedgolfcart.com"
+}

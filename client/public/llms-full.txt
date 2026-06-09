@@ -1,0 +1,277 @@
+# Discounted Golf Carts — Full Plain-Text Snapshot for AI Crawlers
+# URL: https://discountedgolfcart.com
+# Last Updated: 2026-06-09
+# Purpose: Authoritative plain-text content for LLM ingestion, RAG, and AI overviews
+
+================================================================================
+PAGE: HOME — https://discountedgolfcart.com/
+================================================================================
+
+TITLE: Golf Carts for Sale — Discounted Inventory Updated Daily | Discounted Golf Carts
+
+DIRECT ANSWER:
+Discounted Golf Carts is a multi-location golf cart dealership with 14 retail stores across
+Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, Florida, South Carolina,
+and Ohio. The company sells new and used golf carts, electric vehicles, street-legal LSVs, and
+lifted carts from 13 authorized brands. Inventory is updated daily at 10:55 PM ET. Prices start
+around $5,000 for used carts and $9,995 for new models. Financing is available at 0% APR for
+up to 48 months. Call 1-888-840-4490 to speak with a sales representative.
+
+KEY FACTS:
+- 14 physical locations across 9 states
+- 500+ golf carts in stock (updated daily)
+- 13 authorized brands: American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA,
+  CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, Yamaha
+- Financing: 0% APR, terms up to 48 months (Sheffield Financial, BLI Heartland, DLL, Octane, Univest, Dealer Direct)
+- Nationwide delivery available
+- Phone: 1-888-840-4490
+- Website: https://discountedgolfcart.com
+
+MAIN CONTENT:
+Discounted Golf Carts sells wholesale-priced golf carts with inventory refreshed every day.
+The dealership carries both new and pre-owned golf carts in electric, gas, and street-legal
+configurations. Models range from 2-passenger golf course carts to 6-passenger family vehicles.
+Lifted golf carts with suspension upgrades are available. All 13 major brands are stocked.
+
+Top-selling brands include Denago (Rover XL, Nomad XL), EZGO (RXV, TXT), Evolution (D5 Ranger 4,
+D5 Maverick 6), Club Car (DS, Tempo, Precedent), and Yamaha (Drive 2, G29).
+
+New golf carts are sold at wholesale MSRP pricing. Used golf carts are inspected and serviced
+before sale. The dealership accepts trade-ins at all locations.
+
+NAP:
+Discounted Golf Carts | 1-888-840-4490 | https://discountedgolfcart.com
+
+================================================================================
+PAGE: INVENTORY — https://discountedgolfcart.com/inventory
+================================================================================
+
+TITLE: Golf Cart Inventory for Sale — New & Used | Discounted Golf Carts
+
+NOTE: This page renders live inventory from the DMS API. Inventory changes daily.
+Filters available: Condition (new/used), Power type (electric/gas), Brand, Model,
+Color, Seating capacity, Drivetrain, Location.
+
+STATIC CONTEXT:
+Discounted Golf Carts maintains 500+ units across 14 locations. All inventory is
+photographed and listed with pricing, specifications, passenger count, power type,
+and drivetrain. Prices are updated nightly at 10:55 PM ET. Each listing includes a
+"Call Now" option to reach 1-888-840-4490.
+
+================================================================================
+PAGE: FINANCING — https://discountedgolfcart.com/financing
+================================================================================
+
+TITLE: Golf Cart Financing — 0% APR Up to 48 Months | Discounted Golf Carts
+
+DIRECT ANSWER:
+Discounted Golf Carts offers golf cart financing through six lending partners. Rates
+start at 0% APR with terms up to 48 months. Applications are processed quickly, often
+within minutes. Financing is available for new carts, used carts, street-legal LSVs,
+and NEVs. Call 1-888-840-4490 to discuss options.
+
+FINANCING PARTNERS:
+1. Sheffield Financial (BBT) — Prequalify with no credit impact
+2. BLI Heartland — Rent-to-own program for golf cart ownership
+3. DLL Financial Solutions — Low APR, no hidden fees
+4. Roadrunner / Octane — Consumer financing with fast decisions
+5. Univest Capital — Business and commercial financing solutions
+6. Dealer Direct — Buy now, pay later program
+
+HOW TO APPLY:
+Call 1-888-840-4490 or visit any of the 14 dealership locations. Applications can also
+be submitted online through each lending partner's portal. Approval decisions are
+typically returned in minutes.
+
+QUESTIONS ANSWERED:
+- What credit score do I need? Most programs accept a range of credit profiles; call to discuss.
+- Can I finance a used cart? Yes, most partners finance both new and used golf carts.
+- Is 0% APR available? Yes, through select programs with qualified credit.
+
+NAP: Discounted Golf Carts | 1-888-840-4490 | https://discountedgolfcart.com
+
+================================================================================
+PAGE: SERVICE AREA — https://discountedgolfcart.com/service-area
+================================================================================
+
+TITLE: Golf Cart Dealership Locations — 14 Stores Across 9 States | Discounted Golf Carts
+
+DIRECT ANSWER:
+Discounted Golf Carts operates 14 retail locations across Pennsylvania, New Jersey,
+Delaware, North Carolina, Indiana, Virginia, Florida, South Carolina, and Ohio.
+All locations sell new and used golf carts and offer on-site financing. Nationwide
+delivery is available from any location. Call 1-888-840-4490.
+
+LOCATIONS:
+
+1. Hatfield, Pennsylvania
+   2333 Bethlehem Pike, Hatfield, PA 19440
+   Region: Greater Philadelphia / Montgomery County
+   Nearby: Lansdale, North Wales, Doylestown, Montgomeryville
+
+2. Ocean View, New Jersey
+   101 NJ-50, Ocean View, NJ 08230
+   Region: Cape May County / Jersey Shore
+   Nearby: Wildwood, Cape May, Sea Isle City, Avalon
+
+3. Long Pond, Pennsylvania
+   4738 PA-115, Long Pond, PA 18334
+   Region: Pocono Mountains / Monroe County
+   Nearby: Stroudsburg, Mount Pocono, Tannersville, East Stroudsburg
+
+4. Dover, Delaware
+   5158 N Dupont Hwy, Dover, DE 19901
+   Region: Kent County / Central Delaware
+   Nearby: Smyrna, Milford, Middletown, Georgetown
+
+5. Scranton, Pennsylvania
+   1225 N. Keyser Ave #2, Scranton, PA 18504
+   Region: Northeastern Pennsylvania / Lackawanna County
+   Nearby: Wilkes-Barre, Pittston, Carbondale, Dickson City
+
+6. Raleigh, North Carolina
+   2700 South Wilmington Street, Raleigh, NC 27603
+   Region: Research Triangle / Wake County
+   Nearby: Durham, Chapel Hill, Cary, Garner, Clayton
+
+7. South Bend, Indiana
+   52129 State Highway 933, South Bend, IN 46637
+   Region: Northern Indiana / St. Joseph County
+   Nearby: Mishawaka, Elkhart, Goshen, Granger
+
+8. Gloucester Point, Virginia
+   2810 George Washington Memorial Highway, Gloucester Point, VA 23072
+   Region: Hampton Roads / Gloucester County
+   Nearby: Williamsburg, Newport News, Yorktown, Mathews
+
+9. Bayville, New Jersey
+   155 Atlantic City Boulevard, Bayville, NJ 08721
+   Region: Ocean County / Jersey Shore
+   Nearby: Toms River, Barnegat, Forked River, Lacey Township
+
+10. Waretown, New Jersey
+    526 U.S. 9, Waretown, NJ 08758
+    Region: Ocean County / Jersey Shore
+    Nearby: Barnegat, Manahawkin, Tuckerton, Ship Bottom
+
+11. Lecanto, Florida
+    299 East Gulf to Lake Highway, Lecanto, FL 34461
+    Region: Nature Coast / Citrus County
+    Nearby: Crystal River, Inverness, Homosassa, Beverly Hills (FL)
+
+12. Orangeburg, South Carolina
+    4166 North Road, Orangeburg, SC 29118
+    Region: Midlands / Orangeburg County
+    Nearby: Columbia, Sumter, Santee, Holly Hill
+
+13. Swanton, Ohio
+    10420 Airport Highway, Swanton, OH 43558
+    Region: Northwestern Ohio / Fulton County
+    Nearby: Toledo, Maumee, Sylvania, Bowling Green
+
+14. Rio Grande, New Jersey
+    1304 New Jersey 47, Unit B, Rio Grande, NJ 08242
+    Region: Cape May County
+    Nearby: Cape May, Wildwood, Villas, North Cape May
+
+STATES SERVED: Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, Florida, South Carolina, Ohio
+NATIONWIDE DELIVERY: Yes, all locations ship nationwide.
+PHONE: 1-888-840-4490
+
+================================================================================
+PAGE: FAQ — https://discountedgolfcart.com/faq
+================================================================================
+
+TITLE: Golf Cart FAQ — Buying, Financing & Street-Legal Questions | Discounted Golf Carts
+
+Q: How much does a golf cart cost at Discounted Golf Carts?
+A: New golf carts start at approximately $9,995. Used and pre-owned golf carts typically
+range from $4,500 to $12,000 depending on brand, age, condition, and features. Street-legal
+LSVs and lifted models may cost more. Call 1-888-840-4490 for current pricing on specific units.
+
+Q: What brands of golf carts does Discounted Golf Carts sell?
+A: Discounted Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts,
+Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO (E-Z-GO), Icon,
+Star EV, Tara, and Yamaha.
+
+Q: Does Discounted Golf Carts offer financing?
+A: Yes. Financing is available through six partners including Sheffield Financial, BLI Heartland,
+DLL Financial Solutions, Roadrunner/Octane, Univest Capital, and Dealer Direct. Options include
+0% APR programs, rent-to-own, and business financing. Terms up to 48 months.
+
+Q: What is a street-legal golf cart (LSV)?
+A: A Low Speed Vehicle (LSV) is a golf cart that meets federal safety standards (FMVSS 500)
+for road use on streets with posted limits of 35 mph or less. Required equipment includes
+headlights, taillights, turn signals, brake lights, mirrors, seat belts, horn, and VIN.
+Discounted Golf Carts stocks LSVs from multiple brands.
+
+Q: What is the difference between electric and gas golf carts?
+A: Electric golf carts run on battery packs (typically 36V, 48V, or 72V lithium-ion or
+lead-acid). They are quieter, produce no exhaust, and have lower per-mile energy costs.
+Gas golf carts use small combustion engines and are preferred where charging is inconvenient
+or for longer-range use. Both types are available at all Discounted Golf Carts locations.
+
+Q: Does Discounted Golf Carts deliver nationwide?
+A: Yes. Nationwide delivery is available from any of the 14 locations. Contact 1-888-840-4490
+to get a delivery quote to your address.
+
+Q: Can I trade in my golf cart?
+A: Yes. Trade-ins are accepted at all 14 locations. Call 1-888-840-4490 to discuss your
+trade-in value before visiting.
+
+Q: How many locations does Discounted Golf Carts have?
+A: Discounted Golf Carts operates 14 retail locations across 9 states: Pennsylvania (Hatfield,
+Long Pond, Scranton), New Jersey (Ocean View, Bayville, Waretown, Rio Grande), Delaware (Dover),
+North Carolina (Raleigh), Indiana (South Bend), Virginia (Gloucester Point), Florida (Lecanto),
+South Carolina (Orangeburg), and Ohio (Swanton).
+
+Q: Does Discounted Golf Carts service and repair golf carts?
+A: Yes. Service offerings include routine maintenance, battery diagnostics and replacement,
+motor and controller repair, brake service, electrical diagnostics, body repair, and warranty
+service for all carried brands.
+
+Q: How often is the inventory updated?
+A: The inventory feed is refreshed daily at 10:55 PM Eastern Time. Prices and availability
+reflect the most recent update.
+
+================================================================================
+PAGE: ABOUT — https://discountedgolfcart.com/about
+================================================================================
+
+TITLE: About Discounted Golf Carts — Multi-Location Dealer | East Coast & Midwest
+
+DIRECT ANSWER:
+Discounted Golf Carts is one of the largest multi-location golf cart dealerships in the
+eastern United States. The company operates 14 retail locations across 9 states, carries
+13 authorized brands, and maintains daily-updated inventory of 500+ golf carts. The
+dealership specializes in wholesale-priced new and used golf carts, electric vehicles,
+street-legal LSVs, and lifted carts.
+
+ABOUT THE COMPANY:
+Discounted Golf Carts offers wholesale-to-the-public pricing on golf carts from all
+major manufacturers. The dealership serves residential communities, golf courses, gated
+communities, retirement communities, resorts, commercial properties, and individual buyers
+across the eastern US and Midwest.
+
+The company's inventory is updated every day at 10:55 PM ET, reflecting accurate current
+stock levels and pricing. Multiple financing partners allow customers to purchase with
+monthly payments, including 0% APR options.
+
+SERVICE OFFERINGS:
+- New golf cart sales (13 authorized brands)
+- Pre-owned golf cart sales (inspected, serviced)
+- Street-legal LSV sales
+- Lifted golf carts
+- Golf cart financing (0% APR available)
+- Parts and accessories
+- Service and repair
+- Trade-in evaluation
+
+CONTACT:
+Phone: 1-888-840-4490
+Website: https://discountedgolfcart.com
+Inventory: https://discountedgolfcart.com/inventory
+
+================================================================================
+END OF FILE
+================================================================================

@@ -1,6 +1,35 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone, ArrowRight, CreditCard, DollarSign, Shield, Clock } from "lucide-react";
+import { Link } from "wouter";
+import { Phone, ArrowRight, CreditCard, DollarSign, Shield, Clock, ChevronRight } from "lucide-react";
+import { SeoHead } from "@/components/seo-head";
+import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
+
+const FINANCING_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://discountedgolfcart.com/financing",
+  "name": "Golf Cart Financing — 0% APR Up to 48 Months | Discounted Golf Carts",
+  "description": "Apply for golf cart financing through six lending partners. 0% APR options available. Quick approvals. New and used carts, LSVs, and NEVs. Call 1-888-840-4490.",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://discountedgolfcart.com" },
+      { "@type": "ListItem", "position": 2, "name": "Financing", "item": "https://discountedgolfcart.com/financing" }
+    ]
+  },
+  "mainEntity": {
+    "@type": "Service",
+    "name": "Golf Cart Financing",
+    "provider": { "@id": "https://discountedgolfcart.com/#organization" },
+    "description": "Golf cart financing through six lending partners. 0% APR available, terms up to 48 months, quick approval for new and used golf carts.",
+    "offers": {
+      "@type": "Offer",
+      "description": "0% APR financing on golf carts, terms up to 48 months",
+      "seller": { "@id": "https://discountedgolfcart.com/#organization" }
+    }
+  }
+};
 
 const financingPartners = [
   {
@@ -51,53 +80,68 @@ const benefits = [
   {
     icon: CreditCard,
     title: "Flexible Options",
-    description: "Multiple financing plans to fit every budget and lifestyle.",
+    description: "Six financing partners covering 0% APR, rent-to-own, and business programs.",
   },
   {
     icon: Clock,
     title: "Quick Approval",
-    description: "Fast application process with decisions in minutes.",
+    description: "Most applications receive a credit decision in minutes.",
   },
   {
     icon: DollarSign,
     title: "Competitive Rates",
-    description: "Low monthly payments and competitive interest rates.",
+    description: "0% APR available on qualifying purchases with terms up to 48 months.",
   },
   {
     icon: Shield,
     title: "No Hidden Fees",
-    description: "Transparent terms with no surprise charges.",
+    description: "Transparent payment terms with no surprise charges at closing.",
   },
 ];
 
 export default function Financing() {
   return (
     <div className="min-h-screen">
-      <section className="relative py-16 md:py-24 bg-card">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <h1
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
-            data-testid="text-financing-title"
-          >
-            Apply For Street Legal LSV, NEV &<br className="hidden sm:block" />
-            Golf Cart Financing
-          </h1>
-          <p
-            className="text-muted-foreground text-base md:text-lg max-w-3xl mx-auto leading-relaxed"
-            data-testid="text-financing-intro"
-          >
-            At Discounted Golf Carts, we understand that financing your purchase is an important aspect of the buying process.
-            That's why we offer flexible financing options to suit every budget. Whether you're looking for low monthly
-            payments or competitive interest rates, our financing team is here to help you find the best plan for your
-            needs. We make the application process straightforward and hassle-free, ensuring you can drive away in your
-            new or used golf cart, LSV, or NEV without delay.
-          </p>
+      <SeoHead
+        title="Golf Cart Financing — 0% APR Up to 48 Months | Discounted Golf Carts"
+        description="Apply for golf cart financing at Discounted Golf Carts. 0% APR options, six lending partners, terms up to 48 months. New and used carts, LSVs, and NEVs. Call 1-888-840-4490."
+        canonical="https://discountedgolfcart.com/financing"
+        schema={FINANCING_SCHEMA}
+      />
+
+      <section className="relative py-16 md:py-24 bg-card border-b">
+        <div className="max-w-5xl mx-auto px-4">
+          <nav className="text-xs text-muted-foreground mb-4" aria-label="Breadcrumb">
+            <ol className="inline-flex items-center gap-1">
+              <li><Link href="/" className="hover:text-primary">Home</Link></li>
+              <li><ChevronRight className="h-3 w-3" /></li>
+              <li className="text-foreground font-medium">Financing</li>
+            </ol>
+          </nav>
+          <div className="max-w-3xl">
+            <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Golf Cart Financing</p>
+            <h1
+              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5"
+              data-testid="text-financing-title"
+            >
+              Golf Cart Financing — 0% APR, Up to 48 Months
+            </h1>
+            <p
+              className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4"
+              data-testid="text-financing-intro"
+            >
+              Discounted Golf Carts offers financing on new golf carts, used golf carts, street-legal LSVs, and neighborhood electric vehicles (NEVs) through six lending partners. Programs include 0% APR for qualified buyers, rent-to-own for a path to ownership, and business financing for commercial fleets. Terms run up to 48 months. Most applications receive a decision in minutes.
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> to discuss which financing program fits your budget, or apply directly through any of the six partner portals below. Available at all <Link href="/service-area" className="text-primary hover:underline">14 dealership locations</Link>.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="py-12 md:py-16">
+      <section className="py-12 md:py-16 border-b">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-4">
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
@@ -115,14 +159,17 @@ export default function Financing() {
         </div>
       </section>
 
-      <section className="pb-12 md:pb-20">
+      <section className="py-12">
         <div className="max-w-6xl mx-auto px-4">
           <h2
-            className="text-2xl md:text-3xl font-bold text-center mb-10"
+            className="text-2xl md:text-3xl font-bold text-center mb-3"
             data-testid="text-partners-heading"
           >
-            Our Financing Partners
+            Our Golf Cart Financing Partners
           </h2>
+          <p className="text-center text-sm text-muted-foreground mb-10 max-w-xl mx-auto">
+            Six programs covering a wide range of credit profiles — from 0% APR to rent-to-own to business financing.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {financingPartners.map((partner) => (
               <Card
@@ -138,9 +185,10 @@ export default function Financing() {
                 >
                   <img
                     src={partner.imageUrl}
-                    alt={partner.name}
+                    alt={`${partner.name} golf cart financing`}
                     className="w-full h-48 object-cover rounded-t-md"
                     loading="lazy"
+                    decoding="async"
                   />
                 </a>
                 <div className="p-5 flex flex-col flex-1">
@@ -168,19 +216,41 @@ export default function Financing() {
         </div>
       </section>
 
-      <section className="py-12 md:py-16 bg-card">
+      <section className="py-10 md:py-14 bg-card border-t">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-xl md:text-2xl font-bold mb-4">
+            How Does Golf Cart Financing Work at Discounted Golf Carts?
+          </h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+            Choose a cart from the <Link href="/inventory" className="text-primary hover:underline">inventory page</Link>, then call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or apply online through one of the six partner portals above. Once approved, financing terms are set directly with the lender. Monthly payment amounts depend on the purchase price, term length (up to 48 months), and the program selected. All financing is subject to credit approval.
+          </p>
+          <h2 className="text-xl md:text-2xl font-bold mb-4 mt-8">
+            What Credit Score Do I Need to Finance a Golf Cart?
+          </h2>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+            Requirements vary by lender. Sheffield Financial and DLL Financial Solutions typically work with good-to-excellent credit for the best rates. BLI Heartland's rent-to-own program is designed for a broader range of credit profiles. Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> to discuss which partner is the best fit before applying.
+          </p>
+          <h2 className="text-xl md:text-2xl font-bold mb-4 mt-8">
+            Can I Finance a Used Golf Cart?
+          </h2>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Yes. Most of the six partners finance both new and pre-owned golf carts. Used cart financing terms may differ slightly from new cart programs. See the <Link href="/inventory" className="text-primary hover:underline">used golf cart inventory</Link> or call to discuss current availability and financing for a specific pre-owned unit.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-12 md:py-16 bg-primary/5 border-t">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4" data-testid="text-cta-heading">
-            Apply For Street Legal LSV, NEV & Golf Cart Financing
+            Apply for Golf Cart Financing — Call Now
           </h2>
-          <p className="text-muted-foreground mb-6">
-            To find out which financing company is best for you, or for more information,
-            please call the office.
+          <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
+            Not sure which program is right for you? Call the sales team and they'll match you with the best lending partner for your situation.
           </p>
-          <a href="tel:1-888-840-4490">
-            <Button size="lg" data-testid="button-call-financing">
+          <a href={PHONE_TEL}>
+            <Button size="lg" className="font-bold" data-testid="button-call-financing">
               <Phone className="w-5 h-5 mr-2" />
-              1-888-840-4490
+              {PHONE_NUMBER}
             </Button>
           </a>
         </div>

@@ -1,0 +1,42 @@
+{
+  "name": "Discounted Golf Carts",
+  "description": "Discounted Golf Carts is a multi-location golf cart dealership with 14 stores across Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, Florida, South Carolina, and Ohio. Sells new and used golf carts, electric vehicles, street-legal LSVs, and lifted carts from 13 authorized brands. Inventory updated daily.",
+  "url": "https://discountedgolfcart.com",
+  "contact": {
+    "phone": "1-888-840-4490",
+    "email": "info@discountedgolfcart.com"
+  },
+  "capabilities": [
+    "browse_inventory",
+    "filter_by_brand",
+    "filter_by_condition",
+    "filter_by_location",
+    "apply_for_financing",
+    "call_to_purchase"
+  ],
+  "actions": [
+    {
+      "name": "browse_inventory",
+      "description": "Browse available golf carts for sale",
+      "url": "https://discountedgolfcart.com/inventory",
+      "method": "GET"
+    },
+    {
+      "name": "get_site_info",
+      "description": "Retrieve structured business data including locations, brands, and services",
+      "url": "https://discountedgolfcart.com/api/site-info.json",
+      "method": "GET"
+    },
+    {
+      "name": "call_sales",
+      "description": "Call sales team for pricing, availability, and purchasing",
+      "url": "tel:+18888404490"
+    }
+  ],
+  "data_feeds": {
+    "site_info": "https://discountedgolfcart.com/api/site-info.json",
+    "llms_summary": "https://discountedgolfcart.com/llms.txt",
+    "llms_full": "https://discountedgolfcart.com/llms-full.txt",
+    "sitemap": "https://discountedgolfcart.com/sitemap.xml"
+  }
+}
