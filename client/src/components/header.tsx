@@ -37,7 +37,6 @@ export function Header() {
           </div>
         </div>
       </div>
-
       <div className="border-b bg-background/98 backdrop-blur-md shadow-sm">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex h-16 items-center justify-between gap-4">
@@ -48,7 +47,7 @@ export function Header() {
                   <span className="text-lg font-extrabold tracking-tight block">
                     Discounted <span className="text-primary">Golf Carts</span>
                   </span>
-                  <span className="text-[10px] text-muted-foreground font-medium tracking-widest uppercase hidden sm:block">discountedgolfcart.com</span>
+                  <span className="text-[10px] text-muted-foreground font-medium tracking-widest uppercase hidden sm:block">discountedgolfcarts.com</span>
                 </div>
               </div>
             </Link>
@@ -103,7 +102,6 @@ export function Header() {
           </div>
         </div>
       </div>
-
       {mobileMenuOpen && (
         <div className="md:hidden border-b bg-background shadow-lg" data-testid="nav-mobile">
           <div className="px-4 py-3 space-y-1">
