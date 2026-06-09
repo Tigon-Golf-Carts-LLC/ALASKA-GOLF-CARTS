@@ -8,8 +8,9 @@ import { Separator } from "@/components/ui/separator";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { Cart, Store } from "@shared/schema";
-import { formatPrice, getAllCartImages, buildCartTitle, PHONE_NUMBER, PHONE_TEL, STATE_ABBREVIATIONS } from "@/lib/constants";
+import { formatPrice, getAllCartImages, buildCartTitle, PHONE_NUMBER, PHONE_TEL, STATE_ABBREVIATIONS, COMING_SOON_IMAGE } from "@/lib/constants";
 import { useState, useEffect } from "react";
+import { SeoHead } from "@/components/seo-head";
 
 function getSecondsUntilNextUpdate() {
   const now = new Date();
@@ -79,6 +80,7 @@ export default function CartDetail() {
   if (isLoading) {
     return (
       <div className="mx-auto max-w-7xl px-4 py-6">
+        <SeoHead title="Golf Cart for Sale | Discounted Golf Carts" description="Golf cart for sale at Discounted Golf Carts. 0% APR financing. Call 1-888-840-4490." />
         <Skeleton className="h-6 w-32 mb-6" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Skeleton className="aspect-[4/3] rounded-md" />
@@ -96,6 +98,7 @@ export default function CartDetail() {
   if (error || !cart) {
     return (
       <div className="mx-auto max-w-7xl px-4 py-16 text-center">
+        <SeoHead title="Cart Not Found | Discounted Golf Carts" description="This golf cart may no longer be available. Browse our updated inventory at Discounted Golf Carts." canonical="https://discountedgolfcart.com/inventory" />
         <h1 className="text-2xl font-bold mb-4">Cart Not Found</h1>
         <p className="text-muted-foreground mb-6">This vehicle may no longer be available.</p>
         <Link href="/inventory">
@@ -127,8 +130,43 @@ export default function CartDetail() {
     ? `${store.address.city}, ${STATE_ABBREVIATIONS[store.address.state || ""] || store.address.state || ""}`
     : "";
 
+  const detailTitle = `${isUsed ? "Used" : "New"} ${[year, make, model].filter(Boolean).join(" ")} Golf Cart for Sale | Discounted Golf Carts`;
+  const detailDesc = `${isUsed ? "Used" : "New"} ${[year, make, model].filter(Boolean).join(" ")} golf cart${color ? ` in ${color}` : ""}${numericPrice ? ` for $${numericPrice.toLocaleString()}` : ""}. 0% APR financing at Discounted Golf Carts. Call 1-888-840-4490.`;
+  const seoImageUrl = images[0] !== COMING_SOON_IMAGE ? images[0] : undefined;
+  const vehicleSchema: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "Car",
+    "name": [year, make, model, color].filter(Boolean).join(" ") || "Golf Cart",
+    "fuelType": isElectric ? "Electric" : "Gasoline",
+    "itemCondition": isUsed ? "https://schema.org/UsedCondition" : "https://schema.org/NewCondition",
+    "url": `https://discountedgolfcart.com/golfcart/${slug}`,
+    "description": detailDesc,
+  };
+  if (make) vehicleSchema["brand"] = { "@type": "Brand", "name": make };
+  if (model) vehicleSchema["model"] = model;
+  if (year) vehicleSchema["vehicleModelDate"] = year;
+  if (color) vehicleSchema["color"] = color;
+  if (cart.vinNo) vehicleSchema["vehicleIdentificationNumber"] = cart.vinNo;
+  if (seoImageUrl) vehicleSchema["image"] = seoImageUrl;
+  const offersObj: Record<string, unknown> = {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": `https://discountedgolfcart.com/golfcart/${slug}`,
+    "seller": { "@type": "AutoDealer", "name": "Discounted Golf Carts", "url": "https://discountedgolfcart.com", "telephone": "1-888-840-4490" },
+  };
+  if (numericPrice > 0) offersObj["price"] = numericPrice;
+  vehicleSchema["offers"] = offersObj;
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-6">
+      <SeoHead
+        title={detailTitle}
+        description={detailDesc}
+        canonical={`https://discountedgolfcart.com/golfcart/${slug}`}
+        ogImage={seoImageUrl}
+        schema={vehicleSchema}
+      />
       <div className="mb-6">
         <Link href="/inventory">
           <Button variant="ghost" size="sm" data-testid="button-back">
@@ -145,6 +183,7 @@ export default function CartDetail() {
               src={images[selectedImage]}
               alt={title}
               className="w-full aspect-[4/3] object-cover"
+              loading="eager"
               data-testid="img-cart-main"
             />
             <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
@@ -171,7 +210,7 @@ export default function CartDetail() {
                   }`}
                   data-testid={`button-thumb-${i}`}
                 >
-                  <img src={img} alt={`${title} - ${i + 1}`} className="w-full h-full object-cover" />
+                  <img src={img} alt={`${title} - ${i + 1}`} className="w-full h-full object-cover" loading="lazy" />
                 </button>
               ))}
             </div>

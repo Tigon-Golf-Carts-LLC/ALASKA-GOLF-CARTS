@@ -89,6 +89,13 @@ async function fetchDMS(endpoint: string, body?: any): Promise<any> {
   return response.json();
 }
 
+export let getCartMetaForSeo: (slug: string) => Promise<{
+  title: string;
+  description: string;
+  schema: Record<string, unknown>;
+  imageUrl: string | null;
+} | null> = async () => null;
+
 export async function registerRoutes(
   httpServer: Server,
   app: Express
@@ -376,6 +383,80 @@ export async function registerRoutes(
     setCache("allCartsComplete", allCarts);
     return allCarts;
   }
+
+  getCartMetaForSeo = async (slug: string) => {
+    try {
+      const slugMapCached = getCached("slugMap") as { slugToId: Record<string, string> } | null;
+      if (!slugMapCached) return null;
+
+      const cartId = slugMapCached.slugToId[slug];
+      if (!cartId) return null;
+
+      const allCarts = getCached("allCartsComplete") as any[] | null;
+      if (!allCarts) return null;
+
+      const cart = allCarts.find((c: any) => c._id === cartId);
+      if (!cart) return null;
+
+      const make = (cart.cartType?.make as string) || "";
+      const model = (cart.cartType?.model as string) || "";
+      const color = (cart.cartAttributes?.cartColor as string) || "";
+      const year = (cart.cartType?.year as string) || "";
+      const isUsed = cart.isUsed === true;
+      const isElectric = cart.isElectric === true;
+      const price = cart.retailPrice as number | null | undefined;
+      const vinNo = (cart.vinNo as string) || "";
+
+      const nameParts = [year, make, model, color].filter(Boolean);
+      const cartName = nameParts.join(" ") || "Golf Cart";
+      const conditionStr = isUsed ? "Used" : "New";
+
+      const imageFiles: string[] = (cart.internalCartImageUrls as string[]) || (cart.imageUrls as string[]) || [];
+      const imageUrl = imageFiles[0]
+        ? imageFiles[0].startsWith("http")
+          ? imageFiles[0]
+          : `https://s3.amazonaws.com/prod.docs.s3/carts/${imageFiles[0]}`
+        : null;
+
+      const title = `${conditionStr} ${cartName} Golf Cart for Sale | Discounted Golf Carts`;
+      const description = `${conditionStr} ${cartName} golf cart for sale at Discounted Golf Carts.${price ? ` Priced at $${price.toLocaleString()}.` : ""} 0% APR financing available. Call 1-888-840-4490.`;
+
+      const offersSchema: Record<string, unknown> = {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": `https://discountedgolfcart.com/golfcart/${slug}`,
+        "seller": {
+          "@type": "AutoDealer",
+          "name": "Discounted Golf Carts",
+          "url": "https://discountedgolfcart.com",
+          "telephone": "1-888-840-4490",
+        },
+      };
+      if (price) offersSchema["price"] = price;
+
+      const schema: Record<string, unknown> = {
+        "@context": "https://schema.org",
+        "@type": "Car",
+        "name": cartName,
+        "fuelType": isElectric ? "Electric" : "Gasoline",
+        "itemCondition": isUsed ? "https://schema.org/UsedCondition" : "https://schema.org/NewCondition",
+        "offers": offersSchema,
+        "url": `https://discountedgolfcart.com/golfcart/${slug}`,
+        "description": description,
+      };
+      if (make) schema["brand"] = { "@type": "Brand", "name": make };
+      if (model) schema["model"] = model;
+      if (year) schema["vehicleModelDate"] = year;
+      if (color) schema["color"] = color;
+      if (imageUrl) schema["image"] = imageUrl;
+      if (vinNo) schema["vehicleIdentificationNumber"] = vinNo;
+
+      return { title, description, schema, imageUrl };
+    } catch {
+      return null;
+    }
+  };
 
   app.get("/sitemap.xml", async (_req, res) => {
     try {

@@ -1,1 +1,1 @@
-- [SEO optimization scope](seo-scope.md) — 14-location golf cart dealer; 3 protected DMS pages; new FAQ/About/ServiceArea pages added; SeoHead component for per-page meta
+- [SEO head injection architecture](seo-head-injection.md) — server-side `buildPageHtml()` in `server/seo-inject.ts` fixes canonical/title/meta for all routes; Vehicle JSON-LD from cache.
