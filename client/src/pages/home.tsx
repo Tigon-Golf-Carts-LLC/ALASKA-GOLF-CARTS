@@ -1,13 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
-import { Phone, ChevronRight, Tag, Shield, MapPin, Truck, Award, RefreshCw, Zap, CheckCircle2 } from "lucide-react";
+import { Phone, ChevronRight, Tag, Shield, MapPin, Truck, Award, RefreshCw, Zap, CheckCircle2, ChevronLeft, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { CartCard, CartCardSkeleton } from "@/components/cart-card";
 import type { CartsResponse, Store } from "@shared/schema";
-import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
+import { PHONE_NUMBER, PHONE_TEL, formatPrice, getCartImageUrl, buildCartTitle } from "@/lib/constants";
 import heroBg from "@assets/DISCOUNTED_GOLF_CARTS_DEALERSHIP_1770671250863.png";
+import { useState, useEffect, useCallback, useMemo } from "react";
 
 interface SlugMap {
   slugToId: Record<string, string>;
@@ -29,6 +30,8 @@ const TICKER_ITEMS = [
   "📞 CALL " + PHONE_NUMBER,
 ];
 
+const SLIDE_INTERVAL = 5000;
+
 export default function Home() {
   const { data: featured, isLoading: featuredLoading } = useQuery<CartsResponse>({
     queryKey: ["/api/carts?pageNumber=0&pageSize=8"],
@@ -46,6 +49,38 @@ export default function Home() {
     queryKey: ["/api/slug-map"],
   });
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
+
+  const slideItems = useMemo(() => {
+    if (!featured?.carts?.length) return [];
+    const shuffled = [...featured.carts].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 8);
+  }, [featured?.carts]);
+
+  const totalSlides = slideItems.length;
+
+  const goTo = useCallback((index: number) => {
+    setCurrentSlide(((index % totalSlides) + totalSlides) % totalSlides);
+  }, [totalSlides]);
+
+  const goNext = useCallback(() => goTo(currentSlide + 1), [currentSlide, goTo]);
+  const goPrev = useCallback(() => goTo(currentSlide - 1), [currentSlide, goTo]);
+
+  useEffect(() => {
+    if (paused || totalSlides < 2) return;
+    const timer = setInterval(goNext, SLIDE_INTERVAL);
+    return () => clearInterval(timer);
+  }, [paused, totalSlides, goNext]);
+
+  const activeCart = slideItems[currentSlide];
+  const activeCartUrl = activeCart
+    ? slugMap?.idToSlug[activeCart._id]
+      ? `/golfcart/${slugMap.idToSlug[activeCart._id]}`
+      : `/golfcart/${activeCart._id}`
+    : null;
+
   return (
     <div>
       {/* Scrolling ticker */}
@@ -59,58 +94,180 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Hero */}
-      <section className="relative overflow-hidden min-h-[520px] sm:min-h-[600px] flex items-center">
-        <div className="absolute inset-0">
-          <img src={heroBg} alt="Discounted Golf Carts Showroom" className="w-full h-full object-cover" />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/65 to-black/30" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+      {/* Hero Carousel */}
+      <section
+        className="relative overflow-hidden min-h-[520px] sm:min-h-[620px] flex items-center"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+        data-testid="section-hero"
+      >
+        {/* Slide backgrounds */}
+        {totalSlides === 0 ? (
+          <div className="absolute inset-0">
+            <img src={heroBg} alt="Discounted Golf Carts Showroom" className="w-full h-full object-cover" />
+          </div>
+        ) : (
+          slideItems.map((cart, i) => {
+            const imgUrl = imageErrors[cart._id]
+              ? heroBg
+              : getCartImageUrl(cart.imageUrls) || heroBg;
+            return (
+              <div
+                key={cart._id}
+                className="absolute inset-0 transition-opacity duration-700"
+                style={{ opacity: i === currentSlide ? 1 : 0, zIndex: i === currentSlide ? 1 : 0 }}
+              >
+                <img
+                  src={imgUrl}
+                  alt={buildCartTitle(cart.cartType?.make || "", cart.cartType?.model || "", cart.cartAttributes?.cartColor || "")}
+                  className="w-full h-full object-cover"
+                  onError={() => setImageErrors(prev => ({ ...prev, [cart._id]: true }))}
+                />
+              </div>
+            );
+          })
+        )}
 
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:py-28 relative w-full">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-5" data-testid="badge-hero-tag">
-              <Tag className="h-3.5 w-3.5" />
-              Wholesale Prices — Inventory Updated Daily
+        {/* Overlays */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/60 to-black/20" style={{ zIndex: 2 }} />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" style={{ zIndex: 2 }} />
+
+        {/* Content */}
+        <div className="mx-auto max-w-7xl px-4 py-20 sm:py-28 relative w-full" style={{ zIndex: 3 }}>
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+
+            {/* Left: Headline */}
+            <div className="max-w-xl">
+              <div className="inline-flex items-center gap-2 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded mb-5" data-testid="badge-hero-tag">
+                <Tag className="h-3.5 w-3.5" />
+                Wholesale Prices — Inventory Updated Daily
+              </div>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-5 text-white" data-testid="text-hero-title">
+                Discounted
+                <span className="text-primary block">Golf Carts.</span>
+              </h1>
+              <p className="text-base sm:text-lg text-white/75 max-w-lg mb-8 leading-relaxed" data-testid="text-hero-description">
+                Browse wholesale-priced new and used golf carts from top brands —
+                electric, gas, street legal, and more. Updated every day with the best deals.
+              </p>
+
+              <div className="flex flex-wrap items-center gap-3 mb-8">
+                <Link href="/inventory">
+                  <Button size="lg" className="font-bold text-base px-6" data-testid="button-browse-inventory">
+                    Browse Inventory
+                    <ChevronRight className="h-4 w-4 ml-1" />
+                  </Button>
+                </Link>
+                <a href={PHONE_TEL}>
+                  <Button variant="outline" size="lg" className="font-bold text-base backdrop-blur-sm bg-white/10 border-white/30 text-white hover:bg-white/20 px-6" data-testid="button-hero-call">
+                    <Phone className="h-4 w-4 mr-2" />
+                    {PHONE_NUMBER}
+                  </Button>
+                </a>
+              </div>
+
+              <div className="flex flex-wrap gap-4">
+                {[
+                  { icon: CheckCircle2, label: "No-Haggle Pricing" },
+                  { icon: Zap, label: "Electric & Gas" },
+                  { icon: Truck, label: "Ships Nationwide" },
+                ].map((item) => (
+                  <div key={item.label} className="flex items-center gap-1.5 text-white/70 text-sm">
+                    <item.icon className="h-4 w-4 text-primary" />
+                    <span>{item.label}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] mb-5 text-white" data-testid="text-hero-title">
-              Discounted
-              <span className="text-primary block">Golf Carts.</span>
-            </h1>
-            <p className="text-base sm:text-lg text-white/75 max-w-lg mb-8 leading-relaxed" data-testid="text-hero-description">
-              Browse wholesale-priced new and used golf carts from top brands —
-              electric, gas, street legal, and more. Updated every day with the best deals.
-            </p>
 
-            <div className="flex flex-wrap items-center gap-3 mb-10">
-              <Link href="/inventory">
-                <Button size="lg" className="font-bold text-base px-6" data-testid="button-browse-inventory">
-                  Browse Inventory
-                  <ChevronRight className="h-4 w-4 ml-1" />
-                </Button>
-              </Link>
-              <a href={PHONE_TEL}>
-                <Button variant="outline" size="lg" className="font-bold text-base backdrop-blur-sm bg-white/10 border-white/30 text-white hover:bg-white/20 px-6" data-testid="button-hero-call">
-                  <Phone className="h-4 w-4 mr-2" />
-                  {PHONE_NUMBER}
-                </Button>
-              </a>
-            </div>
-
-            <div className="flex flex-wrap gap-4">
-              {[
-                { icon: CheckCircle2, label: "No-Haggle Pricing" },
-                { icon: Zap, label: "Electric & Gas" },
-                { icon: Truck, label: "Ships Nationwide" },
-              ].map((item) => (
-                <div key={item.label} className="flex items-center gap-1.5 text-white/70 text-sm">
-                  <item.icon className="h-4 w-4 text-primary" />
-                  <span>{item.label}</span>
+            {/* Right: Spotlight cart card */}
+            {activeCart && (
+              <div className="hidden lg:block shrink-0 w-[280px]">
+                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg overflow-hidden shadow-2xl">
+                  <div className="relative">
+                    <div className="absolute top-0 left-0 right-0 flex items-start justify-between p-2.5 z-10">
+                      <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded ${activeCart.isUsed ? "bg-amber-500 text-white" : "bg-emerald-500 text-white"}`}>
+                        {activeCart.isUsed ? "Used" : "✦ New"}
+                      </span>
+                      <span className="text-[10px] font-bold bg-black/50 text-white px-2 py-1 rounded backdrop-blur-sm flex items-center gap-1">
+                        {activeCart.isElectric ? <Zap className="h-3 w-3 text-yellow-400" /> : null}
+                        {activeCart.isElectric ? "Electric" : "Gas"}
+                      </span>
+                    </div>
+                    <img
+                      src={imageErrors[activeCart._id] ? heroBg : (getCartImageUrl(activeCart.imageUrls) || heroBg)}
+                      alt=""
+                      className="w-full aspect-[4/3] object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-bold text-sm text-white leading-snug line-clamp-2 mb-2">
+                      {buildCartTitle(activeCart.cartType?.make || "", activeCart.cartType?.model || "", activeCart.cartAttributes?.cartColor || "")}
+                    </h3>
+                    <div className="flex items-center gap-2 mb-3 text-white/60 text-xs">
+                      {activeCart.cartType?.year && <span>{activeCart.cartType.year}</span>}
+                      {activeCart.cartAttributes?.passengers && (
+                        <span className="flex items-center gap-1">
+                          <Users className="h-3 w-3" />
+                          {activeCart.cartAttributes.passengers} pass.
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex items-center justify-between gap-2">
+                      <div>
+                        <div className="text-[9px] font-bold uppercase tracking-widest text-primary/80 flex items-center gap-1">
+                          <Tag className="h-2.5 w-2.5" /> Wholesale Price
+                        </div>
+                        <div className="text-xl font-extrabold text-primary">{formatPrice(activeCart.retailPrice)}</div>
+                      </div>
+                      {activeCartUrl && (
+                        <Link href={activeCartUrl}>
+                          <button className="text-xs font-bold text-white/80 hover:text-white flex items-center gap-1 transition-colors">
+                            View <ChevronRight className="h-3.5 w-3.5" />
+                          </button>
+                        </Link>
+                      )}
+                    </div>
+                  </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            )}
           </div>
         </div>
+
+        {/* Slide controls */}
+        {totalSlides > 1 && (
+          <>
+            <button
+              onClick={goPrev}
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 border border-white/20 flex items-center justify-center text-white transition-colors"
+              style={{ zIndex: 4 }}
+              data-testid="button-hero-prev"
+            >
+              <ChevronLeft className="h-5 w-5" />
+            </button>
+            <button
+              onClick={goNext}
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 border border-white/20 flex items-center justify-center text-white transition-colors"
+              style={{ zIndex: 4 }}
+              data-testid="button-hero-next"
+            >
+              <ChevronRight className="h-5 w-5" />
+            </button>
+
+            <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2" style={{ zIndex: 4 }}>
+              {slideItems.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => goTo(i)}
+                  className={`rounded-full transition-all duration-300 ${i === currentSlide ? "w-6 h-2 bg-primary" : "w-2 h-2 bg-white/40 hover:bg-white/70"}`}
+                  data-testid={`button-slide-dot-${i}`}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </section>
 
       {/* Value props bar */}
