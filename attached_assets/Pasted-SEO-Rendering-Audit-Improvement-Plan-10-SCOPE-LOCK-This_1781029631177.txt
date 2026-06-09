@@ -1,0 +1,28 @@
+SEO Rendering Audit & Improvement Plan 10
+⛔ SCOPE LOCK: This is a DIAGNOSTIC + PLANNING task. Do NOT change any code, configs, dependencies, or rendering setup yet. Your job is to investigate and produce a written report with recommendations. I will approve specific changes afterward, one at a time. No code until I say so.
+
+You are working in a full-stack TypeScript monorepo: React + TypeScript + Vite + Wouter (frontend SPA), Node.js + Express (backend/API + proxy to Tigon DMS), PostgreSQL + Drizzle ORM, deployed on Replit. It's a car dealership inventory site with faceted filter URLs (e.g. /inventory/used+hatfield+rover-xl), dealership pages, state pages, and vehicle detail pages with Monroney sticker PDFs.
+GOAL: Determine EXACTLY how this site currently renders (SSR, prerendering/SSG, or pure client-side SPA), then tell me where SEO is breaking and what to improve. I need to know whether crawlers can actually see my content and meta tags.
+INVESTIGATE AND REPORT ON:
+1. Current rendering model — figure out definitively which one:
+Open vite.config.ts, package.json scripts, and the Express server entry. Is Vite serving a static index.html shell with a client-only JS bundle? Is there any vite-plugin-ssr / vite-ssr / Vike / prerender plugin? Any renderToString/renderToPipeableStream in the Express layer? Any build step that emits static HTML per route?
+State plainly: "This site is [pure client-side SPA / SSR / prerendered SSG]." Show me the evidence (the specific files/lines).
+2. What a crawler actually sees:
+For a filter page, a vehicle detail page, a dealership page, and the homepage: does the initial HTML response from the server contain the real content and meta tags, or just an empty <div id="root">?
+Show me, for each page type, what's in the raw HTML BEFORE JavaScript runs (this is what Googlebot indexes on first pass).
+3. Meta tag / head management:
+How are <title>, meta description, canonical, Open Graph, and robots tags currently set? Is there react-helmet / a head manager, or nothing? Are they set client-side only (invisible to crawlers on first load)?
+4. Crawlability essentials — check existence and correctness:
+robots.txt, XML sitemap, canonical tags, structured data (JSON-LD — especially Vehicle, Car, AutoDealer, LocalBusiness schema, which matter a lot for dealerships), <h1> per page, semantic HTML, internal linking.
+Page-speed/Core Web Vitals signals: bundle size, lazy-loading, the pdfjs-dist weight on detail pages.
+Image SEO: alt text on cart photos, image dimensions/lazy-load.
+5. Routing/SEO mismatches:
+Does every meaningful page have a unique, crawlable URL? Do Wouter routes have server-side equivalents so a direct hit / refresh returns correct HTML rather than a fallback?
+PRODUCE THIS OUTPUT (report only, no code):
+A. Rendering verdict — which model, with file evidence. B. SEO impact — given that model, exactly what crawlers can and can't see right now. C. Prioritized fix list, ranked by SEO impact vs. effort, with the recommended approach for THIS stack. For each, say what changes and why. Cover the options realistically:
+SSR for Express + Vite (e.g. Vike/vite-plugin-ssr) — best for dynamic inventory but most invasive.
+Prerendering/SSG for stable pages (dealership, state, high-value filter combos) while keeping dynamic inventory client-side.
+Dynamic rendering / serving prerendered HTML to bots via the Express layer.
+Lighter-touch wins: SSR'ing JUST the <head> (meta/canonical/JSON-LD) so crawlers get correct tags even if the body hydrates client-side. D. Specific recommendation for which path fits a dealership site where inventory changes daily (refreshed 11 PM EST) but dealership/state/category pages are stable — and how this interacts with the planned canonical filter-URL system. E. Quick wins I can do immediately (robots.txt, sitemap, JSON-LD, titles, alt text) separate from the bigger rendering decision.
+Investigate thoroughly using the actual files in this repo. Do NOT guess — open the configs and source. Report only. I'll approve changes after I read it.
+
