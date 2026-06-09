@@ -1,0 +1,44 @@
+Inventory Filter URL SEO Refactor 
+
+⛔ SCOPE LOCK — READ FIRST: Do NOT break, alter, or refactor ANY other URL structure on this site. Do NOT change ANYTHING else — no components, styling, routes, database tables, configs, dependencies, or logic — that is not strictly part of the inventory filter URL task described below. If any change you're considering touches something outside the filter URL system, STOP and ASK ME FIRST before doing it. When in doubt, ask. No "while I was in there" changes. READ PASTED BELOW FIRST:
+
+You are working in a full-stack TypeScript monorepo: React + Vite + Wouter (frontend), Express (backend), PostgreSQL + Drizzle ORM (database), with shared types in shared/schema.ts. This is a car dealership inventory site that uses WooCommerce-style filter URLs like inventory/new+hatfield+rover-xl.
+GOAL: Audit my current inventory filter URL system and refactor it to follow SEO best practices for faceted navigation. The new canonical URLs must (a) be SEO-optimized, (b) support indexable deep combinations, and (c) open the /inventory page with the correct filters pre-applied. Do this WITHOUT breaking existing indexed URLs and WITHOUT touching anything else on the site.
+PHASE 1 — AUDIT (do this first, output a report, then WAIT for my approval before any code):
+Find every place filter URLs are generated, parsed, or routed. Search for: Wouter <Route> definitions, any URL-building helpers, the inventory filter components, and Express routes that handle inventory/*.
+List the current filter dimensions (condition, location, make, model, trim, year, body style, price, sort, etc.) and how they're currently serialized into the URL (the + delimiter pattern).
+Identify the redirects table in the Drizzle schema and how redirects are currently served.
+Determine how /inventory currently reads filters and whether the SPA renders client-side only or has any SSR/prerendering (this affects crawlability and direct-load hydration).
+Output a written audit: current URL structure, problems, the SPA rendering model, and what you propose to change. Wait for my approval before Phase 2.
+PHASE 2 — IMPLEMENT (ONLY after I approve the audit):
+1. Canonical ordering of facets. Filters must serialize in a FIXED canonical order regardless of click order: condition + location + make + model + trim + year + body-style. So new+hatfield+rover-xl and rover-xl+hatfield+new resolve to ONE canonical URL. Build buildFilterUrl(filters) and parseFilterUrl(url) helpers in shared/ that BOTH frontend and backend import, so serialization and parsing are identical end-to-end. This shared helper is the single source of truth for: the URL the user sees, the filters applied to the UI, the canonical tag, and the sitemap entry.
+2. 301 redirect non-canonical → canonical. Any out-of-order, duplicate, legacy-format, uppercase, or space-containing URL must 301-redirect to the canonical form via Express middleware, using the existing redirects table where applicable.
+3. Slugification rules: lowercase only, hyphens within a token (rover-xl), + between facets, URL-encode nothing else, strip trailing delimiters, collapse duplicates. Reject/redirect uppercase and spaces.
+4. Indexation control (deep combos ARE indexable, with guardrails):
+Make deep filter combinations (3+ facets) indexable to capture long-tail search demand, but gate indexation so we don't create index bloat or crawl traps:
+Index a deep combo when ALL are true: it returns at least 1 matching vehicle; it uses only indexable facet types (condition, location, make, model, trim, year, body style); it's a clean canonical URL passing the slug + ordering rules.
+Always noindex: price ranges / any numeric-range facet; sort order, view toggles; pagination beyond page 1 (page 1 indexable, page 2+ → noindex,follow); any combo returning zero inventory → noindex + nearest-parent canonical (NOT a soft-404); combos exceeding a facet ceiling of [CONFIRM N, suggest 5] stacked facets, to prevent infinite permutations.
+Every indexable page (shallow or deep) gets a self-referencing canonical. Deep combos point to themselves so they can rank independently — they do NOT canonical-up to a parent.
+Flag for my review any indexable deep combo that returns only 1 result (potential thin content) rather than auto-excluding it.
+Generate robots.txt rules. Crawl-trap prevention is critical given the larger indexable surface: ensure facet links don't generate infinite permutations, keep canonical ordering strict so order-variants don't multiply, and 301 every non-canonical variant to its single canonical form.
+5. Self-referencing canonical tags + crawlable meta on every indexable filter page. Since this is a Vite SPA, ensure canonical tags, robots meta, title, and filtered content render so crawlers see them — via the Express layer / meta-injection / SSR as appropriate. If the current rendering setup CANNOT emit crawlable meta and filtered content on direct load, FLAG it and propose the fix — do NOT change the rendering model without asking me first.
+6. XML sitemap: include ONLY indexable canonical filter URLs that have live inventory (shallow AND deep). Exclude noindexed combos and zero-inventory combos. Regenerate the sitemap on the daily 11 PM EST inventory refresh so out-of-stock combos drop out and flip to noindex.
+7. Empty-state handling: filter combos with zero matching inventory return a proper status and noindex + nearest-parent canonical, not a soft-404.
+8. URL → Inventory page hydration (filters open pre-applied): Every canonical filter URL must open the /inventory page with those exact filters already applied and results already filtered — on a fresh/direct page load (a click from Google), not only on in-app navigation.
+Use the SAME shared/ parseFilterUrl to turn the URL into filter state. The URL is the single source of truth for filter state on load.
+On direct load of e.g. /inventory/used+hatfield+rover-xl: parse URL → seed the filter UI controls (checkboxes/badges/dropdowns reflect active filters) → seed the TanStack Query inventory request with those filters → render filtered results. No flash of unfiltered inventory, no second click required.
+Filter state ↔ URL stay in sync BOTH directions: changing a filter in the UI updates the URL via buildFilterUrl (canonical order); landing on a URL sets the filters. One bidirectional binding, no divergence.
+Confirm the Wouter route (/inventory/:filters* or existing pattern) catches these and feeds the param to the parser. Do NOT add a new top-level route or alter /inventory beyond reading the filter param. If the existing routing can't handle the catch-all cleanly, STOP and ASK before restructuring routing.
+Active filters must be visibly reflected in the UI (selected chips/badges). The page <h1> and <title> should describe the active filter set (e.g. "Used Rover-XL in Hatfield") for SEO and clarity.
+CONSTRAINTS (NON-NEGOTIABLE):
+🚫 DO NOT break or modify any URL structure outside the inventory filter system. Every other route stays exactly as-is.
+🚫 DO NOT change anything else on the site — components, styles, deps, configs, schema, sync jobs, rendering model — unless you ASK ME FIRST and I approve.
+Preserve all currently-indexed filter URLs — every change to an existing filter URL pattern needs a 301.
+Keep buildFilterUrl / parseFilterUrl in shared/ so frontend and backend never diverge.
+Do NOT touch the Tigon DMS sync or in-memory caching logic (except to hook sitemap regeneration into the existing daily refresh, which you may propose).
+Use Drizzle for any new redirect/canonical-mapping tables; show me the migration BEFORE applying it.
+If any required change conflicts with these constraints, STOP and ASK.
+Start with Phase 1 only. Write NO code until I approve the Phase 1 audit.
+
+Two values the agent will ask about when it reaches Phase 2 — decide them now so you're not caught flat: the facet ceiling (I defaulted to 5 max stacked facets) and whether you want 1-result deep combos flagged or auto-indexed (I set it to flag for review). Change those in the prompt if you have a preference, otherwise the defaults are sane.
+

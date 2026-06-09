@@ -1,9 +1,9 @@
 ================================================================================
 Discounted Golf Carts - GEOGRAPHIC SEO & LOCATION DATA
-Golf Cart Dealership | 11 Locations | 7 States
+Golf Cart Dealership | 14 Locations | 9 States (PA, NJ, DE, NC, IN, VA, FL, SC, OH)
 Phone: 1-888-840-4490 | Website: https://discountedgolfcart.com
 ================================================================================
-Last Updated: 2026-02-11
+Last Updated: 2026-06-09
 ================================================================================
 
 ## STORE LOCATIONS - COMPLETE DATA
@@ -246,6 +246,7 @@ Special Note: Serves Long Beach Island vacation community and southern Ocean Cou
 Keywords: golf carts waretown nj, golf carts long beach island, golf carts barnegat nj, golf carts manahawkin nj, golf carts southern ocean county, golf cart dealer waretown, golf carts beach haven nj, golf carts surf city nj, golf carts stafford township nj
 
 ### LOCATION 11: Lecanto, Florida
+
 Store Name: Discounted Golf Carts - Lecanto
 Street Address: 299 East Gulf to Lake Highway
 City: Lecanto
@@ -534,28 +535,107 @@ electric golf carts florida
 street legal golf cart florida
 golf cart financing florida
 
+### South Carolina Keywords
+golf carts orangeburg sc
+golf carts south carolina
+golf carts midlands sc
+golf carts orangeburg county sc
+golf carts columbia sc area
+golf carts charleston sc area
+golf carts greenville sc area
+golf cart dealer south carolina
+golf carts lowcountry sc
+golf carts myrtle beach area sc
+electric golf carts south carolina
+street legal golf cart sc
+golf cart financing south carolina
+golf carts 55+ communities sc
+golf carts golf communities sc
+
+### Ohio Keywords
+golf carts swanton ohio
+golf carts northwest ohio
+golf carts fulton county ohio
+golf carts toledo area ohio
+golf carts lucas county ohio
+golf carts defiance county ohio
+golf carts henry county ohio
+golf cart dealer ohio
+golf carts northwest ohio
+golf carts wauseon ohio
+golf carts napoleon ohio
+electric golf carts ohio
+street legal golf cart ohio
+golf cart financing ohio
+golf carts retirement communities ohio
+
+### New Jersey — Rio Grande Keywords
+golf carts rio grande nj
+golf carts cape may county nj
+golf carts southern jersey shore
+golf carts wildwood area nj
+golf carts cape may court house nj
+golf carts stone harbor nj
+golf carts avalon nj
+golf cart dealer south jersey shore
+golf carts rio grande new jersey
+
+### LOCATION 12: Rio Grande, New Jersey
+Store Name: Discounted Golf Carts - Rio Grande
+City: Rio Grande
+State: New Jersey (NJ)
+County: Cape May County
+Region: Southern New Jersey Shore
+Phone: 1-888-840-4490
+Nearby Cities: Wildwood, Cape May, Stone Harbor, Avalon, Ocean City NJ, Vineland, Millville
+Target Markets: Shore communities, vacation properties, seasonal residents
+Keywords: golf carts rio grande nj, golf carts cape may county, golf carts wildwood nj, golf carts stone harbor, golf carts avalon nj
+
+### LOCATION 13: Orangeburg, South Carolina
+Store Name: Discounted Golf Carts - Orangeburg
+City: Orangeburg
+State: South Carolina (SC)
+County: Orangeburg County
+Region: Midlands South Carolina
+Phone: 1-888-840-4490
+Nearby Cities: Columbia SC (40 mi), Charleston SC (80 mi), Sumter SC, Bamberg SC, Aiken SC
+Target Markets: Suburban communities, golf communities, retirement communities
+Keywords: golf carts orangeburg sc, golf carts south carolina, golf carts midlands sc, golf cart dealer sc
+
+### LOCATION 14: Swanton, Ohio
+Store Name: Discounted Golf Carts - Swanton
+City: Swanton
+State: Ohio (OH)
+County: Fulton County
+Region: Northwest Ohio
+Phone: 1-888-840-4490
+Nearby Cities: Toledo OH (20 mi), Wauseon OH, Napoleon OH, Defiance OH, Bryan OH, Archbold OH
+Target Markets: Rural communities, agricultural communities, suburban neighborhoods
+Keywords: golf carts swanton ohio, golf carts northwest ohio, golf carts toledo area, golf cart dealer ohio, golf carts fulton county ohio
+
 ## MARKET DEMOGRAPHICS
 ================================================================================
 
 ### Target Markets by Location
-- Retirement/55+ Communities: Lecanto FL, Bayville NJ, Waretown NJ, Ocean View NJ, Dover DE
-- Resort/Vacation Communities: Long Pond PA (Poconos), Ocean View NJ, Waretown NJ
-- Golf Communities: Raleigh NC, Lecanto FL, Gloucester Point VA, Hatfield PA
-- Suburban/Neighborhood: Hatfield PA, Raleigh NC, South Bend IN, Scranton PA
+- Retirement/55+ Communities: Lecanto FL, Bayville NJ, Waretown NJ, Ocean View NJ, Dover DE, Swanton OH
+- Resort/Vacation Communities: Long Pond PA (Poconos), Ocean View NJ, Waretown NJ, Rio Grande NJ
+- Golf Communities: Raleigh NC, Lecanto FL, Gloucester Point VA, Hatfield PA, Orangeburg SC
+- Suburban/Neighborhood: Hatfield PA, Raleigh NC, South Bend IN, Scranton PA, Orangeburg SC
 - Military Communities: Gloucester Point VA (Langley, Fort Eustis, Naval Station Norfolk), Dover DE (Dover AFB)
 - College/University Areas: South Bend IN (Notre Dame), Raleigh NC (NC State, Duke, UNC)
-- Coastal/Beach Communities: Ocean View NJ, Bayville NJ, Waretown NJ, Gloucester Point VA
+- Coastal/Beach Communities: Ocean View NJ, Bayville NJ, Waretown NJ, Rio Grande NJ, Gloucester Point VA
 - Campground/RV Markets: Long Pond PA, Lecanto FL, Ocean View NJ
+- Rural/Agricultural Communities: Swanton OH, Orangeburg SC
 
 ### Market Size Indicators
-Total Population Within Service Areas: ~14,000,000+
-Total Households Within Service Areas: ~5,500,000+
-States with Golf Cart Friendly Legislation: PA, NJ, DE, NC, IN, VA, FL (all 7)
-Golf Courses in Service Areas: 1,000+
-55+ Communities in Service Areas: 500+
-Gated/Planned Communities in Service Areas: 300+
-Resort Properties in Service Areas: 200+
-Campgrounds and RV Parks in Service Areas: 400+
+Total Population Within Service Areas: ~16,000,000+
+Total Households Within Service Areas: ~6,200,000+
+States with Golf Cart Friendly Legislation: PA, NJ, DE, NC, IN, VA, FL, SC, OH (all 9)
+Golf Courses in Service Areas: 1,200+
+55+ Communities in Service Areas: 600+
+Gated/Planned Communities in Service Areas: 350+
+Resort Properties in Service Areas: 250+
+Campgrounds and RV Parks in Service Areas: 500+
 HOAs Allowing Golf Carts: Growing annually
 
 ## GEO-FENCING & LOCAL TARGETING DATA
@@ -573,6 +653,9 @@ Gloucester Point VA: Center 37.2779,-76.4966 | Radius 50mi
 Bayville NJ: Center 39.9065,-74.1560 | Radius 40mi
 Waretown NJ: Center 39.7812,-74.2035 | Radius 35mi
 Lecanto FL: Center 28.8517,-82.4876 | Radius 60mi
+Rio Grande NJ: Center 39.0012,-74.8816 | Radius 35mi
+Orangeburg SC: Center 33.4918,-80.8651 | Radius 60mi
+Swanton OH: Center 41.5931,-83.8838 | Radius 50mi
 
 ### DMA (Designated Market Area) Coverage
 Philadelphia DMA: Hatfield PA, Ocean View NJ, Dover DE
@@ -582,6 +665,9 @@ Raleigh-Durham DMA: Raleigh NC
 South Bend-Elkhart DMA: South Bend IN
 Norfolk-Portsmouth-Newport News DMA: Gloucester Point VA
 Tampa-St. Petersburg DMA (partial): Lecanto FL
+Philadelphia DMA (South Jersey): Rio Grande NJ
+Columbia SC DMA: Orangeburg SC
+Toledo OH DMA: Swanton OH
 
 ## GOOGLE BUSINESS PROFILE CATEGORIES
 ================================================================================
@@ -598,26 +684,26 @@ Additional: Used Vehicle Dealer
 ================================================================================
 @type: AutoDealer
 name: Discounted Golf Carts
-description: Multi-location golf cart dealership with 808+ new and used golf carts from 13 brands across 11 locations in 7 states. 0% APR financing available.
+description: Multi-location golf cart dealership with 800+ new and used golf carts from 13 brands across 14 locations in 9 states. 0% APR financing available.
 telephone: 1-888-840-4490
 url: https://discountedgolfcart.com
-numberOfLocations: 11
+numberOfLocations: 14
 brand: [American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, Yamaha]
-areaServed: [Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, Florida]
+areaServed: [Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, Florida, South Carolina, Ohio]
 priceRange: $$-$$$$
 paymentAccepted: Cash, Credit Card, Financing
 currenciesAccepted: USD
 openingHours: Contact for hours
-hasOfferCatalog: 808+ golf carts
+hasOfferCatalog: 800+ golf carts (updated daily)
 makesOffer: 0% APR financing up to 48 months
 
 ## GEOGRAPHIC SUMMARY
 ================================================================================
-Total Locations: 11
-Total States: 7
-Total Regions: 4 (Mid-Atlantic, Southeast, Midwest, Florida)
-Total Service Area: ~44,000 sq mi
-Total Population Served: ~14,000,000+
+Total Locations: 14
+Total States: 9 (PA, NJ, DE, NC, IN, VA, FL, SC, OH)
+Total Regions: 5 (Mid-Atlantic, Southeast, Midwest, Florida, South)
+Total Service Area: ~55,000 sq mi
+Total Population Served: ~16,000,000+
 Northernmost Location: South Bend, IN (41.7002 N)
 Southernmost Location: Lecanto, FL (28.8517 N)
 Easternmost Location: Bayville Township, NJ (74.1560 W)
@@ -625,6 +711,6 @@ Westernmost Location: South Bend, IN (86.2390 W)
 
 ================================================================================
 END OF GEOGRAPHIC SEO DATA - Discounted Golf Carts
-Last Updated: 2026-02-11
+Last Updated: 2026-06-09
 Contact: 1-888-840-4490 | https://discountedgolfcart.com
 ================================================================================

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Discounted Golf Carts — Main Content Feed -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Discounted Golf Carts Feed</title>
+    <link>https://discountedgolfcart.com</link>
+    <description>Golf carts for sale at wholesale prices. 14 locations. Updated daily.</description>
+    <language>en-US</language>
+    <atom:link href="https://discountedgolfcart.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Mon, 09 Jun 2026 22:55:00 +0000</lastBuildDate>
+
+    <item>
+      <title>Golf Carts for Sale</title>
+      <link>https://discountedgolfcart.com/inventory</link>
+      <description>New and used golf carts for sale. 13 brands. Updated daily.</description>
+      <guid>https://discountedgolfcart.com/inventory</guid>
+      <pubDate>Mon, 09 Jun 2026 22:55:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>New Golf Carts for Sale</title>
+      <link>https://discountedgolfcart.com/inventory?condition=new</link>
+      <description>Brand new golf carts from 13 authorized manufacturers at wholesale prices.</description>
+      <guid>https://discountedgolfcart.com/inventory?condition=new</guid>
+      <pubDate>Mon, 09 Jun 2026 22:55:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Used Golf Carts for Sale</title>
+      <link>https://discountedgolfcart.com/inventory?condition=used</link>
+      <description>Quality pre-owned and certified used golf carts at discounted prices.</description>
+      <guid>https://discountedgolfcart.com/inventory?condition=used</guid>
+      <pubDate>Mon, 09 Jun 2026 22:55:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Golf Cart Financing</title>
+      <link>https://discountedgolfcart.com/financing</link>
+      <description>0% APR golf cart financing available up to 48 months through 6 lenders.</description>
+      <guid>https://discountedgolfcart.com/financing</guid>
+      <pubDate>Mon, 09 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Locations</title>
+      <link>https://discountedgolfcart.com/service-area</link>
+      <description>14 locations in PA, NJ, DE, NC, IN, VA, FL, SC, OH. Nationwide delivery.</description>
+      <guid>https://discountedgolfcart.com/service-area</guid>
+      <pubDate>Mon, 09 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

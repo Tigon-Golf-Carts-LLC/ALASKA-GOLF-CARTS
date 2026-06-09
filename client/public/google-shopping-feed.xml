@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Discounted Golf Carts — Google Shopping / Merchant Center Feed -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<!-- Last Updated: 2026-06-09 -->
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+  <channel>
+    <title>Discounted Golf Carts — Golf Carts for Sale</title>
+    <link>https://discountedgolfcart.com</link>
+    <description>New and used golf carts for sale at wholesale prices. 13 brands. 14 locations. Nationwide delivery.</description>
+
+    <!-- Club Car Carryall -->
+    <item>
+      <g:id>club-car-carryall-new</g:id>
+      <g:title>Club Car Carryall Utility Golf Cart — New</g:title>
+      <g:description>New Club Car Carryall utility vehicle. Cargo bed, heavy-duty frame, work-ready. Available at Discounted Golf Carts — 14 locations in 9 states. Call 1-888-840-4490.</g:description>
+      <g:link>https://discountedgolfcart.com/inventory?make=Club+Car&amp;model=Carryall</g:link>
+      <g:image_link>https://discountedgolfcart.com/og-image.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in stock</g:availability>
+      <g:brand>Club Car</g:brand>
+      <g:product_type>Vehicles &gt; Golf Carts &gt; Utility Vehicles</g:product_type>
+      <g:google_product_category>vehicles</g:google_product_category>
+    </item>
+
+    <!-- Club Car Tempo -->
+    <item>
+      <g:id>club-car-tempo-new</g:id>
+      <g:title>Club Car Tempo Golf Cart — New 2026</g:title>
+      <g:description>New Club Car Tempo premium golf cart. Latest technology, premium comfort, connected features. Authorized Club Car dealer. 0% APR financing available. Call 1-888-840-4490.</g:description>
+      <g:link>https://discountedgolfcart.com/inventory?make=Club+Car&amp;model=Tempo</g:link>
+      <g:image_link>https://discountedgolfcart.com/og-image.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in stock</g:availability>
+      <g:brand>Club Car</g:brand>
+      <g:product_type>Vehicles &gt; Golf Carts &gt; Premium Golf Carts</g:product_type>
+      <g:google_product_category>vehicles</g:google_product_category>
+    </item>
+
+    <!-- EZGO RXV -->
+    <item>
+      <g:id>ezgo-rxv-new</g:id>
+      <g:title>EZGO RXV Golf Cart — New</g:title>
+      <g:description>New EZGO RXV golf cart. AC drive technology, regenerative braking, IntelliBrake system. Authorized EZGO dealer. 0% APR financing. Call 1-888-840-4490.</g:description>
+      <g:link>https://discountedgolfcart.com/inventory?make=EZGO&amp;model=RXV</g:link>
+      <g:image_link>https://discountedgolfcart.com/og-image.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in stock</g:availability>
+      <g:brand>EZGO</g:brand>
+      <g:product_type>Vehicles &gt; Golf Carts</g:product_type>
+      <g:google_product_category>vehicles</g:google_product_category>
+    </item>
+
+    <!-- EZGO TXT -->
+    <item>
+      <g:id>ezgo-txt-new</g:id>
+      <g:title>EZGO TXT Golf Cart — New</g:title>
+      <g:description>New EZGO TXT versatile golf cart. Extensive customization options. Authorized EZGO dealer at Discounted Golf Carts. 0% APR financing available. Call 1-888-840-4490.</g:description>
+      <g:link>https://discountedgolfcart.com/inventory?make=EZGO&amp;model=TXT</g:link>
+      <g:image_link>https://discountedgolfcart.com/og-image.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in stock</g:availability>
+      <g:brand>EZGO</g:brand>
+      <g:product_type>Vehicles &gt; Golf Carts</g:product_type>
+      <g:google_product_category>vehicles</g:google_product_category>
+    </item>
+
+    <!-- Yamaha Drive 2 -->
+    <item>
+      <g:id>yamaha-drive2-new</g:id>
+      <g:title>Yamaha Drive 2 QuieTech Golf Cart — New</g:title>
+      <g:description>New Yamaha Drive 2 QuieTech EFI golf cart. Independent rear suspension, premium ride quality. Authorized Yamaha dealer at Discounted Golf Carts. Call 1-888-840-4490.</g:description>
+      <g:link>https://discountedgolfcart.com/inventory?make=Yamaha&amp;model=Drive+2</g:link>
+      <g:image_link>https://discountedgolfcart.com/og-image.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in stock</g:availability>
+      <g:brand>Yamaha</g:brand>
+      <g:product_type>Vehicles &gt; Golf Carts &gt; Premium Golf Carts</g:product_type>
+      <g:google_product_category>vehicles</g:google_product_category>
+    </item>
+
+    <!-- Denago Rover XL6 -->
+    <item>
+      <g:id>denago-rover-xl6-new</g:id>
+      <g:title>Denago Rover XL6 6-Passenger Electric Golf Cart — New</g:title>
+      <g:description>New Denago Rover XL6 6-passenger electric golf cart. Lithium-ion battery, spacious seating. Available at Discounted Golf Carts. 0% APR financing. Call 1-888-840-4490.</g:description>
+      <g:link>https://discountedgolfcart.com/inventory?make=Denago&amp;model=Rover+XL6</g:link>
+      <g:image_link>https://discountedgolfcart.com/og-image.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in stock</g:availability>
+      <g:brand>Denago</g:brand>
+      <g:product_type>Vehicles &gt; Golf Carts &gt; 6-Passenger Golf Carts</g:product_type>
+      <g:google_product_category>vehicles</g:google_product_category>
+    </item>
+
+    <!-- Evolution D5 Maverick 6 -->
+    <item>
+      <g:id>evolution-d5-maverick-6-new</g:id>
+      <g:title>Evolution D5 Maverick 6 — 6-Passenger Premium Golf Cart</g:title>
+      <g:description>New Evolution D5 Maverick 6 premium 6-passenger electric golf cart. Sport styling, advanced technology platform. Available at Discounted Golf Carts. Call 1-888-840-4490.</g:description>
+      <g:link>https://discountedgolfcart.com/inventory?make=Evolution&amp;model=D5+Maverick+6</g:link>
+      <g:image_link>https://discountedgolfcart.com/og-image.png</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in stock</g:availability>
+      <g:brand>Evolution</g:brand>
+      <g:product_type>Vehicles &gt; Golf Carts &gt; Premium Electric Golf Carts</g:product_type>
+      <g:google_product_category>vehicles</g:google_product_category>
+    </item>
+
+  </channel>
+</rss>

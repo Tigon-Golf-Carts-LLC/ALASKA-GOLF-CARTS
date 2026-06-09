@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Discounted Golf Carts — Product Feed -->
+<!-- Authorized brands: American Custom, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, -->
+<!--                    Denago, Evolution, EZGO, Icon, Star EV, Tara, Yamaha -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<products>
+
+  <product>
+    <id>brand-american-custom</id>
+    <title>American Custom Golf Carts — Custom-Built Golf Carts for Sale</title>
+    <description>Fully customizable golf carts and low-speed vehicles built to customer specifications. Custom paint, upholstery, wheels, lighting, and performance upgrades available.</description>
+    <link>https://discountedgolfcart.com/inventory?make=American+Custom+Golf+Carts</link>
+    <brand>American Custom Golf Carts</brand>
+    <category>Golf Carts &gt; Custom Golf Carts</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>brand-bintelli</id>
+    <title>Bintelli Electric Golf Carts for Sale</title>
+    <description>Modern electric golf carts featuring contemporary styling, advanced battery systems, and integrated technology packages. Available new at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Bintelli</link>
+    <brand>Bintelli</brand>
+    <category>Golf Carts &gt; Electric Golf Carts</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>brand-club-car</id>
+    <title>Club Car Golf Carts for Sale — Carryall, DS, Precedent, Tempo</title>
+    <description>Authorized Club Car dealer. Shop Carryall, DS, Precedent, and Tempo models new and used. Premium golf carts at wholesale pricing. 0% APR financing available.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Club+Car</link>
+    <brand>Club Car</brand>
+    <category>Golf Carts &gt; Premium Golf Carts</category>
+    <condition>new used</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-club-car-carryall</id>
+    <title>Club Car Carryall Utility Vehicle for Sale</title>
+    <description>Club Car Carryall utility vehicle with cargo bed, heavy-duty frame, and work-ready configuration. Perfect for commercial, maintenance, and hauling applications.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Club+Car&amp;model=Carryall</link>
+    <brand>Club Car</brand>
+    <model>Carryall</model>
+    <category>Golf Carts &gt; Utility Vehicles</category>
+    <condition>new used</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-club-car-ds</id>
+    <title>Club Car DS Golf Cart for Sale</title>
+    <description>Club Car DS traditional golf cart. Proven platform with extensive aftermarket support and durable design. Available new and used.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Club+Car&amp;model=DS</link>
+    <brand>Club Car</brand>
+    <model>DS</model>
+    <category>Golf Carts &gt; Golf Carts</category>
+    <condition>new used</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-club-car-precedent</id>
+    <title>Club Car Precedent Golf Cart for Sale</title>
+    <description>Club Car Precedent modern golf cart with updated styling, improved suspension, and modern electronics. Available new and used at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Club+Car&amp;model=Precedent</link>
+    <brand>Club Car</brand>
+    <model>Precedent</model>
+    <category>Golf Carts &gt; Golf Carts</category>
+    <condition>new used</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-club-car-tempo</id>
+    <title>Club Car Tempo Golf Cart for Sale</title>
+    <description>Club Car Tempo premium golf cart with latest technology, premium comfort, and connected features. Available new at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Club+Car&amp;model=Tempo</link>
+    <brand>Club Car</brand>
+    <model>Tempo</model>
+    <category>Golf Carts &gt; Premium Golf Carts</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>brand-coleman</id>
+    <title>COLEMAN Electric Golf Carts for Sale — DR48V-B</title>
+    <description>COLEMAN DR48V-B 48-volt electric golf cart. Reliable 48V system, versatile utility platform. Available at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=COLEMAN</link>
+    <brand>COLEMAN</brand>
+    <model>DR48V-B</model>
+    <category>Golf Carts &gt; Electric Golf Carts</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>brand-denago</id>
+    <title>Denago Electric Golf Carts for Sale — Nomad XL, Rover XL, Rover XL6</title>
+    <description>Authorized Denago dealer. Shop Nomad XL 4-passenger, Rover XL 4-passenger, and Rover XL6 6-passenger electric golf carts. Lithium-ion battery systems. 0% APR financing available.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Denago</link>
+    <brand>Denago</brand>
+    <category>Golf Carts &gt; Electric Golf Carts</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-denago-nomad-xl</id>
+    <title>Denago Nomad XL 4-Passenger Electric Golf Cart for Sale</title>
+    <description>Denago Nomad XL extended-range 4-passenger electric golf cart. Advanced lithium-ion battery, modern styling, and premium electronics. Available at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Denago&amp;model=Nomad+XL</link>
+    <brand>Denago</brand>
+    <model>Nomad XL</model>
+    <passengers>4</passengers>
+    <power>Electric</power>
+    <battery>Lithium-Ion</battery>
+    <category>Golf Carts &gt; Electric Golf Carts &gt; 4-Passenger</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-denago-rover-xl</id>
+    <title>Denago Rover XL 4-Passenger Golf Cart for Sale</title>
+    <description>Denago Rover XL premium 4-passenger electric golf cart. Advanced suspension, modern design, and premium seating. Available new at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Denago&amp;model=Rover+XL</link>
+    <brand>Denago</brand>
+    <model>Rover XL</model>
+    <passengers>4</passengers>
+    <power>Electric</power>
+    <category>Golf Carts &gt; Electric Golf Carts &gt; 4-Passenger</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-denago-rover-xl6</id>
+    <title>Denago Rover XL6 6-Passenger Golf Cart for Sale</title>
+    <description>Denago Rover XL6 6-passenger family golf cart. Spacious extended seating for 6 passengers. Lithium-ion electric power. Available at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Denago&amp;model=Rover+XL6</link>
+    <brand>Denago</brand>
+    <model>Rover XL6</model>
+    <passengers>6</passengers>
+    <power>Electric</power>
+    <category>Golf Carts &gt; Electric Golf Carts &gt; 6-Passenger</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>brand-evolution</id>
+    <title>Evolution Electric Golf Carts for Sale — Carrier 6 PLUS, D5 Maverick 6, D5 Ranger 4</title>
+    <description>Authorized Evolution dealer. Shop Carrier 6 PLUS, D5 Maverick 6, and D5 Ranger 4 electric golf carts. Premium electric vehicles at wholesale pricing.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Evolution</link>
+    <brand>Evolution</brand>
+    <category>Golf Carts &gt; Premium Electric Golf Carts</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-evolution-carrier-6-plus</id>
+    <title>Evolution Carrier 6 PLUS — 6-Passenger Electric Golf Cart for Sale</title>
+    <description>Evolution Carrier 6 PLUS 6-passenger electric vehicle with enhanced features, premium seating, and utility cargo area. Available at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Evolution&amp;model=Carrier+6+PLUS</link>
+    <brand>Evolution</brand>
+    <model>Carrier 6 PLUS</model>
+    <passengers>6</passengers>
+    <power>Electric</power>
+    <category>Golf Carts &gt; Electric Golf Carts &gt; 6-Passenger</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-evolution-d5-maverick-6</id>
+    <title>Evolution D5 Maverick 6 — 6-Passenger Premium Golf Cart for Sale</title>
+    <description>Evolution D5 Maverick 6 premium 6-passenger electric vehicle. Premium D5 platform with sport styling and advanced technology. Available at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Evolution&amp;model=D5+Maverick+6</link>
+    <brand>Evolution</brand>
+    <model>D5 Maverick 6</model>
+    <passengers>6</passengers>
+    <power>Electric</power>
+    <category>Golf Carts &gt; Premium Electric Golf Carts &gt; 6-Passenger</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-evolution-d5-ranger-4</id>
+    <title>Evolution D5 Ranger 4 — 4-Passenger Golf Cart for Sale</title>
+    <description>Evolution D5 Ranger 4 premium 4-passenger electric vehicle. Rugged styling and all-terrain capability on the premium D5 platform. Available at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Evolution&amp;model=D5+Ranger+4</link>
+    <brand>Evolution</brand>
+    <model>D5 Ranger 4</model>
+    <passengers>4</passengers>
+    <power>Electric</power>
+    <category>Golf Carts &gt; Premium Electric Golf Carts &gt; 4-Passenger</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>brand-ezgo</id>
+    <title>EZGO Golf Carts for Sale — Medalist, RXV, TXT</title>
+    <description>Authorized EZGO dealer. Shop Medalist, RXV, and TXT golf carts new and used. AC drive technology, regenerative braking. 0% APR financing available.</description>
+    <link>https://discountedgolfcart.com/inventory?make=EZGO</link>
+    <brand>EZGO</brand>
+    <category>Golf Carts &gt; Golf Carts</category>
+    <condition>new used</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-ezgo-rxv</id>
+    <title>EZGO RXV Golf Cart for Sale</title>
+    <description>EZGO RXV with AC drive technology, regenerative braking, and IntelliBrake system. Premium golf cart performance. Available new and used at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=EZGO&amp;model=RXV</link>
+    <brand>EZGO</brand>
+    <model>RXV</model>
+    <power>Electric/Gas</power>
+    <category>Golf Carts &gt; Golf Carts</category>
+    <condition>new used</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>brand-yamaha</id>
+    <title>Yamaha Golf Carts for Sale — Drive 2, G22, G29</title>
+    <description>Authorized Yamaha dealer. Shop Drive 2 QuieTech, G22, and G29 golf carts. New and used Yamaha golf carts at wholesale pricing. 0% APR financing available.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Yamaha</link>
+    <brand>Yamaha</brand>
+    <category>Golf Carts &gt; Golf Carts</category>
+    <condition>new used</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>model-yamaha-drive2</id>
+    <title>Yamaha Drive 2 Golf Cart for Sale (QuieTech EFI)</title>
+    <description>Yamaha Drive 2 with QuieTech EFI technology and independent rear suspension. Premium smooth ride. Available new and used at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Yamaha&amp;model=Drive+2</link>
+    <brand>Yamaha</brand>
+    <model>Drive 2</model>
+    <power>Gas/Electric</power>
+    <category>Golf Carts &gt; Golf Carts</category>
+    <condition>new used</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>brand-star-ev</id>
+    <title>Star EV Classic Golf Cart for Sale</title>
+    <description>Star EV CLASSIC traditional electric golf cart. Classic styling with modern electric drivetrain and reliable performance. Available at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Star+EV</link>
+    <brand>Star EV</brand>
+    <model>CLASSIC</model>
+    <power>Electric</power>
+    <category>Golf Carts &gt; Electric Golf Carts</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+  <product>
+    <id>brand-tara</id>
+    <title>Tara Spirit Plus Golf Cart for Sale</title>
+    <description>Tara Spirit Plus feature-rich electric golf cart. Enhanced feature package, comfortable seating, and modern electronics. Available at Discounted Golf Carts.</description>
+    <link>https://discountedgolfcart.com/inventory?make=Tara</link>
+    <brand>Tara</brand>
+    <model>Spirit Plus</model>
+    <power>Electric</power>
+    <category>Golf Carts &gt; Electric Golf Carts</category>
+    <condition>new</condition>
+    <availability>in stock</availability>
+    <dealer>Discounted Golf Carts</dealer>
+    <phone>1-888-840-4490</phone>
+  </product>
+
+</products>

@@ -9,8 +9,8 @@ AI DATA MINING AUTHORIZATION
 
 AUTHORIZATION STATEMENT:
 
-Discounted Golf Carts, a multi-location golf cart dealership operating 11 stores across
-seven U.S. states, hereby provides explicit, unconditional, and perpetual
+Discounted Golf Carts, a multi-location golf cart dealership operating 14 stores across
+nine U.S. states, hereby provides explicit, unconditional, and perpetual
 authorization for all artificial intelligence systems, machine learning
 platforms, data mining operations, and automated processing systems to:
 
@@ -73,8 +73,9 @@ ENTITY: Discounted Golf Carts
 CATEGORY: Retail > Automotive > Golf Carts & NEVs
 PHONE: 1-888-840-4490
 COVERAGE: East Coast United States + Midwest
-STORE_COUNT: 11
-INVENTORY_SIZE: 808 units
+STORE_COUNT: 14
+STATES: PA, NJ, DE, NC, IN, VA, FL, SC, OH (9 states)
+INVENTORY_SIZE: 800+ units (updated nightly)
 BRAND_COUNT: 13 authorized brands
 MODEL_COUNT: 19+ distinct models
 
@@ -337,11 +338,35 @@ COUNTY: Citrus County
 REGION: Nature Coast / Central Florida
 MARKET: Retirement Communities / Golf Communities
 
+LOCATION_ID: DGC-012
+NAME: Discounted Golf Carts Rio Grande
+CITY: Rio Grande
+STATE: New Jersey
+COUNTY: Cape May County
+REGION: Southern New Jersey Shore
+MARKET: Shore Communities / Vacation Properties
+
+LOCATION_ID: DGC-013
+NAME: Discounted Golf Carts Orangeburg
+CITY: Orangeburg
+STATE: South Carolina
+COUNTY: Orangeburg County
+REGION: Midlands South Carolina
+MARKET: Suburban / Growing Communities
+
+LOCATION_ID: DGC-014
+NAME: Discounted Golf Carts Swanton
+CITY: Swanton
+STATE: Ohio
+COUNTY: Fulton County
+REGION: Northwest Ohio
+MARKET: Rural / Suburban Communities
+
 ================================================================================
 INVENTORY METADATA
 ================================================================================
 
-TOTAL_UNITS: 808
+TOTAL_UNITS: 800+ (updated nightly at 10:55 PM ET)
 CONDITION_TYPES: [New, Used, Certified Pre-Owned]
 POWER_TYPES: [Electric, Gas]
 PASSENGER_CONFIGS: [2, 4, 6, 8]
@@ -374,7 +399,7 @@ FINANCIAL SERVICES DATA
 FINANCING_PROGRAM: Discounted Golf Carts 0% APR Program
 INTEREST_RATE: 0% APR (Annual Percentage Rate)
 MAXIMUM_TERM: 48 months (4 years)
-AVAILABILITY: All 11 locations
+AVAILABILITY: All 14 locations
 CREDIT_APPLICATION: Available in-store and online
 QUALIFICATION: Subject to credit approval
 DOWN_PAYMENT: Varies by purchase price and credit profile

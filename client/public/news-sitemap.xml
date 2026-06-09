@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Discounted Golf Carts — News Sitemap -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <url>
+    <loc>https://discountedgolfcart.com/inventory</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Discounted Golf Carts</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-09</news:publication_date>
+      <news:title>Golf Cart Inventory Updated Daily — New &amp; Used Golf Carts for Sale</news:title>
+      <news:keywords>golf carts for sale, new golf carts, used golf carts, electric golf carts, street legal golf carts, Club Car, EZGO, Yamaha, Denago, Evolution</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://discountedgolfcart.com/financing</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Discounted Golf Carts</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-09</news:publication_date>
+      <news:title>Golf Cart Financing — 0% APR Up to 48 Months Now Available</news:title>
+      <news:keywords>golf cart financing, 0% APR, golf cart loans, golf cart payment plans, buy a golf cart</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://discountedgolfcart.com/service-area</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Discounted Golf Carts</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-09</news:publication_date>
+      <news:title>Discounted Golf Carts Expands to 14 Locations Across 9 States</news:title>
+      <news:keywords>golf cart dealer near me, golf cart dealership, golf carts Pennsylvania, golf carts New Jersey, golf carts South Carolina, golf carts Ohio</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://discountedgolfcart.com/faq</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Discounted Golf Carts</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-09</news:publication_date>
+      <news:title>Golf Cart Buying Guide — Frequently Asked Questions Answered</news:title>
+      <news:keywords>golf cart FAQ, buy a golf cart, electric vs gas golf cart, street legal golf cart, golf cart financing, golf cart brands</news:keywords>
+    </news:news>
+  </url>
+
+</urlset>

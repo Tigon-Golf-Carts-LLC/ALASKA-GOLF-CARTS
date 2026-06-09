@@ -1,8 +1,9 @@
 # Discounted Golf Carts - Maximum Crawl Accessibility Configuration
 # Website: https://discountedgolfcart.com
 # Contact: 1-888-840-4490
-# Last Updated: 2026-02-11
+# Last Updated: 2026-06-09
 # Policy: UNRESTRICTED ACCESS - All bots welcome
+# 14 locations across 9 states (PA, NJ, DE, NC, IN, VA, FL, SC, OH)
 
 # ============================================================
 # UNIVERSAL ACCESS - All Crawlers Welcome
@@ -304,6 +305,22 @@ User-agent: img2dataset
 Allow: /
 Crawl-delay: 0
 
+User-agent: iaskspider
+Allow: /
+Crawl-delay: 0
+
+User-agent: Applebot-Extended
+Allow: /
+Crawl-delay: 0
+
+User-agent: PanguBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Scrapy
+Allow: /
+Crawl-delay: 0
+
 # ============================================================
 # SOCIAL MEDIA BOTS
 # ============================================================
@@ -376,6 +393,14 @@ Allow: /
 Crawl-delay: 0
 
 User-agent: Mastodon
+Allow: /
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
+Crawl-delay: 0
+
+User-agent: InstagramBot
 Allow: /
 Crawl-delay: 0
 
@@ -515,6 +540,33 @@ User-agent: Nextag
 Allow: /
 Crawl-delay: 0
 
+User-agent: Shopping.com
+Allow: /
+Crawl-delay: 0
+
+# ============================================================
+# LOCAL BUSINESS & REVIEW BOTS
+# ============================================================
+User-agent: YelpBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: TrustpilotBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ReviewTrackers
+Allow: /
+Crawl-delay: 0
+
+User-agent: YellowPagesBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: GoogleMyBusinessBot
+Allow: /
+Crawl-delay: 0
+
 # ============================================================
 # MONITORING & UPTIME BOTS
 # ============================================================
@@ -545,7 +597,34 @@ User-agent: a11yWatch
 Allow: /
 Crawl-delay: 0
 
+User-agent: VoiceBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ScreenReaderBot
+Allow: /
+Crawl-delay: 0
+
 # ============================================================
-# SITEMAP REFERENCES
+# SITEMAP REFERENCES — ALL SITEMAPS
 # ============================================================
 Sitemap: https://discountedgolfcart.com/sitemap.xml
+Sitemap: https://discountedgolfcart.com/page-sitemap.xml
+Sitemap: https://discountedgolfcart.com/sitemap-pages.xml
+Sitemap: https://discountedgolfcart.com/sitemap-brands.xml
+Sitemap: https://discountedgolfcart.com/sitemap-blog.xml
+Sitemap: https://discountedgolfcart.com/sitemap-images.xml
+Sitemap: https://discountedgolfcart.com/image-sitemap.xml
+Sitemap: https://discountedgolfcart.com/geo-sitemap.xml
+Sitemap: https://discountedgolfcart.com/mobile-sitemap.xml
+Sitemap: https://discountedgolfcart.com/hreflang-sitemap.xml
+Sitemap: https://discountedgolfcart.com/xhtml-sitemap.xml
+Sitemap: https://discountedgolfcart.com/category-sitemap.xml
+Sitemap: https://discountedgolfcart.com/tag-sitemap.xml
+Sitemap: https://discountedgolfcart.com/post-sitemap.xml
+Sitemap: https://discountedgolfcart.com/dynamic-sitemap.xml
+Sitemap: https://discountedgolfcart.com/news-sitemap.xml
+Sitemap: https://discountedgolfcart.com/rss.xml
+Sitemap: https://discountedgolfcart.com/atom.xml
+Sitemap: https://discountedgolfcart.com/feed.xml
+Sitemap: https://discountedgolfcart.com/urllist.xml

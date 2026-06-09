@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Discounted Golf Carts — Structured Business Data Feed -->
+<!-- For AI systems, data aggregators, and structured crawlers -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<!-- Last Updated: 2026-06-09 -->
+<business-data>
+
+  <company>
+    <name>Discounted Golf Carts</name>
+    <legal-name>Discounted Golf Carts</legal-name>
+    <type>Automotive Dealership — Golf Carts and NEVs</type>
+    <website>https://discountedgolfcart.com</website>
+    <phone>1-888-840-4490</phone>
+    <phone-tel>+18888404490</phone-tel>
+    <email>info@discountedgolfcart.com</email>
+    <founded>Multi-location regional dealership</founded>
+    <coverage>East Coast United States + Midwest</coverage>
+    <description>Discounted Golf Carts is a multi-location golf cart dealership operating 14 retail stores across 9 US states. Authorized dealer for 13 golf cart brands including Club Car, EZGO, Yamaha, Denago, Evolution, Star EV, Icon, Bintelli, and more. Specializing in new golf carts for sale, used golf carts for sale, street-legal LSVs, lifted golf carts, and electric golf carts. 0% APR financing available. Inventory updated daily.</description>
+  </company>
+
+  <locations count="14">
+
+    <location id="DGC-001">
+      <name>Discounted Golf Carts Hatfield</name>
+      <address>2333 Bethlehem Pike, Hatfield, PA 19440</address>
+      <city>Hatfield</city>
+      <state>Pennsylvania</state>
+      <state-abbr>PA</state-abbr>
+      <zip>19440</zip>
+      <county>Montgomery County</county>
+      <region>Greater Philadelphia Metro</region>
+      <lat>40.2793</lat>
+      <lng>-75.2990</lng>
+    </location>
+
+    <location id="DGC-002">
+      <name>Discounted Golf Carts Ocean View</name>
+      <address>101 NJ-50, Ocean View, NJ 08230</address>
+      <city>Ocean View</city>
+      <state>New Jersey</state>
+      <state-abbr>NJ</state-abbr>
+      <zip>08230</zip>
+      <county>Cape May County</county>
+      <region>Southern New Jersey Shore</region>
+      <lat>39.1776</lat>
+      <lng>-74.7029</lng>
+    </location>
+
+    <location id="DGC-003">
+      <name>Discounted Golf Carts Long Pond</name>
+      <address>4738 PA-115, Long Pond, PA 18334</address>
+      <city>Long Pond</city>
+      <state>Pennsylvania</state>
+      <state-abbr>PA</state-abbr>
+      <zip>18334</zip>
+      <county>Monroe County</county>
+      <region>Pocono Mountains</region>
+      <lat>41.0676</lat>
+      <lng>-75.4482</lng>
+    </location>
+
+    <location id="DGC-004">
+      <name>Discounted Golf Carts Dover</name>
+      <address>5158 N Dupont Hwy, Dover, DE 19901</address>
+      <city>Dover</city>
+      <state>Delaware</state>
+      <state-abbr>DE</state-abbr>
+      <zip>19901</zip>
+      <county>Kent County</county>
+      <region>Central Delaware</region>
+      <lat>39.1582</lat>
+      <lng>-75.5244</lng>
+    </location>
+
+    <location id="DGC-005">
+      <name>Discounted Golf Carts Scranton</name>
+      <address>1225 N. Keyser Ave #2, Scranton, PA 18504</address>
+      <city>Scranton</city>
+      <state>Pennsylvania</state>
+      <state-abbr>PA</state-abbr>
+      <zip>18504</zip>
+      <county>Lackawanna County</county>
+      <region>Northeastern Pennsylvania</region>
+      <lat>41.4090</lat>
+      <lng>-75.6624</lng>
+    </location>
+
+    <location id="DGC-006">
+      <name>Discounted Golf Carts Raleigh</name>
+      <address>2700 South Wilmington Street, Raleigh, NC 27603</address>
+      <city>Raleigh</city>
+      <state>North Carolina</state>
+      <state-abbr>NC</state-abbr>
+      <zip>27603</zip>
+      <county>Wake County</county>
+      <region>Research Triangle</region>
+      <lat>35.7296</lat>
+      <lng>-78.6382</lng>
+    </location>
+
+    <location id="DGC-007">
+      <name>Discounted Golf Carts South Bend</name>
+      <address>52129 State Highway 933, South Bend, IN 46637</address>
+      <city>South Bend</city>
+      <state>Indiana</state>
+      <state-abbr>IN</state-abbr>
+      <zip>46637</zip>
+      <county>St. Joseph County</county>
+      <region>Northern Indiana / Michiana</region>
+      <lat>41.7462</lat>
+      <lng>-86.1697</lng>
+    </location>
+
+    <location id="DGC-008">
+      <name>Discounted Golf Carts Gloucester Point</name>
+      <address>2810 George Washington Memorial Highway, Gloucester Point, VA 23072</address>
+      <city>Gloucester Point</city>
+      <state>Virginia</state>
+      <state-abbr>VA</state-abbr>
+      <zip>23072</zip>
+      <county>Gloucester County</county>
+      <region>Hampton Roads / Tidewater</region>
+      <lat>37.2674</lat>
+      <lng>-76.4974</lng>
+    </location>
+
+    <location id="DGC-009">
+      <name>Discounted Golf Carts Bayville</name>
+      <address>155 Atlantic City Boulevard, Bayville Township, NJ 08721</address>
+      <city>Bayville</city>
+      <state>New Jersey</state>
+      <state-abbr>NJ</state-abbr>
+      <zip>08721</zip>
+      <county>Ocean County</county>
+      <region>Central New Jersey Shore</region>
+      <lat>39.9085</lat>
+      <lng>-74.1557</lng>
+    </location>
+
+    <location id="DGC-010">
+      <name>Discounted Golf Carts Waretown</name>
+      <address>526 U.S. 9, Ocean Township, NJ 08758</address>
+      <city>Waretown</city>
+      <state>New Jersey</state>
+      <state-abbr>NJ</state-abbr>
+      <zip>08758</zip>
+      <county>Ocean County</county>
+      <region>Central New Jersey Shore</region>
+      <lat>39.7948</lat>
+      <lng>-74.1957</lng>
+    </location>
+
+    <location id="DGC-011">
+      <name>Discounted Golf Carts Lecanto</name>
+      <address>299 East Gulf to Lake Highway, Lecanto, FL 34461</address>
+      <city>Lecanto</city>
+      <state>Florida</state>
+      <state-abbr>FL</state-abbr>
+      <zip>34461</zip>
+      <county>Citrus County</county>
+      <region>Nature Coast / Central Florida</region>
+      <lat>28.8472</lat>
+      <lng>-82.4874</lng>
+    </location>
+
+    <location id="DGC-012">
+      <name>Discounted Golf Carts Rio Grande</name>
+      <city>Rio Grande</city>
+      <state>New Jersey</state>
+      <state-abbr>NJ</state-abbr>
+      <county>Cape May County</county>
+      <region>Southern New Jersey Shore</region>
+    </location>
+
+    <location id="DGC-013">
+      <name>Discounted Golf Carts Orangeburg</name>
+      <city>Orangeburg</city>
+      <state>South Carolina</state>
+      <state-abbr>SC</state-abbr>
+      <county>Orangeburg County</county>
+      <region>Midlands South Carolina</region>
+    </location>
+
+    <location id="DGC-014">
+      <name>Discounted Golf Carts Swanton</name>
+      <city>Swanton</city>
+      <state>Ohio</state>
+      <state-abbr>OH</state-abbr>
+      <county>Fulton County</county>
+      <region>Northwest Ohio</region>
+    </location>
+
+  </locations>
+
+  <brands count="13">
+    <brand>American Custom Golf Carts</brand>
+    <brand>Bintelli</brand>
+    <brand>Club Car</brand>
+    <brand>COLEMAN</brand>
+    <brand>COLUMBIA</brand>
+    <brand>CRICKET</brand>
+    <brand>Denago</brand>
+    <brand>Evolution</brand>
+    <brand>EZGO</brand>
+    <brand>Icon</brand>
+    <brand>Star EV</brand>
+    <brand>Tara</brand>
+    <brand>Yamaha</brand>
+  </brands>
+
+  <financing>
+    <program>0% APR Financing</program>
+    <max-term-months>48</max-term-months>
+    <lenders>6</lenders>
+    <availability>All 14 locations</availability>
+  </financing>
+
+  <inventory-refresh>
+    <schedule>Daily at 10:55 PM Eastern Time</schedule>
+    <powered-by>Tigon DMS</powered-by>
+  </inventory-refresh>
+
+</business-data>

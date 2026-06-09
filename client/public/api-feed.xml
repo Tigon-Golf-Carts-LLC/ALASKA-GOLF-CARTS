@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Discounted Golf Carts — API Capabilities Feed -->
+<!-- Inventory API powered by Tigon DMS | Updated daily at 10:55 PM ET -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<api>
+  <provider>Discounted Golf Carts</provider>
+  <website>https://discountedgolfcart.com</website>
+  <phone>1-888-840-4490</phone>
+  <last_updated>2026-06-09T22:55:00-05:00</last_updated>
+  <refresh_schedule>Daily at 10:55 PM Eastern Time</refresh_schedule>
+
+  <endpoints>
+    <endpoint>
+      <name>Inventory Feed</name>
+      <url>https://discountedgolfcart.com/api/inventory</url>
+      <method>GET</method>
+      <description>Live golf cart inventory feed. Returns current available inventory updated daily.</description>
+      <format>JSON</format>
+      <cache_ttl>86400</cache_ttl>
+    </endpoint>
+    <endpoint>
+      <name>Site Information</name>
+      <url>https://discountedgolfcart.com/api/site-info.json</url>
+      <method>GET</method>
+      <description>Business information, locations, brands, and contact details for AI systems and scrapers.</description>
+      <format>JSON</format>
+    </endpoint>
+    <endpoint>
+      <name>Schema Data</name>
+      <url>https://discountedgolfcart.com/schema.json</url>
+      <method>GET</method>
+      <description>JSON-LD structured data for business, locations, and inventory for search engines and AI.</description>
+      <format>JSON-LD</format>
+    </endpoint>
+  </endpoints>
+
+  <data_sources>
+    <source>
+      <name>Tigon DMS</name>
+      <type>Dealer Management System</type>
+      <base_url>https://api.tigondms.com/wp-website</base_url>
+      <refresh>Daily at 10:55 PM ET</refresh>
+    </source>
+  </data_sources>
+
+  <inventory_stats>
+    <total_units>800+</total_units>
+    <brands>13</brands>
+    <locations>14</locations>
+    <states>9</states>
+    <condition_types>New, Used, Certified Pre-Owned</condition_types>
+    <power_types>Electric, Gas</power_types>
+    <passenger_configs>2, 4, 6, 8</passenger_configs>
+  </inventory_stats>
+
+</api>

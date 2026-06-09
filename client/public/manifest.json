@@ -1,11 +1,11 @@
 {
-  "name": "Discounted Golf Carts - Discounted Golf Cart Inventory Updated Daily",
+  "name": "Discounted Golf Carts — Golf Carts for Sale",
   "short_name": "Discounted Golf Carts",
-  "description": "Discounted Golf Carts - Browse discounted new and used golf carts with inventory updated daily across 11 locations. 13 brands including Club Car, EZGO, Yamaha, Evolution, Denago and more. 0% APR financing available. Call 1-888-840-4490.",
+  "description": "Golf carts for sale at wholesale prices. 14 locations in PA, NJ, DE, NC, IN, VA, FL, SC, OH. New and used golf carts from 13 brands including Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Call 1-888-840-4490.",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#16a34a",
-  "background_color": "#ffffff",
+  "theme_color": "#dc2626",
+  "background_color": "#0f0f0f",
   "orientation": "any",
   "scope": "/",
   "id": "/",
@@ -72,16 +72,30 @@
   "screenshots": [],
   "shortcuts": [
     {
-      "name": "Browse Inventory",
+      "name": "Browse Golf Cart Inventory",
       "short_name": "Inventory",
       "url": "/inventory",
-      "description": "Browse our full golf cart inventory updated daily"
+      "description": "Browse our full golf cart inventory — new and used, updated daily"
     },
     {
-      "name": "Financing Options",
+      "name": "Golf Cart Financing",
       "short_name": "Financing",
       "url": "/financing",
-      "description": "0% APR financing available up to 48 months"
+      "description": "0% APR golf cart financing available up to 48 months"
+    },
+    {
+      "name": "Find a Location",
+      "short_name": "Locations",
+      "url": "/service-area",
+      "description": "14 golf cart dealer locations across 9 states"
+    },
+    {
+      "name": "Call Now",
+      "short_name": "Call",
+      "url": "tel:18888404490",
+      "description": "Call Discounted Golf Carts at 1-888-840-4490"
     }
-  ]
+  ],
+  "related_applications": [],
+  "iarc_rating_id": ""
 }

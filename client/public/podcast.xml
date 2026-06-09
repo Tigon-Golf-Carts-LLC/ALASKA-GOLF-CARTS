@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Discounted Golf Carts — Podcast/Audio Feed Placeholder -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<!-- Note: Reserved for future Discounted Golf Carts audio/video content -->
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Discounted Golf Carts — Golf Cart Buyer's Guide</title>
+    <link>https://discountedgolfcart.com</link>
+    <description>Expert golf cart buying advice, brand comparisons, financing tips, and industry news from the team at Discounted Golf Carts — America's multi-location golf cart dealer with 14 stores across 9 states. Call 1-888-840-4490.</description>
+    <language>en-US</language>
+    <copyright>Copyright 2026 Discounted Golf Carts. All rights reserved.</copyright>
+    <itunes:author>Discounted Golf Carts</itunes:author>
+    <itunes:category text="Business"/>
+    <itunes:category text="Shopping"/>
+    <itunes:owner>
+      <itunes:name>Discounted Golf Carts</itunes:name>
+      <itunes:email>info@discountedgolfcart.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://discountedgolfcart.com/og-image.png"/>
+    <atom:link href="https://discountedgolfcart.com/podcast.xml" rel="self" type="application/rss+xml"/>
+  </channel>
+</rss>

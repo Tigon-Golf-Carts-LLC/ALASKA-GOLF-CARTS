@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- ============================================================ -->
+  <!-- HOMEPAGE — Priority 1.0 -->
+  <!-- ============================================================ -->
+  <url>
+    <loc>https://discountedgolfcart.com/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://discountedgolfcart.com/og-image.png</image:loc>
+      <image:title>Discounted Golf Carts — Golf Carts for Sale at Wholesale Prices</image:title>
+      <image:caption>New and used golf carts for sale. 14 locations. Inventory updated daily.</image:caption>
+      <image:geo_location>Hatfield, Pennsylvania, United States</image:geo_location>
+    </image:image>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- INVENTORY — Priority 0.9 -->
+  <!-- ============================================================ -->
+  <url>
+    <loc>https://discountedgolfcart.com/inventory</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://discountedgolfcart.com/inventory?condition=new</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://discountedgolfcart.com/inventory?condition=used</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://discountedgolfcart.com/inventory?powerType=electric</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://discountedgolfcart.com/inventory?powerType=gas</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://discountedgolfcart.com/inventory?isStreetLegal=true</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://discountedgolfcart.com/inventory?isLifted=true</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- SERVICE / LOCATION PAGES — Priority 0.8 -->
+  <!-- ============================================================ -->
+  <url>
+    <loc>https://discountedgolfcart.com/service-area</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://discountedgolfcart.com/financing</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- INFORMATIONAL PAGES — Priority 0.7 -->
+  <!-- ============================================================ -->
+  <url>
+    <loc>https://discountedgolfcart.com/faq</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- ABOUT — Priority 0.5 -->
+  <!-- ============================================================ -->
+  <url>
+    <loc>https://discountedgolfcart.com/about</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
