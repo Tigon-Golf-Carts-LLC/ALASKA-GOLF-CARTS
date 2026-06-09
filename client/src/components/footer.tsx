@@ -50,7 +50,7 @@ export function Footer() {
               <h3 className="text-2xl sm:text-3xl font-black tracking-tight uppercase">Get These Deals Before They're Gone!</h3>
               <Flame className="h-6 w-6 text-white/90 shrink-0" />
             </div>
-            <p className="text-primary-foreground/80 text-sm -mt-3">Inventory updates daily — these prices won't last. Act now.</p>
+            <p className="text-primary-foreground/80 text-sm -mt-3">Inventory And Prices Updates Daily — These Prices Are Only Good Until The Timer Runs Out. Act now.</p>
 
             {/* Countdown ticker */}
             <div className="flex items-center gap-2">
@@ -89,7 +89,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-
       <div className="border-b bg-muted/40 py-3">
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -107,7 +106,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-
       <div className="bg-card border-t">
         <div className="mx-auto max-w-7xl px-4 py-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
