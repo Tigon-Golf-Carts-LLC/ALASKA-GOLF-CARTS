@@ -13,7 +13,7 @@ export function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/inventory", label: "Inventory" },
+    { href: "/inventory", label: "Discounted Inventory" },
     { href: "/financing", label: "Financing" },
   ];
 
