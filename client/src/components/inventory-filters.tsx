@@ -104,7 +104,7 @@ function CheckboxItem({
   );
 }
 
-function FilterContent({ filters, onFiltersChange, totalCarts }: InventoryFiltersProps) {
+export function FilterContent({ filters, onFiltersChange, totalCarts }: InventoryFiltersProps) {
   const { data: stores } = useQuery<Store[]>({ queryKey: ["/api/stores"] });
   const { data: brands } = useQuery<BrandItem[]>({ queryKey: ["/api/brands"] });
 
