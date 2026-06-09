@@ -410,30 +410,6 @@ export default function Home() {
 
         {/* Headline */}
         <div className="relative z-10 text-center pt-12 pb-6 px-4">
-          <div className="inline-flex flex-col items-center gap-1 bg-black/50 border border-primary/40 backdrop-blur-sm rounded-xl px-5 py-3 mb-4">
-            <div className="flex items-center gap-2">
-              <Flame className="h-3.5 w-3.5 text-primary shrink-0" />
-              <span className="text-white text-[11px] font-black uppercase tracking-widest">Get These Deals Before They're Gone!</span>
-              <Flame className="h-3.5 w-3.5 text-primary shrink-0" />
-            </div>
-            <div className="flex items-center gap-1.5">
-              {(() => {
-                const secs = countdown;
-                const hh = String(Math.floor(secs / 3600)).padStart(2, "0");
-                const mm = String(Math.floor((secs % 3600) / 60)).padStart(2, "0");
-                const ss = String(secs % 60).padStart(2, "0");
-                return [{ val: hh, label: "HRS" }, { val: mm, label: "MIN" }, { val: ss, label: "SEC" }].map((u, i) => (
-                  <div key={u.label} className="flex items-center gap-1.5">
-                    <div className="bg-primary/20 border border-primary/30 rounded px-2 py-0.5 min-w-[36px] text-center">
-                      <div className="text-lg font-black tabular-nums text-white leading-none">{u.val}</div>
-                      <div className="text-[8px] font-bold uppercase tracking-widest text-white/50">{u.label}</div>
-                    </div>
-                    {i < 2 && <span className="text-primary font-black text-base -mt-2">:</span>}
-                  </div>
-                ));
-              })()}
-            </div>
-          </div>
           <h1 className="text-5xl sm:text-6xl font-black tracking-tight text-white leading-[1.1] mb-3">
             Discounted<br /><span className="text-primary">Golf Carts.</span>
           </h1>
@@ -602,6 +578,31 @@ export default function Home() {
               ))}
             </div>
           )}
+          {/* Countdown ticker */}
+          <div className="inline-flex flex-col items-center gap-1 bg-black/50 border border-primary/40 backdrop-blur-sm rounded-xl px-5 py-3">
+            <div className="flex items-center gap-2">
+              <Flame className="h-3.5 w-3.5 text-primary shrink-0" />
+              <span className="text-white text-[11px] font-black uppercase tracking-widest">Get These Deals Before They're Gone!</span>
+              <Flame className="h-3.5 w-3.5 text-primary shrink-0" />
+            </div>
+            <div className="flex items-center gap-1.5">
+              {(() => {
+                const secs = countdown;
+                const hh = String(Math.floor(secs / 3600)).padStart(2, "0");
+                const mm = String(Math.floor((secs % 3600) / 60)).padStart(2, "0");
+                const ss = String(secs % 60).padStart(2, "0");
+                return [{ val: hh, label: "HRS" }, { val: mm, label: "MIN" }, { val: ss, label: "SEC" }].map((u, i) => (
+                  <div key={u.label} className="flex items-center gap-1.5">
+                    <div className="bg-primary/20 border border-primary/30 rounded px-2 py-0.5 min-w-[36px] text-center">
+                      <div className="text-lg font-black tabular-nums text-white leading-none">{u.val}</div>
+                      <div className="text-[8px] font-bold uppercase tracking-widest text-white/50">{u.label}</div>
+                    </div>
+                    {i < 2 && <span className="text-primary font-black text-base -mt-2">:</span>}
+                  </div>
+                ));
+              })()}
+            </div>
+          </div>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link href="/inventory">
               <Button size="lg" className="font-black text-sm px-7 shadow-lg" data-testid="button-browse-inventory">
