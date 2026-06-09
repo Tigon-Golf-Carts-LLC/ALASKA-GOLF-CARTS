@@ -27,7 +27,7 @@ export function Header() {
             <div className="flex items-center gap-3 overflow-hidden">
               <div className="flex items-center gap-1.5 shrink-0">
                 <Tag className="h-3 w-3" />
-                <span className="font-bold uppercase tracking-wider">Wholesale Prices</span>
+                <span className="font-bold uppercase tracking-wider">Discounted to MSRP</span>
               </div>
               <span className="text-primary-foreground/60 hidden sm:block">|</span>
               <span className="text-primary-foreground/85 hidden sm:block truncate">Discounted inventory updated daily at 10:55 PM EST</span>
