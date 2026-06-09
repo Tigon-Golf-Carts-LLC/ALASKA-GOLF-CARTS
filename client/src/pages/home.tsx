@@ -257,12 +257,12 @@ export default function Home() {
     queryKey: ["/api/carts?pageNumber=0&pageSize=12"],
   });
 
-  const { data: newCarts } = useQuery<CartsResponse>({
-    queryKey: ["/api/carts?pageNumber=0&pageSize=6&isNew=true"],
+  const { data: newCarts, isLoading: newCartsLoading } = useQuery<CartsResponse>({
+    queryKey: ["/api/carts?pageNumber=0&pageSize=10&isNew=true"],
   });
 
-  const { data: usedCarts } = useQuery<CartsResponse>({
-    queryKey: ["/api/carts?pageNumber=0&pageSize=6&isUsed=true"],
+  const { data: usedCarts, isLoading: usedCartsLoading } = useQuery<CartsResponse>({
+    queryKey: ["/api/carts?pageNumber=0&pageSize=10&isUsed=true"],
   });
 
   const { data: stores } = useQuery<Store[]>({ queryKey: ["/api/stores"] });
@@ -625,36 +625,72 @@ export default function Home() {
         </section>
       )}
 
-      {/* Featured inventory */}
-      <section className="py-12" data-testid="section-featured">
+      {/* New carts carousel */}
+      <section className="py-12" data-testid="section-new-carts">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-end justify-between mb-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">
-                {featured?.totalCarts ? `${featured.totalCarts.toLocaleString()} carts available` : "Fresh inventory"}
+                ✦ Brand New
               </p>
-              <h2 className="text-2xl font-extrabold">Latest Discounted Inventory</h2>
+              <h2 className="text-2xl font-extrabold">New Golf Carts</h2>
               <p className="text-sm text-muted-foreground mt-1">Swipe or tap to browse — click center to view</p>
             </div>
-            <Link href="/inventory">
-              <Button variant="outline" className="hidden sm:flex font-semibold" data-testid="button-view-all">
-                View All <ChevronRight className="h-4 w-4 ml-1" />
+            <Link href="/inventory?condition=new">
+              <Button variant="outline" className="hidden sm:flex font-semibold" data-testid="button-view-all-new">
+                View All New <ChevronRight className="h-4 w-4 ml-1" />
               </Button>
             </Link>
           </div>
 
-          {featuredLoading ? (
+          {newCartsLoading ? (
             <div className="flex gap-4 justify-center py-8">
               {Array.from({ length: 3 }).map((_, i) => <CartCardSkeleton key={i} />)}
             </div>
-          ) : featured?.carts && featured.carts.length > 0 ? (
-            <InventoryCarousel carts={featured.carts} slugMap={slugMap} />
+          ) : newCarts?.carts && newCarts.carts.length > 0 ? (
+            <InventoryCarousel carts={newCarts.carts} slugMap={slugMap} />
           ) : null}
 
           <div className="text-center mt-6">
-            <Link href="/inventory">
-              <Button size="lg" variant="outline" className="font-bold" data-testid="button-view-all-bottom">
-                View All Discounted Inventory <ChevronRight className="h-4 w-4 ml-1" />
+            <Link href="/inventory?condition=new">
+              <Button size="lg" variant="outline" className="font-bold" data-testid="button-view-all-new-bottom">
+                View All New Carts <ChevronRight className="h-4 w-4 ml-1" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Pre-owned carts carousel */}
+      <section className="py-12 bg-card border-t" data-testid="section-used-carts">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="flex items-end justify-between mb-6">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">
+                ★ Pre-Owned
+              </p>
+              <h2 className="text-2xl font-extrabold">Used &amp; Pre-Owned Carts</h2>
+              <p className="text-sm text-muted-foreground mt-1">Swipe or tap to browse — click center to view</p>
+            </div>
+            <Link href="/inventory?condition=used">
+              <Button variant="outline" className="hidden sm:flex font-semibold" data-testid="button-view-all-used">
+                View All Used <ChevronRight className="h-4 w-4 ml-1" />
+              </Button>
+            </Link>
+          </div>
+
+          {usedCartsLoading ? (
+            <div className="flex gap-4 justify-center py-8">
+              {Array.from({ length: 3 }).map((_, i) => <CartCardSkeleton key={i} />)}
+            </div>
+          ) : usedCarts?.carts && usedCarts.carts.length > 0 ? (
+            <InventoryCarousel carts={usedCarts.carts} slugMap={slugMap} />
+          ) : null}
+
+          <div className="text-center mt-6">
+            <Link href="/inventory?condition=used">
+              <Button size="lg" variant="outline" className="font-bold" data-testid="button-view-all-used-bottom">
+                View All Pre-Owned Carts <ChevronRight className="h-4 w-4 ml-1" />
               </Button>
             </Link>
           </div>
