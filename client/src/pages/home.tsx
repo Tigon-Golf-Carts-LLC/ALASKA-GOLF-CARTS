@@ -174,12 +174,9 @@ export default function Home() {
 
         {/* Headline */}
         <div className="relative z-10 text-center pt-12 pb-6 px-4">
-          <div className="inline-flex flex-col items-center gap-0.5 bg-primary text-white text-xs font-black uppercase tracking-widest px-4 py-2 rounded-full mb-4">
-            <div className="flex items-center gap-2">
-              <Flame className="h-3.5 w-3.5" />
-              Wholesale MSRP Prices
-            </div>
-            <div className="text-white/80">Inventory Updated Daily</div>
+          <div className="inline-flex items-center gap-2 bg-primary text-white text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+            <Flame className="h-3.5 w-3.5" />
+            Wholesale MSRP
           </div>
           <h1 className="text-5xl sm:text-6xl font-black tracking-tight text-white leading-[1.1] mb-3">
             Discounted<br /><span className="text-primary">Golf Carts.</span>
