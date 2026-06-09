@@ -14,8 +14,6 @@ export function Header() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/inventory", label: "Inventory" },
-    { href: "/inventory?isNew=true", label: "New Carts" },
-    { href: "/inventory?isUsed=true", label: "Used Carts" },
     { href: "/financing", label: "Financing" },
   ];
 
