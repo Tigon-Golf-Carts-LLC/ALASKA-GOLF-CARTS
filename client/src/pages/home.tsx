@@ -50,6 +50,102 @@ function getOffset(cartIdx: number, current: number, total: number) {
   return off;
 }
 
+const BRAND_CARD_W = 148;
+const BRAND_CONFIGS: Record<number, CardConfig> = {
+  [-2]: { x: -298, y: 30, scale: 0.60, opacity: 0.22, z: 10 },
+  [-1]: { x: -164, y: 10, scale: 0.82, opacity: 0.58, z: 30 },
+  [0]:  { x: 0,    y: -20, scale: 1.15, opacity: 1.00, z: 50 },
+  [1]:  { x: 164,  y: 10, scale: 0.82, opacity: 0.58, z: 30 },
+  [2]:  { x: 298,  y: 30, scale: 0.60, opacity: 0.22, z: 10 },
+};
+
+function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string }> }) {
+  const [current, setCurrent] = useState(0);
+  const [, navigate] = useLocation();
+  const wasDragging = useRef(false);
+  const dragStart = useRef<number | null>(null);
+  const total = brands.length;
+
+  const goTo = useCallback((i: number) => setCurrent(((i % total) + total) % total), [total]);
+  const goNext = useCallback(() => goTo(current + 1), [current, goTo]);
+  const goPrev = useCallback(() => goTo(current - 1), [current, goTo]);
+
+  useEffect(() => {
+    const t = setInterval(goNext, 3200);
+    return () => clearInterval(t);
+  }, [goNext]);
+
+  const onPointerDown = (e: React.PointerEvent) => { dragStart.current = e.clientX; wasDragging.current = false; };
+  const onPointerMove = (e: React.PointerEvent) => { if (dragStart.current !== null && Math.abs(e.clientX - dragStart.current) > 8) wasDragging.current = true; };
+  const onPointerUp = (e: React.PointerEvent) => {
+    if (dragStart.current === null) return;
+    const diff = e.clientX - dragStart.current;
+    if (Math.abs(diff) > 40) diff < 0 ? goNext() : goPrev();
+    dragStart.current = null;
+  };
+
+  return (
+    <div className="relative select-none" onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} style={{ touchAction: 'none' }}>
+      <div className="relative w-full flex items-center justify-center" style={{ height: 210 }}>
+        {brands.map((brand, i) => {
+          const off = getOffset(i, current, total);
+          const cfg = BRAND_CONFIGS[off];
+          if (!cfg) return null;
+          const isCenter = off === 0;
+          return (
+            <div
+              key={brand.key}
+              className="absolute cursor-pointer"
+              style={{
+                width: BRAND_CARD_W,
+                left: `calc(50% - ${BRAND_CARD_W / 2}px)`,
+                transform: `translateX(${cfg.x}px) translateY(${cfg.y}px) scale(${cfg.scale})`,
+                opacity: cfg.opacity,
+                zIndex: cfg.z,
+                transition: 'transform 0.42s cubic-bezier(0.25,0.46,0.45,0.94), opacity 0.42s ease',
+              }}
+              onClick={() => { if (wasDragging.current) return; isCenter ? navigate(`/inventory?make=${encodeURIComponent(brand.label)}`) : goTo(i); }}
+              data-testid={`brand-card-${brand.key}`}
+            >
+              <div
+                className={`rounded-2xl overflow-hidden flex flex-col ${isCenter ? 'ring-2 ring-primary shadow-[0_0_32px_rgba(220,38,38,0.45)]' : ''}`}
+                style={{ background: '#111418', height: 172 }}
+              >
+                <div className={`h-1.5 w-full ${isCenter ? 'bg-primary' : 'bg-white/10'}`} />
+                <div className="flex-1 flex flex-col items-center justify-center px-4 py-3 relative overflow-hidden">
+                  <span className="absolute text-[80px] font-black leading-none select-none pointer-events-none" style={{ color: 'rgba(255,255,255,0.03)' }} aria-hidden>
+                    {brand.label.charAt(0)}
+                  </span>
+                  <div className={`w-11 h-11 rounded-full flex items-center justify-center mb-2.5 ${isCenter ? 'bg-primary/20' : 'bg-white/8'}`}>
+                    <Tag className={`h-5 w-5 ${isCenter ? 'text-primary' : 'text-white/45'}`} />
+                  </div>
+                  <span className={`font-black text-[13px] text-center leading-tight mb-1 ${isCenter ? 'text-white' : 'text-white/65'}`}>{brand.label}</span>
+                  {isCenter && (
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-primary/80 flex items-center gap-0.5 mt-1">
+                      Shop Now <ChevronRight className="h-2.5 w-2.5" />
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <button onClick={(e) => { e.stopPropagation(); goPrev(); }} className="absolute left-2 sm:left-6 top-[45%] -translate-y-1/2 z-[60] w-9 h-9 rounded-full bg-black/50 hover:bg-primary/80 border border-white/15 flex items-center justify-center text-white transition-all" data-testid="button-brand-prev">
+        <ChevronLeft className="h-4 w-4" />
+      </button>
+      <button onClick={(e) => { e.stopPropagation(); goNext(); }} className="absolute right-2 sm:right-6 top-[45%] -translate-y-1/2 z-[60] w-9 h-9 rounded-full bg-black/50 hover:bg-primary/80 border border-white/15 flex items-center justify-center text-white transition-all" data-testid="button-brand-next">
+        <ChevronRight className="h-4 w-4" />
+      </button>
+      <div className="flex items-center justify-center gap-1.5 mt-3">
+        {brands.map((_, i) => (
+          <button key={i} onClick={() => goTo(i)} className={`rounded-full transition-all duration-300 ${i === current ? 'w-5 h-1.5 bg-primary' : 'w-1.5 h-1.5 bg-white/25 hover:bg-white/45'}`} data-testid={`button-brand-dot-${i}`} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   const [, navigate] = useLocation();
 
@@ -406,13 +502,13 @@ export default function Home() {
 
       {/* Shop by brand */}
       {brands && brands.length > 0 && (
-        <section className="py-14 border-b bg-card" data-testid="section-brands">
+        <section className="py-12 border-b bg-card overflow-hidden" data-testid="section-brands">
           <div className="mx-auto max-w-7xl px-4">
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-3">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Shop by Make</p>
                 <h2 className="text-2xl font-extrabold">Top Golf Cart Brands</h2>
-                <p className="text-sm text-muted-foreground mt-1">Click any brand to browse discounted inventory</p>
+                <p className="text-sm text-muted-foreground mt-1">Swipe or tap to browse — click center to shop</p>
               </div>
               <Link href="/inventory">
                 <Button variant="outline" size="sm" className="font-semibold shrink-0" data-testid="button-all-brands">
@@ -420,24 +516,7 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3">
-              {brands.map((brand) => (
-                <Link key={brand.key} href={`/inventory?make=${encodeURIComponent(brand.label)}`}>
-                  <div
-                    className="group relative flex items-center justify-between gap-2 rounded-lg border border-border bg-background hover:border-primary hover:bg-primary/5 transition-all duration-200 px-4 py-4 cursor-pointer"
-                    data-testid={`button-brand-${brand.key}`}
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-md bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center shrink-0 transition-colors">
-                        <Tag className="h-4 w-4 text-primary" />
-                      </div>
-                      <span className="font-bold text-sm">{brand.label}</span>
-                    </div>
-                    <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
-                  </div>
-                </Link>
-              ))}
-            </div>
+            <BrandCarousel brands={brands} />
           </div>
         </section>
       )}
