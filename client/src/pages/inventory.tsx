@@ -47,7 +47,7 @@ function FilterDropdown({ label, activeCount, children }: { label: string; activ
               {activeCount}
             </span>
           )}
-          <ChevronDown className="h-3.5 w-3.5 text-white" />
+          <ChevronDown className="h-4 w-4 text-white" />
         </button>
       </PopoverTrigger>
       <PopoverContent className="w-52 p-2.5" align="start">
