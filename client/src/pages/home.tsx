@@ -178,8 +178,8 @@ export default function Home() {
             <Flame className="h-3.5 w-3.5" />
             Wholesale Prices — Inventory Updated Daily
           </div>
-          <h1 className="text-5xl sm:text-6xl font-black tracking-tight text-white leading-[1.0] mb-3">
-            Discounted <span className="text-primary">Golf Carts.</span>
+          <h1 className="text-5xl sm:text-6xl font-black tracking-tight text-white leading-[1.1] mb-3">
+            Discounted<br /><span className="text-primary">Golf Carts.</span>
           </h1>
           <p className="text-white/60 text-sm sm:text-base max-w-lg mx-auto">
             {featured?.totalCarts
