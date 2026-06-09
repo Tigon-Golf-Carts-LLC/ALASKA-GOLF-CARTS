@@ -371,7 +371,7 @@ export default function Home() {
               { icon: Zap, label: "Electric & Gas" },
               { icon: Truck, label: "Ships Nationwide" },
             ].map((item) => (
-              <div key={item.label} className="flex items-center gap-1.5 text-white/50 text-xs">
+              <div key={item.label} className="flex items-center gap-1.5 text-white text-xs">
                 <item.icon className="h-3.5 w-3.5 text-primary" />
                 <span>{item.label}</span>
               </div>
