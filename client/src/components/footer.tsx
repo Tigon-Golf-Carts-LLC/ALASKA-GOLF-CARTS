@@ -63,7 +63,7 @@ export function Footer() {
             </div>
             <div className="-mt-3">
               <h3 className="text-2xl sm:text-3xl font-black tracking-tight uppercase">Get These Deals Before They're Gone!</h3>
-              <p className="text-primary-foreground/80 text-sm mt-1">Inventory And Prices Update Daily — These Prices Are Only Good Until The Timer Runs Out. Act now.</p>
+              <p className="text-primary-foreground/80 text-sm mt-1">Golf cart prices update nightly — these wholesale prices are only good until the timer runs out. Act now.</p>
             </div>
 
             {/* CTA buttons */}
@@ -116,7 +116,7 @@ export function Footer() {
                 <span className="text-base font-extrabold">Discounted <span className="text-primary">Golf Carts</span></span>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Wholesale prices on new and used golf carts. Top brands, updated daily, with locations across the East Coast.
+                New and used golf carts for sale at wholesale prices. 13 authorized brands — Club Car, EZGO, Yamaha, Denago, Evolution &amp; more. Inventory updated daily. 14 locations. 0% APR financing available.
               </p>
             </div>
 
@@ -157,7 +157,7 @@ export function Footer() {
                 {PHONE_NUMBER}
               </a>
               <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
-                Call today for our latest wholesale pricing and current specials.
+                Call today for today's best price on any golf cart in stock — new, used, electric, LSV, or lifted. 0% APR financing available.
               </p>
             </div>
           </div>

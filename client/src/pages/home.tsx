@@ -16,17 +16,19 @@ interface SlugMap {
 }
 
 const TICKER_ITEMS = [
-  "🔥 WHOLESALE PRICES",
+  "🔥 GOLF CARTS FOR SALE",
   "✦ NEW & USED INVENTORY",
+  "⚡ ELECTRIC GOLF CARTS",
+  "🏌️ STREET-LEGAL LSV IN STOCK",
   "🚗 NATIONWIDE DELIVERY",
-  "⚡ ELECTRIC & GAS CARTS",
-  "🏷️ UPDATED DAILY",
+  "🏷️ WHOLESALE PRICES UPDATED DAILY",
   "📞 CALL " + PHONE_NUMBER,
-  "🔥 WHOLESALE PRICES",
+  "🔥 GOLF CARTS FOR SALE",
   "✦ NEW & USED INVENTORY",
+  "⚡ ELECTRIC GOLF CARTS",
+  "🏌️ STREET-LEGAL LSV IN STOCK",
   "🚗 NATIONWIDE DELIVERY",
-  "⚡ ELECTRIC & GAS CARTS",
-  "🏷️ UPDATED DAILY",
+  "🏷️ WHOLESALE PRICES UPDATED DAILY",
   "📞 CALL " + PHONE_NUMBER,
 ];
 
@@ -411,10 +413,10 @@ export default function Home() {
         {/* Headline */}
         <div className="relative z-10 text-center pt-12 pb-6 px-4">
           <h1 className="text-5xl sm:text-6xl font-black tracking-tight text-white leading-[1.1] mb-3">
-            Discounted<br /><span className="text-primary">Golf Carts.</span>
+            Golf Carts<br /><span className="text-primary">For Sale.</span>
           </h1>
           <p className="text-white/60 text-sm sm:text-base max-w-lg mx-auto">
-            Wholesale MSRP Inventory — Updated Every Day.
+            New &amp; used electric golf carts, street-legal LSVs, and lifted carts — wholesale pricing updated nightly across 14 locations.
           </p>
         </div>
 
@@ -612,9 +614,9 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap justify-center gap-5">
             {[
-              { icon: CheckCircle2, label: "No-Haggle Pricing" },
-              { icon: Zap, label: "Electric & Gas" },
-              { icon: Truck, label: "Ships Nationwide" },
+              { icon: CheckCircle2, label: "No-Haggle Wholesale Pricing" },
+              { icon: Zap, label: "Electric & Gas Golf Carts" },
+              { icon: Truck, label: "Nationwide Delivery Available" },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-1.5 text-white text-xs">
                 <item.icon className="h-3.5 w-3.5 text-primary" />
@@ -630,10 +632,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-border">
             {[
-              { icon: RefreshCw, label: "Updated Daily", desc: "Inventory at 10:55 PM EST" },
-              { icon: Shield, label: "Warranty Included", desc: "Coverage on all carts" },
-              { icon: Award, label: "Top Brands", desc: "Denago, Evolution & more" },
-              { icon: Truck, label: "Nationwide Delivery", desc: "We ship across the US" },
+              { icon: RefreshCw, label: "Inventory Updated Daily", desc: "Prices & carts refreshed nightly at 10:55 PM ET" },
+              { icon: Shield, label: "Warranty Included", desc: "Factory warranty on all new golf carts" },
+              { icon: Award, label: "13 Authorized Brands", desc: "Club Car, EZGO, Yamaha, Denago & more" },
+              { icon: Truck, label: "Nationwide Delivery", desc: "We deliver golf carts to all 50 states" },
             ].map((item, i) => (
               <div key={item.label} className={`flex items-center gap-3 px-4 sm:px-6 py-5 ${i % 2 === 0 && i >= 2 ? "md:border-none" : ""}`}>
                 <div className="shrink-0 w-10 h-10 rounded-md bg-primary/10 flex items-center justify-center">
@@ -655,9 +657,9 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
               <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Shop by Make</p>
-                <h2 className="text-2xl font-extrabold">Top Golf Cart Brands</h2>
-                <p className="text-sm text-muted-foreground mt-1">Swipe or tap to browse — click center to shop</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Shop by Brand</p>
+                <h2 className="text-2xl font-extrabold">New &amp; Used Golf Carts by Brand</h2>
+                <p className="text-sm text-muted-foreground mt-1">13 authorized brands — click a brand to browse current inventory</p>
               </div>
               <Link href="/inventory">
                 <Button variant="outline" size="sm" className="font-semibold shrink-0" data-testid="button-all-brands">
@@ -678,8 +680,8 @@ export default function Home() {
               <Flame className="h-5 w-5 text-white" />
             </div>
             <div>
-              <p className="text-sm font-extrabold uppercase tracking-wide">Don't Miss These Deals!</p>
-              <p className="text-xs text-muted-foreground">Inventory refreshes daily — prices may change. Call now to lock in your cart.</p>
+              <p className="text-sm font-extrabold uppercase tracking-wide">Don't Miss These Golf Cart Deals!</p>
+              <p className="text-xs text-muted-foreground">Golf cart prices update nightly — call now to lock in today's wholesale price before inventory changes.</p>
             </div>
           </div>
           <div className="flex items-center gap-4 shrink-0">
@@ -703,10 +705,10 @@ export default function Home() {
           <div className="flex items-end justify-between mb-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">
-                ✦ Brand New
+                ✦ Brand New Golf Carts for Sale
               </p>
-              <h2 className="text-2xl font-extrabold">New Golf Carts</h2>
-              <p className="text-sm text-muted-foreground mt-1">Swipe or tap to browse — click center to view</p>
+              <h2 className="text-2xl font-extrabold">New Golf Carts for Sale</h2>
+              <p className="text-sm text-muted-foreground mt-1">Factory-fresh inventory from 13 authorized brands — wholesale MSRP pricing</p>
             </div>
             <Link href="/inventory?condition=new">
               <Button variant="outline" className="hidden sm:flex font-semibold" data-testid="button-view-all-new">
@@ -726,7 +728,7 @@ export default function Home() {
           <div className="text-center mt-6">
             <Link href="/inventory?condition=new">
               <Button size="lg" variant="outline" className="font-bold" data-testid="button-view-all-new-bottom">
-                View All New Carts <ChevronRight className="h-4 w-4 ml-1" />
+                Browse All New Golf Carts for Sale <ChevronRight className="h-4 w-4 ml-1" />
               </Button>
             </Link>
           </div>
@@ -739,10 +741,10 @@ export default function Home() {
           <div className="flex items-end justify-between mb-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">
-                ★ Pre-Owned
+                ★ Used Golf Carts for Sale
               </p>
-              <h2 className="text-2xl font-extrabold">Used &amp; Pre-Owned Carts</h2>
-              <p className="text-sm text-muted-foreground mt-1">Swipe or tap to browse — click center to view</p>
+              <h2 className="text-2xl font-extrabold">Used &amp; Pre-Owned Golf Carts for Sale</h2>
+              <p className="text-sm text-muted-foreground mt-1">Inspected and discounted pre-owned carts — click any cart to see full specs and price</p>
             </div>
             <Link href="/inventory?condition=used">
               <Button variant="outline" className="hidden sm:flex font-semibold" data-testid="button-view-all-used">
@@ -762,7 +764,7 @@ export default function Home() {
           <div className="text-center mt-6">
             <Link href="/inventory?condition=used">
               <Button size="lg" variant="outline" className="font-bold" data-testid="button-view-all-used-bottom">
-                View All Pre-Owned Carts <ChevronRight className="h-4 w-4 ml-1" />
+                Browse All Used Golf Carts for Sale <ChevronRight className="h-4 w-4 ml-1" />
               </Button>
             </Link>
           </div>
@@ -774,9 +776,9 @@ export default function Home() {
         <section className="py-12 bg-card border-t border-b" data-testid="section-locations">
           <div className="mx-auto max-w-7xl px-4">
             <div className="text-center mb-8">
-              <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Find Us</p>
-              <h2 className="text-2xl font-extrabold">Our Locations</h2>
-              <p className="text-sm text-muted-foreground mt-1">Visit us at one of our dealerships</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Find a Golf Cart Dealer Near You</p>
+              <h2 className="text-2xl font-extrabold">Golf Cart Dealerships — 14 Locations, 9 States</h2>
+              <p className="text-sm text-muted-foreground mt-1">PA, NJ, DE, NC, IN, VA, FL, SC &amp; OH — plus nationwide delivery to your door</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
               {stores.map((store) => (
@@ -810,12 +812,11 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="text-center lg:text-left">
               <Badge className="mb-3 bg-primary text-primary-foreground border-0 font-bold uppercase tracking-wide">
-                <Tag className="h-3 w-3 mr-1" /> Wholesale Pricing
+                <Tag className="h-3 w-3 mr-1" /> Wholesale Golf Cart Prices
               </Badge>
-              <h2 className="text-3xl sm:text-4xl font-extrabold mb-3">Find Your Discounted Golf Cart Today</h2>
+              <h2 className="text-3xl sm:text-4xl font-extrabold mb-3">Golf Carts for Sale — Best Wholesale Prices in the East</h2>
               <p className="text-background/65 max-w-xl leading-relaxed">
-                Our experts are standing by. Call now to hear about today's best wholesale prices,
-                current inventory, and available financing options.
+                Our team is standing by. Call now for today's best price on any cart in stock — new golf carts, used golf carts, electric carts, street-legal LSVs, and lifted models. 0% APR financing available on qualifying purchases.
               </p>
             </div>
             <div className="shrink-0">
@@ -825,7 +826,7 @@ export default function Home() {
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-white/70">Call Now — Free Quote</div>
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-white/70">Call Now — Free Golf Cart Quote</div>
                     <div className="text-2xl font-extrabold text-white">{PHONE_NUMBER}</div>
                   </div>
                 </div>

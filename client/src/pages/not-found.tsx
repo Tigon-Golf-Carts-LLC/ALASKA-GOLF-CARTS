@@ -8,7 +8,7 @@ export default function NotFound() {
       <h1 className="text-6xl font-extrabold text-muted-foreground/30 mb-4">404</h1>
       <h2 className="text-xl font-bold mb-2">Page Not Found</h2>
       <p className="text-muted-foreground text-center max-w-md mb-8">
-        The page you're looking for doesn't exist or has been moved.
+        The page you're looking for doesn't exist or has been moved. Browse our golf carts for sale or return to the home page.
       </p>
       <div className="flex gap-3">
         <Link href="/">
@@ -19,7 +19,7 @@ export default function NotFound() {
         </Link>
         <Link href="/inventory">
           <Button data-testid="button-browse">
-            Browse Inventory
+            Browse Golf Carts for Sale
           </Button>
         </Link>
       </div>
