@@ -38,7 +38,7 @@ function FilterDropdown({ label, activeCount, children }: { label: string; activ
           className={`shrink-0 flex items-center gap-1.5 rounded-full text-xs font-semibold px-3.5 py-2 border transition-all whitespace-nowrap ${
             activeCount > 0
               ? "bg-primary text-white border-primary shadow-sm"
-              : "bg-muted/60 text-foreground/75 border-border hover:border-primary/50 hover:text-foreground"
+              : "bg-primary text-white border-primary hover:bg-primary/90"
           }`}
         >
           {label}
