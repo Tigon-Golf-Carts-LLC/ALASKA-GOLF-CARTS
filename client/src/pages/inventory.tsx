@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useSearch } from "wouter";
-import { Search, ArrowUpDown, ChevronLeft, ChevronRight, ChevronDown, X, RotateCcw } from "lucide-react";
+import { Search, ArrowUpDown, ChevronLeft, ChevronRight, ChevronDown, X, RotateCcw, SlidersHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -57,6 +57,16 @@ function FilterDropdown({ label, activeCount, children }: { label: string; activ
   );
 }
 
+function MobileFilterSection({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">{label}</p>
+      <div className="grid grid-cols-2 gap-x-4">{children}</div>
+      <div className="mt-4 border-b border-border/50" />
+    </div>
+  );
+}
+
 export default function Inventory() {
   const searchString = useSearch();
   const params = new URLSearchParams(searchString);
@@ -73,6 +83,7 @@ export default function Inventory() {
   const [page, setPage] = useState(0);
   const [searchInput, setSearchInput] = useState(filters.searchText);
   const [debouncedSearch, setDebouncedSearch] = useState(filters.searchText);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   useEffect(() => {
     const t = setTimeout(() => setDebouncedSearch(searchInput), 400);
@@ -184,8 +195,8 @@ export default function Inventory() {
             </Select>
           </div>
 
-          {/* Filter dropdowns row — horizontal scroll */}
-          <div className="flex gap-2 overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+          {/* Filter dropdowns row — desktop only */}
+          <div className="hidden sm:flex gap-2 overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
 
             <FilterDropdown label="Condition" activeCount={(filters.isNew ? 1 : 0) + (filters.isUsed ? 1 : 0)}>
               <CheckItem label="New" checked={filters.isNew} onChange={(c) => update({ isNew: !!c })} testId="filter-new" />
@@ -255,6 +266,27 @@ export default function Inventory() {
 
           </div>
 
+          {/* Mobile: single Filters button */}
+          <div className="flex sm:hidden">
+            <button
+              onClick={() => setMobileFiltersOpen(true)}
+              className={`flex items-center gap-2 rounded-full text-sm font-semibold px-4 py-2 border transition-all ${
+                activeCount > 0
+                  ? "bg-primary text-white border-primary shadow-sm"
+                  : "bg-muted/60 text-foreground/75 border-border"
+              }`}
+              data-testid="button-mobile-filters"
+            >
+              <SlidersHorizontal className="h-4 w-4" />
+              Filters
+              {activeCount > 0 && (
+                <span className="bg-white/25 rounded-full min-w-[18px] h-[18px] px-1 text-[10px] font-bold flex items-center justify-center">
+                  {activeCount}
+                </span>
+              )}
+            </button>
+          </div>
+
           {/* Active filter chips */}
           {activeCount > 0 && (
             <div className="flex gap-1.5 flex-wrap pb-0.5">
@@ -280,6 +312,111 @@ export default function Inventory() {
 
         </div>
       </div>
+
+      {/* ── Mobile Filters Sheet ── */}
+      {mobileFiltersOpen && (
+        <div className="fixed inset-0 z-50 sm:hidden flex flex-col">
+          {/* Backdrop */}
+          <div className="absolute inset-0 bg-black/60" onClick={() => setMobileFiltersOpen(false)} />
+          {/* Panel slides up from bottom */}
+          <div className="relative mt-auto bg-background rounded-t-2xl shadow-2xl flex flex-col max-h-[90vh]">
+            {/* Header */}
+            <div className="flex items-center justify-between px-4 py-3.5 border-b shrink-0">
+              <span className="text-base font-bold">Filters</span>
+              <div className="flex items-center gap-2">
+                {activeCount > 0 && (
+                  <button onClick={() => { resetFilters(); }} className="text-xs font-semibold text-primary border border-primary/30 rounded-full px-3 py-1 hover:bg-primary/10 transition-colors" data-testid="button-mobile-reset">
+                    Reset ({activeCount})
+                  </button>
+                )}
+                <button onClick={() => setMobileFiltersOpen(false)} className="p-1.5 rounded-full hover:bg-muted transition-colors" data-testid="button-mobile-filters-close">
+                  <X className="h-5 w-5" />
+                </button>
+              </div>
+            </div>
+            {/* Scrollable filter sections */}
+            <div className="overflow-y-auto flex-1 px-4 py-3 space-y-5">
+
+              <MobileFilterSection label="Condition">
+                <CheckItem label="New" checked={filters.isNew} onChange={(c) => update({ isNew: !!c })} testId="mobile-filter-new" />
+                <CheckItem label="Used" checked={filters.isUsed} onChange={(c) => update({ isUsed: !!c })} testId="mobile-filter-used" />
+              </MobileFilterSection>
+
+              <MobileFilterSection label="Power">
+                <CheckItem label="Electric" checked={filters.isElectric} onChange={(c) => update({ isElectric: !!c })} testId="mobile-filter-electric" />
+                <CheckItem label="Gas" checked={filters.isGas} onChange={(c) => update({ isGas: !!c })} testId="mobile-filter-gas" />
+              </MobileFilterSection>
+
+              <MobileFilterSection label="Features">
+                <CheckItem label="Street Legal" checked={filters.isStreetLegal} onChange={(c) => update({ isStreetLegal: !!c })} testId="mobile-filter-street-legal" />
+                <CheckItem label="Lifted" checked={filters.isLifted} onChange={(c) => update({ isLifted: !!c })} testId="mobile-filter-lifted" />
+                <CheckItem label="Utility" checked={filters.isUtility} onChange={(c) => update({ isUtility: !!c })} testId="mobile-filter-utility" />
+              </MobileFilterSection>
+
+              <MobileFilterSection label="Brand">
+                {brands && brands.length > 0
+                  ? brands.map((b) => (
+                      <CheckItem key={b.key} label={b.label} checked={filters.makes.includes(b.label)} onChange={() => update({ makes: toggleArr(filters.makes, b.label) })} testId={`mobile-filter-make-${b.key}`} />
+                    ))
+                  : <p className="text-xs text-muted-foreground py-1">Loading…</p>}
+              </MobileFilterSection>
+
+              {models.length > 0 && (
+                <MobileFilterSection label="Model">
+                  {models.map((m) => (
+                    <CheckItem key={m._id} label={m.label} checked={filters.models.includes(m.label)} onChange={() => update({ models: toggleArr(filters.models, m.label) })} testId={`mobile-filter-model-${m._id}`} />
+                  ))}
+                </MobileFilterSection>
+              )}
+
+              {colors.length > 0 && (
+                <MobileFilterSection label="Color">
+                  {colors.map((c) => (
+                    <CheckItem key={c} label={c} checked={filters.colors.includes(c)} onChange={() => update({ colors: toggleArr(filters.colors, c) })} testId={`mobile-filter-color-${c.toLowerCase().replace(/\s/g, "-")}`} />
+                  ))}
+                </MobileFilterSection>
+              )}
+
+              <MobileFilterSection label="Seating">
+                {SEAT_OPTIONS.map((s) => (
+                  <CheckItem key={s} label={s} checked={filters.seats.includes(s)} onChange={() => update({ seats: toggleArr(filters.seats, s) })} testId={`mobile-filter-seats-${s.split(" ")[0]}`} />
+                ))}
+              </MobileFilterSection>
+
+              <MobileFilterSection label="Drivetrain">
+                {DRIVETRAIN_OPTIONS.map((d) => (
+                  <CheckItem key={d} label={d} checked={filters.driveTrain.includes(d)} onChange={() => update({ driveTrain: toggleArr(filters.driveTrain, d) })} testId={`mobile-filter-drive-${d.toLowerCase()}`} />
+                ))}
+              </MobileFilterSection>
+
+              {stores && stores.length > 0 && (
+                <MobileFilterSection label="Location">
+                  {stores.map((store) => (
+                    <CheckItem
+                      key={store.storeId}
+                      label={`${store.address.city || ""}, ${STATE_ABBREVIATIONS[store.address.state || ""] || store.address.state || ""}`}
+                      checked={filters.storeIds.includes(store.storeId)}
+                      onChange={() => update({ storeIds: toggleArr(filters.storeIds, store.storeId) })}
+                      testId={`mobile-filter-store-${store.storeId}`}
+                    />
+                  ))}
+                </MobileFilterSection>
+              )}
+
+            </div>
+            {/* Sticky Apply button */}
+            <div className="shrink-0 px-4 py-3 border-t bg-background">
+              <button
+                onClick={() => setMobileFiltersOpen(false)}
+                className="w-full bg-primary text-white rounded-xl py-3 font-bold text-sm tracking-wide hover:bg-primary/90 transition-colors"
+                data-testid="button-mobile-filters-apply"
+              >
+                {activeCount > 0 ? `Show Results (${activeCount} active)` : "Show Results"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ── Card grid ── */}
       <div className="mx-auto max-w-7xl px-3 py-4">
