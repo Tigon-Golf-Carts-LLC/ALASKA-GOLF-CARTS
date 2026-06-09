@@ -566,18 +566,6 @@ export default function Home() {
 
         {/* Dots + CTAs */}
         <div className="relative z-10 flex flex-col items-center gap-5 py-8 px-4">
-          {total > 1 && (
-            <div className="flex items-center gap-1.5">
-              {slides.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => goTo(i)}
-                  className={`rounded-full transition-all duration-300 ${i === current ? 'w-6 h-2 bg-primary' : 'w-2 h-2 bg-white/25 hover:bg-white/50'}`}
-                  data-testid={`button-dot-${i}`}
-                />
-              ))}
-            </div>
-          )}
           {/* Countdown ticker */}
           <div className="inline-flex flex-col items-center gap-1 bg-black/50 border border-primary/40 backdrop-blur-sm rounded-xl px-5 py-3">
             <div className="flex items-center gap-2">
