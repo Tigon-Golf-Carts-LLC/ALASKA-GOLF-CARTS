@@ -46,7 +46,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-[100]" data-testid="header">
-      <div className="bg-primary text-primary-foreground">
+      <div className="hidden sm:block bg-primary text-primary-foreground">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex items-center justify-between h-9 text-xs font-medium">
             <div className="flex items-center gap-3 overflow-hidden">
