@@ -57,6 +57,14 @@ export default function Home() {
     queryKey: ["/api/carts?pageNumber=0&pageSize=12"],
   });
 
+  const { data: newCarts } = useQuery<CartsResponse>({
+    queryKey: ["/api/carts?pageNumber=0&pageSize=6&isNew=true"],
+  });
+
+  const { data: usedCarts } = useQuery<CartsResponse>({
+    queryKey: ["/api/carts?pageNumber=0&pageSize=6&isUsed=true"],
+  });
+
   const { data: stores } = useQuery<Store[]>({ queryKey: ["/api/stores"] });
   const { data: brands } = useQuery<Array<{ key: string; label: string }>>({ queryKey: ["/api/brands"] });
   const { data: slugMap } = useQuery<SlugMap>({ queryKey: ["/api/slug-map"] });
@@ -70,9 +78,22 @@ export default function Home() {
   const wasDragging = useRef(false);
 
   const slides = useMemo(() => {
-    if (!featured?.carts?.length) return [];
-    return [...featured.carts].sort(() => Math.random() - 0.5).slice(0, 10);
-  }, [featured?.carts]);
+    const newList = newCarts?.carts ?? [];
+    const usedList = usedCarts?.carts ?? [];
+    if (!newList.length && !usedList.length) {
+      if (!featured?.carts?.length) return [];
+      return [...featured.carts].sort(() => Math.random() - 0.5).slice(0, 10);
+    }
+    const shuffledNew = [...newList].sort(() => Math.random() - 0.5).slice(0, 5);
+    const shuffledUsed = [...usedList].sort(() => Math.random() - 0.5).slice(0, 5);
+    const mixed: typeof shuffledNew = [];
+    const maxLen = Math.max(shuffledNew.length, shuffledUsed.length);
+    for (let i = 0; i < maxLen; i++) {
+      if (i < shuffledNew.length) mixed.push(shuffledNew[i]);
+      if (i < shuffledUsed.length) mixed.push(shuffledUsed[i]);
+    }
+    return mixed.slice(0, 10);
+  }, [newCarts?.carts, usedCarts?.carts, featured?.carts]);
 
   const total = slides.length;
 
