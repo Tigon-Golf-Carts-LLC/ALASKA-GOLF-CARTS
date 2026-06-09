@@ -100,12 +100,19 @@ export function CartCard({ cart, slug }: CartCardProps) {
           <p className="text-lg font-extrabold text-primary leading-none mb-2" data-testid={`text-price-${cart._id}`}>
             {price}
           </p>
-          <a href={PHONE_TEL} className="block">
-            <Button size="sm" className="w-full text-xs font-bold" data-testid={`button-call-${cart._id}`}>
-              <Phone className="h-3 w-3 mr-1" />
-              Call Now
-            </Button>
-          </a>
+          <div className="grid grid-cols-2 gap-1.5">
+            <Link href={cartUrl}>
+              <Button size="sm" variant="outline" className="w-full text-xs font-bold" data-testid={`button-view-${cart._id}`}>
+                View Cart
+              </Button>
+            </Link>
+            <a href={PHONE_TEL} className="block">
+              <Button size="sm" className="w-full text-xs font-bold" data-testid={`button-call-${cart._id}`}>
+                <Phone className="h-3 w-3 mr-1" />
+                Call Now
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
