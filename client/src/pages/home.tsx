@@ -50,13 +50,19 @@ function getOffset(cartIdx: number, current: number, total: number) {
   return off;
 }
 
-const BRAND_CARD_W = 148;
-const BRAND_CONFIGS: Record<number, CardConfig> = {
+const BRAND_CARD_W_D = 148;
+const BRAND_CARD_W_M = 148;
+const BRAND_D_CONFIGS: Record<number, CardConfig> = {
   [-2]: { x: -298, y: 30, scale: 0.60, opacity: 0.22, z: 10 },
   [-1]: { x: -164, y: 10, scale: 0.82, opacity: 0.58, z: 30 },
   [0]:  { x: 0,    y: -20, scale: 1.15, opacity: 1.00, z: 50 },
   [1]:  { x: 164,  y: 10, scale: 0.82, opacity: 0.58, z: 30 },
   [2]:  { x: 298,  y: 30, scale: 0.60, opacity: 0.22, z: 10 },
+};
+const BRAND_M_CONFIGS: Record<number, CardConfig> = {
+  [-1]: { x: -164, y: 10, scale: 0.82, opacity: 0.55, z: 30 },
+  [0]:  { x: 0,    y: -20, scale: 1.15, opacity: 1.00, z: 50 },
+  [1]:  { x: 164,  y: 10, scale: 0.82, opacity: 0.55, z: 30 },
 };
 
 function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string }> }) {
@@ -64,7 +70,10 @@ function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string 
   const [, navigate] = useLocation();
   const wasDragging = useRef(false);
   const dragStart = useRef<number | null>(null);
+  const isDesktop = useIsDesktop();
   const total = brands.length;
+  const BRAND_CARD_W = isDesktop ? BRAND_CARD_W_D : BRAND_CARD_W_M;
+  const BRAND_CONFIGS = isDesktop ? BRAND_D_CONFIGS : BRAND_M_CONFIGS;
 
   const goTo = useCallback((i: number) => setCurrent(((i % total) + total) % total), [total]);
   const goNext = useCallback(() => goTo(current + 1), [current, goTo]);
