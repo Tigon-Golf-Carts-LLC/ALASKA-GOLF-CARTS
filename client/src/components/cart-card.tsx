@@ -109,7 +109,7 @@ export function CartCard({ cart, slug }: CartCardProps) {
             <a href={PHONE_TEL} className="block">
               <Button size="sm" className="w-full text-xs font-bold" data-testid={`button-call-${cart._id}`}>
                 <Phone className="h-3 w-3 mr-1" />
-                Call Now
+                Call<span className="hidden sm:inline"> Now</span>
               </Button>
             </a>
           </div>
