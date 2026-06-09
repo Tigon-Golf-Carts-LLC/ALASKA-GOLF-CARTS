@@ -97,17 +97,15 @@ export function CartCard({ cart, slug }: CartCardProps) {
             <Tag className="h-3 w-3 text-primary" />
             <span className="text-[10px] font-bold uppercase tracking-widest text-primary">Wholesale Price</span>
           </div>
-          <div className="flex items-center justify-between gap-2">
-            <p className="text-xl font-extrabold text-primary leading-none" data-testid={`text-price-${cart._id}`}>
-              {price}
-            </p>
-            <a href={PHONE_TEL}>
-              <Button size="sm" className="text-xs font-bold shrink-0" data-testid={`button-call-${cart._id}`}>
-                <Phone className="h-3 w-3 mr-1" />
-                Call Now
-              </Button>
-            </a>
-          </div>
+          <p className="text-lg font-extrabold text-primary leading-none mb-2" data-testid={`text-price-${cart._id}`}>
+            {price}
+          </p>
+          <a href={PHONE_TEL} className="block">
+            <Button size="sm" className="w-full text-xs font-bold" data-testid={`button-call-${cart._id}`}>
+              <Phone className="h-3 w-3 mr-1" />
+              Call Now
+            </Button>
+          </a>
         </div>
       </div>
     </div>
