@@ -3,7 +3,7 @@ import { Phone, MapPin, Tag, Truck, Shield, Award } from "lucide-react";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 import type { Store } from "@shared/schema";
 import { useQuery } from "@tanstack/react-query";
-import logoImg from "@assets/DISCOUNTED_GOLF_CARTS_(2)_1770670989091.png";
+import logoImg from "@assets/discounted_golf_carts_(3)_1781021848486.png";
 
 export function Footer() {
   const { data: stores } = useQuery<Store[]>({

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/theme-provider";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 import { useState } from "react";
-import logoImg from "@assets/DISCOUNTED_GOLF_CARTS_(2)_1770670989091.png";
+import logoImg from "@assets/discounted_golf_carts_(3)_1781021848486.png";
 
 export function Header() {
   const [location] = useLocation();
