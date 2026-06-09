@@ -98,10 +98,12 @@ export default function Inventory() {
     if (filters.isGas) p.set("isGas", "true");
     if (filters.isStreetLegal) p.set("isStreetLegal", "true");
     if (filters.isLifted) p.set("isLifted", "true");
+    const seats = [...filters.seats];
+    if (filters.isUtility && !seats.includes("Utility")) seats.push("Utility");
+    if (seats.length > 0) p.set("seats", seats.join(","));
     if (filters.makes.length > 0) p.set("makes", filters.makes.join(","));
     if (filters.models.length > 0) p.set("models", filters.models.join(","));
     if (filters.colors.length > 0) p.set("colors", filters.colors.join(","));
-    if (filters.seats.length > 0) p.set("seats", filters.seats.join(","));
     if (filters.driveTrain.length > 0) p.set("driveTrain", filters.driveTrain.join(","));
     if (filters.storeIds.length > 0) p.set("storeIds", filters.storeIds.join(","));
     return p.toString();
@@ -136,7 +138,7 @@ export default function Inventory() {
   const activeCount =
     (filters.isNew ? 1 : 0) + (filters.isUsed ? 1 : 0) +
     (filters.isElectric ? 1 : 0) + (filters.isGas ? 1 : 0) +
-    (filters.isStreetLegal ? 1 : 0) + (filters.isLifted ? 1 : 0) +
+    (filters.isStreetLegal ? 1 : 0) + (filters.isLifted ? 1 : 0) + (filters.isUtility ? 1 : 0) +
     filters.makes.length + filters.models.length + filters.colors.length +
     filters.storeIds.length + filters.seats.length + filters.driveTrain.length;
 
@@ -195,9 +197,10 @@ export default function Inventory() {
               <CheckItem label="Gas" checked={filters.isGas} onChange={(c) => update({ isGas: !!c })} testId="filter-gas" />
             </FilterDropdown>
 
-            <FilterDropdown label="Features" activeCount={(filters.isStreetLegal ? 1 : 0) + (filters.isLifted ? 1 : 0)}>
+            <FilterDropdown label="Features" activeCount={(filters.isStreetLegal ? 1 : 0) + (filters.isLifted ? 1 : 0) + (filters.isUtility ? 1 : 0)}>
               <CheckItem label="Street Legal" checked={filters.isStreetLegal} onChange={(c) => update({ isStreetLegal: !!c })} testId="filter-street-legal" />
               <CheckItem label="Lifted" checked={filters.isLifted} onChange={(c) => update({ isLifted: !!c })} testId="filter-lifted" />
+              <CheckItem label="Utility" checked={filters.isUtility} onChange={(c) => update({ isUtility: !!c })} testId="filter-utility" />
             </FilterDropdown>
 
             <FilterDropdown label="Brand" activeCount={filters.makes.length}>
@@ -261,6 +264,7 @@ export default function Inventory() {
               {filters.isGas && <ActiveChip label="Gas" onRemove={() => update({ isGas: false })} />}
               {filters.isStreetLegal && <ActiveChip label="Street Legal" onRemove={() => update({ isStreetLegal: false })} />}
               {filters.isLifted && <ActiveChip label="Lifted" onRemove={() => update({ isLifted: false })} />}
+              {filters.isUtility && <ActiveChip label="Utility" onRemove={() => update({ isUtility: false })} />}
               {filters.makes.map((m) => <ActiveChip key={m} label={m} onRemove={() => update({ makes: filters.makes.filter((x) => x !== m) })} />)}
               {filters.models.map((m) => <ActiveChip key={m} label={m} onRemove={() => update({ models: filters.models.filter((x) => x !== m) })} />)}
               {filters.colors.map((c) => <ActiveChip key={c} label={c} onRemove={() => update({ colors: filters.colors.filter((x) => x !== c) })} />)}

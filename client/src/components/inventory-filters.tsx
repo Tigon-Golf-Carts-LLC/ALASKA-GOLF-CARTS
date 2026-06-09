@@ -20,6 +20,7 @@ export interface FilterState {
   isGas: boolean;
   isStreetLegal: boolean;
   isLifted: boolean;
+  isUtility: boolean;
   makes: string[];
   models: string[];
   colors: string[];
@@ -37,6 +38,7 @@ export const defaultFilters: FilterState = {
   isGas: false,
   isStreetLegal: false,
   isLifted: false,
+  isUtility: false,
   makes: [],
   models: [],
   colors: [],
