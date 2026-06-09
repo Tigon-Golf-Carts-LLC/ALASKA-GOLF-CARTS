@@ -45,24 +45,25 @@ export function Footer() {
       <div className="bg-primary text-primary-foreground py-10">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex flex-col items-center gap-6 text-center">
-            <div className="flex items-center gap-2">
+            {/* Countdown ticker */}
+            <div className="flex items-center gap-3">
               <Flame className="h-6 w-6 text-white/90 shrink-0" />
-              <h3 className="text-2xl sm:text-3xl font-black tracking-tight uppercase">Get These Deals Before They're Gone!</h3>
+              <div className="flex items-center gap-2">
+                {[{ val: h, label: "HRS" }, { val: m, label: "MIN" }, { val: s, label: "SEC" }].map((unit, i) => (
+                  <div key={unit.label} className="flex items-center gap-2">
+                    <div className="bg-black/30 border border-white/20 rounded-lg px-4 py-2 min-w-[64px] text-center">
+                      <div className="text-4xl font-black tabular-nums leading-none">{unit.val}</div>
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-primary-foreground/60 mt-1">{unit.label}</div>
+                    </div>
+                    {i < 2 && <span className="text-3xl font-black text-white/60 -mt-3">:</span>}
+                  </div>
+                ))}
+              </div>
               <Flame className="h-6 w-6 text-white/90 shrink-0" />
             </div>
-            <p className="text-primary-foreground/80 text-sm -mt-3">Inventory And Prices Updates Daily — These Prices Are Only Good Until The Timer Runs Out. Act now.</p>
-
-            {/* Countdown ticker */}
-            <div className="flex items-center gap-2">
-              {[{ val: h, label: "HRS" }, { val: m, label: "MIN" }, { val: s, label: "SEC" }].map((unit, i) => (
-                <div key={unit.label} className="flex items-center gap-2">
-                  <div className="bg-black/30 border border-white/20 rounded-lg px-4 py-2 min-w-[64px] text-center">
-                    <div className="text-4xl font-black tabular-nums leading-none">{unit.val}</div>
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-primary-foreground/60 mt-1">{unit.label}</div>
-                  </div>
-                  {i < 2 && <span className="text-3xl font-black text-white/60 -mt-3">:</span>}
-                </div>
-              ))}
+            <div className="-mt-3">
+              <h3 className="text-2xl sm:text-3xl font-black tracking-tight uppercase">Get These Deals Before They're Gone!</h3>
+              <p className="text-primary-foreground/80 text-sm mt-1">Inventory And Prices Update Daily — These Prices Are Only Good Until The Timer Runs Out. Act now.</p>
             </div>
 
             {/* CTA buttons */}
