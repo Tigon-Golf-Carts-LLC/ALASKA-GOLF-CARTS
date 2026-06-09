@@ -502,7 +502,7 @@ export default function Home() {
 
       {/* Shop by brand */}
       {brands && brands.length > 0 && (
-        <section className="py-12 border-b bg-card overflow-hidden" data-testid="section-brands">
+        <section className="py-12 border-b bg-card" data-testid="section-brands">
           <div className="mx-auto max-w-7xl px-4">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
               <div>
