@@ -146,6 +146,110 @@ function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string 
   );
 }
 
+function useIsDesktop() {
+  const [isDesktop, setIsDesktop] = useState(() => typeof window !== 'undefined' ? window.innerWidth >= 768 : true);
+  useEffect(() => {
+    const fn = () => setIsDesktop(window.innerWidth >= 768);
+    window.addEventListener('resize', fn);
+    return () => window.removeEventListener('resize', fn);
+  }, []);
+  return isDesktop;
+}
+
+const INV_DESKTOP_W = 258;
+const INV_MOBILE_W  = 208;
+const INV_D_CONFIGS: Record<number, CardConfig> = {
+  [-2]: { x: -554, y: 36, scale: 0.64, opacity: 0.26, z: 10 },
+  [-1]: { x: -288, y: 14, scale: 0.84, opacity: 0.62, z: 30 },
+  [0]:  { x: 0,    y: -20, scale: 1.08, opacity: 1.00, z: 50 },
+  [1]:  { x: 288,  y: 14, scale: 0.84, opacity: 0.62, z: 30 },
+  [2]:  { x: 554,  y: 36, scale: 0.64, opacity: 0.26, z: 10 },
+};
+const INV_M_CONFIGS: Record<number, CardConfig> = {
+  [-1]: { x: -220, y: 10, scale: 0.80, opacity: 0.52, z: 30 },
+  [0]:  { x: 0,    y: -14, scale: 1.10, opacity: 1.00, z: 50 },
+  [1]:  { x: 220,  y: 10, scale: 0.80, opacity: 0.52, z: 30 },
+};
+
+function InventoryCarousel({ carts, slugMap }: { carts: CartsResponse['carts']; slugMap?: SlugMap }) {
+  const [current, setCurrent] = useState(0);
+  const [, navigate] = useLocation();
+  const wasDragging = useRef(false);
+  const dragStart  = useRef<number | null>(null);
+  const isDesktop  = useIsDesktop();
+  const total      = carts.length;
+  const CW         = isDesktop ? INV_DESKTOP_W : INV_MOBILE_W;
+  const CFGS       = isDesktop ? INV_D_CONFIGS : INV_M_CONFIGS;
+  const HEIGHT     = isDesktop ? 480 : 420;
+
+  const goTo   = useCallback((i: number) => setCurrent(((i % total) + total) % total), [total]);
+  const goNext = useCallback(() => goTo(current + 1), [current, goTo]);
+  const goPrev = useCallback(() => goTo(current - 1), [current, goTo]);
+
+  useEffect(() => { const t = setInterval(goNext, 5000); return () => clearInterval(t); }, [goNext]);
+
+  const onPD = (e: React.PointerEvent) => { dragStart.current = e.clientX; wasDragging.current = false; };
+  const onPM = (e: React.PointerEvent) => { if (dragStart.current !== null && Math.abs(e.clientX - dragStart.current) > 8) wasDragging.current = true; };
+  const onPU = (e: React.PointerEvent) => {
+    if (dragStart.current === null) return;
+    const d = e.clientX - dragStart.current;
+    if (Math.abs(d) > 40) d < 0 ? goNext() : goPrev();
+    dragStart.current = null;
+  };
+
+  const cartUrl = (c: CartsResponse['carts'][0]) =>
+    slugMap?.idToSlug[c._id] ? `/golfcart/${slugMap.idToSlug[c._id]}` : `/golfcart/${c._id}`;
+
+  return (
+    <div className="relative select-none" onPointerDown={onPD} onPointerMove={onPM} onPointerUp={onPU} style={{ touchAction: 'none' }}>
+      <div className="relative w-full flex items-center justify-center" style={{ height: HEIGHT }}>
+        {carts.map((cart, i) => {
+          const off  = getOffset(i, current, total);
+          const cfg  = CFGS[off];
+          if (!cfg) return null;
+          const isCenter = off === 0;
+          return (
+            <div
+              key={cart._id}
+              className="absolute"
+              style={{
+                width: CW,
+                left: `calc(50% - ${CW / 2}px)`,
+                transform: `translateX(${cfg.x}px) translateY(${cfg.y}px) scale(${cfg.scale})`,
+                opacity: cfg.opacity,
+                zIndex: cfg.z,
+                transition: 'transform 0.44s cubic-bezier(0.25,0.46,0.45,0.94), opacity 0.44s ease',
+              }}
+              data-testid={`inv-card-${cart._id}`}
+            >
+              {!isCenter && (
+                <div
+                  className="absolute inset-0 z-10 cursor-pointer rounded-xl"
+                  onClick={(e) => { e.preventDefault(); e.stopPropagation(); if (!wasDragging.current) goTo(i); }}
+                />
+              )}
+              <div className={isCenter ? 'ring-2 ring-primary rounded-xl shadow-[0_0_36px_rgba(220,38,38,0.35)] cursor-pointer' : 'rounded-xl'}>
+                <CartCard cart={cart} slug={slugMap?.idToSlug[cart._id]} />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <button onClick={(e) => { e.stopPropagation(); goPrev(); }} className="absolute left-2 sm:left-4 top-[44%] -translate-y-1/2 z-[60] w-10 h-10 rounded-full bg-background/85 hover:bg-primary/80 hover:text-white border border-border flex items-center justify-center text-foreground transition-all shadow-md" data-testid="button-inv-prev">
+        <ChevronLeft className="h-5 w-5" />
+      </button>
+      <button onClick={(e) => { e.stopPropagation(); goNext(); }} className="absolute right-2 sm:right-4 top-[44%] -translate-y-1/2 z-[60] w-10 h-10 rounded-full bg-background/85 hover:bg-primary/80 hover:text-white border border-border flex items-center justify-center text-foreground transition-all shadow-md" data-testid="button-inv-next">
+        <ChevronRight className="h-5 w-5" />
+      </button>
+      <div className="flex items-center justify-center gap-1.5 mt-4">
+        {carts.map((_, i) => (
+          <button key={i} onClick={() => goTo(i)} className={`rounded-full transition-all duration-300 ${i === current ? 'w-6 h-2 bg-primary' : 'w-2 h-2 bg-foreground/25 hover:bg-foreground/45'}`} data-testid={`button-inv-dot-${i}`} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   const [, navigate] = useLocation();
 
@@ -524,13 +628,13 @@ export default function Home() {
       {/* Featured inventory */}
       <section className="py-12" data-testid="section-featured">
         <div className="mx-auto max-w-7xl px-4">
-          <div className="flex items-end justify-between mb-8">
+          <div className="flex items-end justify-between mb-6">
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">
                 {featured?.totalCarts ? `${featured.totalCarts.toLocaleString()} carts available` : "Fresh inventory"}
               </p>
               <h2 className="text-2xl font-extrabold">Latest Discounted Inventory</h2>
-              <p className="text-sm text-muted-foreground mt-1">Wholesale prices updated daily — don't miss a deal</p>
+              <p className="text-sm text-muted-foreground mt-1">Swipe or tap to browse — click center to view</p>
             </div>
             <Link href="/inventory">
               <Button variant="outline" className="hidden sm:flex font-semibold" data-testid="button-view-all">
@@ -539,13 +643,15 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {featuredLoading
-              ? Array.from({ length: 8 }).map((_, i) => <CartCardSkeleton key={i} />)
-              : featured?.carts.map((cart) => <CartCard key={cart._id} cart={cart} slug={slugMap?.idToSlug[cart._id]} />)}
-          </div>
+          {featuredLoading ? (
+            <div className="flex gap-4 justify-center py-8">
+              {Array.from({ length: 3 }).map((_, i) => <CartCardSkeleton key={i} />)}
+            </div>
+          ) : featured?.carts && featured.carts.length > 0 ? (
+            <InventoryCarousel carts={featured.carts} slugMap={slugMap} />
+          ) : null}
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-6">
             <Link href="/inventory">
               <Button size="lg" variant="outline" className="font-bold" data-testid="button-view-all-bottom">
                 View All Discounted Inventory <ChevronRight className="h-4 w-4 ml-1" />
