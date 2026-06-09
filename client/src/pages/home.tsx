@@ -168,8 +168,8 @@ export default function Home() {
       >
         {/* BG */}
         <div className="absolute inset-0">
-          <img src={heroBg} alt="" className="w-full h-full object-cover opacity-20" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/90" />
+          <img src={heroBg} alt="" className="w-full h-full object-cover opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/65" />
         </div>
 
         {/* Headline */}
