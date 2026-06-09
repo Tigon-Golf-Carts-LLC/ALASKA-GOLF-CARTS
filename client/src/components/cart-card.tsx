@@ -1,6 +1,5 @@
 import { Link } from "wouter";
-import { Phone, Zap, Fuel, Shield, Users } from "lucide-react";
-import { Card } from "@/components/ui/card";
+import { Phone, Zap, Fuel, Shield, Users, Tag } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -32,9 +31,12 @@ export function CartCard({ cart, slug }: CartCardProps) {
   const cartUrl = slug ? `/golfcart/${slug}` : `/golfcart/${cart._id}`;
 
   return (
-    <Card className="overflow-visible group hover-elevate" data-testid={`card-cart-${cart._id}`}>
+    <div
+      className="group rounded-md overflow-hidden border border-card-border bg-card shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 flex flex-col"
+      data-testid={`card-cart-${cart._id}`}
+    >
       <Link href={cartUrl}>
-        <div className="relative overflow-hidden rounded-t-md">
+        <div className="relative overflow-hidden">
           <img
             src={imageUrl}
             alt={title}
@@ -43,68 +45,80 @@ export function CartCard({ cart, slug }: CartCardProps) {
             onError={() => setImageError(true)}
             data-testid={`img-cart-${cart._id}`}
           />
-          <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
-            <Badge variant={isUsed ? "secondary" : "default"} data-testid={`badge-condition-${cart._id}`}>
-              {isUsed ? "Used" : "New"}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+
+          <div className="absolute top-0 left-0 right-0 flex items-start justify-between p-2.5">
+            <Badge
+              className={isUsed
+                ? "text-xs font-bold uppercase tracking-wide bg-amber-500 hover:bg-amber-500 text-white border-0 shadow"
+                : "text-xs font-bold uppercase tracking-wide bg-emerald-500 hover:bg-emerald-500 text-white border-0 shadow"
+              }
+              data-testid={`badge-condition-${cart._id}`}
+            >
+              {isUsed ? "Used" : "✦ New"}
             </Badge>
-            {isStreetLegal && (
-              <Badge variant="outline" className="bg-background/80 backdrop-blur-sm" data-testid={`badge-street-legal-${cart._id}`}>
-                <Shield className="h-3 w-3 mr-1" />
-                Street Legal
+            <div className="flex flex-col items-end gap-1">
+              <Badge variant="secondary" className="text-xs bg-black/60 text-white border-0 backdrop-blur-sm">
+                {isElectric ? <Zap className="h-3 w-3 mr-1 text-yellow-400" /> : <Fuel className="h-3 w-3 mr-1 text-orange-400" />}
+                {isElectric ? "Electric" : "Gas"}
               </Badge>
-            )}
-          </div>
-          <div className="absolute top-3 right-3">
-            <Badge variant="outline" className="bg-background/80 backdrop-blur-sm">
-              {isElectric ? <Zap className="h-3 w-3 mr-1" /> : <Fuel className="h-3 w-3 mr-1" />}
-              {isElectric ? "Electric" : "Gas"}
-            </Badge>
+              {isStreetLegal && (
+                <Badge variant="secondary" className="text-xs bg-black/60 text-white border-0 backdrop-blur-sm" data-testid={`badge-street-legal-${cart._id}`}>
+                  <Shield className="h-3 w-3 mr-1 text-blue-400" />
+                  Street Legal
+                </Badge>
+              )}
+            </div>
           </div>
         </div>
       </Link>
 
-      <div className="p-4 space-y-3">
+      <div className="flex flex-col flex-1 p-3.5">
         <Link href={cartUrl}>
-          <h3 className="font-semibold text-sm leading-tight line-clamp-2 hover:text-primary transition-colors" data-testid={`text-title-${cart._id}`}>
+          <h3 className="font-bold text-sm leading-snug line-clamp-2 hover:text-primary transition-colors mb-1.5" data-testid={`text-title-${cart._id}`}>
             {title}
           </h3>
         </Link>
 
-        {(cart.cartType?.year || passengers) && (
-          <div className="flex flex-wrap items-center gap-2">
-            {cart.cartType?.year && (
-              <span className="text-xs text-muted-foreground">{cart.cartType.year}</span>
-            )}
-            {passengers && (
-              <span className="inline-flex items-center text-xs text-muted-foreground">
-                <Users className="h-3 w-3 mr-1" />
-                {passengers}
-              </span>
-            )}
-          </div>
-        )}
+        <div className="flex flex-wrap items-center gap-2 mb-3">
+          {cart.cartType?.year && (
+            <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-0.5 rounded">{cart.cartType.year}</span>
+          )}
+          {passengers && (
+            <span className="inline-flex items-center text-xs text-muted-foreground">
+              <Users className="h-3 w-3 mr-1" />
+              {passengers} pass.
+            </span>
+          )}
+        </div>
 
-        <div className="flex items-center justify-between gap-2 pt-1">
-          <p className="text-lg font-bold text-primary" data-testid={`text-price-${cart._id}`}>
-            {price}
-          </p>
-          <a href={PHONE_TEL}>
-            <Button size="sm" data-testid={`button-call-${cart._id}`}>
-              <Phone className="h-3.5 w-3.5 mr-1.5" />
-              Call Now
-            </Button>
-          </a>
+        <div className="mt-auto">
+          <div className="flex items-center gap-1 mb-0.5">
+            <Tag className="h-3 w-3 text-primary" />
+            <span className="text-[10px] font-bold uppercase tracking-widest text-primary">Wholesale Price</span>
+          </div>
+          <div className="flex items-center justify-between gap-2">
+            <p className="text-xl font-extrabold text-primary leading-none" data-testid={`text-price-${cart._id}`}>
+              {price}
+            </p>
+            <a href={PHONE_TEL}>
+              <Button size="sm" className="text-xs font-bold shrink-0" data-testid={`button-call-${cart._id}`}>
+                <Phone className="h-3 w-3 mr-1" />
+                Call Now
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
-    </Card>
+    </div>
   );
 }
 
 export function CartCardSkeleton() {
   return (
-    <Card className="overflow-hidden">
+    <div className="rounded-md overflow-hidden border border-card-border bg-card">
       <Skeleton className="w-full aspect-[4/3]" />
-      <div className="p-4 space-y-3">
+      <div className="p-3.5 space-y-3">
         <Skeleton className="h-4 w-3/4" />
         <Skeleton className="h-3 w-1/2" />
         <div className="flex items-center justify-between pt-1">
@@ -112,6 +126,6 @@ export function CartCardSkeleton() {
           <Skeleton className="h-8 w-24" />
         </div>
       </div>
-    </Card>
+    </div>
   );
 }
