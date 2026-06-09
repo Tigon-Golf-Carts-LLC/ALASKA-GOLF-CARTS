@@ -65,6 +65,9 @@ export default function Home() {
   const [paused, setPaused] = useState(false);
   const [imgErrors, setImgErrors] = useState<Record<string, boolean>>({});
   const touchStartX = useRef<number | null>(null);
+  const dragStartX = useRef<number | null>(null);
+  const dragDelta = useRef(0);
+  const wasDragging = useRef(false);
 
   const slides = useMemo(() => {
     if (!featured?.carts?.length) return [];
@@ -107,10 +110,33 @@ export default function Home() {
       {/* ═══════════════  HERO COVERFLOW  ═══════════════ */}
       <section
         className="relative overflow-hidden flex flex-col"
-        style={{ minHeight: 720, background: '#07090f' }}
+        style={{ minHeight: 720, background: '#07090f', cursor: dragStartX.current !== null ? 'grabbing' : 'grab' }}
         onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
-        onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+        onMouseLeave={() => {
+          setPaused(false);
+          if (dragStartX.current !== null) {
+            if (Math.abs(dragDelta.current) > 40) dragDelta.current > 0 ? goNext() : goPrev();
+            dragStartX.current = null;
+            dragDelta.current = 0;
+          }
+        }}
+        onMouseDown={(e) => { dragStartX.current = e.clientX; dragDelta.current = 0; wasDragging.current = false; }}
+        onMouseMove={(e) => {
+          if (dragStartX.current === null) return;
+          dragDelta.current = dragStartX.current - e.clientX;
+          if (Math.abs(dragDelta.current) > 8) wasDragging.current = true;
+        }}
+        onMouseUp={() => {
+          if (dragStartX.current === null) return;
+          if (Math.abs(dragDelta.current) > 40) dragDelta.current > 0 ? goNext() : goPrev();
+          dragStartX.current = null;
+          dragDelta.current = 0;
+        }}
+        onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; wasDragging.current = false; }}
+        onTouchMove={(e) => {
+          if (touchStartX.current === null) return;
+          if (Math.abs(touchStartX.current - e.touches[0].clientX) > 8) wasDragging.current = true;
+        }}
         onTouchEnd={(e) => {
           if (touchStartX.current === null) return;
           const diff = touchStartX.current - e.changedTouches[0].clientX;
@@ -176,7 +202,7 @@ export default function Home() {
                       transition: 'transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.45s ease',
                       cursor: isCenter ? 'pointer' : 'pointer',
                     }}
-                    onClick={() => isCenter ? navigate(cartUrl(cart)) : goTo(i)}
+                    onClick={() => { if (wasDragging.current) return; isCenter ? navigate(cartUrl(cart)) : goTo(i); }}
                     data-testid={`slide-card-${cart._id}`}
                   >
                     <div
