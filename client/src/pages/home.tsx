@@ -259,8 +259,35 @@ function InventoryCarousel({ carts, slugMap }: { carts: CartsResponse['carts']; 
   );
 }
 
+function getSecondsUntilNextUpdate() {
+  const now = new Date();
+  const etStr = now.toLocaleString("en-US", {
+    timeZone: "America/New_York",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false,
+  });
+  const [h, m, s] = etStr.split(":").map(Number);
+  const currentSecs = h * 3600 + m * 60 + s;
+  const targetSecs = 22 * 3600 + 55 * 60;
+  let diff = targetSecs - currentSecs;
+  if (diff <= 0) diff += 86400;
+  return diff;
+}
+
+function formatCountdown(secs: number) {
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  const s = secs % 60;
+  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
+
 export default function Home() {
   const [, navigate] = useLocation();
+  const [countdown, setCountdown] = useState(() => getSecondsUntilNextUpdate());
+
+  useEffect(() => {
+    const id = setInterval(() => setCountdown(getSecondsUntilNextUpdate()), 1000);
+    return () => clearInterval(id);
+  }, []);
 
   const { data: featured, isLoading: featuredLoading } = useQuery<CartsResponse>({
     queryKey: ["/api/carts?pageNumber=0&pageSize=12"],
@@ -633,6 +660,33 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      {/* Urgency countdown banner */}
+      <section className="bg-primary/5 border-y border-primary/20">
+        <div className="mx-auto max-w-7xl px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="bg-primary rounded-full p-2 shrink-0">
+              <Flame className="h-5 w-5 text-white" />
+            </div>
+            <div>
+              <p className="text-sm font-extrabold uppercase tracking-wide">Don't Miss These Deals!</p>
+              <p className="text-xs text-muted-foreground">Inventory refreshes daily — prices may change. Call now to lock in your cart.</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 shrink-0">
+            <div className="text-center">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Next Update In</p>
+              <p className="text-3xl font-extrabold tabular-nums text-primary leading-none">{formatCountdown(countdown)}</p>
+            </div>
+            <a href={PHONE_TEL}>
+              <Button size="lg" className="font-bold whitespace-nowrap" data-testid="button-urgency-call">
+                <Phone className="h-4 w-4 mr-2" />
+                Call Now
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* New carts carousel */}
       <section className="py-12" data-testid="section-new-carts">
