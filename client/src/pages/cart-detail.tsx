@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "wouter";
-import { Phone, ChevronLeft, Zap, Fuel, Shield, Users, MapPin, Calendar, Gauge, Clock, Battery, Wrench, CheckCircle2 } from "lucide-react";
+import { Phone, ChevronLeft, Zap, Fuel, Shield, Users, MapPin, Calendar, Gauge, Clock, Battery, Wrench, CheckCircle2, Timer, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,7 +9,28 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { Cart, Store } from "@shared/schema";
 import { formatPrice, getAllCartImages, buildCartTitle, PHONE_NUMBER, PHONE_TEL, STATE_ABBREVIATIONS } from "@/lib/constants";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+function getSecondsUntilNextUpdate() {
+  const now = new Date();
+  const etStr = now.toLocaleString("en-US", {
+    timeZone: "America/New_York",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false,
+  });
+  const [h, m, s] = etStr.split(":").map(Number);
+  const currentSecs = h * 3600 + m * 60 + s;
+  const targetSecs = 22 * 3600 + 55 * 60;
+  let diff = targetSecs - currentSecs;
+  if (diff <= 0) diff += 86400;
+  return diff;
+}
+
+function formatCountdown(secs: number) {
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  const s = secs % 60;
+  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
 
 function SpecRow({ label, value, icon: Icon }: { label: string; value: string; icon?: any }) {
   return (
@@ -31,6 +52,12 @@ interface SlugMap {
 export default function CartDetail() {
   const { slug } = useParams<{ slug: string }>();
   const [selectedImage, setSelectedImage] = useState(0);
+  const [countdown, setCountdown] = useState(() => getSecondsUntilNextUpdate());
+
+  useEffect(() => {
+    const id = setInterval(() => setCountdown(getSecondsUntilNextUpdate()), 1000);
+    return () => clearInterval(id);
+  }, []);
 
   const { data: slugMap, isLoading: slugMapLoading } = useQuery<SlugMap>({
     queryKey: ["/api/slug-map"],
@@ -193,6 +220,26 @@ export default function CartDetail() {
                 <p className="text-sm text-muted-foreground">0% APR for 48 months</p>
               </div>
             )}
+          </div>
+
+          {/* Urgency / countdown banner */}
+          <div className="rounded-lg border border-primary/40 bg-primary/5 overflow-hidden">
+            <div className="bg-primary px-4 py-2 flex items-center gap-2">
+              <Flame className="h-4 w-4 text-white shrink-0" />
+              <span className="text-white text-xs font-bold uppercase tracking-wide">Don't Miss This Deal — Inventory Updates Soon!</span>
+            </div>
+            <div className="px-4 py-3 flex items-center justify-between gap-3">
+              <div>
+                <p className="text-xs text-muted-foreground font-medium">Next inventory update in</p>
+                <p className="text-2xl font-extrabold tabular-nums text-primary tracking-tight leading-none mt-0.5" data-testid="text-countdown">
+                  {formatCountdown(countdown)}
+                </p>
+              </div>
+              <div className="text-right">
+                <p className="text-xs font-bold text-foreground">This cart could be gone.</p>
+                <p className="text-xs text-muted-foreground">Call now to lock in your price!</p>
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col gap-2">
