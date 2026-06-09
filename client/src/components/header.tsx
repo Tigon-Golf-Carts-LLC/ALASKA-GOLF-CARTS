@@ -3,13 +3,40 @@ import { Phone, Menu, X, Sun, Moon, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/theme-provider";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logoImg from "@assets/discounted_golf_carts_(3)_1781021848486.png";
+
+function getSecondsUntilNextUpdate() {
+  const now = new Date();
+  const etStr = now.toLocaleString("en-US", {
+    timeZone: "America/New_York",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false,
+  });
+  const [h, m, s] = etStr.split(":").map(Number);
+  const currentSecs = h * 3600 + m * 60 + s;
+  const targetSecs = 22 * 3600 + 55 * 60;
+  let diff = targetSecs - currentSecs;
+  if (diff <= 0) diff += 86400;
+  return diff;
+}
+
+function formatCountdown(secs: number) {
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  const s = secs % 60;
+  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+}
 
 export function Header() {
   const [location] = useLocation();
   const { theme, toggleTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [countdown, setCountdown] = useState(() => getSecondsUntilNextUpdate());
+
+  useEffect(() => {
+    const id = setInterval(() => setCountdown(getSecondsUntilNextUpdate()), 1000);
+    return () => clearInterval(id);
+  }, []);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -28,7 +55,9 @@ export function Header() {
                 <span className="font-bold uppercase tracking-wider">Discounted to MSRP</span>
               </div>
               <span className="text-primary-foreground/60 hidden sm:block">|</span>
-              <span className="text-primary-foreground/85 hidden sm:block truncate">Discounted inventory updated daily at 10:55 PM EST</span>
+              <span className="text-primary-foreground/85 hidden sm:block truncate">
+                Next inventory update in <span className="font-bold tabular-nums">{formatCountdown(countdown)}</span>
+              </span>
             </div>
             <a href={PHONE_TEL} className="flex items-center gap-1.5 font-bold hover:opacity-80 transition-opacity shrink-0">
               <Phone className="h-3 w-3" />
