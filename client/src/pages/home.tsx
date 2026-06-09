@@ -406,22 +406,35 @@ export default function Home() {
 
       {/* Shop by brand */}
       {brands && brands.length > 0 && (
-        <section className="py-12 border-b" data-testid="section-brands">
+        <section className="py-14 border-b bg-card" data-testid="section-brands">
           <div className="mx-auto max-w-7xl px-4">
-            <div className="mb-6">
-              <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Browse by Make</p>
-              <h2 className="text-2xl font-extrabold">Shop by Brand</h2>
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-3">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Shop by Make</p>
+                <h2 className="text-2xl font-extrabold">Top Golf Cart Brands</h2>
+                <p className="text-sm text-muted-foreground mt-1">Click any brand to browse discounted inventory</p>
+              </div>
+              <Link href="/inventory">
+                <Button variant="outline" size="sm" className="font-semibold shrink-0" data-testid="button-all-brands">
+                  All Brands <ChevronRight className="h-4 w-4 ml-1" />
+                </Button>
+              </Link>
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3">
               {brands.map((brand) => (
                 <Link key={brand.key} href={`/inventory?make=${encodeURIComponent(brand.label)}`}>
-                  <Button
-                    variant="outline"
-                    className="h-auto py-2 px-5 font-semibold hover:border-primary hover:text-primary transition-colors"
+                  <div
+                    className="group relative flex items-center justify-between gap-2 rounded-lg border border-border bg-background hover:border-primary hover:bg-primary/5 transition-all duration-200 px-4 py-4 cursor-pointer"
                     data-testid={`button-brand-${brand.key}`}
                   >
-                    {brand.label}
-                  </Button>
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-md bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center shrink-0 transition-colors">
+                        <Tag className="h-4 w-4 text-primary" />
+                      </div>
+                      <span className="font-bold text-sm">{brand.label}</span>
+                    </div>
+                    <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
+                  </div>
                 </Link>
               ))}
             </div>
