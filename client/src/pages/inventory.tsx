@@ -162,7 +162,7 @@ export default function Inventory() {
           {/* Title row */}
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-base font-extrabold leading-none" data-testid="text-inventory-title">Golf Cart Inventory</h1>
+              <h1 className="text-base font-extrabold leading-none" data-testid="text-inventory-title">Discounted Golf Cart Inventory</h1>
               <p className="text-xs text-muted-foreground mt-0.5" data-testid="text-inventory-count">
                 {data ? `${data.totalCarts.toLocaleString()} discounted vehicles` : "Loading…"}
               </p>
