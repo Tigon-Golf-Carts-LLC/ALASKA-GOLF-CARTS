@@ -182,9 +182,7 @@ export default function Home() {
             Discounted<br /><span className="text-primary">Golf Carts.</span>
           </h1>
           <p className="text-white/60 text-sm sm:text-base max-w-lg mx-auto">
-            {featured?.totalCarts
-              ? `${featured.totalCarts.toLocaleString()} wholesale-priced carts — new and used — updated every day.`
-              : "Browse wholesale-priced new and used carts, updated every day."}
+            Wholesale MSRP Inventory — Updated Every Day.
           </p>
         </div>
 
