@@ -108,20 +108,20 @@ function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string 
               data-testid={`brand-card-${brand.key}`}
             >
               <div
-                className={`rounded-2xl overflow-hidden flex flex-col ${isCenter ? 'ring-2 ring-primary shadow-[0_0_32px_rgba(220,38,38,0.45)]' : ''}`}
-                style={{ background: '#111418', height: 172 }}
+                className={`rounded-2xl overflow-hidden flex flex-col bg-background border border-border ${isCenter ? 'ring-2 ring-primary shadow-[0_0_32px_rgba(220,38,38,0.35)]' : ''}`}
+                style={{ height: 172 }}
               >
-                <div className={`h-1.5 w-full ${isCenter ? 'bg-primary' : 'bg-white/10'}`} />
+                <div className={`h-1.5 w-full ${isCenter ? 'bg-primary' : 'bg-foreground/10'}`} />
                 <div className="flex-1 flex flex-col items-center justify-center px-4 py-3 relative overflow-hidden">
-                  <span className="absolute text-[80px] font-black leading-none select-none pointer-events-none" style={{ color: 'rgba(255,255,255,0.03)' }} aria-hidden>
+                  <span className="absolute text-[80px] font-black leading-none select-none pointer-events-none text-foreground/[0.04]" aria-hidden>
                     {brand.label.charAt(0)}
                   </span>
-                  <div className={`w-11 h-11 rounded-full flex items-center justify-center mb-2.5 ${isCenter ? 'bg-primary/20' : 'bg-white/8'}`}>
-                    <Tag className={`h-5 w-5 ${isCenter ? 'text-primary' : 'text-white/45'}`} />
+                  <div className={`w-11 h-11 rounded-full flex items-center justify-center mb-2.5 ${isCenter ? 'bg-primary/20' : 'bg-foreground/8'}`}>
+                    <Tag className={`h-5 w-5 ${isCenter ? 'text-primary' : 'text-foreground/40'}`} />
                   </div>
-                  <span className={`font-black text-[13px] text-center leading-tight mb-1 ${isCenter ? 'text-white' : 'text-white/65'}`}>{brand.label}</span>
+                  <span className={`font-black text-[13px] text-center leading-tight mb-1 ${isCenter ? 'text-foreground' : 'text-foreground/60'}`}>{brand.label}</span>
                   {isCenter && (
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-primary/80 flex items-center gap-0.5 mt-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-primary flex items-center gap-0.5 mt-1">
                       Shop Now <ChevronRight className="h-2.5 w-2.5" />
                     </span>
                   )}
@@ -131,15 +131,15 @@ function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string 
           );
         })}
       </div>
-      <button onClick={(e) => { e.stopPropagation(); goPrev(); }} className="absolute left-2 sm:left-6 top-[45%] -translate-y-1/2 z-[60] w-9 h-9 rounded-full bg-black/50 hover:bg-primary/80 border border-white/15 flex items-center justify-center text-white transition-all" data-testid="button-brand-prev">
+      <button onClick={(e) => { e.stopPropagation(); goPrev(); }} className="absolute left-2 sm:left-6 top-[45%] -translate-y-1/2 z-[60] w-9 h-9 rounded-full bg-background/80 hover:bg-primary/80 hover:text-white border border-border flex items-center justify-center text-foreground transition-all shadow-sm" data-testid="button-brand-prev">
         <ChevronLeft className="h-4 w-4" />
       </button>
-      <button onClick={(e) => { e.stopPropagation(); goNext(); }} className="absolute right-2 sm:right-6 top-[45%] -translate-y-1/2 z-[60] w-9 h-9 rounded-full bg-black/50 hover:bg-primary/80 border border-white/15 flex items-center justify-center text-white transition-all" data-testid="button-brand-next">
+      <button onClick={(e) => { e.stopPropagation(); goNext(); }} className="absolute right-2 sm:right-6 top-[45%] -translate-y-1/2 z-[60] w-9 h-9 rounded-full bg-background/80 hover:bg-primary/80 hover:text-white border border-border flex items-center justify-center text-foreground transition-all shadow-sm" data-testid="button-brand-next">
         <ChevronRight className="h-4 w-4" />
       </button>
       <div className="flex items-center justify-center gap-1.5 mt-3">
         {brands.map((_, i) => (
-          <button key={i} onClick={() => goTo(i)} className={`rounded-full transition-all duration-300 ${i === current ? 'w-5 h-1.5 bg-primary' : 'w-1.5 h-1.5 bg-white/25 hover:bg-white/45'}`} data-testid={`button-brand-dot-${i}`} />
+          <button key={i} onClick={() => goTo(i)} className={`rounded-full transition-all duration-300 ${i === current ? 'w-5 h-1.5 bg-primary' : 'w-1.5 h-1.5 bg-foreground/25 hover:bg-foreground/45'}`} data-testid={`button-brand-dot-${i}`} />
         ))}
       </div>
     </div>
