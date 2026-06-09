@@ -108,18 +108,18 @@ function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string 
               data-testid={`brand-card-${brand.key}`}
             >
               <div
-                className={`rounded-2xl overflow-hidden flex flex-col bg-background border border-border ${isCenter ? 'ring-2 ring-primary shadow-[0_0_32px_rgba(220,38,38,0.35)]' : ''}`}
+                className={`rounded-2xl overflow-hidden flex flex-col bg-background dark:bg-white border border-border ${isCenter ? 'ring-2 ring-primary shadow-[0_0_32px_rgba(220,38,38,0.35)]' : ''}`}
                 style={{ height: 172 }}
               >
-                <div className={`h-1.5 w-full ${isCenter ? 'bg-primary' : 'bg-foreground/10'}`} />
+                <div className={`h-1.5 w-full ${isCenter ? 'bg-primary' : 'bg-foreground/10 dark:bg-gray-200'}`} />
                 <div className="flex-1 flex flex-col items-center justify-center px-4 py-3 relative overflow-hidden">
-                  <span className="absolute text-[80px] font-black leading-none select-none pointer-events-none text-foreground/[0.04]" aria-hidden>
+                  <span className="absolute text-[80px] font-black leading-none select-none pointer-events-none text-foreground/[0.04] dark:text-gray-900/5" aria-hidden>
                     {brand.label.charAt(0)}
                   </span>
-                  <div className={`w-11 h-11 rounded-full flex items-center justify-center mb-2.5 ${isCenter ? 'bg-primary/20' : 'bg-foreground/8'}`}>
-                    <Tag className={`h-5 w-5 ${isCenter ? 'text-primary' : 'text-foreground/40'}`} />
+                  <div className={`w-11 h-11 rounded-full flex items-center justify-center mb-2.5 ${isCenter ? 'bg-primary/20' : 'bg-foreground/8 dark:bg-gray-100'}`}>
+                    <Tag className={`h-5 w-5 ${isCenter ? 'text-primary' : 'text-foreground/40 dark:text-gray-400'}`} />
                   </div>
-                  <span className={`font-black text-[13px] text-center leading-tight mb-1 ${isCenter ? 'text-foreground' : 'text-foreground/60'}`}>{brand.label}</span>
+                  <span className={`font-black text-[13px] text-center leading-tight mb-1 ${isCenter ? 'text-foreground dark:text-gray-900' : 'text-foreground/60 dark:text-gray-600'}`}>{brand.label}</span>
                   {isCenter && (
                     <span className="text-[10px] font-bold uppercase tracking-wider text-primary flex items-center gap-0.5 mt-1">
                       Shop Now <ChevronRight className="h-2.5 w-2.5" />
