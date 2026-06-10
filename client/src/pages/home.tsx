@@ -791,7 +791,7 @@ export default function Home() {
                     <MapPin className="h-4 w-4 text-primary" />
                   </div>
                   <div className="min-w-0">
-                    <h3 className="font-bold text-sm">{store.name}</h3>
+                    <h3 className="font-bold text-sm">Discounted Golf Carts in {store.address.city}</h3>
                     <p className="text-xs text-muted-foreground mt-0.5">
                       {store.address.address1}{store.address.address2 ? `, ${store.address.address2}` : ""}
                     </p>
