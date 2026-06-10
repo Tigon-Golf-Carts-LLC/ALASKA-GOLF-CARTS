@@ -102,7 +102,7 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
 
   return {
     title: "Discounted Golf Carts — Golf Carts for Sale",
-    description: "Golf carts for sale at wholesale prices. 14 locations, 13 brands, 0% APR financing. Call 1-888-840-4490.",
+    description: "Discounted Golf Carts - Don't Miss These Golf Cart Deals! Golf cart prices update nightly — Lock in today's wholesale MSRP before inventory changes.",
   };
 }
 
