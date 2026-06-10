@@ -109,17 +109,19 @@ export function Footer() {
       </div>
       <div className="bg-card border-t">
         <div className="mx-auto max-w-7xl px-4 py-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            {/* Brand */}
+            <div className="lg:col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <img src={logoImg} alt="Discounted Golf Carts" className="h-9 w-9 object-contain" />
                 <span className="text-base font-extrabold">Discounted <span className="text-primary">Golf Carts</span></span>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                New and used golf carts for sale at wholesale prices. 13 authorized brands — Club Car, EZGO, Yamaha, Denago, Evolution &amp; more. Inventory updated daily. 14 locations. 0% APR financing available.
+                New and used golf carts for sale at wholesale prices. 13 authorized brands. Inventory updated daily. 14 locations. 0% APR financing available.
               </p>
             </div>
 
+            {/* Quick Links */}
             <div>
               <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground mb-4">Quick Links</h3>
               <div className="space-y-2">
@@ -134,6 +136,7 @@ export function Footer() {
               </div>
             </div>
 
+            {/* Locations */}
             <div>
               <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground mb-4">Locations</h3>
               <div className="space-y-2">
@@ -146,8 +149,31 @@ export function Footer() {
               </div>
             </div>
 
+            {/* Policies */}
             <div>
-              <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground mb-4">Contact</h3>
+              <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground mb-4">Policies</h3>
+              <div className="space-y-2">
+                <Link href="/terms-conditions" className="block text-sm font-medium hover:text-primary transition-colors">Terms &amp; Conditions</Link>
+                <Link href="/return-policy" className="block text-sm font-medium hover:text-primary transition-colors">Return Policy</Link>
+                <Link href="/privacy-policy" className="block text-sm font-medium hover:text-primary transition-colors">Privacy Policy</Link>
+                <Link href="/delivery-policy" className="block text-sm font-medium hover:text-primary transition-colors">Delivery Policy</Link>
+                <Link href="/rental-policy" className="block text-sm font-medium hover:text-primary transition-colors">Rental Policy</Link>
+                <Link href="/storage-policy" className="block text-sm font-medium hover:text-primary transition-colors">Storage Policy</Link>
+              </div>
+            </div>
+
+            {/* Company & Contact */}
+            <div>
+              <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground mb-4">Company</h3>
+              <div className="space-y-2 mb-5">
+                <Link href="/publishing-policy" className="block text-sm font-medium hover:text-primary transition-colors">Publishing Policy</Link>
+                <Link href="/feedback-policy" className="block text-sm font-medium hover:text-primary transition-colors">Feedback Policy</Link>
+                <Link href="/corrections-policy" className="block text-sm font-medium hover:text-primary transition-colors">Corrections Policy</Link>
+                <Link href="/diversity-policy" className="block text-sm font-medium hover:text-primary transition-colors">Diversity Policy</Link>
+                <Link href="/ethics-policy" className="block text-sm font-medium hover:text-primary transition-colors">Ethics Policy</Link>
+                <Link href="/staffing-report" className="block text-sm font-medium hover:text-primary transition-colors">Staffing Report</Link>
+              </div>
+              <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground mb-3">Contact</h3>
               <a
                 href={PHONE_TEL}
                 className="inline-flex items-center gap-2 text-primary font-extrabold text-lg hover:opacity-80 transition-opacity"
@@ -156,15 +182,13 @@ export function Footer() {
                 <Phone className="h-5 w-5" />
                 {PHONE_NUMBER}
               </a>
-              <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
-                Call today for today's best price on any golf cart in stock — new, used, electric, LSV, or lifted. 0% APR financing available.
-              </p>
             </div>
           </div>
         </div>
 
-        <div className="border-t px-4 py-5 text-center text-xs text-muted-foreground">
+        <div className="border-t px-4 py-5 text-center text-xs text-muted-foreground space-y-1">
           <p>&copy; {new Date().getFullYear()} Discounted Golf Carts. All rights reserved. | discountedgolfcart.com</p>
+          <p>Discounted Golf Carts is a DBA of Tigon Golf Carts LLC. Inventory is sourced from multiple dealership entities including Tigon Golf Carts, Coastal Carts, and Tri State Carts.</p>
         </div>
       </div>
     </footer>
