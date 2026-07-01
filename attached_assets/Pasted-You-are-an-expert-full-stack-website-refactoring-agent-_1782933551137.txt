@@ -1,0 +1,97 @@
+You are an expert full-stack website refactoring agent. Your job is to fully convert this entire website into a neutral placeholder version with no remaining original brand, location, phone, URL, schema, metadata, or footer traces. THIS NEW SITE NEEDS TO BE FOR “ALASKA GOLF CARTS - New & Used Golf Cart Inventory” UPDATE ENTIRE WEBSITE / APP. UPDATE ALL PAGES, UPDATE ALL TEXT, UPDATE HEADERS. READ SPECS BELOW:
+
+========================
+CENTRAL CONFIG (EDIT HERE ONLY)
+========================
+BUSINESS_NAME = "ALASKA GOLF CARTS”
+PRIMARY_URL = "https://alaskagolfcarts.com"
+PHONE = "1-888-840-4490"
+EMAIL = "info@alaskagolfcarts.com"
+
+ADDRESS_FULL = "Alaska"
+CITY = "ALL"
+STATE = “Alaska"
+ZIP = "ALL”
+COUNTRY = "United States Of America", “US”
+
+SOCIAL_FACEBOOK = "https://www.facebook.com/AlaskaGolfCarts"
+SOCIAL_INSTAGRAM = "https://www.instagram.com/AlaskaGolfCarts"
+SOCIAL_YOUTUBE = "https://www.youtube.com/@AlaskaGolfCarts"
+
+
+LOGO_ALT = "ALASKA GOLF CARTS"
+DEFAULT_META_TITLE = “ALASKA GOLF CARTS - New & Used Golf Cart Inventory”
+DEFAULT_OG_IMAGE = "{use site icon}"
+
+SCHEMA_BUSINESS_TYPE = "LocalBusiness"
+SCHEMA_ID = "https://alaskagolfcarts.com#organization"
+
+REPLACEMENT_TEXT = "ALASKA GOLF CARTS"
+
+========================
+END CONFIG
+========================
+
+Primary replacement rules:
+1. Replace the original business name everywhere with BUSINESS_NAME
+2. Replace every original website URL (internal/external, canonical, OG, sitemap, schema, images if branded) with PRIMARY_URL or appropriate CONFIG value
+3. Replace every phone number with PHONE
+4. Replace all addresses, cities, states, ZIPs, maps, service areas, and location references with CONFIG values
+5. Replace all emails with EMAIL
+6. Replace all social links with the SOCIAL_* values
+7. Replace all logo alt text, image branding, and media references using LOGO_ALT and neutral naming
+8. Rename all location-based files, folders, slugs, routes, and templates to neutral names
+9. Update ALL visible text:
+   - Titles, headers, paragraphs, buttons, menus, breadcrumbs, forms, CTAs
+10. Update ALL SEO + metadata:
+   - Meta titles/descriptions (use DEFAULT_META_TITLE / DEFAULT_META_DESCRIPTION when needed)
+   - Canonical URLs
+   - OpenGraph + Twitter tags
+   - Robots + sitemap references
+11. Update ALL structured data:
+   - JSON-LD (Organization, LocalBusiness, Product, FAQ, Breadcrumb, etc.)
+   - Replace schema IDs with SCHEMA_ID
+   - Replace business type with SCHEMA_BUSINESS_TYPE
+12. Remove ALL original fingerprints:
+   - Comments
+   - Variable names
+   - CSS classes if branded
+   - Config values
+   - Analytics labels
+   - Footer credits
+   - Hidden metadata
+
+Critical quality requirements:
+- ZERO traces of the original site
+- ZERO original brand mentions
+- ZERO original URLs
+- ZERO original phone numbers
+- ZERO original addresses or locations
+- ZERO original schema IDs or structured data traces
+- ZERO footer fingerprints
+- Maintain full functionality
+
+Process:
+1. Scan entire project
+2. Identify all files with brand/location/SEO/schema data
+3. Replace using CENTRAL CONFIG values only
+4. Rename location-based files and update all references
+5. Re-scan for missed values
+6. Fix broken links, imports, routes
+7. Ensure build passes (if applicable)
+8. Verify 100% replacement coverage
+
+Final output report must include:
+- Files updated
+- Files renamed
+- Metadata updated
+- Schema updated
+- URLs replaced
+- Any remaining risks
+
+Update Locations to be only all these counties in FLORIDA:
+Alachua County, Baker County, Bay County, Bradford County, Brevard County, Broward County, Calhoun County, Charlotte County, Citrus County, Clay County, Collier County, Columbia County, DeSoto County, Dixie County, Duval County, Escambia County, Flagler County, Franklin County, Gadsden County, Gilchrist County, Glades County, Gulf County, Hamilton County, Hardee County, Hendry County, Hernando County, Highlands County, Hillsborough County, Holmes County, Indian River County, Jackson County, Jefferson County, Lafayette County, Lake County, Lee County, Leon County, Levy County, Liberty County, Madison County, Manatee County, Marion County, Martin County, Miami-Dade County, Monroe County, Nassau County, Okaloosa County, Okeechobee County, Orange County, Osceola County, Palm Beach County, Pasco County, Pinellas County, Polk County, Putnam County, St. Johns County, St. Lucie County, Santa Rosa County, Sarasota County, Seminole County, Sumter County, Suwannee County, Taylor County, Union County, Volusia County, Wakulla County, Walton County, Washington County. 
+
+Final success standard:
+The website must be fully converted using ONLY values from the CENTRAL CONFIG section, with zero remaining references to the original site.
+
