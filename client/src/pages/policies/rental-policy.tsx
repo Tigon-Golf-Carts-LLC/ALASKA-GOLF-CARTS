@@ -5,9 +5,9 @@ export default function RentalPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Rental Policy | Discounted Golf Carts"
-        description="Golf cart rental terms and conditions at Discounted Golf Carts."
-        canonical="https://discountedgolfcart.com/rental-policy"
+        title="Rental Policy | Alaska Golf Carts"
+        description="Golf cart rental terms and conditions at Alaska Golf Carts."
+        canonical="https://alaskagolfcarts.com/rental-policy"
       />
       <h1 className="text-3xl font-extrabold mb-2">Rental Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>
@@ -15,12 +15,12 @@ export default function RentalPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Rental Availability</h2>
-          <p className="text-muted-foreground leading-relaxed">Golf cart rentals are available at select Discounted Golf Carts locations. Rental availability, pricing, and unit selection vary by location. Please call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or visit your nearest location to inquire about current rental inventory and rates.</p>
+          <p className="text-muted-foreground leading-relaxed">Golf cart rentals are available at select Alaska Golf Carts locations. Rental availability, pricing, and unit selection vary by location. Please call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or visit your nearest location to inquire about current rental inventory and rates.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold mb-3">Eligibility</h2>
-          <p className="text-muted-foreground leading-relaxed">Renters must be at least 18 years of age and possess a valid government-issued photo ID. A valid credit or debit card is required at the time of rental for the security deposit. Discounted Golf Carts reserves the right to refuse rental to any individual at its discretion.</p>
+          <p className="text-muted-foreground leading-relaxed">Renters must be at least 18 years of age and possess a valid government-issued photo ID. A valid credit or debit card is required at the time of rental for the security deposit. Alaska Golf Carts reserves the right to refuse rental to any individual at its discretion.</p>
         </section>
 
         <section>
@@ -40,7 +40,7 @@ export default function RentalPolicy() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">Damage & Liability</h2>
-          <p className="text-muted-foreground leading-relaxed">The renter is responsible for all damage to the cart that occurs during the rental period, regardless of fault, except for pre-existing damage documented at the time of rental. Renters are strongly encouraged to carry personal liability insurance. Discounted Golf Carts assumes no liability for accidents, injuries, or property damage arising from the use of a rental unit.</p>
+          <p className="text-muted-foreground leading-relaxed">The renter is responsible for all damage to the cart that occurs during the rental period, regardless of fault, except for pre-existing damage documented at the time of rental. Renters are strongly encouraged to carry personal liability insurance. Alaska Golf Carts assumes no liability for accidents, injuries, or property damage arising from the use of a rental unit.</p>
         </section>
 
         <section>

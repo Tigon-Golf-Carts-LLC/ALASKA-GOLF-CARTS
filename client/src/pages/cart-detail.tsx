@@ -80,7 +80,7 @@ export default function CartDetail() {
   if (isLoading) {
     return (
       <div className="mx-auto max-w-7xl px-4 py-6">
-        <SeoHead title="Golf Cart for Sale | Discounted Golf Carts" description="Golf cart for sale at Discounted Golf Carts. 0% APR financing. Call 1-888-840-4490." />
+        <SeoHead title="Golf Cart for Sale | Alaska Golf Carts" description="Golf cart for sale at Alaska Golf Carts. 0% APR financing. Call 1-888-840-4490." />
         <Skeleton className="h-6 w-32 mb-6" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <Skeleton className="aspect-[4/3] rounded-md" />
@@ -98,7 +98,7 @@ export default function CartDetail() {
   if (error || !cart) {
     return (
       <div className="mx-auto max-w-7xl px-4 py-16 text-center">
-        <SeoHead title="Cart Not Found | Discounted Golf Carts" description="This golf cart may no longer be available. Browse our updated inventory at Discounted Golf Carts." canonical="https://discountedgolfcart.com/inventory" />
+        <SeoHead title="Cart Not Found | Alaska Golf Carts" description="This golf cart may no longer be available. Browse our updated inventory at Alaska Golf Carts." canonical="https://alaskagolfcarts.com/inventory" />
         <h1 className="text-2xl font-bold mb-4">Cart Not Found</h1>
         <p className="text-muted-foreground mb-6">This vehicle may no longer be available.</p>
         <Link href="/inventory">
@@ -124,14 +124,8 @@ export default function CartDetail() {
   const passengers = cart.cartAttributes?.passengers || "";
   const images = getAllCartImages(cart.imageUrls);
 
-  const storeId = cart.cartLocation?.locationId;
-  const store = stores?.find((s) => s.storeId === storeId);
-  const locationStr = store
-    ? `${store.address.city}, ${STATE_ABBREVIATIONS[store.address.state || ""] || store.address.state || ""}`
-    : "";
-
-  const detailTitle = `${isUsed ? "Used" : "New"} ${[year, make, model].filter(Boolean).join(" ")} Golf Cart for Sale | Discounted Golf Carts`;
-  const detailDesc = `${isUsed ? "Used" : "New"} ${[year, make, model].filter(Boolean).join(" ")} golf cart${color ? ` in ${color}` : ""}${numericPrice ? ` for $${numericPrice.toLocaleString()}` : ""}. 0% APR financing at Discounted Golf Carts. Call 1-888-840-4490.`;
+  const detailTitle = `${isUsed ? "Used" : "New"} ${[year, make, model].filter(Boolean).join(" ")} Golf Cart for Sale | Alaska Golf Carts`;
+  const detailDesc = `${isUsed ? "Used" : "New"} ${[year, make, model].filter(Boolean).join(" ")} golf cart${color ? ` in ${color}` : ""}${numericPrice ? ` for $${numericPrice.toLocaleString()}` : ""}. 0% APR financing at Alaska Golf Carts. Call 1-888-840-4490.`;
   const seoImageUrl = images[0] !== COMING_SOON_IMAGE ? images[0] : undefined;
   const vehicleSchema: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -139,7 +133,7 @@ export default function CartDetail() {
     "name": [year, make, model, color].filter(Boolean).join(" ") || "Golf Cart",
     "fuelType": isElectric ? "Electric" : "Gasoline",
     "itemCondition": isUsed ? "https://schema.org/UsedCondition" : "https://schema.org/NewCondition",
-    "url": `https://discountedgolfcart.com/golfcart/${slug}`,
+    "url": `https://alaskagolfcarts.com/golfcart/${slug}`,
     "description": detailDesc,
   };
   if (make) vehicleSchema["brand"] = { "@type": "Brand", "name": make };
@@ -152,8 +146,8 @@ export default function CartDetail() {
     "@type": "Offer",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
-    "url": `https://discountedgolfcart.com/golfcart/${slug}`,
-    "seller": { "@type": "AutoDealer", "name": "Discounted Golf Carts", "url": "https://discountedgolfcart.com", "telephone": "1-888-840-4490" },
+    "url": `https://alaskagolfcarts.com/golfcart/${slug}`,
+    "seller": { "@type": "AutoDealer", "name": "Alaska Golf Carts", "url": "https://alaskagolfcarts.com", "telephone": "1-888-840-4490" },
   };
   if (numericPrice > 0) offersObj["price"] = numericPrice;
   vehicleSchema["offers"] = offersObj;
@@ -163,7 +157,7 @@ export default function CartDetail() {
       <SeoHead
         title={detailTitle}
         description={detailDesc}
-        canonical={`https://discountedgolfcart.com/golfcart/${slug}`}
+        canonical={`https://alaskagolfcarts.com/golfcart/${slug}`}
         ogImage={seoImageUrl}
         schema={vehicleSchema}
       />
@@ -221,13 +215,6 @@ export default function CartDetail() {
           <div>
             {year && <span className="text-sm text-muted-foreground">{year}</span>}
             <h1 className="text-2xl sm:text-3xl font-bold mt-1" data-testid="text-cart-title">{title}</h1>
-            {locationStr && (
-              <div className="flex items-center gap-1.5 text-sm text-muted-foreground mt-2">
-                <MapPin className="h-4 w-4 text-primary" />
-                {locationStr}
-                {store && <span>- {store.name}</span>}
-              </div>
-            )}
           </div>
 
           <div className="flex flex-wrap items-center gap-2">

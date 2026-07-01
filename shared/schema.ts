@@ -131,6 +131,6 @@ export type CartColor = z.infer<typeof CartColorSchema>;
 export type GetCartsRequest = z.infer<typeof GetCartsRequestSchema>;
 
 export const S3_CARTS_URL = "https://s3.amazonaws.com/prod.docs.s3/carts/";
-export const COMING_SOON_IMAGE = "https://tigongolfcarts.com/wp-content/uploads/2024/11/TIGON-GOLF-CARTS-IMAGES-COMING-SOON.jpg";
+export const COMING_SOON_IMAGE = "";
 export const PHONE_NUMBER = "1-888-840-4490";
 export const PHONE_TEL = "tel:1-888-840-4490";

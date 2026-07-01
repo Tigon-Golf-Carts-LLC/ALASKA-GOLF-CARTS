@@ -40,7 +40,7 @@ export function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/inventory", label: "Discounted Inventory" },
+    { href: "/inventory", label: "Inventory" },
     { href: "/financing", label: "Financing" },
     { href: "/service-area", label: "Locations" },
     { href: "/faq", label: "FAQ" },
@@ -54,7 +54,7 @@ export function Header() {
             <div className="flex items-center gap-3 overflow-hidden">
               <div className="flex items-center gap-1.5 shrink-0">
                 <Tag className="h-3 w-3" />
-                <span className="font-bold uppercase tracking-wider">Discounted to MSRP</span>
+                <span className="font-bold uppercase tracking-wider">Wholesale Pricing</span>
               </div>
               <span className="text-primary-foreground/60 hidden sm:block">|</span>
               <span className="text-primary-foreground/85 hidden sm:block truncate">
@@ -73,12 +73,12 @@ export function Header() {
           <div className="flex h-16 items-center justify-between gap-4">
             <Link href="/" data-testid="link-home">
               <div className="flex items-center gap-2.5">
-                <img src={logoImg} alt="Discounted Golf Carts" className="h-10 w-10 object-contain" />
+                <img src={logoImg} alt="Alaska Golf Carts" className="h-10 w-10 object-contain" />
                 <div className="leading-tight">
                   <span className="text-lg font-extrabold tracking-tight block">
-                    Discounted <span className="text-primary">Golf Carts</span>
+                    Alaska <span className="text-primary">Golf Carts</span>
                   </span>
-                  <span className="text-[10px] text-muted-foreground font-medium tracking-widest uppercase hidden sm:block">discountedgolfcarts.com</span>
+                  <span className="text-[10px] text-muted-foreground font-medium tracking-widest uppercase hidden sm:block">alaskagolfcarts.com</span>
                 </div>
               </div>
             </Link>

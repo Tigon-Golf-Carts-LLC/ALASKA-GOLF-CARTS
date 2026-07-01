@@ -269,21 +269,6 @@ export function FilterContent({ filters, onFiltersChange, totalCarts }: Inventor
           />
         ))}
       </FilterSection>
-      <Separator />
-
-      {stores && stores.length > 0 && (
-        <FilterSection title="Location">
-          {stores.map((store) => (
-            <CheckboxItem
-              key={store.storeId}
-              label={`${store.address.city || ""}, ${STATE_ABBREVIATIONS[store.address.state || ""] || store.address.state || ""}`}
-              checked={filters.storeIds.includes(store.storeId)}
-              onCheckedChange={() => update({ storeIds: toggleArray(filters.storeIds, store.storeId) })}
-              testId={`filter-store-${store.storeId}`}
-            />
-          ))}
-        </FilterSection>
-      )}
     </div>
   );
 }

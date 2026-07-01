@@ -4,9 +4,9 @@ export default function DiversityPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Diversity Policy | Discounted Golf Carts"
-        description="Diversity, equity, and inclusion policy for Discounted Golf Carts and Tigon Golf Carts LLC."
-        canonical="https://discountedgolfcart.com/diversity-policy"
+        title="Diversity Policy | Alaska Golf Carts"
+        description="Diversity, equity, and inclusion policy for Alaska Golf Carts."
+        canonical="https://alaskagolfcarts.com/diversity-policy"
       />
       <h1 className="text-3xl font-extrabold mb-2">Diversity Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>
@@ -14,7 +14,7 @@ export default function DiversityPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Our Commitment</h2>
-          <p className="text-muted-foreground leading-relaxed">Discounted Golf Carts and its parent company Tigon Golf Carts LLC are committed to building and maintaining a diverse, equitable, and inclusive workplace and customer environment. We believe that diversity of background, experience, and perspective makes our company stronger and better serves our customers across all 14 locations.</p>
+          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts is committed to building and maintaining a diverse, equitable, and inclusive workplace and customer environment. We believe that diversity of background, experience, and perspective makes our company stronger and better serves our customers across the state of Florida.</p>
         </section>
 
         <section>

@@ -5,9 +5,9 @@ export default function ReturnPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Return Policy | Discounted Golf Carts"
-        description="Return and exchange policy for golf cart purchases at Discounted Golf Carts."
-        canonical="https://discountedgolfcart.com/return-policy"
+        title="Return Policy | Alaska Golf Carts"
+        description="Return and exchange policy for golf cart purchases at Alaska Golf Carts."
+        canonical="https://alaskagolfcarts.com/return-policy"
       />
       <h1 className="text-3xl font-extrabold mb-2">Return Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>
@@ -15,7 +15,7 @@ export default function ReturnPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">All Sales Are Final</h2>
-          <p className="text-muted-foreground leading-relaxed">All golf cart sales at Discounted Golf Carts are considered final upon execution of a signed purchase agreement and receipt of payment or financing approval. Due to the nature of vehicle sales and the significant logistics involved in golf cart delivery and processing, we do not accept returns for buyer's remorse or change of mind.</p>
+          <p className="text-muted-foreground leading-relaxed">All golf cart sales at Alaska Golf Carts are considered final upon execution of a signed purchase agreement and receipt of payment or financing approval. Due to the nature of vehicle sales and the significant logistics involved in golf cart delivery and processing, we do not accept returns for buyer's remorse or change of mind.</p>
         </section>
 
         <section>
@@ -40,7 +40,7 @@ export default function ReturnPolicy() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">Contact Us</h2>
-          <p className="text-muted-foreground leading-relaxed">To discuss a return, defect claim, or warranty issue, please contact us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or visit any of our 14 retail locations.</p>
+          <p className="text-muted-foreground leading-relaxed">To discuss a return, defect claim, or warranty issue, please contact us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> and our Florida team will assist you.</p>
         </section>
       </div>
     </div>

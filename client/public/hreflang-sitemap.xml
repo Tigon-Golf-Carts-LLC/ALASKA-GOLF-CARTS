@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Discounted Golf Carts — Hreflang Sitemap (en-US) -->
-<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<!-- Alaska Golf Carts — Hreflang Sitemap (en-US) -->
+<!-- Website: https://alaskagolfcarts.com | Phone: 1-888-840-4490 -->
 <!-- Last Updated: 2026-06-09 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://discountedgolfcart.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://discountedgolfcart.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://discountedgolfcart.com/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://discountedgolfcart.com/"/>
+    <loc>https://alaskagolfcarts.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://alaskagolfcarts.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alaskagolfcarts.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alaskagolfcarts.com/"/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/inventory</loc>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://discountedgolfcart.com/inventory"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://discountedgolfcart.com/inventory"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://discountedgolfcart.com/inventory"/>
+    <loc>https://alaskagolfcarts.com/inventory</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://alaskagolfcarts.com/inventory"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alaskagolfcarts.com/inventory"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alaskagolfcarts.com/inventory"/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/financing</loc>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://discountedgolfcart.com/financing"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://discountedgolfcart.com/financing"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://discountedgolfcart.com/financing"/>
+    <loc>https://alaskagolfcarts.com/financing</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://alaskagolfcarts.com/financing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alaskagolfcarts.com/financing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alaskagolfcarts.com/financing"/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/service-area</loc>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://discountedgolfcart.com/service-area"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://discountedgolfcart.com/service-area"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://discountedgolfcart.com/service-area"/>
+    <loc>https://alaskagolfcarts.com/service-area</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://alaskagolfcarts.com/service-area"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alaskagolfcarts.com/service-area"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alaskagolfcarts.com/service-area"/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/faq</loc>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://discountedgolfcart.com/faq"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://discountedgolfcart.com/faq"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://discountedgolfcart.com/faq"/>
+    <loc>https://alaskagolfcarts.com/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://alaskagolfcarts.com/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alaskagolfcarts.com/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alaskagolfcarts.com/faq"/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/about</loc>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://discountedgolfcart.com/about"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://discountedgolfcart.com/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://discountedgolfcart.com/about"/>
+    <loc>https://alaskagolfcarts.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://alaskagolfcarts.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alaskagolfcarts.com/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://alaskagolfcarts.com/about"/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

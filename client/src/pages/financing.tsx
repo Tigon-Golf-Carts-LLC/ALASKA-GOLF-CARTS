@@ -8,25 +8,25 @@ import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 const FINANCING_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "url": "https://discountedgolfcart.com/financing",
-  "name": "Golf Cart Financing — 0% APR Up to 48 Months | Discounted Golf Carts",
+  "url": "https://alaskagolfcarts.com/financing",
+  "name": "Golf Cart Financing — 0% APR Up to 48 Months | Alaska Golf Carts",
   "description": "Apply for golf cart financing through six lending partners. 0% APR options available. Quick approvals. New and used carts, LSVs, and NEVs. Call 1-888-840-4490.",
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://discountedgolfcart.com" },
-      { "@type": "ListItem", "position": 2, "name": "Financing", "item": "https://discountedgolfcart.com/financing" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alaskagolfcarts.com" },
+      { "@type": "ListItem", "position": 2, "name": "Financing", "item": "https://alaskagolfcarts.com/financing" }
     ]
   },
   "mainEntity": {
     "@type": "Service",
     "name": "Golf Cart Financing",
-    "provider": { "@id": "https://discountedgolfcart.com/#organization" },
+    "provider": { "@id": "https://alaskagolfcarts.com/#organization" },
     "description": "Golf cart financing through six lending partners. 0% APR available, terms up to 48 months, quick approval for new and used golf carts.",
     "offers": {
       "@type": "Offer",
       "description": "0% APR financing on golf carts, terms up to 48 months",
-      "seller": { "@id": "https://discountedgolfcart.com/#organization" }
+      "seller": { "@id": "https://alaskagolfcarts.com/#organization" }
     }
   }
 };
@@ -37,42 +37,36 @@ const financingPartners = [
     heading: "Prequalify Now!",
     description: "Get prequalified with no impact to your credit.*",
     url: "https://prequalify.sheffieldfinancial.com/Apply/Dealer/56712?source=web",
-    imageUrl: "https://tigongolfcarts.com/wp-content/uploads/2024/08/Sheffield-BBT-And-TIGON-Golf-Carts.jpg",
   },
   {
     name: "BLI Heartland",
     heading: "Rent To Own",
     description: "Helping Golf Cart Customers Achieve Ownership.*",
-    url: "https://blirentals.com/app/TIGON_GOLFCARTS_LLC",
-    imageUrl: "https://tigongolfcarts.com/wp-content/uploads/2024/08/RENT-TO-OWN-Golf-Carts-BLI-Heartland-And-TIGON-Golf-Carts.jpg",
+    url: "https://blirentals.com",
   },
   {
     name: "DLL Financial Solutions",
     heading: "DLL Financial Solutions",
     description: "Get the lowest APR without hidden fees.*",
     url: "https://applynow-cica-prd.dllgroup.com/?entityId=4&dealerCode=015639",
-    imageUrl: "https://tigongolfcarts.com/wp-content/uploads/2024/08/DLL-Financial-Solutions-And-TIGON-Golf-Carts.jpg",
   },
   {
     name: "Roadrunner / Octane",
     heading: "Consumer Financing",
     description: "Get Ready To Ride With Consumer Financing.",
     url: "https://octane.co/flex/034170",
-    imageUrl: "https://tigongolfcarts.com/wp-content/uploads/2024/08/Roadrunner-Financial-Octane-And-Tigon-Golf-Carts-1.jpg",
   },
   {
     name: "Univest Capital",
     heading: "Univest Capital",
     description: "Customized a solution for your specific business needs.",
-    url: "https://form.jotform.com/UnivestCapital/credit-application-bakos?utm_source=TIGON+Golf+Carts&utm_medium=Financing&utm_campaign=Business&utm_term=Best+Golf+Cart+Financing",
-    imageUrl: "https://tigongolfcarts.com/wp-content/uploads/2025/04/Univest-capital-2.jpg",
+    url: "https://form.jotform.com/UnivestCapital/credit-application-bakos?utm_source=Alaska+Golf+Carts&utm_medium=Financing&utm_campaign=Business&utm_term=Best+Golf+Cart+Financing",
   },
   {
     name: "Dealer Direct",
     heading: "Dealer Direct Financing",
     description: "Buy Now, Pay Later With Dealer Direct Financing.*",
     url: "https://dealerdirect.apptraker.com/my/guest?dealer=10735",
-    imageUrl: "https://tigongolfcarts.com/wp-content/uploads/2024/11/trio-capital-leanding-And-TIGON-Golf-Carts.jpg",
   },
 ];
 
@@ -103,9 +97,9 @@ export default function Financing() {
   return (
     <div className="min-h-screen">
       <SeoHead
-        title="Golf Cart Financing — 0% APR Up to 48 Months | Discounted Golf Carts"
-        description="Apply for golf cart financing at Discounted Golf Carts. 0% APR options, six lending partners, terms up to 48 months. New and used carts, LSVs, and NEVs. Call 1-888-840-4490."
-        canonical="https://discountedgolfcart.com/financing"
+        title="Golf Cart Financing — 0% APR Up to 48 Months | Alaska Golf Carts"
+        description="Apply for golf cart financing at Alaska Golf Carts. 0% APR options, six lending partners, terms up to 48 months. New and used carts, LSVs, and NEVs. Call 1-888-840-4490."
+        canonical="https://alaskagolfcarts.com/financing"
         schema={FINANCING_SCHEMA}
       />
 
@@ -130,10 +124,10 @@ export default function Financing() {
               className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4"
               data-testid="text-financing-intro"
             >
-              Discounted Golf Carts offers financing on new golf carts, used golf carts, street-legal LSVs, and neighborhood electric vehicles (NEVs) through six lending partners. Programs include 0% APR for qualified buyers, rent-to-own for a path to ownership, and business financing for commercial fleets. Terms run up to 48 months. Most applications receive a decision in minutes.
+              Alaska Golf Carts offers financing on new golf carts, used golf carts, street-legal LSVs, and neighborhood electric vehicles (NEVs) through six lending partners. Programs include 0% APR for qualified buyers, rent-to-own for a path to ownership, and business financing for commercial fleets. Terms run up to 48 months. Most applications receive a decision in minutes.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> to discuss which financing program fits your budget, or apply directly through any of the six partner portals below. Available at all <Link href="/service-area" className="text-primary hover:underline">14 dealership locations</Link>.
+              Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> to discuss which financing program fits your budget, or apply directly through any of the six partner portals below. Available <Link href="/service-area" className="text-primary hover:underline">across all of Florida</Link>.
             </p>
           </div>
         </div>
@@ -183,13 +177,12 @@ export default function Financing() {
                   rel="noopener noreferrer"
                   className="block"
                 >
-                  <img
-                    src={partner.imageUrl}
-                    alt={`${partner.name} golf cart financing`}
-                    className="w-full h-48 object-cover rounded-t-md"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <div className="w-full h-48 rounded-t-md bg-gradient-to-br from-primary/15 via-primary/5 to-transparent flex flex-col items-center justify-center gap-3 border-b">
+                    <div className="w-14 h-14 rounded-xl bg-primary/15 flex items-center justify-center">
+                      <CreditCard className="w-7 h-7 text-primary" />
+                    </div>
+                    <span className="text-lg font-extrabold tracking-tight text-center px-4">{partner.name}</span>
+                  </div>
                 </a>
                 <div className="p-5 flex flex-col flex-1">
                   <h3 className="text-lg font-semibold mb-1" data-testid={`text-partner-name-${partner.name.toLowerCase().replace(/[\s\/]/g, "-")}`}>
@@ -219,7 +212,7 @@ export default function Financing() {
       <section className="py-10 md:py-14 bg-card border-t">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-xl md:text-2xl font-bold mb-4">
-            How Does Golf Cart Financing Work at Discounted Golf Carts?
+            How Does Golf Cart Financing Work at Alaska Golf Carts?
           </h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-5">
             Choose a cart from the <Link href="/inventory" className="text-primary hover:underline">inventory page</Link>, then call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or apply online through one of the six partner portals above. Once approved, financing terms are set directly with the lender. Monthly payment amounts depend on the purchase price, term length (up to 48 months), and the program selected. All financing is subject to credit approval.

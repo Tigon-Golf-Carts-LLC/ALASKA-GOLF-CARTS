@@ -7,7 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { CartCard, CartCardSkeleton } from "@/components/cart-card";
 import type { CartsResponse, Store } from "@shared/schema";
 import { PHONE_NUMBER, PHONE_TEL, formatPrice, getCartImageUrl, buildCartTitle } from "@/lib/constants";
-import heroBg from "@assets/DISCOUNTED_GOLF_CARTS_DEALERSHIP_1770671250863.png";
+import heroBg from "@assets/generated_images/golf_cart_showroom_hero.png";
 import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 
 interface SlugMap {
@@ -416,7 +416,7 @@ export default function Home() {
             Golf Carts<br /><span className="text-primary">For Sale.</span>
           </h1>
           <p className="text-white/60 text-sm sm:text-base max-w-lg mx-auto">
-            New &amp; used electric golf carts, street-legal LSVs, and lifted carts — wholesale pricing updated nightly across 14 locations.
+            New &amp; used electric golf carts, street-legal LSVs, and lifted carts — wholesale pricing updated nightly, delivered across Florida.
           </p>
         </div>
 
@@ -771,40 +771,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Locations */}
-      {stores && stores.length > 0 && (
-        <section className="py-12 bg-card border-t border-b" data-testid="section-locations">
-          <div className="mx-auto max-w-7xl px-4">
-            <div className="text-center mb-8">
-              <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Find a Golf Cart Dealer Near You</p>
-              <h2 className="text-2xl font-extrabold">Golf Cart Dealerships — 14 Locations, 9 States</h2>
-              <p className="text-sm text-muted-foreground mt-1">PA, NJ, DE, NC, IN, VA, FL, SC &amp; OH — plus nationwide delivery to your door</p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-              {stores.map((store) => (
-                <div
-                  key={store.storeId}
-                  className="flex items-start gap-3 p-4 rounded-md border border-card-border bg-background hover:border-primary/40 transition-colors"
-                  data-testid={`card-store-${store.storeId}`}
-                >
-                  <div className="shrink-0 w-9 h-9 rounded-md bg-primary/10 flex items-center justify-center">
-                    <MapPin className="h-4 w-4 text-primary" />
-                  </div>
-                  <div className="min-w-0">
-                    <h3 className="font-bold text-sm">Discounted Golf Carts in {store.address.city}</h3>
-                    <p className="text-xs text-muted-foreground mt-0.5">
-                      {store.address.address1}{store.address.address2 ? `, ${store.address.address2}` : ""}
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      {store.address.city}, {store.address.state} {store.address.postalCode}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+      {/* Service Area */}
+      <section className="py-12 bg-card border-t border-b" data-testid="section-locations">
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="text-center mb-8">
+            <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Serving All of Florida</p>
+            <h2 className="text-2xl font-extrabold">Florida's Golf Cart Dealer — Statewide Delivery</h2>
+            <p className="text-sm text-muted-foreground mt-1">All 67 Florida counties — from the Panhandle to the Keys, delivered to your door</p>
           </div>
-        </section>
-      )}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {[
+              "Miami-Dade", "Broward", "Palm Beach", "Hillsborough",
+              "Orange", "Duval", "Pinellas", "Lee",
+              "Polk", "Brevard", "Volusia", "Sarasota"
+            ].map((county) => (
+              <div
+                key={county}
+                className="flex items-center gap-3 p-4 rounded-md border border-card-border bg-background hover:border-primary/40 transition-colors"
+                data-testid={`card-county-${county.toLowerCase().replace(/[^a-z]/g, "-")}`}
+              >
+                <div className="shrink-0 w-9 h-9 rounded-md bg-primary/10 flex items-center justify-center">
+                  <MapPin className="h-4 w-4 text-primary" />
+                </div>
+                <div className="min-w-0">
+                  <h3 className="font-bold text-sm">{county} County</h3>
+                  <p className="text-xs text-muted-foreground mt-0.5">Golf cart delivery available</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-6">
+            <Link href="/service-area">
+              <Button size="lg" variant="outline" className="font-bold" data-testid="button-view-service-area">
+                View Full Service Area <ChevronRight className="h-4 w-4 ml-1" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* CTA strip */}
       <section className="py-16 bg-foreground text-background">
@@ -814,7 +818,7 @@ export default function Home() {
               <Badge className="mb-3 bg-primary text-primary-foreground border-0 font-bold uppercase tracking-wide">
                 <Tag className="h-3 w-3 mr-1" /> Wholesale Golf Cart Prices
               </Badge>
-              <h2 className="text-3xl sm:text-4xl font-extrabold mb-3">Golf Carts for Sale — Best Wholesale Prices in the East</h2>
+              <h2 className="text-3xl sm:text-4xl font-extrabold mb-3">Golf Carts for Sale — Best Wholesale Prices in Florida</h2>
               <p className="text-background/65 max-w-xl leading-relaxed">
                 Our team is standing by. Call now for today's best price on any cart in stock — new golf carts, used golf carts, electric carts, street-legal LSVs, and lifted models. 0% APR financing available on qualifying purchases.
               </p>

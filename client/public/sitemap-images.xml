@@ -3,55 +3,55 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
-    <loc>https://discountedgolfcart.com/</loc>
+    <loc>https://alaskagolfcarts.com/</loc>
     <image:image>
-      <image:loc>https://discountedgolfcart.com/og-image.png</image:loc>
-      <image:title>Discounted Golf Carts — Golf Carts for Sale</image:title>
-      <image:caption>New and used golf carts for sale at wholesale prices. 14 locations. Inventory updated daily.</image:caption>
-      <image:geo_location>Hatfield, Pennsylvania, United States</image:geo_location>
+      <image:loc>https://alaskagolfcarts.com/og-image.png</image:loc>
+      <image:title>Alaska Golf Carts — Golf Carts for Sale</image:title>
+      <image:caption>New and used golf carts for sale at wholesale prices. Florida statewide service. Inventory updated daily.</image:caption>
+      <image:geo_location>Florida, United States</image:geo_location>
     </image:image>
     <image:image>
-      <image:loc>https://discountedgolfcart.com/logo.png</image:loc>
-      <image:title>Discounted Golf Carts Logo</image:title>
-      <image:caption>Official logo of Discounted Golf Carts golf cart dealership</image:caption>
+      <image:loc>https://alaskagolfcarts.com/logo.png</image:loc>
+      <image:title>Alaska Golf Carts Logo</image:title>
+      <image:caption>Official logo of Alaska Golf Carts golf cart dealership</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/inventory</loc>
+    <loc>https://alaskagolfcarts.com/inventory</loc>
     <image:image>
       <image:loc>https://s3.amazonaws.com/prod.docs.s3/carts/inventory-banner.jpg</image:loc>
       <image:title>Golf Cart Inventory — New and Used Golf Carts for Sale</image:title>
       <image:caption>Browse hundreds of new and used golf carts, electric carts, street-legal LSVs, and lifted models from 13 authorized brands.</image:caption>
-      <image:geo_location>East Coast, United States</image:geo_location>
+      <image:geo_location>Florida, United States</image:geo_location>
     </image:image>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/financing</loc>
+    <loc>https://alaskagolfcarts.com/financing</loc>
     <image:image>
-      <image:loc>https://discountedgolfcart.com/og-image.png</image:loc>
+      <image:loc>https://alaskagolfcarts.com/og-image.png</image:loc>
       <image:title>Golf Cart Financing — 0% APR Up to 48 Months</image:title>
       <image:caption>Golf cart financing available through 6 lending partners. 0% APR options, terms up to 48 months.</image:caption>
     </image:image>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/service-area</loc>
+    <loc>https://alaskagolfcarts.com/service-area</loc>
     <image:image>
-      <image:loc>https://discountedgolfcart.com/og-image.png</image:loc>
-      <image:title>Golf Cart Dealers — 14 Locations Across 9 States</image:title>
-      <image:caption>Find a Discounted Golf Carts dealer near you. 14 retail locations in PA, NJ, DE, NC, IN, VA, FL, SC, and OH.</image:caption>
-      <image:geo_location>Eastern United States</image:geo_location>
+      <image:loc>https://alaskagolfcarts.com/og-image.png</image:loc>
+      <image:title>Golf Cart Dealers — Florida Statewide Service — All 67 Counties</image:title>
+      <image:caption>Find a Alaska Golf Carts dealer near you. Florida statewide service across all 67 counties.</image:caption>
+      <image:geo_location>Florida</image:geo_location>
     </image:image>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/about</loc>
+    <loc>https://alaskagolfcarts.com/about</loc>
     <image:image>
-      <image:loc>https://discountedgolfcart.com/logo.png</image:loc>
-      <image:title>About Discounted Golf Carts</image:title>
-      <image:caption>Discounted Golf Carts — multi-location golf cart dealer with 14 stores and 13 authorized brands.</image:caption>
+      <image:loc>https://alaskagolfcarts.com/logo.png</image:loc>
+      <image:title>About Alaska Golf Carts</image:title>
+      <image:caption>Alaska Golf Carts — Florida statewide golf cart dealer serving all 67 Florida counties and 13 authorized brands.</image:caption>
     </image:image>
   </url>
 

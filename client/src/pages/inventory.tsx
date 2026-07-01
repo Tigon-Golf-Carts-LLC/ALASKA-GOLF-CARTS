@@ -162,8 +162,8 @@ export default function Inventory() {
     if (filters.isGas && !filters.isElectric) parts.push("Gas");
     if (filters.makes.length === 1) parts.push(filters.makes[0]);
     const filterStr = parts.join(" ");
-    if (filterStr) return `${filterStr} Golf Carts for Sale | Discounted Golf Carts`;
-    return "Golf Cart Inventory — New & Used Golf Carts for Sale | Discounted Golf Carts";
+    if (filterStr) return `${filterStr} Golf Carts for Sale | Alaska Golf Carts`;
+    return "Golf Cart Inventory — New & Used Golf Carts for Sale | Alaska Golf Carts";
   }, [filters.isNew, filters.isUsed, filters.isElectric, filters.isGas, filters.makes]);
 
   const seoDescription = useMemo(() => {
@@ -175,12 +175,12 @@ export default function Inventory() {
     if (filters.makes.length === 1) parts.push(filters.makes[0]);
     const filterStr = parts.join(" ") || "golf";
     const countStr = data ? `${data.totalCarts.toLocaleString()} matching` : "800+";
-    return `Browse ${countStr} ${filterStr} cart${data?.totalCarts !== 1 ? "s" : ""} at Discounted Golf Carts — updated daily. 0% APR financing. 14 locations. Call 1-888-840-4490.`;
+    return `Browse ${countStr} ${filterStr} cart${data?.totalCarts !== 1 ? "s" : ""} at Alaska Golf Carts — updated daily. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.`;
   }, [filters.isNew, filters.isUsed, filters.isElectric, filters.isGas, filters.makes, data?.totalCarts]);
 
   return (
     <div className="min-h-screen bg-background">
-      <SeoHead title={seoTitle} description={seoDescription} canonical="https://discountedgolfcart.com/inventory" />
+      <SeoHead title={seoTitle} description={seoDescription} canonical="https://alaskagolfcarts.com/inventory" />
       {/* ── Sticky toolbar ── */}
       <div className="sticky top-0 z-30 bg-background/97 backdrop-blur-md border-b shadow-sm">
         <div className="mx-auto max-w-7xl px-3 pt-3 pb-2 space-y-2.5">
@@ -188,7 +188,7 @@ export default function Inventory() {
           {/* Title row */}
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-base font-extrabold leading-none" data-testid="text-inventory-title">Discounted Golf Cart Inventory</h1>
+              <h1 className="text-base font-extrabold leading-none" data-testid="text-inventory-title">Golf Cart Inventory</h1>
               <p className="text-xs text-muted-foreground mt-0.5" data-testid="text-inventory-count">
                 {data ? `${data.totalCarts.toLocaleString()} discounted vehicles` : "Loading…"}
               </p>
@@ -276,20 +276,6 @@ export default function Inventory() {
               ))}
             </FilterDropdown>
 
-            {stores && stores.length > 0 && (
-              <FilterDropdown label="Location" activeCount={filters.storeIds.length}>
-                {stores.map((store) => (
-                  <CheckItem
-                    key={store.storeId}
-                    label={`${store.address.city || ""}, ${STATE_ABBREVIATIONS[store.address.state || ""] || store.address.state || ""}`}
-                    checked={filters.storeIds.includes(store.storeId)}
-                    onChange={() => update({ storeIds: toggleArr(filters.storeIds, store.storeId) })}
-                    testId={`filter-store-${store.storeId}`}
-                  />
-                ))}
-              </FilterDropdown>
-            )}
-
           </div>
 
           {/* Mobile: single Filters button */}
@@ -328,11 +314,6 @@ export default function Inventory() {
               {filters.colors.map((c) => <ActiveChip key={c} label={c} onRemove={() => update({ colors: filters.colors.filter((x) => x !== c) })} />)}
               {filters.seats.map((s) => <ActiveChip key={s} label={s} onRemove={() => update({ seats: filters.seats.filter((x) => x !== s) })} />)}
               {filters.driveTrain.map((d) => <ActiveChip key={d} label={d} onRemove={() => update({ driveTrain: filters.driveTrain.filter((x) => x !== d) })} />)}
-              {filters.storeIds.map((id) => {
-                const store = stores?.find((s) => s.storeId === id);
-                const label = store ? `${store.address.city}, ${STATE_ABBREVIATIONS[store.address.state || ""] || store.address.state}` : id;
-                return <ActiveChip key={id} label={label} onRemove={() => update({ storeIds: filters.storeIds.filter((x) => x !== id) })} />;
-              })}
             </div>
           )}
 
@@ -414,20 +395,6 @@ export default function Inventory() {
                   <CheckItem key={d} label={d} checked={filters.driveTrain.includes(d)} onChange={() => update({ driveTrain: toggleArr(filters.driveTrain, d) })} testId={`mobile-filter-drive-${d.toLowerCase()}`} />
                 ))}
               </MobileFilterSection>
-
-              {stores && stores.length > 0 && (
-                <MobileFilterSection label="Location">
-                  {stores.map((store) => (
-                    <CheckItem
-                      key={store.storeId}
-                      label={`${store.address.city || ""}, ${STATE_ABBREVIATIONS[store.address.state || ""] || store.address.state || ""}`}
-                      checked={filters.storeIds.includes(store.storeId)}
-                      onChange={() => update({ storeIds: toggleArr(filters.storeIds, store.storeId) })}
-                      testId={`mobile-filter-store-${store.storeId}`}
-                    />
-                  ))}
-                </MobileFilterSection>
-              )}
 
             </div>
             {/* Sticky Apply button */}

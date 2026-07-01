@@ -1,8 +1,7 @@
 import { Link } from "wouter";
 import { Phone, MapPin, Tag, Truck, Shield, Award, Flame, CreditCard } from "lucide-react";
+import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
-import type { Store } from "@shared/schema";
-import { useQuery } from "@tanstack/react-query";
 import { useState, useEffect } from "react";
 import logoImg from "@assets/discounted_golf_carts_(3)_1781021848486.png";
 
@@ -28,10 +27,6 @@ function formatCountdown(secs: number) {
 }
 
 export function Footer() {
-  const { data: stores } = useQuery<Store[]>({
-    queryKey: ["/api/stores"],
-  });
-
   const [countdown, setCountdown] = useState(() => getSecondsUntilNextUpdate());
   useEffect(() => {
     const id = setInterval(() => setCountdown(getSecondsUntilNextUpdate()), 1000);
@@ -113,12 +108,23 @@ export function Footer() {
             {/* Brand */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-2 mb-4">
-                <img src={logoImg} alt="Discounted Golf Carts" className="h-9 w-9 object-contain" />
-                <span className="text-base font-extrabold">Discounted <span className="text-primary">Golf Carts</span></span>
+                <img src={logoImg} alt="Alaska Golf Carts" className="h-9 w-9 object-contain" />
+                <span className="text-base font-extrabold">Alaska <span className="text-primary">Golf Carts</span></span>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                New and used golf carts for sale at wholesale prices. 13 authorized brands. Inventory updated daily. 14 locations. 0% APR financing available.
+                New and used golf carts for sale at wholesale prices. 13 authorized brands. Inventory updated daily. Serving all of Florida. 0% APR financing available.
               </p>
+              <div className="flex items-center gap-3 mt-4">
+                <a href="https://facebook.com/AlaskaGolfCarts" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-social-facebook">
+                  <SiFacebook className="h-5 w-5" />
+                </a>
+                <a href="https://instagram.com/AlaskaGolfCarts" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-social-instagram">
+                  <SiInstagram className="h-5 w-5" />
+                </a>
+                <a href="https://youtube.com/@AlaskaGolfCarts" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-social-youtube">
+                  <SiYoutube className="h-5 w-5" />
+                </a>
+              </div>
             </div>
 
             {/* Quick Links */}
@@ -136,14 +142,14 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Locations */}
+            {/* Service Area */}
             <div>
-              <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground mb-4">Locations</h3>
+              <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground mb-4">Service Area</h3>
               <div className="space-y-2">
-                {stores?.slice(0, 6).map((store) => (
-                  <div key={store.storeId} className="flex items-start gap-2 text-sm text-muted-foreground">
+                {["Miami-Dade", "Tampa Bay", "Orlando", "Jacksonville", "Fort Myers", "Statewide Delivery"].map((area) => (
+                  <div key={area} className="flex items-start gap-2 text-sm text-muted-foreground">
                     <MapPin className="h-3.5 w-3.5 mt-0.5 shrink-0 text-primary" />
-                    <span>{store.address.city}, {store.address.state}</span>
+                    <span>{area}</span>
                   </div>
                 ))}
               </div>
@@ -187,8 +193,8 @@ export function Footer() {
         </div>
 
         <div className="border-t px-4 py-5 text-center text-xs text-muted-foreground space-y-1">
-          <p>&copy; {new Date().getFullYear()} Discounted Golf Carts. All rights reserved. | discountedgolfcart.com</p>
-          <p>Discounted Golf Carts is a DBA of Tigon Golf Carts LLC. Inventory is sourced from multiple dealership entities including Tigon Golf Carts, Coastal Carts, and Tri State Carts.</p>
+          <p>&copy; {new Date().getFullYear()} Alaska Golf Carts. All rights reserved. | alaskagolfcarts.com</p>
+          <p>Alaska Golf Carts proudly serves all 67 counties across the state of Florida, with statewide delivery on new and used golf carts.</p>
         </div>
       </div>
     </footer>

@@ -1,1 +1,2 @@
 - [SEO head injection architecture](seo-head-injection.md) — server-side `buildPageHtml()` in `server/seo-inject.ts` fixes canonical/title/meta for all routes; Vehicle JSON-LD from cache.
+- [Rebrand trace sweep](rebrand-trace-sweep.md) — biggest source of stale brand/location traces is `client/public/` (~50 SEO/AI crawler files) + baked-in image text; grep both src+public, never blind-sed.

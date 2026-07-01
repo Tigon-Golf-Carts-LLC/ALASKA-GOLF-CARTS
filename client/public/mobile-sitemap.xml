@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Discounted Golf Carts — Mobile Sitemap -->
+<!-- Alaska Golf Carts — Mobile Sitemap -->
 <!-- Optimized for mobile-first indexing per Google guidelines -->
 <!-- Last Updated: 2026-06-09 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
 
   <url>
-    <loc>https://discountedgolfcart.com/</loc>
+    <loc>https://alaskagolfcarts.com/</loc>
     <mobile:mobile/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
@@ -14,7 +14,7 @@
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/inventory</loc>
+    <loc>https://alaskagolfcarts.com/inventory</loc>
     <mobile:mobile/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
@@ -22,7 +22,7 @@
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/financing</loc>
+    <loc>https://alaskagolfcarts.com/financing</loc>
     <mobile:mobile/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -30,7 +30,7 @@
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/service-area</loc>
+    <loc>https://alaskagolfcarts.com/service-area</loc>
     <mobile:mobile/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -38,7 +38,7 @@
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/faq</loc>
+    <loc>https://alaskagolfcarts.com/faq</loc>
     <mobile:mobile/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -46,7 +46,7 @@
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/about</loc>
+    <loc>https://alaskagolfcarts.com/about</loc>
     <mobile:mobile/>
     <lastmod>2026-06-09</lastmod>
     <changefreq>yearly</changefreq>

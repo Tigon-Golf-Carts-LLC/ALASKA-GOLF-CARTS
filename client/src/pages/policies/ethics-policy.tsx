@@ -5,9 +5,9 @@ export default function EthicsPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Ethics Policy | Discounted Golf Carts"
-        description="Business ethics and code of conduct for Discounted Golf Carts and Tigon Golf Carts LLC."
-        canonical="https://discountedgolfcart.com/ethics-policy"
+        title="Ethics Policy | Alaska Golf Carts"
+        description="Business ethics and code of conduct for Alaska Golf Carts."
+        canonical="https://alaskagolfcarts.com/ethics-policy"
       />
       <h1 className="text-3xl font-extrabold mb-2">Ethics Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>
@@ -15,7 +15,7 @@ export default function EthicsPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Our Core Values</h2>
-          <p className="text-muted-foreground leading-relaxed">Discounted Golf Carts operates on a foundation of integrity, transparency, and respect — for our customers, our team members, our business partners, and the communities we serve. These values are not aspirational; they are operational requirements that guide every decision at every level of our company.</p>
+          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts operates on a foundation of integrity, transparency, and respect — for our customers, our team members, our business partners, and the communities we serve. These values are not aspirational; they are operational requirements that guide every decision at every level of our company.</p>
         </section>
 
         <section>

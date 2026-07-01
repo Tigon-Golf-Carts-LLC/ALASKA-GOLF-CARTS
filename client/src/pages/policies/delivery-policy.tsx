@@ -5,9 +5,9 @@ export default function DeliveryPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Delivery Policy | Discounted Golf Carts"
-        description="Golf cart delivery policy for Discounted Golf Carts — nationwide shipping and local delivery options."
-        canonical="https://discountedgolfcart.com/delivery-policy"
+        title="Delivery Policy | Alaska Golf Carts"
+        description="Golf cart delivery policy for Alaska Golf Carts — nationwide shipping and local delivery options."
+        canonical="https://alaskagolfcarts.com/delivery-policy"
       />
       <h1 className="text-3xl font-extrabold mb-2">Delivery Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>
@@ -15,12 +15,12 @@ export default function DeliveryPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Nationwide Delivery</h2>
-          <p className="text-muted-foreground leading-relaxed">Discounted Golf Carts offers delivery to any address in the continental United States. Delivery is coordinated through licensed transport carriers and our own fleet where available. Delivery costs, lead times, and logistics are discussed and agreed upon at the time of purchase. We do not ship to Alaska, Hawaii, or US territories at this time.</p>
+          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts offers delivery to any address in the continental United States. Delivery is coordinated through licensed transport carriers and our own fleet where available. Delivery costs, lead times, and logistics are discussed and agreed upon at the time of purchase. We do not ship to Alaska, Hawaii, or US territories at this time.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold mb-3">Local Pickup</h2>
-          <p className="text-muted-foreground leading-relaxed">Customers are welcome to take delivery directly from any of our 14 retail locations. Local pickup is available by appointment during normal business hours. Please call ahead to confirm your unit is ready for pickup before traveling to the store.</p>
+          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts delivers statewide to all 67 Florida counties. Local pickup can also be arranged by appointment during normal business hours. Please call ahead to confirm your unit is ready and to schedule delivery or pickup.</p>
         </section>
 
         <section>

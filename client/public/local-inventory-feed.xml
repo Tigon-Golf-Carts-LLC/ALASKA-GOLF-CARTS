@@ -1,165 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Discounted Golf Carts — Local Inventory Feed (Google Local Inventory Ads) -->
-<!-- 14 Store Locations | Phone: 1-888-840-4490 | Last Updated: 2026-06-09 -->
+<!-- Alaska Golf Carts — Local Inventory Feed (Google Local Inventory Ads) -->
+<!-- Florida Statewide Service (all 67 counties) | Phone: 1-888-840-4490 | Last Updated: 2026-06-09 -->
 <feed xmlns="http://www.w3.org/2005/Atom"
       xmlns:g="http://base.google.com/ns/1.0">
 
-  <title>Discounted Golf Carts — Local Store Inventory</title>
-  <link rel="self" href="https://discountedgolfcart.com/local-inventory-feed.xml"/>
+  <title>Alaska Golf Carts — Local Store Inventory</title>
+  <link rel="self" href="https://alaskagolfcarts.com/local-inventory-feed.xml"/>
   <updated>2026-06-09T22:55:00Z</updated>
 
-  <!-- STORE: Hatfield, PA -->
-  <entry>
-    <g:store_code>DGC-001-HATFIELD-PA</g:store_code>
-    <g:id>hatfield-inventory</g:id>
-    <g:title>Golf Carts for Sale — Hatfield, PA 19440</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Hatfield. 2333 Bethlehem Pike, Hatfield, PA 19440. Montgomery County. Serving Philadelphia suburbs. 13 brands available. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Ocean View, NJ -->
-  <entry>
-    <g:store_code>DGC-002-OCEAN-VIEW-NJ</g:store_code>
-    <g:id>ocean-view-inventory</g:id>
-    <g:title>Golf Carts for Sale — Ocean View, NJ 08230</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Ocean View. 101 NJ-50, Ocean View, NJ 08230. Cape May County. Serving Jersey Shore communities. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Long Pond, PA -->
-  <entry>
-    <g:store_code>DGC-003-LONG-POND-PA</g:store_code>
-    <g:id>long-pond-inventory</g:id>
-    <g:title>Golf Carts for Sale — Long Pond, PA (Poconos)</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Long Pond. 4738 PA-115, Long Pond, PA 18334. Monroe County. Serving Pocono Mountains communities. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Dover, DE -->
-  <entry>
-    <g:store_code>DGC-004-DOVER-DE</g:store_code>
-    <g:id>dover-inventory</g:id>
-    <g:title>Golf Carts for Sale — Dover, DE 19901</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Dover. 5158 N Dupont Hwy, Dover, DE 19901. Kent County. Serving central Delaware. Near Dover AFB. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Scranton, PA -->
-  <entry>
-    <g:store_code>DGC-005-SCRANTON-PA</g:store_code>
-    <g:id>scranton-inventory</g:id>
-    <g:title>Golf Carts for Sale — Scranton, PA 18504</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Scranton. 1225 N. Keyser Ave #2, Scranton, PA 18504. Lackawanna County. Serving NEPA. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Raleigh, NC -->
-  <entry>
-    <g:store_code>DGC-006-RALEIGH-NC</g:store_code>
-    <g:id>raleigh-inventory</g:id>
-    <g:title>Golf Carts for Sale — Raleigh, NC 27603</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Raleigh. 2700 South Wilmington Street, Raleigh, NC 27603. Wake County. Serving Research Triangle. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: South Bend, IN -->
-  <entry>
-    <g:store_code>DGC-007-SOUTH-BEND-IN</g:store_code>
-    <g:id>south-bend-inventory</g:id>
-    <g:title>Golf Carts for Sale — South Bend, IN 46637</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts South Bend. 52129 State Highway 933, South Bend, IN 46637. St. Joseph County. Serving Northern Indiana. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Gloucester Point, VA -->
-  <entry>
-    <g:store_code>DGC-008-GLOUCESTER-POINT-VA</g:store_code>
-    <g:id>gloucester-point-inventory</g:id>
-    <g:title>Golf Carts for Sale — Gloucester Point, VA 23072</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Gloucester Point. 2810 George Washington Memorial Highway, Gloucester Point, VA 23072. Serving Hampton Roads. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Bayville, NJ -->
-  <entry>
-    <g:store_code>DGC-009-BAYVILLE-NJ</g:store_code>
-    <g:id>bayville-inventory</g:id>
-    <g:title>Golf Carts for Sale — Bayville, NJ 08721</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Bayville. 155 Atlantic City Boulevard, Bayville Township, NJ 08721. Ocean County. Serving Central NJ Shore. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Waretown, NJ -->
-  <entry>
-    <g:store_code>DGC-010-WARETOWN-NJ</g:store_code>
-    <g:id>waretown-inventory</g:id>
-    <g:title>Golf Carts for Sale — Waretown, NJ 08758</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Waretown. 526 U.S. 9, Ocean Township, NJ 08758. Ocean County. Serving Shore communities. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Lecanto, FL -->
-  <entry>
-    <g:store_code>DGC-011-LECANTO-FL</g:store_code>
-    <g:id>lecanto-inventory</g:id>
-    <g:title>Golf Carts for Sale — Lecanto, FL 34461</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Lecanto. 299 East Gulf to Lake Highway, Lecanto, FL 34461. Citrus County. Serving Nature Coast Florida. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Rio Grande, NJ -->
-  <entry>
-    <g:store_code>DGC-012-RIO-GRANDE-NJ</g:store_code>
-    <g:id>rio-grande-inventory</g:id>
-    <g:title>Golf Carts for Sale — Rio Grande, NJ (Cape May)</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Rio Grande. Rio Grande, NJ. Cape May County. Serving South Jersey Shore communities. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Orangeburg, SC -->
-  <entry>
-    <g:store_code>DGC-013-ORANGEBURG-SC</g:store_code>
-    <g:id>orangeburg-inventory</g:id>
-    <g:title>Golf Carts for Sale — Orangeburg, SC</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Orangeburg. Orangeburg, South Carolina. Serving Midlands SC region. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
-
-  <!-- STORE: Swanton, OH -->
-  <entry>
-    <g:store_code>DGC-014-SWANTON-OH</g:store_code>
-    <g:id>swanton-inventory</g:id>
-    <g:title>Golf Carts for Sale — Swanton, OH</g:title>
-    <g:description>Golf carts for sale at Discounted Golf Carts Swanton. Swanton, Ohio. Fulton County. Serving Northwest Ohio. Call 1-888-840-4490.</g:description>
-    <g:link>https://discountedgolfcart.com/inventory</g:link>
-    <g:availability>in stock</g:availability>
-    <g:price>Call for Pricing USD</g:price>
-  </entry>
+  <!-- Florida Statewide Service Area -->
+    <entry>
+      <g:store_code>FL-STATEWIDE</g:store_code>
+      <g:id>florida-statewide-inventory</g:id>
+      <g:title>Golf Carts for Sale — Florida Statewide (All 67 Counties)</g:title>
+      <g:description>Golf carts for sale at Alaska Golf Carts, serving all 67 Florida counties statewide with nationwide delivery. New and used golf carts from 13 authorized brands. Call 1-888-840-4490.</g:description>
+      <g:link>https://alaskagolfcarts.com/inventory</g:link>
+      <g:availability>in stock</g:availability>
+      <g:price>Call for Pricing USD</g:price>
+    </entry>
 
 </feed>

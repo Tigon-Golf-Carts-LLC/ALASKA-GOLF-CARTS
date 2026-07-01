@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Discounted Golf Carts — News Sitemap -->
-<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<!-- Alaska Golf Carts — News Sitemap -->
+<!-- Website: https://alaskagolfcarts.com | Phone: 1-888-840-4490 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
   <url>
-    <loc>https://discountedgolfcart.com/inventory</loc>
+    <loc>https://alaskagolfcarts.com/inventory</loc>
     <news:news>
       <news:publication>
-        <news:name>Discounted Golf Carts</news:name>
+        <news:name>Alaska Golf Carts</news:name>
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-06-09</news:publication_date>
@@ -18,10 +18,10 @@
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/financing</loc>
+    <loc>https://alaskagolfcarts.com/financing</loc>
     <news:news>
       <news:publication>
-        <news:name>Discounted Golf Carts</news:name>
+        <news:name>Alaska Golf Carts</news:name>
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-06-09</news:publication_date>
@@ -31,23 +31,23 @@
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/service-area</loc>
+    <loc>https://alaskagolfcarts.com/service-area</loc>
     <news:news>
       <news:publication>
-        <news:name>Discounted Golf Carts</news:name>
+        <news:name>Alaska Golf Carts</news:name>
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-06-09</news:publication_date>
-      <news:title>Discounted Golf Carts Expands to 14 Locations Across 9 States</news:title>
-      <news:keywords>golf cart dealer near me, golf cart dealership, golf carts Pennsylvania, golf carts New Jersey, golf carts South Carolina, golf carts Ohio</news:keywords>
+      <news:title>Alaska Golf Carts Expands to Florida Statewide Service — All 67 Counties</news:title>
+      <news:keywords>golf cart dealer near me, golf cart dealership, golf carts Florida, golf carts Miami, golf carts Orlando, golf carts Tampa, golf carts Jacksonville</news:keywords>
     </news:news>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/faq</loc>
+    <loc>https://alaskagolfcarts.com/faq</loc>
     <news:news>
       <news:publication>
-        <news:name>Discounted Golf Carts</news:name>
+        <news:name>Alaska Golf Carts</news:name>
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-06-09</news:publication_date>

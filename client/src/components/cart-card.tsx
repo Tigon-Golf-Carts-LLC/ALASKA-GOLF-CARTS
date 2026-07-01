@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { Cart } from "@shared/schema";
-import { formatPrice, getCartImageUrl, buildCartTitle, PHONE_TEL } from "@/lib/constants";
+import { formatPrice, getCartImageUrl, buildCartTitle, PHONE_TEL, COMING_SOON_IMAGE } from "@/lib/constants";
 import { useState } from "react";
 
 interface CartCardProps {
@@ -25,7 +25,7 @@ export function CartCard({ cart, slug }: CartCardProps) {
   const passengers = cart.cartAttributes?.passengers || "";
 
   const imageUrl = imageError
-    ? "https://tigongolfcarts.com/wp-content/uploads/2024/11/TIGON-GOLF-CARTS-IMAGES-COMING-SOON.jpg"
+    ? COMING_SOON_IMAGE
     : getCartImageUrl(cart.imageUrls);
 
   const cartUrl = slug ? `/golfcart/${slug}` : `/golfcart/${cart._id}`;

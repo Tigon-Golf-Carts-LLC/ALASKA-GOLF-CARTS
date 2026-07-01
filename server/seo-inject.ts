@@ -1,6 +1,6 @@
 import { getCartMetaForSeo } from "./routes";
 
-const BASE_URL = "https://discountedgolfcart.com";
+const BASE_URL = "https://alaskagolfcarts.com";
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -27,9 +27,9 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
 
   if (pathname === "/" || pathname === "") {
     return {
-      title: "Golf Carts for Sale — Discounted Inventory Updated Daily | Discounted Golf Carts",
+      title: "Golf Carts for Sale — New & Used Inventory Updated Daily | Alaska Golf Carts",
       description:
-        "Golf carts for sale at wholesale prices — inventory updated daily. New and used carts from Club Car, EZGO, Yamaha, Denago & more. 0% APR financing. 14 locations. Call 1-888-840-4490.",
+        "Golf carts for sale at wholesale prices — inventory updated daily. New and used carts from Club Car, EZGO, Yamaha, Denago & more. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.",
     };
   }
 
@@ -48,14 +48,14 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
       const locationSuffix = location ? ` Near ${location}` : "";
       const subject = filterStr ? `${filterStr} Golf Carts` : "Golf Carts";
       return {
-        title: `${subject} for Sale${locationSuffix} | Discounted Golf Carts`,
-        description: `Browse ${subject.toLowerCase()} for sale${locationSuffix.toLowerCase()} — updated daily. 0% APR financing. 14 locations. Call 1-888-840-4490.`,
+        title: `${subject} for Sale${locationSuffix} | Alaska Golf Carts`,
+        description: `Browse ${subject.toLowerCase()} for sale${locationSuffix.toLowerCase()} — updated daily. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.`,
       };
     }
     return {
-      title: "Golf Cart Inventory — New & Used Golf Carts for Sale | Discounted Golf Carts",
+      title: "Golf Cart Inventory — New & Used Golf Carts for Sale | Alaska Golf Carts",
       description:
-        "Browse 800+ new and used golf carts updated daily. Electric and gas golf carts from Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. 14 locations.",
+        "Browse 800+ new and used golf carts updated daily. Electric and gas golf carts from Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Serving all of Florida.",
     };
   }
 
@@ -63,22 +63,22 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
     const slug = pathname.replace("/golfcart/", "");
     const readable = slugToReadable(slug);
     return {
-      title: `${readable} — Golf Cart for Sale | Discounted Golf Carts`,
-      description: `${readable} golf cart for sale at Discounted Golf Carts. Updated daily. 0% APR financing available. Call 1-888-840-4490.`,
+      title: `${readable} — Golf Cart for Sale | Alaska Golf Carts`,
+      description: `${readable} golf cart for sale at Alaska Golf Carts. Updated daily. 0% APR financing available. Call 1-888-840-4490.`,
     };
   }
 
   if (pathname === "/financing") {
     return {
-      title: "Golf Cart Financing — 0% APR for 48 Months | Discounted Golf Carts",
+      title: "Golf Cart Financing — 0% APR for 48 Months | Alaska Golf Carts",
       description:
-        "0% APR golf cart financing up to 48 months through 6 lending partners. Apply in-store at any of 14 locations. Call 1-888-840-4490.",
+        "0% APR golf cart financing up to 48 months through 6 lending partners. Apply from anywhere in Florida. Call 1-888-840-4490.",
     };
   }
 
   if (pathname === "/faq") {
     return {
-      title: "Golf Cart FAQ — Common Questions Answered | Discounted Golf Carts",
+      title: "Golf Cart FAQ — Common Questions Answered | Alaska Golf Carts",
       description:
         "Answers to common golf cart buying questions — pricing, brands, street legal requirements, financing, battery care, and more.",
     };
@@ -86,23 +86,23 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
 
   if (pathname === "/about") {
     return {
-      title: "About Discounted Golf Carts — 14 Locations Across 9 States",
+      title: "About Alaska Golf Carts — Serving All of Florida",
       description:
-        "Discounted Golf Carts is one of the largest golf cart dealerships in the eastern US. 14 stores in PA, NJ, DE, NC, IN, VA, FL, SC, and OH. 13 brands. Inventory updated daily.",
+        "Alaska Golf Carts is a golf cart dealership serving all 67 counties across Florida. New and used carts from 13 brands. Inventory updated daily. Statewide delivery.",
     };
   }
 
   if (pathname === "/service-area") {
     return {
-      title: "Golf Cart Dealer Locations — 14 Stores in 9 States | Discounted Golf Carts",
+      title: "Florida Golf Cart Service Area — All 67 Counties | Alaska Golf Carts",
       description:
-        "Find a Discounted Golf Carts dealer near you. 14 locations in Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, Florida, South Carolina, and Ohio.",
+        "Alaska Golf Carts serves the entire state of Florida — all 67 counties, from Miami-Dade and Broward to Duval, Hillsborough, Orange, and beyond. Statewide delivery available.",
     };
   }
 
   return {
-    title: "Discounted Golf Carts — Golf Carts for Sale",
-    description: "Discounted Golf Carts - Don't Miss These Golf Cart Deals! Golf cart prices update nightly — Lock in today's wholesale MSRP before inventory changes.",
+    title: "Alaska Golf Carts — Golf Carts for Sale",
+    description: "Alaska Golf Carts - Don't Miss These Golf Cart Deals! Golf cart prices update nightly — Lock in today's wholesale MSRP before inventory changes.",
   };
 }
 

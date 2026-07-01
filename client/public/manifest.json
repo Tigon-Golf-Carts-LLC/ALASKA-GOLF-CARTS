@@ -1,7 +1,7 @@
 {
-  "name": "Discounted Golf Carts — Golf Carts for Sale",
-  "short_name": "Discounted Golf Carts",
-  "description": "Golf carts for sale at wholesale prices. 14 locations in PA, NJ, DE, NC, IN, VA, FL, SC, OH. New and used golf carts from 13 brands including Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Call 1-888-840-4490.",
+  "name": "Alaska Golf Carts — Golf Carts for Sale",
+  "short_name": "Alaska Golf Carts",
+  "description": "Golf carts for sale at wholesale prices. Florida statewide service. New and used golf carts from 13 brands including Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Call 1-888-840-4490.",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#dc2626",
@@ -87,13 +87,13 @@
       "name": "Find a Location",
       "short_name": "Locations",
       "url": "/service-area",
-      "description": "14 golf cart dealer locations across 9 states"
+      "description": "Florida Statewide Golf Cart Dealer — All 67 Counties"
     },
     {
       "name": "Call Now",
       "short_name": "Call",
       "url": "tel:18888404490",
-      "description": "Call Discounted Golf Carts at 1-888-840-4490"
+      "description": "Call Alaska Golf Carts at 1-888-840-4490"
     }
   ],
   "related_applications": [],

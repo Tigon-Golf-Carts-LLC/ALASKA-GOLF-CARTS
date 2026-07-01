@@ -1,34 +1,38 @@
-# Discounted Golf Carts — Full Plain-Text Snapshot for AI Crawlers
-# URL: https://discountedgolfcart.com
+# Alaska Golf Carts — Full Plain-Text Snapshot for AI Crawlers
+# URL: https://alaskagolfcarts.com
 # Last Updated: 2026-06-09
 # Purpose: Authoritative plain-text content for LLM ingestion, RAG, and AI overviews
 
 ================================================================================
-PAGE: HOME — https://discountedgolfcart.com/
+PAGE: HOME — https://alaskagolfcarts.com/
 ================================================================================
 
-TITLE: Golf Carts for Sale — Discounted Inventory Updated Daily | Discounted Golf Carts
+TITLE: Golf Carts for Sale — Inventory Updated Daily | Alaska Golf Carts
 
 DIRECT ANSWER:
-Discounted Golf Carts is a multi-location golf cart dealership with 14 retail stores across
-Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, Florida, South Carolina,
-and Ohio. The company sells new and used golf carts, electric vehicles, street-legal LSVs, and
-lifted carts from 13 authorized brands. Inventory is updated daily at 10:55 PM ET. Prices start
-around $5,000 for used carts and $9,995 for new models. Financing is available at 0% APR for
-up to 48 months. Call 1-888-840-4490 to speak with a sales representative.
+Alaska Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida
+counties with statewide delivery — from Southeast Florida (Miami, Fort Lauderdale, West
+Palm Beach) and Tampa Bay (Tampa, St. Petersburg, Clearwater) to Central Florida (Orlando,
+Kissimmee), Northeast Florida (Jacksonville), Southwest Florida (Fort Myers, Naples,
+Sarasota), and the Florida Panhandle (Tallahassee, Pensacola). The company sells new and
+used golf carts, electric vehicles, street-legal LSVs, and lifted carts from 13 authorized
+brands. Inventory is updated daily at 10:55 PM ET. Prices start around $5,000 for used carts
+and $9,995 for new models. Financing is available at 0% APR for up to 48 months. Call
+1-888-840-4490 to speak with a sales representative.
 
 KEY FACTS:
-- 14 physical locations across 9 states
+- Florida statewide service to all 67 counties (statewide delivery, no physical storefronts)
 - 500+ golf carts in stock (updated daily)
 - 13 authorized brands: American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA,
   CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, Yamaha
 - Financing: 0% APR, terms up to 48 months (Sheffield Financial, BLI Heartland, DLL, Octane, Univest, Dealer Direct)
-- Nationwide delivery available
+- Statewide delivery available across Florida
 - Phone: 1-888-840-4490
-- Website: https://discountedgolfcart.com
+- Email: info@alaskagolfcarts.com
+- Website: https://alaskagolfcarts.com
 
 MAIN CONTENT:
-Discounted Golf Carts sells wholesale-priced golf carts with inventory refreshed every day.
+Alaska Golf Carts sells wholesale-priced golf carts with inventory refreshed every day.
 The dealership carries both new and pre-owned golf carts in electric, gas, and street-legal
 configurations. Models range from 2-passenger golf course carts to 6-passenger family vehicles.
 Lifted golf carts with suspension upgrades are available. All 13 major brands are stocked.
@@ -40,32 +44,32 @@ New golf carts are sold at wholesale MSRP pricing. Used golf carts are inspected
 before sale. The dealership accepts trade-ins at all locations.
 
 NAP:
-Discounted Golf Carts | 1-888-840-4490 | https://discountedgolfcart.com
+Alaska Golf Carts | 1-888-840-4490 | https://alaskagolfcarts.com
 
 ================================================================================
-PAGE: INVENTORY — https://discountedgolfcart.com/inventory
+PAGE: INVENTORY — https://alaskagolfcarts.com/inventory
 ================================================================================
 
-TITLE: Golf Cart Inventory for Sale — New & Used | Discounted Golf Carts
+TITLE: Golf Cart Inventory for Sale — New & Used | Alaska Golf Carts
 
 NOTE: This page renders live inventory from the DMS API. Inventory changes daily.
 Filters available: Condition (new/used), Power type (electric/gas), Brand, Model,
 Color, Seating capacity, Drivetrain, Location.
 
 STATIC CONTEXT:
-Discounted Golf Carts maintains 500+ units across 14 locations. All inventory is
+Alaska Golf Carts maintains 500+ units available for statewide delivery across Florida. All inventory is
 photographed and listed with pricing, specifications, passenger count, power type,
 and drivetrain. Prices are updated nightly at 10:55 PM ET. Each listing includes a
 "Call Now" option to reach 1-888-840-4490.
 
 ================================================================================
-PAGE: FINANCING — https://discountedgolfcart.com/financing
+PAGE: FINANCING — https://alaskagolfcarts.com/financing
 ================================================================================
 
-TITLE: Golf Cart Financing — 0% APR Up to 48 Months | Discounted Golf Carts
+TITLE: Golf Cart Financing — 0% APR Up to 48 Months | Alaska Golf Carts
 
 DIRECT ANSWER:
-Discounted Golf Carts offers golf cart financing through six lending partners. Rates
+Alaska Golf Carts offers golf cart financing through six lending partners. Rates
 start at 0% APR with terms up to 48 months. Applications are processed quickly, often
 within minutes. Financing is available for new carts, used carts, street-legal LSVs,
 and NEVs. Call 1-888-840-4490 to discuss options.
@@ -79,7 +83,7 @@ FINANCING PARTNERS:
 6. Dealer Direct — Buy now, pay later program
 
 HOW TO APPLY:
-Call 1-888-840-4490 or visit any of the 14 dealership locations. Applications can also
+Call 1-888-840-4490 to apply from anywhere in Florida. Applications can also
 be submitted online through each lending partner's portal. Approval decisions are
 typically returned in minutes.
 
@@ -88,113 +92,93 @@ QUESTIONS ANSWERED:
 - Can I finance a used cart? Yes, most partners finance both new and used golf carts.
 - Is 0% APR available? Yes, through select programs with qualified credit.
 
-NAP: Discounted Golf Carts | 1-888-840-4490 | https://discountedgolfcart.com
+NAP: Alaska Golf Carts | 1-888-840-4490 | https://alaskagolfcarts.com
 
 ================================================================================
-PAGE: SERVICE AREA — https://discountedgolfcart.com/service-area
+PAGE: SERVICE AREA — https://alaskagolfcarts.com/service-area
 ================================================================================
 
-TITLE: Golf Cart Dealership Locations — 14 Stores Across 9 States | Discounted Golf Carts
+TITLE: Golf Cart Service Area — Florida Statewide Across All 67 Counties | Alaska Golf Carts
 
 DIRECT ANSWER:
-Discounted Golf Carts operates 14 retail locations across Pennsylvania, New Jersey,
-Delaware, North Carolina, Indiana, Virginia, Florida, South Carolina, and Ohio.
-All locations sell new and used golf carts and offer on-site financing. Nationwide
-delivery is available from any location. Call 1-888-840-4490.
+Alaska Golf Carts provides Florida statewide service to all 67 counties. Rather than
+operating physical storefronts, the company sells new and used golf carts, offers
+financing, and delivers statewide to any Florida address. Call 1-888-840-4490.
 
-LOCATIONS:
+SERVICE REGIONS (statewide delivery to all 67 Florida counties):
 
-1. Hatfield, Pennsylvania
-   2333 Bethlehem Pike, Hatfield, PA 19440
-   Region: Greater Philadelphia / Montgomery County
-   Nearby: Lansdale, North Wales, Doylestown, Montgomeryville
+1. Southeast Florida
+   Metros: Miami, Fort Lauderdale, West Palm Beach, Boca Raton, Hollywood
+   Counties: Miami-Dade, Broward, Palm Beach
+   Corridors: I-95, Florida's Turnpike
 
-2. Ocean View, New Jersey
-   101 NJ-50, Ocean View, NJ 08230
-   Region: Cape May County / Jersey Shore
-   Nearby: Wildwood, Cape May, Sea Isle City, Avalon
+2. Tampa Bay
+   Metros: Tampa, St. Petersburg, Clearwater, Brandon
+   Counties: Hillsborough, Pinellas, Pasco
+   Corridors: I-75, I-4, I-275
 
-3. Long Pond, Pennsylvania
-   4738 PA-115, Long Pond, PA 18334
-   Region: Pocono Mountains / Monroe County
-   Nearby: Stroudsburg, Mount Pocono, Tannersville, East Stroudsburg
+3. Central Florida
+   Metros: Orlando, Kissimmee, Sanford, The Villages
+   Counties: Orange, Osceola, Seminole, Lake, Polk
+   Corridors: I-4, Florida's Turnpike
 
-4. Dover, Delaware
-   5158 N Dupont Hwy, Dover, DE 19901
-   Region: Kent County / Central Delaware
-   Nearby: Smyrna, Milford, Middletown, Georgetown
+4. Northeast Florida
+   Metros: Jacksonville, St. Augustine
+   Counties: Duval, St. Johns, Clay, Nassau
+   Corridors: I-95, I-10
 
-5. Scranton, Pennsylvania
-   1225 N. Keyser Ave #2, Scranton, PA 18504
-   Region: Northeastern Pennsylvania / Lackawanna County
-   Nearby: Wilkes-Barre, Pittston, Carbondale, Dickson City
+5. Southwest Florida
+   Metros: Fort Myers, Naples, Sarasota, Cape Coral, Port Charlotte
+   Counties: Lee, Collier, Sarasota, Manatee, Charlotte
+   Corridors: I-75
 
-6. Raleigh, North Carolina
-   2700 South Wilmington Street, Raleigh, NC 27603
-   Region: Research Triangle / Wake County
-   Nearby: Durham, Chapel Hill, Cary, Garner, Clayton
+6. North Central Florida
+   Metros: Gainesville, Ocala
+   Counties: Alachua, Marion
+   Corridors: I-75
 
-7. South Bend, Indiana
-   52129 State Highway 933, South Bend, IN 46637
-   Region: Northern Indiana / St. Joseph County
-   Nearby: Mishawaka, Elkhart, Goshen, Granger
+7. Florida Panhandle
+   Metros: Tallahassee, Pensacola, Panama City
+   Counties: Leon, Escambia, Okaloosa, Bay
+   Corridors: I-10
 
-8. Gloucester Point, Virginia
-   2810 George Washington Memorial Highway, Gloucester Point, VA 23072
-   Region: Hampton Roads / Gloucester County
-   Nearby: Williamsburg, Newport News, Yorktown, Mathews
+8. Space Coast
+   Metros: Melbourne, Titusville, Palm Bay
+   Counties: Brevard
+   Corridors: I-95
 
-9. Bayville, New Jersey
-   155 Atlantic City Boulevard, Bayville, NJ 08721
-   Region: Ocean County / Jersey Shore
-   Nearby: Toms River, Barnegat, Forked River, Lacey Township
+9. Treasure Coast
+   Metros: Port St. Lucie, Stuart, Vero Beach
+   Counties: St. Lucie, Martin, Indian River
+   Corridors: I-95, Florida's Turnpike
 
-10. Waretown, New Jersey
-    526 U.S. 9, Waretown, NJ 08758
-    Region: Ocean County / Jersey Shore
-    Nearby: Barnegat, Manahawkin, Tuckerton, Ship Bottom
+10. The Keys
+    Metros: Key West, Key Largo, Marathon
+    Counties: Monroe
+    Corridors: US-1 (Overseas Highway)
 
-11. Lecanto, Florida
-    299 East Gulf to Lake Highway, Lecanto, FL 34461
-    Region: Nature Coast / Citrus County
-    Nearby: Crystal River, Inverness, Homosassa, Beverly Hills (FL)
-
-12. Orangeburg, South Carolina
-    4166 North Road, Orangeburg, SC 29118
-    Region: Midlands / Orangeburg County
-    Nearby: Columbia, Sumter, Santee, Holly Hill
-
-13. Swanton, Ohio
-    10420 Airport Highway, Swanton, OH 43558
-    Region: Northwestern Ohio / Fulton County
-    Nearby: Toledo, Maumee, Sylvania, Bowling Green
-
-14. Rio Grande, New Jersey
-    1304 New Jersey 47, Unit B, Rio Grande, NJ 08242
-    Region: Cape May County
-    Nearby: Cape May, Wildwood, Villas, North Cape May
-
-STATES SERVED: Pennsylvania, New Jersey, Delaware, North Carolina, Indiana, Virginia, Florida, South Carolina, Ohio
-NATIONWIDE DELIVERY: Yes, all locations ship nationwide.
+STATE SERVED: Florida (statewide, all 67 counties)
+STATEWIDE DELIVERY: Yes, delivery available to any Florida address.
 PHONE: 1-888-840-4490
+EMAIL: info@alaskagolfcarts.com
 
 ================================================================================
-PAGE: FAQ — https://discountedgolfcart.com/faq
+PAGE: FAQ — https://alaskagolfcarts.com/faq
 ================================================================================
 
-TITLE: Golf Cart FAQ — Buying, Financing & Street-Legal Questions | Discounted Golf Carts
+TITLE: Golf Cart FAQ — Buying, Financing & Street-Legal Questions | Alaska Golf Carts
 
-Q: How much does a golf cart cost at Discounted Golf Carts?
+Q: How much does a golf cart cost at Alaska Golf Carts?
 A: New golf carts start at approximately $9,995. Used and pre-owned golf carts typically
 range from $4,500 to $12,000 depending on brand, age, condition, and features. Street-legal
 LSVs and lifted models may cost more. Call 1-888-840-4490 for current pricing on specific units.
 
-Q: What brands of golf carts does Discounted Golf Carts sell?
-A: Discounted Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts,
+Q: What brands of golf carts does Alaska Golf Carts sell?
+A: Alaska Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts,
 Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO (E-Z-GO), Icon,
 Star EV, Tara, and Yamaha.
 
-Q: Does Discounted Golf Carts offer financing?
+Q: Does Alaska Golf Carts offer financing?
 A: Yes. Financing is available through six partners including Sheffield Financial, BLI Heartland,
 DLL Financial Solutions, Roadrunner/Octane, Univest Capital, and Dealer Direct. Options include
 0% APR programs, rent-to-own, and business financing. Terms up to 48 months.
@@ -203,29 +187,31 @@ Q: What is a street-legal golf cart (LSV)?
 A: A Low Speed Vehicle (LSV) is a golf cart that meets federal safety standards (FMVSS 500)
 for road use on streets with posted limits of 35 mph or less. Required equipment includes
 headlights, taillights, turn signals, brake lights, mirrors, seat belts, horn, and VIN.
-Discounted Golf Carts stocks LSVs from multiple brands.
+Alaska Golf Carts stocks LSVs from multiple brands.
 
 Q: What is the difference between electric and gas golf carts?
 A: Electric golf carts run on battery packs (typically 36V, 48V, or 72V lithium-ion or
 lead-acid). They are quieter, produce no exhaust, and have lower per-mile energy costs.
 Gas golf carts use small combustion engines and are preferred where charging is inconvenient
-or for longer-range use. Both types are available at all Discounted Golf Carts locations.
+or for longer-range use. Both types are available statewide from Alaska Golf Carts.
 
-Q: Does Discounted Golf Carts deliver nationwide?
-A: Yes. Nationwide delivery is available from any of the 14 locations. Contact 1-888-840-4490
+Q: Does Alaska Golf Carts deliver across Florida?
+A: Yes. Statewide delivery is available to any address in Florida. Contact 1-888-840-4490
 to get a delivery quote to your address.
 
 Q: Can I trade in my golf cart?
-A: Yes. Trade-ins are accepted at all 14 locations. Call 1-888-840-4490 to discuss your
-trade-in value before visiting.
+A: Yes. Trade-ins are accepted anywhere in Florida. Call 1-888-840-4490 to discuss your
+trade-in value.
 
-Q: How many locations does Discounted Golf Carts have?
-A: Discounted Golf Carts operates 14 retail locations across 9 states: Pennsylvania (Hatfield,
-Long Pond, Scranton), New Jersey (Ocean View, Bayville, Waretown, Rio Grande), Delaware (Dover),
-North Carolina (Raleigh), Indiana (South Bend), Virginia (Gloucester Point), Florida (Lecanto),
-South Carolina (Orangeburg), and Ohio (Swanton).
+Q: What areas does Alaska Golf Carts serve?
+A: Alaska Golf Carts provides Florida statewide service to all 67 counties, including
+Southeast Florida (Miami, Fort Lauderdale, West Palm Beach), Tampa Bay (Tampa, St.
+Petersburg, Clearwater), Central Florida (Orlando, Kissimmee), Northeast Florida
+(Jacksonville), Southwest Florida (Fort Myers, Naples, Sarasota), North Central Florida
+(Gainesville, Ocala), the Florida Panhandle (Tallahassee, Pensacola), the Space Coast
+(Melbourne), the Treasure Coast (Port St. Lucie), and the Keys (Key West).
 
-Q: Does Discounted Golf Carts service and repair golf carts?
+Q: Does Alaska Golf Carts service and repair golf carts?
 A: Yes. Service offerings include routine maintenance, battery diagnostics and replacement,
 motor and controller repair, brake service, electrical diagnostics, body repair, and warranty
 service for all carried brands.
@@ -235,23 +221,23 @@ A: The inventory feed is refreshed daily at 10:55 PM Eastern Time. Prices and av
 reflect the most recent update.
 
 ================================================================================
-PAGE: ABOUT — https://discountedgolfcart.com/about
+PAGE: ABOUT — https://alaskagolfcarts.com/about
 ================================================================================
 
-TITLE: About Discounted Golf Carts — Multi-Location Dealer | East Coast & Midwest
+TITLE: About Alaska Golf Carts — Florida Statewide Golf Cart Dealer
 
 DIRECT ANSWER:
-Discounted Golf Carts is one of the largest multi-location golf cart dealerships in the
-eastern United States. The company operates 14 retail locations across 9 states, carries
-13 authorized brands, and maintains daily-updated inventory of 500+ golf carts. The
+Alaska Golf Carts is one of the largest Florida statewide golf cart dealerships in
+Florida. The company provides statewide service and delivery to all 67 Florida counties,
+carries 13 authorized brands, and maintains daily-updated inventory of 500+ golf carts. The
 dealership specializes in wholesale-priced new and used golf carts, electric vehicles,
 street-legal LSVs, and lifted carts.
 
 ABOUT THE COMPANY:
-Discounted Golf Carts offers wholesale-to-the-public pricing on golf carts from all
+Alaska Golf Carts offers wholesale-to-the-public pricing on golf carts from all
 major manufacturers. The dealership serves residential communities, golf courses, gated
 communities, retirement communities, resorts, commercial properties, and individual buyers
-across the eastern US and Midwest.
+across all of Florida — from the Panhandle to the Keys.
 
 The company's inventory is updated every day at 10:55 PM ET, reflecting accurate current
 stock levels and pricing. Multiple financing partners allow customers to purchase with
@@ -269,8 +255,8 @@ SERVICE OFFERINGS:
 
 CONTACT:
 Phone: 1-888-840-4490
-Website: https://discountedgolfcart.com
-Inventory: https://discountedgolfcart.com/inventory
+Website: https://alaskagolfcarts.com
+Inventory: https://alaskagolfcarts.com/inventory
 
 ================================================================================
 END OF FILE

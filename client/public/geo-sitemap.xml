@@ -1,222 +1,494 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Discounted Golf Carts — Geographic Sitemap -->
-<!-- 14 Locations Across 9 States | Phone: 1-888-840-4490 -->
-<!-- Last Updated: 2026-06-09 -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
+  <!-- Alaska Golf Carts — Geographic Sitemap -->
+  <!-- Florida Statewide Service — All 67 Counties | Phone: 1-888-840-4490 -->
+  <!-- Last Updated: 2026-06-09 -->
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+          xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
 
-  <!-- Service Area Hub Page -->
-  <url>
-    <loc>https://discountedgolfcart.com/service-area</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+    <!-- Service Area Hub Page -->
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+    </url>
 
-  <!-- Pennsylvania Locations -->
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#hatfield-pa</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <!-- Statewide Inventory -->
+    <url>
+      <loc>https://alaskagolfcarts.com/inventory</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.9</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#long-pond-pa</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <!-- Florida County Service Areas (all 67 counties) -->
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#alachua-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#scranton-pa</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#baker-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <!-- New Jersey Locations -->
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#ocean-view-nj</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#bay-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#bayville-nj</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#bradford-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#waretown-nj</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#brevard-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#rio-grande-nj</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#broward-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <!-- Delaware Location -->
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#dover-de</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#calhoun-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <!-- North Carolina Location -->
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#raleigh-nc</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#charlotte-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <!-- Indiana Location -->
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#south-bend-in</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#citrus-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <!-- Virginia Location -->
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#gloucester-point-va</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#clay-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <!-- Florida Location -->
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#lecanto-fl</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#collier-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <!-- South Carolina Location -->
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#orangeburg-sc</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#columbia-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <!-- Ohio Location -->
-  <url>
-    <loc>https://discountedgolfcart.com/service-area#swanton-oh</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#desoto-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <!-- State-Filtered Inventory Pages -->
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T1</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#dixie-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T2</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#duval-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T3</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#escambia-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T4</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#flagler-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T5</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#franklin-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T6</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#gadsden-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T7</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#gilchrist-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T8</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#glades-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T9</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#gulf-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T10</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#hamilton-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T11</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#hardee-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T12</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#hendry-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T13</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#hernando-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://discountedgolfcart.com/inventory?location=T14</loc>
-    <lastmod>2026-06-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#highlands-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
 
-</urlset>
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#hillsborough-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#holmes-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#indian-river-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#jackson-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#jefferson-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#lafayette-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#lake-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#lee-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#leon-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#levy-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#liberty-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#madison-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#manatee-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#marion-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#martin-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#miami-dade-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#monroe-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#nassau-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#okaloosa-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#okeechobee-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#orange-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#osceola-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#palm-beach-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#pasco-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#pinellas-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#polk-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#putnam-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#st-johns-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#st-lucie-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#santa-rosa-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#sarasota-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#seminole-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#sumter-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#suwannee-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#taylor-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#union-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#volusia-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#wakulla-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#walton-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+    <url>
+      <loc>https://alaskagolfcarts.com/service-area#washington-fl</loc>
+      <lastmod>2026-06-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+  </urlset>

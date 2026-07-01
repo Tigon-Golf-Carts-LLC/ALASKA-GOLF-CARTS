@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Discounted Golf Carts — Category Sitemap -->
-<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<!-- Alaska Golf Carts — Category Sitemap -->
+<!-- Website: https://alaskagolfcarts.com | Phone: 1-888-840-4490 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Vehicle Type Categories -->
-  <url><loc>https://discountedgolfcart.com/inventory?condition=new</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?condition=used</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?powerType=electric</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?powerType=gas</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?isStreetLegal=true</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?isLifted=true</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?seating=2</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?seating=4</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?seating=6</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?condition=new</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?condition=used</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?powerType=electric</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?powerType=gas</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?isStreetLegal=true</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?isLifted=true</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?seating=2</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?seating=4</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?seating=6</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
 
   <!-- Brand Categories -->
-  <url><loc>https://discountedgolfcart.com/inventory?make=American+Custom+Golf+Carts</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Bintelli</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Club+Car</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=COLEMAN</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=COLUMBIA</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=CRICKET</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Denago</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Evolution</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=EZGO</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Icon</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Star+EV</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Tara</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Yamaha</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=American+Custom+Golf+Carts</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Bintelli</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Club+Car</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=COLEMAN</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=COLUMBIA</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=CRICKET</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Denago</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Evolution</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=EZGO</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Icon</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Star+EV</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Tara</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Yamaha</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 
   <!-- Service Categories -->
-  <url><loc>https://discountedgolfcart.com/financing</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://discountedgolfcart.com/service-area</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://discountedgolfcart.com/faq</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://discountedgolfcart.com/about</loc><lastmod>2026-06-09</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://alaskagolfcarts.com/financing</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alaskagolfcarts.com/service-area</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://alaskagolfcarts.com/faq</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://alaskagolfcarts.com/about</loc><lastmod>2026-06-09</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
 
 </urlset>

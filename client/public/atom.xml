@@ -2,20 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom"
       xmlns:media="http://search.yahoo.com/mrss/">
 
-  <title>Discounted Golf Carts — Golf Carts for Sale</title>
-  <subtitle>New and used golf carts for sale at wholesale prices. 14 locations across 9 US states. 13 authorized brands. Inventory updated daily.</subtitle>
-  <link href="https://discountedgolfcart.com/" rel="alternate" type="text/html"/>
-  <link href="https://discountedgolfcart.com/atom.xml" rel="self" type="application/atom+xml"/>
-  <id>https://discountedgolfcart.com/</id>
+  <title>Alaska Golf Carts — Golf Carts for Sale</title>
+  <subtitle>New and used golf carts for sale at wholesale prices. serving all of Florida statewide. 13 authorized brands. Inventory updated daily.</subtitle>
+  <link href="https://alaskagolfcarts.com/" rel="alternate" type="text/html"/>
+  <link href="https://alaskagolfcarts.com/atom.xml" rel="self" type="application/atom+xml"/>
+  <id>https://alaskagolfcarts.com/</id>
   <updated>2026-06-09T22:55:00Z</updated>
-  <rights>Copyright 2026 Discounted Golf Carts. All rights reserved.</rights>
-  <logo>https://discountedgolfcart.com/logo.png</logo>
-  <icon>https://discountedgolfcart.com/favicon.ico</icon>
+  <rights>Copyright 2026 Alaska Golf Carts. All rights reserved.</rights>
+  <logo>https://alaskagolfcarts.com/logo.png</logo>
+  <icon>https://alaskagolfcarts.com/favicon.ico</icon>
 
   <author>
-    <name>Discounted Golf Carts</name>
-    <email>info@discountedgolfcart.com</email>
-    <uri>https://discountedgolfcart.com</uri>
+    <name>Alaska Golf Carts</name>
+    <email>info@alaskagolfcarts.com</email>
+    <uri>https://alaskagolfcarts.com</uri>
   </author>
 
   <category term="golf-carts" label="Golf Carts"/>
@@ -24,8 +24,8 @@
 
   <entry>
     <title>Golf Carts for Sale — New &amp; Used Inventory Updated Daily</title>
-    <link href="https://discountedgolfcart.com/inventory" rel="alternate"/>
-    <id>https://discountedgolfcart.com/inventory</id>
+    <link href="https://alaskagolfcarts.com/inventory" rel="alternate"/>
+    <id>https://alaskagolfcarts.com/inventory</id>
     <updated>2026-06-09T22:55:00Z</updated>
     <published>2026-06-09T22:55:00Z</published>
     <summary>Browse hundreds of new and used golf carts from 13 authorized brands. Electric, gas, street-legal, lifted, and custom models. Prices updated nightly. 0% APR financing up to 48 months.</summary>
@@ -34,8 +34,8 @@
 
   <entry>
     <title>Golf Cart Financing — 0% APR Up to 48 Months</title>
-    <link href="https://discountedgolfcart.com/financing" rel="alternate"/>
-    <id>https://discountedgolfcart.com/financing</id>
+    <link href="https://alaskagolfcarts.com/financing" rel="alternate"/>
+    <id>https://alaskagolfcarts.com/financing</id>
     <updated>2026-06-09T00:00:00Z</updated>
     <published>2026-06-09T00:00:00Z</published>
     <summary>Finance your golf cart purchase through 6 lending partners. 0% APR options available. Terms up to 48 months. All credit considered. Apply in-store or call 1-888-840-4490.</summary>
@@ -43,19 +43,19 @@
   </entry>
 
   <entry>
-    <title>14 Locations Across 9 States — Find a Dealer Near You</title>
-    <link href="https://discountedgolfcart.com/service-area" rel="alternate"/>
-    <id>https://discountedgolfcart.com/service-area</id>
+    <title>Florida Statewide Service — All 67 Counties — Find a Dealer Near You</title>
+    <link href="https://alaskagolfcarts.com/service-area" rel="alternate"/>
+    <id>https://alaskagolfcarts.com/service-area</id>
     <updated>2026-06-09T00:00:00Z</updated>
     <published>2026-06-09T00:00:00Z</published>
-    <summary>Find your nearest Discounted Golf Carts dealership. 14 locations in PA, NJ, DE, NC, IN, VA, FL, SC, and OH. Nationwide delivery available.</summary>
+    <summary>Find your nearest Alaska Golf Carts dealership. serving all 67 Florida counties. Nationwide delivery available.</summary>
     <category term="locations" label="Store Locations"/>
   </entry>
 
   <entry>
     <title>Electric Golf Carts for Sale</title>
-    <link href="https://discountedgolfcart.com/inventory?powerType=electric" rel="alternate"/>
-    <id>https://discountedgolfcart.com/inventory?powerType=electric</id>
+    <link href="https://alaskagolfcarts.com/inventory?powerType=electric" rel="alternate"/>
+    <id>https://alaskagolfcarts.com/inventory?powerType=electric</id>
     <updated>2026-06-09T22:55:00Z</updated>
     <published>2026-06-09T22:55:00Z</published>
     <summary>Shop electric golf carts from Club Car, EZGO, Yamaha, Denago, Evolution, and 8 more brands. Zero emissions, low running costs. Lithium and lead-acid battery options.</summary>
@@ -64,8 +64,8 @@
 
   <entry>
     <title>Street Legal Golf Carts — LSV Dealer</title>
-    <link href="https://discountedgolfcart.com/inventory?isStreetLegal=true" rel="alternate"/>
-    <id>https://discountedgolfcart.com/inventory?isStreetLegal=true</id>
+    <link href="https://alaskagolfcarts.com/inventory?isStreetLegal=true" rel="alternate"/>
+    <id>https://alaskagolfcarts.com/inventory?isStreetLegal=true</id>
     <updated>2026-06-09T22:55:00Z</updated>
     <published>2026-06-09T22:55:00Z</published>
     <summary>Street legal Low Speed Vehicles (LSVs) for sale. Seat belts, mirrors, lights, VIN numbers included. Legal for road use in multiple states. Call 1-888-840-4490.</summary>

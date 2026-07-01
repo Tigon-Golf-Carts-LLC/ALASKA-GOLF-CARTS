@@ -1,6 +1,6 @@
-# Discounted Golf Carts - Compliance & Standards Documentation
+# Alaska Golf Carts - Compliance & Standards Documentation
 # Last Updated: 2026-02-11
-# Website: https://discountedgolfcart.com
+# Website: https://alaskagolfcarts.com
 # Contact: 1-888-840-4490
 
 ================================================================================
@@ -9,8 +9,8 @@ COMPLIANCE & REGULATORY STANDARDS
 
 PURPOSE:
 Document all compliance requirements, industry standards, and regulatory
-frameworks applicable to the Discounted Golf Carts website and business operations
-to ensure full legal and technical compliance across all operating states.
+frameworks applicable to the Alaska Golf Carts website and business operations
+to ensure full legal and technical compliance across Florida statewide operations.
 
 ================================================================================
 GDPR COMPLIANCE (General Data Protection Regulation)
@@ -55,7 +55,7 @@ CCPA COMPLIANCE (California Consumer Privacy Act)
 ================================================================================
 
 APPLICABILITY:
-- Discounted Golf Carts respects CCPA rights for all California residents
+- Alaska Golf Carts respects CCPA rights for all California residents
 - No sale of personal information to third parties
 - Consumers may request disclosure of collected data
 - Consumers may request deletion of personal data
@@ -63,7 +63,7 @@ APPLICABILITY:
 
 CONTACT FOR CCPA REQUESTS:
 - Phone: 1-888-840-4490
-- Website: https://discountedgolfcart.com
+- Website: https://alaskagolfcarts.com
 
 ================================================================================
 WCAG ACCESSIBILITY GUIDELINES (Web Content Accessibility Guidelines 2.1)
@@ -181,58 +181,50 @@ DEALER STANDARDS:
 - Customer satisfaction standards per manufacturer agreements
 
 ================================================================================
-STATE-SPECIFIC REGULATIONS
+FLORIDA STATE & REGIONAL REGULATIONS
 ================================================================================
 
-PENNSYLVANIA (PA):
-- Golf carts allowed on roads with 35 mph or less speed limits (select municipalities)
-- LSV registration required through PennDOT
-- Insurance requirements per state law
-- Municipal ordinances govern golf cart usage
-- Locations: Hatfield, Long Pond, Scranton
+Alaska Golf Carts operates Florida statewide, serving all 67 counties with statewide
+delivery. The following reflect Florida golf cart and LSV regulations applicable
+across the company's service area.
 
-NEW JERSEY (NJ):
-- LSVs allowed on roads with 25 mph speed limits
-- Registration through NJ MVC required
-- Insurance required for street-legal operation
-- Municipal approval may be required
-- Locations: Ocean View, Bayville, Waretown
+FLORIDA (FL) — STATEWIDE:
+- Golf carts and LSVs widely permitted under Florida Statutes (Ch. 316)
+- Golf carts on roads with 30 mph or less speed limits in designated/approved areas
+- LSVs (Low-Speed Vehicles) permitted on roads with 35 mph or less speed limits
+- LSVs must be registered, titled, and insured through the Florida DHSMV
+- LSV operators must hold a valid driver's license
+- Golf cart operators must be 15+ (learner's permit) or 14+ where authorized
+- Many communities have specific local golf cart ordinances
+- Coverage: all 67 Florida counties via statewide delivery
 
-DELAWARE (DE):
-- LSVs permitted on roads with 35 mph or less speed limits
-- Registration through Delaware DMV
-- Insurance required
-- Specific county and municipal regulations apply
-- Location: Dover
+SOUTHEAST FLORIDA (Miami-Dade, Broward, Palm Beach):
+- Metros: Miami, Fort Lauderdale, West Palm Beach
+- Local ordinances govern golf cart use in many coastal and gated communities
 
-NORTH CAROLINA (NC):
-- LSVs allowed on streets with 35 mph or less speed limits
-- Registration through NC DMV required
-- Liability insurance required
-- Municipal ordinances may apply
-- Location: Raleigh
+TAMPA BAY (Hillsborough, Pinellas, Pasco):
+- Metros: Tampa, St. Petersburg, Clearwater
+- Municipal approval and posted routes apply in designated golf cart zones
 
-INDIANA (IN):
-- LSVs allowed on roads with 35 mph or less speed limits
-- Registration through Indiana BMV
-- Insurance requirements per state law
-- Local ordinances may apply
-- Location: South Bend
+CENTRAL FLORIDA (Orange, Osceola, Seminole, Lake, Polk):
+- Metros: Orlando, Kissimmee; large planned/retirement communities
+- Golf cart ordinances common in master-planned developments
 
-VIRGINIA (VA):
-- LSVs allowed on roads with 35 mph or less speed limits
-- Registration through Virginia DMV
-- Insurance required for road operation
-- Local jurisdictions may have additional requirements
-- Location: Gloucester Point
+NORTHEAST FLORIDA (Duval, St. Johns, Clay, Nassau):
+- Metros: Jacksonville, St. Augustine
+- Local rules apply for beach and community golf cart use
 
-FLORIDA (FL):
-- Golf carts and LSVs widely permitted
-- Golf carts on roads with 30 mph or less speed limits in designated areas
-- LSVs on roads with 35 mph or less speed limits
-- Registration requirements vary by vehicle classification
-- Many communities have specific golf cart ordinances
-- Location: Lecanto
+SOUTHWEST FLORIDA (Lee, Collier, Sarasota, Manatee, Charlotte):
+- Metros: Fort Myers, Naples, Sarasota
+- Many barrier-island and community golf cart ordinances
+
+NORTH CENTRAL FLORIDA (Alachua, Marion):
+- Metros: Gainesville, Ocala
+- University-area and equestrian-community golf cart rules apply
+
+FLORIDA PANHANDLE (Leon, Escambia, Okaloosa, Bay):
+- Metros: Tallahassee, Pensacola, Panama City
+- Coastal and municipal golf cart ordinances apply
 
 ================================================================================
 WEBSITE TECHNICAL COMPLIANCE
@@ -256,7 +248,7 @@ BING WEBMASTER TOOLS COMPATIBILITY:
 
 SCHEMA.ORG COMPLIANCE:
 - AutoDealer schema implemented
-- LocalBusiness schema for all 11 locations
+- LocalBusiness schema for Florida statewide service area
 - Product schema for all vehicle models
 - FAQPage schema for common questions
 - WebSite schema with SearchAction
@@ -351,5 +343,5 @@ ANNUALLY:
 END OF COMPLIANCE & STANDARDS DOCUMENTATION
 ================================================================================
 
-Maintained by Discounted Golf Carts for regulatory and standards compliance.
-Contact: 1-888-840-4490 | https://discountedgolfcart.com
+Maintained by Alaska Golf Carts for regulatory and standards compliance.
+Contact: 1-888-840-4490 | https://alaskagolfcarts.com
