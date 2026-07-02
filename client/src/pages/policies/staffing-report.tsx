@@ -1,12 +1,15 @@
 import { SeoHead } from "@/components/seo-head";
+import { POLICY_ROUTES, SITE_URL } from "@shared/seo-routes";
+
+const meta = POLICY_ROUTES["/staffing-report"];
 
 export default function StaffingReport() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Staffing Report | Alaska Golf Carts"
-        description="Annual staffing and workforce overview for Alaska Golf Carts."
-        canonical="https://alaskagolfcarts.com/staffing-report"
+        title={meta.title}
+        description={meta.description}
+        canonical={`${SITE_URL}/staffing-report`}
       />
       <h1 className="text-3xl font-extrabold mb-2">Staffing Report</h1>
       <p className="text-muted-foreground text-sm mb-8">Reporting period: 2024–2025</p>

@@ -1,13 +1,16 @@
 import { SeoHead } from "@/components/seo-head";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
+import { POLICY_ROUTES, SITE_URL } from "@shared/seo-routes";
+
+const meta = POLICY_ROUTES["/publishing-policy"];
 
 export default function PublishingPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Publishing Policy | Alaska Golf Carts"
-        description="Content publishing standards and guidelines for alaskagolfcarts.com."
-        canonical="https://alaskagolfcarts.com/publishing-policy"
+        title={meta.title}
+        description={meta.description}
+        canonical={`${SITE_URL}/publishing-policy`}
       />
       <h1 className="text-3xl font-extrabold mb-2">Publishing Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>

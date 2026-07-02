@@ -1,13 +1,16 @@
 import { SeoHead } from "@/components/seo-head";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
+import { POLICY_ROUTES, SITE_URL } from "@shared/seo-routes";
+
+const meta = POLICY_ROUTES["/rental-policy"];
 
 export default function RentalPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Rental Policy | Alaska Golf Carts"
-        description="Golf cart rental terms and conditions at Alaska Golf Carts."
-        canonical="https://alaskagolfcarts.com/rental-policy"
+        title={meta.title}
+        description={meta.description}
+        canonical={`${SITE_URL}/rental-policy`}
       />
       <h1 className="text-3xl font-extrabold mb-2">Rental Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>

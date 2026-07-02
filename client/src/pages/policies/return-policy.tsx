@@ -1,13 +1,16 @@
 import { SeoHead } from "@/components/seo-head";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
+import { POLICY_ROUTES, SITE_URL } from "@shared/seo-routes";
+
+const meta = POLICY_ROUTES["/return-policy"];
 
 export default function ReturnPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Return Policy | Alaska Golf Carts"
-        description="Return and exchange policy for golf cart purchases at Alaska Golf Carts."
-        canonical="https://alaskagolfcarts.com/return-policy"
+        title={meta.title}
+        description={meta.description}
+        canonical={`${SITE_URL}/return-policy`}
       />
       <h1 className="text-3xl font-extrabold mb-2">Return Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>

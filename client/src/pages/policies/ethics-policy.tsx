@@ -1,13 +1,16 @@
 import { SeoHead } from "@/components/seo-head";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
+import { POLICY_ROUTES, SITE_URL } from "@shared/seo-routes";
+
+const meta = POLICY_ROUTES["/ethics-policy"];
 
 export default function EthicsPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Ethics Policy | Alaska Golf Carts"
-        description="Business ethics and code of conduct for Alaska Golf Carts."
-        canonical="https://alaskagolfcarts.com/ethics-policy"
+        title={meta.title}
+        description={meta.description}
+        canonical={`${SITE_URL}/ethics-policy`}
       />
       <h1 className="text-3xl font-extrabold mb-2">Ethics Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>

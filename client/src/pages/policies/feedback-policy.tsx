@@ -1,13 +1,16 @@
 import { SeoHead } from "@/components/seo-head";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
+import { POLICY_ROUTES, SITE_URL } from "@shared/seo-routes";
+
+const meta = POLICY_ROUTES["/feedback-policy"];
 
 export default function FeedbackPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Feedback Policy | Alaska Golf Carts"
-        description="How Alaska Golf Carts collects and responds to customer feedback."
-        canonical="https://alaskagolfcarts.com/feedback-policy"
+        title={meta.title}
+        description={meta.description}
+        canonical={`${SITE_URL}/feedback-policy`}
       />
       <h1 className="text-3xl font-extrabold mb-2">Feedback Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>

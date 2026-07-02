@@ -1,13 +1,16 @@
 import { SeoHead } from "@/components/seo-head";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
+import { POLICY_ROUTES, SITE_URL } from "@shared/seo-routes";
+
+const meta = POLICY_ROUTES["/privacy-policy"];
 
 export default function PrivacyPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Privacy Policy | Alaska Golf Carts"
-        description="Privacy policy for alaskagolfcarts.com — how we collect, use, and protect your personal information."
-        canonical="https://alaskagolfcarts.com/privacy-policy"
+        title={meta.title}
+        description={meta.description}
+        canonical={`${SITE_URL}/privacy-policy`}
       />
       <h1 className="text-3xl font-extrabold mb-2">Privacy Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>

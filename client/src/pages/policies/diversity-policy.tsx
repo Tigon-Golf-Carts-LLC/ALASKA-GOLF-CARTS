@@ -1,12 +1,15 @@
 import { SeoHead } from "@/components/seo-head";
+import { POLICY_ROUTES, SITE_URL } from "@shared/seo-routes";
+
+const meta = POLICY_ROUTES["/diversity-policy"];
 
 export default function DiversityPolicy() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
       <SeoHead
-        title="Diversity Policy | Alaska Golf Carts"
-        description="Diversity, equity, and inclusion policy for Alaska Golf Carts."
-        canonical="https://alaskagolfcarts.com/diversity-policy"
+        title={meta.title}
+        description={meta.description}
+        canonical={`${SITE_URL}/diversity-policy`}
       />
       <h1 className="text-3xl font-extrabold mb-2">Diversity Policy</h1>
       <p className="text-muted-foreground text-sm mb-8">Last updated: June 2025</p>
