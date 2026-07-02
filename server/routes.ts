@@ -96,6 +96,28 @@ export let getCartMetaForSeo: (slug: string) => Promise<{
   imageUrl: string | null;
 } | null> = async () => null;
 
+export interface CartSummaryForSeo {
+  slug: string;
+  title: string;
+  price: number | null;
+  isUsed: boolean;
+  isElectric: boolean;
+  imageUrl: string | null;
+}
+
+export let getHomeSnapshotForSeo: () => Promise<{
+  newCarts: CartSummaryForSeo[];
+  usedCarts: CartSummaryForSeo[];
+  totalCarts: number;
+}> = async () => ({ newCarts: [], usedCarts: [], totalCarts: 0 });
+
+export let getInventorySnapshotForSeo: (url: string) => Promise<{
+  carts: CartSummaryForSeo[];
+  totalCarts: number;
+}> = async () => ({ carts: [], totalCarts: 0 });
+
+export let isValidCartSlugForSeo: (slug: string) => Promise<boolean> = async () => false;
+
 export async function registerRoutes(
   httpServer: Server,
   app: Express
@@ -384,16 +406,98 @@ export async function registerRoutes(
     return allCarts;
   }
 
+  function toCartSummaryForSeo(cart: any, slug: string): CartSummaryForSeo {
+    const make = (cart?.cartType?.make as string) || "";
+    const model = (cart?.cartType?.model as string) || "";
+    const color = (cart?.cartAttributes?.cartColor as string) || "";
+    const year = (cart?.cartType?.year as string) || "";
+    const isUsed = cart.isUsed === true;
+    const isElectric = cart.isElectric === true;
+    const price = (cart.retailPrice as number | null | undefined) ?? null;
+    const nameParts = [year, make, model, color].filter(Boolean);
+    const title = `${isUsed ? "Used" : "New"} ${nameParts.join(" ") || "Golf Cart"}`;
+    const imageFiles: string[] = (cart.internalCartImageUrls as string[]) || (cart.imageUrls as string[]) || [];
+    const imageUrl = imageFiles[0]
+      ? imageFiles[0].startsWith("http")
+        ? imageFiles[0]
+        : `https://s3.amazonaws.com/prod.docs.s3/carts/${imageFiles[0]}`
+      : null;
+    return { slug, title, price, isUsed, isElectric, imageUrl };
+  }
+
+  getHomeSnapshotForSeo = async () => {
+    try {
+      const [carts, slugMapResult] = await Promise.all([fetchAllCartsComplete(), getSlugMap()]);
+      const sorted = sortCarts(carts);
+      const withSlug = sorted
+        .map((c: any) => ({ cart: c, slug: slugMapResult.idToSlug[c._id] }))
+        .filter((x: any) => !!x.slug);
+      const newCarts = withSlug
+        .filter((x: any) => x.cart.isUsed !== true)
+        .slice(0, 8)
+        .map((x: any) => toCartSummaryForSeo(x.cart, x.slug));
+      const usedCarts = withSlug
+        .filter((x: any) => x.cart.isUsed === true)
+        .slice(0, 8)
+        .map((x: any) => toCartSummaryForSeo(x.cart, x.slug));
+      return { newCarts, usedCarts, totalCarts: carts.length };
+    } catch {
+      return { newCarts: [], usedCarts: [], totalCarts: 0 };
+    }
+  };
+
+  getInventorySnapshotForSeo = async (url: string) => {
+    try {
+      const qIndex = url.indexOf("?");
+      const query = new URLSearchParams(qIndex >= 0 ? url.slice(qIndex + 1) : "");
+      const filters: any = {};
+      if (query.get("searchText")) filters.searchText = query.get("searchText");
+      if (query.get("isNew") === "true") filters.isNew = true;
+      if (query.get("isUsed") === "true") filters.isUsed = true;
+      if (query.get("isElectric") === "true") filters.isElectric = true;
+      if (query.get("isGas") === "true") filters.isGas = true;
+      if (query.get("isStreetLegal") === "true") filters.isStreetLegal = true;
+      if (query.get("isLifted") === "true") filters.isLifted = true;
+      const makesParam = query.get("makes") || query.get("make");
+      if (makesParam) filters.makes = makesParam.split(",").map((m) => m.toLowerCase().replace(/[^a-z0-9]/g, "_"));
+      const modelsParam = query.get("models") || query.get("model");
+      if (modelsParam) filters.models = modelsParam.split(",").map((m) => m.toLowerCase());
+      const colorsParam = query.get("colors") || query.get("color");
+      if (colorsParam) filters.colors = colorsParam.split(",").map((c) => c.toLowerCase());
+      const driveTrainParam = query.get("driveTrain");
+      if (driveTrainParam) filters.driveTrain = driveTrainParam.split(",").map((d) => d.toLowerCase());
+
+      const priceSortASC = query.get("priceSortASC") !== null ? query.get("priceSortASC") === "true" : undefined;
+
+      const [allCarts, slugMapResult] = await Promise.all([fetchAllCarts(filters), getSlugMap()]);
+      const sorted = sortCarts(allCarts, priceSortASC);
+      const withSlug = sorted
+        .map((c: any) => ({ cart: c, slug: slugMapResult.idToSlug[c._id] }))
+        .filter((x: any) => !!x.slug);
+      const carts = withSlug.slice(0, 24).map((x: any) => toCartSummaryForSeo(x.cart, x.slug));
+      return { carts, totalCarts: sorted.length };
+    } catch {
+      return { carts: [], totalCarts: 0 };
+    }
+  };
+
+  isValidCartSlugForSeo = async (slug: string) => {
+    try {
+      const slugMapResult = await getSlugMap();
+      return !!slugMapResult.slugToId[slug];
+    } catch {
+      return false;
+    }
+  };
+
   getCartMetaForSeo = async (slug: string) => {
     try {
-      const slugMapCached = getCached("slugMap") as { slugToId: Record<string, string> } | null;
-      if (!slugMapCached) return null;
+      const slugMapResult = await getSlugMap();
 
-      const cartId = slugMapCached.slugToId[slug];
+      const cartId = slugMapResult.slugToId[slug];
       if (!cartId) return null;
 
-      const allCarts = getCached("allCartsComplete") as any[] | null;
-      if (!allCarts) return null;
+      const allCarts = await fetchAllCartsComplete();
 
       const cart = allCarts.find((c: any) => c._id === cartId);
       if (!cart) return null;

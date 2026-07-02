@@ -17,8 +17,8 @@ export function serveStatic(app: Express) {
     try {
       const indexPath = path.resolve(distPath, "index.html");
       const html = await fs.promises.readFile(indexPath, "utf-8");
-      const injected = await buildPageHtml(html, req.originalUrl);
-      res.status(200).set({ "Content-Type": "text/html" }).send(injected);
+      const { html: injected, status } = await buildPageHtml(html, req.originalUrl);
+      res.status(status).set({ "Content-Type": "text/html" }).send(injected);
     } catch {
       res.status(500).send("Internal Server Error");
     }

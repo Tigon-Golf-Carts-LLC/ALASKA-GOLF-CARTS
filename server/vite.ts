@@ -50,8 +50,8 @@ export async function setupVite(server: Server, app: Express) {
         `src="/src/main.tsx?v=${nanoid()}"`,
       );
       const page = await vite.transformIndexHtml(url, template);
-      const injectedPage = await buildPageHtml(page, url);
-      res.status(200).set({ "Content-Type": "text/html" }).end(injectedPage);
+      const { html: injectedPage, status } = await buildPageHtml(page, url);
+      res.status(status).set({ "Content-Type": "text/html" }).end(injectedPage);
     } catch (e) {
       vite.ssrFixStacktrace(e as Error);
       next(e);

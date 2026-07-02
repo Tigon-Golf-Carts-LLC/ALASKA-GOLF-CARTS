@@ -1,4 +1,6 @@
-import { getCartMetaForSeo } from "./routes";
+import { getCartMetaForSeo, getHomeSnapshotForSeo, getInventorySnapshotForSeo, isValidCartSlugForSeo } from "./routes";
+import { KNOWN_STATIC_ROUTES, normalizePathname, getCartSlugFromPathname } from "./known-routes";
+import { renderRouteContent, renderNotFoundContent } from "./prerender";
 
 const BASE_URL = "https://alaskagolfcarts.com";
 
@@ -178,24 +180,75 @@ function injectSeoTags(
   return result;
 }
 
-export async function buildPageHtml(html: string, url: string): Promise<string> {
+function injectRootContent(html: string, content: string): string {
+  return html.replace(
+    /<div id="root"><\/div>/,
+    `<div id="root">${content}</div>`
+  );
+}
+
+export async function resolveRouteStatus(url: string): Promise<number> {
+  const pathname = normalizePathname(url);
+
+  if (KNOWN_STATIC_ROUTES.has(pathname)) return 200;
+
+  const slug = getCartSlugFromPathname(pathname);
+  if (slug) {
+    try {
+      const valid = await isValidCartSlugForSeo(slug);
+      return valid ? 200 : 404;
+    } catch {
+      return 404;
+    }
+  }
+
+  return 404;
+}
+
+export async function buildPageHtml(html: string, url: string): Promise<{ html: string; status: number }> {
+  const pathname = normalizePathname(url);
   const cartSlugMatch = url.match(/^\/golfcart\/([^/?#]+)/);
+  const status = await resolveRouteStatus(url);
 
   if (cartSlugMatch) {
     const slug = cartSlugMatch[1];
     try {
       const cartMeta = await getCartMetaForSeo(slug);
       if (cartMeta) {
-        return injectSeoTags(html, url, {
+        let result = injectSeoTags(html, url, {
           cartMeta: { title: cartMeta.title, description: cartMeta.description },
           vehicleSchema: cartMeta.schema,
           ogImage: cartMeta.imageUrl ?? undefined,
         });
+        const content = await renderRouteContent(pathname, url, {
+          getHomeSnapshotForSeo,
+          getInventorySnapshotForSeo,
+          getCartMetaForSeo,
+        });
+        if (content) result = injectRootContent(result, content);
+        return { html: result, status };
       }
     } catch {
       // fall through to basic injection
     }
   }
 
-  return injectSeoTags(html, url);
+  let result = injectSeoTags(html, url);
+
+  try {
+    if (status === 404) {
+      result = injectRootContent(result, renderNotFoundContent());
+    } else {
+      const content = await renderRouteContent(pathname, url, {
+        getHomeSnapshotForSeo,
+        getInventorySnapshotForSeo,
+        getCartMetaForSeo,
+      });
+      if (content) result = injectRootContent(result, content);
+    }
+  } catch {
+    // fall through without body content injection
+  }
+
+  return { html: result, status };
 }
