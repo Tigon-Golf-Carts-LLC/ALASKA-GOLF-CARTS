@@ -6,8 +6,8 @@ export const COMING_SOON_IMAGE =
   encodeURIComponent(
     `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600"><rect width="800" height="600" fill="#0f1713"/><g fill="none" stroke="#16a34a" stroke-width="8"><rect x="300" y="230" width="200" height="120" rx="12"/><circle cx="345" cy="380" r="26"/><circle cx="455" cy="380" r="26"/></g><text x="400" y="470" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#16a34a" text-anchor="middle">Image Coming Soon</text></svg>`
   );
-export const SITE_NAME = "Alaska Golf Carts";
-export const SITE_DOMAIN = "alaskagolfcarts.com";
+export const SITE_NAME = "Discounted Golf Carts";
+export const SITE_DOMAIN = "discountedgolfcart.com";
 
 export const STATE_ABBREVIATIONS: Record<string, string> = {
   "Pennsylvania": "PA",

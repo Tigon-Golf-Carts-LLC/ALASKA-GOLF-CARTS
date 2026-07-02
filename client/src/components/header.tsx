@@ -73,12 +73,12 @@ export function Header() {
           <div className="flex h-16 items-center justify-between gap-4">
             <Link href="/" data-testid="link-home">
               <div className="flex items-center gap-2.5">
-                <img src={logoImg} alt="Alaska Golf Carts" className="h-10 w-10 object-contain" />
+                <img src={logoImg} alt="Discounted Golf Carts" className="h-10 w-10 object-contain" />
                 <div className="leading-tight">
                   <span className="text-lg font-extrabold tracking-tight block">
-                    Alaska <span className="text-primary">Golf Carts</span>
+                    Discounted <span className="text-primary">Golf Carts</span>
                   </span>
-                  <span className="text-[10px] text-muted-foreground font-medium tracking-widest uppercase hidden sm:block">alaskagolfcarts.com</span>
+                  <span className="text-[10px] text-muted-foreground font-medium tracking-widest uppercase hidden sm:block">discountedgolfcart.com</span>
                 </div>
               </div>
             </Link>

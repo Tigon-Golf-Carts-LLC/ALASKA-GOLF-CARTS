@@ -17,7 +17,7 @@ export default function DiversityPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Our Commitment</h2>
-          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts is committed to building and maintaining a diverse, equitable, and inclusive workplace and customer environment. We believe that diversity of background, experience, and perspective makes our company stronger and better serves our customers across the state of Florida.</p>
+          <p className="text-muted-foreground leading-relaxed">Discounted Golf Carts is committed to building and maintaining a diverse, equitable, and inclusive workplace and customer environment. We believe that diversity of background, experience, and perspective makes our company stronger and better serves our customers across the state of Florida.</p>
         </section>
 
         <section>

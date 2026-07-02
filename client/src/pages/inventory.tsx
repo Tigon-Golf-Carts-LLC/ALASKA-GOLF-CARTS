@@ -168,8 +168,8 @@ export default function Inventory() {
     if (filters.isUsed && !filters.isNew) parts.push("Used");
     if (seoIndexableMake) parts.push(seoIndexableMake);
     const filterStr = parts.join(" ");
-    if (filterStr) return `${filterStr} Golf Carts for Sale | Alaska Golf Carts`;
-    return "Golf Cart Inventory — New & Used Golf Carts for Sale | Alaska Golf Carts";
+    if (filterStr) return `${filterStr} Golf Carts for Sale | Discounted Golf Carts`;
+    return "Golf Cart Inventory — New & Used Golf Carts for Sale | Discounted Golf Carts";
   }, [filters.isNew, filters.isUsed, seoIndexableMake]);
 
   const seoDescription = useMemo(() => {
@@ -179,7 +179,7 @@ export default function Inventory() {
     if (seoIndexableMake) parts.push(seoIndexableMake);
     const filterStr = parts.join(" ") || "golf";
     const countStr = data ? `${data.totalCarts.toLocaleString()} matching` : "800+";
-    return `Browse ${countStr} ${filterStr} cart${data?.totalCarts !== 1 ? "s" : ""} at Alaska Golf Carts — updated daily. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.`;
+    return `Browse ${countStr} ${filterStr} cart${data?.totalCarts !== 1 ? "s" : ""} at Discounted Golf Carts — updated daily. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.`;
   }, [filters.isNew, filters.isUsed, seoIndexableMake, data?.totalCarts]);
 
   const seoCanonical = useMemo(() => {
@@ -188,7 +188,7 @@ export default function Inventory() {
     if (filters.isUsed && !filters.isNew) qp.set("condition", "used");
     if (seoIndexableMake) qp.set("make", seoIndexableMake);
     const qs = qp.toString();
-    return `https://alaskagolfcarts.com/inventory${qs ? `?${qs}` : ""}`;
+    return `https://discountedgolfcart.com/inventory${qs ? `?${qs}` : ""}`;
   }, [filters.isNew, filters.isUsed, seoIndexableMake]);
 
   return (

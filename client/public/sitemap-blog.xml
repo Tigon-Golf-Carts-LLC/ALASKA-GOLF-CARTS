@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Alaska Golf Carts — Blog/Content Sitemap -->
+<!-- Discounted Golf Carts — Blog/Content Sitemap -->
 <!-- Informational pages that serve as content/blog equivalents -->
-<!-- Website: https://alaskagolfcarts.com | Phone: 1-888-840-4490 -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://alaskagolfcarts.com/faq</loc>
+    <loc>https://discountedgolfcart.com/faq</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://alaskagolfcarts.com/about</loc>
+    <loc>https://discountedgolfcart.com/about</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://alaskagolfcarts.com/financing</loc>
+    <loc>https://discountedgolfcart.com/financing</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://alaskagolfcarts.com/service-area</loc>
+    <loc>https://discountedgolfcart.com/service-area</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

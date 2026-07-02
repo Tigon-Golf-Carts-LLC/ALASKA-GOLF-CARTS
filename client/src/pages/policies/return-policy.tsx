@@ -18,7 +18,7 @@ export default function ReturnPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">All Sales Are Final</h2>
-          <p className="text-muted-foreground leading-relaxed">All golf cart sales at Alaska Golf Carts are considered final upon execution of a signed purchase agreement and receipt of payment or financing approval. Due to the nature of vehicle sales and the significant logistics involved in golf cart delivery and processing, we do not accept returns for buyer's remorse or change of mind.</p>
+          <p className="text-muted-foreground leading-relaxed">All golf cart sales at Discounted Golf Carts are considered final upon execution of a signed purchase agreement and receipt of payment or financing approval. Due to the nature of vehicle sales and the significant logistics involved in golf cart delivery and processing, we do not accept returns for buyer's remorse or change of mind.</p>
         </section>
 
         <section>

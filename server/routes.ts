@@ -522,18 +522,18 @@ export async function registerRoutes(
           : `https://s3.amazonaws.com/prod.docs.s3/carts/${imageFiles[0]}`
         : null;
 
-      const title = `${conditionStr} ${cartName} Golf Cart for Sale | Alaska Golf Carts`;
-      const description = `${conditionStr} ${cartName} golf cart for sale at Alaska Golf Carts.${price ? ` Priced at $${price.toLocaleString()}.` : ""} 0% APR financing available. Call 1-888-840-4490.`;
+      const title = `${conditionStr} ${cartName} Golf Cart for Sale | Discounted Golf Carts`;
+      const description = `${conditionStr} ${cartName} golf cart for sale at Discounted Golf Carts.${price ? ` Priced at $${price.toLocaleString()}.` : ""} 0% APR financing available. Call 1-888-840-4490.`;
 
       const offersSchema: Record<string, unknown> = {
         "@type": "Offer",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
-        "url": `https://alaskagolfcarts.com/golfcart/${slug}`,
+        "url": `https://discountedgolfcart.com/golfcart/${slug}`,
         "seller": {
           "@type": "AutoDealer",
-          "name": "Alaska Golf Carts",
-          "url": "https://alaskagolfcarts.com",
+          "name": "Discounted Golf Carts",
+          "url": "https://discountedgolfcart.com",
           "telephone": "1-888-840-4490",
         },
       };
@@ -546,7 +546,7 @@ export async function registerRoutes(
         "fuelType": isElectric ? "Electric" : "Gasoline",
         "itemCondition": isUsed ? "https://schema.org/UsedCondition" : "https://schema.org/NewCondition",
         "offers": offersSchema,
-        "url": `https://alaskagolfcarts.com/golfcart/${slug}`,
+        "url": `https://discountedgolfcart.com/golfcart/${slug}`,
         "description": description,
       };
       if (make) schema["brand"] = { "@type": "Brand", "name": make };
@@ -576,7 +576,7 @@ export async function registerRoutes(
         fetchAllCartsComplete(),
       ]);
 
-      const baseUrl = "https://alaskagolfcarts.com";
+      const baseUrl = "https://discountedgolfcart.com";
       const s3Base = "https://s3.amazonaws.com/prod.docs.s3/carts/";
       const today = new Date().toISOString().split("T")[0];
 
@@ -647,7 +647,7 @@ export async function registerRoutes(
           for (let i = 0; i < maxImages; i++) {
             const imageUrl = imageFiles[i].startsWith("http") ? imageFiles[i] : `${s3Base}${imageFiles[i]}`;
             const imgCaption = i === 0
-              ? `${cartTitle}${color ? ` in ${color}` : ""} - Alaska Golf Carts`
+              ? `${cartTitle}${color ? ` in ${color}` : ""} - Discounted Golf Carts`
               : `${cartTitle} - Photo ${i + 1}`;
             xml += `    <image:image>\n`;
             xml += `      <image:loc>${escapeXml(imageUrl)}</image:loc>\n`;

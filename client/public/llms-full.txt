@@ -1,16 +1,16 @@
-# Alaska Golf Carts — Full Plain-Text Snapshot for AI Crawlers
-# URL: https://alaskagolfcarts.com
+# Discounted Golf Carts — Full Plain-Text Snapshot for AI Crawlers
+# URL: https://discountedgolfcart.com
 # Last Updated: 2026-06-09
 # Purpose: Authoritative plain-text content for LLM ingestion, RAG, and AI overviews
 
 ================================================================================
-PAGE: HOME — https://alaskagolfcarts.com/
+PAGE: HOME — https://discountedgolfcart.com/
 ================================================================================
 
-TITLE: Golf Carts for Sale — Inventory Updated Daily | Alaska Golf Carts
+TITLE: Golf Carts for Sale — Inventory Updated Daily | Discounted Golf Carts
 
 DIRECT ANSWER:
-Alaska Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida
+Discounted Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida
 counties with statewide delivery — from Southeast Florida (Miami, Fort Lauderdale, West
 Palm Beach) and Tampa Bay (Tampa, St. Petersburg, Clearwater) to Central Florida (Orlando,
 Kissimmee), Northeast Florida (Jacksonville), Southwest Florida (Fort Myers, Naples,
@@ -28,11 +28,11 @@ KEY FACTS:
 - Financing: 0% APR, terms up to 48 months (Sheffield Financial, BLI Heartland, DLL, Octane, Univest, Dealer Direct)
 - Statewide delivery available across Florida
 - Phone: 1-888-840-4490
-- Email: info@alaskagolfcarts.com
-- Website: https://alaskagolfcarts.com
+- Email: info@discountedgolfcart.com
+- Website: https://discountedgolfcart.com
 
 MAIN CONTENT:
-Alaska Golf Carts sells wholesale-priced golf carts with inventory refreshed every day.
+Discounted Golf Carts sells wholesale-priced golf carts with inventory refreshed every day.
 The dealership carries both new and pre-owned golf carts in electric, gas, and street-legal
 configurations. Models range from 2-passenger golf course carts to 6-passenger family vehicles.
 Lifted golf carts with suspension upgrades are available. All 13 major brands are stocked.
@@ -44,32 +44,32 @@ New golf carts are sold at wholesale MSRP pricing. Used golf carts are inspected
 before sale. The dealership accepts trade-ins at all locations.
 
 NAP:
-Alaska Golf Carts | 1-888-840-4490 | https://alaskagolfcarts.com
+Discounted Golf Carts | 1-888-840-4490 | https://discountedgolfcart.com
 
 ================================================================================
-PAGE: INVENTORY — https://alaskagolfcarts.com/inventory
+PAGE: INVENTORY — https://discountedgolfcart.com/inventory
 ================================================================================
 
-TITLE: Golf Cart Inventory for Sale — New & Used | Alaska Golf Carts
+TITLE: Golf Cart Inventory for Sale — New & Used | Discounted Golf Carts
 
 NOTE: This page renders live inventory from the DMS API. Inventory changes daily.
 Filters available: Condition (new/used), Power type (electric/gas), Brand, Model,
 Color, Seating capacity, Drivetrain, Location.
 
 STATIC CONTEXT:
-Alaska Golf Carts maintains 500+ units available for statewide delivery across Florida. All inventory is
+Discounted Golf Carts maintains 500+ units available for statewide delivery across Florida. All inventory is
 photographed and listed with pricing, specifications, passenger count, power type,
 and drivetrain. Prices are updated nightly at 10:55 PM ET. Each listing includes a
 "Call Now" option to reach 1-888-840-4490.
 
 ================================================================================
-PAGE: FINANCING — https://alaskagolfcarts.com/financing
+PAGE: FINANCING — https://discountedgolfcart.com/financing
 ================================================================================
 
-TITLE: Golf Cart Financing — 0% APR Up to 48 Months | Alaska Golf Carts
+TITLE: Golf Cart Financing — 0% APR Up to 48 Months | Discounted Golf Carts
 
 DIRECT ANSWER:
-Alaska Golf Carts offers golf cart financing through six lending partners. Rates
+Discounted Golf Carts offers golf cart financing through six lending partners. Rates
 start at 0% APR with terms up to 48 months. Applications are processed quickly, often
 within minutes. Financing is available for new carts, used carts, street-legal LSVs,
 and NEVs. Call 1-888-840-4490 to discuss options.
@@ -92,16 +92,16 @@ QUESTIONS ANSWERED:
 - Can I finance a used cart? Yes, most partners finance both new and used golf carts.
 - Is 0% APR available? Yes, through select programs with qualified credit.
 
-NAP: Alaska Golf Carts | 1-888-840-4490 | https://alaskagolfcarts.com
+NAP: Discounted Golf Carts | 1-888-840-4490 | https://discountedgolfcart.com
 
 ================================================================================
-PAGE: SERVICE AREA — https://alaskagolfcarts.com/service-area
+PAGE: SERVICE AREA — https://discountedgolfcart.com/service-area
 ================================================================================
 
-TITLE: Golf Cart Service Area — Florida Statewide Across All 67 Counties | Alaska Golf Carts
+TITLE: Golf Cart Service Area — Florida Statewide Across All 67 Counties | Discounted Golf Carts
 
 DIRECT ANSWER:
-Alaska Golf Carts provides Florida statewide service to all 67 counties. Rather than
+Discounted Golf Carts provides Florida statewide service to all 67 counties. Rather than
 operating physical storefronts, the company sells new and used golf carts, offers
 financing, and delivers statewide to any Florida address. Call 1-888-840-4490.
 
@@ -160,25 +160,25 @@ SERVICE REGIONS (statewide delivery to all 67 Florida counties):
 STATE SERVED: Florida (statewide, all 67 counties)
 STATEWIDE DELIVERY: Yes, delivery available to any Florida address.
 PHONE: 1-888-840-4490
-EMAIL: info@alaskagolfcarts.com
+EMAIL: info@discountedgolfcart.com
 
 ================================================================================
-PAGE: FAQ — https://alaskagolfcarts.com/faq
+PAGE: FAQ — https://discountedgolfcart.com/faq
 ================================================================================
 
-TITLE: Golf Cart FAQ — Buying, Financing & Street-Legal Questions | Alaska Golf Carts
+TITLE: Golf Cart FAQ — Buying, Financing & Street-Legal Questions | Discounted Golf Carts
 
-Q: How much does a golf cart cost at Alaska Golf Carts?
+Q: How much does a golf cart cost at Discounted Golf Carts?
 A: New golf carts start at approximately $9,995. Used and pre-owned golf carts typically
 range from $4,500 to $12,000 depending on brand, age, condition, and features. Street-legal
 LSVs and lifted models may cost more. Call 1-888-840-4490 for current pricing on specific units.
 
-Q: What brands of golf carts does Alaska Golf Carts sell?
-A: Alaska Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts,
+Q: What brands of golf carts does Discounted Golf Carts sell?
+A: Discounted Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts,
 Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO (E-Z-GO), Icon,
 Star EV, Tara, and Yamaha.
 
-Q: Does Alaska Golf Carts offer financing?
+Q: Does Discounted Golf Carts offer financing?
 A: Yes. Financing is available through six partners including Sheffield Financial, BLI Heartland,
 DLL Financial Solutions, Roadrunner/Octane, Univest Capital, and Dealer Direct. Options include
 0% APR programs, rent-to-own, and business financing. Terms up to 48 months.
@@ -187,15 +187,15 @@ Q: What is a street-legal golf cart (LSV)?
 A: A Low Speed Vehicle (LSV) is a golf cart that meets federal safety standards (FMVSS 500)
 for road use on streets with posted limits of 35 mph or less. Required equipment includes
 headlights, taillights, turn signals, brake lights, mirrors, seat belts, horn, and VIN.
-Alaska Golf Carts stocks LSVs from multiple brands.
+Discounted Golf Carts stocks LSVs from multiple brands.
 
 Q: What is the difference between electric and gas golf carts?
 A: Electric golf carts run on battery packs (typically 36V, 48V, or 72V lithium-ion or
 lead-acid). They are quieter, produce no exhaust, and have lower per-mile energy costs.
 Gas golf carts use small combustion engines and are preferred where charging is inconvenient
-or for longer-range use. Both types are available statewide from Alaska Golf Carts.
+or for longer-range use. Both types are available statewide from Discounted Golf Carts.
 
-Q: Does Alaska Golf Carts deliver across Florida?
+Q: Does Discounted Golf Carts deliver across Florida?
 A: Yes. Statewide delivery is available to any address in Florida. Contact 1-888-840-4490
 to get a delivery quote to your address.
 
@@ -203,15 +203,15 @@ Q: Can I trade in my golf cart?
 A: Yes. Trade-ins are accepted anywhere in Florida. Call 1-888-840-4490 to discuss your
 trade-in value.
 
-Q: What areas does Alaska Golf Carts serve?
-A: Alaska Golf Carts provides Florida statewide service to all 67 counties, including
+Q: What areas does Discounted Golf Carts serve?
+A: Discounted Golf Carts provides Florida statewide service to all 67 counties, including
 Southeast Florida (Miami, Fort Lauderdale, West Palm Beach), Tampa Bay (Tampa, St.
 Petersburg, Clearwater), Central Florida (Orlando, Kissimmee), Northeast Florida
 (Jacksonville), Southwest Florida (Fort Myers, Naples, Sarasota), North Central Florida
 (Gainesville, Ocala), the Florida Panhandle (Tallahassee, Pensacola), the Space Coast
 (Melbourne), the Treasure Coast (Port St. Lucie), and the Keys (Key West).
 
-Q: Does Alaska Golf Carts service and repair golf carts?
+Q: Does Discounted Golf Carts service and repair golf carts?
 A: Yes. Service offerings include routine maintenance, battery diagnostics and replacement,
 motor and controller repair, brake service, electrical diagnostics, body repair, and warranty
 service for all carried brands.
@@ -221,20 +221,20 @@ A: The inventory feed is refreshed daily at 10:55 PM Eastern Time. Prices and av
 reflect the most recent update.
 
 ================================================================================
-PAGE: ABOUT — https://alaskagolfcarts.com/about
+PAGE: ABOUT — https://discountedgolfcart.com/about
 ================================================================================
 
-TITLE: About Alaska Golf Carts — Florida Statewide Golf Cart Dealer
+TITLE: About Discounted Golf Carts — Florida Statewide Golf Cart Dealer
 
 DIRECT ANSWER:
-Alaska Golf Carts is one of the largest Florida statewide golf cart dealerships in
+Discounted Golf Carts is one of the largest Florida statewide golf cart dealerships in
 Florida. The company provides statewide service and delivery to all 67 Florida counties,
 carries 13 authorized brands, and maintains daily-updated inventory of 500+ golf carts. The
 dealership specializes in wholesale-priced new and used golf carts, electric vehicles,
 street-legal LSVs, and lifted carts.
 
 ABOUT THE COMPANY:
-Alaska Golf Carts offers wholesale-to-the-public pricing on golf carts from all
+Discounted Golf Carts offers wholesale-to-the-public pricing on golf carts from all
 major manufacturers. The dealership serves residential communities, golf courses, gated
 communities, retirement communities, resorts, commercial properties, and individual buyers
 across all of Florida — from the Panhandle to the Keys.
@@ -255,8 +255,8 @@ SERVICE OFFERINGS:
 
 CONTACT:
 Phone: 1-888-840-4490
-Website: https://alaskagolfcarts.com
-Inventory: https://alaskagolfcarts.com/inventory
+Website: https://discountedgolfcart.com
+Inventory: https://discountedgolfcart.com/inventory
 
 ================================================================================
 END OF FILE

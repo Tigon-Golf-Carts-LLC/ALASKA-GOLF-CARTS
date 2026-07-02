@@ -18,12 +18,12 @@ export default function TermsConditions() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">1. Agreement to Terms</h2>
-          <p className="text-muted-foreground leading-relaxed">By accessing the website alaskagolfcarts.com or purchasing any product or service from Alaska Golf Carts, you agree to be bound by these Terms &amp; Conditions. If you do not agree, please do not use our website or services. Alaska Golf Carts is a golf cart dealership serving customers throughout the state of Florida.</p>
+          <p className="text-muted-foreground leading-relaxed">By accessing the website discountedgolfcart.com or purchasing any product or service from Discounted Golf Carts, you agree to be bound by these Terms &amp; Conditions. If you do not agree, please do not use our website or services. Discounted Golf Carts is a golf cart dealership serving customers throughout the state of Florida.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold mb-3">2. Pricing & Inventory</h2>
-          <p className="text-muted-foreground leading-relaxed">All pricing displayed on alaskagolfcarts.com reflects current wholesale MSRP and is updated nightly. Prices are subject to change without notice. Inventory availability is not guaranteed until a purchase agreement is signed and a deposit is received. Alaska Golf Carts reserves the right to correct pricing errors at any time.</p>
+          <p className="text-muted-foreground leading-relaxed">All pricing displayed on discountedgolfcart.com reflects current wholesale MSRP and is updated nightly. Prices are subject to change without notice. Inventory availability is not guaranteed until a purchase agreement is signed and a deposit is received. Discounted Golf Carts reserves the right to correct pricing errors at any time.</p>
         </section>
 
         <section>
@@ -33,7 +33,7 @@ export default function TermsConditions() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">4. Financing</h2>
-          <p className="text-muted-foreground leading-relaxed">Financing is offered through third-party lending partners. Approval, terms, and rates are subject to lender qualification criteria. Advertised 0% APR promotional rates may require approved credit and are subject to lender availability. Alaska Golf Carts is not a lender and makes no guarantee of financing approval.</p>
+          <p className="text-muted-foreground leading-relaxed">Financing is offered through third-party lending partners. Approval, terms, and rates are subject to lender qualification criteria. Advertised 0% APR promotional rates may require approved credit and are subject to lender availability. Discounted Golf Carts is not a lender and makes no guarantee of financing approval.</p>
         </section>
 
         <section>
@@ -43,7 +43,7 @@ export default function TermsConditions() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">6. Limitation of Liability</h2>
-          <p className="text-muted-foreground leading-relaxed">To the fullest extent permitted by law, Alaska Golf Carts shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of our products, services, or website. Our total liability shall not exceed the amount paid for the specific product or service in question.</p>
+          <p className="text-muted-foreground leading-relaxed">To the fullest extent permitted by law, Discounted Golf Carts shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from the use of our products, services, or website. Our total liability shall not exceed the amount paid for the specific product or service in question.</p>
         </section>
 
         <section>

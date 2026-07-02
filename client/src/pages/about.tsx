@@ -24,17 +24,17 @@ const services = [
 const ABOUT_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  "@id": "https://alaskagolfcarts.com/about",
-  "url": "https://alaskagolfcarts.com/about",
-  "name": "About Alaska Golf Carts — Florida Golf Cart Dealer",
-  "description": "Alaska Golf Carts is a golf cart dealership serving all 67 counties across the state of Florida. 13 authorized brands, inventory updated daily, statewide delivery.",
-  "isPartOf": { "@id": "https://alaskagolfcarts.com/#website" },
-  "about": { "@id": "https://alaskagolfcarts.com/#organization" },
+  "@id": "https://discountedgolfcart.com/about",
+  "url": "https://discountedgolfcart.com/about",
+  "name": "About Discounted Golf Carts — Florida Golf Cart Dealer",
+  "description": "Discounted Golf Carts is a golf cart dealership serving all 67 counties across the state of Florida. 13 authorized brands, inventory updated daily, statewide delivery.",
+  "isPartOf": { "@id": "https://discountedgolfcart.com/#website" },
+  "about": { "@id": "https://discountedgolfcart.com/#organization" },
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alaskagolfcarts.com" },
-      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://alaskagolfcarts.com/about" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://discountedgolfcart.com" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://discountedgolfcart.com/about" }
     ]
   }
 };
@@ -43,9 +43,9 @@ export default function About() {
   return (
     <div className="min-h-screen">
       <SeoHead
-        title="About Alaska Golf Carts — Florida Golf Cart Dealer, 13 Brands"
-        description="Alaska Golf Carts is a Florida golf cart dealer serving all 67 counties statewide. New and used golf carts, 13 authorized brands, 0% APR financing, daily-updated inventory. Call 1-888-840-4490."
-        canonical="https://alaskagolfcarts.com/about"
+        title="About Discounted Golf Carts — Florida Golf Cart Dealer, 13 Brands"
+        description="Discounted Golf Carts is a Florida golf cart dealer serving all 67 counties statewide. New and used golf carts, 13 authorized brands, 0% APR financing, daily-updated inventory. Call 1-888-840-4490."
+        canonical="https://discountedgolfcart.com/about"
         schema={ABOUT_SCHEMA}
       />
 
@@ -60,10 +60,10 @@ export default function About() {
           </nav>
           <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Who We Are</p>
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-5">
-            About Alaska Golf Carts
+            About Discounted Golf Carts
           </h1>
           <p className="text-base text-muted-foreground leading-relaxed max-w-3xl">
-            Alaska Golf Carts is a golf cart dealership serving the entire state of Florida — all 67 counties, from the Panhandle to the Keys. We sell new and used golf carts, electric vehicles, street-legal low speed vehicles (LSVs), and lifted carts from 13 authorized manufacturers at wholesale MSRP pricing, with statewide delivery. Inventory is updated every day at 10:55 PM ET.
+            Discounted Golf Carts is a golf cart dealership serving the entire state of Florida — all 67 counties, from the Panhandle to the Keys. We sell new and used golf carts, electric vehicles, street-legal low speed vehicles (LSVs), and lifted carts from 13 authorized manufacturers at wholesale MSRP pricing, with statewide delivery. Inventory is updated every day at 10:55 PM ET.
           </p>
         </div>
       </section>
@@ -90,7 +90,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-extrabold mb-2">What We Sell and How We Price It</h2>
           <p className="text-sm text-muted-foreground mb-8 leading-relaxed max-w-3xl">
-            Alaska Golf Carts sells at wholesale MSRP — the price you'd expect to pay at the manufacturer's suggested retail, without dealer markup. Our inventory includes new carts from all 13 authorized brands, pre-owned carts that have been inspected and serviced, street-legal LSVs with full DOT equipment, and lifted models with suspension upgrades already installed. Prices start around $9,995 for new units and $4,500 for pre-owned carts.
+            Discounted Golf Carts sells at wholesale MSRP — the price you'd expect to pay at the manufacturer's suggested retail, without dealer markup. Our inventory includes new carts from all 13 authorized brands, pre-owned carts that have been inspected and serviced, street-legal LSVs with full DOT equipment, and lifted models with suspension upgrades already installed. Prices start around $9,995 for new units and $4,500 for pre-owned carts.
           </p>
           <h2 className="text-2xl font-extrabold mb-6">Services at Every Location</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -129,7 +129,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-extrabold mb-4">How Financing Works</h2>
           <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mb-6">
-            Alaska Golf Carts works with six lending partners to offer payment options for most credit profiles. Programs include 0% APR for qualified buyers, rent-to-own for those who prefer a lease path to ownership, and business financing for commercial customers. Terms run up to 48 months. Applications are reviewed quickly — most decisions come back within minutes. Visit the <Link href="/financing" className="text-primary hover:underline">financing page</Link> or call <a href={PHONE_TEL} className="text-primary hover:underline font-semibold">{PHONE_NUMBER}</a> to discuss options before you visit a store.
+            Discounted Golf Carts works with six lending partners to offer payment options for most credit profiles. Programs include 0% APR for qualified buyers, rent-to-own for those who prefer a lease path to ownership, and business financing for commercial customers. Terms run up to 48 months. Applications are reviewed quickly — most decisions come back within minutes. Visit the <Link href="/financing" className="text-primary hover:underline">financing page</Link> or call <a href={PHONE_TEL} className="text-primary hover:underline font-semibold">{PHONE_NUMBER}</a> to discuss options before you visit a store.
           </p>
         </div>
       </section>

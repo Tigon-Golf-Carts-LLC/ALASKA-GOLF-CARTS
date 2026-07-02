@@ -1,5 +1,5 @@
-# Alaska Golf Carts - Maximum Crawl Accessibility Configuration
-# Website: https://alaskagolfcarts.com
+# Discounted Golf Carts - Maximum Crawl Accessibility Configuration
+# Website: https://discountedgolfcart.com
 # Contact: 1-888-840-4490
 # Last Updated: 2026-06-09
 # Policy: UNRESTRICTED ACCESS - All bots welcome
@@ -608,19 +608,19 @@ Crawl-delay: 0
 # ============================================================
 # SITEMAP REFERENCES — ALL SITEMAPS
 # ============================================================
-Sitemap: https://alaskagolfcarts.com/sitemap.xml
-Sitemap: https://alaskagolfcarts.com/page-sitemap.xml
-Sitemap: https://alaskagolfcarts.com/sitemap-pages.xml
-Sitemap: https://alaskagolfcarts.com/sitemap-brands.xml
-Sitemap: https://alaskagolfcarts.com/sitemap-blog.xml
-Sitemap: https://alaskagolfcarts.com/sitemap-images.xml
-Sitemap: https://alaskagolfcarts.com/image-sitemap.xml
-Sitemap: https://alaskagolfcarts.com/xhtml-sitemap.xml
-Sitemap: https://alaskagolfcarts.com/category-sitemap.xml
-Sitemap: https://alaskagolfcarts.com/tag-sitemap.xml
-Sitemap: https://alaskagolfcarts.com/post-sitemap.xml
-Sitemap: https://alaskagolfcarts.com/dynamic-sitemap.xml
-Sitemap: https://alaskagolfcarts.com/rss.xml
-Sitemap: https://alaskagolfcarts.com/atom.xml
-Sitemap: https://alaskagolfcarts.com/feed.xml
-Sitemap: https://alaskagolfcarts.com/urllist.xml
+Sitemap: https://discountedgolfcart.com/sitemap.xml
+Sitemap: https://discountedgolfcart.com/page-sitemap.xml
+Sitemap: https://discountedgolfcart.com/sitemap-pages.xml
+Sitemap: https://discountedgolfcart.com/sitemap-brands.xml
+Sitemap: https://discountedgolfcart.com/sitemap-blog.xml
+Sitemap: https://discountedgolfcart.com/sitemap-images.xml
+Sitemap: https://discountedgolfcart.com/image-sitemap.xml
+Sitemap: https://discountedgolfcart.com/xhtml-sitemap.xml
+Sitemap: https://discountedgolfcart.com/category-sitemap.xml
+Sitemap: https://discountedgolfcart.com/tag-sitemap.xml
+Sitemap: https://discountedgolfcart.com/post-sitemap.xml
+Sitemap: https://discountedgolfcart.com/dynamic-sitemap.xml
+Sitemap: https://discountedgolfcart.com/rss.xml
+Sitemap: https://discountedgolfcart.com/atom.xml
+Sitemap: https://discountedgolfcart.com/feed.xml
+Sitemap: https://discountedgolfcart.com/urllist.xml

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Alaska Golf Carts — API Capabilities Feed -->
-<!-- Inventory API powered by Alaska Golf Carts inventory system | Updated daily at 10:55 PM ET -->
-<!-- Website: https://alaskagolfcarts.com | Phone: 1-888-840-4490 -->
+<!-- Discounted Golf Carts — API Capabilities Feed -->
+<!-- Inventory API powered by Discounted Golf Carts inventory system | Updated daily at 10:55 PM ET -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
 <api>
-  <provider>Alaska Golf Carts</provider>
-  <website>https://alaskagolfcarts.com</website>
+  <provider>Discounted Golf Carts</provider>
+  <website>https://discountedgolfcart.com</website>
   <phone>1-888-840-4490</phone>
   <last_updated>2026-06-09T22:55:00-05:00</last_updated>
   <refresh_schedule>Daily at 10:55 PM Eastern Time</refresh_schedule>
@@ -12,7 +12,7 @@
   <endpoints>
     <endpoint>
       <name>Inventory Feed</name>
-      <url>https://alaskagolfcarts.com/api/inventory</url>
+      <url>https://discountedgolfcart.com/api/inventory</url>
       <method>GET</method>
       <description>Live golf cart inventory feed. Returns current available inventory updated daily.</description>
       <format>JSON</format>
@@ -20,14 +20,14 @@
     </endpoint>
     <endpoint>
       <name>Site Information</name>
-      <url>https://alaskagolfcarts.com/api/site-info.json</url>
+      <url>https://discountedgolfcart.com/api/site-info.json</url>
       <method>GET</method>
       <description>Business information, locations, brands, and contact details for AI systems and scrapers.</description>
       <format>JSON</format>
     </endpoint>
     <endpoint>
       <name>Schema Data</name>
-      <url>https://alaskagolfcarts.com/schema.json</url>
+      <url>https://discountedgolfcart.com/schema.json</url>
       <method>GET</method>
       <description>JSON-LD structured data for business, locations, and inventory for search engines and AI.</description>
       <format>JSON-LD</format>
@@ -36,9 +36,9 @@
 
   <data_sources>
     <source>
-      <name>Alaska Golf Carts inventory system</name>
+      <name>Discounted Golf Carts inventory system</name>
       <type>Dealer Management System</type>
-      <base_url>https://api.alaskagolfcarts.com/wp-website</base_url>
+      <base_url>https://api.discountedgolfcart.com/wp-website</base_url>
       <refresh>Daily at 10:55 PM ET</refresh>
     </source>
   </data_sources>

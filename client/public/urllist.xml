@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Alaska Golf Carts — Complete URL List -->
-<!-- Website: https://alaskagolfcarts.com | Phone: 1-888-840-4490 -->
+<!-- Discounted Golf Carts — Complete URL List -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
 <!-- For use with Bing Webmaster Tools and other crawlers -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core Pages -->
-  <url><loc>https://alaskagolfcarts.com/</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory</loc></url>
-  <url><loc>https://alaskagolfcarts.com/financing</loc></url>
-  <url><loc>https://alaskagolfcarts.com/service-area</loc></url>
-  <url><loc>https://alaskagolfcarts.com/faq</loc></url>
-  <url><loc>https://alaskagolfcarts.com/about</loc></url>
+  <url><loc>https://discountedgolfcart.com/</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory</loc></url>
+  <url><loc>https://discountedgolfcart.com/financing</loc></url>
+  <url><loc>https://discountedgolfcart.com/service-area</loc></url>
+  <url><loc>https://discountedgolfcart.com/faq</loc></url>
+  <url><loc>https://discountedgolfcart.com/about</loc></url>
 
   <!-- Condition Filters -->
-  <url><loc>https://alaskagolfcarts.com/inventory?condition=new</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?condition=used</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?condition=new</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?condition=used</loc></url>
 
   <!-- Power Type Filters -->
-  <url><loc>https://alaskagolfcarts.com/inventory?powerType=electric</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?powerType=gas</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?powerType=electric</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?powerType=gas</loc></url>
 
   <!-- Feature Filters -->
-  <url><loc>https://alaskagolfcarts.com/inventory?isStreetLegal=true</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?isLifted=true</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?seating=2</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?seating=4</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?seating=6</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?isStreetLegal=true</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?isLifted=true</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?seating=2</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?seating=4</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?seating=6</loc></url>
 
   <!-- Brand Pages — All 13 Brands -->
-  <url><loc>https://alaskagolfcarts.com/inventory?make=American+Custom+Golf+Carts</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Bintelli</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Club+Car</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=COLEMAN</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=COLUMBIA</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=CRICKET</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Denago</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Evolution</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=EZGO</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Icon</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Star+EV</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Tara</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Yamaha</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=American+Custom+Golf+Carts</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Bintelli</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Club+Car</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=COLEMAN</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=COLUMBIA</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=CRICKET</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Denago</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Evolution</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=EZGO</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Icon</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Star+EV</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Tara</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Yamaha</loc></url>
 
   <!-- Model Pages — Key Models -->
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Club+Car&amp;model=Carryall</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Club+Car&amp;model=DS</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Club+Car&amp;model=Precedent</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Club+Car&amp;model=Tempo</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Denago&amp;model=Nomad+XL</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Denago&amp;model=Rover+XL</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Denago&amp;model=Rover+XL6</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=EZGO&amp;model=Medalist</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=EZGO&amp;model=RXV</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=EZGO&amp;model=TXT</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Evolution&amp;model=Carrier+6+PLUS</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Evolution&amp;model=D5+Maverick+6</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Evolution&amp;model=D5+Ranger+4</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Yamaha&amp;model=Drive+2</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Yamaha&amp;model=G22</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Yamaha&amp;model=G29</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Star+EV&amp;model=CLASSIC</loc></url>
-  <url><loc>https://alaskagolfcarts.com/inventory?make=Tara&amp;model=Spirit+Plus</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Club+Car&amp;model=Carryall</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Club+Car&amp;model=DS</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Club+Car&amp;model=Precedent</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Club+Car&amp;model=Tempo</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Denago&amp;model=Nomad+XL</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Denago&amp;model=Rover+XL</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Denago&amp;model=Rover+XL6</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=EZGO&amp;model=Medalist</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=EZGO&amp;model=RXV</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=EZGO&amp;model=TXT</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Evolution&amp;model=Carrier+6+PLUS</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Evolution&amp;model=D5+Maverick+6</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Evolution&amp;model=D5+Ranger+4</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Yamaha&amp;model=Drive+2</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Yamaha&amp;model=G22</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Yamaha&amp;model=G29</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Star+EV&amp;model=CLASSIC</loc></url>
+  <url><loc>https://discountedgolfcart.com/inventory?make=Tara&amp;model=Spirit+Plus</loc></url>
 
   <!-- Resource Files -->
-  <url><loc>https://alaskagolfcarts.com/sitemap.xml</loc></url>
-  <url><loc>https://alaskagolfcarts.com/page-sitemap.xml</loc></url>
-  <url><loc>https://alaskagolfcarts.com/sitemap-brands.xml</loc></url>
-  <url><loc>https://alaskagolfcarts.com/sitemap-images.xml</loc></url>
-  <url><loc>https://alaskagolfcarts.com/robots.txt</loc></url>
-  <url><loc>https://alaskagolfcarts.com/schema.json</loc></url>
-  <url><loc>https://alaskagolfcarts.com/llms.txt</loc></url>
-  <url><loc>https://alaskagolfcarts.com/ai.txt</loc></url>
+  <url><loc>https://discountedgolfcart.com/sitemap.xml</loc></url>
+  <url><loc>https://discountedgolfcart.com/page-sitemap.xml</loc></url>
+  <url><loc>https://discountedgolfcart.com/sitemap-brands.xml</loc></url>
+  <url><loc>https://discountedgolfcart.com/sitemap-images.xml</loc></url>
+  <url><loc>https://discountedgolfcart.com/robots.txt</loc></url>
+  <url><loc>https://discountedgolfcart.com/schema.json</loc></url>
+  <url><loc>https://discountedgolfcart.com/llms.txt</loc></url>
+  <url><loc>https://discountedgolfcart.com/ai.txt</loc></url>
 
 </urlset>

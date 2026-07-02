@@ -1,6 +1,6 @@
-# Alaska Golf Carts - Compliance & Standards Documentation
+# Discounted Golf Carts - Compliance & Standards Documentation
 # Last Updated: 2026-02-11
-# Website: https://alaskagolfcarts.com
+# Website: https://discountedgolfcart.com
 # Contact: 1-888-840-4490
 
 ================================================================================
@@ -9,7 +9,7 @@ COMPLIANCE & REGULATORY STANDARDS
 
 PURPOSE:
 Document all compliance requirements, industry standards, and regulatory
-frameworks applicable to the Alaska Golf Carts website and business operations
+frameworks applicable to the Discounted Golf Carts website and business operations
 to ensure full legal and technical compliance across Florida statewide operations.
 
 ================================================================================
@@ -55,7 +55,7 @@ CCPA COMPLIANCE (California Consumer Privacy Act)
 ================================================================================
 
 APPLICABILITY:
-- Alaska Golf Carts respects CCPA rights for all California residents
+- Discounted Golf Carts respects CCPA rights for all California residents
 - No sale of personal information to third parties
 - Consumers may request disclosure of collected data
 - Consumers may request deletion of personal data
@@ -63,7 +63,7 @@ APPLICABILITY:
 
 CONTACT FOR CCPA REQUESTS:
 - Phone: 1-888-840-4490
-- Website: https://alaskagolfcarts.com
+- Website: https://discountedgolfcart.com
 
 ================================================================================
 WCAG ACCESSIBILITY GUIDELINES (Web Content Accessibility Guidelines 2.1)
@@ -184,7 +184,7 @@ DEALER STANDARDS:
 FLORIDA STATE & REGIONAL REGULATIONS
 ================================================================================
 
-Alaska Golf Carts operates Florida statewide, serving all 67 counties with statewide
+Discounted Golf Carts operates Florida statewide, serving all 67 counties with statewide
 delivery. The following reflect Florida golf cart and LSV regulations applicable
 across the company's service area.
 
@@ -343,5 +343,5 @@ ANNUALLY:
 END OF COMPLIANCE & STANDARDS DOCUMENTATION
 ================================================================================
 
-Maintained by Alaska Golf Carts for regulatory and standards compliance.
-Contact: 1-888-840-4490 | https://alaskagolfcarts.com
+Maintained by Discounted Golf Carts for regulatory and standards compliance.
+Contact: 1-888-840-4490 | https://discountedgolfcart.com

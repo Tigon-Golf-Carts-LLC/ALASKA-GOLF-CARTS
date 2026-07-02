@@ -18,12 +18,12 @@ export default function CorrectionsPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Commitment to Accuracy</h2>
-          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts is committed to providing accurate, current, and complete information on alaskagolfcarts.com. When errors occur — whether in pricing, inventory details, policy language, or other content — we are committed to correcting them promptly and transparently.</p>
+          <p className="text-muted-foreground leading-relaxed">Discounted Golf Carts is committed to providing accurate, current, and complete information on discountedgolfcart.com. When errors occur — whether in pricing, inventory details, policy language, or other content — we are committed to correcting them promptly and transparently.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold mb-3">Pricing Errors</h2>
-          <p className="text-muted-foreground leading-relaxed">In the event of a pricing error on a listed unit or product, Alaska Golf Carts reserves the right to correct the price without prior notice. We are not obligated to honor a clearly erroneous price. If a purchase was made based on an incorrect price, we will contact the buyer directly to discuss the correct pricing or offer a full refund of any deposit paid.</p>
+          <p className="text-muted-foreground leading-relaxed">In the event of a pricing error on a listed unit or product, Discounted Golf Carts reserves the right to correct the price without prior notice. We are not obligated to honor a clearly erroneous price. If a purchase was made based on an incorrect price, we will contact the buyer directly to discuss the correct pricing or offer a full refund of any deposit paid.</p>
         </section>
 
         <section>
@@ -38,7 +38,7 @@ export default function CorrectionsPolicy() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">How to Report an Error</h2>
-          <p className="text-muted-foreground leading-relaxed">To report any error on alaskagolfcarts.com, call us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or speak with a member of our Florida team. We appreciate you helping us maintain a high standard of accuracy.</p>
+          <p className="text-muted-foreground leading-relaxed">To report any error on discountedgolfcart.com, call us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or speak with a member of our Florida team. We appreciate you helping us maintain a high standard of accuracy.</p>
         </section>
       </div>
     </div>

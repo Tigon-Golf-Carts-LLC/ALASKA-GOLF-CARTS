@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Alaska Golf Carts — Structured Business Data Feed -->
+<!-- Discounted Golf Carts — Structured Business Data Feed -->
 <!-- For AI systems, data aggregators, and structured crawlers -->
-<!-- Website: https://alaskagolfcarts.com | Phone: 1-888-840-4490 -->
+<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
 <!-- Last Updated: 2026-06-09 -->
 <business-data>
 
   <company>
-    <name>Alaska Golf Carts</name>
-    <legal-name>Alaska Golf Carts</legal-name>
+    <name>Discounted Golf Carts</name>
+    <legal-name>Discounted Golf Carts</legal-name>
     <type>Automotive Dealership — Golf Carts and NEVs</type>
-    <website>https://alaskagolfcarts.com</website>
+    <website>https://discountedgolfcart.com</website>
     <phone>1-888-840-4490</phone>
     <phone-tel>+18888404490</phone-tel>
-    <email>info@alaskagolfcarts.com</email>
+    <email>info@discountedgolfcart.com</email>
     <founded>Florida statewide dealership</founded>
     <coverage>Florida (statewide, all 67 counties) + nationwide delivery</coverage>
-    <description>Alaska Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida counties, with nationwide delivery available. Authorized dealer for 13 golf cart brands including Club Car, EZGO, Yamaha, Denago, Evolution, Star EV, Icon, Bintelli, and more. Specializing in new golf carts for sale, used golf carts for sale, street-legal LSVs, lifted golf carts, and electric golf carts. 0% APR financing available. Inventory updated daily.</description>
+    <description>Discounted Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida counties, with nationwide delivery available. Authorized dealer for 13 golf cart brands including Club Car, EZGO, Yamaha, Denago, Evolution, Star EV, Icon, Bintelli, and more. Specializing in new golf carts for sale, used golf carts for sale, street-legal LSVs, lifted golf carts, and electric golf carts. 0% APR financing available. Inventory updated daily.</description>
   </company>
 
   <service-area count="67">
-      <name>Alaska Golf Carts</name>
+      <name>Discounted Golf Carts</name>
       <coverage>Florida — statewide</coverage>
       <state>Florida</state>
       <state-abbr>FL</state-abbr>
@@ -123,7 +123,7 @@
 
   <inventory-refresh>
     <schedule>Daily at 10:55 PM Eastern Time</schedule>
-    <powered-by>Alaska Golf Carts inventory system</powered-by>
+    <powered-by>Discounted Golf Carts inventory system</powered-by>
   </inventory-refresh>
 
 </business-data>

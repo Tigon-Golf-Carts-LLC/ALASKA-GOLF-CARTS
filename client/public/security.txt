@@ -1,17 +1,17 @@
-Contact: mailto:security@alaskagolfcarts.com
+Contact: mailto:security@discountedgolfcart.com
 Expires: 2027-02-11T00:00:00Z
 Preferred-Languages: en
-Canonical: https://alaskagolfcarts.com/.well-known/security.txt
+Canonical: https://discountedgolfcart.com/.well-known/security.txt
 
-Policy: https://alaskagolfcarts.com/security-policy
+Policy: https://discountedgolfcart.com/security-policy
 
-Acknowledgments: https://alaskagolfcarts.com/security-acknowledgments
+Acknowledgments: https://discountedgolfcart.com/security-acknowledgments
 
-# Security Policy for Alaska Golf Carts
+# Security Policy for Discounted Golf Carts
 
 ## Vulnerability Reporting
 
-If you discover a security vulnerability in our website or systems, please report it responsibly to our security team at security@alaskagolfcarts.com. Please do not publicly disclose the vulnerability until we have had an opportunity to address it.
+If you discover a security vulnerability in our website or systems, please report it responsibly to our security team at security@discountedgolfcart.com. Please do not publicly disclose the vulnerability until we have had an opportunity to address it.
 
 ## Supported Browsers
 
@@ -19,7 +19,7 @@ We support the latest versions of all major browsers. Please ensure your browser
 
 ## HTTPS
 
-All connections to alaskagolfcarts.com are encrypted with HTTPS/TLS 1.2 or higher. We do not accept unencrypted HTTP connections.
+All connections to discountedgolfcart.com are encrypted with HTTPS/TLS 1.2 or higher. We do not accept unencrypted HTTP connections.
 
 ## Security Measures
 
@@ -38,9 +38,9 @@ We are committed to protecting user data and comply with applicable privacy regu
 ## Contact Information
 
 For security-related inquiries:
-Email: security@alaskagolfcarts.com
+Email: security@discountedgolfcart.com
 Phone: 1-888-840-4490
-Website: https://alaskagolfcarts.com
+Website: https://discountedgolfcart.com
 
 ## Last Updated
 

@@ -18,7 +18,7 @@ export default function PublishingPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Editorial Standards</h2>
-          <p className="text-muted-foreground leading-relaxed">All content published on alaskagolfcarts.com — including inventory descriptions, pricing, promotional materials, blog posts, and informational pages — is reviewed for accuracy before publication. Our goal is to provide clear, factual, and helpful information to golf cart buyers across our service area.</p>
+          <p className="text-muted-foreground leading-relaxed">All content published on discountedgolfcart.com — including inventory descriptions, pricing, promotional materials, blog posts, and informational pages — is reviewed for accuracy before publication. Our goal is to provide clear, factual, and helpful information to golf cart buyers across our service area.</p>
         </section>
 
         <section>
@@ -28,17 +28,17 @@ export default function PublishingPolicy() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">Advertising & Promotions</h2>
-          <p className="text-muted-foreground leading-relaxed">Promotional pricing, financing offers, and special deals advertised on this site reflect actual available offers at the time of publication. All advertised offers are subject to availability and lender approval. Alaska Golf Carts does not engage in bait-and-switch advertising. If an advertised unit is no longer available, comparable alternatives will be offered.</p>
+          <p className="text-muted-foreground leading-relaxed">Promotional pricing, financing offers, and special deals advertised on this site reflect actual available offers at the time of publication. All advertised offers are subject to availability and lender approval. Discounted Golf Carts does not engage in bait-and-switch advertising. If an advertised unit is no longer available, comparable alternatives will be offered.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold mb-3">User-Generated Content</h2>
-          <p className="text-muted-foreground leading-relaxed">This website does not currently accept user-generated content submissions such as reviews or forum posts. All content is produced or reviewed by Alaska Golf Carts staff.</p>
+          <p className="text-muted-foreground leading-relaxed">This website does not currently accept user-generated content submissions such as reviews or forum posts. All content is produced or reviewed by Discounted Golf Carts staff.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold mb-3">Copyright</h2>
-          <p className="text-muted-foreground leading-relaxed">All text, images, logos, and other content on alaskagolfcarts.com is the property of Alaska Golf Carts or is used with permission. Unauthorized reproduction, distribution, or use of any content from this site is prohibited.</p>
+          <p className="text-muted-foreground leading-relaxed">All text, images, logos, and other content on discountedgolfcart.com is the property of Discounted Golf Carts or is used with permission. Unauthorized reproduction, distribution, or use of any content from this site is prohibited.</p>
         </section>
 
         <section>
