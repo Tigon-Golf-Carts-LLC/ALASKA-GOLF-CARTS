@@ -69,7 +69,6 @@ const BRAND_M_CONFIGS: Record<number, CardConfig> = {
 
 function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string }> }) {
   const [current, setCurrent] = useState(0);
-  const [, navigate] = useLocation();
   const wasDragging = useRef(false);
   const dragStart = useRef<number | null>(null);
   const isDesktop = useIsDesktop();
@@ -104,8 +103,9 @@ function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string 
           if (!cfg) return null;
           const isCenter = off === 0;
           return (
-            <div
+            <Link
               key={brand.key}
+              href={`/inventory?make=${encodeURIComponent(brand.label)}`}
               className="absolute cursor-pointer"
               style={{
                 width: BRAND_CARD_W,
@@ -115,7 +115,10 @@ function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string 
                 zIndex: cfg.z,
                 transition: 'transform 0.42s cubic-bezier(0.25,0.46,0.45,0.94), opacity 0.42s ease',
               }}
-              onClick={() => { if (wasDragging.current) return; isCenter ? navigate(`/inventory?make=${encodeURIComponent(brand.label)}`) : goTo(i); }}
+              onClick={(e) => {
+                if (wasDragging.current) { e.preventDefault(); return; }
+                if (!isCenter) { e.preventDefault(); goTo(i); }
+              }}
               data-testid={`brand-card-${brand.key}`}
             >
               <div
@@ -138,7 +141,7 @@ function BrandCarousel({ brands }: { brands: Array<{ key: string; label: string 
                   )}
                 </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
@@ -184,7 +187,6 @@ const INV_M_CONFIGS: Record<number, CardConfig> = {
 
 function InventoryCarousel({ carts, slugMap }: { carts: CartsResponse['carts']; slugMap?: SlugMap }) {
   const [current, setCurrent] = useState(0);
-  const [, navigate] = useLocation();
   const wasDragging = useRef(false);
   const dragStart  = useRef<number | null>(null);
   const isDesktop  = useIsDesktop();
@@ -234,9 +236,16 @@ function InventoryCarousel({ carts, slugMap }: { carts: CartsResponse['carts']; 
               data-testid={`inv-card-${cart._id}`}
             >
               {!isCenter && (
-                <div
+                <Link
+                  href={cartUrl(cart)}
                   className="absolute inset-0 z-10 cursor-pointer rounded-xl"
-                  onClick={(e) => { e.preventDefault(); e.stopPropagation(); if (!wasDragging.current) goTo(i); }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (wasDragging.current) { e.preventDefault(); return; }
+                    e.preventDefault();
+                    goTo(i);
+                  }}
+                  data-testid={`inv-card-link-${cart._id}`}
                 />
               )}
               <div className={isCenter ? 'ring-2 ring-primary rounded-xl shadow-[0_0_36px_rgba(220,38,38,0.35)] cursor-pointer' : 'rounded-xl'}>
@@ -283,7 +292,6 @@ function formatCountdown(secs: number) {
 }
 
 export default function Home() {
-  const [, navigate] = useLocation();
   const [countdown, setCountdown] = useState(() => getSecondsUntilNextUpdate());
 
   useEffect(() => {
@@ -453,91 +461,96 @@ export default function Home() {
                       opacity: cfg.opacity,
                       zIndex: cfg.z,
                       transition: 'transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.45s ease',
-                      cursor: isCenter ? 'pointer' : 'pointer',
+                      cursor: 'pointer',
                     }}
-                    onClick={() => { if (wasDragging.current) return; isCenter ? navigate(cartUrl(cart)) : goTo(i); }}
                     data-testid={`slide-card-${cart._id}`}
                   >
                     <div
                       className={`rounded-xl overflow-hidden flex flex-col ${isCenter ? 'ring-2 ring-primary shadow-[0_0_40px_rgba(255,60,40,0.4)]' : 'shadow-xl'}`}
                       style={{ background: '#111418' }}
                     >
-                      {/* Condition banner */}
-                      <div className={`py-2 text-center font-black text-xs uppercase tracking-[0.2em] ${isUsed ? 'bg-amber-500 text-white' : 'bg-emerald-500 text-white'}`}>
-                        {isUsed ? '★ PRE-OWNED' : '✦ BRAND NEW'}
-                      </div>
+                      <Link
+                        href={cartUrl(cart)}
+                        className="contents"
+                        onClick={(e) => {
+                          if (wasDragging.current) { e.preventDefault(); return; }
+                          if (!isCenter) { e.preventDefault(); goTo(i); }
+                        }}
+                      >
+                        {/* Condition banner */}
+                        <div className={`py-2 text-center font-black text-xs uppercase tracking-[0.2em] ${isUsed ? 'bg-amber-500 text-white' : 'bg-emerald-500 text-white'}`}>
+                          {isUsed ? '★ PRE-OWNED' : '✦ BRAND NEW'}
+                        </div>
 
-                      {/* Image */}
-                      <div className="relative overflow-hidden" style={{ height: 160 }}>
-                        <img
-                          src={imgUrl(cart)}
-                          alt={title}
-                          className="w-full h-full object-cover"
-                          onError={() => setImgErrors(prev => ({ ...prev, [cart._id]: true }))}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                        {isCenter && (
-                          <div className="absolute top-2 right-2 bg-primary text-white text-[9px] font-black uppercase tracking-wider px-2 py-1 rounded-sm rotate-1 shadow-lg">
-                            🔥 Hot Deal
-                          </div>
-                        )}
-                        {cart.isElectric && (
-                          <div className="absolute bottom-2 left-2 flex items-center gap-1 bg-black/60 text-yellow-400 text-[9px] font-bold px-1.5 py-0.5 rounded backdrop-blur-sm">
-                            <Zap className="h-2.5 w-2.5" /> Electric
-                          </div>
-                        )}
-                      </div>
-
-                      {/* Info */}
-                      <div className="p-3.5 flex-1 flex flex-col">
-                        <h3 className="font-bold text-xs text-white/90 line-clamp-2 leading-snug mb-1.5">{title}</h3>
-                        <div className="flex items-center gap-2 text-[10px] text-white/40 mb-3">
-                          {cart.cartType?.year && <span>{cart.cartType.year}</span>}
-                          {cart.cartAttributes?.passengers && (
-                            <span className="flex items-center gap-0.5">
-                              <Users className="h-2.5 w-2.5" /> {cart.cartAttributes.passengers} Pass.
-                            </span>
+                        {/* Image */}
+                        <div className="relative overflow-hidden" style={{ height: 160 }}>
+                          <img
+                            src={imgUrl(cart)}
+                            alt={title}
+                            className="w-full h-full object-cover"
+                            onError={() => setImgErrors(prev => ({ ...prev, [cart._id]: true }))}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                          {isCenter && (
+                            <div className="absolute top-2 right-2 bg-primary text-white text-[9px] font-black uppercase tracking-wider px-2 py-1 rounded-sm rotate-1 shadow-lg">
+                              🔥 Hot Deal
+                            </div>
+                          )}
+                          {cart.isElectric && (
+                            <div className="absolute bottom-2 left-2 flex items-center gap-1 bg-black/60 text-yellow-400 text-[9px] font-bold px-1.5 py-0.5 rounded backdrop-blur-sm">
+                              <Zap className="h-2.5 w-2.5" /> Electric
+                            </div>
                           )}
                         </div>
 
-                        {/* PRICE — front and center */}
-                        <div className="mt-auto">
-                          <div className="text-[9px] font-black uppercase tracking-[0.18em] text-primary/70 flex items-center gap-1 mb-0.5">
-                            <Tag className="h-2.5 w-2.5" /> WHOLESALE PRICE
+                        {/* Info */}
+                        <div className="p-3.5 flex-1 flex flex-col">
+                          <h3 className="font-bold text-xs text-white/90 line-clamp-2 leading-snug mb-1.5">{title}</h3>
+                          <div className="flex items-center gap-2 text-[10px] text-white/40 mb-3">
+                            {cart.cartType?.year && <span>{cart.cartType.year}</span>}
+                            {cart.cartAttributes?.passengers && (
+                              <span className="flex items-center gap-0.5">
+                                <Users className="h-2.5 w-2.5" /> {cart.cartAttributes.passengers} Pass.
+                              </span>
+                            )}
                           </div>
-                          <div className="text-3xl font-black text-primary leading-none" data-testid={`text-hero-price-${cart._id}`}>
-                            {price}
+
+                          {/* PRICE — front and center */}
+                          <div className="mt-auto">
+                            <div className="text-[9px] font-black uppercase tracking-[0.18em] text-primary/70 flex items-center gap-1 mb-0.5">
+                              <Tag className="h-2.5 w-2.5" /> WHOLESALE PRICE
+                            </div>
+                            <div className="text-3xl font-black text-primary leading-none" data-testid={`text-hero-price-${cart._id}`}>
+                              {price}
+                            </div>
                           </div>
                         </div>
+                      </Link>
 
-                        {/* Center card CTAs */}
-                        {isCenter && (
-                          <div className="flex gap-2 mt-3">
-                            <Link
-                              href={cartUrl(cart)}
-                              onClick={(e) => e.stopPropagation()}
+                      {/* Center card CTAs */}
+                      {isCenter && (
+                        <div className="flex gap-2 px-3.5 pb-3.5">
+                          <Link href={cartUrl(cart)}>
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              className="text-[11px] font-bold h-8 px-3 border-white/20 text-white hover:bg-white/10"
+                              data-testid={`button-view-cart-${cart._id}`}
                             >
-                              <Button
-                                size="sm"
-                                variant="outline"
-                                className="text-[11px] font-bold h-8 px-3 border-white/20 text-white hover:bg-white/10"
-                                data-testid={`button-view-cart-${cart._id}`}
-                              >
-                                View Details
-                              </Button>
-                            </Link>
-                            <a href={PHONE_TEL} onClick={(e) => e.stopPropagation()} className="flex-1">
-                              <Button
-                                size="sm"
-                                className="w-full text-[11px] font-black h-8"
-                                data-testid={`button-call-hero-${cart._id}`}
-                              >
-                                <Phone className="h-3 w-3 mr-1" /> Call Now
-                              </Button>
-                            </a>
-                          </div>
-                        )}
-                      </div>
+                              View Details
+                            </Button>
+                          </Link>
+                          <a href={PHONE_TEL} className="flex-1">
+                            <Button
+                              size="sm"
+                              className="w-full text-[11px] font-black h-8"
+                              data-testid={`button-call-hero-${cart._id}`}
+                            >
+                              <Phone className="h-3 w-3 mr-1" /> Call Now
+                            </Button>
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </div>
                 );
