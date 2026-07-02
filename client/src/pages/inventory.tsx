@@ -74,8 +74,9 @@ export default function Inventory() {
 
   const [filters, setFilters] = useState<FilterState>(() => {
     const initial = { ...defaultFilters };
-    if (params.get("isNew") === "true" || params.get("condition") === "new") initial.isNew = true;
-    if (params.get("isUsed") === "true" || params.get("condition") === "used") initial.isUsed = true;
+    const condition = params.get("condition")?.toLowerCase();
+    if (params.get("isNew") === "true" || condition === "new") initial.isNew = true;
+    if (params.get("isUsed") === "true" || condition === "used") initial.isUsed = true;
     if (params.get("make")) initial.makes = [params.get("make")!];
     if (params.get("search")) initial.searchText = params.get("search")!;
     return initial;
@@ -154,33 +155,45 @@ export default function Inventory() {
     filters.makes.length + filters.models.length + filters.colors.length +
     filters.storeIds.length + filters.seats.length + filters.driveTrain.length;
 
+  // Only condition (new/used) and a single make are treated as index-worthy filters.
+  // These are the only filters the server-rendered HTML can also resolve on initial
+  // load, so title/description/canonical must stay derived from just these two —
+  // keeping the SSR meta and the post-hydration meta identical. Other in-page filters
+  // (power type, features, etc.) are UI-only and intentionally excluded from SEO tags.
+  const seoIndexableMake = filters.makes.length === 1 ? filters.makes[0] : null;
+
   const seoTitle = useMemo(() => {
     const parts: string[] = [];
     if (filters.isNew && !filters.isUsed) parts.push("New");
     if (filters.isUsed && !filters.isNew) parts.push("Used");
-    if (filters.isElectric && !filters.isGas) parts.push("Electric");
-    if (filters.isGas && !filters.isElectric) parts.push("Gas");
-    if (filters.makes.length === 1) parts.push(filters.makes[0]);
+    if (seoIndexableMake) parts.push(seoIndexableMake);
     const filterStr = parts.join(" ");
     if (filterStr) return `${filterStr} Golf Carts for Sale | Alaska Golf Carts`;
     return "Golf Cart Inventory — New & Used Golf Carts for Sale | Alaska Golf Carts";
-  }, [filters.isNew, filters.isUsed, filters.isElectric, filters.isGas, filters.makes]);
+  }, [filters.isNew, filters.isUsed, seoIndexableMake]);
 
   const seoDescription = useMemo(() => {
     const parts: string[] = [];
     if (filters.isNew && !filters.isUsed) parts.push("new");
     if (filters.isUsed && !filters.isNew) parts.push("used");
-    if (filters.isElectric && !filters.isGas) parts.push("electric");
-    if (filters.isGas && !filters.isElectric) parts.push("gas");
-    if (filters.makes.length === 1) parts.push(filters.makes[0]);
+    if (seoIndexableMake) parts.push(seoIndexableMake);
     const filterStr = parts.join(" ") || "golf";
     const countStr = data ? `${data.totalCarts.toLocaleString()} matching` : "800+";
     return `Browse ${countStr} ${filterStr} cart${data?.totalCarts !== 1 ? "s" : ""} at Alaska Golf Carts — updated daily. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.`;
-  }, [filters.isNew, filters.isUsed, filters.isElectric, filters.isGas, filters.makes, data?.totalCarts]);
+  }, [filters.isNew, filters.isUsed, seoIndexableMake, data?.totalCarts]);
+
+  const seoCanonical = useMemo(() => {
+    const qp = new URLSearchParams();
+    if (filters.isNew && !filters.isUsed) qp.set("condition", "new");
+    if (filters.isUsed && !filters.isNew) qp.set("condition", "used");
+    if (seoIndexableMake) qp.set("make", seoIndexableMake);
+    const qs = qp.toString();
+    return `https://alaskagolfcarts.com/inventory${qs ? `?${qs}` : ""}`;
+  }, [filters.isNew, filters.isUsed, seoIndexableMake]);
 
   return (
     <div className="min-h-screen bg-background">
-      <SeoHead title={seoTitle} description={seoDescription} canonical="https://alaskagolfcarts.com/inventory" />
+      <SeoHead title={seoTitle} description={seoDescription} canonical={seoCanonical} />
       {/* ── Sticky toolbar ── */}
       <div className="sticky top-0 z-30 bg-background/97 backdrop-blur-md border-b shadow-sm">
         <div className="mx-auto max-w-7xl px-3 pt-3 pb-2 space-y-2.5">

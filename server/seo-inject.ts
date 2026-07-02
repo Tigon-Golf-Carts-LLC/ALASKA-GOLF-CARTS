@@ -19,6 +19,32 @@ interface PageMeta {
   description: string;
 }
 
+interface InventoryFilters {
+  condition: "new" | "used" | null;
+  make: string | null;
+}
+
+function getSupportedInventoryFilters(search: string): InventoryFilters {
+  const params = new URLSearchParams(search.startsWith("?") ? search.slice(1) : search);
+  const condRaw =
+    params.get("condition") ||
+    (params.get("isNew") === "true" ? "new" : params.get("isUsed") === "true" ? "used" : null);
+  const condLower = condRaw ? condRaw.toLowerCase() : null;
+  const condition: "new" | "used" | null =
+    condLower === "new" ? "new" : condLower === "used" ? "used" : null;
+  const make = params.get("make");
+  return { condition, make };
+}
+
+function buildInventoryCanonicalPath(search: string): string {
+  const { condition, make } = getSupportedInventoryFilters(search);
+  const qp = new URLSearchParams();
+  if (condition) qp.set("condition", condition);
+  if (make) qp.set("make", make);
+  const qs = qp.toString();
+  return `/inventory${qs ? `?${qs}` : ""}`;
+}
+
 function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
   if (cartMeta) return cartMeta;
 
@@ -35,22 +61,19 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
 
   if (pathname === "/inventory") {
     if (search) {
-      const params = new URLSearchParams(search.slice(1));
+      const { condition, make } = getSupportedInventoryFilters(search);
       const parts: string[] = [];
-      const make = params.get("make");
-      const condRaw =
-        params.get("condition") ||
-        (params.get("isNew") === "true" ? "New" : params.get("isUsed") === "true" ? "Used" : null);
-      const location = params.get("location");
-      if (condRaw) parts.push(condRaw);
+      if (condition === "new") parts.push("New");
+      if (condition === "used") parts.push("Used");
       if (make) parts.push(make);
       const filterStr = parts.join(" ");
-      const locationSuffix = location ? ` Near ${location}` : "";
       const subject = filterStr ? `${filterStr} Golf Carts` : "Golf Carts";
-      return {
-        title: `${subject} for Sale${locationSuffix} | Alaska Golf Carts`,
-        description: `Browse ${subject.toLowerCase()} for sale${locationSuffix.toLowerCase()} — updated daily. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.`,
-      };
+      if (filterStr) {
+        return {
+          title: `${subject} for Sale | Alaska Golf Carts`,
+          description: `Browse ${subject.toLowerCase()} for sale — updated daily. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.`,
+        };
+      }
     }
     return {
       title: "Golf Cart Inventory — New & Used Golf Carts for Sale | Alaska Golf Carts",
@@ -116,10 +139,11 @@ function injectSeoTags(
   }
 ): string {
   const pathname = url.split("?")[0];
-  const isInventoryFilter = pathname === "/inventory" && url.includes("?");
-  const canonical = isInventoryFilter
-    ? `${BASE_URL}${url}`
-    : `${BASE_URL}${pathname === "/" ? "" : pathname}`;
+  const search = url.includes("?") ? url.slice(url.indexOf("?")) : "";
+  const canonical =
+    pathname === "/inventory" && search
+      ? `${BASE_URL}${buildInventoryCanonicalPath(search)}`
+      : `${BASE_URL}${pathname === "/" ? "" : pathname}`;
 
   const meta = getRouteMetaFromUrl(url, opts?.cartMeta);
   const t = esc(meta.title);

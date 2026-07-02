@@ -467,10 +467,9 @@ export async function registerRoutes(
         return res.send(cached);
       }
 
-      const [slugMap, allCarts, storesData] = await Promise.all([
+      const [slugMap, allCarts] = await Promise.all([
         getSlugMap(),
         fetchAllCartsComplete(),
-        fetchDMS("/tigon-stores"),
       ]);
 
       const baseUrl = "https://alaskagolfcarts.com";
@@ -485,30 +484,12 @@ export async function registerRoutes(
         if (cart._id) cartById.set(cart._id, cart);
       }
 
-      const stores: any[] = storesData || [];
-      const storeMap = new Map<string, any>();
-      for (const store of stores) {
-        if (store.storeId) storeMap.set(store.storeId, store);
-      }
-
       const makes = new Set<string>();
       const conditions = new Set<string>();
-      const locations = new Set<string>();
-      const makeModels = new Map<string, Set<string>>();
       for (const cart of allCarts) {
         const make = cart?.cartType?.make;
-        const model = cart?.cartType?.model;
-        if (make) {
-          makes.add(make);
-          if (model) {
-            if (!makeModels.has(make)) makeModels.set(make, new Set());
-            makeModels.get(make)!.add(model);
-          }
-        }
-        conditions.add(cart?.isUsed ? "Used" : "New");
-        const storeId = cart?.cartLocation?.locationId || cart?.cartLocation?.latestStoreId;
-        const store = storeMap.get(storeId);
-        if (store?.address?.city) locations.add(store.address.city);
+        if (make) makes.add(make);
+        conditions.add(cart?.isUsed ? "used" : "new");
       }
 
       let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
@@ -524,22 +505,11 @@ export async function registerRoutes(
       }
       xml += `\n`;
 
+      // Only "condition" (new/used) and "make" are honored by the inventory page on
+      // initial load, so those are the only filtered URLs advertised here. Values are
+      // normalized to lowercase to match what the client actually reads from the URL.
       for (const condition of Array.from(conditions).sort()) {
         xml += `  <url>\n    <loc>${baseUrl}/inventory?condition=${encodeURIComponent(condition)}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.85</priority>\n  </url>\n`;
-      }
-
-      xml += `  <url>\n    <loc>${baseUrl}/inventory?powerType=Electric</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
-      xml += `  <url>\n    <loc>${baseUrl}/inventory?powerType=Gas</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n\n`;
-
-      for (const location of Array.from(locations).sort()) {
-        xml += `  <url>\n    <loc>${baseUrl}/inventory?location=${encodeURIComponent(location)}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
-      }
-      xml += `\n`;
-
-      for (const [make, models] of Array.from(makeModels.entries()).sort((a, b) => a[0].localeCompare(b[0]))) {
-        for (const model of Array.from(models).sort()) {
-          xml += `  <url>\n    <loc>${baseUrl}/inventory?make=${encodeURIComponent(make)}&amp;model=${encodeURIComponent(model)}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
-        }
       }
       xml += `\n`;
 
