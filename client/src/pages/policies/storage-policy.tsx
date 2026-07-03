@@ -18,12 +18,12 @@ export default function StoragePolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Storage Services</h2>
-          <p className="text-muted-foreground leading-relaxed">Discounted Golf Carts offers seasonal and short-term golf cart storage at select locations. Storage availability, rates, and duration options vary by location. Contact us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> to inquire about storage at your nearest location.</p>
+          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts offers seasonal and short-term golf cart storage at select locations. Storage availability, rates, and duration options vary by location. Contact us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> to inquire about storage at your nearest location.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold mb-3">Storage Agreement</h2>
-          <p className="text-muted-foreground leading-relaxed">All storage arrangements require a signed storage agreement detailing the storage period, monthly rate, and terms of access. Storage fees are billed in advance on a monthly basis. Discounted Golf Carts reserves the right to adjust storage rates with 30 days' written notice.</p>
+          <p className="text-muted-foreground leading-relaxed">All storage arrangements require a signed storage agreement detailing the storage period, monthly rate, and terms of access. Storage fees are billed in advance on a monthly basis. Alaska Golf Carts reserves the right to adjust storage rates with 30 days' written notice.</p>
         </section>
 
         <section>
@@ -33,12 +33,12 @@ export default function StoragePolicy() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">While In Storage</h2>
-          <p className="text-muted-foreground leading-relaxed">During storage, Discounted Golf Carts will maintain battery trickle charging for electric units (where applicable) to preserve battery health. We are not responsible for battery degradation due to age or pre-existing condition. Physical access to stored units during the storage period is by appointment only.</p>
+          <p className="text-muted-foreground leading-relaxed">During storage, Alaska Golf Carts will maintain battery trickle charging for electric units (where applicable) to preserve battery health. We are not responsible for battery degradation due to age or pre-existing condition. Physical access to stored units during the storage period is by appointment only.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold mb-3">Liability</h2>
-          <p className="text-muted-foreground leading-relaxed">While we take reasonable precautions to secure stored vehicles, Discounted Golf Carts' liability for loss or damage during storage is limited to the agreed storage fee paid for the current storage period. Customers are strongly encouraged to maintain their own insurance coverage on stored units.</p>
+          <p className="text-muted-foreground leading-relaxed">While we take reasonable precautions to secure stored vehicles, Alaska Golf Carts' liability for loss or damage during storage is limited to the agreed storage fee paid for the current storage period. Customers are strongly encouraged to maintain their own insurance coverage on stored units.</p>
         </section>
 
         <section>

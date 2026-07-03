@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "last_updated": "2026-06-09",
   "business": {
-    "name": "Discounted Golf Carts",
-    "legal_name": "Discounted Golf Carts",
+    "name": "Alaska Golf Carts",
+    "legal_name": "Alaska Golf Carts",
     "type": "LocalBusiness",
     "subtype": "Golf Cart Dealership",
-    "url": "https://discountedgolfcart.com",
+    "url": "https://alaskagolfcarts.com",
     "phone": "1-888-840-4490",
     "phone_e164": "+18888404490",
-    "email": "info@discountedgolfcart.com",
+    "email": "info@alaskagolfcarts.com",
     "description": "Florida statewide golf cart dealership selling new and used golf carts, electric vehicles, street-legal LSVs, and lifted carts from 13 authorized brands. Serving all 67 Florida counties with nationwide delivery. Inventory updated daily. 0% APR financing available.",
     "founded_in": "Florida, United States",
     "states_served": [
@@ -92,7 +92,7 @@
   "locations": [
     {
       "id": "FL-STATEWIDE",
-      "name": "Discounted Golf Carts",
+      "name": "Alaska Golf Carts",
       "city": "Statewide",
       "state": "FL",
       "country": "US",
@@ -140,17 +140,17 @@
     ]
   },
   "key_pages": {
-    "home": "https://discountedgolfcart.com/",
-    "inventory": "https://discountedgolfcart.com/inventory",
-    "financing": "https://discountedgolfcart.com/financing",
-    "faq": "https://discountedgolfcart.com/faq",
-    "about": "https://discountedgolfcart.com/about",
-    "service_area": "https://discountedgolfcart.com/service-area"
+    "home": "https://alaskagolfcarts.com/",
+    "inventory": "https://alaskagolfcarts.com/inventory",
+    "financing": "https://alaskagolfcarts.com/financing",
+    "faq": "https://alaskagolfcarts.com/faq",
+    "about": "https://alaskagolfcarts.com/about",
+    "service_area": "https://alaskagolfcarts.com/service-area"
   },
   "social": {
-    "facebook": "https://www.facebook.com/DiscountedGolfCarts",
-    "instagram": "https://www.instagram.com/DiscountedGolfCarts",
-    "youtube": "https://www.youtube.com/@DiscountedGolfCarts"
+    "facebook": "https://www.facebook.com/AlaskaGolfCarts",
+    "instagram": "https://www.instagram.com/AlaskaGolfCarts",
+    "youtube": "https://www.youtube.com/@AlaskaGolfCarts"
   },
-  "inventory_note": "Inventory data is not included in this endpoint. See https://discountedgolfcart.com/inventory for live listings."
+  "inventory_note": "Inventory data is not included in this endpoint. See https://alaskagolfcarts.com/inventory for live listings."
 }

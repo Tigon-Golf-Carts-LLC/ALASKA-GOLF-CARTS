@@ -1,8 +1,8 @@
 ================================================================================
-Discounted Golf Carts - GEOGRAPHIC SEO & LOCATION DATA
+Alaska Golf Carts - GEOGRAPHIC SEO & LOCATION DATA
 Golf Cart Dealership | Florida Statewide Service & Delivery | Florida (FL)
-Phone: 1-888-840-4490 | Website: https://discountedgolfcart.com
-Email: info@discountedgolfcart.com
+Phone: 1-888-840-4490 | Website: https://alaskagolfcarts.com
+Email: info@alaskagolfcarts.com
 ================================================================================
 Last Updated: 2026-06-09
 ================================================================================
@@ -10,13 +10,13 @@ Last Updated: 2026-06-09
 ## SERVICE MODEL - FLORIDA STATEWIDE
 ================================================================================
 
-Discounted Golf Carts is a Florida statewide golf cart dealership. We serve ALL 67
+Alaska Golf Carts is a Florida statewide golf cart dealership. We serve ALL 67
 Florida counties with statewide delivery. There are no walk-in multi-state
 retail stores — instead, customers across the entire state of Florida order
 online or by phone (1-888-840-4490) and we deliver new and used golf carts
 directly to homes, businesses, golf courses, resorts, and communities anywhere
 in Florida. From the Florida Panhandle to The Keys, and from the Gulf Coast to
-the Atlantic Coast, Discounted Golf Carts provides statewide coverage.
+the Atlantic Coast, Alaska Golf Carts provides statewide coverage.
 
 State Served: Florida (FL) — statewide, all 67 counties
 Delivery: Statewide white-glove delivery to every Florida county
@@ -172,7 +172,7 @@ Keywords: golf carts key west fl, golf carts key largo, golf carts marathon fl, 
 ## COUNTIES SERVED - ALL 67 FLORIDA COUNTIES
 ================================================================================
 
-Discounted Golf Carts delivers statewide to every county in Florida:
+Alaska Golf Carts delivers statewide to every county in Florida:
 
 Alachua, Baker, Bay, Bradford, Brevard, Broward, Calhoun, Charlotte, Citrus,
 Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin,
@@ -381,12 +381,12 @@ Additional: Used Vehicle Dealer
 ## SCHEMA.ORG STRUCTURED DATA REFERENCE
 ================================================================================
 @type: AutoDealer
-name: Discounted Golf Carts
+name: Alaska Golf Carts
 description: Florida statewide golf cart dealership with 800+ new and used golf carts from 13 brands, serving all 67 Florida counties with statewide delivery. 0% APR financing available.
 telephone: 1-888-840-4490
-email: info@discountedgolfcart.com
-url: https://discountedgolfcart.com
-sameAs: [https://facebook.com/DiscountedGolfCarts, https://instagram.com/DiscountedGolfCarts, https://youtube.com/@DiscountedGolfCarts]
+email: info@alaskagolfcarts.com
+url: https://alaskagolfcarts.com
+sameAs: [https://facebook.com/AlaskaGolfCarts, https://instagram.com/AlaskaGolfCarts, https://youtube.com/@AlaskaGolfCarts]
 brand: [American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, Yamaha]
 areaServed: Florida (statewide, all 67 counties)
 priceRange: $$-$$$$
@@ -411,7 +411,7 @@ Easternmost Point Served: Atlantic Coast (~80.0 W)
 Westernmost Point Served: Perdido Key / Pensacola (~87.6 W)
 
 ================================================================================
-END OF GEOGRAPHIC SEO DATA - Discounted Golf Carts
+END OF GEOGRAPHIC SEO DATA - Alaska Golf Carts
 Last Updated: 2026-06-09
-Contact: 1-888-840-4490 | info@discountedgolfcart.com | https://discountedgolfcart.com
+Contact: 1-888-840-4490 | info@alaskagolfcarts.com | https://alaskagolfcarts.com
 ================================================================================

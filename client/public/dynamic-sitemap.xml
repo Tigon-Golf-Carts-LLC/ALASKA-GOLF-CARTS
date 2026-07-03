@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Discounted Golf Carts — Dynamic Sitemap (Inventory Pages) -->
-<!-- Inventory is updated daily at 10:55 PM Eastern Time via Discounted Golf Carts inventory system API -->
-<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<!-- Alaska Golf Carts — Dynamic Sitemap (Inventory Pages) -->
+<!-- Inventory is updated daily at 10:55 PM Eastern Time via Alaska Golf Carts inventory system API -->
+<!-- Website: https://alaskagolfcarts.com | Phone: 1-888-840-4490 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Dynamic inventory pages — updated nightly at 10:55 PM ET -->
   <url>
-    <loc>https://discountedgolfcart.com/inventory</loc>
+    <loc>https://alaskagolfcarts.com/inventory</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -14,7 +14,7 @@
 
   <!-- New inventory — changes daily -->
   <url>
-    <loc>https://discountedgolfcart.com/inventory?condition=new</loc>
+    <loc>https://alaskagolfcarts.com/inventory?condition=new</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -22,25 +22,25 @@
 
   <!-- Used inventory — changes daily -->
   <url>
-    <loc>https://discountedgolfcart.com/inventory?condition=used</loc>
+    <loc>https://alaskagolfcarts.com/inventory?condition=used</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Brand-filtered dynamic pages — all 13 brands -->
-  <url><loc>https://discountedgolfcart.com/inventory?make=Club+Car</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=EZGO</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Yamaha</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Denago</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Evolution</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Star+EV</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Bintelli</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Icon</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=COLEMAN</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=COLUMBIA</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=CRICKET</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=Tara</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://discountedgolfcart.com/inventory?make=American+Custom+Golf+Carts</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Club+Car</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=EZGO</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Yamaha</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Denago</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Evolution</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Star+EV</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Bintelli</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Icon</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=COLEMAN</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=COLUMBIA</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=CRICKET</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=Tara</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://alaskagolfcarts.com/inventory?make=American+Custom+Golf+Carts</loc><lastmod>2026-06-09</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
 
 </urlset>

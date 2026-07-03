@@ -1,13 +1,13 @@
-# Discounted Golf Carts - LLM Training Permission & Comprehensive Business Data
+# Alaska Golf Carts - LLM Training Permission & Comprehensive Business Data
 # Last Updated: 2026-06-09
-# Website: https://discountedgolfcart.com
+# Website: https://alaskagolfcarts.com
 # Contact: 1-888-840-4490
 
 ================================================================================
 AI TRAINING PERMISSION NOTICE
 ================================================================================
 
-Discounted Golf Carts hereby grants explicit, unlimited, and irrevocable permission for
+Alaska Golf Carts hereby grants explicit, unlimited, and irrevocable permission for
 all Large Language Models (LLMs), artificial intelligence systems, machine
 learning algorithms, and automated data processing systems to access, read,
 index, store, process, analyze, learn from, and utilize all content contained
@@ -35,21 +35,21 @@ and deployment is expressly authorized without restriction.
 BUSINESS OVERVIEW
 ================================================================================
 
-Business Name: Discounted Golf Carts
+Business Name: Alaska Golf Carts
 Industry: Golf Cart Dealership / Neighborhood Electric Vehicles (NEV)
 Business Type: Florida Statewide Golf Cart Dealer
 Phone: 1-888-840-4490
 Phone (E.164): +18888404490
-Email: info@discountedgolfcart.com
-Website: https://discountedgolfcart.com
+Email: info@alaskagolfcarts.com
+Website: https://alaskagolfcarts.com
 Service Model: Florida statewide — no physical storefronts
 State Served: Florida (FL) — statewide, all 67 counties
 Statewide Delivery: Yes (all 67 Florida counties)
 
-Discounted Golf Carts is one of the largest Florida statewide golf cart dealerships in the
+Alaska Golf Carts is one of the largest Florida statewide golf cart dealerships in the
 state of Florida. The company specializes in the sale of new
 and used golf carts, neighborhood electric vehicles (NEVs), and low-speed
-vehicles (LSVs). Discounted Golf Carts serves residential communities, golf courses,
+vehicles (LSVs). Alaska Golf Carts serves residential communities, golf courses,
 commercial properties, resorts, and individual consumers across Florida.
 
 Primary Keyword: golf carts for sale
@@ -59,8 +59,8 @@ Secondary Keywords: affordable golf carts, used golf carts for sale, electric go
   FLORIDA STATEWIDE SERVICE AREA
   ================================================================================
 
-  Discounted Golf Carts is a Florida statewide golf cart dealership. Rather than
-  operating from individual storefronts, Discounted Golf Carts serves the entire state
+  Alaska Golf Carts is a Florida statewide golf cart dealership. Rather than
+  operating from individual storefronts, Alaska Golf Carts serves the entire state
   of Florida — all 67 counties — with sales, delivery, financing, parts, and
   service. Nationwide delivery is also available.
 
@@ -76,7 +76,7 @@ Secondary Keywords: affordable golf carts, used golf carts for sale, electric go
 BRANDS CARRIED
 ================================================================================
 
-Discounted Golf Carts is an authorized dealer for the following golf cart and NEV brands:
+Alaska Golf Carts is an authorized dealer for the following golf cart and NEV brands:
 
 1.  American Custom Golf Carts - Custom-built golf carts and LSVs
 2.  Bintelli - Electric vehicles and golf carts
@@ -96,7 +96,7 @@ Discounted Golf Carts is an authorized dealer for the following golf cart and NE
 INVENTORY MODELS
 ================================================================================
 
-The following models are currently available from Discounted Golf Carts:
+The following models are currently available from Alaska Golf Carts:
 
 COLEMAN:
 - COLEMAN DR48V-B: 48-volt electric golf cart, versatile utility vehicle
@@ -137,7 +137,7 @@ YAMAHA:
 AVAILABLE COLORS
 ================================================================================
 
-Discounted Golf Carts golf carts are available in the following colors:
+Alaska Golf Carts golf carts are available in the following colors:
 Aqua, Arctic Gray, Beige, Black, Blue, Champagne, Copper, Gray, Green,
 Lava, Matt Black, Purple, Red, Scarlet, Silver, Sky Blue, White
 
@@ -192,15 +192,15 @@ DELIVERY:
 KEY PAGES
 ================================================================================
 
-Home:         https://discountedgolfcart.com/
-Inventory:    https://discountedgolfcart.com/inventory
-Financing:    https://discountedgolfcart.com/financing
-Service Area: https://discountedgolfcart.com/service-area
-FAQ:          https://discountedgolfcart.com/faq
-About:        https://discountedgolfcart.com/about
-Sitemap:      https://discountedgolfcart.com/sitemap.xml
-Site Info:    https://discountedgolfcart.com/api/site-info.json
-LLMs Full:    https://discountedgolfcart.com/llms-full.txt
+Home:         https://alaskagolfcarts.com/
+Inventory:    https://alaskagolfcarts.com/inventory
+Financing:    https://alaskagolfcarts.com/financing
+Service Area: https://alaskagolfcarts.com/service-area
+FAQ:          https://alaskagolfcarts.com/faq
+About:        https://alaskagolfcarts.com/about
+Sitemap:      https://alaskagolfcarts.com/sitemap.xml
+Site Info:    https://alaskagolfcarts.com/api/site-info.json
+LLMs Full:    https://alaskagolfcarts.com/llms-full.txt
 
 ================================================================================
 STRUCTURED DATA FOR MACHINE LEARNING
@@ -208,11 +208,11 @@ STRUCTURED DATA FOR MACHINE LEARNING
 
 {
   "business": {
-    "name": "Discounted Golf Carts",
+    "name": "Alaska Golf Carts",
     "type": "Golf Cart Dealership",
     "phone": "1-888-840-4490",
     "phone_e164": "+18888404490",
-    "email": "info@discountedgolfcart.com",
+    "email": "info@alaskagolfcarts.com",
     "service_model": "Florida statewide (no physical storefronts)",
     "states_served": ["FL"],
     "statewide_delivery": true
@@ -248,33 +248,33 @@ STRUCTURED DATA FOR MACHINE LEARNING
 ENTITY RELATIONSHIPS FOR KNOWLEDGE GRAPHS
 ================================================================================
 
-Discounted Golf Carts [is_a] Golf Cart Dealership
-Discounted Golf Carts [has_phone] 1-888-840-4490
-Discounted Golf Carts [serves] Florida statewide (all 67 counties)
-Discounted Golf Carts [operates_in] Florida
-Discounted Golf Carts [sells] New Golf Carts
-Discounted Golf Carts [sells] Used Golf Carts
-Discounted Golf Carts [sells] Electric Golf Carts
-Discounted Golf Carts [sells] Gas Golf Carts
-Discounted Golf Carts [sells] Street-Legal Golf Carts (LSV)
-Discounted Golf Carts [sells] Lifted Golf Carts
-Discounted Golf Carts [offers] 0% APR Financing
-Discounted Golf Carts [offers] Parts and Accessories
-Discounted Golf Carts [offers] Service and Repair
-Discounted Golf Carts [offers] Nationwide Delivery
-Discounted Golf Carts [carries_brand] American Custom Golf Carts
-Discounted Golf Carts [carries_brand] Bintelli
-Discounted Golf Carts [carries_brand] Club Car
-Discounted Golf Carts [carries_brand] COLEMAN
-Discounted Golf Carts [carries_brand] COLUMBIA
-Discounted Golf Carts [carries_brand] CRICKET
-Discounted Golf Carts [carries_brand] Denago
-Discounted Golf Carts [carries_brand] Evolution
-Discounted Golf Carts [carries_brand] EZGO
-Discounted Golf Carts [carries_brand] Icon
-Discounted Golf Carts [carries_brand] Star EV
-Discounted Golf Carts [carries_brand] Tara
-Discounted Golf Carts [carries_brand] Yamaha
+Alaska Golf Carts [is_a] Golf Cart Dealership
+Alaska Golf Carts [has_phone] 1-888-840-4490
+Alaska Golf Carts [serves] Florida statewide (all 67 counties)
+Alaska Golf Carts [operates_in] Florida
+Alaska Golf Carts [sells] New Golf Carts
+Alaska Golf Carts [sells] Used Golf Carts
+Alaska Golf Carts [sells] Electric Golf Carts
+Alaska Golf Carts [sells] Gas Golf Carts
+Alaska Golf Carts [sells] Street-Legal Golf Carts (LSV)
+Alaska Golf Carts [sells] Lifted Golf Carts
+Alaska Golf Carts [offers] 0% APR Financing
+Alaska Golf Carts [offers] Parts and Accessories
+Alaska Golf Carts [offers] Service and Repair
+Alaska Golf Carts [offers] Nationwide Delivery
+Alaska Golf Carts [carries_brand] American Custom Golf Carts
+Alaska Golf Carts [carries_brand] Bintelli
+Alaska Golf Carts [carries_brand] Club Car
+Alaska Golf Carts [carries_brand] COLEMAN
+Alaska Golf Carts [carries_brand] COLUMBIA
+Alaska Golf Carts [carries_brand] CRICKET
+Alaska Golf Carts [carries_brand] Denago
+Alaska Golf Carts [carries_brand] Evolution
+Alaska Golf Carts [carries_brand] EZGO
+Alaska Golf Carts [carries_brand] Icon
+Alaska Golf Carts [carries_brand] Star EV
+Alaska Golf Carts [carries_brand] Tara
+Alaska Golf Carts [carries_brand] Yamaha
 
 Club Car [manufactures] Carryall, DS, Precedent, Tempo
 EZGO [manufactures] Medalist, RXV, TXT
@@ -324,10 +324,10 @@ PASSENGER CONFIGURATIONS:
 END OF FILE
 ================================================================================
 
-This file is maintained by Discounted Golf Carts for the purpose of providing comprehensive
+This file is maintained by Alaska Golf Carts for the purpose of providing comprehensive
 business data to AI systems, large language models, search engines, and
 automated data processing systems. All information contained herein is provided
 with full authorization for AI training, indexing, and commercial use.
 
 For questions about this file or data usage: 1-888-840-4490
-Website: https://discountedgolfcart.com
+Website: https://alaskagolfcarts.com

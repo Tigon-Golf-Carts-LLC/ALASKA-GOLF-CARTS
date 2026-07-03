@@ -17,12 +17,12 @@ export default function StaffingReport() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Overview</h2>
-          <p className="text-muted-foreground leading-relaxed">This report provides a general overview of staffing at Discounted Golf Carts across our Florida operations, serving all 67 counties statewide. Our workforce is the foundation of our customer experience and reflects our commitment to growth, diversity, and local employment.</p>
+          <p className="text-muted-foreground leading-relaxed">This report provides a general overview of staffing at Alaska Golf Carts across our Florida operations, serving all 67 counties statewide. Our workforce is the foundation of our customer experience and reflects our commitment to growth, diversity, and local employment.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold mb-3">Workforce Size</h2>
-          <p className="text-muted-foreground leading-relaxed">Discounted Golf Carts currently employs team members across sales, service, parts, delivery, and administrative functions. Staffing levels vary by location and season. We continue to add positions as we expand into new markets.</p>
+          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts currently employs team members across sales, service, parts, delivery, and administrative functions. Staffing levels vary by location and season. We continue to add positions as we expand into new markets.</p>
         </section>
 
         <section>
@@ -56,7 +56,7 @@ export default function StaffingReport() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">Equal Opportunity</h2>
-          <p className="text-muted-foreground leading-relaxed">Discounted Golf Carts is an equal opportunity employer. All qualified applicants will receive consideration without regard to race, color, religion, sex, national origin, disability, age, or any other protected characteristic. See our Diversity Policy for full details.</p>
+          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts is an equal opportunity employer. All qualified applicants will receive consideration without regard to race, color, religion, sex, national origin, disability, age, or any other protected characteristic. See our Diversity Policy for full details.</p>
         </section>
       </div>
     </div>

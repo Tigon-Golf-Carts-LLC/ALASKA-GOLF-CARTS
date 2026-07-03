@@ -58,7 +58,7 @@ export function Footer() {
             </div>
             <div className="-mt-3">
               <h3 className="text-2xl sm:text-3xl font-black tracking-tight uppercase">Get These Deals Before They're Gone!</h3>
-              <p className="text-primary-foreground/80 text-sm mt-1">Golf cart prices update nightly — these wholesale prices are only good until the timer runs out. Act now.</p>
+              <p className="text-primary-foreground/80 text-sm mt-1">Golf cart prices update nightly — these great prices are only good until the timer runs out. Act now.</p>
             </div>
 
             {/* CTA buttons */}
@@ -89,7 +89,7 @@ export function Footer() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             {[
-              { icon: Tag, label: "Wholesale Prices" },
+              { icon: Tag, label: "Great Prices" },
               { icon: Truck, label: "Nationwide Delivery" },
               { icon: Shield, label: "Warranty Included" },
               { icon: Award, label: "Top Brands" },
@@ -108,20 +108,20 @@ export function Footer() {
             {/* Brand */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-2 mb-4">
-                <img src={logoImg} alt="Discounted Golf Carts" className="h-9 w-9 object-contain" />
-                <span className="text-base font-extrabold">Discounted <span className="text-primary">Golf Carts</span></span>
+                <img src={logoImg} alt="Alaska Golf Carts" className="h-9 w-9 object-contain" />
+                <span className="text-base font-extrabold">Alaska <span className="text-primary">Golf Carts</span></span>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                New and used golf carts for sale at wholesale prices. 13 authorized brands. Inventory updated daily. Serving all of Florida. 0% APR financing available.
+                New and used golf carts for sale at great prices. 13 authorized brands. Inventory updated daily. Serving all of Florida. 0% APR financing available.
               </p>
               <div className="flex items-center gap-3 mt-4">
-                <a href="https://facebook.com/DiscountedGolfCarts" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-social-facebook">
+                <a href="https://facebook.com/AlaskaGolfCarts" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-social-facebook">
                   <SiFacebook className="h-5 w-5" />
                 </a>
-                <a href="https://instagram.com/DiscountedGolfCarts" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-social-instagram">
+                <a href="https://instagram.com/AlaskaGolfCarts" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-social-instagram">
                   <SiInstagram className="h-5 w-5" />
                 </a>
-                <a href="https://youtube.com/@DiscountedGolfCarts" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-social-youtube">
+                <a href="https://youtube.com/@AlaskaGolfCarts" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-social-youtube">
                   <SiYoutube className="h-5 w-5" />
                 </a>
               </div>
@@ -193,8 +193,8 @@ export function Footer() {
         </div>
 
         <div className="border-t px-4 py-5 text-center text-xs text-muted-foreground space-y-1">
-          <p>&copy; {new Date().getFullYear()} Discounted Golf Carts. All rights reserved. | discountedgolfcart.com</p>
-          <p>Discounted Golf Carts proudly serves all 67 counties across the state of Florida, with statewide delivery on new and used golf carts.</p>
+          <p>&copy; {new Date().getFullYear()} Alaska Golf Carts. All rights reserved. | alaskagolfcarts.com</p>
+          <p>Alaska Golf Carts proudly serves all 67 counties across the state of Florida, with statewide delivery on new and used golf carts.</p>
         </div>
       </div>
     </footer>

@@ -21,14 +21,14 @@ const TICKER_ITEMS = [
   "⚡ ELECTRIC GOLF CARTS",
   "🏌️ STREET-LEGAL LSV IN STOCK",
   "🚗 NATIONWIDE DELIVERY",
-  "🏷️ WHOLESALE PRICES UPDATED DAILY",
+  "🏷️ PRICES UPDATED DAILY",
   "📞 CALL " + PHONE_NUMBER,
   "🔥 GOLF CARTS FOR SALE",
   "✦ NEW & USED INVENTORY",
   "⚡ ELECTRIC GOLF CARTS",
   "🏌️ STREET-LEGAL LSV IN STOCK",
   "🚗 NATIONWIDE DELIVERY",
-  "🏷️ WHOLESALE PRICES UPDATED DAILY",
+  "🏷️ PRICES UPDATED DAILY",
   "📞 CALL " + PHONE_NUMBER,
 ];
 
@@ -424,7 +424,7 @@ export default function Home() {
             Golf Carts<br /><span className="text-primary">For Sale.</span>
           </h1>
           <p className="text-white/60 text-sm sm:text-base max-w-lg mx-auto">
-            New &amp; used electric golf carts, street-legal LSVs, and lifted carts — wholesale pricing updated nightly, delivered across Florida.
+            New &amp; used electric golf carts, street-legal LSVs, and lifted carts — great pricing updated nightly, delivered across Florida.
           </p>
         </div>
 
@@ -518,7 +518,7 @@ export default function Home() {
                           {/* PRICE — front and center */}
                           <div className="mt-auto">
                             <div className="text-[9px] font-black uppercase tracking-[0.18em] text-primary/70 flex items-center gap-1 mb-0.5">
-                              <Tag className="h-2.5 w-2.5" /> WHOLESALE PRICE
+                              <Tag className="h-2.5 w-2.5" /> GREAT PRICE
                             </div>
                             <div className="text-3xl font-black text-primary leading-none" data-testid={`text-hero-price-${cart._id}`}>
                               {price}
@@ -627,7 +627,7 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap justify-center gap-5">
             {[
-              { icon: CheckCircle2, label: "No-Haggle Wholesale Pricing" },
+              { icon: CheckCircle2, label: "No-Haggle Pricing" },
               { icon: Zap, label: "Electric & Gas Golf Carts" },
               { icon: Truck, label: "Nationwide Delivery Available" },
             ].map((item) => (
@@ -694,7 +694,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-sm font-extrabold uppercase tracking-wide">Don't Miss These Golf Cart Deals!</p>
-              <p className="text-xs text-muted-foreground">Golf cart prices update nightly — call now to lock in today's wholesale price before inventory changes.</p>
+              <p className="text-xs text-muted-foreground">Golf cart prices update nightly — call now to lock in today's great price before inventory changes.</p>
             </div>
           </div>
           <div className="flex items-center gap-4 shrink-0">
@@ -721,7 +721,7 @@ export default function Home() {
                 ✦ Brand New Golf Carts for Sale
               </p>
               <h2 className="text-2xl font-extrabold">New Golf Carts for Sale</h2>
-              <p className="text-sm text-muted-foreground mt-1">Factory-fresh inventory from 13 authorized brands — wholesale MSRP pricing</p>
+              <p className="text-sm text-muted-foreground mt-1">Factory-fresh inventory from 13 authorized brands — MSRP pricing</p>
             </div>
             <Link href="/inventory?condition=new">
               <Button variant="outline" className="hidden sm:flex font-semibold" data-testid="button-view-all-new">
@@ -757,7 +757,7 @@ export default function Home() {
                 ★ Used Golf Carts for Sale
               </p>
               <h2 className="text-2xl font-extrabold">Used &amp; Pre-Owned Golf Carts for Sale</h2>
-              <p className="text-sm text-muted-foreground mt-1">Inspected and discounted pre-owned carts — click any cart to see full specs and price</p>
+              <p className="text-sm text-muted-foreground mt-1">Inspected pre-owned carts — click any cart to see full specs and price</p>
             </div>
             <Link href="/inventory?condition=used">
               <Button variant="outline" className="hidden sm:flex font-semibold" data-testid="button-view-all-used">
@@ -829,9 +829,9 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div className="text-center lg:text-left">
               <Badge className="mb-3 bg-primary text-primary-foreground border-0 font-bold uppercase tracking-wide">
-                <Tag className="h-3 w-3 mr-1" /> Wholesale Golf Cart Prices
+                <Tag className="h-3 w-3 mr-1" /> Great Golf Cart Prices
               </Badge>
-              <h2 className="text-3xl sm:text-4xl font-extrabold mb-3">Golf Carts for Sale — Best Wholesale Prices in Florida</h2>
+              <h2 className="text-3xl sm:text-4xl font-extrabold mb-3">Golf Carts for Sale — Best Prices in Florida</h2>
               <p className="text-background/65 max-w-xl leading-relaxed">
                 Our team is standing by. Call now for today's best price on any cart in stock — new golf carts, used golf carts, electric carts, street-legal LSVs, and lifted models. 0% APR financing available on qualifying purchases.
               </p>

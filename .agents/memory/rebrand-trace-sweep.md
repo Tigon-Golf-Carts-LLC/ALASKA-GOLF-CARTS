@@ -18,4 +18,10 @@ When rebranding (name/URL/locations) or changing the service area, `client/src` 
 
 **Out of our control (expected residual):** cart photos come from the live DMS API and can show the original dealership's physical signage in the background. The DMS backend URLs (api.tigondms.com, `/tigon-stores`) are intentionally kept — backend only, not user-visible.
 
-**Kept-on-purpose, not a trace:** generic lowercase adjective "discounted" (discounted prices/vehicles) and "nationwide delivery" (a real shipping capability that coexists with Florida-statewide service). `STATE_ABBREVIATIONS` in constants.ts is a generic US lookup, not a brand trace.
+**Kept-on-purpose, not a trace:** "nationwide delivery" (a real shipping capability that coexists with Florida-statewide service). `STATE_ABBREVIATIONS` in constants.ts is a generic US lookup, not a brand trace. NOTE: the words "discounted"/"wholesale" were later fully removed at user request (brand is Alaska Golf Carts only, generic pricing words = "great"/"MSRP").
+
+**Cross-agent hazard:** background SEO/audit task agents can be generated from a scan of the PRE-rebrand brand, so a task that "fixes brand/domain signals" may treat the rebrand as the error and revert the whole thing on merge. After any large rebrand, re-grep the entire repo after each batch of task merges — a task's own instructions can be stale and silently undo your work. Treat `client/src/lib/constants.ts` (SITE_NAME/SITE_DOMAIN) as the single source of truth.
+
+**Sweep must include `shared/`** — not just `client/src`, `client/public`, `server`, `client/index.html`. `shared/seo-routes.ts` holds SITE_URL/SITE_NAME + per-policy titles/descriptions consumed by server SSR; missing it leaks the old brand/domain on policy routes.
+
+**Token-swap gotchas:** brand lockups in `header.tsx`/`footer.tsx` split the name across two `<span>`s (word1 + "Golf Carts"), so a contiguous `sed 's/Old Golf Carts/.../'` misses them. Plus-encoded `utm_source=Old+Golf+Carts` in `financing.tsx` and lowercase keyword lists in `client/public/seo.txt` also need their own passes. When doing bulk `s/discountedgolfcarts/.../`, run the plural-with-trailing-s form BEFORE the singular, or you double the `s` (…cartss). Always grep case-insensitively after any sed sweep.

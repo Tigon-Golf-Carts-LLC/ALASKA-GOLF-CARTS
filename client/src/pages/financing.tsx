@@ -8,25 +8,25 @@ import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 const FINANCING_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "url": "https://discountedgolfcart.com/financing",
-  "name": "Golf Cart Financing — 0% APR Up to 48 Months | Discounted Golf Carts",
+  "url": "https://alaskagolfcarts.com/financing",
+  "name": "Golf Cart Financing — 0% APR Up to 48 Months | Alaska Golf Carts",
   "description": "Apply for golf cart financing through six lending partners. 0% APR options available. Quick approvals. New and used carts, LSVs, and NEVs. Call 1-888-840-4490.",
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://discountedgolfcart.com" },
-      { "@type": "ListItem", "position": 2, "name": "Financing", "item": "https://discountedgolfcart.com/financing" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alaskagolfcarts.com" },
+      { "@type": "ListItem", "position": 2, "name": "Financing", "item": "https://alaskagolfcarts.com/financing" }
     ]
   },
   "mainEntity": {
     "@type": "Service",
     "name": "Golf Cart Financing",
-    "provider": { "@id": "https://discountedgolfcart.com/#organization" },
+    "provider": { "@id": "https://alaskagolfcarts.com/#organization" },
     "description": "Golf cart financing through six lending partners. 0% APR available, terms up to 48 months, quick approval for new and used golf carts.",
     "offers": {
       "@type": "Offer",
       "description": "0% APR financing on golf carts, terms up to 48 months",
-      "seller": { "@id": "https://discountedgolfcart.com/#organization" }
+      "seller": { "@id": "https://alaskagolfcarts.com/#organization" }
     }
   }
 };
@@ -60,7 +60,7 @@ const financingPartners = [
     name: "Univest Capital",
     heading: "Univest Capital",
     description: "Customized a solution for your specific business needs.",
-    url: "https://form.jotform.com/UnivestCapital/credit-application-bakos?utm_source=Discounted+Golf+Carts&utm_medium=Financing&utm_campaign=Business&utm_term=Best+Golf+Cart+Financing",
+    url: "https://form.jotform.com/UnivestCapital/credit-application-bakos?utm_source=Alaska+Golf+Carts&utm_medium=Financing&utm_campaign=Business&utm_term=Best+Golf+Cart+Financing",
   },
   {
     name: "Dealer Direct",
@@ -97,9 +97,9 @@ export default function Financing() {
   return (
     <div className="min-h-screen">
       <SeoHead
-        title="Golf Cart Financing — 0% APR Up to 48 Months | Discounted Golf Carts"
-        description="Apply for golf cart financing at Discounted Golf Carts. 0% APR options, six lending partners, terms up to 48 months. New and used carts, LSVs, and NEVs. Call 1-888-840-4490."
-        canonical="https://discountedgolfcart.com/financing"
+        title="Golf Cart Financing — 0% APR Up to 48 Months | Alaska Golf Carts"
+        description="Apply for golf cart financing at Alaska Golf Carts. 0% APR options, six lending partners, terms up to 48 months. New and used carts, LSVs, and NEVs. Call 1-888-840-4490."
+        canonical="https://alaskagolfcarts.com/financing"
         schema={FINANCING_SCHEMA}
       />
 
@@ -124,7 +124,7 @@ export default function Financing() {
               className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4"
               data-testid="text-financing-intro"
             >
-              Discounted Golf Carts offers financing on new golf carts, used golf carts, street-legal LSVs, and neighborhood electric vehicles (NEVs) through six lending partners. Programs include 0% APR for qualified buyers, rent-to-own for a path to ownership, and business financing for commercial fleets. Terms run up to 48 months. Most applications receive a decision in minutes.
+              Alaska Golf Carts offers financing on new golf carts, used golf carts, street-legal LSVs, and neighborhood electric vehicles (NEVs) through six lending partners. Programs include 0% APR for qualified buyers, rent-to-own for a path to ownership, and business financing for commercial fleets. Terms run up to 48 months. Most applications receive a decision in minutes.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> to discuss which financing program fits your budget, or apply directly through any of the six partner portals below. Available <Link href="/service-area" className="text-primary hover:underline">across all of Florida</Link>.
@@ -212,7 +212,7 @@ export default function Financing() {
       <section className="py-10 md:py-14 bg-card border-t">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-xl md:text-2xl font-bold mb-4">
-            How Does Golf Cart Financing Work at Discounted Golf Carts?
+            How Does Golf Cart Financing Work at Alaska Golf Carts?
           </h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-5">
             Choose a cart from the <Link href="/inventory" className="text-primary hover:underline">inventory page</Link>, then call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or apply online through one of the six partner portals above. Once approved, financing terms are set directly with the lender. Monthly payment amounts depend on the purchase price, term length (up to 48 months), and the program selected. All financing is subject to credit approval.

@@ -59,10 +59,10 @@ const regions = [
 const SERVICE_AREA_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "url": "https://discountedgolfcart.com/service-area",
-  "name": "Florida Golf Cart Service Area — All 67 Counties | Discounted Golf Carts",
+  "url": "https://alaskagolfcarts.com/service-area",
+  "name": "Florida Golf Cart Service Area — All 67 Counties | Alaska Golf Carts",
   "description":
-    "Discounted Golf Carts serves the entire state of Florida — all 67 counties. New and used golf carts with statewide delivery.",
+    "Alaska Golf Carts serves the entire state of Florida — all 67 counties. New and used golf carts with statewide delivery.",
   "about": {
     "@type": "State",
     "name": "Florida",
@@ -70,8 +70,8 @@ const SERVICE_AREA_SCHEMA = {
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://discountedgolfcart.com" },
-      { "@type": "ListItem", "position": 2, "name": "Service Area", "item": "https://discountedgolfcart.com/service-area" },
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alaskagolfcarts.com" },
+      { "@type": "ListItem", "position": 2, "name": "Service Area", "item": "https://alaskagolfcarts.com/service-area" },
     ],
   },
 };
@@ -80,9 +80,9 @@ export default function ServiceArea() {
   return (
     <div className="min-h-screen">
       <SeoHead
-        title="Florida Golf Cart Service Area — All 67 Counties | Discounted Golf Carts"
-        description="Discounted Golf Carts serves the entire state of Florida — all 67 counties, from Miami-Dade and Broward to Duval, Hillsborough, and Orange. Statewide delivery available. Call 1-888-840-4490."
-        canonical="https://discountedgolfcart.com/service-area"
+        title="Florida Golf Cart Service Area — All 67 Counties | Alaska Golf Carts"
+        description="Alaska Golf Carts serves the entire state of Florida — all 67 counties, from Miami-Dade and Broward to Duval, Hillsborough, and Orange. Statewide delivery available. Call 1-888-840-4490."
+        canonical="https://alaskagolfcarts.com/service-area"
         schema={SERVICE_AREA_SCHEMA}
       />
 
@@ -100,7 +100,7 @@ export default function ServiceArea() {
             Florida Golf Cart Service Area — All 67 Counties
           </h1>
           <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mb-6">
-            Discounted Golf Carts sells and delivers new and used golf carts across the entire state of Florida — every one of the state's <strong>67 counties</strong>. Every order is backed by 13 authorized brands and on-site financing. Wherever you are in Florida, <strong>statewide delivery</strong> is available — call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> for a delivery quote to your address.
+            Alaska Golf Carts sells and delivers new and used golf carts across the entire state of Florida — every one of the state's <strong>67 counties</strong>. Every order is backed by 13 authorized brands and on-site financing. Wherever you are in Florida, <strong>statewide delivery</strong> is available — call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> for a delivery quote to your address.
           </p>
           <div className="flex flex-wrap gap-2">
             <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">Florida</span>

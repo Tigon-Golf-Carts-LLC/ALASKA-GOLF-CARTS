@@ -12,16 +12,16 @@ const FAQ_SCHEMA = {
     {
       "@type": "Question",
       "name": "How much does a golf cart cost?",
-      "acceptedAnswer": {"@type": "Answer", "text": "New golf carts at Discounted Golf Carts start at approximately $9,995. Used golf carts typically range from $4,500 to $12,000 depending on brand, age, and condition. Street-legal LSVs and lifted models may cost more. Call 1-888-840-4490 for current pricing on specific units."}
+      "acceptedAnswer": {"@type": "Answer", "text": "New golf carts at Alaska Golf Carts start at approximately $9,995. Used golf carts typically range from $4,500 to $12,000 depending on brand, age, and condition. Street-legal LSVs and lifted models may cost more. Call 1-888-840-4490 for current pricing on specific units."}
     },
     {
       "@type": "Question",
-      "name": "What brands of golf carts does Discounted Golf Carts carry?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Discounted Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO (E-Z-GO), Icon, Star EV, Tara, and Yamaha."}
+      "name": "What brands of golf carts does Alaska Golf Carts carry?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Alaska Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO (E-Z-GO), Icon, Star EV, Tara, and Yamaha."}
     },
     {
       "@type": "Question",
-      "name": "Does Discounted Golf Carts offer financing?",
+      "name": "Does Alaska Golf Carts offer financing?",
       "acceptedAnswer": {"@type": "Answer", "text": "Yes. Financing is available through six lending partners including Sheffield Financial (0% APR), BLI Heartland (rent-to-own), DLL Financial Solutions, Roadrunner/Octane, Univest Capital, and Dealer Direct. Terms up to 48 months."}
     },
     {
@@ -32,21 +32,21 @@ const FAQ_SCHEMA = {
     {
       "@type": "Question",
       "name": "What is the difference between electric and gas golf carts?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Electric golf carts run on battery packs (36V, 48V, or 72V). They are quieter and produce no exhaust. Gas golf carts use combustion engines and are preferred where charging is inconvenient or for longer range. Both types are available at Discounted Golf Carts."}
+      "acceptedAnswer": {"@type": "Answer", "text": "Electric golf carts run on battery packs (36V, 48V, or 72V). They are quieter and produce no exhaust. Gas golf carts use combustion engines and are preferred where charging is inconvenient or for longer range. Both types are available at Alaska Golf Carts."}
     },
     {
       "@type": "Question",
-      "name": "Does Discounted Golf Carts deliver across Florida?",
+      "name": "Does Alaska Golf Carts deliver across Florida?",
       "acceptedAnswer": {"@type": "Answer", "text": "Yes. Statewide delivery is available to all 67 Florida counties. Call 1-888-840-4490 for a delivery quote."}
     },
     {
       "@type": "Question",
-      "name": "What areas does Discounted Golf Carts serve?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Discounted Golf Carts serves the entire state of Florida — all 67 counties, including Miami-Dade, Broward, Palm Beach, Hillsborough, Orange, Duval, Pinellas, Lee, Polk, Brevard, and every other Florida county. Statewide delivery is available."}
+      "name": "What areas does Alaska Golf Carts serve?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Alaska Golf Carts serves the entire state of Florida — all 67 counties, including Miami-Dade, Broward, Palm Beach, Hillsborough, Orange, Duval, Pinellas, Lee, Polk, Brevard, and every other Florida county. Statewide delivery is available."}
     },
     {
       "@type": "Question",
-      "name": "Does Discounted Golf Carts accept trade-ins?",
+      "name": "Does Alaska Golf Carts accept trade-ins?",
       "acceptedAnswer": {"@type": "Answer", "text": "Yes. Trade-ins are accepted throughout Florida. Call 1-888-840-4490 to get a trade-in estimate."}
     },
     {
@@ -56,7 +56,7 @@ const FAQ_SCHEMA = {
     },
     {
       "@type": "Question",
-      "name": "Does Discounted Golf Carts service and repair golf carts?",
+      "name": "Does Alaska Golf Carts service and repair golf carts?",
       "acceptedAnswer": {"@type": "Answer", "text": "Yes. Services include routine maintenance, battery diagnostics and replacement, motor and controller repair, brake service, electrical diagnostics, body repair, and warranty service for all carried brands."}
     }
   ]
@@ -65,38 +65,38 @@ const FAQ_SCHEMA = {
 const faqs = [
   {
     q: "How much does a golf cart cost?",
-    a: "New golf carts at Discounted Golf Carts start at approximately $9,995. Used golf carts typically range from $4,500 to $12,000 depending on brand, age, and condition. Street-legal LSVs and lifted models may cost more. Call 1-888-840-4490 for current pricing on specific units."
+    a: "New golf carts at Alaska Golf Carts start at approximately $9,995. Used golf carts typically range from $4,500 to $12,000 depending on brand, age, and condition. Street-legal LSVs and lifted models may cost more. Call 1-888-840-4490 for current pricing on specific units."
   },
   {
-    q: "What brands of golf carts does Discounted Golf Carts carry?",
-    a: "Discounted Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO (E-Z-GO), Icon, Star EV, Tara, and Yamaha."
+    q: "What brands of golf carts does Alaska Golf Carts carry?",
+    a: "Alaska Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO (E-Z-GO), Icon, Star EV, Tara, and Yamaha."
   },
   {
-    q: "Does Discounted Golf Carts offer financing?",
+    q: "Does Alaska Golf Carts offer financing?",
     a: "Yes. Financing is available through six lending partners: Sheffield Financial (0% APR options), BLI Heartland (rent-to-own), DLL Financial Solutions (low APR), Roadrunner/Octane (consumer financing), Univest Capital (business financing), and Dealer Direct (buy now, pay later). Terms up to 48 months. See the financing page for details."
   },
   {
     q: "What is a street-legal golf cart (LSV)?",
-    a: "A Low Speed Vehicle (LSV) meets FMVSS 500 federal safety standards for operation on public roads with posted speed limits of 35 mph or less. Required equipment includes headlights, taillights, turn signals, brake lights, mirrors, seat belts, horn, windshield, and a Vehicle Identification Number (VIN). Discounted Golf Carts stocks LSVs from multiple brands."
+    a: "A Low Speed Vehicle (LSV) meets FMVSS 500 federal safety standards for operation on public roads with posted speed limits of 35 mph or less. Required equipment includes headlights, taillights, turn signals, brake lights, mirrors, seat belts, horn, windshield, and a Vehicle Identification Number (VIN). Alaska Golf Carts stocks LSVs from multiple brands."
   },
   {
     q: "What is the difference between electric and gas golf carts?",
-    a: "Electric golf carts run on battery packs (typically 36V, 48V, or 72V lithium-ion or lead-acid). They are quieter, produce no exhaust, and have lower per-mile energy costs. Gas golf carts use small combustion engines and are preferred where charging infrastructure is limited or for longer-range applications. Both types are stocked at Discounted Golf Carts."
+    a: "Electric golf carts run on battery packs (typically 36V, 48V, or 72V lithium-ion or lead-acid). They are quieter, produce no exhaust, and have lower per-mile energy costs. Gas golf carts use small combustion engines and are preferred where charging infrastructure is limited or for longer-range applications. Both types are stocked at Alaska Golf Carts."
   },
   {
     q: "What is a lifted golf cart?",
-    a: "A lifted golf cart has an aftermarket suspension lift kit installed, raising the vehicle's ground clearance by 3 to 6 inches. Lifted carts can accommodate larger tires and are popular for off-road use, hunting, farm, and rough terrain. Discounted Golf Carts stocks pre-lifted models in our Florida inventory."
+    a: "A lifted golf cart has an aftermarket suspension lift kit installed, raising the vehicle's ground clearance by 3 to 6 inches. Lifted carts can accommodate larger tires and are popular for off-road use, hunting, farm, and rough terrain. Alaska Golf Carts stocks pre-lifted models in our Florida inventory."
   },
   {
-    q: "Does Discounted Golf Carts deliver across Florida?",
+    q: "Does Alaska Golf Carts deliver across Florida?",
     a: "Yes. Statewide delivery is available to all 67 Florida counties. Call 1-888-840-4490 for a delivery quote to your address."
   },
   {
-    q: "What areas does Discounted Golf Carts serve?",
-    a: "Discounted Golf Carts serves the entire state of Florida — all 67 counties, including Miami-Dade, Broward, Palm Beach, Hillsborough, Orange, Duval, Pinellas, Lee, Polk, Brevard, and every other Florida county. Statewide delivery is available on new and used golf carts."
+    q: "What areas does Alaska Golf Carts serve?",
+    a: "Alaska Golf Carts serves the entire state of Florida — all 67 counties, including Miami-Dade, Broward, Palm Beach, Hillsborough, Orange, Duval, Pinellas, Lee, Polk, Brevard, and every other Florida county. Statewide delivery is available on new and used golf carts."
   },
   {
-    q: "Does Discounted Golf Carts accept trade-ins?",
+    q: "Does Alaska Golf Carts accept trade-ins?",
     a: "Yes. Trade-ins are accepted throughout Florida. Call 1-888-840-4490 to get an estimated value."
   },
   {
@@ -104,11 +104,11 @@ const faqs = [
     a: "The inventory feed is refreshed daily at 10:55 PM Eastern Time. All prices and availability reflect the most recent nightly update. Because of this, it is best to call 1-888-840-4490 to confirm a specific unit is still available before making the trip."
   },
   {
-    q: "Does Discounted Golf Carts service and repair golf carts?",
+    q: "Does Alaska Golf Carts service and repair golf carts?",
     a: "Yes. Services include routine maintenance, battery diagnostics and replacement, motor and controller repair, brake service, electrical system diagnostics, body repair and refurbishment, and warranty service for all 13 carried brands."
   },
   {
-    q: "What is the phone number for Discounted Golf Carts?",
+    q: "What is the phone number for Alaska Golf Carts?",
     a: "Call 1-888-840-4490. This toll-free number connects you to the sales team who can assist with inventory, pricing, financing, delivery, and store locations."
   }
 ];
@@ -136,9 +136,9 @@ export default function FAQ() {
   return (
     <div className="min-h-screen">
       <SeoHead
-        title="Golf Cart FAQ — Buying, Financing & Street-Legal Questions | Discounted Golf Carts"
+        title="Golf Cart FAQ — Buying, Financing & Street-Legal Questions | Alaska Golf Carts"
         description="Golf cart buying questions answered: how much do they cost, what brands are available, how does financing work, and what is a street-legal LSV. Serving all of Florida — call 1-888-840-4490."
-        canonical="https://discountedgolfcart.com/faq"
+        canonical="https://alaskagolfcarts.com/faq"
         schema={FAQ_SCHEMA}
       />
 
@@ -156,7 +156,7 @@ export default function FAQ() {
             Frequently Asked Questions About Golf Carts
           </h1>
           <p className="text-muted-foreground text-base leading-relaxed max-w-2xl mx-auto">
-            Discounted Golf Carts sells new and used golf carts, electric vehicles, street-legal LSVs, and lifted carts from 13 authorized brands across all of Florida. Below are answers to the most common questions. Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> for specifics on current inventory and pricing.
+            Alaska Golf Carts sells new and used golf carts, electric vehicles, street-legal LSVs, and lifted carts from 13 authorized brands across all of Florida. Below are answers to the most common questions. Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> for specifics on current inventory and pricing.
           </p>
         </div>
       </section>

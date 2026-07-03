@@ -1,21 +1,21 @@
-/* HUMANS.TXT - Discounted Golf Carts Website Credits */
+/* HUMANS.TXT - Alaska Golf Carts Website Credits */
 
 /* TEAM */
 
-Company: Discounted Golf Carts
-Website: https://discountedgolfcart.com
+Company: Alaska Golf Carts
+Website: https://alaskagolfcarts.com
 Phone: 1-888-840-4490
-Email: info@discountedgolfcart.com
-Security: security@discountedgolfcart.com
+Email: info@alaskagolfcarts.com
+Security: security@alaskagolfcarts.com
 
   /* SOCIAL */
 
-  Facebook: https://www.facebook.com/DiscountedGolfCarts
-  Instagram: https://www.instagram.com/DiscountedGolfCarts
-  YouTube: https://www.youtube.com/@DiscountedGolfCarts
+  Facebook: https://www.facebook.com/AlaskaGolfCarts
+  Instagram: https://www.instagram.com/AlaskaGolfCarts
+  YouTube: https://www.youtube.com/@AlaskaGolfCarts
 
 Business Type: Golf Cart Dealership & Sales
-Company Description: Discounted Golf Carts is a premier golf cart dealership with Florida statewide service (all 67 counties). We offer 808+ golf carts in inventory from 13 leading brands including American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, and Yamaha.
+Company Description: Alaska Golf Carts is a premier golf cart dealership with Florida statewide service (all 67 counties). We offer 808+ golf carts in inventory from 13 leading brands including American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, and Yamaha.
 
 Dealership Locations: Florida statewide service
 Service Area: Florida (statewide, all 67 counties)
@@ -98,9 +98,9 @@ Special thanks to:
 
 /* CONTACT */
 
-For website inquiries: info@discountedgolfcart.com
-For security concerns: security@discountedgolfcart.com
+For website inquiries: info@alaskagolfcarts.com
+For security concerns: security@alaskagolfcarts.com
 For sales: 1-888-840-4490
-Website: https://discountedgolfcart.com
+Website: https://alaskagolfcarts.com
 
 Last updated: 2026-02-11

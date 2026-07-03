@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Discounted Golf Carts — Dedicated Image Sitemap -->
-<!-- Website: https://discountedgolfcart.com | Phone: 1-888-840-4490 -->
+<!-- Alaska Golf Carts — Dedicated Image Sitemap -->
+<!-- Website: https://alaskagolfcarts.com | Phone: 1-888-840-4490 -->
 <!-- Last Updated: 2026-06-09 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- Brand Logo & Identity Images -->
   <url>
-    <loc>https://discountedgolfcart.com/</loc>
+    <loc>https://alaskagolfcarts.com/</loc>
     <image:image>
-      <image:loc>https://discountedgolfcart.com/logo.png</image:loc>
-      <image:title>Discounted Golf Carts Logo — Golf Cart Dealer</image:title>
-      <image:caption>Official logo of Discounted Golf Carts, a Florida statewide golf cart dealership operating Florida statewide service across all 67 counties.</image:caption>
+      <image:loc>https://alaskagolfcarts.com/logo.png</image:loc>
+      <image:title>Alaska Golf Carts Logo — Golf Cart Dealer</image:title>
+      <image:caption>Official logo of Alaska Golf Carts, a Florida statewide golf cart dealership operating Florida statewide service across all 67 counties.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://discountedgolfcart.com/og-image.png</image:loc>
-      <image:title>Golf Carts for Sale — Discounted Golf Carts</image:title>
-      <image:caption>New and used golf carts for sale at wholesale prices. Club Car, EZGO, Yamaha, Denago, Evolution and 8 more brands. Florida statewide service. Call 1-888-840-4490.</image:caption>
+      <image:loc>https://alaskagolfcarts.com/og-image.png</image:loc>
+      <image:title>Golf Carts for Sale — Alaska Golf Carts</image:title>
+      <image:caption>New and used golf carts for sale at great prices. Club Car, EZGO, Yamaha, Denago, Evolution and 8 more brands. Florida statewide service. Call 1-888-840-4490.</image:caption>
       <image:geo_location>Florida, United States</image:geo_location>
     </image:image>
   </url>
 
   <!-- Club Car Golf Cart Images -->
   <url>
-    <loc>https://discountedgolfcart.com/inventory?make=Club+Car</loc>
+    <loc>https://alaskagolfcarts.com/inventory?make=Club+Car</loc>
     <image:image>
       <image:loc>https://s3.amazonaws.com/prod.docs.s3/carts/club-car-tempo.jpg</image:loc>
       <image:title>Club Car Tempo Golf Cart for Sale</image:title>
-      <image:caption>Club Car Tempo — premium golf cart with latest technology, premium comfort, and connected features. Available at Discounted Golf Carts.</image:caption>
+      <image:caption>Club Car Tempo — premium golf cart with latest technology, premium comfort, and connected features. Available at Alaska Golf Carts.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://s3.amazonaws.com/prod.docs.s3/carts/club-car-precedent.jpg</image:loc>
       <image:title>Club Car Precedent Golf Cart for Sale</image:title>
-      <image:caption>Club Car Precedent golf cart with updated styling and modern electronics. Available new and used at Discounted Golf Carts.</image:caption>
+      <image:caption>Club Car Precedent golf cart with updated styling and modern electronics. Available new and used at Alaska Golf Carts.</image:caption>
     </image:image>
   </url>
 
   <!-- EZGO Golf Cart Images -->
   <url>
-    <loc>https://discountedgolfcart.com/inventory?make=EZGO</loc>
+    <loc>https://alaskagolfcarts.com/inventory?make=EZGO</loc>
     <image:image>
       <image:loc>https://s3.amazonaws.com/prod.docs.s3/carts/ezgo-rxv.jpg</image:loc>
       <image:title>EZGO RXV Golf Cart for Sale</image:title>
-      <image:caption>EZGO RXV with AC drive technology and regenerative braking. Available at Discounted Golf Carts dealerships.</image:caption>
+      <image:caption>EZGO RXV with AC drive technology and regenerative braking. Available at Alaska Golf Carts dealerships.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://s3.amazonaws.com/prod.docs.s3/carts/ezgo-txt.jpg</image:loc>
       <image:title>EZGO TXT Golf Cart for Sale</image:title>
-      <image:caption>EZGO TXT versatile golf cart platform with extensive customization options. Shop at Discounted Golf Carts.</image:caption>
+      <image:caption>EZGO TXT versatile golf cart platform with extensive customization options. Shop at Alaska Golf Carts.</image:caption>
     </image:image>
   </url>
 
   <!-- Yamaha Golf Cart Images -->
   <url>
-    <loc>https://discountedgolfcart.com/inventory?make=Yamaha</loc>
+    <loc>https://alaskagolfcarts.com/inventory?make=Yamaha</loc>
     <image:image>
       <image:loc>https://s3.amazonaws.com/prod.docs.s3/carts/yamaha-drive2.jpg</image:loc>
       <image:title>Yamaha Drive 2 Golf Cart for Sale</image:title>
-      <image:caption>Yamaha Drive 2 with QuieTech EFI technology and independent rear suspension. Available at Discounted Golf Carts.</image:caption>
+      <image:caption>Yamaha Drive 2 with QuieTech EFI technology and independent rear suspension. Available at Alaska Golf Carts.</image:caption>
     </image:image>
   </url>
 
   <!-- Denago Golf Cart Images -->
   <url>
-    <loc>https://discountedgolfcart.com/inventory?make=Denago</loc>
+    <loc>https://alaskagolfcarts.com/inventory?make=Denago</loc>
     <image:image>
       <image:loc>https://s3.amazonaws.com/prod.docs.s3/carts/denago-nomad-xl.jpg</image:loc>
       <image:title>Denago Nomad XL Electric Golf Cart for Sale</image:title>
-      <image:caption>Denago Nomad XL 4-passenger electric golf cart with extended range lithium battery. Available at Discounted Golf Carts.</image:caption>
+      <image:caption>Denago Nomad XL 4-passenger electric golf cart with extended range lithium battery. Available at Alaska Golf Carts.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://s3.amazonaws.com/prod.docs.s3/carts/denago-rover-xl6.jpg</image:loc>
       <image:title>Denago Rover XL6 — 6 Passenger Golf Cart for Sale</image:title>
-      <image:caption>Denago Rover XL6 6-passenger electric golf cart. Family-friendly and spacious. Available at Discounted Golf Carts.</image:caption>
+      <image:caption>Denago Rover XL6 6-passenger electric golf cart. Family-friendly and spacious. Available at Alaska Golf Carts.</image:caption>
     </image:image>
   </url>
 
   <!-- Evolution Golf Cart Images -->
   <url>
-    <loc>https://discountedgolfcart.com/inventory?make=Evolution</loc>
+    <loc>https://alaskagolfcarts.com/inventory?make=Evolution</loc>
     <image:image>
       <image:loc>https://s3.amazonaws.com/prod.docs.s3/carts/evolution-d5-maverick-6.jpg</image:loc>
       <image:title>Evolution D5 Maverick 6 Golf Cart for Sale</image:title>
-      <image:caption>Evolution D5 Maverick 6 — 6-passenger premium electric vehicle with sport styling. Available at Discounted Golf Carts.</image:caption>
+      <image:caption>Evolution D5 Maverick 6 — 6-passenger premium electric vehicle with sport styling. Available at Alaska Golf Carts.</image:caption>
     </image:image>
   </url>
 

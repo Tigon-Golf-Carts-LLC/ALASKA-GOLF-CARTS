@@ -95,7 +95,7 @@ export function CartCard({ cart, slug }: CartCardProps) {
         <div className="mt-auto">
           <div className="flex items-center gap-1 mb-0.5">
             <Tag className="h-3 w-3 text-primary" />
-            <span className="text-[10px] font-bold uppercase tracking-widest text-primary">{isUsed ? "Wholesale Price" : "Wholesale MSRP"}</span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-primary">{isUsed ? "Great Price" : "MSRP"}</span>
           </div>
           <p className="text-lg font-extrabold text-primary leading-none mb-2" data-testid={`text-price-${cart._id}`}>
             {price}

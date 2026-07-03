@@ -3,15 +3,15 @@
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "@id": "https://discountedgolfcart.com#organization",
-      "name": "Discounted Golf Carts",
+      "@id": "https://alaskagolfcarts.com#organization",
+      "name": "Alaska Golf Carts",
       "alternateName": [
-        "Discounted Golf Carts"
+        "Alaska Golf Carts"
       ],
-      "url": "https://discountedgolfcart.com",
+      "url": "https://alaskagolfcarts.com",
       "telephone": "1-888-840-4490",
-      "email": "info@discountedgolfcart.com",
-      "description": "Discounted Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida counties, selling new and used golf carts from 13 authorized brands. Nationwide delivery available. Inventory updated daily. 0% APR financing available.",
+      "email": "info@alaskagolfcarts.com",
+      "description": "Alaska Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida counties, selling new and used golf carts from 13 authorized brands. Nationwide delivery available. Inventory updated daily. 0% APR financing available.",
       "priceRange": "$$",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Cash, Credit Card, Financing",
@@ -371,64 +371,64 @@
         "name": "Florida, United States"
       },
       "sameAs": [
-        "https://www.facebook.com/DiscountedGolfCarts",
-        "https://www.instagram.com/DiscountedGolfCarts",
-        "https://www.youtube.com/@DiscountedGolfCarts"
+        "https://www.facebook.com/AlaskaGolfCarts",
+        "https://www.instagram.com/AlaskaGolfCarts",
+        "https://www.youtube.com/@AlaskaGolfCarts"
       ]
     },
     {
       "@type": "WebSite",
-      "@id": "https://discountedgolfcart.com/#website",
-      "url": "https://discountedgolfcart.com",
-      "name": "Discounted Golf Carts",
-      "description": "Golf carts for sale at wholesale prices, serving all of Florida statewide. Inventory updated daily from 13 top brands. Nationwide delivery available.",
+      "@id": "https://alaskagolfcarts.com/#website",
+      "url": "https://alaskagolfcarts.com",
+      "name": "Alaska Golf Carts",
+      "description": "Golf carts for sale at great prices, serving all of Florida statewide. Inventory updated daily from 13 top brands. Nationwide delivery available.",
       "publisher": {
-        "@id": "https://discountedgolfcart.com#organization"
+        "@id": "https://alaskagolfcarts.com#organization"
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://discountedgolfcart.com/inventory?search={search_term_string}",
+        "target": "https://alaskagolfcarts.com/inventory?search={search_term_string}",
         "query-input": "required name=search_term_string"
       },
       "inLanguage": "en-US"
     },
     {
       "@type": "WebPage",
-      "@id": "https://discountedgolfcart.com/#webpage",
-      "url": "https://discountedgolfcart.com",
-      "name": "Golf Carts for Sale — Inventory Updated Daily | Discounted Golf Carts",
+      "@id": "https://alaskagolfcarts.com/#webpage",
+      "url": "https://alaskagolfcarts.com",
+      "name": "Golf Carts for Sale — Inventory Updated Daily | Alaska Golf Carts",
       "isPartOf": {
-        "@id": "https://discountedgolfcart.com/#website"
+        "@id": "https://alaskagolfcarts.com/#website"
       },
       "about": {
-        "@id": "https://discountedgolfcart.com#organization"
+        "@id": "https://alaskagolfcarts.com#organization"
       },
-      "description": "Golf carts for sale at wholesale prices across Florida statewide. Inventory updated daily. New and used golf carts from Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Nationwide delivery. Call 1-888-840-4490.",
+      "description": "Golf carts for sale at great prices across Florida statewide. Inventory updated daily. New and used golf carts from Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Nationwide delivery. Call 1-888-840-4490.",
       "inLanguage": "en-US"
     },
     {
       "@type": "FAQPage",
-      "@id": "https://discountedgolfcart.com/#faq",
+      "@id": "https://alaskagolfcarts.com/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does a golf cart cost at Discounted Golf Carts?",
+          "name": "How much does a golf cart cost at Alaska Golf Carts?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "New golf carts at Discounted Golf Carts start at approximately $9,995. Used and pre-owned golf carts typically range from $4,500 to $12,000 depending on brand, age, condition, and features. Call 1-888-840-4490 for current pricing."
+            "text": "New golf carts at Alaska Golf Carts start at approximately $9,995. Used and pre-owned golf carts typically range from $4,500 to $12,000 depending on brand, age, condition, and features. Call 1-888-840-4490 for current pricing."
           }
         },
         {
           "@type": "Question",
-          "name": "What brands of golf carts does Discounted Golf Carts sell?",
+          "name": "What brands of golf carts does Alaska Golf Carts sell?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Discounted Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO (E-Z-GO), Icon, Star EV, Tara, and Yamaha."
+            "text": "Alaska Golf Carts is an authorized dealer for 13 brands: American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO (E-Z-GO), Icon, Star EV, Tara, and Yamaha."
           }
         },
         {
           "@type": "Question",
-          "name": "Does Discounted Golf Carts offer financing?",
+          "name": "Does Alaska Golf Carts offer financing?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. Financing is available through six partners: Sheffield Financial (0% APR), BLI Heartland (rent-to-own), DLL Financial Solutions, Roadrunner/Octane, Univest Capital, and Dealer Direct. Terms up to 48 months."
@@ -444,15 +444,15 @@
         },
         {
           "@type": "Question",
-          "name": "What areas does Discounted Golf Carts serve?",
+          "name": "What areas does Alaska Golf Carts serve?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Discounted Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida counties, from the Panhandle to the Keys. Nationwide delivery is also available. Call 1-888-840-4490."
+            "text": "Alaska Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida counties, from the Panhandle to the Keys. Nationwide delivery is also available. Call 1-888-840-4490."
           }
         },
         {
           "@type": "Question",
-          "name": "Does Discounted Golf Carts deliver nationwide?",
+          "name": "Does Alaska Golf Carts deliver nationwide?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. We serve all of Florida statewide and offer nationwide delivery anywhere in the United States. Call 1-888-840-4490 for a delivery quote."
@@ -460,7 +460,7 @@
         },
         {
           "@type": "Question",
-          "name": "Does Discounted Golf Carts accept trade-ins?",
+          "name": "Does Alaska Golf Carts accept trade-ins?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. Trade-ins are accepted statewide across Florida. Call 1-888-840-4490 to discuss your trade-in value."
@@ -476,7 +476,7 @@
         },
         {
           "@type": "Question",
-          "name": "Does Discounted Golf Carts service and repair golf carts?",
+          "name": "Does Alaska Golf Carts service and repair golf carts?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. Services include routine maintenance, battery diagnostics and replacement, motor and controller repair, brake service, electrical diagnostics, body repair, and warranty service for all brands carried."

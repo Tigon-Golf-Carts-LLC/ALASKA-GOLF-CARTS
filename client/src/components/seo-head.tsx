@@ -16,7 +16,7 @@ export function SeoHead({
   canonical,
   ogTitle,
   ogDescription,
-  ogImage = "https://discountedgolfcart.com/og-image.png",
+  ogImage = "https://alaskagolfcarts.com/og-image.png",
   schema,
 }: SeoHeadProps) {
   useEffect(() => {

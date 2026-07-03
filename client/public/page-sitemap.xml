@@ -9,13 +9,13 @@
   <!-- HOMEPAGE — Priority 1.0 -->
   <!-- ============================================================ -->
   <url>
-    <loc>https://discountedgolfcart.com/</loc>
+    <loc>https://alaskagolfcarts.com/</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://discountedgolfcart.com/og-image.png</image:loc>
-      <image:title>Discounted Golf Carts — Golf Carts for Sale at Wholesale Prices</image:title>
+      <image:loc>https://alaskagolfcarts.com/og-image.png</image:loc>
+      <image:title>Alaska Golf Carts — Golf Carts for Sale at Great Prices</image:title>
       <image:caption>New and used golf carts for sale. Florida statewide service. Inventory updated daily.</image:caption>
       <image:geo_location>Florida, United States</image:geo_location>
     </image:image>
@@ -25,21 +25,21 @@
   <!-- INVENTORY — Priority 0.9 -->
   <!-- ============================================================ -->
   <url>
-    <loc>https://discountedgolfcart.com/inventory</loc>
+    <loc>https://alaskagolfcarts.com/inventory</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/inventory?condition=new</loc>
+    <loc>https://alaskagolfcarts.com/inventory?condition=new</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/inventory?condition=used</loc>
+    <loc>https://alaskagolfcarts.com/inventory?condition=used</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -49,14 +49,14 @@
   <!-- SERVICE / LOCATION PAGES — Priority 0.8 -->
   <!-- ============================================================ -->
   <url>
-    <loc>https://discountedgolfcart.com/service-area</loc>
+    <loc>https://alaskagolfcarts.com/service-area</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://discountedgolfcart.com/financing</loc>
+    <loc>https://alaskagolfcarts.com/financing</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -66,7 +66,7 @@
   <!-- INFORMATIONAL PAGES — Priority 0.7 -->
   <!-- ============================================================ -->
   <url>
-    <loc>https://discountedgolfcart.com/faq</loc>
+    <loc>https://alaskagolfcarts.com/faq</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -76,7 +76,7 @@
   <!-- ABOUT — Priority 0.5 -->
   <!-- ============================================================ -->
   <url>
-    <loc>https://discountedgolfcart.com/about</loc>
+    <loc>https://alaskagolfcarts.com/about</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

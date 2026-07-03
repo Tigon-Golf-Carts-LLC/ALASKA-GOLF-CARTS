@@ -1,6 +1,6 @@
-# Discounted Golf Carts - Compliance & Standards Documentation
+# Alaska Golf Carts - Compliance & Standards Documentation
 # Last Updated: 2026-02-11
-# Website: https://discountedgolfcart.com
+# Website: https://alaskagolfcarts.com
 # Contact: 1-888-840-4490
 
 ================================================================================
@@ -9,7 +9,7 @@ COMPLIANCE & REGULATORY STANDARDS
 
 PURPOSE:
 Document all compliance requirements, industry standards, and regulatory
-frameworks applicable to the Discounted Golf Carts website and business operations
+frameworks applicable to the Alaska Golf Carts website and business operations
 to ensure full legal and technical compliance across Florida statewide operations.
 
 ================================================================================
@@ -55,7 +55,7 @@ CCPA COMPLIANCE (California Consumer Privacy Act)
 ================================================================================
 
 APPLICABILITY:
-- Discounted Golf Carts respects CCPA rights for all California residents
+- Alaska Golf Carts respects CCPA rights for all California residents
 - No sale of personal information to third parties
 - Consumers may request disclosure of collected data
 - Consumers may request deletion of personal data
@@ -63,7 +63,7 @@ APPLICABILITY:
 
 CONTACT FOR CCPA REQUESTS:
 - Phone: 1-888-840-4490
-- Website: https://discountedgolfcart.com
+- Website: https://alaskagolfcarts.com
 
 ================================================================================
 WCAG ACCESSIBILITY GUIDELINES (Web Content Accessibility Guidelines 2.1)
@@ -184,7 +184,7 @@ DEALER STANDARDS:
 FLORIDA STATE & REGIONAL REGULATIONS
 ================================================================================
 
-Discounted Golf Carts operates Florida statewide, serving all 67 counties with statewide
+Alaska Golf Carts operates Florida statewide, serving all 67 counties with statewide
 delivery. The following reflect Florida golf cart and LSV regulations applicable
 across the company's service area.
 
@@ -280,7 +280,7 @@ ADVERTISING COMPLIANCE
 FTC GUIDELINES:
 - All advertising claims truthful and substantiated
 - Pricing information accurate and current
-- "Discounted" claims based on actual price reductions
+- Pricing claims based on actual manufacturer MSRP
 - Financing terms clearly disclosed (0% APR, 48 months, subject to approval)
 - No misleading inventory claims
 - Inventory updated daily for accuracy
@@ -343,5 +343,5 @@ ANNUALLY:
 END OF COMPLIANCE & STANDARDS DOCUMENTATION
 ================================================================================
 
-Maintained by Discounted Golf Carts for regulatory and standards compliance.
-Contact: 1-888-840-4490 | https://discountedgolfcart.com
+Maintained by Alaska Golf Carts for regulatory and standards compliance.
+Contact: 1-888-840-4490 | https://alaskagolfcarts.com

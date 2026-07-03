@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Information We Collect</h2>
-          <p className="text-muted-foreground leading-relaxed">When you visit discountedgolfcart.com or contact us by phone, we may collect personal information including your name, phone number, email address, and general location. We also collect non-personal browsing data such as IP address, browser type, pages visited, and referral source through standard web analytics tools including Google Analytics and Google Tag Manager.</p>
+          <p className="text-muted-foreground leading-relaxed">When you visit alaskagolfcarts.com or contact us by phone, we may collect personal information including your name, phone number, email address, and general location. We also collect non-personal browsing data such as IP address, browser type, pages visited, and referral source through standard web analytics tools including Google Analytics and Google Tag Manager.</p>
         </section>
 
         <section>
@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">Contact</h2>
-          <p className="text-muted-foreground leading-relaxed">Privacy questions or requests may be directed to <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or submitted in writing at any Discounted Golf Carts retail location.</p>
+          <p className="text-muted-foreground leading-relaxed">Privacy questions or requests may be directed to <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or submitted in writing at any Alaska Golf Carts retail location.</p>
         </section>
       </div>
     </div>

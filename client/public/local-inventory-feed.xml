@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Discounted Golf Carts — Local Inventory Feed (Google Local Inventory Ads) -->
+<!-- Alaska Golf Carts — Local Inventory Feed (Google Local Inventory Ads) -->
 <!-- Florida Statewide Service (all 67 counties) | Phone: 1-888-840-4490 | Last Updated: 2026-06-09 -->
 <feed xmlns="http://www.w3.org/2005/Atom"
       xmlns:g="http://base.google.com/ns/1.0">
 
-  <title>Discounted Golf Carts — Local Store Inventory</title>
-  <link rel="self" href="https://discountedgolfcart.com/local-inventory-feed.xml"/>
+  <title>Alaska Golf Carts — Local Store Inventory</title>
+  <link rel="self" href="https://alaskagolfcarts.com/local-inventory-feed.xml"/>
   <updated>2026-06-09T22:55:00Z</updated>
 
   <!-- Florida Statewide Service Area -->
@@ -13,8 +13,8 @@
       <g:store_code>FL-STATEWIDE</g:store_code>
       <g:id>florida-statewide-inventory</g:id>
       <g:title>Golf Carts for Sale — Florida Statewide (All 67 Counties)</g:title>
-      <g:description>Golf carts for sale at Discounted Golf Carts, serving all 67 Florida counties statewide with nationwide delivery. New and used golf carts from 13 authorized brands. Call 1-888-840-4490.</g:description>
-      <g:link>https://discountedgolfcart.com/inventory</g:link>
+      <g:description>Golf carts for sale at Alaska Golf Carts, serving all 67 Florida counties statewide with nationwide delivery. New and used golf carts from 13 authorized brands. Call 1-888-840-4490.</g:description>
+      <g:link>https://alaskagolfcarts.com/inventory</g:link>
       <g:availability>in stock</g:availability>
       <g:price>Call for Pricing USD</g:price>
     </entry>

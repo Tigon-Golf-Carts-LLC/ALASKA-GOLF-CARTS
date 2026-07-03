@@ -2,7 +2,7 @@ import type { CartSummaryForSeo } from "./routes";
 
 const PHONE_NUMBER = "1-888-840-4490";
 const PHONE_TEL = "tel:1-888-840-4490";
-const BASE_URL = "https://discountedgolfcart.com";
+const BASE_URL = "https://alaskagolfcarts.com";
 
 function esc(s: string): string {
   return s
@@ -49,7 +49,7 @@ function callToActionHtml(): string {
 function renderHome(data: { newCarts: CartSummaryForSeo[]; usedCarts: CartSummaryForSeo[]; totalCarts: number }): string {
   return `<div>
     <h1>Golf Carts for Sale — New &amp; Used Inventory Updated Daily</h1>
-    <p>Discounted Golf Carts sells new and used golf carts at wholesale MSRP pricing across all 67 counties in Florida, with statewide delivery. Our inventory of ${data.totalCarts || "hundreds of"} golf carts is refreshed every night, so prices and availability you see are current. Choose from 13 authorized brands including Club Car, EZGO, Yamaha, and Denago, plus street-legal LSVs and lifted carts. 0% APR financing is available through six lending partners.</p>
+    <p>Alaska Golf Carts sells new and used golf carts at MSRP pricing across all 67 counties in Florida, with statewide delivery. Our inventory of ${data.totalCarts || "hundreds of"} golf carts is refreshed every night, so prices and availability you see are current. Choose from 13 authorized brands including Club Car, EZGO, Yamaha, and Denago, plus street-legal LSVs and lifted carts. 0% APR financing is available through six lending partners.</p>
     ${callToActionHtml()}
 
     <section>
@@ -61,7 +61,7 @@ function renderHome(data: { newCarts: CartSummaryForSeo[]; usedCarts: CartSummar
 
     <section>
       <h2>Used Golf Carts</h2>
-      <p>Inspected and serviced pre-owned golf carts at discounted prices.</p>
+      <p>Inspected and serviced pre-owned golf carts at great prices.</p>
       ${data.usedCarts.length > 0 ? data.usedCarts.map(cartCardHtml).join("\n") : "<p>Used golf cart inventory is refreshed nightly — call for the latest availability.</p>"}
       <a href="/inventory?isUsed=true">View All Used Golf Carts</a>
     </section>
@@ -73,7 +73,7 @@ function renderHome(data: { newCarts: CartSummaryForSeo[]; usedCarts: CartSummar
 
     <section>
       <h2>Serving All of Florida</h2>
-      <p>Discounted Golf Carts delivers to all 67 Florida counties statewide, from Miami-Dade and Broward to Duval, Hillsborough, and Orange. See our <a href="/service-area">full service area</a>.</p>
+      <p>Alaska Golf Carts delivers to all 67 Florida counties statewide, from Miami-Dade and Broward to Duval, Hillsborough, and Orange. See our <a href="/service-area">full service area</a>.</p>
     </section>
 
     <section>
@@ -131,7 +131,7 @@ function renderFinancing(): string {
   return `<div>
     ${breadcrumbHtml([{ name: "Home", href: "/" }, { name: "Financing", href: "/financing" }])}
     <h1>Golf Cart Financing — 0% APR, Up to 48 Months</h1>
-    <p>Discounted Golf Carts offers financing on new golf carts, used golf carts, street-legal LSVs, and neighborhood electric vehicles (NEVs) through six lending partners. Programs include 0% APR for qualified buyers, rent-to-own for a path to ownership, and business financing for commercial fleets. Terms run up to 48 months. Most applications receive a decision in minutes.</p>
+    <p>Alaska Golf Carts offers financing on new golf carts, used golf carts, street-legal LSVs, and neighborhood electric vehicles (NEVs) through six lending partners. Programs include 0% APR for qualified buyers, rent-to-own for a path to ownership, and business financing for commercial fleets. Terms run up to 48 months. Most applications receive a decision in minutes.</p>
     <p>Call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> to discuss which financing program fits your budget. Available across all of Florida.</p>
 
     <section>
@@ -147,7 +147,7 @@ function renderFinancing(): string {
     </section>
 
     <section>
-      <h2>How Does Golf Cart Financing Work at Discounted Golf Carts?</h2>
+      <h2>How Does Golf Cart Financing Work at Alaska Golf Carts?</h2>
       <p>Choose a cart from the <a href="/inventory">inventory page</a>, then call ${PHONE_NUMBER} or apply online through one of the six partner portals. Once approved, financing terms are set directly with the lender. Monthly payment amounts depend on the purchase price, term length (up to 48 months), and the program selected. All financing is subject to credit approval.</p>
       <h2>What Credit Score Do I Need to Finance a Golf Cart?</h2>
       <p>Requirements vary by lender. Sheffield Financial and DLL Financial Solutions typically work with good-to-excellent credit for the best rates. BLI Heartland's rent-to-own program is designed for a broader range of credit profiles.</p>
@@ -160,7 +160,7 @@ function renderFinancing(): string {
 
 function renderFaq(): string {
   const faqs: { q: string; a: string }[] = [
-    { q: "How much do golf carts cost at Discounted Golf Carts?", a: "New golf carts start around $9,995 and pre-owned carts start around $4,500. All units are priced at wholesale MSRP with no dealer markup, and pricing updates nightly with our inventory." },
+    { q: "How much do golf carts cost at Alaska Golf Carts?", a: "New golf carts start around $9,995 and pre-owned carts start around $4,500. All units are priced at MSRP with no dealer markup, and pricing updates nightly with our inventory." },
     { q: "Do you offer financing?", a: "Yes. We work with six lending partners offering 0% APR for qualified buyers, rent-to-own, and business financing, with terms up to 48 months." },
     { q: "What brands do you carry?", a: "We are an authorized dealer for 13 brands including Club Car, EZGO, Yamaha, Denago, Evolution, Bintelli, Star EV, and more." },
     { q: "Do you deliver?", a: "Yes. We deliver statewide across all 67 Florida counties, and we ship nationwide to the continental United States." },
@@ -181,8 +181,8 @@ function renderFaq(): string {
 function renderAbout(): string {
   return `<div>
     ${breadcrumbHtml([{ name: "Home", href: "/" }, { name: "About", href: "/about" }])}
-    <h1>About Discounted Golf Carts</h1>
-    <p>Discounted Golf Carts is a golf cart dealership serving the entire state of Florida — all 67 counties, from the Panhandle to the Keys. We sell new and used golf carts, electric vehicles, street-legal low speed vehicles (LSVs), and lifted carts from 13 authorized manufacturers at wholesale MSRP pricing, with statewide delivery. Inventory is updated every day at 10:55 PM ET.</p>
+    <h1>About Alaska Golf Carts</h1>
+    <p>Alaska Golf Carts is a golf cart dealership serving the entire state of Florida — all 67 counties, from the Panhandle to the Keys. We sell new and used golf carts, electric vehicles, street-legal low speed vehicles (LSVs), and lifted carts from 13 authorized manufacturers at MSRP pricing, with statewide delivery. Inventory is updated every day at 10:55 PM ET.</p>
     <ul>
       <li>14 Retail Locations</li>
       <li>9 States Served</li>
@@ -192,11 +192,11 @@ function renderAbout(): string {
 
     <section>
       <h2>What We Sell and How We Price It</h2>
-      <p>Discounted Golf Carts sells at wholesale MSRP — the price you'd expect to pay at the manufacturer's suggested retail, without dealer markup. Our inventory includes new carts from all 13 authorized brands, pre-owned carts that have been inspected and serviced, street-legal LSVs with full DOT equipment, and lifted models with suspension upgrades already installed. Prices start around $9,995 for new units and $4,500 for pre-owned carts.</p>
+      <p>Alaska Golf Carts sells at MSRP — the price you'd expect to pay at the manufacturer's suggested retail, without dealer markup. Our inventory includes new carts from all 13 authorized brands, pre-owned carts that have been inspected and serviced, street-legal LSVs with full DOT equipment, and lifted models with suspension upgrades already installed. Prices start around $9,995 for new units and $4,500 for pre-owned carts.</p>
       <h2>Services at Every Location</h2>
       <ul>
-        <li>New Golf Cart Sales — 13 authorized brands at wholesale MSRP pricing.</li>
-        <li>Used Golf Cart Sales — Inspected, serviced pre-owned carts at discounted prices.</li>
+        <li>New Golf Cart Sales — 13 authorized brands at MSRP pricing.</li>
+        <li>Used Golf Cart Sales — Inspected, serviced pre-owned carts at great prices.</li>
         <li>Street-Legal LSVs — FMVSS 500-compliant low speed vehicles for road use.</li>
         <li>Electric Carts — 36V, 48V, and 72V battery-powered golf carts.</li>
         <li>0% APR Financing — Six lending partners, terms up to 48 months.</li>
@@ -213,7 +213,7 @@ function renderAbout(): string {
 
     <section>
       <h2>How Financing Works</h2>
-      <p>Discounted Golf Carts works with six lending partners to offer payment options for most credit profiles. Programs include 0% APR for qualified buyers, rent-to-own for those who prefer a lease path to ownership, and business financing for commercial customers. Terms run up to 48 months. Visit the <a href="/financing">financing page</a> to discuss options.</p>
+      <p>Alaska Golf Carts works with six lending partners to offer payment options for most credit profiles. Programs include 0% APR for qualified buyers, rent-to-own for those who prefer a lease path to ownership, and business financing for commercial customers. Terms run up to 48 months. Visit the <a href="/financing">financing page</a> to discuss options.</p>
     </section>
 
     <section>
@@ -235,7 +235,7 @@ function renderServiceArea(): string {
   return `<div>
     ${breadcrumbHtml([{ name: "Home", href: "/" }, { name: "Service Area", href: "/service-area" }])}
     <h1>Florida Golf Cart Service Area — All 67 Counties</h1>
-    <p>Discounted Golf Carts sells and delivers new and used golf carts across the entire state of Florida — every one of the state's 67 counties. Every order is backed by 13 authorized brands and on-site financing. Wherever you are in Florida, statewide delivery is available — call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> for a delivery quote to your address.</p>
+    <p>Alaska Golf Carts sells and delivers new and used golf carts across the entire state of Florida — every one of the state's 67 counties. Every order is backed by 13 authorized brands and on-site financing. Wherever you are in Florida, statewide delivery is available — call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> for a delivery quote to your address.</p>
     <section>
       ${regions.map((r) => `<article><h2>${esc(r.name)}</h2><p>${r.count} counties served</p></article>`).join("\n")}
     </section>
@@ -263,11 +263,11 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Terms &amp; Conditions",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Agreement to Terms", p: "By accessing or using discountedgolfcart.com, you agree to be bound by these Terms &amp; Conditions. If you do not agree with any part of these terms, please do not use this website." },
+      { h2: "Agreement to Terms", p: "By accessing or using alaskagolfcarts.com, you agree to be bound by these Terms &amp; Conditions. If you do not agree with any part of these terms, please do not use this website." },
       { h2: "Use of Website", p: "This website is provided for informational purposes to help customers browse golf cart inventory, pricing, and dealership information. You may not use this site for any unlawful purpose or in any way that could damage, disable, or impair the site." },
       { h2: "Pricing &amp; Inventory Accuracy", p: "Inventory, pricing, and availability are updated nightly from our dealer management system. While we strive for accuracy, errors may occur. All pricing is subject to change and final confirmation with our sales team prior to purchase." },
       { h2: "No Warranty on Website Content", p: "This website and its content are provided \"as is\" without warranties of any kind, express or implied. We do not guarantee the website will be uninterrupted, error-free, or free of viruses." },
-      { h2: "Limitation of Liability", p: "Discounted Golf Carts shall not be liable for any indirect, incidental, or consequential damages arising from your use of this website." },
+      { h2: "Limitation of Liability", p: "Alaska Golf Carts shall not be liable for any indirect, incidental, or consequential damages arising from your use of this website." },
       { h2: "Governing Law", p: `These Terms &amp; Conditions are governed by the laws of the State of Florida. Contact us at <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> with any questions.` },
     ],
   },
@@ -275,7 +275,7 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Return Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "All Sales Are Final", p: "All golf cart sales at Discounted Golf Carts are considered final upon execution of a signed purchase agreement and receipt of payment or financing approval. We do not accept returns for buyer's remorse or change of mind." },
+      { h2: "All Sales Are Final", p: "All golf cart sales at Alaska Golf Carts are considered final upon execution of a signed purchase agreement and receipt of payment or financing approval. We do not accept returns for buyer's remorse or change of mind." },
       { h2: "Defective or Damaged Units", p: `If your golf cart arrives with a manufacturer defect or shipping damage not disclosed at the time of sale, notify us within 48 hours of delivery by calling <a href="${PHONE_TEL}">${PHONE_NUMBER}</a>. We will work with you and the manufacturer or shipping carrier to resolve the issue.` },
       { h2: "Accessories &amp; Parts", p: "Accessories and parts that are unused, in original packaging, and purchased within the last 30 days may be returned for store credit or exchange. Installed accessories and electrical components are non-returnable." },
       { h2: "Deposits", p: "Deposits paid to hold a specific unit are non-refundable once the unit has been reserved for the buyer. If we are unable to deliver the agreed unit, your deposit will be refunded in full." },
@@ -287,7 +287,7 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Privacy Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Information We Collect", p: "When you visit discountedgolfcart.com or contact us by phone, we may collect your name, phone number, email address, and general location, plus non-personal browsing data through standard web analytics tools." },
+      { h2: "Information We Collect", p: "When you visit alaskagolfcarts.com or contact us by phone, we may collect your name, phone number, email address, and general location, plus non-personal browsing data through standard web analytics tools." },
       { h2: "How We Use Your Information", p: "Information you provide is used solely to respond to inquiries, process purchases, arrange financing, coordinate delivery, and communicate about your order. We do not sell or rent your personal information." },
       { h2: "Cookies &amp; Tracking", p: "This website uses cookies and similar tracking technologies to improve user experience and measure advertising performance." },
       { h2: "Third-Party Services", p: "We use Google Analytics, Google Tag Manager, and Google Ads to measure website performance. We also share limited data with financing partners to process loan applications at your request." },
@@ -300,8 +300,8 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Delivery Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Nationwide Delivery", p: "Discounted Golf Carts offers delivery to any address in the continental United States, coordinated through licensed transport carriers. We do not ship to Alaska, Hawaii, or US territories at this time." },
-      { h2: "Local Pickup", p: "Discounted Golf Carts delivers statewide to all 67 Florida counties. Local pickup can also be arranged by appointment." },
+      { h2: "Nationwide Delivery", p: "Alaska Golf Carts offers delivery to any address in the continental United States, coordinated through licensed transport carriers. We do not ship to Alaska, Hawaii, or US territories at this time." },
+      { h2: "Local Pickup", p: "Alaska Golf Carts delivers statewide to all 67 Florida counties. Local pickup can also be arranged by appointment." },
       { h2: "Delivery Timeframes", p: "Local and regional deliveries typically take 3–10 business days. Long-distance deliveries may take 7–21 business days. Timeframes are estimates and are not guaranteed." },
       { h2: "Delivery Preparation", p: "All golf carts are inspected and prepped prior to delivery, including a pre-delivery inspection (PDI), battery check, and tire inflation." },
       { h2: "Receiving Your Delivery", p: `An adult (18+) must be present to receive and sign for delivery. If damage is noted, document it on the delivery paperwork and contact us immediately at <a href="${PHONE_TEL}">${PHONE_NUMBER}</a>.` },
@@ -313,7 +313,7 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Rental Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Rental Availability", p: `Golf cart rentals are available at select Discounted Golf Carts locations. Call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> to inquire about current rental inventory and rates.` },
+      { h2: "Rental Availability", p: `Golf cart rentals are available at select Alaska Golf Carts locations. Call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> to inquire about current rental inventory and rates.` },
       { h2: "Eligibility", p: "Renters must be at least 18 years of age and possess a valid government-issued photo ID and a valid credit or debit card for the security deposit." },
       { h2: "Rental Agreement", p: "All rentals require a signed rental agreement outlining the rental period, usage terms, security deposit amount, and renter responsibilities." },
       { h2: "Security Deposit", p: "A refundable security deposit is required at the time of rental, returned within 5–7 business days of the unit's return, less any charges for damage or late fees." },
@@ -326,7 +326,7 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Storage Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Storage Services", p: `Discounted Golf Carts offers seasonal and short-term golf cart storage at select locations. Contact us at <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> to inquire about storage at your nearest location.` },
+      { h2: "Storage Services", p: `Alaska Golf Carts offers seasonal and short-term golf cart storage at select locations. Contact us at <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> to inquire about storage at your nearest location.` },
       { h2: "Storage Agreement", p: "All storage arrangements require a signed storage agreement detailing the storage period, monthly rate, and terms of access." },
       { h2: "Cart Condition at Drop-Off", p: "Customers are responsible for delivering their cart in reasonably clean condition. Carts with significant damage or hazardous materials may be refused for storage." },
       { h2: "While In Storage", p: "During storage, we maintain battery trickle charging for electric units where applicable. Physical access to stored units is by appointment only." },
@@ -338,11 +338,11 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Publishing Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Editorial Standards", p: "All content published on discountedgolfcart.com is reviewed for accuracy before publication, providing clear, factual, and helpful information to golf cart buyers." },
+      { h2: "Editorial Standards", p: "All content published on alaskagolfcarts.com is reviewed for accuracy before publication, providing clear, factual, and helpful information to golf cart buyers." },
       { h2: "Inventory Listings", p: "Inventory data is sourced directly from our dealership management system (DMS) and refreshed nightly. Users should verify all details with our sales team before purchase." },
       { h2: "Advertising &amp; Promotions", p: "Promotional pricing and financing offers reflect actual available offers at the time of publication, subject to availability and lender approval." },
-      { h2: "User-Generated Content", p: "This website does not currently accept user-generated content submissions. All content is produced or reviewed by Discounted Golf Carts staff." },
-      { h2: "Copyright", p: "All text, images, logos, and other content on discountedgolfcart.com is the property of Discounted Golf Carts or is used with permission." },
+      { h2: "User-Generated Content", p: "This website does not currently accept user-generated content submissions. All content is produced or reviewed by Alaska Golf Carts staff." },
+      { h2: "Copyright", p: "All text, images, logos, and other content on alaskagolfcarts.com is the property of Alaska Golf Carts or is used with permission." },
       { h2: "Contact", p: `To report an inaccuracy, call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a>.` },
     ],
   },
@@ -350,7 +350,7 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Feedback Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "We Value Your Feedback", p: "Discounted Golf Carts is committed to continuous improvement through customer feedback from buyers, prospective customers, and community members." },
+      { h2: "We Value Your Feedback", p: "Alaska Golf Carts is committed to continuous improvement through customer feedback from buyers, prospective customers, and community members." },
       { h2: "How to Submit Feedback", p: `Feedback can be submitted by calling us at <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> or leaving a review on Google.` },
       { h2: "How We Handle Feedback", p: "All feedback is reviewed by our management team. We commit to acknowledging complaints within 2 business days and resolving them within 10 business days where possible." },
       { h2: "Online Reviews", p: "We encourage satisfied customers to leave honest reviews. We do not incentivize, solicit, or fabricate reviews." },
@@ -361,18 +361,18 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Corrections Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Commitment to Accuracy", p: "Discounted Golf Carts is committed to providing accurate, current, and complete information on discountedgolfcart.com." },
-      { h2: "Pricing Errors", p: "In the event of a pricing error on a listed unit, Discounted Golf Carts reserves the right to correct the price without prior notice." },
+      { h2: "Commitment to Accuracy", p: "Alaska Golf Carts is committed to providing accurate, current, and complete information on alaskagolfcarts.com." },
+      { h2: "Pricing Errors", p: "In the event of a pricing error on a listed unit, Alaska Golf Carts reserves the right to correct the price without prior notice." },
       { h2: "Inventory Errors", p: `Inventory is updated nightly from our DMS. If you identify a listing error, call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> and we will verify current availability.` },
       { h2: "Policy &amp; Content Errors", p: "Confirmed content errors will be corrected within 5 business days. Material corrections to policy language will be noted with an updated \"Last updated\" date." },
-      { h2: "How to Report an Error", p: `To report any error on discountedgolfcart.com, call us at <a href="${PHONE_TEL}">${PHONE_NUMBER}</a>.` },
+      { h2: "How to Report an Error", p: `To report any error on alaskagolfcarts.com, call us at <a href="${PHONE_TEL}">${PHONE_NUMBER}</a>.` },
     ],
   },
   "/diversity-policy": {
     h1: "Diversity Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Our Commitment", p: "Discounted Golf Carts is committed to building and maintaining a diverse, equitable, and inclusive workplace and customer environment across the state of Florida." },
+      { h2: "Our Commitment", p: "Alaska Golf Carts is committed to building and maintaining a diverse, equitable, and inclusive workplace and customer environment across the state of Florida." },
       { h2: "Equal Opportunity Employment", p: "We are an equal opportunity employer. All employment decisions are made without regard to race, color, religion, sex, national origin, disability, age, or any other protected characteristic." },
       { h2: "Inclusive Customer Service", p: "We are committed to providing equal, respectful, and professional service to all customers regardless of background, identity, or circumstance." },
       { h2: "Supplier Diversity", p: "We seek to work with a diverse range of vendors and suppliers, including minority-owned, women-owned, and veteran-owned businesses." },
@@ -383,7 +383,7 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Ethics Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Our Core Values", p: "Discounted Golf Carts operates on a foundation of integrity, transparency, and respect for our customers, team members, business partners, and communities." },
+      { h2: "Our Core Values", p: "Alaska Golf Carts operates on a foundation of integrity, transparency, and respect for our customers, team members, business partners, and communities." },
       { h2: "Honest Business Practices", p: "We are committed to honest, transparent business practices including accurate pricing, truthful advertising, and clear communication about financing terms." },
       { h2: "Conflicts of Interest", p: "Employees must avoid situations in which personal interests conflict with the interests of the company or its customers." },
       { h2: "Compliance with Laws", p: "All employees are required to conduct business in full compliance with applicable federal, state, and local laws." },
@@ -395,12 +395,12 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Staffing Report",
     dateLine: "Reporting period: 2024–2025",
     sections: [
-      { h2: "Overview", p: "This report provides a general overview of staffing at Discounted Golf Carts across our Florida operations, serving all 67 counties statewide." },
-      { h2: "Workforce Size", p: "Discounted Golf Carts currently employs team members across sales, service, parts, delivery, and administrative functions." },
+      { h2: "Overview", p: "This report provides a general overview of staffing at Alaska Golf Carts across our Florida operations, serving all 67 counties statewide." },
+      { h2: "Workforce Size", p: "Alaska Golf Carts currently employs team members across sales, service, parts, delivery, and administrative functions." },
       { h2: "Roles &amp; Departments", p: "Sales Associates, Service Technicians, Parts &amp; Accessories staff, Delivery Drivers, Store Management, and Corporate &amp; Administrative teams support all locations." },
       { h2: "Hiring Practices", p: "We recruit locally across Florida, valuing work ethic and trainability equally with prior experience. All positions are posted publicly." },
       { h2: "Training &amp; Development", p: "New team members receive structured onboarding, and service technicians have access to brand-specific training from Club Car, EZGO, Yamaha, Denago, Evolution, and other authorized brands." },
-      { h2: "Equal Opportunity", p: "Discounted Golf Carts is an equal opportunity employer. See our Diversity Policy for full details." },
+      { h2: "Equal Opportunity", p: "Alaska Golf Carts is an equal opportunity employer. See our Diversity Policy for full details." },
     ],
   },
 };

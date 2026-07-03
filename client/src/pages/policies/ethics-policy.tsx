@@ -18,7 +18,7 @@ export default function EthicsPolicy() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Our Core Values</h2>
-          <p className="text-muted-foreground leading-relaxed">Discounted Golf Carts operates on a foundation of integrity, transparency, and respect — for our customers, our team members, our business partners, and the communities we serve. These values are not aspirational; they are operational requirements that guide every decision at every level of our company.</p>
+          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts operates on a foundation of integrity, transparency, and respect — for our customers, our team members, our business partners, and the communities we serve. These values are not aspirational; they are operational requirements that guide every decision at every level of our company.</p>
         </section>
 
         <section>
