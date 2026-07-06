@@ -38,7 +38,7 @@ export default function CorrectionsPolicy() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">How to Report an Error</h2>
-          <p className="text-muted-foreground leading-relaxed">To report any error on alaskagolfcarts.com, call us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or speak with a member of our Florida team. We appreciate you helping us maintain a high standard of accuracy.</p>
+          <p className="text-muted-foreground leading-relaxed">To report any error on alaskagolfcarts.com, call us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> or speak with a member of our Alaska team. We appreciate you helping us maintain a high standard of accuracy.</p>
         </section>
       </div>
     </div>

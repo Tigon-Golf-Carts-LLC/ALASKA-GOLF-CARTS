@@ -843,10 +843,10 @@ Sitemap: https://alaskagolfcarts.com/sitemap-images.xml
 # Rich snippets and structured data available on all pages
 # Open Graph and Twitter Card meta tags on all pages
 # JSON-LD structured data for local business and product schemas
-# 808+ golf carts from 13 brands across Florida statewide service
+# 808+ golf carts from 13 brands across Alaska statewide service
 # Full inventory accessible at https://alaskagolfcarts.com
 # 0% APR financing information available
-# Service-area page covering all 67 Florida counties
+# Service-area page covering communities statewide across Alaska
 # Product comparison and specification pages
 # Financing calculator and application pages
 

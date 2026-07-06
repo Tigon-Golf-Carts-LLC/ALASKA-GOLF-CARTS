@@ -17,7 +17,7 @@ export default function StaffingReport() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">Overview</h2>
-          <p className="text-muted-foreground leading-relaxed">This report provides a general overview of staffing at Alaska Golf Carts across our Florida operations, serving all 67 counties statewide. Our workforce is the foundation of our customer experience and reflects our commitment to growth, diversity, and local employment.</p>
+          <p className="text-muted-foreground leading-relaxed">This report provides a general overview of staffing at Alaska Golf Carts across our Alaska operations, serving communities statewide. Our workforce is the foundation of our customer experience and reflects our commitment to growth, diversity, and local employment.</p>
         </section>
 
         <section>
@@ -46,7 +46,7 @@ export default function StaffingReport() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">Hiring Practices</h2>
-          <p className="text-muted-foreground leading-relaxed">We recruit locally across Florida, prioritizing community members with an interest in outdoor power equipment, automotive sales, or customer service. We value work ethic and trainability equally with prior experience. All positions are posted publicly through standard job listing platforms.</p>
+          <p className="text-muted-foreground leading-relaxed">We recruit locally across Alaska, prioritizing community members with an interest in outdoor power equipment, automotive sales, or customer service. We value work ethic and trainability equally with prior experience. All positions are posted publicly through standard job listing platforms.</p>
         </section>
 
         <section>

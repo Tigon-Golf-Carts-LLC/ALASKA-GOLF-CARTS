@@ -20,14 +20,14 @@ const TICKER_ITEMS = [
   "✦ NEW & USED INVENTORY",
   "⚡ ELECTRIC GOLF CARTS",
   "🏌️ STREET-LEGAL LSV IN STOCK",
-  "🚗 NATIONWIDE DELIVERY",
+  "🚗 STATEWIDE ALASKA DELIVERY",
   "🏷️ PRICES UPDATED DAILY",
   "📞 CALL " + PHONE_NUMBER,
   "🔥 GOLF CARTS FOR SALE",
   "✦ NEW & USED INVENTORY",
   "⚡ ELECTRIC GOLF CARTS",
   "🏌️ STREET-LEGAL LSV IN STOCK",
-  "🚗 NATIONWIDE DELIVERY",
+  "🚗 STATEWIDE ALASKA DELIVERY",
   "🏷️ PRICES UPDATED DAILY",
   "📞 CALL " + PHONE_NUMBER,
 ];
@@ -424,7 +424,7 @@ export default function Home() {
             Alaska<br /><span className="text-primary">Golf Carts</span>
           </h1>
           <p className="text-white/60 text-sm sm:text-base max-w-lg mx-auto">
-            New &amp; used electric golf carts, street-legal LSVs, and lifted carts — great pricing updated nightly, delivered across Florida.
+            New &amp; used electric golf carts, street-legal LSVs, and lifted carts — great pricing updated nightly, delivered across Alaska.
           </p>
         </div>
 
@@ -629,7 +629,7 @@ export default function Home() {
             {[
               { icon: CheckCircle2, label: "No-Haggle Pricing" },
               { icon: Zap, label: "Electric & Gas Golf Carts" },
-              { icon: Truck, label: "Nationwide Delivery Available" },
+              { icon: Truck, label: "Statewide Delivery Available" },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-1.5 text-white text-xs">
                 <item.icon className="h-3.5 w-3.5 text-primary" />
@@ -648,7 +648,7 @@ export default function Home() {
               { icon: RefreshCw, label: "Inventory Updated Daily", desc: "Prices & carts refreshed nightly at 10:55 PM ET" },
               { icon: Shield, label: "Warranty Included", desc: "Factory warranty on all new golf carts" },
               { icon: Award, label: "13 Authorized Brands", desc: "Club Car, EZGO, Yamaha, Denago & more" },
-              { icon: Truck, label: "Nationwide Delivery", desc: "We deliver golf carts to all 50 states" },
+              { icon: Truck, label: "Statewide Delivery", desc: "We deliver golf carts across all of Alaska" },
             ].map((item, i) => (
               <div key={item.label} className={`flex items-center gap-3 px-4 sm:px-6 py-5 ${i % 2 === 0 && i >= 2 ? "md:border-none" : ""}`}>
                 <div className="shrink-0 w-10 h-10 rounded-md bg-primary/10 flex items-center justify-center">
@@ -788,26 +788,26 @@ export default function Home() {
       <section className="py-12 bg-card border-t border-b" data-testid="section-locations">
         <div className="mx-auto max-w-7xl px-4">
           <div className="text-center mb-8">
-            <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Serving All of Florida</p>
-            <h2 className="text-2xl font-extrabold">Florida's Golf Cart Dealer — Statewide Delivery</h2>
-            <p className="text-sm text-muted-foreground mt-1">All 67 Florida counties — from the Panhandle to the Keys, delivered to your door</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Serving All of Alaska</p>
+            <h2 className="text-2xl font-extrabold">Alaska's Golf Cart Dealer — Statewide Delivery</h2>
+            <p className="text-sm text-muted-foreground mt-1">Communities across all of Alaska — from Southeast to the Arctic, delivered to your door</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {[
-              "Miami-Dade", "Broward", "Palm Beach", "Hillsborough",
-              "Orange", "Duval", "Pinellas", "Lee",
-              "Polk", "Brevard", "Volusia", "Sarasota"
-            ].map((county) => (
+              "Anchorage", "Fairbanks", "Juneau", "Wasilla",
+              "Sitka", "Ketchikan", "Kenai", "Kodiak",
+              "Palmer", "Homer", "Soldotna", "Bethel"
+            ].map((city) => (
               <div
-                key={county}
+                key={city}
                 className="flex items-center gap-3 p-4 rounded-md border border-card-border bg-background hover:border-primary/40 transition-colors"
-                data-testid={`card-county-${county.toLowerCase().replace(/[^a-z]/g, "-")}`}
+                data-testid={`card-city-${city.toLowerCase().replace(/[^a-z]/g, "-")}`}
               >
                 <div className="shrink-0 w-9 h-9 rounded-md bg-primary/10 flex items-center justify-center">
                   <MapPin className="h-4 w-4 text-primary" />
                 </div>
                 <div className="min-w-0">
-                  <h3 className="font-bold text-sm">{county} County</h3>
+                  <h3 className="font-bold text-sm">{city}</h3>
                   <p className="text-xs text-muted-foreground mt-0.5">Golf cart delivery available</p>
                 </div>
               </div>
@@ -831,7 +831,7 @@ export default function Home() {
               <Badge className="mb-3 bg-primary text-primary-foreground border-0 font-bold uppercase tracking-wide">
                 <Tag className="h-3 w-3 mr-1" /> Great Golf Cart Prices
               </Badge>
-              <h2 className="text-3xl sm:text-4xl font-extrabold mb-3">Golf Carts for Sale — Best Prices in Florida</h2>
+              <h2 className="text-3xl sm:text-4xl font-extrabold mb-3">Golf Carts for Sale — Best Prices in Alaska</h2>
               <p className="text-background/65 max-w-xl leading-relaxed">
                 Our team is standing by. Call now for today's best price on any cart in stock — new golf carts, used golf carts, electric carts, street-legal LSVs, and lifted models. 0% APR financing available on qualifying purchases.
               </p>

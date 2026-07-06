@@ -23,7 +23,7 @@ Full sitemap available at: /sitemap.xml
 Business: Alaska Golf Carts
 Phone: 1-888-840-4490
 Website: https://alaskagolfcarts.com
-Locations: Florida statewide service (all 67 counties)
+Locations: Alaska statewide service (communities statewide across alaska)
 Brands: 13 (American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA,
   CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, Yamaha)
 Inventory: 808+ golf carts
@@ -820,8 +820,8 @@ CONTENT AVAILABLE FOR ALL BOTS
 ================================================================================
 BUSINESS SUMMARY FOR BOT INDEXING
 ================================================================================
-# Alaska Golf Carts - Florida statewide golf cart dealership
-# Florida statewide service across FL
+# Alaska Golf Carts - Alaska statewide golf cart dealership
+# Alaska statewide service across AK
 # 808+ golf carts in inventory from 13 brands
 # 0% APR financing available up to 48 months
 # Brands: American Custom Golf Carts, Bintelli, Club Car, COLEMAN,

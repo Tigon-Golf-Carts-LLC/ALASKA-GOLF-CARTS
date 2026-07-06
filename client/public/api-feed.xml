@@ -46,9 +46,9 @@
   <inventory_stats>
     <total_units>800+</total_units>
     <brands>13</brands>
-    <locations>Florida statewide</locations>
+    <locations>Alaska statewide</locations>
     <states>1</states>
-    <counties_served>67</counties_served>
+    <communities_served>statewide across Alaska</communities_served>
     <condition_types>New, Used, Certified Pre-Owned</condition_types>
     <power_types>Electric, Gas</power_types>
     <passenger_configs>2, 4, 6, 8</passenger_configs>

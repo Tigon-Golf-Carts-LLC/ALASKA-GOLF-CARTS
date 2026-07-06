@@ -13,89 +13,69 @@
     <phone>1-888-840-4490</phone>
     <phone-tel>+18888404490</phone-tel>
     <email>info@alaskagolfcarts.com</email>
-    <founded>Florida statewide dealership</founded>
-    <coverage>Florida (statewide, all 67 counties) + nationwide delivery</coverage>
-    <description>Alaska Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida counties, with nationwide delivery available. Authorized dealer for 13 golf cart brands including Club Car, EZGO, Yamaha, Denago, Evolution, Star EV, Icon, Bintelli, and more. Specializing in new golf carts for sale, used golf carts for sale, street-legal LSVs, lifted golf carts, and electric golf carts. 0% APR financing available. Inventory updated daily.</description>
+    <founded>Alaska statewide dealership</founded>
+    <coverage>Alaska (statewide, communities across all boroughs and census areas) + statewide delivery</coverage>
+    <description>Alaska Golf Carts is an Alaska statewide golf cart dealership serving communities across all Alaska boroughs and census areas, with statewide delivery available throughout Alaska. Authorized dealer for 13 golf cart brands including Club Car, EZGO, Yamaha, Denago, Evolution, Star EV, Icon, Bintelli, and more. Specializing in new golf carts for sale, used golf carts for sale, street-legal LSVs, lifted golf carts, and electric golf carts. 0% APR financing available. Inventory updated daily.</description>
   </company>
 
-  <service-area count="67">
+  <service-area>
       <name>Alaska Golf Carts</name>
-      <coverage>Florida — statewide</coverage>
-      <state>Florida</state>
-      <state-abbr>FL</state-abbr>
+      <coverage>Alaska — statewide</coverage>
+      <state>Alaska</state>
+      <state-abbr>AK</state-abbr>
       <country>United States</country>
       <country-abbr>US</country-abbr>
-      <headquarters>Statewide Service, Florida</headquarters>
-      <nationwide-delivery>true</nationwide-delivery>
-      <counties>
-        <county>Alachua County</county>
-      <county>Baker County</county>
-      <county>Bay County</county>
-      <county>Bradford County</county>
-      <county>Brevard County</county>
-      <county>Broward County</county>
-      <county>Calhoun County</county>
-      <county>Charlotte County</county>
-      <county>Citrus County</county>
-      <county>Clay County</county>
-      <county>Collier County</county>
-      <county>Columbia County</county>
-      <county>DeSoto County</county>
-      <county>Dixie County</county>
-      <county>Duval County</county>
-      <county>Escambia County</county>
-      <county>Flagler County</county>
-      <county>Franklin County</county>
-      <county>Gadsden County</county>
-      <county>Gilchrist County</county>
-      <county>Glades County</county>
-      <county>Gulf County</county>
-      <county>Hamilton County</county>
-      <county>Hardee County</county>
-      <county>Hendry County</county>
-      <county>Hernando County</county>
-      <county>Highlands County</county>
-      <county>Hillsborough County</county>
-      <county>Holmes County</county>
-      <county>Indian River County</county>
-      <county>Jackson County</county>
-      <county>Jefferson County</county>
-      <county>Lafayette County</county>
-      <county>Lake County</county>
-      <county>Lee County</county>
-      <county>Leon County</county>
-      <county>Levy County</county>
-      <county>Liberty County</county>
-      <county>Madison County</county>
-      <county>Manatee County</county>
-      <county>Marion County</county>
-      <county>Martin County</county>
-      <county>Miami-Dade County</county>
-      <county>Monroe County</county>
-      <county>Nassau County</county>
-      <county>Okaloosa County</county>
-      <county>Okeechobee County</county>
-      <county>Orange County</county>
-      <county>Osceola County</county>
-      <county>Palm Beach County</county>
-      <county>Pasco County</county>
-      <county>Pinellas County</county>
-      <county>Polk County</county>
-      <county>Putnam County</county>
-      <county>St. Johns County</county>
-      <county>St. Lucie County</county>
-      <county>Santa Rosa County</county>
-      <county>Sarasota County</county>
-      <county>Seminole County</county>
-      <county>Sumter County</county>
-      <county>Suwannee County</county>
-      <county>Taylor County</county>
-      <county>Union County</county>
-      <county>Volusia County</county>
-      <county>Wakulla County</county>
-      <county>Walton County</county>
-      <county>Washington County</county>
-      </counties>
+      <headquarters>Statewide Service, Alaska</headquarters>
+      <statewide-delivery>true</statewide-delivery>
+      <boroughs-and-communities>
+        <borough>Municipality of Anchorage</borough>
+      <borough>Matanuska-Susitna Borough</borough>
+      <borough>Kenai Peninsula Borough</borough>
+      <borough>Fairbanks North Star Borough</borough>
+      <borough>City and Borough of Juneau</borough>
+      <borough>City and Borough of Sitka</borough>
+      <borough>Ketchikan Gateway Borough</borough>
+      <borough>Kodiak Island Borough</borough>
+      <borough>North Slope Borough</borough>
+      <borough>Northwest Arctic Borough</borough>
+      <borough>Petersburg Borough</borough>
+      <borough>Haines Borough</borough>
+      <borough>Skagway Borough</borough>
+      <borough>Denali Borough</borough>
+      <community>Bethel Census Area</community>
+      <community>Nome Census Area</community>
+      <community>Dillingham Census Area</community>
+      <community>Anchorage</community>
+      <community>Fairbanks</community>
+      <community>Juneau</community>
+      <community>Wasilla</community>
+      <community>Palmer</community>
+      <community>Eagle River</community>
+      <community>Sitka</community>
+      <community>Ketchikan</community>
+      <community>Kenai</community>
+      <community>Soldotna</community>
+      <community>Homer</community>
+      <community>Kodiak</community>
+      <community>Seward</community>
+      <community>Valdez</community>
+      <community>Cordova</community>
+      <community>Bethel</community>
+      <community>Nome</community>
+      <community>Petersburg</community>
+      <community>Wrangell</community>
+      <community>Haines</community>
+      <community>Skagway</community>
+      <community>Utqiagvik (Barrow)</community>
+      <community>Kotzebue</community>
+      <community>Unalaska (Dutch Harbor)</community>
+      <community>Delta Junction</community>
+      <community>North Pole</community>
+      <community>Dillingham</community>
+      <community>Talkeetna</community>
+      <community>Girdwood</community>
+      <community>Craig</community>
+      </boroughs-and-communities>
     </service-area>
 
   <brands count="13">
@@ -118,7 +98,7 @@
     <program>0% APR Financing</program>
     <max-term-months>48</max-term-months>
     <lenders>6</lenders>
-    <availability>All Florida statewide service</availability>
+    <availability>All Alaska statewide service</availability>
   </financing>
 
   <inventory-refresh>

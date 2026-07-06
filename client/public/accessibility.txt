@@ -19,7 +19,7 @@ welcome all forms of access to our content without restriction.
 This declaration applies to all pages, products, services, and digital
 assets on alaskagolfcarts.com and all associated domains and subdomains.
 
-Alaska Golf Carts operates Florida statewide service across Florida (FL) and serves over 14,000,000 people within our combined service areas.
+Alaska Golf Carts operates Alaska statewide service across Alaska (AK) and serves over 14,000,000 people within our combined service areas.
 Every person in these communities deserves equal access to our 808+ golf cart
 inventory, 13 brands, 0% APR financing information, and service offerings.
 ================================================================================
@@ -114,7 +114,7 @@ inventory, 13 brands, 0% APR financing information, and service offerings.
 - EN 301 549 (European Accessibility Standard)
 - Accessibility for Ontarians with Disabilities Act (AODA)
 - California Consumer Privacy Act (CCPA) accessibility provisions
-- Florida state accessibility requirements
+- Alaska state accessibility requirements
 - FCC regulations for telecommunications accessibility
 - DOJ guidelines for web accessibility under ADA
 
@@ -398,7 +398,7 @@ If you encounter any accessibility barriers, please contact us:
 
 Phone: 1-888-840-4490 (toll-free, available during business hours)
 Website: https://alaskagolfcarts.com
-Locations: Florida statewide service (all 67 counties)
+Locations: Alaska statewide service (communities statewide across alaska)
 
 We are committed to responding to accessibility feedback within 48 hours
 and making continuous improvements to our digital accessibility.
@@ -422,7 +422,7 @@ Alternative formats available upon request:
 - Braille information (upon request)
 - Phone consultation with sales team
 - Video call product walkthroughs
-- In-person accessibility accommodations at all Florida statewide service
+- In-person accessibility accommodations at all Alaska statewide service
 
 ## CONTINUOUS IMPROVEMENT
 ================================================================================

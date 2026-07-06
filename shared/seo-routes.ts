@@ -28,7 +28,7 @@ export const POLICY_ROUTES: Record<string, PolicyRouteMeta> = {
   "/delivery-policy": {
     title: "Delivery Policy | Alaska Golf Carts",
     description:
-      "Golf cart delivery policy for Alaska Golf Carts — nationwide shipping and local delivery options.",
+      "Golf cart delivery policy for Alaska Golf Carts — statewide Alaska delivery and local pickup options.",
     breadcrumbLabel: "Delivery Policy",
   },
   "/rental-policy": {

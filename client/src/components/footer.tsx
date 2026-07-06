@@ -90,7 +90,7 @@ export function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             {[
               { icon: Tag, label: "Great Prices" },
-              { icon: Truck, label: "Nationwide Delivery" },
+              { icon: Truck, label: "Statewide Delivery" },
               { icon: Shield, label: "Warranty Included" },
               { icon: Award, label: "Top Brands" },
             ].map((item) => (
@@ -112,7 +112,7 @@ export function Footer() {
                 <span className="text-base font-extrabold">Alaska <span className="text-primary">Golf Carts</span></span>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                New and used golf carts for sale at great prices. 13 authorized brands. Inventory updated daily. Serving all of Florida. 0% APR financing available.
+                New and used golf carts for sale at great prices. 13 authorized brands. Inventory updated daily. Serving all of Alaska. 0% APR financing available.
               </p>
               <div className="flex items-center gap-3 mt-4">
                 <a href="https://facebook.com/AlaskaGolfCarts" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-social-facebook">
@@ -146,7 +146,7 @@ export function Footer() {
             <div>
               <h3 className="font-bold text-xs uppercase tracking-widest text-muted-foreground mb-4">Service Area</h3>
               <div className="space-y-2">
-                {["Miami-Dade", "Tampa Bay", "Orlando", "Jacksonville", "Fort Myers", "Statewide Delivery"].map((area) => (
+                {["Anchorage", "Fairbanks", "Juneau", "Wasilla", "Kenai", "Statewide Delivery"].map((area) => (
                   <div key={area} className="flex items-start gap-2 text-sm text-muted-foreground">
                     <MapPin className="h-3.5 w-3.5 mt-0.5 shrink-0 text-primary" />
                     <span>{area}</span>
@@ -194,7 +194,7 @@ export function Footer() {
 
         <div className="border-t px-4 py-5 text-center text-xs text-muted-foreground space-y-1">
           <p>&copy; {new Date().getFullYear()} Alaska Golf Carts. All rights reserved. | alaskagolfcarts.com</p>
-          <p>Alaska Golf Carts proudly serves all 67 counties across the state of Florida, with statewide delivery on new and used golf carts.</p>
+          <p>Alaska Golf Carts proudly serves communities across the state of Alaska, with statewide delivery on new and used golf carts.</p>
         </div>
       </div>
     </footer>

@@ -6,52 +6,43 @@ import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 
 const regions = [
   {
-    id: "northwest",
-    name: "Northwest Florida & the Panhandle",
-    counties: [
-      "Escambia County", "Santa Rosa County", "Okaloosa County", "Walton County",
-      "Holmes County", "Washington County", "Bay County", "Jackson County",
-      "Calhoun County", "Gulf County", "Liberty County", "Gadsden County",
-      "Leon County", "Wakulla County", "Franklin County", "Jefferson County",
-      "Madison County", "Taylor County",
+    id: "southcentral",
+    name: "Southcentral Alaska",
+    towns: [
+      "Anchorage", "Eagle River", "Chugiak", "Wasilla", "Palmer", "Houston",
+      "Sutton", "Girdwood", "Whittier", "Talkeetna", "Willow", "Big Lake",
     ],
   },
   {
-    id: "north",
-    name: "North & Northeast Florida",
-    counties: [
-      "Hamilton County", "Suwannee County", "Lafayette County", "Columbia County",
-      "Baker County", "Nassau County", "Duval County", "Union County",
-      "Bradford County", "Clay County", "St. Johns County", "Putnam County",
-      "Flagler County", "Alachua County", "Gilchrist County", "Dixie County",
-      "Levy County",
+    id: "kenai",
+    name: "Kenai Peninsula & Prince William Sound",
+    towns: [
+      "Kenai", "Soldotna", "Sterling", "Nikiski", "Kasilof", "Homer",
+      "Anchor Point", "Seward", "Kodiak", "Valdez", "Cordova",
     ],
   },
   {
-    id: "central",
-    name: "Central Florida",
-    counties: [
-      "Marion County", "Citrus County", "Hernando County", "Sumter County",
-      "Lake County", "Volusia County", "Seminole County", "Orange County",
-      "Osceola County", "Brevard County", "Polk County", "Pasco County",
-      "Hillsborough County", "Pinellas County",
-    ],
-  },
-  {
-    id: "southwest",
-    name: "Southwest Florida",
-    counties: [
-      "Manatee County", "Sarasota County", "Hardee County", "DeSoto County",
-      "Highlands County", "Charlotte County", "Glades County", "Lee County",
-      "Hendry County", "Collier County",
+    id: "interior",
+    name: "Interior Alaska",
+    towns: [
+      "Fairbanks", "North Pole", "Delta Junction", "Tok", "Nenana",
+      "Healy", "Ester", "Salcha", "Glennallen", "Fort Yukon",
     ],
   },
   {
     id: "southeast",
-    name: "Southeast Florida & the Keys",
-    counties: [
-      "Indian River County", "Okeechobee County", "St. Lucie County", "Martin County",
-      "Palm Beach County", "Broward County", "Miami-Dade County", "Monroe County",
+    name: "Southeast Alaska (Inside Passage)",
+    towns: [
+      "Juneau", "Ketchikan", "Sitka", "Petersburg", "Wrangell",
+      "Haines", "Skagway", "Craig", "Klawock", "Metlakatla", "Hoonah",
+    ],
+  },
+  {
+    id: "northwest",
+    name: "Northern, Arctic & Western Alaska",
+    towns: [
+      "Utqiagvik (Barrow)", "Nome", "Kotzebue", "Bethel", "Dillingham",
+      "Unalaska (Dutch Harbor)", "King Salmon", "Deadhorse", "Galena",
     ],
   },
 ];
@@ -60,12 +51,12 @@ const SERVICE_AREA_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "url": "https://alaskagolfcarts.com/service-area",
-  "name": "Florida Golf Cart Service Area — All 67 Counties | Alaska Golf Carts",
+  "name": "Alaska Golf Cart Service Area — Statewide Delivery | Alaska Golf Carts",
   "description":
-    "Alaska Golf Carts serves the entire state of Florida — all 67 counties. New and used golf carts with statewide delivery.",
+    "Alaska Golf Carts serves communities across the entire state of Alaska. New and used golf carts with statewide delivery.",
   "about": {
     "@type": "State",
-    "name": "Florida",
+    "name": "Alaska",
   },
   "breadcrumb": {
     "@type": "BreadcrumbList",
@@ -80,8 +71,8 @@ export default function ServiceArea() {
   return (
     <div className="min-h-screen">
       <SeoHead
-        title="Florida Golf Cart Service Area — All 67 Counties | Alaska Golf Carts"
-        description="Alaska Golf Carts serves the entire state of Florida — all 67 counties, from Miami-Dade and Broward to Duval, Hillsborough, and Orange. Statewide delivery available. Call 1-888-840-4490."
+        title="Alaska Golf Cart Service Area — Statewide Delivery | Alaska Golf Carts"
+        description="Alaska Golf Carts serves communities across the entire state of Alaska — from Anchorage and Fairbanks to Juneau, the Kenai Peninsula, and beyond. Statewide delivery available. Call 1-888-840-4490."
         canonical="https://alaskagolfcarts.com/service-area"
         schema={SERVICE_AREA_SCHEMA}
       />
@@ -95,16 +86,16 @@ export default function ServiceArea() {
               <li className="text-foreground font-medium">Service Area</li>
             </ol>
           </nav>
-          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Serving All of Florida</p>
+          <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Serving All of Alaska</p>
           <h1 className="text-3xl sm:text-4xl font-extrabold mb-4">
-            Florida Golf Cart Service Area — All 67 Counties
+            Alaska Golf Cart Service Area — Statewide Delivery
           </h1>
           <p className="text-base text-muted-foreground leading-relaxed max-w-3xl mb-6">
-            Alaska Golf Carts sells and delivers new and used golf carts across the entire state of Florida — every one of the state's <strong>67 counties</strong>. Every order is backed by 13 authorized brands and on-site financing. Wherever you are in Florida, <strong>statewide delivery</strong> is available — call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> for a delivery quote to your address.
+            Alaska Golf Carts sells and delivers new and used golf carts to communities across the entire state of Alaska — from Southcentral and the Interior to Southeast, the Arctic, and Western Alaska. Every order is backed by 13 authorized brands and on-site financing. Wherever you are in Alaska, <strong>statewide delivery</strong> is available — call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> for a delivery quote to your address.
           </p>
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">Florida</span>
-            <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">All 67 Counties</span>
+            <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">Alaska</span>
+            <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">Statewide Coverage</span>
             <span className="px-3 py-1 rounded-full bg-muted text-muted-foreground text-xs font-semibold border">+ Statewide Delivery</span>
           </div>
         </div>
@@ -125,10 +116,10 @@ export default function ServiceArea() {
                   </div>
                   <div className="min-w-0 flex-1">
                     <h2 className="font-extrabold text-base leading-tight">{region.name}</h2>
-                    <p className="text-xs text-muted-foreground mt-0.5">{region.counties.length} counties served</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">{region.towns.length} communities served</p>
                     <div className="mt-3 flex flex-wrap gap-1">
-                      {region.counties.map((county) => (
-                        <span key={county} className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground">{county}</span>
+                      {region.towns.map((town) => (
+                        <span key={town} className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground">{town}</span>
                       ))}
                     </div>
                     <a
@@ -152,10 +143,10 @@ export default function ServiceArea() {
           <div>
             <div className="flex items-center gap-2 mb-2">
               <Truck className="h-5 w-5 text-primary" />
-              <h2 className="text-xl font-extrabold">Statewide Florida Delivery</h2>
+              <h2 className="text-xl font-extrabold">Statewide Alaska Delivery</h2>
             </div>
             <p className="text-sm text-muted-foreground max-w-lg leading-relaxed">
-              We deliver golf carts to every county in Florida — from the Panhandle to the Keys.
+              We deliver golf carts to communities across Alaska — from Southeast to the Arctic.
               Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> to get a delivery quote and confirm availability in your area.
             </p>
           </div>

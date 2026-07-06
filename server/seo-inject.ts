@@ -58,7 +58,7 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
     return {
       title: "Golf Carts for Sale — New & Used Inventory Updated Daily | Alaska Golf Carts",
       description:
-        "Golf carts for sale at great prices — inventory updated daily. New and used carts from Club Car, EZGO, Yamaha, Denago & more. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.",
+        "Golf carts for sale at great prices — inventory updated daily. New and used carts from Club Car, EZGO, Yamaha, Denago & more. 0% APR financing. Serving all of Alaska. Call 1-888-840-4490.",
     };
   }
 
@@ -74,14 +74,14 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
       if (filterStr) {
         return {
           title: `${subject} for Sale | Alaska Golf Carts`,
-          description: `Browse ${subject.toLowerCase()} for sale — updated daily. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.`,
+          description: `Browse ${subject.toLowerCase()} for sale — updated daily. 0% APR financing. Serving all of Alaska. Call 1-888-840-4490.`,
         };
       }
     }
     return {
       title: "Golf Cart Inventory — New & Used Golf Carts for Sale | Alaska Golf Carts",
       description:
-        "Browse 800+ new and used golf carts updated daily. Electric and gas golf carts from Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Serving all of Florida.",
+        "Browse 800+ new and used golf carts updated daily. Electric and gas golf carts from Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Serving all of Alaska.",
     };
   }
 
@@ -98,7 +98,7 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
     return {
       title: "Golf Cart Financing — 0% APR for 48 Months | Alaska Golf Carts",
       description:
-        "0% APR golf cart financing up to 48 months through 6 lending partners. Apply from anywhere in Florida. Call 1-888-840-4490.",
+        "0% APR golf cart financing up to 48 months through 6 lending partners. Apply from anywhere in Alaska. Call 1-888-840-4490.",
     };
   }
 
@@ -112,17 +112,17 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
 
   if (pathname === "/about") {
     return {
-      title: "About Alaska Golf Carts — Serving All of Florida",
+      title: "About Alaska Golf Carts — Serving All of Alaska",
       description:
-        "Alaska Golf Carts is a golf cart dealership serving all 67 counties across Florida. New and used carts from 13 brands. Inventory updated daily. Statewide delivery.",
+        "Alaska Golf Carts is a golf cart dealership serving communities across Alaska. New and used carts from 13 brands. Inventory updated daily. Statewide delivery.",
     };
   }
 
   if (pathname === "/service-area") {
     return {
-      title: "Florida Golf Cart Service Area — All 67 Counties | Alaska Golf Carts",
+      title: "Alaska Golf Cart Service Area — Statewide Delivery | Alaska Golf Carts",
       description:
-        "Alaska Golf Carts serves the entire state of Florida — all 67 counties, from Miami-Dade and Broward to Duval, Hillsborough, Orange, and beyond. Statewide delivery available.",
+        "Alaska Golf Carts serves the entire state of Alaska — communities from Anchorage and Fairbanks to Juneau, the Kenai Peninsula, and beyond. Statewide delivery available.",
     };
   }
 
@@ -196,8 +196,8 @@ function getPageSchema(pathname: string): Record<string, unknown> | null {
         },
         {
           "@type": "Question",
-          "name": "Does Alaska Golf Carts deliver across Florida?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Statewide delivery is available to all 67 Florida counties. Call 1-888-840-4490 for a delivery quote." },
+          "name": "Does Alaska Golf Carts deliver across Alaska?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Statewide delivery is available to communities across Alaska. Call 1-888-840-4490 for a delivery quote." },
         },
         {
           "@type": "Question",
@@ -214,8 +214,8 @@ function getPageSchema(pathname: string): Record<string, unknown> | null {
       "@type": "AboutPage",
       "@id": `${BASE_URL}/about`,
       "url": `${BASE_URL}/about`,
-      "name": "About Alaska Golf Carts — Florida Golf Cart Dealer",
-      "description": "Alaska Golf Carts is a golf cart dealership serving all 67 counties across the state of Florida. 13 authorized brands, inventory updated daily, statewide delivery.",
+      "name": "About Alaska Golf Carts — Alaska Golf Cart Dealer",
+      "description": "Alaska Golf Carts is a golf cart dealership serving communities across the state of Alaska. 13 authorized brands, inventory updated daily, statewide delivery.",
       "isPartOf": { "@id": `${BASE_URL}/#website` },
       "about": { "@id": `${BASE_URL}#organization` },
       "breadcrumb": breadcrumbSchema([{ name: "Home", path: "/" }, { name: "About", path: "/about" }]),
@@ -249,9 +249,9 @@ function getPageSchema(pathname: string): Record<string, unknown> | null {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "url": `${BASE_URL}/service-area`,
-      "name": "Florida Golf Cart Service Area — All 67 Counties | Alaska Golf Carts",
-      "description": "Alaska Golf Carts serves the entire state of Florida — all 67 counties. New and used golf carts with statewide delivery.",
-      "about": { "@type": "State", "name": "Florida" },
+      "name": "Alaska Golf Cart Service Area — Statewide Delivery | Alaska Golf Carts",
+      "description": "Alaska Golf Carts serves the entire state of Alaska — communities statewide. New and used golf carts with statewide delivery.",
+      "about": { "@type": "State", "name": "Alaska" },
       "breadcrumb": breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Service Area", path: "/service-area" }]),
     };
   }

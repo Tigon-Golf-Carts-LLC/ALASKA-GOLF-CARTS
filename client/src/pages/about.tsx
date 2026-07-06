@@ -16,7 +16,7 @@ const services = [
   { icon: Shield, label: "Street-Legal LSVs", desc: "FMVSS 500-compliant low speed vehicles for road use." },
   { icon: Zap, label: "Electric Carts", desc: "36V, 48V, and 72V battery-powered golf carts." },
   { icon: CreditCard, label: "0% APR Financing", desc: "Six lending partners, terms up to 48 months." },
-  { icon: Truck, label: "Nationwide Delivery", desc: "We ship to any address in the continental US." },
+  { icon: Truck, label: "Statewide Delivery", desc: "We deliver to communities across Alaska." },
   { icon: Wrench, label: "Service & Repair", desc: "Factory-trained technicians for all major brands." },
   { icon: Award, label: "Parts & Accessories", desc: "OEM and aftermarket parts for all 13 brands." },
 ];
@@ -26,8 +26,8 @@ const ABOUT_SCHEMA = {
   "@type": "AboutPage",
   "@id": "https://alaskagolfcarts.com/about",
   "url": "https://alaskagolfcarts.com/about",
-  "name": "About Alaska Golf Carts — Florida Golf Cart Dealer",
-  "description": "Alaska Golf Carts is a golf cart dealership serving all 67 counties across the state of Florida. 13 authorized brands, inventory updated daily, statewide delivery.",
+  "name": "About Alaska Golf Carts — Alaska Golf Cart Dealer",
+  "description": "Alaska Golf Carts is a golf cart dealership serving communities across the state of Alaska. 13 authorized brands, inventory updated daily, statewide delivery.",
   "isPartOf": { "@id": "https://alaskagolfcarts.com/#website" },
   "about": { "@id": "https://alaskagolfcarts.com/#organization" },
   "breadcrumb": {
@@ -43,8 +43,8 @@ export default function About() {
   return (
     <div className="min-h-screen">
       <SeoHead
-        title="About Alaska Golf Carts — Florida Golf Cart Dealer, 13 Brands"
-        description="Alaska Golf Carts is a Florida golf cart dealer serving all 67 counties statewide. New and used golf carts, 13 authorized brands, 0% APR financing, daily-updated inventory. Call 1-888-840-4490."
+        title="About Alaska Golf Carts — Alaska Golf Cart Dealer, 13 Brands"
+        description="Alaska Golf Carts is an Alaska golf cart dealer serving communities statewide. New and used golf carts, 13 authorized brands, 0% APR financing, daily-updated inventory. Call 1-888-840-4490."
         canonical="https://alaskagolfcarts.com/about"
         schema={ABOUT_SCHEMA}
       />
@@ -63,7 +63,7 @@ export default function About() {
             About Alaska Golf Carts
           </h1>
           <p className="text-base text-muted-foreground leading-relaxed max-w-3xl">
-            Alaska Golf Carts is a golf cart dealership serving the entire state of Florida — all 67 counties, from the Panhandle to the Keys. We sell new and used golf carts, electric vehicles, street-legal low speed vehicles (LSVs), and lifted carts from 13 authorized manufacturers at MSRP pricing, with statewide delivery. Inventory is updated every day at 10:55 PM ET.
+            Alaska Golf Carts is a golf cart dealership serving the entire state of Alaska — communities from Southeast and Southcentral to the Interior, Western Alaska, and the Arctic. We sell new and used golf carts, electric vehicles, street-legal low speed vehicles (LSVs), and lifted carts from 13 authorized manufacturers at MSRP pricing, with statewide delivery. Inventory is updated every day at 10:55 PM ET.
           </p>
         </div>
       </section>
@@ -138,15 +138,15 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-extrabold mb-4">Where We Serve</h2>
           <p className="text-sm text-muted-foreground mb-6">
-            Serving all 67 Florida counties with statewide delivery.
+            Serving communities across all of Alaska with statewide delivery.
             See the full service area on the <Link href="/service-area" className="text-primary hover:underline">service area page</Link>.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-8">
             {[
-              "Miami-Dade", "Broward", "Palm Beach", "Hillsborough",
-              "Orange", "Duval", "Pinellas", "Lee",
-              "Polk", "Brevard", "Volusia", "Pasco",
-              "Sarasota", "Collier", "Marion", "Leon"
+              "Anchorage", "Fairbanks", "Juneau", "Wasilla",
+              "Palmer", "Sitka", "Ketchikan", "Kenai",
+              "Soldotna", "Homer", "Kodiak", "Seward",
+              "Valdez", "Bethel", "Nome", "Petersburg"
             ].map((loc) => (
               <div key={loc} className="flex items-center gap-2 text-sm p-3 rounded-md border bg-card">
                 <MapPin className="h-3.5 w-3.5 text-primary shrink-0" />

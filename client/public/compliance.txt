@@ -10,7 +10,7 @@ COMPLIANCE & REGULATORY STANDARDS
 PURPOSE:
 Document all compliance requirements, industry standards, and regulatory
 frameworks applicable to the Alaska Golf Carts website and business operations
-to ensure full legal and technical compliance across Florida statewide operations.
+to ensure full legal and technical compliance across Alaska statewide operations.
 
 ================================================================================
 GDPR COMPLIANCE (General Data Protection Regulation)
@@ -181,49 +181,41 @@ DEALER STANDARDS:
 - Customer satisfaction standards per manufacturer agreements
 
 ================================================================================
-FLORIDA STATE & REGIONAL REGULATIONS
+ALASKA STATE & REGIONAL REGULATIONS
 ================================================================================
 
-Alaska Golf Carts operates Florida statewide, serving all 67 counties with statewide
-delivery. The following reflect Florida golf cart and LSV regulations applicable
+Alaska Golf Carts operates Alaska statewide, serving communities statewide across alaska with statewide
+delivery. The following reflect Alaska golf cart and LSV regulations applicable
 across the company's service area.
 
-FLORIDA (FL) — STATEWIDE:
-- Golf carts and LSVs widely permitted under Florida Statutes (Ch. 316)
+ALASKA (AK) — STATEWIDE:
+- Golf carts and LSVs permitted under applicable Alaska state and local regulations
 - Golf carts on roads with 30 mph or less speed limits in designated/approved areas
 - LSVs (Low-Speed Vehicles) permitted on roads with 35 mph or less speed limits
-- LSVs must be registered, titled, and insured through the Florida DHSMV
+- LSVs must be registered, titled, and insured through the Alaska DMV
 - LSV operators must hold a valid driver's license
 - Golf cart operators must be 15+ (learner's permit) or 14+ where authorized
 - Many communities have specific local golf cart ordinances
-- Coverage: all 67 Florida counties via statewide delivery
+- Coverage: communities statewide across Alaska via statewide delivery
 
-SOUTHEAST FLORIDA (Miami-Dade, Broward, Palm Beach):
-- Metros: Miami, Fort Lauderdale, West Palm Beach
-- Local ordinances govern golf cart use in many coastal and gated communities
+SOUTHCENTRAL ALASKA (Municipality of Anchorage, Matanuska-Susitna Borough):
+- Metros: Anchorage, Eagle River, Wasilla, Palmer, Girdwood
+- Local ordinances govern golf cart use in many communities and designated zones
 
-TAMPA BAY (Hillsborough, Pinellas, Pasco):
-- Metros: Tampa, St. Petersburg, Clearwater
+KENAI PENINSULA & PRINCE WILLIAM SOUND (Kenai Peninsula Borough, Kodiak Island Borough, Chugach Census Area):
+- Metros: Kenai, Soldotna, Homer, Seward, Kodiak, Valdez, Cordova
 - Municipal approval and posted routes apply in designated golf cart zones
 
-CENTRAL FLORIDA (Orange, Osceola, Seminole, Lake, Polk):
-- Metros: Orlando, Kissimmee; large planned/retirement communities
-- Golf cart ordinances common in master-planned developments
+INTERIOR ALASKA (Fairbanks North Star Borough, Denali Borough, Southeast Fairbanks Census Area, Yukon-Koyukuk Census Area):
+- Metros: Fairbanks, North Pole, Delta Junction, Tok, Nenana, Healy
+- Golf cart ordinances common in municipalities and organized communities
 
-NORTHEAST FLORIDA (Duval, St. Johns, Clay, Nassau):
-- Metros: Jacksonville, St. Augustine
-- Local rules apply for beach and community golf cart use
+SOUTHEAST ALASKA / INSIDE PASSAGE (City and Borough of Juneau, City and Borough of Sitka, Ketchikan Gateway Borough, Petersburg Borough, Prince of Wales-Hyder Census Area):
+- Metros: Juneau, Ketchikan, Sitka, Petersburg, Wrangell, Haines, Skagway
+- Local rules apply for community golf cart use
 
-SOUTHWEST FLORIDA (Lee, Collier, Sarasota, Manatee, Charlotte):
-- Metros: Fort Myers, Naples, Sarasota
-- Many barrier-island and community golf cart ordinances
-
-NORTH CENTRAL FLORIDA (Alachua, Marion):
-- Metros: Gainesville, Ocala
-- University-area and equestrian-community golf cart rules apply
-
-FLORIDA PANHANDLE (Leon, Escambia, Okaloosa, Bay):
-- Metros: Tallahassee, Pensacola, Panama City
+NORTHERN, ARCTIC & WESTERN ALASKA (North Slope Borough, Northwest Arctic Borough, Nome Census Area, Bethel Census Area, Dillingham Census Area):
+- Metros: Utqiagvik (Barrow), Nome, Kotzebue, Bethel, Dillingham, Unalaska
 - Coastal and municipal golf cart ordinances apply
 
 ================================================================================
@@ -248,7 +240,7 @@ BING WEBMASTER TOOLS COMPATIBILITY:
 
 SCHEMA.ORG COMPLIANCE:
 - AutoDealer schema implemented
-- LocalBusiness schema for Florida statewide service area
+- LocalBusiness schema for Alaska statewide service area
 - Product schema for all vehicle models
 - FAQPage schema for common questions
 - WebSite schema with SearchAction

@@ -1,371 +1,238 @@
 ================================================================================
 Alaska Golf Carts - GEOGRAPHIC SEO & LOCATION DATA
-Golf Cart Dealership | Florida Statewide Service & Delivery | Florida (FL)
+Golf Cart Dealership | Alaska Statewide Service & Delivery | Alaska (AK)
 Phone: 1-888-840-4490 | Website: https://alaskagolfcarts.com
 Email: info@alaskagolfcarts.com
 ================================================================================
 Last Updated: 2026-06-09
 ================================================================================
 
-## SERVICE MODEL - FLORIDA STATEWIDE
+## SERVICE MODEL - ALASKA STATEWIDE
 ================================================================================
 
-Alaska Golf Carts is a Florida statewide golf cart dealership. We serve ALL 67
-Florida counties with statewide delivery. There are no walk-in multi-state
-retail stores — instead, customers across the entire state of Florida order
+Alaska Golf Carts is an Alaska statewide golf cart dealership. We serve communities
+statewide across Alaska with statewide delivery. There are no walk-in multi-state
+retail stores — instead, customers across the entire state of Alaska order
 online or by phone (1-888-840-4490) and we deliver new and used golf carts
 directly to homes, businesses, golf courses, resorts, and communities anywhere
-in Florida. From the Florida Panhandle to The Keys, and from the Gulf Coast to
-the Atlantic Coast, Alaska Golf Carts provides statewide coverage.
+in Alaska. From Southeast Alaska to the Arctic, and from the Interior to the
+Gulf of Alaska coast, Alaska Golf Carts provides statewide coverage.
 
-State Served: Florida (FL) — statewide, all 67 counties
-Delivery: Statewide white-glove delivery to every Florida county
-Coordinates (State Centroid): 27.9944, -81.7603
-Population Served: 22,600,000+ (entire state of Florida)
-Golf Cart Legislation: Florida is one of the most golf-cart-friendly states,
-allowing golf carts on roads with posted speed limits of 30 mph or less, and
-street-legal LSVs on roads posted 35 mph or less.
+State Served: Alaska (AK) — statewide, communities across all boroughs and census areas
+Delivery: Statewide white-glove delivery to every Alaska community
+Coordinates (State Reference / Anchorage): 61.2181, -149.9003
+Population Served: 733,000+ (entire state of Alaska)
+Golf Cart Legislation: Golf carts and street-legal LSVs are used in communities
+across Alaska, permitted on local roads with posted low speed limits where
+authorized by borough and municipal ordinance.
 
-## FLORIDA REGIONS SERVED - COMPLETE DATA
+## ALASKA REGIONS SERVED - COMPLETE DATA
 ================================================================================
 
-### REGION 1: Southeast Florida
-Region Name: Southeast Florida / Gold Coast
-Major Metros: Miami, Fort Lauderdale, West Palm Beach
-Metro Area: Miami-Fort Lauderdale-West Palm Beach, FL MSA
-DMA: Miami-Fort Lauderdale DMA / West Palm Beach-Fort Pierce DMA
-Coordinates: 26.1224, -80.1373
-Counties: Miami-Dade, Broward, Palm Beach, Monroe (Upper Keys)
-Nearby Cities: Miami, Miami Beach, Hialeah, Coral Gables, Homestead, Fort Lauderdale, Hollywood, Pompano Beach, Boca Raton, Deerfield Beach, West Palm Beach, Boynton Beach, Delray Beach, Jupiter, Wellington, Aventura, Doral, Kendall, Pembroke Pines, Miramar
-Landmarks: Downtown Miami, South Beach, Fort Lauderdale Beach, Palm Beach, Everglades National Park (edge), PortMiami, Hard Rock Stadium
-Interstate Access: I-95, I-75, Florida's Turnpike, I-595, US-1
-Service: Statewide delivery to all Southeast Florida communities
-Target Markets: Gated communities, 55+ communities, golf communities, waterfront neighborhoods, resorts, HOAs
-Keywords: golf carts miami fl, golf carts fort lauderdale, golf carts west palm beach, golf carts miami-dade county, golf carts broward county, golf carts palm beach county, golf cart dealer southeast florida, golf carts boca raton, golf carts delray beach
+### REGION 1: Southcentral Alaska
+Region Name: Southcentral Alaska
+Major Metros: Anchorage, Wasilla, Palmer
+Metro Area: Anchorage, AK Metropolitan Area
+DMA: Anchorage DMA
+Coordinates: 61.2181, -149.9003
+Boroughs & Communities: Municipality of Anchorage, Matanuska-Susitna Borough
+Nearby Cities: Anchorage, Eagle River, Chugiak, Wasilla, Palmer, Houston, Sutton, Girdwood, Whittier, Talkeetna, Willow, Big Lake
+Landmarks: Downtown Anchorage, Chugach Mountains, Turnagain Arm, Portage Glacier, Alyeska Resort
+Highway Access: Glenn Highway, Parks Highway
+Service: Statewide delivery to all Southcentral Alaska communities
+Target Markets: Residential neighborhoods, resorts, golf communities, lodges, HOAs, businesses
+Keywords: golf carts anchorage ak, golf carts wasilla, golf carts palmer, golf carts eagle river, golf carts girdwood, golf cart dealer southcentral alaska, golf carts talkeetna
 
-### REGION 2: Tampa Bay
-Region Name: Tampa Bay / Central West Florida
-Major Metros: Tampa, St. Petersburg, Clearwater
-Metro Area: Tampa-St. Petersburg-Clearwater, FL MSA
-DMA: Tampa-St. Petersburg (Sarasota) DMA
-Coordinates: 27.9506, -82.4572
-Counties: Hillsborough, Pinellas, Pasco, Hernando
-Nearby Cities: Tampa, St. Petersburg, Clearwater, Brandon, Riverview, Wesley Chapel, Plant City, Palm Harbor, Largo, Dunedin, Tarpon Springs, New Port Richey, Spring Hill, Brooksville, Zephyrhills, Land O' Lakes, Temple Terrace, Pinellas Park, Seminole
-Landmarks: Downtown Tampa, Tampa Riverwalk, St. Pete Beach, Clearwater Beach, Busch Gardens, Raymond James Stadium, Weeki Wachee Springs
-Interstate Access: I-75, I-275, I-4, Florida's Turnpike (Suncoast Parkway), US-19, US-41
-Service: Statewide delivery to all Tampa Bay communities
-Target Markets: Retirement communities, 55+ communities, golf communities, suburban neighborhoods, RV parks, snowbird properties
-Keywords: golf carts tampa fl, golf carts st petersburg, golf carts clearwater, golf carts hillsborough county, golf carts pinellas county, golf carts pasco county, golf cart dealer tampa bay, golf carts wesley chapel, golf carts spring hill fl
+### REGION 2: Kenai Peninsula & Prince William Sound
+Region Name: Kenai Peninsula & Prince William Sound
+Major Metros: Kenai, Soldotna, Homer, Seward, Kodiak
+Metro Area: Kenai Peninsula Borough
+DMA: Anchorage DMA (statewide extension)
+Coordinates: 60.4837, -151.0620
+Boroughs & Communities: Kenai Peninsula Borough, Kodiak Island Borough, Chugach Census Area
+Nearby Cities: Kenai, Soldotna, Sterling, Nikiski, Kasilof, Homer, Anchor Point, Seward, Kodiak, Valdez, Cordova
+Landmarks: Kenai Peninsula, Kenai River, Kachemak Bay, Resurrection Bay, Prince William Sound, Kodiak Island
+Highway Access: Seward Highway, Sterling Highway
+Service: Statewide delivery to all Kenai Peninsula & Prince William Sound communities
+Target Markets: Coastal communities, fishing communities, resorts, lodges, waterfront neighborhoods, businesses
+Keywords: golf carts kenai ak, golf carts soldotna, golf carts homer ak, golf carts seward, golf carts kodiak, golf carts valdez, golf cart dealer kenai peninsula & prince william sound
 
-### REGION 3: Central Florida
-Region Name: Central Florida / Greater Orlando
-Major Metros: Orlando, Kissimmee
-Metro Area: Orlando-Kissimmee-Sanford, FL MSA
-DMA: Orlando-Daytona Beach-Melbourne DMA
-Coordinates: 28.5383, -81.3792
-Counties: Orange, Osceola, Seminole, Lake, Polk, Sumter
-Nearby Cities: Orlando, Kissimmee, Sanford, Winter Park, Winter Garden, Apopka, Clermont, Lakeland, Winter Haven, Leesburg, The Villages, Lady Lake, Tavares, Eustis, Mount Dora, Altamonte Springs, Oviedo, St. Cloud, Davenport, Celebration
-Landmarks: Walt Disney World, Universal Orlando, Lake Nona, The Villages, Downtown Orlando, Legoland Florida, Bok Tower Gardens
-Interstate Access: I-4, Florida's Turnpike, I-75 (west edge), US-27, US-192, SR-417, SR-429
-Service: Statewide delivery to all Central Florida communities
-Target Markets: Retirement communities (including The Villages area), 55+ communities, golf communities, resort/vacation communities, planned neighborhoods, HOAs
-Keywords: golf carts orlando fl, golf carts kissimmee, golf carts the villages fl, golf carts orange county fl, golf carts osceola county, golf carts polk county, golf carts lake county fl, golf cart dealer central florida, golf carts clermont fl, golf carts lakeland fl
+### REGION 3: Interior Alaska
+Region Name: Interior Alaska
+Major Metros: Fairbanks, North Pole
+Metro Area: Fairbanks, AK Metropolitan Area
+DMA: Fairbanks DMA
+Coordinates: 64.8378, -147.7164
+Boroughs & Communities: Fairbanks North Star Borough, Denali Borough, Southeast Fairbanks Census Area, Yukon-Koyukuk Census Area
+Nearby Cities: Fairbanks, North Pole, Delta Junction, Tok, Nenana, Healy, Ester, Salcha, Glennallen, Fort Yukon
+Landmarks: Downtown Fairbanks, Chena River, Denali National Park, Trans-Alaska Pipeline, Pioneer Park
+Highway Access: Parks Highway, Richardson Highway, Steese Highway
+Service: Statewide delivery to all Interior Alaska communities
+Target Markets: Residential neighborhoods, university community (UAF), lodges, resorts, businesses, HOAs
+Keywords: golf carts fairbanks ak, golf carts north pole, golf carts delta junction, golf cart dealer interior alaska, golf carts near fairbanks, golf carts denali
 
-### REGION 4: Northeast Florida
-Region Name: Northeast Florida / First Coast
-Major Metros: Jacksonville
-Metro Area: Jacksonville, FL MSA
-DMA: Jacksonville DMA
-Coordinates: 30.3322, -81.6557
-Counties: Duval, St. Johns, Clay, Nassau, Putnam, Flagler
-Nearby Cities: Jacksonville, Jacksonville Beach, St. Augustine, Orange Park, Fleming Island, Fernandina Beach, Amelia Island, Ponte Vedra Beach, Palm Coast, Middleburg, Green Cove Springs, Palatka, Atlantic Beach, Neptune Beach
-Landmarks: Downtown Jacksonville, St. Johns River, Amelia Island, Historic St. Augustine, Ponte Vedra (TPC Sawgrass), Jacksonville Beaches
-Interstate Access: I-95, I-10, I-295, US-1, US-17, A1A
-Service: Statewide delivery to all Northeast Florida communities
-Target Markets: Golf communities, coastal/beach communities, gated neighborhoods, retirement communities, HOAs, military communities (NAS Jacksonville, NS Mayport)
-Keywords: golf carts jacksonville fl, golf carts st augustine, golf carts duval county, golf carts st johns county, golf carts clay county fl, golf cart dealer northeast florida, golf carts ponte vedra, golf carts fleming island
+### REGION 4: Southeast Alaska (Inside Passage)
+Region Name: Southeast Alaska / Inside Passage
+Major Metros: Juneau, Sitka, Ketchikan
+Metro Area: Juneau, AK Area
+DMA: Juneau DMA
+Coordinates: 58.3019, -134.4197
+Boroughs & Communities: City and Borough of Juneau, City and Borough of Sitka, Ketchikan Gateway Borough, Petersburg Borough, City and Borough of Wrangell, Haines Borough, Prince of Wales-Hyder Census Area, Hoonah-Angoon Census Area
+Nearby Cities: Juneau, Ketchikan, Sitka, Petersburg, Wrangell, Haines, Skagway, Craig, Klawock, Metlakatla, Hoonah
+Landmarks: Downtown Juneau, Mendenhall Glacier, Inside Passage, Tongass National Forest, Sitka Sound
+Highway Access: Alaska Marine Highway (ferry), Klondike Highway
+Service: Statewide delivery to all Southeast Alaska communities
+Target Markets: Coastal communities, resorts, lodges, waterfront neighborhoods, businesses, HOAs
+Keywords: golf carts juneau ak, golf carts sitka, golf carts ketchikan, golf carts petersburg, golf carts wrangell, golf cart dealer southeast alaska, golf carts haines, golf carts skagway
 
-### REGION 5: Southwest Florida
-Region Name: Southwest Florida / Gulf Coast
-Major Metros: Fort Myers, Naples, Sarasota
-Metro Area: Cape Coral-Fort Myers, FL MSA / Naples-Marco Island, FL MSA / North Port-Sarasota-Bradenton, FL MSA
-DMA: Fort Myers-Naples DMA
-Coordinates: 26.6406, -81.8723
-Counties: Lee, Collier, Charlotte, Sarasota, Manatee
-Nearby Cities: Fort Myers, Cape Coral, Naples, Marco Island, Bonita Springs, Estero, Sarasota, Bradenton, Venice, Port Charlotte, Punta Gorda, North Port, Lakewood Ranch, Sanibel, Fort Myers Beach, Englewood
-Landmarks: Fort Myers Beach, Naples Pier, Sanibel Island, Siesta Key, Marco Island, Lakewood Ranch, Downtown Sarasota
-Interstate Access: I-75, US-41 (Tamiami Trail), Florida's Turnpike (connections), SR-31
-Service: Statewide delivery to all Southwest Florida communities
-Target Markets: 55+ communities, golf communities, master-planned communities (Lakewood Ranch), snowbird properties, waterfront neighborhoods, HOAs
-Keywords: golf carts fort myers fl, golf carts naples fl, golf carts sarasota, golf carts cape coral, golf carts lee county fl, golf carts collier county, golf carts sarasota county, golf carts charlotte county fl, golf cart dealer southwest florida, golf carts lakewood ranch
+### REGION 5: Northern, Arctic & Western Alaska
+Region Name: Northern, Arctic & Western Alaska
+Major Metros: Utqiagvik (Barrow), Nome, Kotzebue, Bethel, Dillingham
+Metro Area: North Slope / Northwest Arctic / Bethel Census Area
+DMA: Anchorage DMA (statewide extension)
+Coordinates: 71.2906, -156.7886
+Boroughs & Communities: North Slope Borough, Northwest Arctic Borough, Nome Census Area, Bethel Census Area, Dillingham Census Area, Aleutians East Borough, Aleutians West Census Area
+Nearby Cities: Utqiagvik (Barrow), Nome, Kotzebue, Bethel, Dillingham, Unalaska (Dutch Harbor), King Salmon, Deadhorse, Galena
+Landmarks: Arctic Ocean coast, Brooks Range, Kobuk Valley, Bering Strait, Kuskokwim River, Bristol Bay, Aleutian Islands, Dutch Harbor
+Highway Access: Dalton Highway (to Deadhorse), Alaska Marine Highway (ferry), regional air access, seasonal ice roads
+Service: Statewide delivery throughout Northern, Arctic & Western Alaska
+Target Markets: Arctic communities, fishing communities, industrial/energy operations, municipal fleets, businesses
+Keywords: golf carts utqiagvik, golf carts barrow ak, golf carts kotzebue, golf carts nome, golf carts bethel ak, golf carts dillingham, golf carts unalaska, golf cart dealer northern arctic & western alaska
 
-### REGION 6: North Central Florida
-Region Name: North Central Florida
-Major Metros: Gainesville, Ocala
-Metro Area: Gainesville, FL MSA / Ocala, FL MSA
-DMA: Gainesville DMA (Ocala market)
-Coordinates: 29.1872, -82.1401
-Counties: Alachua, Marion, Levy, Citrus, Sumter (north)
-Nearby Cities: Gainesville, Ocala, Alachua, Newberry, High Springs, Belleview, Dunnellon, Crystal River, Inverness, Chiefland, Williston, The Villages (north edge)
-Landmarks: University of Florida, World Equestrian Center Ocala, Silver Springs State Park, Rainbow Springs, Crystal River, Ocala National Forest
-Interstate Access: I-75, US-441, US-27, US-19, US-301
-Service: Statewide delivery to all North Central Florida communities
-Target Markets: Retirement communities, 55+ communities, equestrian/farm communities, golf communities, university community (UF), RV parks, snowbird properties
-Keywords: golf carts gainesville fl, golf carts ocala fl, golf carts alachua county, golf carts marion county fl, golf cart dealer north central florida, golf carts crystal river fl, golf carts inverness fl, golf carts near the villages fl
-
-### REGION 7: Florida Panhandle
-Region Name: Florida Panhandle / Northwest Florida
-Major Metros: Tallahassee, Pensacola
-Metro Area: Tallahassee, FL MSA / Pensacola-Ferry Pass-Brent, FL MSA
-DMA: Tallahassee-Thomasville DMA / Pensacola-Mobile DMA
-Coordinates: 30.4383, -84.2807
-Counties: Leon, Escambia, Okaloosa, Santa Rosa, Bay, Walton, Wakulla, Gadsden
-Nearby Cities: Tallahassee, Pensacola, Panama City, Panama City Beach, Destin, Fort Walton Beach, Crestview, Navarre, Gulf Breeze, Milton, Niceville, Santa Rosa Beach, Marianna, Quincy
-Landmarks: Florida State Capitol, Florida State University, Pensacola Beach, Destin Harbor, Panama City Beach, 30A / Scenic Highway, Emerald Coast
-Interstate Access: I-10, US-98, US-90, US-231, US-29
-Service: Statewide delivery to all Florida Panhandle communities
-Target Markets: Coastal/beach communities, resort/vacation communities, golf communities, retirement communities, military communities (NAS Pensacola, Eglin AFB), state government area
-Keywords: golf carts pensacola fl, golf carts tallahassee, golf carts destin, golf carts panama city beach, golf carts escambia county, golf carts leon county, golf carts okaloosa county, golf cart dealer florida panhandle, golf carts emerald coast
-
-### REGION 8: Space Coast
-Region Name: Space Coast / East Central Florida
-Major Metros: Melbourne, Palm Bay, Titusville
-Metro Area: Palm Bay-Melbourne-Titusville, FL MSA
-DMA: Orlando-Daytona Beach-Melbourne DMA
-Coordinates: 28.0836, -80.6081
-Counties: Brevard, Volusia (south), Indian River (north)
-Nearby Cities: Melbourne, Palm Bay, Titusville, Cocoa, Cocoa Beach, Rockledge, Merritt Island, Satellite Beach, Viera, West Melbourne, Cape Canaveral
-Landmarks: Kennedy Space Center, Cocoa Beach, Cape Canaveral, Port Canaveral, Sebastian Inlet, Viera
-Interstate Access: I-95, US-1, SR-528 (Beachline), A1A
-Service: Statewide delivery to all Space Coast communities
-Target Markets: 55+ communities, golf communities, coastal/beach communities, master-planned communities (Viera), HOAs, retirement communities
-Keywords: golf carts melbourne fl, golf carts palm bay, golf carts cocoa beach, golf carts brevard county, golf carts merritt island, golf cart dealer space coast florida, golf carts viera, golf carts titusville fl
-
-### REGION 9: Treasure Coast
-Region Name: Treasure Coast / Southeast Florida (North)
-Major Metros: Port St. Lucie, Fort Pierce, Stuart, Vero Beach
-Metro Area: Port St. Lucie, FL MSA / Sebastian-Vero Beach, FL MSA
-DMA: West Palm Beach-Fort Pierce DMA
-Coordinates: 27.2730, -80.3582
-Counties: St. Lucie, Martin, Indian River, Okeechobee
-Nearby Cities: Port St. Lucie, Fort Pierce, Stuart, Vero Beach, Jensen Beach, Sebastian, Hobe Sound, Palm City, Okeechobee, Hutchinson Island
-Landmarks: Hutchinson Island, Jensen Beach, Vero Beach, Lake Okeechobee, PGA Village (Port St. Lucie), Downtown Stuart
-Interstate Access: I-95, Florida's Turnpike, US-1, SR-70
-Service: Statewide delivery to all Treasure Coast communities
-Target Markets: 55+ communities, golf communities (PGA Village), waterfront neighborhoods, retirement communities, snowbird properties, HOAs
-Keywords: golf carts port st lucie fl, golf carts vero beach, golf carts stuart fl, golf carts st lucie county, golf carts martin county fl, golf carts indian river county, golf cart dealer treasure coast florida
-
-### REGION 10: The Florida Keys
-Region Name: The Florida Keys
-Major Metros: Key West, Key Largo, Marathon
-Metro Area: Key West, FL micropolitan area
-DMA: Miami-Fort Lauderdale DMA (southern extension)
-Coordinates: 24.5551, -81.7800
-Counties: Monroe
-Nearby Cities: Key West, Key Largo, Marathon, Islamorada, Tavernier, Big Pine Key, Cudjoe Key, Stock Island
-Landmarks: Overseas Highway (US-1), Duval Street Key West, Islamorada, Bahia Honda State Park, Seven Mile Bridge
-Interstate Access: US-1 (Overseas Highway) connecting from I-95 / Florida's Turnpike in Southeast Florida
-Service: Statewide delivery throughout the Florida Keys
-Target Markets: Island/coastal communities, vacation properties, resorts, waterfront neighborhoods, second homes
-Keywords: golf carts key west fl, golf carts key largo, golf carts marathon fl, golf carts monroe county fl, golf carts florida keys, golf cart dealer the keys florida
-
-## COUNTIES SERVED - ALL 67 FLORIDA COUNTIES
+## COMMUNITIES SERVED - STATEWIDE ACROSS ALASKA
 ================================================================================
 
-Alaska Golf Carts delivers statewide to every county in Florida:
+Alaska Golf Carts delivers statewide to communities across every Alaska borough
+and census area:
 
-Alachua, Baker, Bay, Bradford, Brevard, Broward, Calhoun, Charlotte, Citrus,
-Clay, Collier, Columbia, DeSoto, Dixie, Duval, Escambia, Flagler, Franklin,
-Gadsden, Gilchrist, Glades, Gulf, Hamilton, Hardee, Hendry, Hernando,
-Highlands, Hillsborough, Holmes, Indian River, Jackson, Jefferson, Lafayette,
-Lake, Lee, Leon, Levy, Liberty, Madison, Manatee, Marion, Martin, Miami-Dade,
-Monroe, Nassau, Okaloosa, Okeechobee, Orange, Osceola, Palm Beach, Pasco,
-Pinellas, Polk, Putnam, Santa Rosa, Sarasota, Seminole, St. Johns, St. Lucie,
-Sumter, Suwannee, Taylor, Union, Volusia, Wakulla, Walton, Washington.
+Anchorage, Fairbanks, Juneau, Wasilla, Palmer, Eagle River, Sitka, Ketchikan,
+Kenai, Soldotna, Homer, Kodiak, Seward, Valdez, Cordova, Bethel, Nome,
+Petersburg, Wrangell, Haines, Skagway, Utqiagvik (Barrow), Kotzebue, Unalaska
+(Dutch Harbor), Delta Junction, North Pole, Dillingham, Talkeetna, Girdwood,
+Craig, Nenana, Tok, Healy, Naknek, King Salmon, Point Hope.
 
-Largest Population Counties: Miami-Dade, Broward, Palm Beach, Hillsborough,
-Orange, Duval, Pinellas, Lee, Polk, Brevard, Volusia, Pasco, Seminole,
-Sarasota, Manatee, Collier, Marion, Lake, Osceola, St. Lucie, Escambia, Leon,
-Alachua, Charlotte, Okaloosa.
+Largest Population Communities: Anchorage, Fairbanks, Juneau, Wasilla, Palmer,
+Eagle River, Sitka, Ketchikan, Kenai, Soldotna, Homer, Kodiak, Bethel, Nome,
+Valdez, Petersburg, Wrangell, North Pole, Delta Junction, Utqiagvik, Kotzebue,
+Dillingham, Unalaska, Seward, Cordova.
 
-## SERVICE AREA BOUNDARIES - FLORIDA STATEWIDE
+## SERVICE AREA BOUNDARIES - ALASKA STATEWIDE
 ================================================================================
 
-Northern Boundary: Florida-Georgia / Florida-Alabama state line (~31.0 N)
-Southern Boundary: Key West, FL (~24.5 N)
-Eastern Boundary: Atlantic Coast (~80.0 W)
-Western Boundary: Pensacola / Perdido Key (~87.6 W)
-Total Coverage: Entire State of Florida (~65,000 sq mi land area)
-Regions Covered: 10 (Southeast Florida, Tampa Bay, Central Florida, Northeast
-Florida, Southwest Florida, North Central Florida, Florida Panhandle, Space
-Coast, Treasure Coast, The Florida Keys)
-Counties Covered: All 67 Florida counties
-Combined Population Served: 22,600,000+
+Northern Boundary: Arctic Ocean coast at Utqiagvik / North Slope (~71.3 N)
+Southern Boundary: Aleutian Islands / Ketchikan (~55.0 N)
+Eastern Boundary: Alaska-Canada (Yukon) border (~130.0 W)
+Western Boundary: Bering Sea / Aleutian Islands (~173.0 W)
+Total Coverage: Entire State of Alaska (~570,000 sq mi land area)
+Regions Covered: 5 (Southcentral Alaska, Kenai Peninsula & Prince William Sound,
+Interior Alaska, Southeast Alaska, Northern, Arctic & Western Alaska)
+Communities Covered: Communities across all Alaska boroughs and census areas
+Combined Population Served: 733,000+
 
 ## REGIONAL SEO KEYWORDS
 ================================================================================
 
 ### Statewide Keywords
-golf carts florida
-golf cart dealer florida
-golf carts for sale florida
-golf cart delivery florida
-golf carts near me florida
-electric golf carts florida
-street legal golf cart florida
-golf cart financing florida
-golf carts all 67 counties florida
-statewide golf cart delivery florida
+golf carts alaska
+golf cart dealer alaska
+golf carts for sale alaska
+golf cart delivery alaska
+golf carts near me alaska
+electric golf carts alaska
+street legal golf cart alaska
+golf cart financing alaska
+golf carts statewide alaska
+statewide golf cart delivery alaska
 
-### Southeast Florida Keywords
-golf carts miami fl
-golf carts fort lauderdale
-golf carts west palm beach
-golf carts miami-dade county
-golf carts broward county
-golf carts palm beach county
-golf carts boca raton
-golf carts delray beach
-golf cart dealer south florida
+### Southcentral Alaska Keywords
+golf carts anchorage ak
+golf carts wasilla
+golf carts palmer
+golf carts eagle river
+golf carts girdwood
+golf carts talkeetna
+golf cart dealer southcentral alaska
 
-### Tampa Bay Keywords
-golf carts tampa fl
-golf carts st petersburg
-golf carts clearwater
-golf carts hillsborough county
-golf carts pinellas county
-golf carts pasco county
-golf carts wesley chapel
-golf cart dealer tampa bay
+### Interior Alaska Keywords
+golf carts fairbanks ak
+golf carts north pole
+golf carts delta junction
+golf carts near fairbanks
+golf carts denali
+golf cart dealer interior alaska
 
-### Central Florida Keywords
-golf carts orlando fl
-golf carts kissimmee
-golf carts the villages fl
-golf carts orange county fl
-golf carts osceola county
-golf carts polk county
-golf carts lake county fl
-golf carts clermont fl
-golf cart dealer central florida
+### Southeast Alaska Keywords
+golf carts juneau ak
+golf carts sitka
+golf carts ketchikan
+golf carts petersburg
+golf carts wrangell
+golf carts haines
+golf carts skagway
+golf cart dealer southeast alaska
 
-### Northeast Florida Keywords
-golf carts jacksonville fl
-golf carts st augustine
-golf carts duval county
-golf carts st johns county
-golf carts clay county fl
-golf carts ponte vedra
-golf cart dealer northeast florida
+### Kenai Peninsula & Prince William Sound Keywords
+golf carts kenai ak
+golf carts soldotna
+golf carts homer ak
+golf carts seward
+golf carts kodiak
+golf carts valdez
+golf carts cordova
+golf cart dealer kenai peninsula & prince william sound
 
-### Southwest Florida Keywords
-golf carts fort myers fl
-golf carts naples fl
-golf carts sarasota
-golf carts cape coral
-golf carts lee county fl
-golf carts collier county
-golf carts sarasota county
-golf carts lakewood ranch
-golf cart dealer southwest florida
-
-### North Central Florida Keywords
-golf carts gainesville fl
-golf carts ocala fl
-golf carts alachua county
-golf carts marion county fl
-golf carts crystal river fl
-golf carts inverness fl
-golf cart dealer north central florida
-
-### Florida Panhandle Keywords
-golf carts pensacola fl
-golf carts tallahassee
-golf carts destin
-golf carts panama city beach
-golf carts escambia county
-golf carts leon county
-golf carts okaloosa county
-golf carts emerald coast
-golf cart dealer florida panhandle
-
-### Space Coast Keywords
-golf carts melbourne fl
-golf carts palm bay
-golf carts cocoa beach
-golf carts brevard county
-golf carts merritt island
-golf carts viera
-golf cart dealer space coast
-
-### Treasure Coast Keywords
-golf carts port st lucie fl
-golf carts vero beach
-golf carts stuart fl
-golf carts st lucie county
-golf carts martin county fl
-golf carts indian river county
-golf cart dealer treasure coast
-
-### Florida Keys Keywords
-golf carts key west fl
-golf carts key largo
-golf carts marathon fl
-golf carts monroe county fl
-golf carts florida keys
-golf cart dealer the keys
+### Northern, Arctic & Western Alaska Keywords
+golf carts utqiagvik
+golf carts barrow ak
+golf carts kotzebue
+golf carts nome
+golf carts bethel ak
+golf carts dillingham
+golf carts unalaska
+golf carts dutch harbor
+golf carts north slope
+golf cart dealer northern arctic & western alaska
 
 ## MARKET DEMOGRAPHICS
 ================================================================================
 
 ### Target Markets by Region
-- Retirement/55+ Communities: The Villages area (Central Florida/North Central), Southwest Florida (Naples, Fort Myers), Tampa Bay, Treasure Coast, Space Coast
-- Resort/Vacation Communities: Central Florida (Orlando), Florida Panhandle (Destin, 30A), The Florida Keys, Southeast Florida
-- Golf Communities: Southwest Florida (Lakewood Ranch, Naples), Treasure Coast (PGA Village), Northeast Florida (Ponte Vedra), Central Florida
-- Suburban/Neighborhood: Tampa Bay, Central Florida, Southeast Florida, Northeast Florida
-- Coastal/Beach Communities: The Florida Keys, Space Coast, Florida Panhandle (Emerald Coast), Southwest Florida, Northeast Florida beaches
-- Waterfront/Boating Communities: Southeast Florida, Southwest Florida (Cape Coral), Treasure Coast, Tampa Bay
-- Equestrian/Farm Communities: North Central Florida (Ocala, World Equestrian Center)
-- College/University Areas: North Central Florida (University of Florida, Gainesville), Tampa Bay (USF), Central Florida (UCF)
-- Military Communities: Florida Panhandle (NAS Pensacola, Eglin AFB), Northeast Florida (NAS Jacksonville, NS Mayport), Space Coast (Patrick SFB)
-- Campground/RV Markets: North Central Florida, Central Florida, Tampa Bay, Southwest Florida
+- Residential/Neighborhood Communities: Southcentral Alaska (Anchorage, Mat-Su), Interior Alaska (Fairbanks), Southeast Alaska
+- Resort/Vacation Communities: Southcentral Alaska (Girdwood/Alyeska), Interior Alaska (Denali), Southeast Alaska, Kenai Peninsula & Prince William Sound
+- Golf Communities: Southcentral Alaska (Anchorage, Palmer), Interior Alaska (Fairbanks, North Pole), Kenai Peninsula & Prince William Sound
+- Suburban/Neighborhood: Southcentral Alaska (Wasilla, Eagle River), Interior Alaska, Southeast Alaska
+- Coastal/Waterfront Communities: Southeast Alaska (Inside Passage), Kenai Peninsula & Prince William Sound (Homer, Seward), Northern, Arctic & Western Alaska
+- Fishing/Marine Communities: Kenai Peninsula & Prince William Sound (Kodiak), Northern, Arctic & Western Alaska (Bethel, Dillingham), Southeast Alaska
+- Lodge/Wilderness Communities: Interior Alaska (Denali), Northern, Arctic & Western Alaska
+- College/University Areas: Interior Alaska (University of Alaska Fairbanks), Southcentral Alaska (UAA, Anchorage)
+- Industrial/Energy Communities: Northern, Arctic & Western Alaska (North Slope, Deadhorse), Kenai Peninsula & Prince William Sound (Valdez)
+- Campground/RV Markets: Southcentral Alaska, Interior Alaska, Kenai Peninsula & Prince William Sound
 
 ### Market Size Indicators
-Total Population Within Service Area: ~22,600,000+ (entire state of Florida)
-Total Households Within Service Area: ~9,000,000+
-Golf-Cart-Friendly Legislation: Statewide (Florida is a top golf-cart-friendly state)
-Golf Courses in Service Area: 1,250+ (Florida leads the nation in golf courses)
-55+ Communities in Service Area: 1,000+
-Gated/Planned Communities in Service Area: 2,000+
-Resort Properties in Service Area: 500+
-Campgrounds and RV Parks in Service Area: 800+
-HOAs Allowing Golf Carts: Growing annually across Florida
+Total Population Within Service Area: ~733,000+ (entire state of Alaska)
+Total Households Within Service Area: ~270,000+
+Golf-Cart-Friendly Legislation: Permitted in many Alaska communities by local ordinance
+Golf Courses in Service Area: 20+ (across Alaska)
+Retirement/55+ Communities in Service Area: Growing across Alaska
+Gated/Planned Communities in Service Area: Growing across Alaska
+Resort Properties in Service Area: 50+
+Campgrounds and RV Parks in Service Area: 100+
+HOAs Allowing Golf Carts: Growing annually across Alaska
 
 ## GEO-FENCING & LOCAL TARGETING DATA
 ================================================================================
 
 ### Regional Geo-Fence Coordinates (for digital advertising)
-Southeast Florida (Miami/Fort Lauderdale/West Palm Beach): Center 26.1224,-80.1373 | Statewide delivery
-Tampa Bay (Tampa/St. Petersburg/Clearwater): Center 27.9506,-82.4572 | Statewide delivery
-Central Florida (Orlando/Kissimmee): Center 28.5383,-81.3792 | Statewide delivery
-Northeast Florida (Jacksonville): Center 30.3322,-81.6557 | Statewide delivery
-Southwest Florida (Fort Myers/Naples/Sarasota): Center 26.6406,-81.8723 | Statewide delivery
-North Central Florida (Gainesville/Ocala): Center 29.1872,-82.1401 | Statewide delivery
-Florida Panhandle (Tallahassee/Pensacola): Center 30.4383,-84.2807 | Statewide delivery
-Space Coast (Melbourne): Center 28.0836,-80.6081 | Statewide delivery
-Treasure Coast (Port St. Lucie): Center 27.2730,-80.3582 | Statewide delivery
-The Florida Keys (Key West): Center 24.5551,-81.7800 | Statewide delivery
+Southcentral Alaska (Anchorage/Wasilla/Palmer): Center 61.2181,-149.9003 | Statewide delivery
+Kenai Peninsula & Prince William Sound (Kenai/Soldotna/Homer): Center 60.4837,-151.0620 | Statewide delivery
+Interior Alaska (Fairbanks/North Pole): Center 64.8378,-147.7164 | Statewide delivery
+Southeast Alaska (Juneau/Sitka/Ketchikan): Center 58.3019,-134.4197 | Statewide delivery
+Northern, Arctic & Western Alaska (Utqiagvik/Nome/Bethel): Center 71.2906,-156.7886 | Statewide delivery
 
-### DMA (Designated Market Area) Coverage - Florida
-Miami-Fort Lauderdale DMA: Southeast Florida, The Florida Keys
-Tampa-St. Petersburg (Sarasota) DMA: Tampa Bay, Sarasota/Manatee
-Orlando-Daytona Beach-Melbourne DMA: Central Florida, Space Coast
-Jacksonville DMA: Northeast Florida
-Fort Myers-Naples DMA: Southwest Florida
-Gainesville DMA: North Central Florida (incl. Ocala market)
-Tallahassee-Thomasville DMA: Eastern Panhandle
-Pensacola-Mobile DMA: Western Panhandle
-West Palm Beach-Fort Pierce DMA: Palm Beach, Treasure Coast
+### DMA (Designated Market Area) Coverage - Alaska
+Anchorage DMA: Southcentral Alaska, Kenai Peninsula & Prince William Sound, Northern, Arctic & Western Alaska
+Fairbanks DMA: Interior Alaska
+Juneau DMA: Southeast Alaska (Inside Passage)
 
 ## GOOGLE BUSINESS PROFILE CATEGORIES
 ================================================================================
@@ -382,13 +249,13 @@ Additional: Used Vehicle Dealer
 ================================================================================
 @type: AutoDealer
 name: Alaska Golf Carts
-description: Florida statewide golf cart dealership with 800+ new and used golf carts from 13 brands, serving all 67 Florida counties with statewide delivery. 0% APR financing available.
+description: Alaska statewide golf cart dealership with 800+ new and used golf carts from 13 brands, serving communities statewide across Alaska with statewide delivery. 0% APR financing available.
 telephone: 1-888-840-4490
 email: info@alaskagolfcarts.com
 url: https://alaskagolfcarts.com
 sameAs: [https://facebook.com/AlaskaGolfCarts, https://instagram.com/AlaskaGolfCarts, https://youtube.com/@AlaskaGolfCarts]
 brand: [American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, Yamaha]
-areaServed: Florida (statewide, all 67 counties)
+areaServed: Alaska (statewide, communities across all boroughs and census areas)
 priceRange: $$-$$$$
 paymentAccepted: Cash, Credit Card, Financing
 currenciesAccepted: USD
@@ -398,17 +265,16 @@ makesOffer: 0% APR financing up to 48 months
 
 ## GEOGRAPHIC SUMMARY
 ================================================================================
-Service Model: Florida statewide delivery (no physical multi-state stores)
-State Served: Florida (FL) — all 67 counties
-Regions Served: 10 (Southeast Florida, Tampa Bay, Central Florida, Northeast
-Florida, Southwest Florida, North Central Florida, Florida Panhandle, Space
-Coast, Treasure Coast, The Florida Keys)
-Total Service Area: Entire State of Florida (~65,000 sq mi land area)
-Total Population Served: ~22,600,000+
-Northernmost Point Served: Florida-Georgia/Alabama state line (~31.0 N)
-Southernmost Point Served: Key West, FL (~24.5 N)
-Easternmost Point Served: Atlantic Coast (~80.0 W)
-Westernmost Point Served: Perdido Key / Pensacola (~87.6 W)
+Service Model: Alaska statewide delivery (no physical multi-state stores)
+State Served: Alaska (AK) — communities across all boroughs and census areas
+Regions Served: 5 (Southcentral Alaska, Kenai Peninsula & Prince William Sound,
+Interior Alaska, Southeast Alaska, Northern, Arctic & Western Alaska)
+Total Service Area: Entire State of Alaska (~570,000 sq mi land area)
+Total Population Served: ~733,000+
+Northernmost Point Served: Utqiagvik / North Slope Arctic coast (~71.3 N)
+Southernmost Point Served: Ketchikan / Aleutian Islands (~55.0 N)
+Easternmost Point Served: Alaska-Canada (Yukon) border (~130.0 W)
+Westernmost Point Served: Bering Sea / Aleutian Islands (~173.0 W)
 
 ================================================================================
 END OF GEOGRAPHIC SEO DATA - Alaska Golf Carts

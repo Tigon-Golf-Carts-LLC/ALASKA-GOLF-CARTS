@@ -43,7 +43,7 @@ export default function ReturnPolicy() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">Contact Us</h2>
-          <p className="text-muted-foreground leading-relaxed">To discuss a return, defect claim, or warranty issue, please contact us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> and our Florida team will assist you.</p>
+          <p className="text-muted-foreground leading-relaxed">To discuss a return, defect claim, or warranty issue, please contact us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> and our Alaska team will assist you.</p>
         </section>
       </div>
     </div>

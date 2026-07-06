@@ -18,7 +18,7 @@ export default function TermsConditions() {
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
           <h2 className="text-xl font-bold mb-3">1. Agreement to Terms</h2>
-          <p className="text-muted-foreground leading-relaxed">By accessing the website alaskagolfcarts.com or purchasing any product or service from Alaska Golf Carts, you agree to be bound by these Terms &amp; Conditions. If you do not agree, please do not use our website or services. Alaska Golf Carts is a golf cart dealership serving customers throughout the state of Florida.</p>
+          <p className="text-muted-foreground leading-relaxed">By accessing the website alaskagolfcarts.com or purchasing any product or service from Alaska Golf Carts, you agree to be bound by these Terms &amp; Conditions. If you do not agree, please do not use our website or services. Alaska Golf Carts is a golf cart dealership serving customers throughout the state of Alaska.</p>
         </section>
 
         <section>
@@ -48,7 +48,7 @@ export default function TermsConditions() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">7. Governing Law</h2>
-          <p className="text-muted-foreground leading-relaxed">These Terms &amp; Conditions shall be governed by and construed in accordance with the laws of the State of Florida, without regard to its conflict of law provisions.</p>
+          <p className="text-muted-foreground leading-relaxed">These Terms &amp; Conditions shall be governed by and construed in accordance with the laws of the State of Alaska, without regard to its conflict of law provisions.</p>
         </section>
 
         <section>

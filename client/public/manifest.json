@@ -1,7 +1,7 @@
 {
   "name": "Alaska Golf Carts — Golf Carts for Sale",
   "short_name": "Alaska Golf Carts",
-  "description": "Golf carts for sale at great prices. Florida statewide service. New and used golf carts from 13 brands including Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Call 1-888-840-4490.",
+  "description": "Golf carts for sale at great prices. Alaska statewide service. New and used golf carts from 13 brands including Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Call 1-888-840-4490.",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#e8b53a",
@@ -87,7 +87,7 @@
       "name": "Find a Location",
       "short_name": "Locations",
       "url": "/service-area",
-      "description": "Florida Statewide Golf Cart Dealer — All 67 Counties"
+      "description": "Alaska Statewide Golf Cart Dealer — Serving Communities Across Alaska"
     },
     {
       "name": "Call Now",

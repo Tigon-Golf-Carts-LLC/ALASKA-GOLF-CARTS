@@ -7,8 +7,8 @@
     <image:image>
       <image:loc>https://alaskagolfcarts.com/og-image.png</image:loc>
       <image:title>Alaska Golf Carts — Golf Carts for Sale</image:title>
-      <image:caption>New and used golf carts for sale at great prices. Florida statewide service. Inventory updated daily.</image:caption>
-      <image:geo_location>Florida, United States</image:geo_location>
+      <image:caption>New and used golf carts for sale at great prices. Alaska statewide service. Inventory updated daily.</image:caption>
+      <image:geo_location>Alaska, United States</image:geo_location>
     </image:image>
     <image:image>
       <image:loc>https://alaskagolfcarts.com/logo.png</image:loc>
@@ -23,7 +23,7 @@
       <image:loc>https://s3.amazonaws.com/prod.docs.s3/carts/inventory-banner.jpg</image:loc>
       <image:title>Golf Cart Inventory — New and Used Golf Carts for Sale</image:title>
       <image:caption>Browse hundreds of new and used golf carts, electric carts, street-legal LSVs, and lifted models from 13 authorized brands.</image:caption>
-      <image:geo_location>Florida, United States</image:geo_location>
+      <image:geo_location>Alaska, United States</image:geo_location>
     </image:image>
   </url>
 
@@ -40,9 +40,9 @@
     <loc>https://alaskagolfcarts.com/service-area</loc>
     <image:image>
       <image:loc>https://alaskagolfcarts.com/og-image.png</image:loc>
-      <image:title>Golf Cart Dealers — Florida Statewide Service — All 67 Counties</image:title>
-      <image:caption>Find a Alaska Golf Carts dealer near you. Florida statewide service across all 67 counties.</image:caption>
-      <image:geo_location>Florida</image:geo_location>
+      <image:title>Golf Cart Dealers — Alaska Statewide Service — communities statewide across Alaska</image:title>
+      <image:caption>Find a Alaska Golf Carts dealer near you. Alaska statewide service across communities statewide across alaska.</image:caption>
+      <image:geo_location>Alaska</image:geo_location>
     </image:image>
   </url>
 
@@ -51,7 +51,7 @@
     <image:image>
       <image:loc>https://alaskagolfcarts.com/logo.png</image:loc>
       <image:title>About Alaska Golf Carts</image:title>
-      <image:caption>Alaska Golf Carts — Florida statewide golf cart dealer serving all 67 Florida counties and 13 authorized brands.</image:caption>
+      <image:caption>Alaska Golf Carts — Alaska statewide golf cart dealer serving communities statewide across Alaska and 13 authorized brands.</image:caption>
     </image:image>
   </url>
 

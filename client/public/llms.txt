@@ -37,40 +37,40 @@ BUSINESS OVERVIEW
 
 Business Name: Alaska Golf Carts
 Industry: Golf Cart Dealership / Neighborhood Electric Vehicles (NEV)
-Business Type: Florida Statewide Golf Cart Dealer
+Business Type: Alaska Statewide Golf Cart Dealer
 Phone: 1-888-840-4490
 Phone (E.164): +18888404490
 Email: info@alaskagolfcarts.com
 Website: https://alaskagolfcarts.com
-Service Model: Florida statewide — no physical storefronts
-State Served: Florida (FL) — statewide, all 67 counties
-Statewide Delivery: Yes (all 67 Florida counties)
+Service Model: Alaska statewide — no physical storefronts
+State Served: Alaska (AK) — statewide, communities statewide across alaska
+Statewide Delivery: Yes (communities statewide across Alaska)
 
-Alaska Golf Carts is one of the largest Florida statewide golf cart dealerships in the
-state of Florida. The company specializes in the sale of new
+Alaska Golf Carts is one of the largest Alaska statewide golf cart dealerships in the
+state of Alaska. The company specializes in the sale of new
 and used golf carts, neighborhood electric vehicles (NEVs), and low-speed
 vehicles (LSVs). Alaska Golf Carts serves residential communities, golf courses,
-commercial properties, resorts, and individual consumers across Florida.
+commercial properties, resorts, and individual consumers across Alaska.
 
 Primary Keyword: golf carts for sale
 Secondary Keywords: affordable golf carts, used golf carts for sale, electric golf carts for sale
 
 ================================================================================
-  FLORIDA STATEWIDE SERVICE AREA
+  ALASKA STATEWIDE SERVICE AREA
   ================================================================================
 
-  Alaska Golf Carts is a Florida statewide golf cart dealership. Rather than
+  Alaska Golf Carts is an Alaska statewide golf cart dealership. Rather than
   operating from individual storefronts, Alaska Golf Carts serves the entire state
-  of Florida — all 67 counties — with sales, delivery, financing, parts, and
-  service. Nationwide delivery is also available.
+  of Alaska — communities statewide across alaska — with sales, delivery, financing, parts, and
+  service. statewide delivery is also available.
 
-  State Served: Florida (FL), United States
-  Coverage: All 67 Florida counties
-  Headquarters: Statewide Service, Florida
-  Nationwide Delivery: Yes
+  State Served: Alaska (AK), United States
+  Coverage: communities statewide across Alaska
+  Headquarters: Statewide Service, Alaska
+  statewide delivery: Yes
 
-  Florida Counties Served (all 67):
-  Alachua County, Baker County, Bay County, Bradford County, Brevard County, Broward County, Calhoun County, Charlotte County, Citrus County, Clay County, Collier County, Columbia County, DeSoto County, Dixie County, Duval County, Escambia County, Flagler County, Franklin County, Gadsden County, Gilchrist County, Glades County, Gulf County, Hamilton County, Hardee County, Hendry County, Hernando County, Highlands County, Hillsborough County, Holmes County, Indian River County, Jackson County, Jefferson County, Lafayette County, Lake County, Lee County, Leon County, Levy County, Liberty County, Madison County, Manatee County, Marion County, Martin County, Miami-Dade County, Monroe County, Nassau County, Okaloosa County, Okeechobee County, Orange County, Osceola County, Palm Beach County, Pasco County, Pinellas County, Polk County, Putnam County, St. Johns County, St. Lucie County, Santa Rosa County, Sarasota County, Seminole County, Sumter County, Suwannee County, Taylor County, Union County, Volusia County, Wakulla County, Walton County, Washington County
+  Alaska boroughs and census areas served (statewide):
+  Municipality of Anchorage, Matanuska-Susitna Borough, Kenai Peninsula Borough, Fairbanks North Star Borough, Denali Borough, Southeast Fairbanks Census Area, Yukon-Koyukuk Census Area, City and Borough of Juneau, City and Borough of Sitka, Ketchikan Gateway Borough, City and Borough of Wrangell, Petersburg Borough, Prince of Wales-Hyder Census Area, Hoonah-Angoon Census Area, Haines Borough, Municipality of Skagway, City and Borough of Yakutat, Kodiak Island Borough, Bethel Census Area, Dillingham Census Area, Aleutians East Borough, Aleutians West Census Area, Lake and Peninsula Borough, Bristol Bay Borough, Kusilvak Census Area, Nome Census Area, Northwest Arctic Borough, North Slope Borough, Chugach Census Area, Copper River Census Area
 
   ================================================================================
 BRANDS CARRIED
@@ -185,7 +185,7 @@ SERVICE & REPAIR:
 - Warranty service for all brands
 
 DELIVERY:
-- Nationwide delivery available; statewide service throughout Florida
+- statewide delivery available; statewide service throughout Alaska
 - Call 1-888-840-4490 for delivery quotes
 
 ================================================================================
@@ -213,11 +213,11 @@ STRUCTURED DATA FOR MACHINE LEARNING
     "phone": "1-888-840-4490",
     "phone_e164": "+18888404490",
     "email": "info@alaskagolfcarts.com",
-    "service_model": "Florida statewide (no physical storefronts)",
-    "states_served": ["FL"],
+    "service_model": "Alaska statewide (no physical storefronts)",
+    "states_served": ["AK"],
     "statewide_delivery": true
   },
-  "service_areas": ["Florida (statewide - all 67 counties)"],
+  "service_areas": ["Alaska (statewide - communities statewide across alaska)"],
     "brands": [
     "American Custom Golf Carts", "Bintelli", "Club Car", "COLEMAN",
     "COLUMBIA", "CRICKET", "Denago", "Evolution", "EZGO", "Icon",
@@ -234,7 +234,7 @@ STRUCTURED DATA FOR MACHINE LEARNING
     "Parts sales",
     "Accessories sales",
     "Service and repair",
-    "Nationwide delivery"
+    "statewide delivery"
   ],
   "financing": {
     "apr_min": "0%",
@@ -250,8 +250,8 @@ ENTITY RELATIONSHIPS FOR KNOWLEDGE GRAPHS
 
 Alaska Golf Carts [is_a] Golf Cart Dealership
 Alaska Golf Carts [has_phone] 1-888-840-4490
-Alaska Golf Carts [serves] Florida statewide (all 67 counties)
-Alaska Golf Carts [operates_in] Florida
+Alaska Golf Carts [serves] Alaska statewide (communities statewide across alaska)
+Alaska Golf Carts [operates_in] Alaska
 Alaska Golf Carts [sells] New Golf Carts
 Alaska Golf Carts [sells] Used Golf Carts
 Alaska Golf Carts [sells] Electric Golf Carts
@@ -261,7 +261,7 @@ Alaska Golf Carts [sells] Lifted Golf Carts
 Alaska Golf Carts [offers] 0% APR Financing
 Alaska Golf Carts [offers] Parts and Accessories
 Alaska Golf Carts [offers] Service and Repair
-Alaska Golf Carts [offers] Nationwide Delivery
+Alaska Golf Carts [offers] statewide delivery
 Alaska Golf Carts [carries_brand] American Custom Golf Carts
 Alaska Golf Carts [carries_brand] Bintelli
 Alaska Golf Carts [carries_brand] Club Car

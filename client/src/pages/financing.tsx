@@ -127,7 +127,7 @@ export default function Financing() {
               Alaska Golf Carts offers financing on new golf carts, used golf carts, street-legal LSVs, and neighborhood electric vehicles (NEVs) through six lending partners. Programs include 0% APR for qualified buyers, rent-to-own for a path to ownership, and business financing for commercial fleets. Terms run up to 48 months. Most applications receive a decision in minutes.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> to discuss which financing program fits your budget, or apply directly through any of the six partner portals below. Available <Link href="/service-area" className="text-primary hover:underline">across all of Florida</Link>.
+              Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> to discuss which financing program fits your budget, or apply directly through any of the six partner portals below. Available <Link href="/service-area" className="text-primary hover:underline">across all of Alaska</Link>.
             </p>
           </div>
         </div>

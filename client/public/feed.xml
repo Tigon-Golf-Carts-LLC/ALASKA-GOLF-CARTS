@@ -5,7 +5,7 @@
   <channel>
     <title>Alaska Golf Carts Feed</title>
     <link>https://alaskagolfcarts.com</link>
-    <description>Golf carts for sale at great prices. Florida statewide service. Updated daily.</description>
+    <description>Golf carts for sale at great prices. Alaska statewide service. Updated daily.</description>
     <language>en-US</language>
     <atom:link href="https://alaskagolfcarts.com/feed.xml" rel="self" type="application/rss+xml"/>
     <lastBuildDate>Mon, 09 Jun 2026 22:55:00 +0000</lastBuildDate>
@@ -41,7 +41,7 @@
     <item>
       <title>Locations</title>
       <link>https://alaskagolfcarts.com/service-area</link>
-      <description>Florida statewide service. Nationwide delivery.</description>
+      <description>Alaska statewide service. statewide delivery.</description>
       <guid>https://alaskagolfcarts.com/service-area</guid>
       <pubDate>Mon, 09 Jun 2026 00:00:00 +0000</pubDate>
     </item>

@@ -49,7 +49,7 @@ function callToActionHtml(): string {
 function renderHome(data: { newCarts: CartSummaryForSeo[]; usedCarts: CartSummaryForSeo[]; totalCarts: number }): string {
   return `<div>
     <h1>Golf Carts for Sale — New &amp; Used Inventory Updated Daily</h1>
-    <p>Alaska Golf Carts sells new and used golf carts at MSRP pricing across all 67 counties in Florida, with statewide delivery. Our inventory of ${data.totalCarts || "hundreds of"} golf carts is refreshed every night, so prices and availability you see are current. Choose from 13 authorized brands including Club Car, EZGO, Yamaha, and Denago, plus street-legal LSVs and lifted carts. 0% APR financing is available through six lending partners.</p>
+    <p>Alaska Golf Carts sells new and used golf carts at MSRP pricing to communities across the state of Alaska, with statewide delivery. Our inventory of ${data.totalCarts || "hundreds of"} golf carts is refreshed every night, so prices and availability you see are current. Choose from 13 authorized brands including Club Car, EZGO, Yamaha, and Denago, plus street-legal LSVs and lifted carts. 0% APR financing is available through six lending partners.</p>
     ${callToActionHtml()}
 
     <section>
@@ -72,8 +72,8 @@ function renderHome(data: { newCarts: CartSummaryForSeo[]; usedCarts: CartSummar
     </section>
 
     <section>
-      <h2>Serving All of Florida</h2>
-      <p>Alaska Golf Carts delivers to all 67 Florida counties statewide, from Miami-Dade and Broward to Duval, Hillsborough, and Orange. See our <a href="/service-area">full service area</a>.</p>
+      <h2>Serving All of Alaska</h2>
+      <p>Alaska Golf Carts delivers to communities across Alaska statewide, from Anchorage and Fairbanks to Juneau, the Kenai Peninsula, and beyond. See our <a href="/service-area">full service area</a>.</p>
     </section>
 
     <section>
@@ -87,7 +87,7 @@ function renderInventory(data: { carts: CartSummaryForSeo[]; totalCarts: number 
   return `<div>
     ${breadcrumbHtml([{ name: "Home", href: "/" }, { name: "Inventory", href: "/inventory" }])}
     <h1>Golf Cart Inventory — New &amp; Used Golf Carts for Sale</h1>
-    <p>Browse ${data.totalCarts || "our full selection of"} new and used golf carts updated daily. Electric and gas golf carts from Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing available. Serving all of Florida.</p>
+    <p>Browse ${data.totalCarts || "our full selection of"} new and used golf carts updated daily. Electric and gas golf carts from Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing available. Serving all of Alaska.</p>
     ${callToActionHtml()}
     <section>
       <h2>Available Golf Carts</h2>
@@ -132,7 +132,7 @@ function renderFinancing(): string {
     ${breadcrumbHtml([{ name: "Home", href: "/" }, { name: "Financing", href: "/financing" }])}
     <h1>Golf Cart Financing — 0% APR, Up to 48 Months</h1>
     <p>Alaska Golf Carts offers financing on new golf carts, used golf carts, street-legal LSVs, and neighborhood electric vehicles (NEVs) through six lending partners. Programs include 0% APR for qualified buyers, rent-to-own for a path to ownership, and business financing for commercial fleets. Terms run up to 48 months. Most applications receive a decision in minutes.</p>
-    <p>Call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> to discuss which financing program fits your budget. Available across all of Florida.</p>
+    <p>Call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> to discuss which financing program fits your budget. Available across all of Alaska.</p>
 
     <section>
       <h2>Our Golf Cart Financing Partners</h2>
@@ -163,7 +163,7 @@ function renderFaq(): string {
     { q: "How much do golf carts cost at Alaska Golf Carts?", a: "New golf carts start around $9,995 and pre-owned carts start around $4,500. All units are priced at MSRP with no dealer markup, and pricing updates nightly with our inventory." },
     { q: "Do you offer financing?", a: "Yes. We work with six lending partners offering 0% APR for qualified buyers, rent-to-own, and business financing, with terms up to 48 months." },
     { q: "What brands do you carry?", a: "We are an authorized dealer for 13 brands including Club Car, EZGO, Yamaha, Denago, Evolution, Bintelli, Star EV, and more." },
-    { q: "Do you deliver?", a: "Yes. We deliver statewide across all 67 Florida counties, and we ship nationwide to the continental United States." },
+    { q: "Do you deliver?", a: "Yes. We deliver statewide to communities across Alaska. Call us for a delivery quote to your address." },
     { q: "Are street-legal LSVs available?", a: "Yes. We carry FMVSS 500-compliant low speed vehicles (LSVs) equipped for street use." },
     { q: "How often is inventory updated?", a: "Inventory and pricing are updated every night at 10:55 PM ET directly from our dealer management system." },
   ];
@@ -182,10 +182,10 @@ function renderAbout(): string {
   return `<div>
     ${breadcrumbHtml([{ name: "Home", href: "/" }, { name: "About", href: "/about" }])}
     <h1>About Alaska Golf Carts</h1>
-    <p>Alaska Golf Carts is a golf cart dealership serving the entire state of Florida — all 67 counties, from the Panhandle to the Keys. We sell new and used golf carts, electric vehicles, street-legal low speed vehicles (LSVs), and lifted carts from 13 authorized manufacturers at MSRP pricing, with statewide delivery. Inventory is updated every day at 10:55 PM ET.</p>
+    <p>Alaska Golf Carts is a golf cart dealership serving the entire state of Alaska — communities from Southeast and Southcentral to the Interior, Western Alaska, and the Arctic. We sell new and used golf carts, electric vehicles, street-legal low speed vehicles (LSVs), and lifted carts from 13 authorized manufacturers at MSRP pricing, with statewide delivery. Inventory is updated every day at 10:55 PM ET.</p>
     <ul>
-      <li>14 Retail Locations</li>
-      <li>9 States Served</li>
+      <li>Statewide Alaska Coverage</li>
+      <li>Serving All of Alaska</li>
       <li>13 Authorized Brands</li>
       <li>Daily Inventory Updates</li>
     </ul>
@@ -200,7 +200,7 @@ function renderAbout(): string {
         <li>Street-Legal LSVs — FMVSS 500-compliant low speed vehicles for road use.</li>
         <li>Electric Carts — 36V, 48V, and 72V battery-powered golf carts.</li>
         <li>0% APR Financing — Six lending partners, terms up to 48 months.</li>
-        <li>Nationwide Delivery — We ship to any address in the continental US.</li>
+        <li>Statewide Delivery — We deliver to communities across Alaska.</li>
         <li>Service &amp; Repair — Factory-trained technicians for all major brands.</li>
         <li>Parts &amp; Accessories — OEM and aftermarket parts for all 13 brands.</li>
       </ul>
@@ -218,7 +218,7 @@ function renderAbout(): string {
 
     <section>
       <h2>Where We Serve</h2>
-      <p>Serving all 67 Florida counties with statewide delivery. See the full service area on the <a href="/service-area">service area page</a>.</p>
+      <p>Serving communities across all of Alaska with statewide delivery. See the full service area on the <a href="/service-area">service area page</a>.</p>
     </section>
     ${callToActionHtml()}
   </div>`;
@@ -226,22 +226,22 @@ function renderAbout(): string {
 
 function renderServiceArea(): string {
   const regions = [
-    { name: "Northwest Florida & the Panhandle", count: 18 },
-    { name: "North & Northeast Florida", count: 17 },
-    { name: "Central Florida", count: 14 },
-    { name: "Southwest Florida", count: 10 },
-    { name: "Southeast Florida & the Keys", count: 8 },
+    { name: "Southcentral Alaska", count: 12 },
+    { name: "Kenai Peninsula & Prince William Sound", count: 11 },
+    { name: "Interior Alaska", count: 10 },
+    { name: "Southeast Alaska (Inside Passage)", count: 11 },
+    { name: "Northern, Arctic & Western Alaska", count: 9 },
   ];
   return `<div>
     ${breadcrumbHtml([{ name: "Home", href: "/" }, { name: "Service Area", href: "/service-area" }])}
-    <h1>Florida Golf Cart Service Area — All 67 Counties</h1>
-    <p>Alaska Golf Carts sells and delivers new and used golf carts across the entire state of Florida — every one of the state's 67 counties. Every order is backed by 13 authorized brands and on-site financing. Wherever you are in Florida, statewide delivery is available — call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> for a delivery quote to your address.</p>
+    <h1>Alaska Golf Cart Service Area — Statewide Delivery</h1>
+    <p>Alaska Golf Carts sells and delivers new and used golf carts to communities across the entire state of Alaska — from Southcentral and the Interior to Southeast, the Arctic, and Western Alaska. Every order is backed by 13 authorized brands and on-site financing. Wherever you are in Alaska, statewide delivery is available — call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> for a delivery quote to your address.</p>
     <section>
-      ${regions.map((r) => `<article><h2>${esc(r.name)}</h2><p>${r.count} counties served</p></article>`).join("\n")}
+      ${regions.map((r) => `<article><h2>${esc(r.name)}</h2><p>${r.count} communities served</p></article>`).join("\n")}
     </section>
     <section>
-      <h2>Statewide Florida Delivery</h2>
-      <p>We deliver golf carts to every county in Florida — from the Panhandle to the Keys. Call ${PHONE_NUMBER} to get a delivery quote and confirm availability in your area.</p>
+      <h2>Statewide Alaska Delivery</h2>
+      <p>We deliver golf carts to communities across Alaska — from Southeast to the Arctic. Call ${PHONE_NUMBER} to get a delivery quote and confirm availability in your area.</p>
     </section>
     ${callToActionHtml()}
   </div>`;
@@ -268,7 +268,7 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
       { h2: "Pricing &amp; Inventory Accuracy", p: "Inventory, pricing, and availability are updated nightly from our dealer management system. While we strive for accuracy, errors may occur. All pricing is subject to change and final confirmation with our sales team prior to purchase." },
       { h2: "No Warranty on Website Content", p: "This website and its content are provided \"as is\" without warranties of any kind, express or implied. We do not guarantee the website will be uninterrupted, error-free, or free of viruses." },
       { h2: "Limitation of Liability", p: "Alaska Golf Carts shall not be liable for any indirect, incidental, or consequential damages arising from your use of this website." },
-      { h2: "Governing Law", p: `These Terms &amp; Conditions are governed by the laws of the State of Florida. Contact us at <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> with any questions.` },
+      { h2: "Governing Law", p: `These Terms &amp; Conditions are governed by the laws of the State of Alaska. Contact us at <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> with any questions.` },
     ],
   },
   "/return-policy": {
@@ -300,8 +300,8 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Delivery Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Nationwide Delivery", p: "Alaska Golf Carts offers delivery to any address in the continental United States, coordinated through licensed transport carriers. We do not ship to Alaska, Hawaii, or US territories at this time." },
-      { h2: "Local Pickup", p: "Alaska Golf Carts delivers statewide to all 67 Florida counties. Local pickup can also be arranged by appointment." },
+      { h2: "Statewide Delivery", p: "Alaska Golf Carts offers delivery to communities across the state of Alaska, coordinated through licensed transport carriers. Call us to confirm delivery availability to your address." },
+      { h2: "Local Pickup", p: "Alaska Golf Carts delivers statewide to communities across Alaska. Local pickup can also be arranged by appointment." },
       { h2: "Delivery Timeframes", p: "Local and regional deliveries typically take 3–10 business days. Long-distance deliveries may take 7–21 business days. Timeframes are estimates and are not guaranteed." },
       { h2: "Delivery Preparation", p: "All golf carts are inspected and prepped prior to delivery, including a pre-delivery inspection (PDI), battery check, and tire inflation." },
       { h2: "Receiving Your Delivery", p: `An adult (18+) must be present to receive and sign for delivery. If damage is noted, document it on the delivery paperwork and contact us immediately at <a href="${PHONE_TEL}">${PHONE_NUMBER}</a>.` },
@@ -372,7 +372,7 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Diversity Policy",
     dateLine: "Last updated: June 2025",
     sections: [
-      { h2: "Our Commitment", p: "Alaska Golf Carts is committed to building and maintaining a diverse, equitable, and inclusive workplace and customer environment across the state of Florida." },
+      { h2: "Our Commitment", p: "Alaska Golf Carts is committed to building and maintaining a diverse, equitable, and inclusive workplace and customer environment across the state of Alaska." },
       { h2: "Equal Opportunity Employment", p: "We are an equal opportunity employer. All employment decisions are made without regard to race, color, religion, sex, national origin, disability, age, or any other protected characteristic." },
       { h2: "Inclusive Customer Service", p: "We are committed to providing equal, respectful, and professional service to all customers regardless of background, identity, or circumstance." },
       { h2: "Supplier Diversity", p: "We seek to work with a diverse range of vendors and suppliers, including minority-owned, women-owned, and veteran-owned businesses." },
@@ -395,10 +395,10 @@ const POLICY_PAGES: Record<string, PolicyPageDef> = {
     h1: "Staffing Report",
     dateLine: "Reporting period: 2024–2025",
     sections: [
-      { h2: "Overview", p: "This report provides a general overview of staffing at Alaska Golf Carts across our Florida operations, serving all 67 counties statewide." },
+      { h2: "Overview", p: "This report provides a general overview of staffing at Alaska Golf Carts across our Alaska operations, serving communities statewide." },
       { h2: "Workforce Size", p: "Alaska Golf Carts currently employs team members across sales, service, parts, delivery, and administrative functions." },
       { h2: "Roles &amp; Departments", p: "Sales Associates, Service Technicians, Parts &amp; Accessories staff, Delivery Drivers, Store Management, and Corporate &amp; Administrative teams support all locations." },
-      { h2: "Hiring Practices", p: "We recruit locally across Florida, valuing work ethic and trainability equally with prior experience. All positions are posted publicly." },
+      { h2: "Hiring Practices", p: "We recruit locally across Alaska, valuing work ethic and trainability equally with prior experience. All positions are posted publicly." },
       { h2: "Training &amp; Development", p: "New team members receive structured onboarding, and service technicians have access to brand-specific training from Club Car, EZGO, Yamaha, Denago, Evolution, and other authorized brands." },
       { h2: "Equal Opportunity", p: "Alaska Golf Carts is an equal opportunity employer. See our Diversity Policy for full details." },
     ],

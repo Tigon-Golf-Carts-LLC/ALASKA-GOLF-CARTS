@@ -15,10 +15,10 @@ Security: security@alaskagolfcarts.com
   YouTube: https://www.youtube.com/@AlaskaGolfCarts
 
 Business Type: Golf Cart Dealership & Sales
-Company Description: Alaska Golf Carts is a premier golf cart dealership with Florida statewide service (all 67 counties). We offer 808+ golf carts in inventory from 13 leading brands including American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, and Yamaha.
+Company Description: Alaska Golf Carts is a premier golf cart dealership with Alaska statewide service (communities statewide across alaska). We offer 808+ golf carts in inventory from 13 leading brands including American Custom Golf Carts, Bintelli, Club Car, COLEMAN, COLUMBIA, CRICKET, Denago, Evolution, EZGO, Icon, Star EV, Tara, and Yamaha.
 
-Dealership Locations: Florida statewide service
-Service Area: Florida (statewide, all 67 counties)
+Dealership Locations: Alaska statewide service
+Service Area: Alaska (statewide, communities statewide across alaska)
 Inventory Size: 808+ golf carts
 Authorized Brands: 13 premium golf cart manufacturers
 
@@ -69,7 +69,7 @@ The website is built using a modern full-stack JavaScript architecture:
 - Multi-brand inventory management (13 authorized brands)
 - Responsive mobile-first design
 - Financing options and information
-- Florida statewide service-area finder (all 67 counties)
+- Alaska statewide service-area finder (communities statewide across alaska)
 - Shopping cart functionality
 - Product detail pages with specifications
 - SEO-optimized content

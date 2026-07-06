@@ -36,18 +36,18 @@ const FAQ_SCHEMA = {
     },
     {
       "@type": "Question",
-      "name": "Does Alaska Golf Carts deliver across Florida?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Statewide delivery is available to all 67 Florida counties. Call 1-888-840-4490 for a delivery quote."}
+      "name": "Does Alaska Golf Carts deliver across Alaska?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Statewide delivery is available to communities across Alaska. Call 1-888-840-4490 for a delivery quote."}
     },
     {
       "@type": "Question",
       "name": "What areas does Alaska Golf Carts serve?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Alaska Golf Carts serves the entire state of Florida — all 67 counties, including Miami-Dade, Broward, Palm Beach, Hillsborough, Orange, Duval, Pinellas, Lee, Polk, Brevard, and every other Florida county. Statewide delivery is available."}
+      "acceptedAnswer": {"@type": "Answer", "text": "Alaska Golf Carts serves the entire state of Alaska — communities including Anchorage, Fairbanks, Juneau, Wasilla, Palmer, Sitka, Ketchikan, Kenai, Soldotna, Homer, Kodiak, and beyond. Statewide delivery is available."}
     },
     {
       "@type": "Question",
       "name": "Does Alaska Golf Carts accept trade-ins?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Trade-ins are accepted throughout Florida. Call 1-888-840-4490 to get a trade-in estimate."}
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. Trade-ins are accepted throughout Alaska. Call 1-888-840-4490 to get a trade-in estimate."}
     },
     {
       "@type": "Question",
@@ -85,19 +85,19 @@ const faqs = [
   },
   {
     q: "What is a lifted golf cart?",
-    a: "A lifted golf cart has an aftermarket suspension lift kit installed, raising the vehicle's ground clearance by 3 to 6 inches. Lifted carts can accommodate larger tires and are popular for off-road use, hunting, farm, and rough terrain. Alaska Golf Carts stocks pre-lifted models in our Florida inventory."
+    a: "A lifted golf cart has an aftermarket suspension lift kit installed, raising the vehicle's ground clearance by 3 to 6 inches. Lifted carts can accommodate larger tires and are popular for off-road use, hunting, farm, and rough terrain. Alaska Golf Carts stocks pre-lifted models in our Alaska inventory."
   },
   {
-    q: "Does Alaska Golf Carts deliver across Florida?",
-    a: "Yes. Statewide delivery is available to all 67 Florida counties. Call 1-888-840-4490 for a delivery quote to your address."
+    q: "Does Alaska Golf Carts deliver across Alaska?",
+    a: "Yes. Statewide delivery is available to communities across Alaska. Call 1-888-840-4490 for a delivery quote to your address."
   },
   {
     q: "What areas does Alaska Golf Carts serve?",
-    a: "Alaska Golf Carts serves the entire state of Florida — all 67 counties, including Miami-Dade, Broward, Palm Beach, Hillsborough, Orange, Duval, Pinellas, Lee, Polk, Brevard, and every other Florida county. Statewide delivery is available on new and used golf carts."
+    a: "Alaska Golf Carts serves the entire state of Alaska — communities including Anchorage, Fairbanks, Juneau, Wasilla, Palmer, Sitka, Ketchikan, Kenai, Soldotna, Homer, Kodiak, and beyond. Statewide delivery is available on new and used golf carts."
   },
   {
     q: "Does Alaska Golf Carts accept trade-ins?",
-    a: "Yes. Trade-ins are accepted throughout Florida. Call 1-888-840-4490 to get an estimated value."
+    a: "Yes. Trade-ins are accepted throughout Alaska. Call 1-888-840-4490 to get an estimated value."
   },
   {
     q: "How often is the inventory updated?",
@@ -137,7 +137,7 @@ export default function FAQ() {
     <div className="min-h-screen">
       <SeoHead
         title="Golf Cart FAQ — Buying, Financing & Street-Legal Questions | Alaska Golf Carts"
-        description="Golf cart buying questions answered: how much do they cost, what brands are available, how does financing work, and what is a street-legal LSV. Serving all of Florida — call 1-888-840-4490."
+        description="Golf cart buying questions answered: how much do they cost, what brands are available, how does financing work, and what is a street-legal LSV. Serving all of Alaska — call 1-888-840-4490."
         canonical="https://alaskagolfcarts.com/faq"
         schema={FAQ_SCHEMA}
       />
@@ -156,7 +156,7 @@ export default function FAQ() {
             Frequently Asked Questions About Golf Carts
           </h1>
           <p className="text-muted-foreground text-base leading-relaxed max-w-2xl mx-auto">
-            Alaska Golf Carts sells new and used golf carts, electric vehicles, street-legal LSVs, and lifted carts from 13 authorized brands across all of Florida. Below are answers to the most common questions. Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> for specifics on current inventory and pricing.
+            Alaska Golf Carts sells new and used golf carts, electric vehicles, street-legal LSVs, and lifted carts from 13 authorized brands across all of Alaska. Below are answers to the most common questions. Call <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a> for specifics on current inventory and pricing.
           </p>
         </div>
       </section>

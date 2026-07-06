@@ -6,13 +6,13 @@
   <channel>
     <title>Alaska Golf Carts — Golf Carts for Sale</title>
     <link>https://alaskagolfcarts.com</link>
-    <description>New and used golf carts for sale at great prices. 13 brands. Florida statewide service. Nationwide delivery.</description>
+    <description>New and used golf carts for sale at great prices. 13 brands. Alaska statewide service. statewide delivery.</description>
 
     <!-- Club Car Carryall -->
     <item>
       <g:id>club-car-carryall-new</g:id>
       <g:title>Club Car Carryall Utility Golf Cart — New</g:title>
-      <g:description>New Club Car Carryall utility vehicle. Cargo bed, heavy-duty frame, work-ready. Available at Alaska Golf Carts — serving all 67 Florida counties. Call 1-888-840-4490.</g:description>
+      <g:description>New Club Car Carryall utility vehicle. Cargo bed, heavy-duty frame, work-ready. Available at Alaska Golf Carts — serving communities statewide across Alaska. Call 1-888-840-4490.</g:description>
       <g:link>https://alaskagolfcarts.com/inventory?make=Club+Car&amp;model=Carryall</g:link>
       <g:image_link>https://alaskagolfcarts.com/og-image.png</g:image_link>
       <g:condition>new</g:condition>

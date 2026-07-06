@@ -179,7 +179,7 @@ export default function Inventory() {
     if (seoIndexableMake) parts.push(seoIndexableMake);
     const filterStr = parts.join(" ") || "golf";
     const countStr = data ? `${data.totalCarts.toLocaleString()} matching` : "800+";
-    return `Browse ${countStr} ${filterStr} cart${data?.totalCarts !== 1 ? "s" : ""} at Alaska Golf Carts — updated daily. 0% APR financing. Serving all of Florida. Call 1-888-840-4490.`;
+    return `Browse ${countStr} ${filterStr} cart${data?.totalCarts !== 1 ? "s" : ""} at Alaska Golf Carts — updated daily. 0% APR financing. Serving all of Alaska. Call 1-888-840-4490.`;
   }, [filters.isNew, filters.isUsed, seoIndexableMake, data?.totalCarts]);
 
   const seoCanonical = useMemo(() => {

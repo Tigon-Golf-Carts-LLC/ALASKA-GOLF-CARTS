@@ -17,13 +17,13 @@ export default function DeliveryPolicy() {
 
       <div className="prose prose-sm dark:prose-invert max-w-none space-y-8">
         <section>
-          <h2 className="text-xl font-bold mb-3">Nationwide Delivery</h2>
-          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts offers delivery to any address in the continental United States. Delivery is coordinated through licensed transport carriers and our own fleet where available. Delivery costs, lead times, and logistics are discussed and agreed upon at the time of purchase. We do not ship to Alaska, Hawaii, or US territories at this time.</p>
+          <h2 className="text-xl font-bold mb-3">Statewide Delivery</h2>
+          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts offers delivery to communities across the state of Alaska. Delivery is coordinated through licensed transport carriers and our own fleet where available. Delivery costs, lead times, and logistics are discussed and agreed upon at the time of purchase. Call us to confirm delivery availability to your address.</p>
         </section>
 
         <section>
           <h2 className="text-xl font-bold mb-3">Local Pickup</h2>
-          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts delivers statewide to all 67 Florida counties. Local pickup can also be arranged by appointment during normal business hours. Please call ahead to confirm your unit is ready and to schedule delivery or pickup.</p>
+          <p className="text-muted-foreground leading-relaxed">Alaska Golf Carts delivers statewide to communities across Alaska. Local pickup can also be arranged by appointment during normal business hours. Please call ahead to confirm your unit is ready and to schedule delivery or pickup.</p>
         </section>
 
         <section>

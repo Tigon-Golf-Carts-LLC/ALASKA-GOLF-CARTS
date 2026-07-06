@@ -23,7 +23,7 @@ export default function FeedbackPolicy() {
 
         <section>
           <h2 className="text-xl font-bold mb-3">How to Submit Feedback</h2>
-          <p className="text-muted-foreground leading-relaxed">Feedback can be submitted by calling us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a>, reaching our team anywhere in Florida, or leaving a review on Google. We encourage honest and detailed feedback to help us understand your experience.</p>
+          <p className="text-muted-foreground leading-relaxed">Feedback can be submitted by calling us at <a href={PHONE_TEL} className="text-primary font-semibold hover:underline">{PHONE_NUMBER}</a>, reaching our team anywhere in Alaska, or leaving a review on Google. We encourage honest and detailed feedback to help us understand your experience.</p>
         </section>
 
         <section>

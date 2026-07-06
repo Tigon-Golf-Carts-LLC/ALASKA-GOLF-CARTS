@@ -11,288 +11,176 @@
       "url": "https://alaskagolfcarts.com",
       "telephone": "1-888-840-4490",
       "email": "info@alaskagolfcarts.com",
-      "description": "Alaska Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida counties, selling new and used golf carts from 13 authorized brands. Nationwide delivery available. Inventory updated daily. 0% APR financing available.",
+      "description": "Alaska Golf Carts is an Alaska statewide golf cart dealership serving communities across all Alaska boroughs and census areas, selling new and used golf carts from 13 authorized brands. Statewide delivery available throughout Alaska. Inventory updated daily. 0% APR financing available.",
       "priceRange": "$$",
       "currenciesAccepted": "USD",
       "paymentAccepted": "Cash, Credit Card, Financing",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Statewide Service",
-        "addressRegion": "FL",
+        "addressRegion": "AK",
         "addressCountry": "US"
       },
       "areaServed": [
         {
           "@type": "State",
-          "name": "Florida"
+          "name": "Alaska"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Alachua County"
+          "name": "Municipality of Anchorage"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Baker County"
+          "name": "Matanuska-Susitna Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Bay County"
+          "name": "Kenai Peninsula Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Bradford County"
+          "name": "Fairbanks North Star Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Brevard County"
+          "name": "City and Borough of Juneau"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Broward County"
+          "name": "City and Borough of Sitka"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Calhoun County"
+          "name": "Ketchikan Gateway Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Charlotte County"
+          "name": "Kodiak Island Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Citrus County"
+          "name": "North Slope Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Clay County"
+          "name": "Northwest Arctic Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Collier County"
+          "name": "Petersburg Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Columbia County"
+          "name": "Haines Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "DeSoto County"
+          "name": "Skagway Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Dixie County"
+          "name": "Denali Borough"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Duval County"
+          "name": "Bethel Census Area"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Escambia County"
+          "name": "Nome Census Area"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Flagler County"
+          "name": "Dillingham Census Area"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Franklin County"
+          "name": "Wasilla"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Gadsden County"
+          "name": "Palmer"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Gilchrist County"
+          "name": "Eagle River"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Glades County"
+          "name": "Kenai"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Gulf County"
+          "name": "Soldotna"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Hamilton County"
+          "name": "Homer"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Hardee County"
+          "name": "Seward"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Hendry County"
+          "name": "Valdez"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Hernando County"
+          "name": "Cordova"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Highlands County"
+          "name": "North Pole"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Hillsborough County"
+          "name": "Delta Junction"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Holmes County"
+          "name": "Wrangell"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Indian River County"
+          "name": "Utqiagvik (Barrow)"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Jackson County"
+          "name": "Kotzebue"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Jefferson County"
+          "name": "Nome"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Lafayette County"
+          "name": "Bethel"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Lake County"
+          "name": "Dillingham"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Lee County"
+          "name": "Kodiak"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Leon County"
+          "name": "Unalaska (Dutch Harbor)"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Levy County"
+          "name": "Talkeetna"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Liberty County"
+          "name": "Girdwood"
         },
         {
           "@type": "AdministrativeArea",
-          "name": "Madison County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Manatee County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Marion County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Martin County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Miami-Dade County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Monroe County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Nassau County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Okaloosa County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Okeechobee County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Orange County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Osceola County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Palm Beach County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Pasco County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Pinellas County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Polk County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Putnam County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "St. Johns County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "St. Lucie County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Santa Rosa County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Sarasota County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Seminole County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Sumter County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Suwannee County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Taylor County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Union County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Volusia County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Wakulla County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Walton County"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Washington County"
+          "name": "Craig"
         },
         {
           "@type": "Country",
@@ -368,7 +256,7 @@
       ],
       "foundingLocation": {
         "@type": "Place",
-        "name": "Florida, United States"
+        "name": "Alaska, United States"
       },
       "sameAs": [
         "https://www.facebook.com/AlaskaGolfCarts",
@@ -381,7 +269,7 @@
       "@id": "https://alaskagolfcarts.com/#website",
       "url": "https://alaskagolfcarts.com",
       "name": "Alaska Golf Carts",
-      "description": "Golf carts for sale at great prices, serving all of Florida statewide. Inventory updated daily from 13 top brands. Nationwide delivery available.",
+      "description": "Golf carts for sale at great prices, serving all of Alaska statewide. Inventory updated daily from 13 top brands. Statewide delivery available throughout Alaska.",
       "publisher": {
         "@id": "https://alaskagolfcarts.com#organization"
       },
@@ -403,7 +291,7 @@
       "about": {
         "@id": "https://alaskagolfcarts.com#organization"
       },
-      "description": "Golf carts for sale at great prices across Florida statewide. Inventory updated daily. New and used golf carts from Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Nationwide delivery. Call 1-888-840-4490.",
+      "description": "Golf carts for sale at great prices across Alaska statewide. Inventory updated daily. New and used golf carts from Club Car, EZGO, Yamaha, Denago, Evolution and more. 0% APR financing. Statewide delivery throughout Alaska. Call 1-888-840-4490.",
       "inLanguage": "en-US"
     },
     {
@@ -447,15 +335,15 @@
           "name": "What areas does Alaska Golf Carts serve?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Alaska Golf Carts is a Florida statewide golf cart dealership serving all 67 Florida counties, from the Panhandle to the Keys. Nationwide delivery is also available. Call 1-888-840-4490."
+            "text": "Alaska Golf Carts is an Alaska statewide golf cart dealership serving communities across all Alaska boroughs and census areas, from Southeast Alaska to the Arctic. Statewide delivery throughout Alaska is also available. Call 1-888-840-4490."
           }
         },
         {
           "@type": "Question",
-          "name": "Does Alaska Golf Carts deliver nationwide?",
+          "name": "Does Alaska Golf Carts deliver statewide across Alaska?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We serve all of Florida statewide and offer nationwide delivery anywhere in the United States. Call 1-888-840-4490 for a delivery quote."
+            "text": "Yes. We serve all of Alaska statewide and offer delivery throughout Alaska. Call 1-888-840-4490 for a delivery quote."
           }
         },
         {
@@ -463,7 +351,7 @@
           "name": "Does Alaska Golf Carts accept trade-ins?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Trade-ins are accepted statewide across Florida. Call 1-888-840-4490 to discuss your trade-in value."
+            "text": "Yes. Trade-ins are accepted statewide across Alaska. Call 1-888-840-4490 to discuss your trade-in value."
           }
         },
         {
