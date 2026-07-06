@@ -3,7 +3,7 @@ import { Phone, MapPin, Tag, Truck, Shield, Award, Flame, CreditCard } from "luc
 import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 import { useState, useEffect } from "react";
-import logoImg from "@assets/discounted_golf_carts_(3)_1781021848486.png";
+import logoImg from "@assets/ALASKA_GOLF_CARTS_1783351011062.png";
 
 function getSecondsUntilNextUpdate() {
   const now = new Date();

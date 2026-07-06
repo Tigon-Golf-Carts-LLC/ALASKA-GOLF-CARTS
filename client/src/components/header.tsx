@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/theme-provider";
 import { PHONE_NUMBER, PHONE_TEL } from "@/lib/constants";
 import { useState, useEffect } from "react";
-import logoImg from "@assets/discounted_golf_carts_(3)_1781021848486.png";
+import logoImg from "@assets/ALASKA_GOLF_CARTS_1783351011062.png";
 
 function getSecondsUntilNextUpdate() {
   const now = new Date();
