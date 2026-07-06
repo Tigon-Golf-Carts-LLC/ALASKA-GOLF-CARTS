@@ -421,7 +421,7 @@ export default function Home() {
         {/* Headline */}
         <div className="relative z-10 text-center pt-12 pb-6 px-4">
           <h1 className="text-5xl sm:text-6xl font-black tracking-tight text-white leading-[1.1] mb-3">
-            Golf Carts<br /><span className="text-primary">For Sale.</span>
+            Alaska<br /><span className="text-primary">Golf Carts</span>
           </h1>
           <p className="text-white/60 text-sm sm:text-base max-w-lg mx-auto">
             New &amp; used electric golf carts, street-legal LSVs, and lifted carts — great pricing updated nightly, delivered across Florida.
