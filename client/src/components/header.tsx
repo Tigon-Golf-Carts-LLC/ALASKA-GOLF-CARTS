@@ -76,7 +76,7 @@ export function Header() {
                 <img src={logoImg} alt="Alaska Golf Carts" className="h-10 w-10 object-contain" />
                 <div className="leading-tight">
                   <span className="text-lg font-extrabold tracking-tight block">
-                    Alaska <span className="text-primary">Golf Carts</span>
+                    <span className="text-primary">Alaska</span> Golf Carts
                   </span>
                   <span className="text-[10px] text-muted-foreground font-medium tracking-widest uppercase hidden sm:block">alaskagolfcarts.com</span>
                 </div>
