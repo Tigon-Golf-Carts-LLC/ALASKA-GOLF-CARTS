@@ -466,7 +466,7 @@ export default function Home() {
                     data-testid={`slide-card-${cart._id}`}
                   >
                     <div
-                      className={`rounded-xl overflow-hidden flex flex-col ${isCenter ? 'ring-2 ring-primary shadow-[0_0_40px_rgba(255,60,40,0.4)]' : 'shadow-xl'}`}
+                      className={`rounded-xl overflow-hidden flex flex-col ${isCenter ? 'ring-2 ring-primary shadow-[0_0_40px_rgba(232,181,58,0.45)]' : 'shadow-xl'}`}
                       style={{ background: '#111418' }}
                     >
                       <Link
