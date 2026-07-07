@@ -193,7 +193,7 @@ export function Footer() {
         </div>
 
         <div className="border-t px-4 py-5 text-center text-xs text-muted-foreground space-y-1">
-          <p>&copy; {new Date().getFullYear()} Alaska Golf Carts. All rights reserved. | alaskagolfcarts.com</p>
+          <p>&copy; {new Date().getFullYear()} Alaska Golf Carts. All rights reserved. | <a href="https://alaskagolfcarts.com" className="hover:text-primary transition-colors" data-testid="link-footer-domain">alaskagolfcarts.com</a></p>
           <p>Alaska Golf Carts proudly serves communities across the state of Alaska, with statewide delivery on new and used golf carts.</p>
         </div>
       </div>
