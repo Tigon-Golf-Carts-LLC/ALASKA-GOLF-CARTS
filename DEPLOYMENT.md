@@ -34,15 +34,20 @@ at 10:55 PM ET, and the deploy workflow rebuilds daily to match.
 once a day at 04:05 UTC, and on demand via **Actions → Deploy to GitHub Pages →
 Run workflow**.
 
-One-time setup:
+One-time setup — **do this first, the workflow cannot do it for you**:
 
 1. **Settings → Pages → Build and deployment → Source: GitHub Actions.**
-   (The workflow also enables this itself on first run.)
+   Until Pages is switched on this way, the deploy job fails with
+   `Resource not accessible by integration`: enabling Pages needs an API call
+   the default `GITHUB_TOKEN` is not permitted to make, so it has to be done by
+   hand once.
 2. Push to `main`, or run the workflow manually.
 
 That's it — the site comes up at `https://<owner>.github.io/<repo>/`. The
-workflow reads the sub-path from the Pages API and builds with the matching
-`BASE_PATH`, so assets, routes, and links all resolve under it.
+workflow derives the sub-path from the repository name and builds with the
+matching `BASE_PATH`, so assets, routes, and links all resolve under it. A repo
+named `<owner>.github.io` and a build with `CUSTOM_DOMAIN` set both serve from
+the root instead.
 
 ### Custom domain (alaskagolfcarts.com)
 

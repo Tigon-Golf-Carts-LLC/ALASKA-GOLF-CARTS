@@ -32,25 +32,35 @@ jobs:
 
       - run: npm ci
 
-      - name: Configure GitHub Pages
-        id: pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
       - name: Type check
         run: npm run check
 
       - name: Test
         run: npm test
 
+      # Worked out here rather than via actions/configure-pages, which needs an
+      # API call the default GITHUB_TOKEN is not always allowed to make. Derived
+      # from GITHUB_REPOSITORY so it is correct on every trigger, including the
+      # scheduled rebuild.
+      - name: Resolve base path
+        env:
+          CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+        run: |
+          repo="${GITHUB_REPOSITORY#*/}"
+          owner_site="$(echo "${GITHUB_REPOSITORY_OWNER}.github.io" | tr '[:upper:]' '[:lower:]')"
+          if [ -n "$CUSTOM_DOMAIN" ] || [ "$(echo "$repo" | tr '[:upper:]' '[:lower:]')" = "$owner_site" ]; then
+            # Custom domain, or a user/org site — both serve from the root.
+            echo "BASE_PATH=/" >> "$GITHUB_ENV"
+          else
+            # Project site: https://<owner>.github.io/<repo>/
+            echo "BASE_PATH=/$repo/" >> "$GITHUB_ENV"
+          fi
+
       # Pulls the DMS inventory into static JSON, builds the bundle, then writes
       # one prerendered HTML file per route plus sitemap.xml. Fails loudly if the
       # DMS API is unreachable, which leaves the previous deployment in place.
       - name: Build static site
         env:
-          # A custom domain serves from the root; a project site serves from /<repo>/.
-          BASE_PATH: ${{ vars.CUSTOM_DOMAIN != '' && '/' || steps.pages.outputs.base_path }}
           CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
         run: npm run build:static
 
