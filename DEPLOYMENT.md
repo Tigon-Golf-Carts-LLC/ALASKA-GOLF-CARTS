@@ -43,11 +43,17 @@ One-time setup — **do this first, the workflow cannot do it for you**:
    hand once.
 2. Push to `main`, or run the workflow manually.
 
-That's it — the site comes up at `https://<owner>.github.io/<repo>/`. The
-workflow derives the sub-path from the repository name and builds with the
-matching `BASE_PATH`, so assets, routes, and links all resolve under it. A repo
-named `<owner>.github.io` and a build with `CUSTOM_DOMAIN` set both serve from
-the root instead.
+That's it — the site comes up at `https://<owner>.github.io/<repo>/`.
+
+The workflow asks the Pages API where the site is actually served from and
+builds with the matching `BASE_PATH`, so assets, routes, and links resolve
+under it. **Getting this wrong breaks the whole page**: a site built for
+`/<repo>/` but served from a custom domain at the root 404s its own CSS and JS,
+and the browser is left showing the bare no-JS fallback markup. If the API read
+is refused the workflow falls back to the repository name, which is right for a
+project site but not for a custom domain — set `CUSTOM_DOMAIN` in that case (see
+below) so the base path never has to be guessed. Each run prints the base path
+it resolved and where it came from.
 
 ### Custom domain (alaskagolfcarts.com)
 

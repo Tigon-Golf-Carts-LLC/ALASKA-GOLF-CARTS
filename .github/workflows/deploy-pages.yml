@@ -38,23 +38,53 @@ jobs:
       - name: Test
         run: npm test
 
-      # Worked out here rather than via actions/configure-pages, which needs an
-      # API call the default GITHUB_TOKEN is not always allowed to make. Derived
-      # from GITHUB_REPOSITORY so it is correct on every trigger, including the
-      # scheduled rebuild.
+      # Asks Pages where the site is actually served from. Guessing this wrong
+      # breaks every asset URL: a site built for /<repo>/ but served from a
+      # custom domain at the root 404s its own CSS and JS, leaving only the
+      # no-JS fallback markup on screen.
+      #
+      # No enablement here — creating a Pages site needs an API call the default
+      # GITHUB_TOKEN is not permitted to make, and it is a one-time manual
+      # setting anyway. Reading an already-enabled site is allowed. Non-fatal,
+      # so the fallback below still runs if the read is refused.
+      - name: Ask GitHub Pages for the site URL
+        id: pages
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+
       - name: Resolve base path
         env:
           CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: |
-          repo="${GITHUB_REPOSITORY#*/}"
-          owner_site="$(echo "${GITHUB_REPOSITORY_OWNER}.github.io" | tr '[:upper:]' '[:lower:]')"
-          if [ -n "$CUSTOM_DOMAIN" ] || [ "$(echo "$repo" | tr '[:upper:]' '[:lower:]')" = "$owner_site" ]; then
-            # Custom domain, or a user/org site — both serve from the root.
-            echo "BASE_PATH=/" >> "$GITHUB_ENV"
+          set -u
+          if [ -n "${CUSTOM_DOMAIN:-}" ]; then
+            # An explicit custom domain always serves from the root.
+            base="/"
+            source="CUSTOM_DOMAIN variable"
+          elif [ -n "${PAGES_ORIGIN:-}" ]; then
+            # What Pages reports: "" or "/" for a custom domain or user site,
+            # "/<repo>" for a project site.
+            case "${PAGES_BASE_PATH:-}" in
+              ""|"/") base="/" ;;
+              */)     base="${PAGES_BASE_PATH}" ;;
+              *)      base="${PAGES_BASE_PATH}/" ;;
+            esac
+            source="Pages site $PAGES_ORIGIN"
           else
-            # Project site: https://<owner>.github.io/<repo>/
-            echo "BASE_PATH=/$repo/" >> "$GITHUB_ENV"
+            # Pages could not be read — fall back to the repository name.
+            repo="${GITHUB_REPOSITORY#*/}"
+            owner_site="$(echo "${GITHUB_REPOSITORY_OWNER}.github.io" | tr '[:upper:]' '[:lower:]')"
+            if [ "$(echo "$repo" | tr '[:upper:]' '[:lower:]')" = "$owner_site" ]; then
+              base="/"
+            else
+              base="/$repo/"
+            fi
+            source="repository name (Pages config unavailable)"
           fi
+          echo "Serving from \"$base\" — resolved from $source"
+          echo "BASE_PATH=$base" >> "$GITHUB_ENV"
 
       # Pulls the DMS inventory into static JSON, builds the bundle, then writes
       # one prerendered HTML file per route plus sitemap.xml. Fails loudly if the
