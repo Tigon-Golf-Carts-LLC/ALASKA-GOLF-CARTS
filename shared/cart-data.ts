@@ -89,6 +89,29 @@ export function getCartImageUrls(cart: AnyCart): string[] {
 }
 
 /**
+ * Why a cart is kept off the website, or null when it belongs there.
+ *
+ * Two rules, both meaning "not ready to advertise":
+ *
+ *  - `isRFS: false` — the DMS marks the cart as not for the website. Only an
+ *    explicit false excludes: a cart with the field absent is treated as
+ *    listable, so an unset field never silently drops inventory.
+ *  - no published photo — a listing that renders a placeholder is worse than no
+ *    listing. Note this is about `imageUrls`; a cart pictured only by in-house
+ *    photos counts as having none, because those are not publicly hosted.
+ */
+export function getExclusionReason(cart: AnyCart): "not-for-sale" | "no-photo" | null {
+  if (cart?.isRFS === false) return "not-for-sale";
+  if (getCartImageUrls(cart).length === 0) return "no-photo";
+  return null;
+}
+
+/** Whether a cart should appear anywhere on the website. */
+export function isListable(cart: AnyCart): boolean {
+  return getExclusionReason(cart) === null;
+}
+
+/**
  * True when a cart has in-house photos but nothing published to the website —
  * it renders a placeholder despite having pictures in the DMS.
  */

@@ -6,6 +6,7 @@ import {
   buildSitemapXml,
   buildSlugMap,
   filterCarts,
+  isListable,
   parseCartFilters,
   parsePriceSort,
   sortCarts,
@@ -126,7 +127,9 @@ export async function fetchAllCartsFromDMS(): Promise<AnyCart[]> {
 async function getAllCarts(): Promise<AnyCart[]> {
   const cached = getCached("allCarts");
   if (cached) return cached;
-  const carts = await fetchAllCartsFromDMS();
+  // Carts held back by the DMS or without a published photo never reach the
+  // site, the same rule the static build applies.
+  const carts = (await fetchAllCartsFromDMS()).filter(isListable);
   setCache("allCarts", carts);
   return carts;
 }

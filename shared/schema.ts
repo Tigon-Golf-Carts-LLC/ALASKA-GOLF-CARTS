@@ -68,6 +68,8 @@ export const CartSchema = z.object({
   imageUrls: z.array(z.string()).optional().nullable(),
   internalCartImageUrls: z.array(z.string()).optional().nullable(),
   status: z.string().optional().nullable(),
+  // Ready For Sale. False means the DMS is holding the cart back from the website.
+  isRFS: z.boolean().optional().nullable(),
 });
 
 export const StoreSchema = z.object({

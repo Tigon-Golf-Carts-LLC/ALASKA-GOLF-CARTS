@@ -13,6 +13,8 @@ import {
   buildBrands,
   buildSlugMap,
   getCartImageUrls,
+  getExclusionReason,
+  isListable,
   hasOnlyUnpublishedPhotos,
   filterCarts,
   parseCartFilters,
@@ -182,6 +184,36 @@ check(
   ["https://cdn.example.com/x.jpg"]
 );
 check("a cart with no photos resolves to nothing", getCartImageUrls({}), []);
+
+// Carts kept off the website entirely.
+const photographed = { imageUrls: ["b.jpg"] };
+check("a cart with a published photo is listable", isListable(photographed), true);
+check(
+  "isRFS false hides the cart even when it has photos",
+  getExclusionReason({ ...photographed, isRFS: false }),
+  "not-for-sale"
+);
+check("isRFS true is listable", isListable({ ...photographed, isRFS: true }), true);
+check(
+  "an absent isRFS does not hide a cart",
+  isListable({ ...photographed, isRFS: undefined }),
+  true
+);
+check(
+  "a cart with no photo is hidden",
+  getExclusionReason({ imageUrls: [] }),
+  "no-photo"
+);
+check(
+  "in-house photos do not qualify a cart for listing",
+  getExclusionReason({ internalCartImageUrls: ["a.jpg"], imageUrls: [] }),
+  "no-photo"
+);
+check(
+  "isRFS false takes precedence over the photo reason",
+  getExclusionReason({ imageUrls: [], isRFS: false }),
+  "not-for-sale"
+);
 
 // Flags carts whose photos exist in the DMS but were never published.
 check(
