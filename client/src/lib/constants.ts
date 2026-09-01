@@ -25,14 +25,12 @@ export function formatPrice(price: number | null | undefined): string {
 }
 
 /**
- * Photos for a cart, newest-dealer-photos-first.
+ * Photos for a cart.
  *
- * Takes the whole cart rather than one field on purpose: a cart carries photos
- * in either `internalCartImageUrls` (taken by the dealer — how most used stock
- * is pictured) or `imageUrls` (manufacturer stock shots, which used carts often
- * lack entirely). Reading only one of them hides a large slice of the
- * inventory behind a "Coming Soon" placeholder. `getCartImageUrls` also leaves
- * absolute URLs alone instead of prefixing the bucket onto them twice.
+ * Takes the whole cart rather than a single field so there is one definition of
+ * where a cart's photos come from, shared with the prerendered markup and the
+ * image sitemap. `getCartImageUrls` also leaves absolute URLs alone instead of
+ * prefixing the bucket onto them twice, which this used to do unconditionally.
  */
 export function getAllCartImages(cart: AnyCart | null | undefined): string[] {
   const images = cart ? getCartImageUrls(cart) : [];

@@ -13,6 +13,7 @@ import {
   buildBrands,
   buildSlugMap,
   getCartImageUrls,
+  hasOnlyUnpublishedPhotos,
   filterCarts,
   parseCartFilters,
   parsePriceSort,
@@ -152,28 +153,27 @@ check(
   "club-car-model-0-black-anchorage-alaska-usa-01"
 );
 
-// Photos live in one of two fields. Used stock is usually pictured by the
-// dealer (internalCartImageUrls) and often has no manufacturer shots at all, so
-// reading only imageUrls hides most of the used inventory behind a placeholder.
+// Only imageUrls is publicly hosted. internalCartImageUrls objects 404 in the
+// bucket (verified by scripts/check-images.ts against live data), so linking
+// them would show broken images and put dead URLs in the sitemap.
 const BUCKET = "https://s3.amazonaws.com/prod.docs.s3/carts/";
 check(
-  "dealer photos are used when present",
-  getCartImageUrls({ internalCartImageUrls: ["a.jpg"], imageUrls: ["b.jpg"] }),
-  [`${BUCKET}a.jpg`]
-);
-check(
-  "falls back to manufacturer photos when there are no dealer photos",
-  getCartImageUrls({ internalCartImageUrls: [], imageUrls: ["b.jpg"] }),
-  [`${BUCKET}b.jpg`]
-);
-check(
-  "falls back when the dealer field is absent entirely",
+  "website photos resolve to bucket URLs",
   getCartImageUrls({ imageUrls: ["b.jpg"] }),
   [`${BUCKET}b.jpg`]
 );
 check(
-  "a cart with only dealer photos still resolves",
-  getCartImageUrls({ internalCartImageUrls: ["a.jpg", "c.jpg"] }),
+  "in-house photos are never linked, even alongside website photos",
+  getCartImageUrls({ internalCartImageUrls: ["a.jpg"], imageUrls: ["b.jpg"] }),
+  [`${BUCKET}b.jpg`]
+);
+check(
+  "a cart pictured only in-house has nothing the site can show",
+  getCartImageUrls({ internalCartImageUrls: ["a.jpg"] }),
+  []
+);
+check("every website photo is returned, in order",
+  getCartImageUrls({ imageUrls: ["a.jpg", "c.jpg"] }),
   [`${BUCKET}a.jpg`, `${BUCKET}c.jpg`]
 );
 check(
@@ -182,6 +182,23 @@ check(
   ["https://cdn.example.com/x.jpg"]
 );
 check("a cart with no photos resolves to nothing", getCartImageUrls({}), []);
+
+// Flags carts whose photos exist in the DMS but were never published.
+check(
+  "in-house-only carts are flagged as unpublished",
+  hasOnlyUnpublishedPhotos({ internalCartImageUrls: ["a.jpg"], imageUrls: [] }),
+  true
+);
+check(
+  "a cart with website photos is not flagged",
+  hasOnlyUnpublishedPhotos({ internalCartImageUrls: ["a.jpg"], imageUrls: ["b.jpg"] }),
+  false
+);
+check(
+  "a cart with no photos at all is not flagged as unpublished",
+  hasOnlyUnpublishedPhotos({}),
+  false
+);
 
 check("brands are derived and sorted", buildBrands(carts).map((b) => b.label), [
   "Club Car",

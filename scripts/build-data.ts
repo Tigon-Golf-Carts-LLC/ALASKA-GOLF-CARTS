@@ -26,6 +26,7 @@ import {
   buildBrands,
   buildSlugMap,
   getCartImageUrls,
+  hasOnlyUnpublishedPhotos,
   normalizeMakeKey,
   type AnyCart,
   type AnyStore,
@@ -243,31 +244,39 @@ function validateSnapshot(carts: AnyCart[], stores: AnyStore[]): void {
 }
 
 /**
- * Reports how much of the catalogue actually has photos, split by condition.
+ * Reports how much of the catalogue has a photo the site can actually show.
  *
- * A cart with no photo falls back to a placeholder and sorts below carts that
- * have one, so a drop here is immediately visible on the site. Used stock is
- * the fragile case: it is usually pictured by the dealer rather than the
- * manufacturer, so it depends on `internalCartImageUrls` being read.
+ * Only `imageUrls` is publicly hosted, so a cart pictured solely by in-house
+ * photos renders a placeholder even though pictures of it exist in the DMS.
+ * That gap is fixable by publishing them to the website image set, so it is
+ * counted separately from carts that have no photos at all.
  */
 function reportImageCoverage(carts: AnyCart[]): void {
-  const describe = (label: string, subset: AnyCart[]): void => {
-    if (subset.length === 0) return;
+  const describe = (label: string, subset: AnyCart[]): number => {
+    if (subset.length === 0) return 0;
     const withPhotos = subset.filter((cart) => getCartImageUrls(cart).length > 0);
-    const dealerOnly = subset.filter(
-      (cart) => cart?.internalCartImageUrls?.length && !cart?.imageUrls?.length
-    ).length;
+    const unpublished = subset.filter(hasOnlyUnpublishedPhotos).length;
     const photos = withPhotos.reduce((sum, cart) => sum + getCartImageUrls(cart).length, 0);
     const pct = Math.round((withPhotos.length / subset.length) * 100);
     console.log(
-      `  ${label}: ${withPhotos.length}/${subset.length} carts have photos (${pct}%), ` +
-        `${photos} images, ${dealerOnly} pictured only by dealer photos`
+      `  ${label}: ${withPhotos.length}/${subset.length} carts show a photo (${pct}%), ` +
+        `${photos} images, ${unpublished} have photos that were never published`
     );
+    return unpublished;
   };
 
-  console.log("image coverage:");
-  describe("new ", carts.filter((cart) => cart.isUsed !== true));
-  describe("used", carts.filter((cart) => cart.isUsed === true));
+  console.log("image coverage (photos published to the website):");
+  const unpublishedNew = describe("new ", carts.filter((cart) => cart.isUsed !== true));
+  const unpublishedUsed = describe("used", carts.filter((cart) => cart.isUsed === true));
+
+  const total = unpublishedNew + unpublishedUsed;
+  if (total > 0) {
+    console.log(
+      `  ${total} cart(s) (${unpublishedNew} new, ${unpublishedUsed} used) have in-house photos ` +
+        `in the DMS that are not in the website image set — publishing those there is what ` +
+        `puts them on the site.`
+    );
+  }
 }
 
 async function main(): Promise<void> {

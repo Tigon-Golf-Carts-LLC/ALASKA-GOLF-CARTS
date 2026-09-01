@@ -68,11 +68,32 @@ export function toSlugPart(str: string): string {
     .replace(/^-+|-+$/g, "");
 }
 
+/**
+ * Publicly viewable photos for a cart.
+ *
+ * Only `imageUrls` is used. A cart may also carry `internalCartImageUrls` —
+ * photos taken in-house — but those objects are not served from the public
+ * bucket: probing a sample of them returns 404 for every one, while every
+ * sampled `imageUrls` photo returns 200 (`npm run check:images` re-checks this
+ * against live data). Linking to them would render broken images, and putting
+ * them in the sitemap advertises dead URLs to crawlers. The DMS WordPress
+ * bridge takes the same position, reading `imageUrls` alone.
+ *
+ * So a cart pictured only by internal photos has no photo the site can show:
+ * the fix is publishing those photos to the website image set in the DMS, not
+ * a change here.
+ */
 export function getCartImageUrls(cart: AnyCart): string[] {
-  const files: string[] = cart?.internalCartImageUrls?.length
-    ? cart.internalCartImageUrls
-    : cart?.imageUrls || [];
+  const files: string[] = cart?.imageUrls || [];
   return files.map((f) => (f.startsWith("http") ? f : `${S3_CARTS_BASE}${f}`));
+}
+
+/**
+ * True when a cart has in-house photos but nothing published to the website —
+ * it renders a placeholder despite having pictures in the DMS.
+ */
+export function hasOnlyUnpublishedPhotos(cart: AnyCart): boolean {
+  return !!cart?.internalCartImageUrls?.length && !cart?.imageUrls?.length;
 }
 
 export function getPrimaryCartImage(cart: AnyCart): string | null {
