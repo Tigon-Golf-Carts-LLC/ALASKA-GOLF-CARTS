@@ -6,8 +6,14 @@
   "scripts": {
     "dev": "NODE_ENV=development tsx server/index.ts",
     "build": "tsx script/build.ts",
+    "build:data": "tsx scripts/build-data.ts",
+    "build:client": "vite build",
+    "build:prerender": "tsx scripts/build-static.ts",
+    "build:static": "npm run build:data && npm run build:client && npm run build:prerender",
+    "preview:static": "vite preview",
     "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
+    "test": "tsx scripts/test-cart-data.ts && tsx scripts/test-build-data.ts",
     "db:push": "drizzle-kit push"
   },
   "dependencies": {

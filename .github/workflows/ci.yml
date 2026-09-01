@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Type check
+        run: npm run check
+
+      - name: Test
+        run: npm test
+
+      # The deployed inventory comes from a build-time snapshot, so the DMS API
+      # has to be reachable and well-formed for a deploy to succeed. Running the
+      # real fetch here surfaces an upstream problem on the pull request instead
+      # of during a production deploy.
+      - name: Build against the live DMS API
+        run: npm run build:static
+
+      - name: Summarize the inventory snapshot
+        if: always()
+        run: |
+          if [ -f client/public/data/meta.json ]; then
+            echo "### Inventory snapshot" >> "$GITHUB_STEP_SUMMARY"
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat client/public/data/meta.json >> "$GITHUB_STEP_SUMMARY"
+            echo '' >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            echo "Prerendered pages: $(find dist/public -name '*.html' | wc -l)" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No inventory snapshot was produced — the DMS API fetch failed." >> "$GITHUB_STEP_SUMMARY"
+          fi

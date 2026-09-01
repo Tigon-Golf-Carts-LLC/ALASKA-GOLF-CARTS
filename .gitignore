@@ -4,3 +4,6 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Inventory snapshot generated at build time by scripts/build-data.ts
+client/public/data

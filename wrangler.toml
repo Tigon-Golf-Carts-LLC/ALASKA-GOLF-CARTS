@@ -1,0 +1,11 @@
+# Cloudflare Pages project config.
+#
+# Build command:        npm run build:static
+# Build output dir:     dist/public
+#
+# The site is fully static, so `functions/` is optional. Include it (the default)
+# and set VITE_DATA_MODE=proxy in the Pages build environment to serve live DMS
+# inventory instead of the nightly snapshot.
+name = "alaska-golf-carts"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist/public"

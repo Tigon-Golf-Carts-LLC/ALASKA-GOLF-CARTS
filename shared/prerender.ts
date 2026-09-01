@@ -1,8 +1,9 @@
-import type { CartSummaryForSeo } from "./routes";
+import type { CartSummaryForSeo } from "./cart-data";
+import { SITE_URL } from "./seo-routes";
 
 const PHONE_NUMBER = "1-888-840-4490";
 const PHONE_TEL = "tel:1-888-840-4490";
-const BASE_URL = "https://alaskagolfcarts.com";
+const BASE_URL = SITE_URL;
 
 function esc(s: string): string {
   return s

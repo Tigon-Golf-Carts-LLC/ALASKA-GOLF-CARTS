@@ -1,0 +1,69 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # The DMS inventory refreshes nightly at 10:55 PM ET. Rebuilding at 04:05 UTC
+  # picks up that refresh whether ET is on standard or daylight time.
+  schedule:
+    - cron: "5 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never run two deployments at once, but let a running one finish.
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Type check
+        run: npm run check
+
+      - name: Test
+        run: npm test
+
+      # Pulls the DMS inventory into static JSON, builds the bundle, then writes
+      # one prerendered HTML file per route plus sitemap.xml. Fails loudly if the
+      # DMS API is unreachable, which leaves the previous deployment in place.
+      - name: Build static site
+        env:
+          # A custom domain serves from the root; a project site serves from /<repo>/.
+          BASE_PATH: ${{ vars.CUSTOM_DOMAIN != '' && '/' || steps.pages.outputs.base_path }}
+          CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+        run: npm run build:static
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

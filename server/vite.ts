@@ -1,6 +1,7 @@
 import { type Express } from "express";
 import { createServer as createViteServer, createLogger } from "vite";
-import { buildPageHtml } from "./seo-inject";
+import { buildPageHtml } from "../shared/seo-inject";
+import { seoDeps } from "./routes";
 import { type Server } from "http";
 import viteConfig from "../vite.config";
 import fs from "fs";
@@ -16,8 +17,15 @@ export async function setupVite(server: Server, app: Express) {
     allowedHosts: true as const,
   };
 
+  // vite.config.ts exports an async factory (it optionally loads dev-only
+  // plugins), so resolve it before spreading.
+  const resolvedConfig =
+    typeof viteConfig === "function"
+      ? await viteConfig({ command: "serve", mode: process.env.NODE_ENV || "development" })
+      : viteConfig;
+
   const vite = await createViteServer({
-    ...viteConfig,
+    ...resolvedConfig,
     configFile: false,
     customLogger: {
       ...viteLogger,
@@ -50,7 +58,7 @@ export async function setupVite(server: Server, app: Express) {
         `src="/src/main.tsx?v=${nanoid()}"`,
       );
       const page = await vite.transformIndexHtml(url, template);
-      const { html: injectedPage, status } = await buildPageHtml(page, url);
+      const { html: injectedPage, status } = await buildPageHtml(page, url, seoDeps);
       res.status(status).set({ "Content-Type": "text/html" }).end(injectedPage);
     } catch (e) {
       vite.ssrFixStacktrace(e as Error);
