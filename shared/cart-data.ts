@@ -68,11 +68,55 @@ export function toSlugPart(str: string): string {
     .replace(/^-+|-+$/g, "");
 }
 
+/**
+ * Publicly viewable photos for a cart.
+ *
+ * Only `imageUrls` is used. A cart may also carry `internalCartImageUrls` —
+ * photos taken in-house — but those objects are not served from the public
+ * bucket: probing a sample of them returns 404 for every one, while every
+ * sampled `imageUrls` photo returns 200 (`npm run check:images` re-checks this
+ * against live data). Linking to them would render broken images, and putting
+ * them in the sitemap advertises dead URLs to crawlers. The DMS WordPress
+ * bridge takes the same position, reading `imageUrls` alone.
+ *
+ * So a cart pictured only by internal photos has no photo the site can show:
+ * the fix is publishing those photos to the website image set in the DMS, not
+ * a change here.
+ */
 export function getCartImageUrls(cart: AnyCart): string[] {
-  const files: string[] = cart?.internalCartImageUrls?.length
-    ? cart.internalCartImageUrls
-    : cart?.imageUrls || [];
+  const files: string[] = cart?.imageUrls || [];
   return files.map((f) => (f.startsWith("http") ? f : `${S3_CARTS_BASE}${f}`));
+}
+
+/**
+ * Why a cart is kept off the website, or null when it belongs there.
+ *
+ * Two rules, both meaning "not ready to advertise":
+ *
+ *  - `isRFS: false` — the DMS marks the cart as not for the website. Only an
+ *    explicit false excludes: a cart with the field absent is treated as
+ *    listable, so an unset field never silently drops inventory.
+ *  - no published photo — a listing that renders a placeholder is worse than no
+ *    listing. Note this is about `imageUrls`; a cart pictured only by in-house
+ *    photos counts as having none, because those are not publicly hosted.
+ */
+export function getExclusionReason(cart: AnyCart): "not-for-sale" | "no-photo" | null {
+  if (cart?.isRFS === false) return "not-for-sale";
+  if (getCartImageUrls(cart).length === 0) return "no-photo";
+  return null;
+}
+
+/** Whether a cart should appear anywhere on the website. */
+export function isListable(cart: AnyCart): boolean {
+  return getExclusionReason(cart) === null;
+}
+
+/**
+ * True when a cart has in-house photos but nothing published to the website —
+ * it renders a placeholder despite having pictures in the DMS.
+ */
+export function hasOnlyUnpublishedPhotos(cart: AnyCart): boolean {
+  return !!cart?.internalCartImageUrls?.length && !cart?.imageUrls?.length;
 }
 
 export function getPrimaryCartImage(cart: AnyCart): string | null {

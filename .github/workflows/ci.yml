@@ -32,6 +32,12 @@ jobs:
       - name: Build against the live DMS API
         run: npm run build:static
 
+      # A photo missing from the feed and a photo whose URL 404s look identical
+      # on the site — both render the placeholder. This says which it is.
+      - name: Check image URLs resolve in the bucket
+        continue-on-error: true
+        run: npm run check:images
+
       - name: Summarize the inventory snapshot
         if: always()
         run: |

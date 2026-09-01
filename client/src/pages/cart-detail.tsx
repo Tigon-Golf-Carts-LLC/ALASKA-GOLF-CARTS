@@ -122,7 +122,7 @@ export default function CartDetail() {
   const isStreetLegal = cart.title?.isStreetLegal === true;
   const year = cart.cartType?.year || "";
   const passengers = cart.cartAttributes?.passengers || "";
-  const images = getAllCartImages(cart.imageUrls);
+  const images = getAllCartImages(cart);
 
   const detailTitle = `${isUsed ? "Used" : "New"} ${[year, make, model].filter(Boolean).join(" ")} Golf Cart for Sale | Alaska Golf Carts`;
   const detailDesc = `${isUsed ? "Used" : "New"} ${[year, make, model].filter(Boolean).join(" ")} golf cart${color ? ` in ${color}` : ""}${numericPrice ? ` for $${numericPrice.toLocaleString()}` : ""}. 0% APR financing at Alaska Golf Carts. Call 1-888-840-4490.`;

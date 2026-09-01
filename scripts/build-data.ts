@@ -25,6 +25,9 @@ import { fileURLToPath } from "url";
 import {
   buildBrands,
   buildSlugMap,
+  getCartImageUrls,
+  getExclusionReason,
+  hasOnlyUnpublishedPhotos,
   normalizeMakeKey,
   type AnyCart,
   type AnyStore,
@@ -241,6 +244,69 @@ function validateSnapshot(carts: AnyCart[], stores: AnyStore[]): void {
   }
 }
 
+/**
+ * Reports how much of the catalogue has a photo the site can actually show.
+ *
+ * Only `imageUrls` is publicly hosted, so a cart pictured solely by in-house
+ * photos renders a placeholder even though pictures of it exist in the DMS.
+ * That gap is fixable by publishing them to the website image set, so it is
+ * counted separately from carts that have no photos at all.
+ */
+function reportImageCoverage(carts: AnyCart[]): void {
+  const describe = (label: string, subset: AnyCart[]): number => {
+    if (subset.length === 0) return 0;
+    const withPhotos = subset.filter((cart) => getCartImageUrls(cart).length > 0);
+    const unpublished = subset.filter(hasOnlyUnpublishedPhotos).length;
+    const photos = withPhotos.reduce((sum, cart) => sum + getCartImageUrls(cart).length, 0);
+    const pct = Math.round((withPhotos.length / subset.length) * 100);
+    console.log(
+      `  ${label}: ${withPhotos.length}/${subset.length} carts show a photo (${pct}%), ` +
+        `${photos} images, ${unpublished} have photos that were never published`
+    );
+    return unpublished;
+  };
+
+  console.log("image coverage (photos published to the website):");
+  const unpublishedNew = describe("new ", carts.filter((cart) => cart.isUsed !== true));
+  const unpublishedUsed = describe("used", carts.filter((cart) => cart.isUsed === true));
+
+  const total = unpublishedNew + unpublishedUsed;
+  if (total > 0) {
+    console.log(
+      `  ${total} cart(s) (${unpublishedNew} new, ${unpublishedUsed} used) have in-house photos ` +
+        `in the DMS that are not in the website image set — publishing those there is what ` +
+        `puts them on the site.`
+    );
+  }
+}
+
+/**
+ * Drops carts that must not appear on the website, and says why.
+ *
+ * Filtering here rather than at render time means an excluded cart is absent
+ * from the snapshot entirely: no card, no detail page, no sitemap entry, and
+ * not counted in any total.
+ */
+function selectListable(carts: AnyCart[]): AnyCart[] {
+  const listable: AnyCart[] = [];
+  const excluded = { "not-for-sale": 0, "no-photo": 0 };
+
+  for (const cart of carts) {
+    const reason = getExclusionReason(cart);
+    if (reason === null) listable.push(cart);
+    else excluded[reason]++;
+  }
+
+  const total = excluded["not-for-sale"] + excluded["no-photo"];
+  console.log(`listable inventory: ${listable.length} of ${carts.length} carts`);
+  if (total > 0) {
+    console.log(`  excluded ${total}: ${excluded["not-for-sale"]} marked isRFS false, ` +
+      `${excluded["no-photo"]} with no published photo`);
+  }
+
+  return listable;
+}
+
 async function main(): Promise<void> {
   await rm(outDir, { recursive: true, force: true });
   await mkdir(outDir, { recursive: true });
@@ -266,6 +332,17 @@ async function main(): Promise<void> {
     console.log(`fetched ${carts.length} carts and ${stores.length} stores`);
 
     validateSnapshot(carts, stores);
+    // Reported across the full feed, before filtering, so the unpublished-photo
+    // gap stays visible even though those carts are about to be dropped.
+    reportImageCoverage(carts);
+
+    carts = selectListable(carts);
+    if (carts.length === 0 && !allowEmpty) {
+      throw new Error(
+        "every cart was filtered out — nothing has a published photo or is marked " +
+          "ready for sale. Refusing to publish an empty site."
+      );
+    }
 
     const makeKeys = Array.from(
       new Set(

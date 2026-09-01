@@ -359,7 +359,7 @@ export default function Home() {
     slugMap?.idToSlug[cart._id] ? `/golfcart/${slugMap.idToSlug[cart._id]}` : `/golfcart/${cart._id}`;
 
   const imgUrl = (cart: typeof slides[0]) =>
-    imgErrors[cart._id] ? heroBg : (getCartImageUrl(cart.imageUrls) || heroBg);
+    imgErrors[cart._id] ? heroBg : (getCartImageUrl(cart) || heroBg);
 
   const activeCart = slides[current];
 

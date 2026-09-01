@@ -26,7 +26,7 @@ export function CartCard({ cart, slug }: CartCardProps) {
 
   const imageUrl = imageError
     ? COMING_SOON_IMAGE
-    : getCartImageUrl(cart.imageUrls);
+    : getCartImageUrl(cart);
 
   const cartUrl = slug ? `/golfcart/${slug}` : `/golfcart/${cart._id}`;
 

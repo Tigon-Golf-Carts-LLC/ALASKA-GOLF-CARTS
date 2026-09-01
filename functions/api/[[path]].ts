@@ -14,6 +14,7 @@ import {
   buildBrands,
   buildSlugMap,
   filterCarts,
+  isListable,
   parseCartFilters,
   parsePriceSort,
   sortCarts,
@@ -70,7 +71,8 @@ function getAllCarts(): Promise<AnyCart[]> {
       all.push(...carts);
       if (carts.length < PAGE_SIZE) break;
     }
-    return all;
+    // Same rule as the static build: no unlisted or photo-less carts.
+    return all.filter(isListable);
   });
 }
 

@@ -12,6 +12,10 @@
 import {
   buildBrands,
   buildSlugMap,
+  getCartImageUrls,
+  getExclusionReason,
+  isListable,
+  hasOnlyUnpublishedPhotos,
   filterCarts,
   parseCartFilters,
   parsePriceSort,
@@ -149,6 +153,83 @@ check(
   "colliding slugs get a numeric suffix",
   buildSlugMap(collisionCarts, stores).idToSlug.duplicate,
   "club-car-model-0-black-anchorage-alaska-usa-01"
+);
+
+// Only imageUrls is publicly hosted. internalCartImageUrls objects 404 in the
+// bucket (verified by scripts/check-images.ts against live data), so linking
+// them would show broken images and put dead URLs in the sitemap.
+const BUCKET = "https://s3.amazonaws.com/prod.docs.s3/carts/";
+check(
+  "website photos resolve to bucket URLs",
+  getCartImageUrls({ imageUrls: ["b.jpg"] }),
+  [`${BUCKET}b.jpg`]
+);
+check(
+  "in-house photos are never linked, even alongside website photos",
+  getCartImageUrls({ internalCartImageUrls: ["a.jpg"], imageUrls: ["b.jpg"] }),
+  [`${BUCKET}b.jpg`]
+);
+check(
+  "a cart pictured only in-house has nothing the site can show",
+  getCartImageUrls({ internalCartImageUrls: ["a.jpg"] }),
+  []
+);
+check("every website photo is returned, in order",
+  getCartImageUrls({ imageUrls: ["a.jpg", "c.jpg"] }),
+  [`${BUCKET}a.jpg`, `${BUCKET}c.jpg`]
+);
+check(
+  "absolute URLs are left alone rather than prefixed twice",
+  getCartImageUrls({ imageUrls: ["https://cdn.example.com/x.jpg"] }),
+  ["https://cdn.example.com/x.jpg"]
+);
+check("a cart with no photos resolves to nothing", getCartImageUrls({}), []);
+
+// Carts kept off the website entirely.
+const photographed = { imageUrls: ["b.jpg"] };
+check("a cart with a published photo is listable", isListable(photographed), true);
+check(
+  "isRFS false hides the cart even when it has photos",
+  getExclusionReason({ ...photographed, isRFS: false }),
+  "not-for-sale"
+);
+check("isRFS true is listable", isListable({ ...photographed, isRFS: true }), true);
+check(
+  "an absent isRFS does not hide a cart",
+  isListable({ ...photographed, isRFS: undefined }),
+  true
+);
+check(
+  "a cart with no photo is hidden",
+  getExclusionReason({ imageUrls: [] }),
+  "no-photo"
+);
+check(
+  "in-house photos do not qualify a cart for listing",
+  getExclusionReason({ internalCartImageUrls: ["a.jpg"], imageUrls: [] }),
+  "no-photo"
+);
+check(
+  "isRFS false takes precedence over the photo reason",
+  getExclusionReason({ imageUrls: [], isRFS: false }),
+  "not-for-sale"
+);
+
+// Flags carts whose photos exist in the DMS but were never published.
+check(
+  "in-house-only carts are flagged as unpublished",
+  hasOnlyUnpublishedPhotos({ internalCartImageUrls: ["a.jpg"], imageUrls: [] }),
+  true
+);
+check(
+  "a cart with website photos is not flagged",
+  hasOnlyUnpublishedPhotos({ internalCartImageUrls: ["a.jpg"], imageUrls: ["b.jpg"] }),
+  false
+);
+check(
+  "a cart with no photos at all is not flagged as unpublished",
+  hasOnlyUnpublishedPhotos({}),
+  false
 );
 
 check("brands are derived and sorted", buildBrands(carts).map((b) => b.label), [
