@@ -57,6 +57,7 @@ jobs:
           CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
           PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          BASE_PATH_OVERRIDE: ${{ vars.BASE_PATH_OVERRIDE }}
         run: |
           set -u
           if [ -n "${CUSTOM_DOMAIN:-}" ]; then
@@ -73,15 +74,14 @@ jobs:
             esac
             source="Pages site $PAGES_ORIGIN"
           else
-            # Pages could not be read — fall back to the repository name.
-            repo="${GITHUB_REPOSITORY#*/}"
-            owner_site="$(echo "${GITHUB_REPOSITORY_OWNER}.github.io" | tr '[:upper:]' '[:lower:]')"
-            if [ "$(echo "$repo" | tr '[:upper:]' '[:lower:]')" = "$owner_site" ]; then
-              base="/"
-            else
-              base="/$repo/"
-            fi
-            source="repository name (Pages config unavailable)"
+            # Pages could not be read. Default to the root rather than guessing a
+            # sub-path from the repository name: guessing wrong at the root only
+            # breaks a github.io preview, but guessing a sub-path when the site
+            # is served from a custom domain breaks production outright — which
+            # is exactly how this went wrong before. Set BASE_PATH_OVERRIDE to
+            # deploy under a sub-path when detection is unavailable.
+            base="${BASE_PATH_OVERRIDE:-/}"
+            source="fallback (Pages config unavailable)"
           fi
           echo "Serving from \"$base\" — resolved from $source"
           echo "BASE_PATH=$base" >> "$GITHUB_ENV"
@@ -107,3 +107,41 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      # A site built for the wrong base path still deploys "successfully" — it
+      # just 404s its own CSS and JS, and the visitor gets the bare no-JS
+      # fallback. Nothing upstream catches that, so fetch the deployed page and
+      # confirm the assets it references actually load.
+      - name: Verify the deployed page loads its assets
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          echo "checking $PAGE_URL"
+          html=$(curl -fsSL --retry 6 --retry-delay 5 --retry-all-errors "$PAGE_URL")
+
+          # Asset references are absolute paths, so resolve them from the domain
+          # root rather than from the page URL.
+          root=$(printf '%s' "$PAGE_URL" | sed -E 's#^(https?://[^/]+).*#\1#')
+          urls=$(printf '%s' "$html" \
+            | grep -oE '(src|href)="/[^"]*\.(js|css)"' \
+            | sed -E 's/^(src|href)="//; s/"$//' \
+            | sort -u)
+
+          if [ -z "$urls" ]; then
+            echo "::error::The deployed page references no JS or CSS at all."
+            exit 1
+          fi
+
+          failed=0
+          for u in $urls; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "$root$u" || echo 000)
+            echo "  $code  $u"
+            [ "$code" = "200" ] || failed=1
+          done
+
+          if [ "$failed" -ne 0 ]; then
+            echo "::error::Assets referenced by the deployed page do not load, so the site renders unstyled. The build's base path does not match where Pages serves the site — check the 'Resolve base path' step."
+            exit 1
+          fi
+          echo "All referenced assets load."
