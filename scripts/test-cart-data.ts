@@ -128,6 +128,22 @@ check(
   slugMap.idToSlug.cart7
 );
 
+// Collision suffixes decide real URLs, so a reordered API response must not
+// reshuffle them — that would change live permalinks on a nightly rebuild.
+const reordered = [...carts].reverse();
+check(
+  "a reordered API response produces identical slugs",
+  buildSlugMap(reordered, stores).idToSlug,
+  slugMap.idToSlug
+);
+
+// Three identical carts: the base slug and its suffixes must stay pinned to the
+// same cart regardless of the order they arrive in.
+const triplets = [0, 1, 2].map((n) => ({ ...carts[0], _id: `triplet${n}` }));
+const forward = buildSlugMap(triplets, stores).idToSlug;
+const backward = buildSlugMap([...triplets].reverse(), stores).idToSlug;
+check("colliding carts keep their suffix when reordered", backward, forward);
+
 const collisionCarts = [carts[0], { ...carts[0], _id: "duplicate" }];
 check(
   "colliding slugs get a numeric suffix",

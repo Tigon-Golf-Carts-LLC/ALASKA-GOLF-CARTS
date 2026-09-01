@@ -267,8 +267,15 @@ export function buildBrands(carts: AnyCart[]): BrandItem[] {
 
 /**
  * Slugs are derived from make/model/color plus the cart's store city/state, with
- * a numeric suffix for collisions. Order matters: the same cart list must always
- * produce the same slug, so callers pass carts in a stable (API) order.
+ * a numeric suffix for collisions.
+ *
+ * A dealer stocks many identical carts, so collisions are the norm rather than
+ * the exception and the suffix decides real URLs. Assignment therefore cannot
+ * depend on the order the DMS happened to return carts in: if it did, a
+ * reordered API response would hand "-01" to a different cart on the next
+ * nightly rebuild and silently reshuffle live permalinks across the site and
+ * the sitemap. Sorting by `_id` first makes the mapping a pure function of the
+ * cart set, so a cart keeps its URL for as long as it is in inventory.
  */
 export function buildSlugMap(carts: AnyCart[], stores: AnyStore[]): SlugMap {
   const storeMap = new Map<string, AnyStore>();
@@ -280,7 +287,11 @@ export function buildSlugMap(carts: AnyCart[], stores: AnyStore[]): SlugMap {
   const idToSlug: Record<string, string> = {};
   const slugCounts: Record<string, number> = {};
 
-  for (const cart of carts) {
+  const ordered = [...carts].sort((a, b) =>
+    String(a?._id ?? "").localeCompare(String(b?._id ?? ""))
+  );
+
+  for (const cart of ordered) {
     const storeId = cart?.cartLocation?.locationId || cart?.cartLocation?.latestStoreId || "";
     const store = storeMap.get(storeId);
 

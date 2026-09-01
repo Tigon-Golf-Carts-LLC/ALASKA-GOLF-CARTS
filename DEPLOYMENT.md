@@ -117,6 +117,19 @@ cannot vouch for:
 the CI workflow additionally runs a full build against the **live** API on every
 pull request, so an upstream problem shows up there rather than mid-deploy.
 
+### Slug stability
+
+A cart's URL is `make-model-color-city-state-country`, with `-01`, `-02` … for
+collisions — and a dealer stocks many identical carts, so those suffixes decide
+real URLs. Slugs are assigned in `_id` order rather than in the order the DMS
+returns carts, so the mapping is a pure function of the cart set: a reordered
+API response cannot reshuffle live permalinks on the next nightly rebuild. A
+cart keeps its URL for as long as it stays in inventory.
+
+Carts whose `cartLocation` points at a store missing from `/tigon-stores` still
+get a unique slug, but without city/state in it. The build warns and names those
+store IDs — worth chasing upstream, since it makes those URLs less descriptive.
+
 ## Local development
 
 `npm run dev` still runs the Express server against the live DMS API, with the

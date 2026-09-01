@@ -223,13 +223,21 @@ function validateSnapshot(carts: AnyCart[], stores: AnyStore[]): void {
     console.warn("warning: no cart references a store — slugs will omit city and state");
   }
 
+  // A cart pointing at an unknown store still gets a unique slug, but without
+  // city/state in it — worth naming so the gap can be chased upstream.
   const storeIds = new Set(stores.map((store) => store?.storeId).filter(Boolean));
-  const unmatched = carts.filter((cart) => {
+  const unmatched = new Map<string, number>();
+  for (const cart of carts) {
     const id = cart?.cartLocation?.locationId || cart?.cartLocation?.latestStoreId;
-    return id && !storeIds.has(id);
-  }).length;
-  if (unmatched > 0) {
-    console.warn(`warning: ${unmatched} cart(s) reference a store that is not in the store list`);
+    if (id && !storeIds.has(id)) unmatched.set(id, (unmatched.get(id) ?? 0) + 1);
+  }
+  if (unmatched.size > 0) {
+    const total = Array.from(unmatched.values()).reduce((sum, n) => sum + n, 0);
+    const detail = Array.from(unmatched.entries()).map(([id, n]) => `${id} (${n})`).join(", ");
+    console.warn(
+      `warning: ${total} cart(s) reference a store missing from /tigon-stores — ` +
+        `their slugs omit city and state. Store IDs: ${detail}`
+    );
   }
 }
 
