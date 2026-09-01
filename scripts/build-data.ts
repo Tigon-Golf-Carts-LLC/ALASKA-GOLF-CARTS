@@ -25,6 +25,7 @@ import { fileURLToPath } from "url";
 import {
   buildBrands,
   buildSlugMap,
+  getCartImageUrls,
   normalizeMakeKey,
   type AnyCart,
   type AnyStore,
@@ -241,6 +242,34 @@ function validateSnapshot(carts: AnyCart[], stores: AnyStore[]): void {
   }
 }
 
+/**
+ * Reports how much of the catalogue actually has photos, split by condition.
+ *
+ * A cart with no photo falls back to a placeholder and sorts below carts that
+ * have one, so a drop here is immediately visible on the site. Used stock is
+ * the fragile case: it is usually pictured by the dealer rather than the
+ * manufacturer, so it depends on `internalCartImageUrls` being read.
+ */
+function reportImageCoverage(carts: AnyCart[]): void {
+  const describe = (label: string, subset: AnyCart[]): void => {
+    if (subset.length === 0) return;
+    const withPhotos = subset.filter((cart) => getCartImageUrls(cart).length > 0);
+    const dealerOnly = subset.filter(
+      (cart) => cart?.internalCartImageUrls?.length && !cart?.imageUrls?.length
+    ).length;
+    const photos = withPhotos.reduce((sum, cart) => sum + getCartImageUrls(cart).length, 0);
+    const pct = Math.round((withPhotos.length / subset.length) * 100);
+    console.log(
+      `  ${label}: ${withPhotos.length}/${subset.length} carts have photos (${pct}%), ` +
+        `${photos} images, ${dealerOnly} pictured only by dealer photos`
+    );
+  };
+
+  console.log("image coverage:");
+  describe("new ", carts.filter((cart) => cart.isUsed !== true));
+  describe("used", carts.filter((cart) => cart.isUsed === true));
+}
+
 async function main(): Promise<void> {
   await rm(outDir, { recursive: true, force: true });
   await mkdir(outDir, { recursive: true });
@@ -266,6 +295,7 @@ async function main(): Promise<void> {
     console.log(`fetched ${carts.length} carts and ${stores.length} stores`);
 
     validateSnapshot(carts, stores);
+    reportImageCoverage(carts);
 
     const makeKeys = Array.from(
       new Set(

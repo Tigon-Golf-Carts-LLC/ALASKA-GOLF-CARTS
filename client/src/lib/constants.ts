@@ -1,6 +1,9 @@
+import { getCartImageUrls, type AnyCart } from "@shared/cart-data";
+
 export const PHONE_NUMBER = "1-888-840-4490";
 export const PHONE_TEL = "tel:1-888-840-4490";
-export const S3_CARTS_URL = "https://s3.amazonaws.com/prod.docs.s3/carts/";
+// Re-exported so there is one definition of the bucket URL in the codebase.
+export { S3_CARTS_BASE as S3_CARTS_URL } from "@shared/cart-data";
 export const COMING_SOON_IMAGE =
   "data:image/svg+xml;charset=UTF-8," +
   encodeURIComponent(
@@ -21,18 +24,24 @@ export function formatPrice(price: number | null | undefined): string {
   });
 }
 
-export function getCartImageUrl(imageUrls: string[] | null | undefined): string {
-  if (imageUrls && imageUrls.length > 0) {
-    return S3_CARTS_URL + imageUrls[0];
-  }
-  return COMING_SOON_IMAGE;
+/**
+ * Photos for a cart, newest-dealer-photos-first.
+ *
+ * Takes the whole cart rather than one field on purpose: a cart carries photos
+ * in either `internalCartImageUrls` (taken by the dealer — how most used stock
+ * is pictured) or `imageUrls` (manufacturer stock shots, which used carts often
+ * lack entirely). Reading only one of them hides a large slice of the
+ * inventory behind a "Coming Soon" placeholder. `getCartImageUrls` also leaves
+ * absolute URLs alone instead of prefixing the bucket onto them twice.
+ */
+export function getAllCartImages(cart: AnyCart | null | undefined): string[] {
+  const images = cart ? getCartImageUrls(cart) : [];
+  return images.length > 0 ? images : [COMING_SOON_IMAGE];
 }
 
-export function getAllCartImages(imageUrls: string[] | null | undefined): string[] {
-  if (imageUrls && imageUrls.length > 0) {
-    return imageUrls.map((url) => S3_CARTS_URL + url);
-  }
-  return [COMING_SOON_IMAGE];
+/** First photo for a cart, or the placeholder when it has none. */
+export function getCartImageUrl(cart: AnyCart | null | undefined): string {
+  return getAllCartImages(cart)[0];
 }
 
 export function buildCartTitle(

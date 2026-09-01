@@ -12,6 +12,7 @@
 import {
   buildBrands,
   buildSlugMap,
+  getCartImageUrls,
   filterCarts,
   parseCartFilters,
   parsePriceSort,
@@ -150,6 +151,37 @@ check(
   buildSlugMap(collisionCarts, stores).idToSlug.duplicate,
   "club-car-model-0-black-anchorage-alaska-usa-01"
 );
+
+// Photos live in one of two fields. Used stock is usually pictured by the
+// dealer (internalCartImageUrls) and often has no manufacturer shots at all, so
+// reading only imageUrls hides most of the used inventory behind a placeholder.
+const BUCKET = "https://s3.amazonaws.com/prod.docs.s3/carts/";
+check(
+  "dealer photos are used when present",
+  getCartImageUrls({ internalCartImageUrls: ["a.jpg"], imageUrls: ["b.jpg"] }),
+  [`${BUCKET}a.jpg`]
+);
+check(
+  "falls back to manufacturer photos when there are no dealer photos",
+  getCartImageUrls({ internalCartImageUrls: [], imageUrls: ["b.jpg"] }),
+  [`${BUCKET}b.jpg`]
+);
+check(
+  "falls back when the dealer field is absent entirely",
+  getCartImageUrls({ imageUrls: ["b.jpg"] }),
+  [`${BUCKET}b.jpg`]
+);
+check(
+  "a cart with only dealer photos still resolves",
+  getCartImageUrls({ internalCartImageUrls: ["a.jpg", "c.jpg"] }),
+  [`${BUCKET}a.jpg`, `${BUCKET}c.jpg`]
+);
+check(
+  "absolute URLs are left alone rather than prefixed twice",
+  getCartImageUrls({ imageUrls: ["https://cdn.example.com/x.jpg"] }),
+  ["https://cdn.example.com/x.jpg"]
+);
+check("a cart with no photos resolves to nothing", getCartImageUrls({}), []);
 
 check("brands are derived and sorted", buildBrands(carts).map((b) => b.label), [
   "Club Car",
