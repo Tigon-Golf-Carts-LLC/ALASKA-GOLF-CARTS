@@ -13,7 +13,7 @@
     "preview:static": "vite preview",
     "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
-    "test": "tsx scripts/test-cart-data.ts",
+    "test": "tsx scripts/test-cart-data.ts && tsx scripts/test-build-data.ts",
     "db:push": "drizzle-kit push"
   },
   "dependencies": {

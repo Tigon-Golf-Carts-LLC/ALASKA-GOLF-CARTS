@@ -7,9 +7,16 @@
  * client filters, sorts, and pages that snapshot itself. A scheduled rebuild
  * keeps it in step with the nightly DMS refresh.
  *
+ * The snapshot IS the deployed inventory, so a degenerate response is worse
+ * than a failed one: a 200 carrying an empty list would publish a site with no
+ * carts and an empty sitemap. Everything here therefore fails loudly rather
+ * than writing a snapshot it cannot vouch for, which leaves the previous
+ * deployment in place.
+ *
  * Usage:
- *   tsx scripts/build-data.ts            # fetch from the DMS API
- *   tsx scripts/build-data.ts --offline  # write an empty snapshot (no network)
+ *   tsx scripts/build-data.ts              # fetch from the DMS API
+ *   tsx scripts/build-data.ts --offline    # write an empty snapshot (no network)
+ *   tsx scripts/build-data.ts --allow-empty  # accept a genuinely empty catalogue
  */
 
 import { mkdir, rm, writeFile } from "fs/promises";
@@ -29,9 +36,15 @@ const MAX_PAGES = 20;
 const MAX_ATTEMPTS = 4;
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const outDir = path.join(rootDir, "client", "public", "data");
+const outDir = process.env.DATA_OUT_DIR
+  ? path.resolve(process.env.DATA_OUT_DIR)
+  : path.join(rootDir, "client", "public", "data");
 
 const offline = process.argv.includes("--offline") || process.env.DMS_OFFLINE === "1";
+const allowEmpty =
+  offline ||
+  process.argv.includes("--allow-empty") ||
+  process.env.ALLOW_EMPTY_INVENTORY === "1";
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -65,15 +78,73 @@ async function fetchDMS(endpoint: string, body?: unknown): Promise<any> {
   throw lastError instanceof Error ? lastError : new Error(String(lastError));
 }
 
+/**
+ * Walks every page of `/get-carts`.
+ *
+ * Guards against the two ways paging goes wrong in practice: a server that
+ * ignores `pageNumber` and keeps returning page 0 (which would loop until
+ * MAX_PAGES, duplicating everything), and a catalogue larger than MAX_PAGES can
+ * hold (which would silently truncate the site).
+ */
 async function fetchAllCarts(): Promise<AnyCart[]> {
   const all: AnyCart[] = [];
+  const seenIds = new Set<string>();
+  let reportedTotal: number | null = null;
+  let complete = false;
 
   for (let pageNumber = 0; pageNumber < MAX_PAGES; pageNumber++) {
     const data = await fetchDMS("/get-carts", { pageNumber, pageSize: PAGE_SIZE });
-    const carts: AnyCart[] = data?.carts || [];
-    all.push(...carts);
-    console.log(`  page ${pageNumber}: ${carts.length} carts (${all.length} total)`);
-    if (carts.length < PAGE_SIZE) break;
+
+    if (!data || !Array.isArray(data.carts)) {
+      throw new Error(
+        `/get-carts returned no "carts" array on page ${pageNumber} — ` +
+          `got ${JSON.stringify(data).slice(0, 200)}`
+      );
+    }
+
+    const carts: AnyCart[] = data.carts;
+    if (pageNumber === 0 && typeof data.totalCarts === "number") {
+      reportedTotal = data.totalCarts;
+    }
+
+    let added = 0;
+    for (const cart of carts) {
+      const id = typeof cart?._id === "string" ? cart._id : null;
+      if (!id) {
+        console.warn("  skipping a cart with no _id — it has no detail page or slug");
+        continue;
+      }
+      if (seenIds.has(id)) continue;
+      seenIds.add(id);
+      all.push(cart);
+      added++;
+    }
+
+    console.log(`  page ${pageNumber}: ${carts.length} carts, ${added} new (${all.length} total)`);
+
+    if (carts.length < PAGE_SIZE) {
+      complete = true;
+      break;
+    }
+    if (added === 0) {
+      // A full page with nothing new means paging is not advancing.
+      console.warn(`  page ${pageNumber} repeated earlier carts — treating the catalogue as complete`);
+      complete = true;
+      break;
+    }
+  }
+
+  if (!complete) {
+    throw new Error(
+      `the catalogue is larger than ${MAX_PAGES * PAGE_SIZE} carts — raise MAX_PAGES, ` +
+        `otherwise the deployed site would be missing inventory`
+    );
+  }
+
+  if (reportedTotal !== null && all.length < reportedTotal) {
+    console.warn(
+      `  warning: the API reported ${reportedTotal} carts but ${all.length} were collected`
+    );
   }
 
   return all;
@@ -116,6 +187,52 @@ async function fetchMakeFacets(makeKeys: string[]): Promise<{
   return { models, colors };
 }
 
+/**
+ * Rejects a snapshot that would deploy a broken site.
+ *
+ * Store addresses feed the cart slugs (make-model-color-city-state-country), so
+ * losing the store list doesn't just drop location text — it silently rewrites
+ * every cart URL in the site and the sitemap, orphaning everything already
+ * indexed. That has to fail the build, not sail through.
+ */
+function validateSnapshot(carts: AnyCart[], stores: AnyStore[]): void {
+  if (carts.length === 0) {
+    if (!allowEmpty) {
+      throw new Error(
+        "the DMS API returned an empty catalogue. Deploying this would publish a site " +
+          "with no inventory and an empty sitemap. Pass --allow-empty if the catalogue " +
+          "really is empty."
+      );
+    }
+    console.warn("warning: the catalogue is empty and --allow-empty was set");
+    return;
+  }
+
+  if (stores.length === 0 && !allowEmpty) {
+    throw new Error(
+      "the DMS API returned no stores. Cart slugs are built from store city/state, so " +
+        "every cart URL would change and every indexed URL would break. Refusing to " +
+        "build; pass --allow-empty to override."
+    );
+  }
+
+  const located = carts.filter(
+    (cart) => cart?.cartLocation?.locationId || cart?.cartLocation?.latestStoreId
+  ).length;
+  if (located === 0 && stores.length > 0) {
+    console.warn("warning: no cart references a store — slugs will omit city and state");
+  }
+
+  const storeIds = new Set(stores.map((store) => store?.storeId).filter(Boolean));
+  const unmatched = carts.filter((cart) => {
+    const id = cart?.cartLocation?.locationId || cart?.cartLocation?.latestStoreId;
+    return id && !storeIds.has(id);
+  }).length;
+  if (unmatched > 0) {
+    console.warn(`warning: ${unmatched} cart(s) reference a store that is not in the store list`);
+  }
+}
+
 async function main(): Promise<void> {
   await rm(outDir, { recursive: true, force: true });
   await mkdir(outDir, { recursive: true });
@@ -130,8 +247,17 @@ async function main(): Promise<void> {
   } else {
     console.log(`fetching inventory from ${DMS_BASE_URL}`);
     carts = await fetchAllCarts();
-    stores = (await fetchDMS("/tigon-stores")) || [];
+
+    const storeData = await fetchDMS("/tigon-stores");
+    if (!Array.isArray(storeData)) {
+      throw new Error(
+        `/tigon-stores did not return an array — got ${JSON.stringify(storeData).slice(0, 200)}`
+      );
+    }
+    stores = storeData;
     console.log(`fetched ${carts.length} carts and ${stores.length} stores`);
+
+    validateSnapshot(carts, stores);
 
     const makeKeys = Array.from(
       new Set(
@@ -147,6 +273,13 @@ async function main(): Promise<void> {
 
   const slugMap = buildSlugMap(carts, stores);
   const brands = buildBrands(carts);
+
+  const slugCount = Object.keys(slugMap.slugToId).length;
+  if (slugCount !== carts.length) {
+    throw new Error(
+      `built ${slugCount} slugs for ${carts.length} carts — every cart needs a unique URL`
+    );
+  }
 
   await writeJson("carts.json", carts);
   await writeJson("stores.json", stores);

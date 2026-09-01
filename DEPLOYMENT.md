@@ -62,8 +62,10 @@ output. Leave the variable unset to stay on the `github.io` sub-path.
 
 - GitHub disables scheduled workflows in a repository with no commits for 60
   days. If nightly rebuilds stop, re-enable the workflow in the Actions tab.
-- If the DMS API is unreachable, the build **fails on purpose** and the previous
-  deployment stays live rather than being replaced by an empty catalogue.
+- If the DMS API is unreachable — or answers with an empty catalogue, an empty
+  store list, or a changed response shape — the build **fails on purpose** and
+  the previous deployment stays live rather than being replaced by a broken one.
+  See "When the DMS API misbehaves" below.
 - `.nojekyll` is emitted so Pages serves Vite's asset paths untouched.
 - Every route is written as both `<route>.html` and `<route>/index.html`, so
   URLs work with or without a trailing slash and without a redirect hop.
@@ -96,6 +98,25 @@ The client then calls `/api/*` at runtime and inventory is live. Without it (the
 default, and what GitHub Pages uses) the client reads the baked-in snapshot and
 the function is simply never called.
 
+## When the DMS API misbehaves
+
+The snapshot *is* the deployed inventory, so a bad response is more dangerous
+than a failed one — a 200 carrying an empty list would quietly publish a site
+with no carts. `scripts/build-data.ts` therefore refuses to write a snapshot it
+cannot vouch for:
+
+| Response | What would happen unchecked | What happens now |
+| --- | --- | --- |
+| Empty `carts` array | Site deploys with no inventory and an empty sitemap | Build fails (`--allow-empty` to override) |
+| Empty store list | Cart slugs are built from store city/state, so **every cart URL changes** and every indexed URL breaks | Build fails |
+| `pageNumber` ignored | Same page re-fetched until the page cap, duplicating the catalogue | Detected by ID; paging stops |
+| Catalogue over the page cap | Site silently missing inventory | Build fails |
+| `carts` / stores not an array | Coerced to empty, as above | Build fails with the received body |
+
+`scripts/test-build-data.ts` covers each of these against a mock DMS server, and
+the CI workflow additionally runs a full build against the **live** API on every
+pull request, so an upstream problem shows up there rather than mid-deploy.
+
 ## Local development
 
 `npm run dev` still runs the Express server against the live DMS API, with the
@@ -120,3 +141,5 @@ npm run preview:static
 | `VITE_DATA_MODE` | client build | `static` (default) reads the snapshot; `proxy` calls a live `/api/*` backend |
 | `DMS_BASE_URL` | `build:data` | Override the DMS API base URL |
 | `DMS_OFFLINE=1` | `build:data` | Write an empty snapshot without network access |
+| `ALLOW_EMPTY_INVENTORY=1` | `build:data` | Accept a genuinely empty catalogue or store list |
+| `DATA_OUT_DIR` | `build:data` | Write the snapshot somewhere other than `client/public/data` |
