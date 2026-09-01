@@ -1,7 +1,38 @@
-import { getCartMetaForSeo, getHomeSnapshotForSeo, getInventorySnapshotForSeo, isValidCartSlugForSeo } from "./routes";
 import { KNOWN_STATIC_ROUTES, normalizePathname, getCartSlugFromPathname } from "./known-routes";
-import { renderRouteContent, renderNotFoundContent } from "./prerender";
-import { POLICY_ROUTES, SITE_URL } from "../shared/seo-routes";
+import { renderRouteContent, renderNotFoundContent, type PrerenderDeps } from "./prerender";
+import { POLICY_ROUTES, SITE_URL } from "./seo-routes";
+
+/**
+ * Data the SEO layer needs to describe a route. The Express dev server backs
+ * these with live DMS calls; the static build backs them with the prebuilt
+ * snapshot. Nothing here touches the network directly.
+ */
+export interface SeoDeps extends PrerenderDeps {
+  isValidCartSlugForSeo: (slug: string) => Promise<boolean>;
+}
+
+export interface BuildPageOptions {
+  /**
+   * Sub-path the site is served from (e.g. "/my-repo/" for a GitHub Pages
+   * project site). Root-relative links inside the prerendered no-JS content are
+   * rewritten to sit under it.
+   */
+  basePath?: string;
+}
+
+/**
+ * Rewrites root-relative hrefs/srcs in prerendered markup so they still resolve
+ * when the site is served from a sub-path. External URLs, `tel:` links, and
+ * anything already under the base path are left alone.
+ */
+function applyBasePath(content: string, basePath: string): string {
+  const base = basePath.replace(/\/$/, "");
+  if (!base) return content;
+  return content.replace(
+    /(href|src)="\/(?!\/)([^"]*)"/g,
+    (_match, attr: string, rest: string) => `${attr}="${base}/${rest}"`
+  );
+}
 
 const BASE_URL = SITE_URL;
 
@@ -341,7 +372,7 @@ function injectRootContent(html: string, content: string): string {
   );
 }
 
-export async function resolveRouteStatus(url: string): Promise<number> {
+export async function resolveRouteStatus(url: string, deps: SeoDeps): Promise<number> {
   const pathname = normalizePathname(url);
 
   if (KNOWN_STATIC_ROUTES.has(pathname)) return 200;
@@ -349,7 +380,7 @@ export async function resolveRouteStatus(url: string): Promise<number> {
   const slug = getCartSlugFromPathname(pathname);
   if (slug) {
     try {
-      const valid = await isValidCartSlugForSeo(slug);
+      const valid = await deps.isValidCartSlugForSeo(slug);
       return valid ? 200 : 404;
     } catch {
       return 404;
@@ -359,27 +390,31 @@ export async function resolveRouteStatus(url: string): Promise<number> {
   return 404;
 }
 
-export async function buildPageHtml(html: string, url: string): Promise<{ html: string; status: number }> {
+export async function buildPageHtml(
+  html: string,
+  url: string,
+  deps: SeoDeps,
+  options: BuildPageOptions = {}
+): Promise<{ html: string; status: number }> {
   const pathname = normalizePathname(url);
   const cartSlugMatch = url.match(/^\/golfcart\/([^/?#]+)/);
-  const status = await resolveRouteStatus(url);
+  const status = await resolveRouteStatus(url, deps);
+
+  const inject = (target: string, content: string): string =>
+    injectRootContent(target, options.basePath ? applyBasePath(content, options.basePath) : content);
 
   if (cartSlugMatch) {
     const slug = cartSlugMatch[1];
     try {
-      const cartMeta = await getCartMetaForSeo(slug);
+      const cartMeta = await deps.getCartMetaForSeo(slug);
       if (cartMeta) {
         let result = injectSeoTags(html, url, {
           cartMeta: { title: cartMeta.title, description: cartMeta.description },
           vehicleSchema: cartMeta.schema,
           ogImage: cartMeta.imageUrl ?? undefined,
         });
-        const content = await renderRouteContent(pathname, url, {
-          getHomeSnapshotForSeo,
-          getInventorySnapshotForSeo,
-          getCartMetaForSeo,
-        });
-        if (content) result = injectRootContent(result, content);
+        const content = await renderRouteContent(pathname, url, deps);
+        if (content) result = inject(result, content);
         return { html: result, status };
       }
     } catch {
@@ -391,14 +426,10 @@ export async function buildPageHtml(html: string, url: string): Promise<{ html: 
 
   try {
     if (status === 404) {
-      result = injectRootContent(result, renderNotFoundContent());
+      result = inject(result, renderNotFoundContent());
     } else {
-      const content = await renderRouteContent(pathname, url, {
-        getHomeSnapshotForSeo,
-        getInventorySnapshotForSeo,
-        getCartMetaForSeo,
-      });
-      if (content) result = injectRootContent(result, content);
+      const content = await renderRouteContent(pathname, url, deps);
+      if (content) result = inject(result, content);
     }
   } catch {
     // fall through without body content injection

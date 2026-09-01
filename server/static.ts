@@ -1,7 +1,8 @@
 import express, { type Express } from "express";
 import fs from "fs";
 import path from "path";
-import { buildPageHtml } from "./seo-inject";
+import { buildPageHtml } from "../shared/seo-inject";
+import { seoDeps } from "./routes";
 
 export function serveStatic(app: Express) {
   const distPath = path.resolve(__dirname, "public");
@@ -17,7 +18,7 @@ export function serveStatic(app: Express) {
     try {
       const indexPath = path.resolve(distPath, "index.html");
       const html = await fs.promises.readFile(indexPath, "utf-8");
-      const { html: injected, status } = await buildPageHtml(html, req.originalUrl);
+      const { html: injected, status } = await buildPageHtml(html, req.originalUrl, seoDeps);
       res.status(status).set({ "Content-Type": "text/html" }).send(injected);
     } catch {
       res.status(500).send("Internal Server Error");
