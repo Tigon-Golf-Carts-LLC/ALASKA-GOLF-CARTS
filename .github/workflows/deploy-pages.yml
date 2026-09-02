@@ -38,23 +38,53 @@ jobs:
       - name: Test
         run: npm test
 
-      # Worked out here rather than via actions/configure-pages, which needs an
-      # API call the default GITHUB_TOKEN is not always allowed to make. Derived
-      # from GITHUB_REPOSITORY so it is correct on every trigger, including the
-      # scheduled rebuild.
+      # Asks Pages where the site is actually served from. Guessing this wrong
+      # breaks every asset URL: a site built for /<repo>/ but served from a
+      # custom domain at the root 404s its own CSS and JS, leaving only the
+      # no-JS fallback markup on screen.
+      #
+      # No enablement here — creating a Pages site needs an API call the default
+      # GITHUB_TOKEN is not permitted to make, and it is a one-time manual
+      # setting anyway. Reading an already-enabled site is allowed. Non-fatal,
+      # so the fallback below still runs if the read is refused.
+      - name: Ask GitHub Pages for the site URL
+        id: pages
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+
       - name: Resolve base path
         env:
           CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+          PAGES_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          BASE_PATH_OVERRIDE: ${{ vars.BASE_PATH_OVERRIDE }}
         run: |
-          repo="${GITHUB_REPOSITORY#*/}"
-          owner_site="$(echo "${GITHUB_REPOSITORY_OWNER}.github.io" | tr '[:upper:]' '[:lower:]')"
-          if [ -n "$CUSTOM_DOMAIN" ] || [ "$(echo "$repo" | tr '[:upper:]' '[:lower:]')" = "$owner_site" ]; then
-            # Custom domain, or a user/org site — both serve from the root.
-            echo "BASE_PATH=/" >> "$GITHUB_ENV"
+          set -u
+          if [ -n "${CUSTOM_DOMAIN:-}" ]; then
+            # An explicit custom domain always serves from the root.
+            base="/"
+            source="CUSTOM_DOMAIN variable"
+          elif [ -n "${PAGES_ORIGIN:-}" ]; then
+            # What Pages reports: "" or "/" for a custom domain or user site,
+            # "/<repo>" for a project site.
+            case "${PAGES_BASE_PATH:-}" in
+              ""|"/") base="/" ;;
+              */)     base="${PAGES_BASE_PATH}" ;;
+              *)      base="${PAGES_BASE_PATH}/" ;;
+            esac
+            source="Pages site $PAGES_ORIGIN"
           else
-            # Project site: https://<owner>.github.io/<repo>/
-            echo "BASE_PATH=/$repo/" >> "$GITHUB_ENV"
+            # Pages could not be read. Default to the root rather than guessing a
+            # sub-path from the repository name: guessing wrong at the root only
+            # breaks a github.io preview, but guessing a sub-path when the site
+            # is served from a custom domain breaks production outright — which
+            # is exactly how this went wrong before. Set BASE_PATH_OVERRIDE to
+            # deploy under a sub-path when detection is unavailable.
+            base="${BASE_PATH_OVERRIDE:-/}"
+            source="fallback (Pages config unavailable)"
           fi
+          echo "Serving from \"$base\" — resolved from $source"
+          echo "BASE_PATH=$base" >> "$GITHUB_ENV"
 
       # Pulls the DMS inventory into static JSON, builds the bundle, then writes
       # one prerendered HTML file per route plus sitemap.xml. Fails loudly if the
@@ -77,3 +107,41 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      # A site built for the wrong base path still deploys "successfully" — it
+      # just 404s its own CSS and JS, and the visitor gets the bare no-JS
+      # fallback. Nothing upstream catches that, so fetch the deployed page and
+      # confirm the assets it references actually load.
+      - name: Verify the deployed page loads its assets
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          echo "checking $PAGE_URL"
+          html=$(curl -fsSL --retry 6 --retry-delay 5 --retry-all-errors "$PAGE_URL")
+
+          # Asset references are absolute paths, so resolve them from the domain
+          # root rather than from the page URL.
+          root=$(printf '%s' "$PAGE_URL" | sed -E 's#^(https?://[^/]+).*#\1#')
+          urls=$(printf '%s' "$html" \
+            | grep -oE '(src|href)="/[^"]*\.(js|css)"' \
+            | sed -E 's/^(src|href)="//; s/"$//' \
+            | sort -u)
+
+          if [ -z "$urls" ]; then
+            echo "::error::The deployed page references no JS or CSS at all."
+            exit 1
+          fi
+
+          failed=0
+          for u in $urls; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "$root$u" || echo 000)
+            echo "  $code  $u"
+            [ "$code" = "200" ] || failed=1
+          done
+
+          if [ "$failed" -ne 0 ]; then
+            echo "::error::Assets referenced by the deployed page do not load, so the site renders unstyled. The build's base path does not match where Pages serves the site — check the 'Resolve base path' step."
+            exit 1
+          fi
+          echo "All referenced assets load."
