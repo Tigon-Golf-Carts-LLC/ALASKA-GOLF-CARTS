@@ -139,6 +139,7 @@ export function Footer() {
                 <Link href="/service-area" className="block text-sm font-medium hover:text-primary transition-colors" data-testid="link-footer-locations">All Locations</Link>
                 <Link href="/faq" className="block text-sm font-medium hover:text-primary transition-colors" data-testid="link-footer-faq">FAQ</Link>
                 <Link href="/about" className="block text-sm font-medium hover:text-primary transition-colors" data-testid="link-footer-about">About</Link>
+                <Link href="/contact" className="block text-sm font-medium hover:text-primary transition-colors" data-testid="link-footer-contact">Contact</Link>
               </div>
             </div>
 

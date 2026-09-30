@@ -11,6 +11,7 @@ import type { Cart, Store } from "@shared/schema";
 import { formatPrice, getAllCartImages, buildCartTitle, PHONE_NUMBER, PHONE_TEL, STATE_ABBREVIATIONS, COMING_SOON_IMAGE } from "@/lib/constants";
 import { useState, useEffect } from "react";
 import { SeoHead } from "@/components/seo-head";
+import { LeadForm } from "@/components/lead-form";
 
 function getSecondsUntilNextUpdate() {
   const now = new Date();
@@ -275,6 +276,11 @@ export default function CartDetail() {
                 Call Now - {PHONE_NUMBER}
               </Button>
             </a>
+            <a href="#inquire" className="block">
+              <Button variant="outline" className="w-full" size="lg" data-testid="button-inquire">
+                Ask About This Cart
+              </Button>
+            </a>
             <Link href="/financing">
               <Button variant="outline" className="w-full" size="lg" data-testid="button-apply-now">
                 Apply Now - 0% Financing
@@ -372,6 +378,24 @@ export default function CartDetail() {
           </Tabs>
         </div>
       </div>
+
+      <Card className="p-6 mt-10 max-w-3xl scroll-mt-32" id="inquire">
+        <h2 className="text-xl font-extrabold mb-1">Ask About This Cart</h2>
+        <p className="text-sm text-muted-foreground mb-5">
+          Send us your questions and we'll get back to you — or call {PHONE_NUMBER} for the fastest answer.
+        </p>
+        <LeadForm
+          cart={{
+            brand: make,
+            model,
+            vin: cart.vinNo || "",
+            // The DMS inventory id: unique per cart, and what the dealer looks it up by.
+            sku: cart._id,
+            title: [year, title].filter(Boolean).join(" "),
+          }}
+          submitLabel="Send Inquiry"
+        />
+      </Card>
     </div>
   );
 }

@@ -248,6 +248,16 @@ function renderServiceArea(): string {
   </div>`;
 }
 
+function renderContact(): string {
+  return `<div>
+    ${breadcrumbHtml([{ name: "Home", href: "/" }, { name: "Contact", href: "/contact" }])}
+    <h1>Contact Alaska Golf Carts</h1>
+    <p>Questions about a cart, a delivery quote, financing, or service? Send us a message and our Alaska team will get back to you — or call <a href="${PHONE_TEL}">${PHONE_NUMBER}</a> for the fastest answer.</p>
+    <p>The contact form needs JavaScript. If it does not load, please call us.</p>
+    ${callToActionHtml()}
+  </div>`;
+}
+
 interface PolicySection {
   h2: string;
   p: string;
@@ -454,6 +464,7 @@ export async function renderRouteContent(pathname: string, url: string, deps: Pr
   if (pathname === "/faq") return renderFaq();
   if (pathname === "/about") return renderAbout();
   if (pathname === "/service-area") return renderServiceArea();
+  if (pathname === "/contact") return renderContact();
 
   const policyHtml = renderPolicyPage(pathname);
   if (policyHtml) return policyHtml;
