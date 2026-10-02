@@ -163,7 +163,9 @@ export async function submitLead(form: HTMLFormElement): Promise<void> {
   let response: Response;
   try {
     response = await fetch(leadEndpoint(), { method: "POST", body: buildLeadData(form), mode: "cors" });
-  } catch {
+  } catch (error) {
+    // Usually CORS: the webhook only accepts posts from the site's own address.
+    console.error("Lead not sent: the request was blocked or the network failed.", error);
     throw new Error(GENERIC_ERROR);
   }
 
@@ -178,6 +180,10 @@ export async function submitLead(form: HTMLFormElement): Promise<void> {
     data = null;
   }
   if (!response.ok || data?.ok === false) {
+    console.error(
+      `Lead not sent: HTTP ${response.status}.`,
+      import.meta.env.VITE_LEAD_ENDPOINT ? data : "No webhook was configured when this site was built (TIGON_WEBHOOK_URL)."
+    );
     throw new Error(data?.error || data?.message || GENERIC_ERROR);
   }
 }
