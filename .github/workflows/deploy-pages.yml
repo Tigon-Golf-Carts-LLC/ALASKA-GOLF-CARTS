@@ -91,11 +91,13 @@ jobs:
       # DMS API is unreachable, which leaves the previous deployment in place.
       # GitHub Pages has no server to relay leads, so the contact forms post
       # straight to the TIGON IOT webhook. Its URL is a credential: it lives in
-      # the TIGON_WEBHOOK_URL repository secret, never in the repository.
+      # the TIGON_WEBHOOK_URL repository secret, never in the repository. A
+      # repository variable of the same name is accepted too, since the URL is
+      # visible in the built JavaScript either way.
       - name: Build static site
         env:
           CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
-          VITE_LEAD_ENDPOINT: ${{ secrets.TIGON_WEBHOOK_URL }}
+          VITE_LEAD_ENDPOINT: ${{ secrets.TIGON_WEBHOOK_URL || vars.TIGON_WEBHOOK_URL }}
         run: npm run build:static
 
       # Without the secret the forms post to /api/lead, which a static host
@@ -104,12 +106,12 @@ jobs:
       # only the host, never the key.
       - name: Check the contact forms have a webhook
         env:
-          LEAD_URL: ${{ secrets.TIGON_WEBHOOK_URL }}
+          LEAD_URL: ${{ secrets.TIGON_WEBHOOK_URL || vars.TIGON_WEBHOOK_URL }}
         run: |
           # The client trims the value too, so a pasted trailing newline is harmless.
           LEAD_URL=$(printf '%s' "${LEAD_URL:-}" | tr -d '[:space:]')
           if [ -z "$LEAD_URL" ]; then
-            echo "::warning title=Contact forms will not send::The TIGON_WEBHOOK_URL repository secret is not set (Settings → Secrets and variables → Actions). Add it, then re-run this workflow."
+            echo "::warning title=Contact forms will not send::TIGON_WEBHOOK_URL is not set as a repository secret or variable (Settings → Secrets and variables → Actions → Repository secrets). Environment secrets are not visible to this build. Add it, then re-run this workflow."
             exit 0
           fi
           host=$(printf '%s' "$LEAD_URL" | sed -E 's#^https?://([^/]+).*#\1#')
