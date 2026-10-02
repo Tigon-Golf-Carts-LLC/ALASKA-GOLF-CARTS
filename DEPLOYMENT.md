@@ -109,6 +109,32 @@ The client then calls `/api/*` at runtime and inventory is live. Without it (the
 default, and what GitHub Pages uses) the client reads the baked-in snapshot and
 the function is simply never called.
 
+## Contact forms → TIGON IOT (Webhook Flows)
+
+`/contact` and every cart page (`/golfcart/<slug>`, "Ask About This Cart")
+send leads to the site's TIGON IOT webhook. Cart pages pre-fill `brand`,
+`model`, `vin_number` and `sku_number` (the DMS cart id) as hidden fields. The
+form lives in `client/src/components/lead-form.tsx`; tracking, validation and
+sending in `client/src/lib/lead.ts`.
+
+**The webhook URL is a credential. Never commit it.** Where it goes depends on
+the host:
+
+| Host | Where the URL (and secret) is stored | How leads travel |
+| --- | --- | --- |
+| GitHub Pages | Repository secret `TIGON_WEBHOOK_URL` (**Settings → Secrets and variables → Actions → Secrets**). The deploy workflow passes it to the build as `VITE_LEAD_ENDPOINT`. | Browser → webhook. A static host has no server, so the URL is compiled into the site's JavaScript. It stays out of the repository, but visitors can still find it. Signing is not possible here. |
+| Cloudflare Pages | Project env vars `TIGON_WEBHOOK_URL` and `TIGON_WEBHOOK_SECRET` (**Settings → Variables and Secrets**, type *Secret*). Leave `VITE_LEAD_ENDPOINT` unset. | Browser → `/api/lead` (`functions/api/[[path]].ts`) → webhook, signed. The URL and secret never reach the browser. |
+| `npm run dev` / Express | Shell env `TIGON_WEBHOOK_URL`, `TIGON_WEBHOOK_SECRET` | Same `/api/lead` relay (`server/routes.ts`). |
+
+The relay (`shared/lead-relay.ts`) forwards the body byte-for-byte and signs it
+with `X-Tigon-Signature: sha256=<HMAC-SHA256 of the raw body>`. After a signed
+setup is live, turn on **Require signature** for the webhook in TIGON IOT so
+that unsigned posts are rejected. Do not turn it on while the site posts from
+the browser (GitHub Pages), or every lead will be refused.
+
+If neither is configured, the form shows "Sorry, something went wrong. Please
+try again or call us."
+
 ## When the DMS API misbehaves
 
 The snapshot *is* the deployed inventory, so a bad response is more dangerous
@@ -167,3 +193,6 @@ npm run preview:static
 | `DMS_OFFLINE=1` | `build:data` | Write an empty snapshot without network access |
 | `ALLOW_EMPTY_INVENTORY=1` | `build:data` | Accept a genuinely empty catalogue or store list |
 | `DATA_OUT_DIR` | `build:data` | Write the snapshot somewhere other than `client/public/data` |
+| `VITE_LEAD_ENDPOINT` | client build | Webhook URL the forms post to directly (set from the `TIGON_WEBHOOK_URL` secret on GitHub Pages). Unset = post to `/api/lead` |
+| `TIGON_WEBHOOK_URL` | server / Pages Function | Webhook URL the `/api/lead` relay forwards to. **Secret** |
+| `TIGON_WEBHOOK_SECRET` | server / Pages Function | This webhook's own signing secret. **Secret, server-side only** |

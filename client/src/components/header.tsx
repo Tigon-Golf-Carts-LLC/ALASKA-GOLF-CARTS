@@ -44,6 +44,7 @@ export function Header() {
     { href: "/financing", label: "Financing" },
     { href: "/service-area", label: "Locations" },
     { href: "/faq", label: "FAQ" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (

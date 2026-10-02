@@ -157,6 +157,14 @@ function getRouteMetaFromUrl(url: string, cartMeta?: PageMeta): PageMeta {
     };
   }
 
+  if (pathname === "/contact") {
+    return {
+      title: "Contact Alaska Golf Carts — Questions, Quotes & Delivery",
+      description:
+        "Contact Alaska Golf Carts about new and used golf carts, 0% APR financing, statewide delivery, and service. Send us a message or call 1-888-840-4490.",
+    };
+  }
+
   const policyMeta = POLICY_ROUTES[pathname];
   if (policyMeta) {
     return { title: policyMeta.title, description: policyMeta.description };
@@ -284,6 +292,18 @@ function getPageSchema(pathname: string): Record<string, unknown> | null {
       "description": "Alaska Golf Carts serves the entire state of Alaska — communities statewide. New and used golf carts with statewide delivery.",
       "about": { "@type": "State", "name": "Alaska" },
       "breadcrumb": breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Service Area", path: "/service-area" }]),
+    };
+  }
+
+  if (pathname === "/contact") {
+    return {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "url": `${BASE_URL}/contact`,
+      "name": "Contact Alaska Golf Carts",
+      "description": "Contact Alaska Golf Carts about new and used golf carts, financing, delivery, and service anywhere in Alaska.",
+      "isPartOf": { "@id": `${BASE_URL}/#website` },
+      "breadcrumb": breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Contact", path: "/contact" }]),
     };
   }
 

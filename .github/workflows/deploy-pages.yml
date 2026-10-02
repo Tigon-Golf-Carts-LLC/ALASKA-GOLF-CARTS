@@ -89,9 +89,13 @@ jobs:
       # Pulls the DMS inventory into static JSON, builds the bundle, then writes
       # one prerendered HTML file per route plus sitemap.xml. Fails loudly if the
       # DMS API is unreachable, which leaves the previous deployment in place.
+      # GitHub Pages has no server to relay leads, so the contact forms post
+      # straight to the TIGON IOT webhook. Its URL is a credential: it lives in
+      # the TIGON_WEBHOOK_URL repository secret, never in the repository.
       - name: Build static site
         env:
           CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+          VITE_LEAD_ENDPOINT: ${{ secrets.TIGON_WEBHOOK_URL }}
         run: npm run build:static
 
       - uses: actions/upload-pages-artifact@v3

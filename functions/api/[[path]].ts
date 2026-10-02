@@ -22,6 +22,7 @@ import {
   type AnyStore,
   type SlugMap,
 } from "../../shared/cart-data";
+import { relayLead } from "../../shared/lead-relay";
 
 const DMS_BASE_URL = "https://api.tigondms.com/wp-website";
 const PAGE_SIZE = 500;
@@ -32,6 +33,11 @@ const CACHE_SECONDS = 1800;
 
 interface PagesContext {
   request: Request;
+  /** Pages project environment variables and secrets. */
+  env: {
+    TIGON_WEBHOOK_URL?: string;
+    TIGON_WEBHOOK_SECRET?: string;
+  };
   /** Falls through to the next handler, ultimately the static asset. */
   next: () => Promise<Response>;
 }
@@ -113,6 +119,30 @@ export const onRequest = async (context: PagesContext): Promise<Response> => {
   const { request } = context;
   const url = new URL(request.url);
   const pathname = url.pathname.replace(/\/+$/, "") || "/";
+
+  // Website leads: the webhook URL and signing secret live only in the Pages
+  // project's encrypted environment variables, never in the browser bundle.
+  if (pathname === "/api/lead") {
+    if (request.method !== "POST") {
+      return new Response(JSON.stringify({ ok: false, error: "Method not allowed" }), {
+        status: 405,
+        headers: { "Content-Type": "application/json; charset=utf-8", Allow: "POST" },
+      });
+    }
+    const result = await relayLead(
+      { endpoint: context.env.TIGON_WEBHOOK_URL, secret: context.env.TIGON_WEBHOOK_SECRET },
+      {
+        body: await request.arrayBuffer(),
+        contentType: request.headers.get("Content-Type") || "",
+        clientIp: request.headers.get("CF-Connecting-IP") || undefined,
+        userAgent: request.headers.get("User-Agent") || undefined,
+      }
+    );
+    return new Response(result.body, {
+      status: result.status,
+      headers: { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" },
+    });
+  }
 
   try {
     switch (pathname) {

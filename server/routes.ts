@@ -1,4 +1,4 @@
-import type { Express } from "express";
+import express, { type Express } from "express";
 import { type Server } from "http";
 import {
   buildBrands,
@@ -17,6 +17,7 @@ import {
   type SlugMap,
 } from "../shared/cart-data";
 import type { SeoDeps } from "../shared/seo-inject";
+import { MAX_LEAD_BODY_BYTES, relayLead } from "../shared/lead-relay";
 
 const DMS_BASE_URL = "https://api.tigondms.com/wp-website";
 
@@ -345,6 +346,32 @@ export async function registerRoutes(
       res.status(500).json({ error: "Failed to fetch featured carts" });
     }
   });
+
+  // Website leads. The browser never sees the webhook URL or its signing
+  // secret: both come from the server environment, and the body is forwarded
+  // byte-for-byte so the signature matches what TIGON IOT receives.
+  app.post(
+    "/api/lead",
+    express.raw({ type: () => true, limit: MAX_LEAD_BODY_BYTES }),
+    async (req, res) => {
+      // express.json() upstream may already have consumed a JSON body.
+      const raw: Buffer = Buffer.isBuffer(req.body)
+        ? req.body
+        : Buffer.isBuffer(req.rawBody)
+          ? req.rawBody
+          : Buffer.alloc(0);
+      const result = await relayLead(
+        { endpoint: process.env.TIGON_WEBHOOK_URL, secret: process.env.TIGON_WEBHOOK_SECRET },
+        {
+          body: new Uint8Array(raw),
+          contentType: req.get("content-type") || "",
+          clientIp: req.ip,
+          userAgent: req.get("user-agent"),
+        }
+      );
+      res.status(result.status).set("Cache-Control", "no-store").type("application/json").send(result.body);
+    }
+  );
 
   app.get("/sitemap.xml", async (_req, res) => {
     try {

@@ -13,6 +13,7 @@ import Financing from "@/pages/financing";
 import FAQ from "@/pages/faq";
 import About from "@/pages/about";
 import ServiceArea from "@/pages/service-area";
+import Contact from "@/pages/contact";
 import TermsConditions from "@/pages/policies/terms-conditions";
 import ReturnPolicy from "@/pages/policies/return-policy";
 import PrivacyPolicy from "@/pages/policies/privacy-policy";
@@ -44,6 +45,7 @@ function Router() {
       <Route path="/faq" component={FAQ} />
       <Route path="/about" component={About} />
       <Route path="/service-area" component={ServiceArea} />
+      <Route path="/contact" component={Contact} />
       <Route path="/terms-conditions" component={TermsConditions} />
       <Route path="/return-policy" component={ReturnPolicy} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />

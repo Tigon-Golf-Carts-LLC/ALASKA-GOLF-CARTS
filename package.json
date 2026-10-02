@@ -14,7 +14,7 @@
     "preview:static": "vite preview",
     "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
-    "test": "tsx scripts/test-cart-data.ts && tsx scripts/test-build-data.ts",
+    "test": "tsx scripts/test-cart-data.ts && tsx scripts/test-build-data.ts && tsx scripts/test-lead-relay.ts",
     "db:push": "drizzle-kit push"
   },
   "dependencies": {

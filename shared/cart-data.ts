@@ -487,6 +487,7 @@ export function buildSitemapXml(carts: AnyCart[], slugMap: SlugMap, baseUrl: str
   xml += `  <url>\n    <loc>${baseUrl}/</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n\n`;
   xml += `  <url>\n    <loc>${baseUrl}/inventory</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>\n\n`;
   xml += `  <url>\n    <loc>${baseUrl}/financing</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n\n`;
+  xml += `  <url>\n    <loc>${baseUrl}/contact</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n\n`;
 
   for (const make of Array.from(makes).sort()) {
     xml += `  <url>\n    <loc>${baseUrl}/inventory?make=${encodeURIComponent(make)}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.85</priority>\n  </url>\n`;

@@ -5,6 +5,7 @@ export const KNOWN_STATIC_ROUTES = new Set<string>([
   "/faq",
   "/about",
   "/service-area",
+  "/contact",
   "/terms-conditions",
   "/return-policy",
   "/privacy-policy",
